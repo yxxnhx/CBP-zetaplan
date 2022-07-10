@@ -1,11 +1,11 @@
 import React from 'react';
 
 const ZetaMap = () => {
-    return (
-        <div>
+  return (
+    <div>
             
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ZetaMap;

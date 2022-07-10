@@ -1,11 +1,11 @@
 import React from 'react';
 
 const ZetaHistory = () => {
-    return (
-        <div>
+  return (
+    <div>
             
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ZetaHistory;
