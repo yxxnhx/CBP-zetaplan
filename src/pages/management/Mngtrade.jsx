@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Mngtrade = () => {
+const MngTrade = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Mngtrade = () => {
   );
 };
 
-export default Mngtrade;
+export default MngTrade;
