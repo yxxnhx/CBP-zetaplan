@@ -1,11 +1,11 @@
 import React from 'react';
 
 const MaipoInfo = () => {
-    return (
-        <div>
+  return (
+    <div>
 
-        </div>
-    );
+    </div>
+  );
 };
 
 export default MaipoInfo;
