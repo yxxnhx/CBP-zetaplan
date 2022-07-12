@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+@import '../GlobalStyle.scss';
+
+.irSubtitle {
+  @include Subtitle($sub-title, $basic-gray3)
+}
+
+.irCircle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150rem;
+  justify-content: center;
+  align-items: center;
+  margin: 8.5rem 0;
+  li {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 50%;
+    border: 1px solid $main-color;
+    margin-right: 4rem;
+    position: relative;
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+    
+    &:hover {
+      background-color: $main-color;
+      color: $basic-white;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 4rem;
+      height: 1px;
+      border-bottom: 1px dashed black;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -4rem;
+    }
+
+    &:first-child::before {
+      display: none;
+    }
+  }
+}
+
+.irBusinessContent {
+  ul {
+    margin-bottom: 6rem;
+
+    .irBusTitle {
+      font-size: 2.6rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }    
+    .irBusTxt {
+      font-size: 2.4rem;
+      line-height: 1.7;
+    }
+  }
+  .irBnIndex {
+    .irBnTitle {
+      font-size: 2.6rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .irBnTxt {
+      font-size: 2.4rem;
+      line-height: 1.7;
+    }
+    .irBnStep {
+      font-size: 2.4rem;
+      font-weight: bold;
+      display: flex;
+      position: relative;
+      padding-left: 5rem;
+
+      &::before {
+        content: "";
+        width: 6rem;
+        height: 3px;
+        background-color: $main-color;
+        top: 10px;
+        left: -2.6rem;
+        position: absolute;
+      }
+      ul {
+        padding-left: 4rem;
+
+        .irBnStepT {
+          font-size: 2rem;
+          line-height: 2;
+          font-weight: bold;
+        }
+        
+        li {
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  
+  .irBnTotal {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: $main-color;
+    text-align: center;
+  }
+
+}

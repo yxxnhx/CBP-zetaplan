@@ -17,7 +17,7 @@ $size-sm: 2.0rem;
 $size-xs: 1.8rem;
 
 @mixin Subtitle($sub, $basic) {
-  font-size: $sub-title;
+  font-size: $sub;
   font-weight: 900;
   padding-left: 3rem;
   position: relative;
@@ -37,9 +37,53 @@ $size-xs: 1.8rem;
     display: block;
     width: 100%;
     height: 1px;
-    background-color: $basic-gray3;
+    background-color: $basic;
     position: absolute;
     top: 6rem;
     left: 0;
   }
 };
+
+@mixin Circle($size, $circleSize) {
+  display: flex;
+  flex-wrap: wrap;
+  width: $size;
+  justify-content: center;
+  align-items: center;
+  li {
+    width: $circleSize;
+    height: $circleSize;
+    border-radius: 50%;
+    border: 1px solid $main-color;
+    margin-right: 4rem;
+    position: relative;
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+    
+    &:hover {
+      background-color: $main-color;
+      color: $basic-white;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 4rem;
+      height: 1px;
+      border-bottom: 1px dashed black;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -4rem;
+    }
+
+    &:first-child::before {
+      display: none;
+    }
+  }
+}

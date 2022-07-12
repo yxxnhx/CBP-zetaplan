@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+.irSubtitle {
+  font-size: 4rem;
+  font-weight: 900;
+  padding-left: 3rem;
+  position: relative;
+}
+.irSubtitle::before {
+  content: "";
+  display: block;
+  background: url("./../../img/title_box@2x.png") no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.irSubtitle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+
+.irPerfoContent {
+  margin: 5rem 0;
+}
+.irPerfoContent .irPerfoContentBox {
+  margin: 3rem 0;
+}
+.irPerfoContent .irPerfoContentBox .irPerfoContentTitle {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.irPerfoContentTxt {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.irPerfoContentTxt span {
+  font-size: 2rem;
+  font-weight: bold;
+}/*# sourceMappingURL=irPerfo.css.map */

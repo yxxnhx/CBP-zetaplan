@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+.irSubtitle {
+  font-size: 4rem;
+  font-weight: 900;
+  padding-left: 3rem;
+  position: relative;
+}
+.irSubtitle::before {
+  content: "";
+  display: block;
+  background: url("./../../img/title_box@2x.png") no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.irSubtitle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+
+.irCircle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150rem;
+  justify-content: center;
+  align-items: center;
+  margin: 8.5rem 0;
+}
+.irCircle li {
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  border: 1px solid #1527A0;
+  margin-right: 4rem;
+  position: relative;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+}
+.irCircle li:hover {
+  background-color: #1527A0;
+  color: #fff;
+}
+.irCircle li::before {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 1px;
+  border-bottom: 1px dashed black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -4rem;
+}
+.irCircle li:first-child::before {
+  display: none;
+}
+
+.irBusinessContent ul {
+  margin-bottom: 6rem;
+}
+.irBusinessContent ul .irBusTitle {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.irBusinessContent ul .irBusTxt {
+  font-size: 2.4rem;
+  line-height: 1.7;
+}
+.irBusinessContent .irBnIndex .irBnTitle {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.irBusinessContent .irBnIndex .irBnTxt {
+  font-size: 2.4rem;
+  line-height: 1.7;
+}
+.irBusinessContent .irBnIndex .irBnStep {
+  font-size: 2.4rem;
+  font-weight: bold;
+  display: flex;
+  position: relative;
+  padding-left: 5rem;
+}
+.irBusinessContent .irBnIndex .irBnStep::before {
+  content: "";
+  width: 6rem;
+  height: 3px;
+  background-color: #1527A0;
+  top: 10px;
+  left: -2.6rem;
+  position: absolute;
+}
+.irBusinessContent .irBnIndex .irBnStep ul {
+  padding-left: 4rem;
+}
+.irBusinessContent .irBnIndex .irBnStep ul .irBnStepT {
+  font-size: 2rem;
+  line-height: 2;
+  font-weight: bold;
+}
+.irBusinessContent .irBnIndex .irBnStep ul li {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.irBusinessContent .irBnTotal {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #1527A0;
+  text-align: center;
+}/*# sourceMappingURL=irPlan.css.map */

@@ -33,9 +33,12 @@
   background-size: cover;
   height: 980px;
   width: auto;
-  margin-bottom: 27rem;
+  margin: 7rem 0 27rem;
 }
 
+.irContent {
+  margin-bottom: 10rem;
+}
 .irContent .irSubTitle {
   font-size: 4rem;
   font-weight: 900;
@@ -56,4 +59,55 @@
 }
 .irContent .irSubTxt {
   font-size: 2.4rem;
+  line-height: 1.7;
+}
+.irContent .irListTitle {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.irContent .irListDetail {
+  font-size: 2.4rem;
+  line-height: 1.7;
+}
+.irContent .irListContent .irList {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border-bottom: 1px solid #707070;
+  padding: 2.2rem;
+}
+.irContent .irListContent .irList li {
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+.irContent .irListContent .irList:first-child {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+.irContent .irListContent .irList:last-child {
+  border-bottom: 2px solid black;
+}
+.irContent .irListContent .irListProcessImg {
+  font-size: 100px;
+  background-color: red;
+  background: url(./../../img/ir/ir_summery@2x.png) no-repeat red;
+  background-size: cover;
+  height: 980px;
+  width: auto;
+}
+
+.irListProcessImg {
+  background: url("./../../img/ir/ir_index_process@2x.png") no-repeat;
+  background-size: contain;
+  width: auto;
+  height: 110rem;
+}
+
+.irListDes {
+  font-size: 2.4rem;
+  line-height: 1.7;
+}
+.irListDes li {
+  font-size: 2.4rem;
+  line-height: 1.7;
 }/*# sourceMappingURL=index.css.map */

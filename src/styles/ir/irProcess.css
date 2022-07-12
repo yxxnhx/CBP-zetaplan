@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+.irSubtitle {
+  font-size: 4rem;
+  font-weight: 900;
+  padding-left: 3rem;
+  position: relative;
+}
+.irSubtitle::before {
+  content: "";
+  display: block;
+  background: url("./../../img/title_box@2x.png") no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.irSubtitle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+
+.irProCircle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 175rem;
+  justify-content: center;
+  align-items: center;
+  margin: 8.5rem 0;
+}
+.irProCircle li {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  border: 1px solid #1527A0;
+  margin-right: 4rem;
+  position: relative;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+}
+.irProCircle li:hover {
+  background-color: #1527A0;
+  color: #fff;
+}
+.irProCircle li::before {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 1px;
+  border-bottom: 1px dashed black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -4rem;
+}
+.irProCircle li:first-child::before {
+  display: none;
+}
+
+.irProContent li {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 1.5rem;
+}
+
+.irContentT {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 5rem;
+}
+
+.irProCircleContent {
+  width: 170rem;
+}
+.irProCircleContent .irProCircleM {
+  display: flex;
+  flex-wrap: wrap;
+  width: 170rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.8rem;
+}
+.irProCircleContent .irProCircleM li {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  border: 1px solid #1527A0;
+  margin-right: 4rem;
+  position: relative;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+}
+.irProCircleContent .irProCircleM li:hover {
+  background-color: #1527A0;
+  color: #fff;
+}
+.irProCircleContent .irProCircleM li::before {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 1px;
+  border-bottom: 1px dashed black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -4rem;
+}
+.irProCircleContent .irProCircleM li:first-child::before {
+  display: none;
+}
+.irProCircleContent .irProCircleDes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 155rem;
+  margin: auto;
+  margin-right: 9rem;
+}
+.irProCircleContent .irProCircleDes li {
+  font-size: 2rem;
+  width: 22rem;
+  text-align: center;
+}
+
+.irProCircleS {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150rem;
+  justify-content: center;
+  align-items: center;
+  margin: 8.5rem 0;
+  margin: auto;
+}
+.irProCircleS li {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 1px solid #1527A0;
+  margin-right: 19.5rem;
+  position: relative;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+}
+.irProCircleS li:hover {
+  background-color: #1527A0;
+  color: #fff;
+}
+.irProCircleS li::before {
+  content: "";
+  display: block;
+  width: 19.5rem;
+  height: 1px;
+  border-bottom: 1px dashed black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -19.5rem;
+}
+.irProCircleS li:first-child::before {
+  display: none;
+}
+.irProCircleS li:last-child {
+  margin-right: 0;
+}
+
+.irProCircleAreaS {
+  position: relative;
+}
+.irProCircleAreaS .irProCircleSDes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 87rem;
+  margin: auto;
+  position: absolute;
+  right: 42rem;
+  bottom: 13rem;
+}
+.irProCircleAreaS .irProCircleSDes li {
+  font-size: 2.1rem;
+  color: #999;
+}
+.irProCircleAreaS .irProCircleSDetail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 143rem;
+  margin: auto;
+  padding: 2rem;
+}
+.irProCircleAreaS .irProCircleSDetail li {
+  color: #333;
+  font-size: 2rem;
+  width: 22rem;
+  text-align: center;
+}
+
+.irProText {
+  font-size: 2rem;
+  line-height: 1.7;
+  margin: 2rem 0 4rem;
+}
+
+.content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.irContentImg {
+  background: url(./../../img/ir/ir_process01@2x.png) no-repeat;
+  background-size: contain;
+  width: auto;
+  height: 70rem;
+}
+
+.irContentConsulImg {
+  background: url(./../../img/ir/ir_process02@2x.png) no-repeat;
+  background-size: contain;
+  width: auto;
+  height: 90rem;
+}/*# sourceMappingURL=irProcess.css.map */

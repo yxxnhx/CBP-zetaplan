@@ -45,15 +45,15 @@ const Ir = () => {
 
       </div>
       <div className="irContent">
+        <div className="irListTitle">Process</div>
+        <div className="irListProcessImg"></div>
+      </div>
+      <div className="irContent">
         <div className="irListTitle">신청자격</div>
-        <ul>국내법인 소재·부품기업
+        <ul className='irListDes'>국내법인 소재·부품기업
           <li>– 소재·부품 범위는 소재·부품전문기업 등의 육성에 관한 특별조치법 시행령 별표1 대상 업종에 따름</li>
           <li>- 소재·부품전문기업, 소재분야 영위기업, 해외수요처 확보기업은 평가시 가점 부여</li>
         </ul>
-      </div>
-      <div className="irContent">
-        <div className="irListTitle">Process</div>
-        <div className="irListProcessImg"></div>
       </div>
     </div>
   );
