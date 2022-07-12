@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Index from './pages';
 import ResetStyle from './styles/ResetStyle';
+import './styles/GlobalStyle.scss';
 
 function App() {
   return (
