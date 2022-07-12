@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Index from './pages';
-import GlobalStyle from './styles/GlobalStyle';
+import ResetStyle from './styles/ResetStyle';
 
 function App() {
   return (
     <div className="App">
-      <GlobalStyle />
+      <ResetStyle />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
