@@ -1,0 +1,155 @@
+@import '../GlobalStyle.scss';
+
+.gbInner {
+  width: 176.3rem;
+  margin: auto;
+
+  .gbTabTitleBox {
+    width: 176.3rem;
+    border-bottom: 0.1rem solid $basic-gray3;
+    padding-bottom: 1rem;
+    .gbTabTitle {
+      background-image: url(../../img/title_box.png);
+      background-repeat: no-repeat;
+      font: {
+        size: $sub-title;
+        weight: bold;
+      }
+      padding-left: 2.6rem;
+    }
+  }
+
+  .gbContentTitle {
+    margin: 13rem auto 7.5rem;
+    width: 115.8rem;
+    font: {
+      size: $main-title;
+      weight: bold;
+    }
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .gbContentSubTitle {
+    position: relative;
+    text-indent: 8.5rem;
+    font: {
+      size: 3.5rem;
+      weight: bold;
+    }
+    margin-top: 6.25rem;
+    margin-bottom: 6.4375rem;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 6rem;
+      height: 0.5rem;
+      background-color: $main-color;
+      top: 30%;
+      left: 0;
+    }
+  }
+
+  .gbGraphImg {
+    margin-left: 20rem;
+  }
+
+  .gbPerformanceDes {
+    font-size: $size-lg;
+    width: 69.6rem;
+    margin: 8rem auto 25.4rem;
+  }
+
+  .gbMaterialTitle {
+    font: {
+      size: $size-lg;
+      weight: bold;
+    }
+    margin-bottom: 4.5rem;
+  }
+
+  .gbMaterialContent {
+    font-size: $list-md;
+    margin-bottom: 4.5rem;
+    line-height: 1.5;
+  }
+
+  .gbContentBox {
+    width: 176.3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border: 0.1rem solid #707070;
+    display: flex;
+    margin-bottom: 3.3rem;
+
+    .gbContentBoxT {
+      font: {
+        size: $size-lg;
+        weight: bold;
+      }
+      line-height: 1.5;
+      width: 33rem;
+      margin-left: 4.375rem;
+      margin-right: 10.125rem;
+    }
+
+    .gbContentBoxC {
+      font-size: $list-md;
+      line-height: 1.5;
+    }
+  }
+
+  .gbProcessList {
+    display: flex;
+    .gbProcessItem {
+      width: 29.2rem;
+      height: 29.2rem;
+      border-radius: 50%;
+      border: 0.1rem solid $main-color;
+      display: flex;
+      margin-left: 6rem;
+      .gbProcessItemBox {
+        width: 14rem;
+        height: 12rem;
+        margin-top: 10rem;
+        margin-left: 8rem;
+
+        .gbProcessItemT {
+          color: #1527a0;
+          margin-bottom: 2.4rem;
+          text-align: center;
+          font: {
+            size: $list-md;
+            weight: bold;
+          }
+        }
+
+        .gbProcessItemC {
+          font: {
+            size: $list-md;
+            weight: bold;
+          }
+          text-align: center;
+        }
+      }
+    }
+  }
+  .gbProcessListDesBox {
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 6rem;
+    width: 170rem;
+    justify-content: space-between;
+    .gbProcessListDes {
+      width: 21rem;
+      font-size: $size-xs;
+      line-height: 1.5;
+      &:first-child {
+        margin-left: 3rem;
+      }
+      &:last-child {
+        margin-right: 3rem;
+      }
+    }
+  }
+}

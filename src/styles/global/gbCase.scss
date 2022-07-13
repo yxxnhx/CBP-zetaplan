@@ -1,0 +1,60 @@
+@import '../GlobalStyle.scss';
+
+.gbInner {
+  width: 176.3rem;
+  margin: auto;
+
+  .gbTabTitleBox {
+    width: 176.3rem;
+    border-bottom: 0.1rem solid $basic-gray3;
+    padding-bottom: 1rem;
+    .gbTabTitle {
+      background-image: url(../../img/title_box.png);
+      background-repeat: no-repeat;
+      font: {
+        size: $sub-title;
+        weight: bold;
+      }
+      padding-left: 2.6rem;
+    }
+  }
+
+  .gbContentSubTitle {
+    position: relative;
+    text-indent: 8.5rem;
+    font: {
+      size: 3.5rem;
+      weight: bold;
+    }
+    margin-top: 10rem;
+    margin-bottom: 6.4375rem;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 6rem;
+      height: 0.5rem;
+      background-color: $main-color;
+      top: 30%;
+      left: 0;
+    }
+  }
+
+  .gbMapImg {
+    margin: 10rem;
+  }
+
+  .gbCasetableBox {
+    .gbCasetable {
+      .gbCasetableLi {
+        display: flex;
+
+        .gbCasetableCom {
+          font-size: 30px;
+        }
+        .gbCasetableCon {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@import '../GlobalStyle.scss';
+
+.gbInner {
+  width: 176.3rem;
+  margin: auto;
+
+  .gbTabTitleBox {
+    width: 176.3rem;
+    border-bottom: 0.1rem solid $basic-gray3;
+    padding-bottom: 1rem;
+    .gbTabTitle {
+      background-image: url(../../img/title_box.png);
+      background-repeat: no-repeat;
+      font: {
+        size: $sub-title;
+        weight: bold;
+      }
+      padding-left: 2.6rem;
+    }
+  }
+
+  .gbContentSubTitle {
+    position: relative;
+    text-indent: 8.5rem;
+    font: {
+      size: $sub-title;
+      weight: bold;
+    }
+    margin-top: 10rem;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 6rem;
+      height: 0.5rem;
+      background-color: $main-color;
+      top: 30%;
+      left: 0;
+    }
+  }
+
+  .gbMaterialTitle {
+    font: {
+      size: $size-lg;
+      weight: bold;
+    }
+    margin-bottom: 4.5rem;
+  }
+
+  .gbMaterialContent {
+    font-size: $list-md;
+    margin-bottom: 4.5rem;
+    line-height: 1.5;
+  }
+
+  .gbProcessImg {
+    margin: 5rem 10rem 10rem;
+  }
+
+  .gbChartBox {
+    margin-top: 7rem;
+    .gbChart {
+      .gbChartListTop {
+        display: flex;
+        font-size: $size-xl;
+        border-top: 0.3rem solid $basic-gray3;
+        border-bottom: 0.3rem solid $basic-gray3;
+        padding: 2rem 0;
+        .gbChartYear {
+          margin-left: 2rem;
+          width: 5.5rem;
+        }
+        .gbChartName {
+          margin-left: 8rem;
+          width: 38rem;
+        }
+        .gbChartCom {
+          margin-left: 15rem;
+          width: 22rem;
+        }
+        .gbChartCon {
+          margin-left: 27rem;
+          width: 52rem;
+        }
+      }
+
+      .gbchartList {
+        display: flex;
+        font-size: $size-xl;
+        border-bottom: 0.1rem solid $basic-gray3;
+        padding: 2rem 0;
+        display: flex;
+        text-align: left;
+        .gbChartYear {
+          margin-left: 2rem;
+          width: 5.5rem;
+        }
+        .gbChartName {
+          margin-left: 8rem;
+          width: 38rem;
+        }
+        .gbChartCom {
+          margin-left: 15rem;
+          width: 22rem;
+        }
+        .gbChartCon {
+          width: 52rem;
+          margin-left: 27rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+.gbInner {
+  width: 176.3rem;
+  margin: auto;
+}
+.gbInner .gbTabTitleBox {
+  width: 176.3rem;
+  border-bottom: 0.1rem solid #333;
+  padding-bottom: 1rem;
+}
+.gbInner .gbTabTitleBox .gbTabTitle {
+  background-image: url(../../img/title_box.png);
+  background-repeat: no-repeat;
+  font-size: 4rem;
+  font-weight: bold;
+  padding-left: 2.6rem;
+}
+.gbInner .gbContentTitle {
+  margin: 13rem auto 7.5rem;
+  width: 115.8rem;
+  font-size: 4.5rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+}
+.gbInner .gbContentSubTitle {
+  position: relative;
+  text-indent: 8.5rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 6.25rem;
+  margin-bottom: 6.4375rem;
+}
+.gbInner .gbContentSubTitle:before {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  height: 0.5rem;
+  background-color: #1527A0;
+  top: 30%;
+  left: 0;
+}
+.gbInner .gbGraphImg {
+  margin-left: 20rem;
+}
+.gbInner .gbPerformanceDes {
+  font-size: 2.6rem;
+  width: 69.6rem;
+  margin: 8rem auto 25.4rem;
+}
+.gbInner .gbMaterialTitle {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 4.5rem;
+}
+.gbInner .gbMaterialContent {
+  font-size: 2.4rem;
+  margin-bottom: 4.5rem;
+  line-height: 1.5;
+}
+.gbInner .gbContentBox {
+  width: 176.3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border: 0.1rem solid #707070;
+  display: flex;
+  margin-bottom: 3.3rem;
+}
+.gbInner .gbContentBox .gbContentBoxT {
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: 1.5;
+  width: 33rem;
+  margin-left: 4.375rem;
+  margin-right: 10.125rem;
+}
+.gbInner .gbContentBox .gbContentBoxC {
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+.gbInner .gbProcessList {
+  display: flex;
+}
+.gbInner .gbProcessList .gbProcessItem {
+  width: 29.2rem;
+  height: 29.2rem;
+  border-radius: 50%;
+  border: 0.1rem solid #1527A0;
+  display: flex;
+  margin-left: 6rem;
+}
+.gbInner .gbProcessList .gbProcessItem .gbProcessItemBox {
+  width: 14rem;
+  height: 12rem;
+  margin-top: 10rem;
+  margin-left: 8rem;
+}
+.gbInner .gbProcessList .gbProcessItem .gbProcessItemBox .gbProcessItemT {
+  color: #1527a0;
+  margin-bottom: 2.4rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.gbInner .gbProcessList .gbProcessItem .gbProcessItemBox .gbProcessItemC {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+.gbInner .gbProcessListDesBox {
+  display: flex;
+  margin-top: 4rem;
+  margin-left: 6rem;
+  width: 170rem;
+  justify-content: space-between;
+}
+.gbInner .gbProcessListDesBox .gbProcessListDes {
+  width: 21rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.gbInner .gbProcessListDesBox .gbProcessListDes:first-child {
+  margin-left: 3rem;
+}
+.gbInner .gbProcessListDesBox .gbProcessListDes:last-child {
+  margin-right: 3rem;
+}/*# sourceMappingURL=gbStrategy.css.map */

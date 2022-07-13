@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+.gbInner {
+  width: 176.3rem;
+  margin: auto;
+}
+.gbInner .gbTabTitleBox {
+  width: 176.3rem;
+  border-bottom: 0.1rem solid #333;
+  padding-bottom: 1rem;
+}
+.gbInner .gbTabTitleBox .gbTabTitle {
+  background-image: url(../../img/title_box.png);
+  background-repeat: no-repeat;
+  font-size: 4rem;
+  font-weight: bold;
+  padding-left: 2.6rem;
+}
+.gbInner .gbContentSubTitle {
+  position: relative;
+  text-indent: 8.5rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 10rem;
+  margin-bottom: 6.4375rem;
+}
+.gbInner .gbContentSubTitle:before {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  height: 0.5rem;
+  background-color: #1527A0;
+  top: 30%;
+  left: 0;
+}
+.gbInner .gbMapImg {
+  margin: 10rem;
+}
+.gbInner .gbCasetableBox .gbCasetable .gbCasetableLi {
+  display: flex;
+}
+.gbInner .gbCasetableBox .gbCasetable .gbCasetableLi .gbCasetableCom {
+  font-size: 30px;
+}
+.gbInner .gbCasetableBox .gbCasetable .gbCasetableLi .gbCasetableCon {
+  font-size: 30px;
+}/*# sourceMappingURL=gbCase.css.map */
