@@ -1,7 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import Search from './Search';
 
 const Util = () => {
+  let [block, setBlock] = useState(false);
+  var clickCount = 0;
+
+  function blockEvent() {
+    clickCount = clickCount + 1;
+    console.log(clickCount);
+    if (clickCount % 2 === 1) {
+      setBlock(true)
+    } else if (clickCount % 2 === 0) {
+      setBlock(false)
+    }
+  }
+
   return (
     <div className='hdUtil'>
       <div className='hdLang'>
@@ -11,8 +26,14 @@ const Util = () => {
           <li><Link to={''}>CHN</Link></li>
         </ul>
       </div>
-      <button className='hdSearchBtn'>search</button>
+
+      <button onClick={() => { blockEvent() }} className='hdSearchBtn'></button>
+      {
+        block !== false ? <Search /> : null
+      }
+
       <button className='hdSitemapBtn'>sitemap</button>
+
     </div>
   );
 };

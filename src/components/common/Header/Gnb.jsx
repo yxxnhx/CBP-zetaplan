@@ -67,7 +67,7 @@ const Gnb = () => {
             </ul>
           </li>
           <li className='hdMargin'>
-            <a href="#"> 자료</a>
+            <Link to={''}>자료</Link>
             <ul className='hdDep3'>
               <li><Link to={''}>M&A・ 투자정보</Link></li>
               <li><Link to={''}>정부지원사업</Link></li>

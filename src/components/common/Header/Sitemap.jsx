@@ -44,7 +44,7 @@ const Sitemap = () => {
             </ul>
           </li>
           <li className='hdSmList'>
-            <a href="#"><span>투자 IR</span></a>
+            <Link to={''}><span>투자 IR</span></Link>
             <ul className='hdSmList2'>
               <li><Link to={''}>개요</Link></li>
               <li><Link to={''}>사업계획서</Link></li>
@@ -79,7 +79,7 @@ const Sitemap = () => {
             <Link to={''}><span>소식・자료</span></Link>
             <ul className='hdSmList2'>
               <li>
-                <a href="#">소식</a>
+                <Link to={''}>소식</Link>
                 <ul className='hdSmList3'>
                   <li><Link to={''}>NEWS</Link></li>
                   <li><Link to={''}>COLUMN</Link></li>
