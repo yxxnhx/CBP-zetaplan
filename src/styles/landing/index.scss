@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+@import '../GlobalStyle.scss';
+
+.Ld {
+  background: url('./../../img/main/main_galexy_bg@2x.png') ;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  
+}
+
+video {
+  width: 100%;
+}
+.LdTitle {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30rem;
+  justify-content: center;
+  align-items: center;
+}
+.LdTitle p {
+  font-family: NotoSansKR;
+  color: #fff;
+  font-size: 7.4rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.7;
+  z-index: 10;
+  position: absolute;
+}
+
+.LdTitle img {
+  width: 35rem;
+  height: 65rem;
+  align-self: flex-end;
+  margin-right: 35rem;
+  z-index: -10;
+}
+
+.LdDesWord img {
+  height: 15rem;
+}
+
+.LdDesWord {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .LdDesBus {
+    align-self: flex-start;
+    margin-left: 30rem;
+  }
+
+  .LdDesPro {
+    align-self: flex-end;
+    margin-right: 10rem;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .LdDesSpe {
+    margin-right: 30rem;
+    padding-bottom: 10rem;
+  }
+}
+
+.LdStep {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 26rem;
+
+  .LdStepTitle {
+    font-size: 8rem;
+    font-weight: bolder;
+    color: #fff;
+    margin: 46rem 0 19rem;
+    text-align: center;
+  }
+}
+
+.LdStepList {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 7rem;
+
+  &:nth-child(3) {
+    margin-left: 15rem;
+  }
+
+  &:nth-child(4) {
+    margin-left: 30rem;
+  }
+  li {
+    color: #fff;
+    font-size: 3.0rem;
+    z-index: 10;
+    &:first-child {
+      font-family: Baskerville;
+      font-weight: bolder;
+      font-size: 8.2rem;
+      margin-right: 6.3rem;
+      position: relative;
+      margin-left: 4rem;
+      float: left;
+
+      &::after {
+        content: "";
+        display: block;
+        background: url('./../../img/landing/landing_circle@2x.png') no-repeat;
+        background-size: cover;
+        width: 9rem;
+        height: 9rem;
+        position: absolute;
+        top: -4rem;
+        left: -4rem;
+        z-index: -10;
+      }
+    }
+  }
+}
+
+.btnArea {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 11rem;
+
+  button {
+    width: 35rem;
+    height: 8.5rem;
+    line-height: 8.5rem;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 0 3.8rem ;
+  }
+
+}
+
