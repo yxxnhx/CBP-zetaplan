@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+.loginContainer {
+  display: flex;
+  width: 1266px;
+  height: 798px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #f0f0f0;
+  box-shadow: 7px 7px 5px #e0e0e0;
+}
+.loginContainer .logLeftContainer {
+  width: 383px;
+  height: 798px;
+  background: url("../../img/bg/sitemap_bg@2x.png") no-repeat;
+  font-size: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.loginContainer .logLeftContainer .logText {
+  color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  font-size: 3.4rem;
+  margin: 51px 74px 0 31px;
+}
+.loginContainer .logLeftContainer .logText .logTextFirst {
+  font-size: 3.4rem;
+}
+.loginContainer .logLeftContainer .logText .logTextSecond {
+  font-size: 3.3rem;
+}
+.loginContainer .logLeftContainer .loginLogo {
+  width: 211px;
+  height: 57px;
+  margin-bottom: 45.81px;
+  margin-left: 33px;
+  display: block;
+  background: url("../../img/zetaplan_splite.png") no-repeat 1.667% 2.141%;
+  background-size: 599px 280px;
+}
+.loginContainer .logRightContainer {
+  width: 883px;
+  height: 798px;
+}
+.loginContainer .logRightContainer .loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 650px;
+  margin: 0 auto;
+}
+.loginContainer .logRightContainer .loginForm .logIdInput {
+  outline: none;
+  width: 400px;
+  height: 45px;
+  font-size: 1.6rem;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 26px;
+}
+.loginContainer .logRightContainer .loginForm .logIdInput::-moz-placeholder {
+  font-size: 1.6rem;
+}
+.loginContainer .logRightContainer .loginForm .logIdInput:-ms-input-placeholder {
+  font-size: 1.6rem;
+}
+.loginContainer .logRightContainer .loginForm .logIdInput::placeholder {
+  font-size: 1.6rem;
+}
+.loginContainer .logRightContainer .loginForm .logPwdInput {
+  outline: none;
+  width: 400px;
+  height: 45px;
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+.loginContainer .logRightContainer .loginForm .logPwdInput::-moz-placeholder {
+  font-size: 1.6rem;
+}
+.loginContainer .logRightContainer .loginForm .logPwdInput:-ms-input-placeholder {
+  font-size: 1.6rem;
+}
+.loginContainer .logRightContainer .loginForm .logPwdInput::placeholder {
+  font-size: 1.6rem;
+}
+.loginContainer .logRightContainer .loginForm .loginBtn {
+  width: 199px;
+  height: 47px;
+  background-color: #1527A0;
+  color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 30px;
+}/*# sourceMappingURL=login.css.map */

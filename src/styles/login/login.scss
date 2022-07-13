@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+@import '../GlobalStyle.scss';
+
+.loginContainer {
+  display: flex;
+  width: 1266px;
+  height: 798px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid $basic-gray1;
+  box-shadow: 7px 7px 5px $basic-gray2;
+
+  .logLeftContainer {
+    width: 383px;
+    height: 798px;
+    background: url('../../img/bg/sitemap_bg@2x.png') no-repeat;
+    font-size: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .logText {
+      color: $basic-white;
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 900;
+      font-size: 3.4rem;
+      margin: 51px 74px 0 31px;
+      
+      .logTextFirst {
+        font-size: 3.4rem;
+      }
+
+      .logTextSecond {
+        font-size: 3.3rem;
+      }
+    }
+
+    .loginLogo {
+      width: 211px;
+      height: 57px;
+      margin-bottom: 45.81px;
+      margin-left: 33px;
+      display: block;
+      background: url('../../img/zetaplan_splite.png') no-repeat 1.667% 2.141%;
+      background-size: 599px 280px;
+    }
+  }
+
+  .logRightContainer {
+    width: 883px;
+    height: 798px;
+
+    .loginForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      height: 650px;
+      margin: 0 auto;
+
+      .logIdInput {
+        outline: none;
+        width: 400px;
+        height: 45px;
+        font-size: 1.6rem;
+        background-color: $basic-white;
+        border: none;
+        border-bottom: 1px solid $basic-gray2;
+        margin-bottom: 26px;
+        &::placeholder {
+          font-size: 1.6rem;
+        }
+      }
+      
+      .logPwdInput {
+        outline: none;
+        width: 400px;
+        height: 45px;
+        font-size: 1.6rem;
+        border: none;
+        border-bottom: 1px solid $basic-gray2;
+
+        &::placeholder {
+          font-size: 1.6rem;
+        }
+      }
+
+      .loginBtn {
+        width: 199px;
+        height: 47px;
+        background-color: #1527A0;
+        color: #fff;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+    }
+  }
+}
