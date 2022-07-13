@@ -2,7 +2,7 @@ import React from 'react';
 import './../../styles/ir/irPlan.scss'
 const IrPlan = () => {
   return (
-    <div>
+    <div className='inner'>
       <div className="irSubtitle">사업계획서</div>
       <ul className='irCircle'>
         <li>핵심요약<br />(Executive Summary)</li>

@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+.container {
+  width: 100%;
+  max-width: 170rem;
+  margin: auto;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 170rem;
+  margin: 18px auto;
+}
+.accordion .accordionHeading {
+  border: 1px solid #1527A0;
+  padding: 14px 0;
+}
+.accordion .accordionHeading .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion .accordionHeading .container p {
+  font-size: 2.4rem;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  margin: 3rem 5.4rem;
+}
+.accordion .accordionHeading .container span {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -194px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+  cursor: pointer;
+  margin-right: 4rem;
+  font-size: 0;
+}
+.accordion .accordionContent {
+  border: 1px solid #333;
+  height: 0;
+  opacity: 0;
+  display: flex;
+  overflow: hidden;
+  transform: all 600ms ease-in-out;
+}
+.accordion .accordionContent p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.accordionContent .show {
+  height: 18rem;
+  opacity: 1;
+}/*# sourceMappingURL=Accordion.css.map */

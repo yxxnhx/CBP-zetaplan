@@ -3,7 +3,7 @@ import './../../styles/ir/index.scss'
 
 const Ir = () => {
   return (
-    <div>
+    <div className='inner'>
       <div className="irSubtitle">개요</div>
       <div className="irSubImg"></div>
       <div className="irContent">

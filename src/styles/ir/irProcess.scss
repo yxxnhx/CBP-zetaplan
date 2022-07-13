@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
 @import '../GlobalStyle.scss';
 
+.inner {
+  @include Inner
+}
+
 .irSubtitle {
   @include Subtitle($sub-title, $basic-gray3)
 }
@@ -19,7 +23,7 @@
 }
 
 .irContentT {
-  font-size: 2.6rem;
+  font-size: $size-lg;
   font-weight: bold;
   margin-bottom: 5rem;
 }
@@ -40,7 +44,7 @@
     margin-right: 9rem;
 
     li {
-      font-size: 2.0rem;
+      font-size: $size-sm;
       width: 22rem;
       text-align: center;
     }
@@ -123,7 +127,7 @@
     padding: 2rem;
     li {
       color: #333;
-      font-size: 2.0rem;
+      font-size: $size-sm;
       width: 22rem;
       text-align: center;
     }
@@ -131,14 +135,14 @@
 }
 
 .irProText {
-  font-size: 2.0rem;
+  font-size: $size-sm;
   line-height: 1.7;
   margin: 2rem 0 4rem;
 }
 
 .content {
   h2 {
-    font-size: 3.0rem;
+    font-size: $size-xl;
     font-weight: bold;
     
   }

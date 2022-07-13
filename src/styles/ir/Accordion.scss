@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+@import '../GlobalStyle.scss';
+
+
+.container {
+  width: 100%;
+  max-width: 170rem;
+  margin: auto;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 170rem;
+  margin: 18px auto;
+
+  .accordionHeading {
+    border: 1px solid $main-color;
+    padding: 14px 0;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      p {
+        font-size: $size-xl;
+        letter-spacing: 1.2px;
+        font-weight: bold;
+        margin: 3rem 5.4rem;
+      }
+      
+      span {
+        background: url('./../../img/zetaplan_splite.png') no-repeat -137px -194px;
+        background-size: 599px 280px;
+        width: 22px;
+        height: 14px;
+        cursor: pointer;
+        margin-right: 4rem;
+        font-size: 0;
+      }
+    }
+  }
+
+  .accordionContent {
+    border: 1px solid $basic-gray3;
+    height: 0;
+    opacity: 0;
+    display: flex;
+    overflow: hidden;
+    transform: all 600ms ease-in-out;
+    p {
+      font-size: $size-sm;
+      line-height: 1.6;
+    }
+  }
+
+}
+
+.accordionContent .show {
+  height: 18rem;
+  opacity: 1;
+}

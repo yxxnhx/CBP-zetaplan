@@ -3,7 +3,7 @@ import './../../styles/ir/irPerfo.scss'
 
 const IrPerfo = () => {
   return (
-    <div>
+    <div className='inner'>
       <div className="irSubtitle">성과</div>
       <div className="irPerfoContent">
         <ul className='irPerfoContentBox'>

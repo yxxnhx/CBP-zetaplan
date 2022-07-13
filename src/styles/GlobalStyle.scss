@@ -9,12 +9,12 @@ $basic-gray3:#333;
 $basic-black:#000;
 $basic-white:#fff;
 $main-title: 4.5rem;
-$sub-title: 4.0rem;
-$size-xl: 3.0rem;
-$size-lg: 2.6rem;
-$list-md: 2.4rem;
-$size-sm: 2.0rem;
-$size-xs: 1.8rem;
+$sub-title: 3.2rem;
+$size-xl: 2.4rem;
+$size-lg: 2.08rem;
+$list-md: 1.92rem;
+$size-sm: 1.6rem;
+$size-xs: 1.44rem;
 
 @mixin Subtitle($sub, $basic) {
   font-size: $sub;
@@ -86,4 +86,9 @@ $size-xs: 1.8rem;
       display: none;
     }
   }
+}
+
+@mixin Inner {
+  width: 1600px;
+  margin: 8rem auto
 }

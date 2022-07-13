@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+.inner {
+  width: 1600px;
+  margin: 8rem auto;
+}
+
 .irSubtitle {
   font-size: 4rem;
   font-weight: 900;
@@ -34,7 +39,7 @@
   width: 150rem;
   justify-content: center;
   align-items: center;
-  margin: 8.5rem 0;
+  margin: 8.5rem auto;
 }
 .irCircle li {
   width: 24rem;
@@ -96,7 +101,7 @@
   font-weight: bold;
   display: flex;
   position: relative;
-  padding-left: 5rem;
+  margin-left: 9rem;
 }
 .irBusinessContent .irBnIndex .irBnStep::before {
   content: "";
@@ -104,7 +109,7 @@
   height: 3px;
   background-color: #1527A0;
   top: 10px;
-  left: -2.6rem;
+  left: -8.6rem;
   position: absolute;
 }
 .irBusinessContent .irBnIndex .irBnStep ul {
