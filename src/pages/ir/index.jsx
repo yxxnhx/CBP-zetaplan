@@ -5,7 +5,9 @@ const Ir = () => {
   return (
     <div className='inner'>
       <div className="irSubtitle">개요</div>
-      <div className="irSubImg"></div>
+      <div className="irSubImg">
+        <img src={require('./../../img/ir/ir_summery@2x.png')} alt="ir 개요" />
+      </div>
       <div className="irContent">
         <div className="irSubTitle">소재부품 투자 IR 사업</div>
         <div className="irSubTxt">기업과 투자기관 간 정보비대칭성 해소를 통해 기업의 투자유치와 투자기관의 기업발굴을 촉진하기 위한 IR 시스템의 상시화 추진과 투자유치 희망 소재부품 기업 발굴 및 투자유치 지원(기술평가, IR 컨설팅, IR 개최 등)을 통해 소재·부품분야 투자 활성화 도모합니다</div>
@@ -46,7 +48,9 @@ const Ir = () => {
       </div>
       <div className="irContent">
         <div className="irListTitle">Process</div>
-        <div className="irListProcessImg"></div>
+        <div className="irListProcessImg">
+          <img src={require('./../../img/ir/ir_index_process@2x.png')} alt="ir 프로세스" />
+        </div>
       </div>
       <div className="irContent">
         <div className="irListTitle">신청자격</div>

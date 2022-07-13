@@ -39,6 +39,8 @@
   display: flex;
   overflow: hidden;
   transform: all 600ms ease-in-out;
+  width: 100%;
+  max-width: 170rem;
 }
 .accordion .accordionContent .container p {
   font-size: 1.6rem;

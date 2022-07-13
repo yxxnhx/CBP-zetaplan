@@ -2,7 +2,7 @@
 @import '../GlobalStyle.scss';
 
 .inner {
-  @include Inner
+  @include Inner;
 }
 
 .irSubtitle {
@@ -10,11 +10,14 @@
 };
 
 .irSubImg {
-  background: url(./../../img/ir/ir_summery@2x.png) no-repeat;
-  background-size: cover;
-  height: 980px;
+  display: flex;
+  justify-content: center;
+}
+
+.irSubImg  img {
+  height: 90rem;
   width: auto;
-  margin: 7rem 0 27rem;
+  margin: 7rem 0 10rem;
 }
 
 .irContent {
@@ -24,14 +27,14 @@
     font-weight: 900;
     padding-left: 3rem;
     position: relative;
-    margin: 1rem;
+    margin: 1rem 0 3rem;
     &::before {
       content: "";
       display: block;
       background: url('./../../img/title_box@2x.png') no-repeat;
       background-size: contain;
       width: 1rem;
-      height: 4rem;
+      height: 3rem;
       position: absolute;
       top: 0;
       left: 0;
@@ -81,11 +84,14 @@
     
   }
 }
+
 .irListProcessImg {
-  background: url('./../../img/ir/ir_index_process@2x.png') no-repeat;
-  background-size: contain;
+  display: flex;
+  justify-content: center;
+}
+.irListProcessImg img{
   width: auto;
-  height: 110rem;
+  height: 90rem;
 }
 .irListDes {
   font-size: $list-md;
