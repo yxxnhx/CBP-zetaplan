@@ -34,7 +34,7 @@ const Gnb = () => {
         </ul>
       </li>
       <li className='hdDep1'>
-        <Link to={'/global'} className='hdSub'>해외진출</Link>
+        <Link to={'/Gbindex'} className='hdSub'>해외진출</Link>
         <ul className='hdDep2'>
           <li><a href="#">개요</a></li>
           <li><a href="#">전략수립</a></li>

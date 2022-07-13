@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+
+@import '../GlobalStyle.scss'
+;
+
+
+/* header 전체 */
+header {
+  width: 100%;
+  height: 12.1rem;
+  background-color: $basic-black;
+  /*background: url(../../img/main/banner/mainbanner01.png) no-repeat center / cover;
+  overflow: hidden; */
+  position: relative;
+
+  .hd {
+    width: 100%;
+    height: 12.1rem;
+    display: flex;
+    justify-content: space-between;
+    color: $basic-white;
+
+    .hdLogo {
+      display: block;
+      margin-top: 4.1rem;
+      margin-left: 7.8rem;
+      font-size: 0;
+      background: url('../../img/zetaplan_splite.png') no-repeat -7px -5px;
+      background-size: 560px 240px;
+      width: 209px;
+      height: 47px;
+    }
+  }
+}
+
+
+/* gnb */
+.hdGnbArea {
+  display: flex;
+  justify-content: space-between;
+
+  .hdDep1 {
+    &:hover>.hdDep2 {
+      display: flex;
+    }
+
+    &:hover>.hdSub {
+      color: $main-color;
+    }
+
+    .hdSub {
+      font-size: 1.8rem;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      display: block;
+      width: 12.5rem;
+      height: 12.1rem;
+      line-height: 12.1rem;
+      text-align: center;
+    }
+
+    .hdDep2 {
+      position: absolute;
+      top: 12.1rem;
+      left: 0;
+      background-color: #f9f9f9;
+      color: $basic-black;
+      width: 100vw;
+      min-height: 100px;
+      display: none;
+      justify-content: center;
+      border-top: 1px solid $basic-gray2;
+
+      .hdMargin {
+        margin-left: 3.5rem;
+      }
+
+      >li {
+        padding: 2rem;
+
+        &:hover {
+          background-color: rgba(21, 39, 160, 0.13);
+        }
+
+        >a {
+          display: block;
+          font-size: $size-sm;
+          font-family: 'Noto Sans KR';
+          font-weight: 700;
+        }
+
+        .hdDep3 {
+          li {
+            margin-top: 2rem;
+
+            a {
+              font-family: 'Noto Sans KR';
+              font-weight: 400;
+              font-size: 1.3rem;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* util */
+.hdUtil {
+  width: 15rem;
+  height: 12.1rem;
+  padding-top: 5.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 7.8rem;
+
+  .hdLang {
+    >a {
+      font-size: 1.5rem;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      display: block;
+      height: 3rem;
+    }
+
+    &:hover>.hdLangLi {
+      display: block;
+    }
+
+    .hdLangLi {
+      display: none;
+
+      a {
+        font-size: 1.5rem;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        display: block;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  .hdSearchBtn {
+    background: url('../../img/zetaplan_splite.png') no-repeat -40.3rem -11.4rem;
+    background-size: 59.9rem 28rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    font-size: 0;
+  }
+
+  .hdSitemapBtn {
+    background: url('../../img/zetaplan_splite.png') no-repeat -47.1rem -11.7rem;
+    background-size: 59.9rem 28rem;
+    width: 2.1rem;
+    height: 1.3rem;
+    font-size: 0;
+  }
+}
+
+
+
+
+/* search 창 */
+
+.hdSearch {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+
+  .hdSearchWrap {
+    width: 100%;
+    height: 35rem;
+    background-color: #F9F9F9;
+
+    .hdSearchContent {
+      width: 70rem;
+      margin: auto;
+      padding: 8rem;
+
+      .hdSearchInput {
+        position: relative;
+
+        input {
+          width: 50rem;
+          height: 5rem;
+          border-radius: 3rem;
+          border: 1px solid $basic-gray2;
+          background-color: $basic-white;
+          padding: 2rem;
+          font-size: 1.4rem;
+          font-family: 'Noto Sans KR';
+          font-weight: 700;
+          color: #707070;
+        }
+
+        button {
+          background: url('../../img/zetaplan_splite.png') no-repeat -45.2rem -8rem;
+          background-size: 52rem 23rem;
+          width: 3rem;
+          height: 3rem;
+          position: absolute;
+          top: 1rem;
+          right: 5.5rem;
+          font-size: 0;
+        }
+      }
+
+      .hdButtonsArea {
+        p {
+          font-size: 1.2rem;
+          color: #707070;
+          font-family: 'Noto Sans KR';
+          font-weight: 500;
+          margin-top: 5.7rem;
+        }
+
+        .hdButtons {
+          display: flex;
+          margin-top: 2.5rem;
+
+          button {
+            border: 1px solid $basic-gray2;
+            border-radius: 0.5rem;
+            padding: 1rem 1.7rem;
+            margin-right: 2rem;
+            font-family: 'Noto Sans KR';
+            font-weight: 400;
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* sitemap */
+
+.hdSitemap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $basic-white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+  z-index: -1000;
+
+  .hdSmLeft {
+    background: url(../../img/bg/consul_bg@2x.png) no-repeat center / cover;
+    width: 35%;
+    height: 100vh;
+
+    h2 {
+      margin-top: 6rem;
+      margin-left: 6rem;
+      background: url('../../img/zetaplan_splite.png') no-repeat -7px -5px;
+      background-size: 570px 250px;
+      width: 209px;
+      height: 47px;
+      font-size: 0;
+    }
+
+    p {
+      margin-left: 6rem;
+      color: $basic-white;
+    }
+
+    p:nth-child(2) {
+      font-size: $main-title;
+      font-family: 'Noto Sans KR';
+      font-weight: 900;
+      line-height: 6rem;
+      margin-top: 10rem;
+    }
+
+    p:nth-child(3) {
+      font-size: 2.5rem;
+      font-family: 'Noto Sans KR';
+      font-weight: 400;
+      line-height: $main-title;
+      margin-top: 20rem;
+    }
+  }
+
+  .hdSmRight {
+    width: 65%;
+    height: 100vh;
+
+    .hdSmArea {
+      margin-left: 15rem;
+      margin-top: 10rem;
+
+      .hdSmList {
+        display: flex;
+        margin-bottom: 5rem;
+        position: relative;
+
+        >a {
+          font-size: 2.5rem;
+          width: 20rem;
+          font-family: 'Montserrat';
+          font-weight: 700;
+
+          span {
+            position: relative;
+            font-size: 2.5rem;
+            width: 20rem;
+            font-family: 'Montserrat';
+            font-weight: 700;
+
+            &::after {
+              content: '';
+              height: 1rem;
+              width: 100%;
+              background-color: rgba(21, 39, 158, 0.502);
+              position: absolute;
+              top: $size-sm;
+              left: 0;
+              opacity: 0;
+            }
+
+          }
+        }
+
+        .hdSmList2 {
+          display: flex;
+
+          .hdSmMargin {
+            margin-left: 3.5rem;
+          }
+
+          li {
+            margin-right: 2.5rem;
+            line-height: 2.5rem;
+
+            &:hover>a {
+              color: $main-color;
+            }
+
+            >a {
+              font-size: 1.5rem;
+              font-family: 'Noto Sans KR';
+              font-weight: 700;
+            }
+
+            .hdSmList3 {
+              li {
+                a {
+                  font-size: 1.3rem;
+                  font-family: 'Noto Sans KR';
+                  font-weight: 400;
+                }
+
+                &:hover>a {
+                  color: $main-color;
+                }
+              }
+            }
+          }
+        }
+
+        &:hover>a>span::after {
+          opacity: 1;
+        }
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 6rem;
+      right: 5rem;
+      background: url('../../img/zetaplan_splite.png') no-repeat -574px -101px;
+      background-size: 599px 280px;
+      width: 19px;
+      height: 18px;
+      font-size: 0;
+    }
+
+  }
+}

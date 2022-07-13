@@ -4,6 +4,7 @@ import Gnb from './Gnb';
 import Util from './Util';
 import Search from './Search';
 import Sitemap from './Sitemap';
+import '../../../styles/header/Header.scss'
 
 const Header = () => {
   return (
