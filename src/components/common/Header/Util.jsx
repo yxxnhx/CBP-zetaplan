@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const Util = () => {
   return (
     <div className='hdUtil'>
       <div className='hdLang'>
-        <a href="#">KOR</a>
+        <Link to={''}>KOR</Link>
         <ul className='hdLangLi'>
-          <li><a href="#">ENG</a></li>
-          <li><a href="#">CHN</a></li>
+          <li><Link to={''}>ENG</Link></li>
+          <li><Link to={''}>CHN</Link></li>
         </ul>
       </div>
       <button className='hdSearchBtn'>search</button>

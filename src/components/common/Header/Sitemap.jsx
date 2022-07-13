@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const Sitemap = () => {
   return (
@@ -23,77 +24,77 @@ const Sitemap = () => {
       <div className='hdSmRight'>
         <ul className='hdSmArea'>
           <li className='hdSmList'>
-            <a href="#"><span>Zeta</span></a>
+            <Link to={''}><span>Zeta</span></Link>
             <ul className='hdSmList2'>
-              <li><a href="#">회사소개</a></li>
-              <li><a href="#">연혁</a></li>
-              <li><a href="#">CI</a></li>
-              <li><a href="#">컨설팅 부문</a></li>
-              <li><a href="#">PEOPLE</a></li>
-              <li><a href="#">오시는 길</a></li>
-              <li><a href="#">제휴 네트워크</a></li>
+              <li><Link to={''}>회사소개</Link></li>
+              <li><Link to={''}>연혁</Link></li>
+              <li><Link to={''}>CI</Link></li>
+              <li><Link to={''}>컨설팅 부문</Link></li>
+              <li><Link to={''}>PEOPLE</Link></li>
+              <li><Link to={''}>오시는 길</Link></li>
+              <li><Link to={''}>제휴 네트워크</Link></li>
             </ul>
           </li>
           <li className='hdSmList'>
-            <a href="#"><span>M&A / IPO</span></a>
+            <Link to={''}><span>M&A / IPO</span></Link>
             <ul className='hdSmList2'>
-              <li><a href="#">개요</a></li>
-              <li><a href="#">Process</a></li>
-              <li><a href="#">성과</a></li>
+              <li><Link to={''}>개요</Link></li>
+              <li><Link to={''}>Process</Link></li>
+              <li><Link to={''}>성과</Link></li>
             </ul>
           </li>
           <li className='hdSmList'>
             <a href="#"><span>투자 IR</span></a>
             <ul className='hdSmList2'>
-              <li><a href="#">개요</a></li>
-              <li><a href="#">사업계획서</a></li>
-              <li><a href="#">Process</a></li>
-              <li><a href="#">성과</a></li>
+              <li><Link to={''}>개요</Link></li>
+              <li><Link to={''}>사업계획서</Link></li>
+              <li><Link to={''}>Process</Link></li>
+              <li><Link to={''}>성과</Link></li>
             </ul>
           </li>
           <li className='hdSmList'>
-            <a href="#"><span>해외진출</span></a>
+            <Link to={''}><span>해외진출</span></Link>
             <ul className='hdSmList2'>
-              <li><a href="#">개요</a></li>
-              <li><a href="#">전략수립</a></li>
-              <li><a href="#">해외진출사례</a></li>
+              <li><Link to={''}>개요</Link></li>
+              <li><Link to={''}>전략수립</Link></li>
+              <li><Link to={''}>해외진출사례</Link></li>
             </ul>
           </li>
           <li className='hdSmList'>
-            <a href="#"><span>경영・평가</span></a>
+            <Link to={''}><span>경영・평가</span></Link>
             <ul className='hdSmList2'>
-              <li><a href="#">개요</a></li>
-              <li><a href="#">기술거래</a></li>
+              <li><Link to={''}>개요</Link></li>
+              <li><Link to={''}>기술거래</Link></li>
               <li>
-                <a href="#">가치평가</a>
+                <Link to={''}>가치평가</Link>
                 <ul className='hdSmList3'>
-                  <li><a href="#">기업가치평가</a></li>
-                  <li><a href="#">기술가치평가</a></li>
+                  <li><Link to={''}>기업가치평가</Link></li>
+                  <li><Link to={''}>기술가치평가</Link></li>
                 </ul>
               </li>
-              <li><a href="#">기업인증</a></li>
+              <li><Link to={''}>기업인증</Link></li>
             </ul>
           </li>
           <li className='hdSmList'>
-            <a href="#"><span>소식・자료</span></a>
+            <Link to={''}><span>소식・자료</span></Link>
             <ul className='hdSmList2'>
               <li>
                 <a href="#">소식</a>
                 <ul className='hdSmList3'>
-                  <li><a href="#">NEWS</a></li>
-                  <li><a href="#">COLUMN</a></li>
+                  <li><Link to={''}>NEWS</Link></li>
+                  <li><Link to={''}>COLUMN</Link></li>
                 </ul>
               </li>
               <li className='hdSmMargin'>
-                <a href="#">자료</a>
+                <Link to={''}>자료</Link>
                 <ul className='hdSmList3'>
-                  <li><a href="#">M&A・ 투자정보</a></li>
-                  <li><a href="#">정부지원사업</a></li>
-                  <li><a href="#">정책자금 / 기업지원</a></li>
-                  <li><a href="#">컨설팅 실적</a></li>
+                  <li><Link to={''}>M&A・ 투자정보</Link></li>
+                  <li><Link to={''}>정부지원사업</Link></li>
+                  <li><Link to={''}>정책자금 / 기업지원</Link></li>
+                  <li><Link to={''}>컨설팅 실적</Link></li>
                 </ul>
               </li>
-              <li><a href="#">Q&A</a></li>
+              <li><Link to={''}>Q&A</Link></li>
             </ul>
           </li>
         </ul>
