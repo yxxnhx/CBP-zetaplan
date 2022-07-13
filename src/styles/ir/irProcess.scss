@@ -26,30 +26,9 @@
   font-size: $size-lg;
   font-weight: bold;
   margin-bottom: 5rem;
+  
 }
 
-.irProCircleContent {
-  width: 170rem;
-  .irProCircleM {
-    @include Circle(170rem, 22rem);
-    margin-bottom: 2.8rem ;
-  }
-
-  .irProCircleDes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 155rem;
-    margin: auto;
-    margin-right: 9rem;
-
-    li {
-      font-size: $size-sm;
-      width: 22rem;
-      text-align: center;
-    }
-  }
-}
 
 .irProCircleS {
   display: flex;
@@ -134,29 +113,84 @@
   }
 }
 
-.irProText {
-  font-size: $size-sm;
-  line-height: 1.7;
-  margin: 2rem 0 4rem;
-}
-
-.content {
-  h2 {
-    font-size: $size-xl;
+.accoCircleArea {
+  .accoContentT {
+    font-size: $size-lg;
     font-weight: bold;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+  }
+  
+  .irProCircleContent {
+    margin: auto 4rem;
+    width: 170rem;
+  }
+  .irProCircleM {
+    @include Circle(150rem, 20rem);
+    margin-bottom: 2.8rem ;
+  }
+  
+  .irProCircleDes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140rem;
+    margin: auto;
+    margin-left: 3rem;
     
+    li {
+      font-size: $size-sm;
+      width: 20rem;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  }
+  
+  .irProText {
+    font-size: $size-sm;
+    line-height: 1.7;
+    text-align: center;
+    margin: 2rem 0 6rem;
+    color: $main-color;
+    font-weight: bold;
+  }
+  
+  .irProCircleAreaS {
+
+    position: relative;
+    .irProCircleSDes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 87rem;
+      margin: auto;
+      position: absolute;
+      right: 35rem;
+      bottom: 13rem;
+  
+      li {
+        font-size: $size-sm;
+        color: #999;
+      }
+    }
+
   }
 }
-.irContentImg {
-  background: url(./../../img/ir/ir_process01@2x.png) no-repeat;
-  background-size: contain;
-  width: auto;
-  height: 70rem; 
-}
+  .irProcess01 {
+    background: url(./../../img/ir/ir_process01@2x.png) no-repeat;
+    background-size: contain;
+    width: 140rem;
+    height: 70rem; 
+    font-size: 0;
+    margin: auto 35rem;
+    padding: 2rem 20rem;
+  }
 
-.irContentConsulImg {
-  background: url(./../../img/ir/ir_process02@2x.png) no-repeat;
-  background-size: contain;
-  width: auto;
-  height: 90rem; 
-}
+  .irProcess02 {
+    background: url(./../../img/ir/ir_process02@2x.png) no-repeat;
+    background-size: contain;
+    width: auto;
+    height: 90rem; 
+    font-size: 0;
+    margin: auto;
+  }

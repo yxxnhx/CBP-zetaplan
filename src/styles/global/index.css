@@ -11,14 +11,14 @@
 .gbInner .gbTabTitleBox .gbTabTitle {
   background-image: url(../../img/title_box.png);
   background-repeat: no-repeat;
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: bold;
   padding-left: 2.6rem;
 }
 .gbInner .gbContentSubTitle {
   position: relative;
   text-indent: 8.5rem;
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: bold;
   margin-top: 10rem;
 }
@@ -32,12 +32,12 @@
   left: 0;
 }
 .gbInner .gbMaterialTitle {
-  font-size: 2.6rem;
+  font-size: 2.08rem;
   font-weight: bold;
   margin-bottom: 4.5rem;
 }
 .gbInner .gbMaterialContent {
-  font-size: 2.4rem;
+  font-size: 1.92rem;
   margin-bottom: 4.5rem;
   line-height: 1.5;
 }
@@ -49,7 +49,7 @@
 }
 .gbInner .gbChartBox .gbChart .gbChartListTop {
   display: flex;
-  font-size: 3rem;
+  font-size: 2.4rem;
   border-top: 0.3rem solid #333;
   border-bottom: 0.3rem solid #333;
   padding: 2rem 0;
@@ -72,7 +72,7 @@
 }
 .gbInner .gbChartBox .gbChart .gbchartList {
   display: flex;
-  font-size: 3rem;
+  font-size: 2.4rem;
   border-bottom: 0.1rem solid #333;
   padding: 2rem 0;
   display: flex;

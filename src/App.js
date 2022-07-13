@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <ResetStyle />
       <BrowserRouter>
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />

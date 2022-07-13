@@ -1,18 +1,18 @@
 import React from 'react';
 import './../../styles/ir/Accordion.scss'
 
-const Accordion = ({title, active, setActive }) => {
+const Accordion = ({title, active, setActive, txt }) => {
   return (
     <div className='accordion'>
-      <div className="accordionHeading">
+      <div className='accordionHeading'  onClick={() => setActive(title)}>
         <div className="container">
           <p>{title}</p>
-          <span onClick={() => setActive(title)}>X</span>
+          <span className={(active === title ? 'up' : 'down') + 'accordionBtn'}></span>
         </div>
       </div>
       <div className={(active === title ? 'show' : '') + 'accordionContent' }>
         <div className="container">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ipsum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ipsum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ipsum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ipsum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ipsum?</p>
+          <p className='accordionTxt'>{txt}</p>
         </div>
       </div>
     </div>

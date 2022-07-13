@@ -6,7 +6,7 @@
 }
 
 .irSubtitle {
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: 900;
   padding-left: 3rem;
   position: relative;
@@ -82,67 +82,9 @@
 }
 
 .irContentT {
-  font-size: 2.6rem;
+  font-size: 2.08rem;
   font-weight: bold;
   margin-bottom: 5rem;
-}
-
-.irProCircleContent {
-  width: 170rem;
-}
-.irProCircleContent .irProCircleM {
-  display: flex;
-  flex-wrap: wrap;
-  width: 170rem;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2.8rem;
-}
-.irProCircleContent .irProCircleM li {
-  width: 22rem;
-  height: 22rem;
-  border-radius: 50%;
-  border: 1px solid #1527A0;
-  margin-right: 4rem;
-  position: relative;
-  font-size: 2.1rem;
-  font-weight: bold;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.7;
-}
-.irProCircleContent .irProCircleM li:hover {
-  background-color: #1527A0;
-  color: #fff;
-}
-.irProCircleContent .irProCircleM li::before {
-  content: "";
-  display: block;
-  width: 4rem;
-  height: 1px;
-  border-bottom: 1px dashed black;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -4rem;
-}
-.irProCircleContent .irProCircleM li:first-child::before {
-  display: none;
-}
-.irProCircleContent .irProCircleDes {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 155rem;
-  margin: auto;
-  margin-right: 9rem;
-}
-.irProCircleContent .irProCircleDes li {
-  font-size: 2rem;
-  width: 22rem;
-  text-align: center;
 }
 
 .irProCircleS {
@@ -218,32 +160,117 @@
 }
 .irProCircleAreaS .irProCircleSDetail li {
   color: #333;
-  font-size: 2rem;
+  font-size: 1.6rem;
   width: 22rem;
   text-align: center;
 }
 
-.irProText {
-  font-size: 2rem;
-  line-height: 1.7;
-  margin: 2rem 0 4rem;
+.accoCircleArea .accoContentT {
+  font-size: 2.08rem;
+  font-weight: bold;
+  margin-bottom: 5rem;
+  margin-left: 3rem;
 }
-
-.content h2 {
-  font-size: 3rem;
+.accoCircleArea .irProCircleContent {
+  margin: auto 4rem;
+  width: 170rem;
+}
+.accoCircleArea .irProCircleM {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.8rem;
+}
+.accoCircleArea .irProCircleM li {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 1px solid #1527A0;
+  margin-right: 4rem;
+  position: relative;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+}
+.accoCircleArea .irProCircleM li:hover {
+  background-color: #1527A0;
+  color: #fff;
+}
+.accoCircleArea .irProCircleM li::before {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 1px;
+  border-bottom: 1px dashed black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -4rem;
+}
+.accoCircleArea .irProCircleM li:first-child::before {
+  display: none;
+}
+.accoCircleArea .irProCircleDes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140rem;
+  margin: auto;
+  margin-left: 3rem;
+}
+.accoCircleArea .irProCircleDes li {
+  font-size: 1.6rem;
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.accoCircleArea .irProText {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  text-align: center;
+  margin: 2rem 0 6rem;
+  color: #1527A0;
   font-weight: bold;
 }
-
-.irContentImg {
-  background: url(./../../img/ir/ir_process01@2x.png) no-repeat;
-  background-size: contain;
-  width: auto;
-  height: 70rem;
+.accoCircleArea .irProCircleAreaS {
+  position: relative;
+}
+.accoCircleArea .irProCircleAreaS .irProCircleSDes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 87rem;
+  margin: auto;
+  position: absolute;
+  right: 35rem;
+  bottom: 13rem;
+}
+.accoCircleArea .irProCircleAreaS .irProCircleSDes li {
+  font-size: 1.6rem;
+  color: #999;
 }
 
-.irContentConsulImg {
+.irProcess01 {
+  background: url(./../../img/ir/ir_process01@2x.png) no-repeat;
+  background-size: contain;
+  width: 140rem;
+  height: 70rem;
+  font-size: 0;
+  margin: auto 35rem;
+  padding: 2rem 20rem;
+}
+
+.irProcess02 {
   background: url(./../../img/ir/ir_process02@2x.png) no-repeat;
   background-size: contain;
   width: auto;
   height: 90rem;
+  font-size: 0;
+  margin: auto;
 }/*# sourceMappingURL=irProcess.css.map */
