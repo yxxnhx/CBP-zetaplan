@@ -23,7 +23,7 @@ const Sitemap = () => {
       <div className='hdSmRight'>
         <ul className='hdSmArea'>
           <li className='hdSmList'>
-            <a href="#">Zeta</a>
+            <a href="#"><span>Zeta</span></a>
             <ul className='hdSmList2'>
               <li><a href="#">회사소개</a></li>
               <li><a href="#">연혁</a></li>
@@ -35,7 +35,7 @@ const Sitemap = () => {
             </ul>
           </li>
           <li className='hdSmList'>
-            <a href="#">M&A / IPO</a>
+            <a href="#"><span>M&A / IPO</span></a>
             <ul className='hdSmList2'>
               <li><a href="#">개요</a></li>
               <li><a href="#">Process</a></li>
@@ -43,7 +43,7 @@ const Sitemap = () => {
             </ul>
           </li>
           <li className='hdSmList'>
-            <a href="#">투자 IR</a>
+            <a href="#"><span>투자 IR</span></a>
             <ul className='hdSmList2'>
               <li><a href="#">개요</a></li>
               <li><a href="#">사업계획서</a></li>
@@ -52,7 +52,7 @@ const Sitemap = () => {
             </ul>
           </li>
           <li className='hdSmList'>
-            <a href="#">해외진출</a>
+            <a href="#"><span>해외진출</span></a>
             <ul className='hdSmList2'>
               <li><a href="#">개요</a></li>
               <li><a href="#">전략수립</a></li>
@@ -60,7 +60,7 @@ const Sitemap = () => {
             </ul>
           </li>
           <li className='hdSmList'>
-            <a href="#">경영・평가</a>
+            <a href="#"><span>경영・평가</span></a>
             <ul className='hdSmList2'>
               <li><a href="#">개요</a></li>
               <li><a href="#">기술거래</a></li>
@@ -75,7 +75,7 @@ const Sitemap = () => {
             </ul>
           </li>
           <li className='hdSmList'>
-            <a href="#">소식・자료</a>
+            <a href="#"><span>소식・자료</span></a>
             <ul className='hdSmList2'>
               <li>
                 <a href="#">소식</a>
