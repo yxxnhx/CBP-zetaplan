@@ -7,15 +7,40 @@ $header-height: 12.1rem;
 
 
 /* header 전체 */
+/* 서브 페이지에 헤더 배경 하얀색, 기본틀
+header.hdSubStyle {
+  color: red;
+} 
+*/
+
 header {
   width: 100%;
-  height: 100vh
-    /* $header-height */
-  ;
-  /* background-color: $basic-black; */
-  background: url(../../img/main/banner/mainbanner01.png) no-repeat center / cover;
+  height: $header-height;
+  background-color: $basic-black;
+  /* background: url(../../img/main/banner/mainbanner01.png) no-repeat center / cover; */
   position: relative;
   z-index: 1000;
+
+  &:hover>.hd {
+    background-color: $basic-white;
+    color: $basic-black;
+
+  }
+
+  &:hover>.hd .hdLogo {
+    background: url('../../img/zetaplan_splite.png') no-repeat -241px -8px;
+    background-size: 599px 280px;
+    width: 209px;
+    height: 46px;
+  }
+
+  &:hover .hdUtil .hdSearchBtn {
+    border: 1px solid black;
+  }
+
+  &:hover .hdUtil .hdSitemapBtn {
+    border: 1px solid black;
+  }
 
   .hd {
     width: 100%;
@@ -29,8 +54,8 @@ header {
       margin-top: 4.1rem;
       margin-left: 7.8rem;
       font-size: 0;
-      background: url('../../img/zetaplan_splite.png') no-repeat -8px -3px;
-      background-size: 560px 250px;
+      background: url('../../img/zetaplan_splite.png') no-repeat -7px -5px;
+      background-size: 599px 280px;
       width: 209px;
       height: 47px;
     }
