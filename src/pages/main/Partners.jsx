@@ -33,14 +33,12 @@ const Partners = () => {
           pagination={pagination}
           loop={true}
           autoplay={{
-            delay: 2500,
+            delay: 1500,
             disableOnInteraction: true,
             pauseOnMouseEnter:true,
           }}
           spaceBetween={3}
           slidesPerView={7}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           <div className="netLogoList">
             {
@@ -62,15 +60,13 @@ const Partners = () => {
           pagination={pagination}
           loop={true}
           autoplay={{
-            delay: 2500,
+            delay: 1500,
             disableOnInteraction: true,
             pauseOnMouseEnter:true,
             reverseDirection:true,
           }}
           spaceBetween={3}
           slidesPerView={7}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           <div className="netLogoList">
             {

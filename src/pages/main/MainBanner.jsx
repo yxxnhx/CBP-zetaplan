@@ -23,15 +23,13 @@ const MainBanner = () => {
         navigation={true}
         effect={'fade'}
         pagination={pagination}
-        loop={true} //무한루프
+        loop={true} 
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        spaceBetween={0} //슬라이더 사이 마진
-        slidesPerView={1} //한번에 보여지는 개수
-        onSlideChange={() => console.log('slide change')} //콜백함수 슬라이더 넘길 때마다 호출
-        onSwiper={(swiper) => console.log(swiper)}
+        spaceBetween={0}
+        slidesPerView={1}
       >
         <SwiperSlide>
           <div className="mainBanner">
@@ -60,7 +58,6 @@ const MainBanner = () => {
             </div>
           </div>
         </SwiperSlide>
-        {/* <div className="pagination-box"></div> */}
       </Swiper>
     </div>
   );
