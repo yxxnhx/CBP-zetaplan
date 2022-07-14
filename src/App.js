@@ -18,6 +18,10 @@ import { useState } from 'react';
 */
 import MaipoInfo from './pages/maipo/MaipoInfo';
 import Qna from './pages/notice/Qna';
+import Footer from './components/common/Footer/index';
+import ZetaNetwork from './pages/zeta/ZetaNetwork';
+import ZetaCi from './pages/zeta/ZetaCi';
+import Zeta from './pages/zeta/index';
 
 function App() {
   /* 서브 페이지에 헤더 배경 하얀색 주려고 넣은 것, 지우지 말아주세요
