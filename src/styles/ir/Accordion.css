@@ -32,6 +32,26 @@
   font-weight: bold;
   margin: 1.7rem 5.4rem;
 }
+.accordion .onaccordionHeading {
+  background-color: #1527A0;
+  color: #fff;
+  letter-spacing: 1.2px;
+  padding: 10px 0;
+}
+.accordion .onaccordionHeading p {
+  font-size: 2.08rem;
+  font-weight: bold;
+  margin: 1.7rem 5.4rem;
+}
+.accordion .onaccordionHeading span {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -235px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+  cursor: pointer;
+  margin-right: 4rem;
+  font-size: 0;
+}
 .accordion .accordionContent {
   border: 1px solid #333;
   height: 0;
@@ -65,14 +85,13 @@
   padding: 2rem;
 }
 
-.downaccordionBtn {
+.accordionBtn {
   background: url("./../../img/zetaplan_splite.png") no-repeat -137px -194px;
   background-size: 599px 280px;
   width: 22px;
   height: 14px;
   cursor: pointer;
   margin-right: 4rem;
-  font-size: 0;
 }
 
 .upaccordionBtn {
@@ -82,5 +101,4 @@
   height: 14px;
   cursor: pointer;
   margin-right: 4rem;
-  font-size: 0;
 }/*# sourceMappingURL=Accordion.css.map */

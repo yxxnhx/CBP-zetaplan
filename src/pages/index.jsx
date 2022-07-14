@@ -1,9 +1,15 @@
 import React from 'react';
+import MainBanner from './main/MainBanner';
+import Partners from './main/Partners';
+import GlobalNetwork from './main/GlobalNetwork';
+
 
 const Index = () => {
   return (
     <div>
-      <h1>메인페이지</h1>
+      <MainBanner />
+      <Partners />
+      <GlobalNetwork />
     </div>
   );
 };

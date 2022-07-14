@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+@import '../GlobalStyle.scss';
+
+.mainBanner {
+width: 100vw;
+  img {
+    width: 100%;
+    height: 90rem;
+  }
+  .mainTitle {
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10rem;
+      font-weight: bolder;
+      color: #fff;
+      position: absolute;
+      top: 24%;
+      left: 6%;
+    }
+    h2 {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 3.7rem;
+      line-height: 1.7;
+      color: #fff;
+      position: absolute;
+      top: 40%;
+      left: 6%;
+    }
+  }
+}
+
+.swiper-button-prev {
+  background: url('../../../src/img/zetaplan_splite.png') no-repeat -395px -447px;
+	width: 16px;
+	height: 26px;
+  left: 11.1rem;
+  right: auto;
+  top: 83rem;
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-button-next {
+  background: url('../../../src/img/zetaplan_splite.png') no-repeat -477px -449px;
+	width: 16px;
+	height: 25px;
+  right: 150rem;
+  left: auto;
+  top: 83rem;
+
+  &::after {
+    display: none;
+  }
+}

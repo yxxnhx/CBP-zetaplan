@@ -16,6 +16,9 @@ $list-md: 1.92rem;
 $size-sm: 1.6rem;
 $size-xs: 1.44rem;
 
+* {
+  font-family:'Roboto','Noto Sans KR',sans-serif;
+}
 @mixin Subtitle($sub, $basic) {
   font-size: $sub;
   font-weight: 900;
