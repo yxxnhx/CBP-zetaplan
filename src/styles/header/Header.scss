@@ -9,7 +9,9 @@ $header-height: 12.1rem;
 /* header 전체 */
 header {
   width: 100%;
-  height: $header-height;
+  height: 100vh
+    /* $header-height */
+  ;
   /* background-color: $basic-black; */
   background: url(../../img/main/banner/mainbanner01.png) no-repeat center / cover;
   position: relative;
@@ -27,8 +29,8 @@ header {
       margin-top: 4.1rem;
       margin-left: 7.8rem;
       font-size: 0;
-      background: url('../../img/zetaplan_splite.png') no-repeat -7px -5px;
-      background-size: 560px 240px;
+      background: url('../../img/zetaplan_splite.png') no-repeat -8px -3px;
+      background-size: 560px 250px;
       width: 209px;
       height: 47px;
     }
@@ -45,7 +47,6 @@ header {
     &:hover>.hdDep2 {
       visibility: visible;
       height: 20rem;
-      text-indent: 0;
       transition: 1s;
     }
 
@@ -76,7 +77,8 @@ header {
       justify-content: center;
       border-top: 1px solid $basic-gray2;
       visibility: hidden;
-      text-indent: -10px;
+      overflow: hidden;
+
 
 
       >li {
@@ -258,21 +260,32 @@ header {
 
 /* sitemap */
 
-.hdSitemap {
-  position: relative;
+.hdModal {
+  position: fixed;
   top: 0;
-  left: 0;
+  left: 100vw;
   background-color: $basic-white;
+  width: 100vw;
+  min-height: 50rem;
+  max-height: 80rem;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.hdModal.hdOpenModal {
+  visibility: visible;
+  left: 0;
+  transition: 1s;
+}
+
+.hdSitemap {
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
-  opacity: 0;
-  z-index: -1000;
 
   .hdSmLeft {
     background: url(../../img/bg/consul_bg@2x.png) no-repeat center / cover;
     width: 35%;
-    height: 100vh;
 
     h2 {
       margin-top: 6rem;
@@ -308,7 +321,8 @@ header {
 
   .hdSmRight {
     width: 65%;
-    height: 100vh;
+    height: 100%;
+    color: $basic-black;
 
     .hdSmArea {
       margin-left: 15rem;
@@ -335,12 +349,11 @@ header {
             &::after {
               content: '';
               height: 1rem;
-              width: 100%;
+              width: 0;
               background-color: rgba(21, 39, 158, 0.502);
               position: absolute;
               top: $size-sm;
               left: 0;
-              opacity: 0;
             }
 
           }
@@ -384,7 +397,8 @@ header {
         }
 
         &:hover>a>span::after {
-          opacity: 1;
+          width: 100%;
+          transition: 0.4s;
         }
       }
     }
@@ -392,7 +406,7 @@ header {
     button {
       position: absolute;
       top: 6rem;
-      right: 5rem;
+      right: 7rem;
       background: url('../../img/zetaplan_splite.png') no-repeat -574px -101px;
       background-size: 599px 280px;
       width: 19px;

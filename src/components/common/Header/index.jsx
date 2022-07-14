@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import Gnb from './Gnb';
 import Util from './Util';
-import Sitemap from './Sitemap';
 import '../../../styles/header/Header.scss'
 
 const Header = () => {
@@ -18,9 +17,6 @@ const Header = () => {
         <Util />
       </div>
       {/* end : header */}
-
-      <Sitemap />
-      {/* sitemap 창 */}
     </header>
   );
 };

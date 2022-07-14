@@ -2,19 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
 import Search from './Search';
+import Sitemap from './Sitemap';
 
 const Util = () => {
   let [block, setBlock] = useState(false);
-  var clickCount = 0;
 
   function blockEvent() {
-    clickCount = clickCount + 1;
-    console.log(clickCount);
-    if (clickCount % 2 === 1) {
+    if (block === false) {
       setBlock(true)
-    } else if (clickCount % 2 === 0) {
+    } else {
       setBlock(false)
     }
+  }
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
   }
 
   return (
@@ -32,7 +39,10 @@ const Util = () => {
         block !== false ? <Search /> : null
       }
 
-      <button className='hdSitemapBtn'>sitemap</button>
+      <button className='hdSitemapBtn' onClick={openModal}>sitemap</button>
+
+      <Sitemap open={modalOpen} close={closeModal} />
+
 
     </div>
   );
