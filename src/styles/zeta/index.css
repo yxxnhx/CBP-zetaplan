@@ -1,0 +1,248 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+.ztTitle {
+  font-size: 3.2rem;
+  font-weight: 900;
+  padding-left: 3rem;
+  position: relative;
+  color: #fff;
+}
+.ztTitle::before {
+  content: "";
+  display: block;
+  background: url("./../../img/title_box@2x.png") no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ztTitle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+.ztTitle::after {
+  display: none;
+}
+
+.ztInfoBox {
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  font-size: 1.92rem;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+.ztInfoBox .ztInner {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 8rem 0;
+  /*margin:8rem auto 를 위로 수정해야할듯*/
+}
+
+.ztIntro {
+  background-color: #000;
+  font-weight: 700;
+}
+.ztIntro .ztTitle:after {
+  display: none;
+}
+.ztIntro .ztInfoText {
+  text-align: center;
+  margin-top: 9.5rem;
+  line-height: 2;
+}
+.ztIntro .ztInfoText .ztTextTitle {
+  font-size: 3.84rem;
+  color: #fff;
+}
+.ztIntro .ztInfoText .ztTextWh {
+  font-size: 1.92rem;
+  color: #fff;
+  margin: 7.5rem 0;
+}
+.ztIntro .ztInfoText .ztTextGr {
+  font-size: 1.92rem;
+  color: #707070;
+}
+
+.ztMessage {
+  padding-top: 38.2rem;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.4;
+}
+.ztMessage .ztMessageInner {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 112rem;
+}
+.ztMessage .ztMessageInner .ztMessageBox {
+  position: relative;
+  margin-top: 12rem;
+}
+.ztMessage .ztMessageInner .ztMessageBox .ztCircle {
+  width: 30rem;
+  position: absolute;
+  left: -18rem;
+  top: -15rem;
+}
+.ztMessage .ztMessageInner .ztMessageBox .ztCeoTexts {
+  font-family: "NotoSansKR";
+  font-weight: 500;
+  width: 63.5rem;
+  position: absolute;
+  z-index: 1;
+}
+.ztMessage .ztMessageInner .ztMessageBox .ztCeoTexts h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 3.84rem;
+}
+.ztMessage .ztMessageInner .ztMessageBox .ztCeoTexts .ztCeoText {
+  font-size: 1.92rem;
+  margin: 6rem 0 3.4rem 0;
+  line-height: 1.7;
+}
+.ztMessage .ztMessageInner .ztMessageBox .ztCeoTexts .ztCeoName {
+  font-size: 2.08rem;
+  font-weight: 700;
+}
+.ztMessage .ztMessageInner .ztCeoImg img {
+  width: 50rem;
+}
+.ztMessage .ztMessageInner .ztCeoImg img:hover {
+  opacity: 0.6;
+  transition: all 1.2s;
+}
+
+.ztRedTabBox .ztRedTabInner {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 8rem 0;
+  /*margin:8rem auto 를 위로 수정해야할듯*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTab {
+  font-weight: 700;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabFirst {
+  color: #707070;
+  font-size: 2.24rem;
+  margin-bottom: 6.3rem;
+  margin-left: 10rem;
+  cursor: pointer;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabFirst.active {
+  color: #94151C;
+  margin-left: 0rem;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabFirst.active::before {
+  content: "";
+  display: inline-block;
+  background: #94151C;
+  width: 8rem;
+  height: 0.25rem;
+  vertical-align: middle;
+  margin-right: 2rem;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabFirst:hover {
+  color: #94151C;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabTwo {
+  color: #707070;
+  font-size: 2.24rem;
+  margin-left: 10rem;
+  cursor: pointer;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabTwo.active {
+  color: #94151C;
+  margin-left: 0rem;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabTwo.active::before {
+  content: "";
+  display: inline-block;
+  background: #94151C;
+  width: 8rem;
+  height: 0.25rem;
+  vertical-align: middle;
+  margin-right: 2rem;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabTwo:hover {
+  color: #94151C;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTabTitle .ztRedTabTitleTop {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 4.8rem;
+  position: relative;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTabTitle .ztRedTabTitleTop::before {
+  content: "";
+  display: block;
+  background: #94151C;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 1.5rem;
+  top: -0.7rem;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTabTitle .ztRedTabTitleTxt {
+  font-weight: 700;
+  font-size: 2.24rem;
+  color: #707070;
+  margin-top: 2rem;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTabContent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 70rem;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTabContent .ztRedTabList {
+  flex: 50%;
+  padding-left: 3rem;
+  margin-bottom: 6rem;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTabContent .ztRedTabList .ztRedTabListTitle {
+  font-size: 3.2rem;
+  font-weight: 700;
+  position: relative;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTabContent .ztRedTabList .ztRedTabListTitle::after {
+  content: "";
+  display: block;
+  background: #94151C;
+  width: 7.4rem;
+  height: 0.4rem;
+  position: absolute;
+  bottom: 1px;
+  z-index: -1;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTabContent .ztRedTabList .ztRedTabContentTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 4rem 0 2rem;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTabContent .ztRedTabList .ztRedTabContentTxt {
+  font-size: 1.44rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+}
+
+.ztFixed {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 8rem;
+  height: 20rem;
+}/*# sourceMappingURL=index.css.map */

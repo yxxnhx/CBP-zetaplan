@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+// @import url('../GlobalStyle.scss');
+@import '../GlobalStyle.scss';
+
+$zt-bigTitle: 3.84rem;
+$zt-midTitle: 2.24rem;
+$zt-grayColor:#707070;
+$zt-redColor:#94151C;
+$zt-ftNormal:400;
+$zt-ftMd:500;
+$zt-ftBold:700;
+$zt-ftExtra:900;
+
+@mixin ztMontserrat($mftSize){
+    font-family: 'Montserrat';
+    font-weight: $zt-ftBold;
+    font-size: $mftSize;
+}
+
+@mixin ztActive(){
+  content: "";
+  display: inline-block;
+  background: #94151C;
+  width: 8rem;
+  height: 0.25rem;
+  vertical-align: middle;
+  margin-right: 2rem;
+}
+
+@mixin ztNotoKr($zt-krWeight,$zt-krSize){
+  font-family: 'Noto Sans KR';
+  font-weight:$zt-krWeight;
+  font-size:$zt-krSize;
+}
+
+.ztTitle{
+    @include Subtitle($sub-title, $basic-gray3);
+    color:$basic-white;
+    &::after{
+      display: none;
+    }
+}
+
+.ztInfoBox{
+  @include ztNotoKr($zt-ftMd,$list-md);
+  font-family:'Roboto','Noto Sans KR',sans-serif;
+  .ztInner{
+    @include Inner;
+  }
+}
+
+.ztIntro{
+    background-color: $basic-black;
+    font-weight: $zt-ftBold;
+    .ztTitle{
+        &:after{
+            display: none;
+        }
+    }
+    .ztInfoText{
+        text-align: center;
+        margin-top: 9.5rem;
+        line-height:2;
+        .ztTextTitle{
+            font-size: $zt-bigTitle;
+            color:$basic-white;
+        }
+        .ztTextWh{
+            font-size: $list-md;
+            color:$basic-white;
+            margin: 7.5rem 0;
+        }
+        .ztTextGr{
+            font-size: $list-md;
+            color:$zt-grayColor;
+        }
+    }
+}
+
+.ztMessage{
+  padding-top: 38.2rem;
+  background-color: $basic-black;
+  color:$basic-white;
+  line-height:1.4;
+  .ztMessageInner{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 112rem;
+    .ztMessageBox{
+      position: relative;
+      margin-top: 12rem;
+      .ztCircle{
+        width:30rem;
+        position: absolute;
+        left: -18rem;
+        top: -15rem;
+      }
+      .ztCeoTexts{
+        font-family: 'NotoSansKR';
+        font-weight:$zt-ftMd;
+        width:63.5rem;
+        position: absolute;
+        z-index: 1;
+        h2{
+            @include ztMontserrat($zt-bigTitle);
+        }
+        .ztCeoText{
+            font-size: $list-md;
+            margin:6rem 0 3.4rem 0;
+            line-height: 1.7;
+        }
+        .ztCeoName{
+            font-size: $size-lg;
+            font-weight: $zt-ftBold;
+        }
+      }
+    }
+   .ztCeoImg{
+      img{
+          width:50rem;
+          &:hover {
+            opacity: 0.6;
+            transition: all 1.2s;
+          }
+      }
+    }
+  }  
+}
+
+.ztRedTabBox{
+    .ztRedTabInner{
+      @include Inner;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+        .ztRedTab{
+          font-weight:$zt-ftBold;
+          .ztRedTabFirst{
+            color: $zt-grayColor;
+            font-size: $zt-midTitle;
+            margin-bottom: 6.3rem;
+            margin-left: 10rem;
+            cursor: pointer;
+            &.active{
+              color:$zt-redColor;
+              margin-left: 0rem;
+            }
+            &.active::before{
+              @include ztActive;
+            }
+            &:hover{
+              color:$zt-redColor;
+            }
+          }
+          .ztRedTabTwo{
+            color: $zt-grayColor;
+            font-size:$zt-midTitle;
+            margin-left: 10rem;
+            cursor: pointer;
+            &.active{
+              color:$zt-redColor;
+              margin-left: 0rem;
+            }
+            &.active::before{
+              @include ztActive;
+            }
+            &:hover{
+              color:$zt-redColor;
+            }
+          }
+        }
+        .ztRedTabTitle{
+            .ztRedTabTitleTop{
+              @include ztMontserrat(4.8rem);
+              position: relative;
+              &::before{
+                content: '';
+                display: block;
+                background: $zt-redColor;
+                width:0.8rem;
+                height: 0.8rem;
+                border-radius: 50%;
+                position: absolute;
+                left: 1.5rem;
+                top: -0.7rem;
+              }
+            }
+            .ztRedTabTitleTxt{
+              font-weight:$zt-ftBold;
+              font-size:$zt-midTitle;
+              color:$zt-grayColor;
+              margin-top: 2rem;
+            }
+        }
+
+        .ztRedTabContent{
+          display: flex;
+          flex-wrap: wrap;
+          flex-basis: 70rem;
+          .ztRedTabList{
+            flex: 50%;
+            padding-left: 3rem;
+            margin-bottom: 6rem;
+            .ztRedTabListTitle{
+              font-size: $sub-title;
+              font-weight:$zt-ftBold;
+              position: relative;
+              &::after{
+                content: '';
+                display: block;
+                background: $zt-redColor;
+                width: 7.4rem;
+                height: 0.4rem;
+                position: absolute;
+                bottom: 1px;
+                z-index: -1;
+              }
+            }
+            .ztRedTabContentTitle{
+              font-size: $size-sm;
+              font-weight:$zt-ftBold;
+              margin: 4rem 0 2rem;
+            }
+            .ztRedTabContentTxt{
+              font-size:$size-xs;
+              font-weight:$zt-ftMd;
+              line-height: 3.5rem;
+            }
+          }
+        }
+    }
+}
+
+.ztFixed {
+    position: sticky; 
+    left: 0;
+    top:8rem; 
+    height: 20rem;
+}

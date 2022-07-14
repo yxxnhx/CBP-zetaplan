@@ -1,0 +1,46 @@
+@import './index.scss';
+
+.ztNetWorkBox .ztNtInner{
+  @include Inner;
+  font-family:'Roboto','Noto Sans KR',sans-serif;
+}
+
+.ztNetWorkBox .ztTitle{
+  @include Subtitle($sub-title, $basic-gray3);
+  color:$basic-black;
+  &::after{
+    display: none;
+  }
+}
+
+.ztNetWorkBox .ztRedTabBox .ztRedTabInner{
+  width: 100%;
+  margin: 0;
+  padding: 12.3rem 0;
+  }
+
+.ztNetWorkBox .ztRedTabTwo{
+  margin-bottom: 6.3rem;
+}
+.ztNetWorkBox .ztRedTabThr{
+  color: $zt-grayColor;
+  font-size: $zt-midTitle;
+  margin-left: 10rem;
+  cursor: pointer;
+  &.active{
+    color:$zt-redColor;
+    margin-left: 0rem;
+  }
+  &.active::before{
+    @include ztActive;
+  }
+  &:hover{
+    color:$zt-redColor;
+  }
+}
+
+.ztNetWorkBox .ztNetWorkImgBig{
+  &:hover{
+    opacity: 0.7;
+  }
+}

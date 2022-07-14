@@ -40,6 +40,9 @@ function App() {
           <Route path="/irPerfo" element={<IrPerfo />} />
           <Route path="/irPlan" element={<IrPlan />} />
           <Route path="/irProcess" element={<IrProcess />} />
+          <Route path="/zeta" element={<Zeta />} />
+          <Route path="/zetaci" element={<ZetaCi />} />
+          <Route path="/zetanetwork" element={<ZetaNetwork />} />
           <Route path="/Gbindex" element={<Gbindex />} />
           <Route path="/GbStrategy" element={<GbStrategy />} />
           <Route path="/GbCase" element={<GbCase />} />
@@ -48,6 +51,7 @@ function App() {
           <Route path="/qna" element={<Qna />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }
