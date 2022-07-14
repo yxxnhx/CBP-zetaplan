@@ -17,6 +17,7 @@ import Landing from './pages/landing/index';
 import { useState } from 'react'; 
 */
 import MaipoInfo from './pages/maipo/MaipoInfo';
+import Qna from './pages/notice/Qna';
 
 function App() {
   /* 서브 페이지에 헤더 배경 하얀색 주려고 넣은 것, 지우지 말아주세요
@@ -31,7 +32,7 @@ function App() {
     <div className="App">
       <ResetStyle />
       <BrowserRouter>
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />
@@ -44,6 +45,7 @@ function App() {
           <Route path="/GbCase" element={<GbCase />} />
           <Route path="/landing" element={<Landing />} />
           <Route path="/maipo" element={<MaipoInfo />} />
+          <Route path="/qna" element={<Qna />} />
         </Routes>
       </BrowserRouter>
     </div>

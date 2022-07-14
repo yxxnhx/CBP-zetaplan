@@ -1,0 +1,63 @@
+@import '../GlobalStyle.scss';
+
+.qnaTable {
+  border-top: 5px solid #707070;
+  // border-bottom: 1px solid #707070;
+  width: 100%;
+
+  .qnaThead {
+
+    .qnaThTr {
+      border-bottom: 1px solid #707070;
+      height: 113px;
+      th {
+        font-size: 1.92rem;
+        font-family: 'Noto Sans KR',sans-serif;
+        font-weight: bold;
+      }
+    }
+  
+  }
+  .qnaTbody {
+    border-bottom: 1px solid #707070;
+    .qnaTbTr {
+      border-bottom: 1px solid $basic-gray1;
+      height: 113px;
+      &:last-child {
+        border-bottom: none;
+      }
+      &:hover {
+        background-color: rgba(21, 39, 160, .07);
+      }
+      td {
+        font-size: 1.92rem;
+        font-family: 'Noto Sans KR',sans-serif;
+        text-align: center;
+        &.qnaTbodyTitle {
+          font-weight: bold;
+          text-align: start;
+          // padding-left: 83px;
+        }
+        button {
+          width: 190px;
+          height: 50px;
+          font-size: 1.92rem;
+          font-family: 'Noto Sans KR',sans-serif;
+        }
+        &.answerBtn button {
+          border: 1px solid $basic-gray2;
+          background-color: $basic-gray1;
+        }
+        &.isAnswerBtn button {
+          border: 1px solid #707070;
+          background-color: $main-color;
+          color: $basic-white;
+          
+        }
+
+      }
+
+    }
+  }
+
+}

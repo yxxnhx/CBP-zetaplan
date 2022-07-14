@@ -1,0 +1,40 @@
+@import '../GlobalStyle.scss';
+
+.qnaInner {
+  @include Inner;
+  .qnaTitleBox {
+    border-bottom: 1px solid #707070;
+    width: auto;
+    .qnaTitle {
+      font-size: 3.2rem;
+      font-family: 'Noto Sans KR',sans-serif;
+      padding-bottom: 20px;
+      
+    }
+  }
+  .qnaSearchInput {
+    height: 180px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .qnaSelect {
+      width: 139px;
+      height: 70px;
+      font-size: 1.6rem;
+      text-align: center;
+      outline: none;
+      font-weight: 500;
+    }
+
+    .qnaSearch {
+      width: 542px;
+      height: 50px;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #707070;
+      font-size: 2rem;
+      margin-left: 62px;
+    }
+  }
+}
