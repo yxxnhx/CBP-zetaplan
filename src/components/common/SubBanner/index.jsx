@@ -29,7 +29,7 @@ const SubBannerTextContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  width: auto;
+  width: 100rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -47,7 +47,7 @@ const SubBannerTextContainer = styled.div`
     @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap';
     font-size: 4.5rem;
     font-weight: bold;
-    line-height: 1.3;
+    line-height: 1.5;
     color: #fff;
     font-family: 'Noto Sans KR', sans-serif;
     text-align: center;

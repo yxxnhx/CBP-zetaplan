@@ -4,10 +4,10 @@ import './../../styles/ir/Accordion.scss'
 const Accordion = ({title, active, setActive, txt }) => {
   return (
     <div className='accordion'>
-      <div className='accordionHeading'  onClick={() => setActive(title)}>
+      <div className={(active === title ? 'on' : '') + 'accordionHeading'}  onClick={() => setActive(title)}>
         <div className="container">
           <p>{title}</p>
-          <span className={(active === title ? 'up' : 'down') + 'accordionBtn'}></span>
+          <span className={(active === title ? 'up' : '') + 'accordionBtn'}></span>
         </div>
       </div>
       <div className={(active === title ? 'show' : '') + 'accordionContent' }>

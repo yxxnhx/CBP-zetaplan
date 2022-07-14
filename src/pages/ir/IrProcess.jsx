@@ -2,58 +2,19 @@ import React from 'react';
 import './../../styles/ir/irProcess.scss'
 import Accordion from './Accordion';
 import Accordion2 from './Accordion';
+import SubBanner from '../../components/common/SubBanner/index';
+import subBg from '../../img/ir/ir_sub_bg@2x.png'
+
 import { useState   } from 'react';
 
 const IrProcess = () => {
+  const title = '국내벤처캐피탈, 기술금융 투융자를 통한 <br /> 성공적인 투자유치를 지원합니다.'
+
   const acco = [
     {
       id: '1',
-      txt: `  <div class="irAccoContentT">기업 진단 및 기업 전략 분석자문</div>
-      <ul class='irAccoCircleArea'>
-        <li class='irAccoProCircleContent'>
-          <ul class='irAccoProCircleM'>
-            <li>STEP 01<br />예비진단</li>
-            <li>STEP 02<br />현금 흐름</li>
-            <li>STEP 03<br />성공요소</li>
-            <li>STEP 04<br />내부환경</li>
-            <li>STEP 05<br />사업전략</li>
-            <li>STEP 06<br />자무재표</li>
-          </ul>
-          <ul class='irAccoProCircleDes'>
-            <li>사업경쟁력(핵심역량)</li>
-            <li>미래현금흐름</li>
-            <li>성공요소</li>
-            <li>핵심역량</li>
-            <li>사업전략</li>
-            <li>미래수익구조</li>
-          </ul>
-        </li>
-        <p class='irProText'>예비진단 단계에서 핵심역량을 판단할 수 있도록 지원하며 그 핵심역량으로 성공적인 사업추진을 할 수 있도록 사업 전략 및 계획수립을 지원합니다</p>
-      </ul>
-      <div class="accoContentT">재무분석 및 투자유치 IR 컨설팅</div>
-      <ul class='irAccoProCircleAreaS'>
-        <li class="irAccoProCircleBox">
-          <ul class='irAccoProCircleS'>
-            <li>STEP 01<br />예비진단</li>
-            <li>STEP 02<br />재무분석</li>
-            <li>STEP 03<br />투자유치준비</li>
-            <li>STEP 04<br />투자유치실행/IPO</li>
-          </ul>
-          <ul class='irAccoProCircleSDes'>
-            <li>재무분석</li>
-            <li>기준 및 역량분석</li>
-            <li>실행전략</li>
-          </ul>
-          <ul class='irAccoProCircleSDetail'>
-            <li>사업경쟁력(핵심역량)</li>
-            <li>미래현금흐름</li>
-            <li>성공요소</li>
-            <li>핵심역량</li>
-          </ul>
-        </li>
-      </ul>
-    </ul>
-    <p class='irProText'>재무분석에서 추정재무제표작성 및 기업가치 평가를 진행하며 기준 및 역량분석에서는 사전절차 확인 및 주요사항을 준비합니다. 실행전략에서 추진전략 및 세부 실행 계획 수립을 하여 성공적인 진단을 진행합니다.</p></div>`
+      txt: `  <div class="irAccoContentT">
+      기업 진단 및 기업 전략 분석자문</div><ul class='irAccoCircleArea'><li class='irAccoProCircleContent'><ul class='irAccoProCircleM'><li>STEP 01<br />예비진단</li><li>STEP 02<br />현금 흐름</li><li>STEP 03<br />성공요소</li><li>STEP 04<br />내부환경</li><li>STEP 05<br />사업전략</li><li>STEP 06<br />자무재표</li></ul><ul class='irAccoProCircleDes'><li>사업경쟁력(핵심역량)</li><li>미래현금흐름</li><li>성공요소</li><li>핵심역량</li><li>사업전략</li><li>미래수익구조</li></ul></li><p class='irProText'>예비진단 단계에서 핵심역량을 판단할 수 있도록 지원하며 그 핵심역량으로 성공적인 사업추진을 할 수 있도록 사업 전략 및 계획수립을 지원합니다</p></ul><div class="irAccoContentT">재무분석 및 투자유치 IR 컨설팅</div><ul class='irAccoProCircleAreaS'><li class="irAccoProCircleBox"><ul class='irAccoProCircleS'><li>STEP 01<br />예비진단</li><li>STEP 02<br />재무분석</li><li>STEP 03<br />투자유치준비</li><li>STEP 04<br />투자유치실행/IPO</li></ul><ul class='irAccoProCircleSDes'><li>재무분석</li><li>기준 및 역량분석</li><li>실행전략</li></ul><ul class='irAccoProCircleSDetail'><li>사업경쟁력(핵심역량)</li><li>미래현금흐름</li><li>성공요소</li><li>핵심역량</li></ul></li></ul></ul><p class='irProText'>재무분석에서 추정재무제표작성 및 기업가치 평가를 진행하며 기준 및 역량분석에서는 사전절차 확인 및 주요사항을 준비합니다. 실행전략에서 추진전략 및 세부 실행 계획 수립을 하여 성공적인 진단을 진행합니다.</p></div>`
     },
     {
       id: '2',
@@ -64,9 +25,12 @@ const IrProcess = () => {
       txt: '<div>ir 단계별 IR 실행에 따른 컨설팅</div>'}
   ]
   console.log(acco[0].txt);
+  console.log(<div dangerouslySetInnerHTML={{__html: acco[0].txt}}></div>);
   const [active, setActive] = useState(' '); 
   return (
     <div>
+      <SubBanner title={title} img={subBg} />
+
       <div className='inner'>
         <div className="irSubtitle">Process</div>
         <ul className='irProCircleArea'>
