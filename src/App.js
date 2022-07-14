@@ -13,9 +13,6 @@ import Gbindex from './pages/global/index';
 import GbStrategy from './pages/global/GbStrategy';
 import GbCase from './pages/global/GbCase';
 import Landing from './pages/landing/index';
-/* 서브 페이지에 헤더 배경 하얀색 주려고 넣은 것, 지우지 말아주세요
-import { useState } from 'react'; 
-*/
 import MaipoInfo from './pages/maipo/MaipoInfo';
 import Qna from './pages/notice/Qna';
 import Footer from './components/common/Footer/index';

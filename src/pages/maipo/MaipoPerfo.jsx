@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MaipoPerfo = () => {
+const MaIpoPerfo = () => {
   return (
     <div>
 
@@ -8,4 +8,4 @@ const MaipoPerfo = () => {
   );
 };
 
-export default MaipoPerfo;
+export default MaIpoPerfo;

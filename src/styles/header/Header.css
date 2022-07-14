@@ -2,13 +2,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
 /* header 전체 */
+/* 서브 페이지에 헤더 배경 하얀색, 기본틀
+header.hdSubStyle {
+  color: red;
+} 
+*/
 header {
   width: 100%;
   height: 12.1rem;
   background-color: #000;
-  /*background: url(../../img/main/banner/mainbanner01.png) no-repeat center / cover;
-  overflow: hidden; */
+  /* background: url(../../img/main/banner/mainbanner01.png) no-repeat center / cover; */
   position: relative;
+  z-index: 1000;
+}
+header:hover > .hd {
+  background-color: #fff;
+  color: #000;
+}
+header:hover > .hd .hdLogo {
+  background: url("../../img/zetaplan_splite.png") no-repeat -241px -8px;
+  background-size: 599px 280px;
+  width: 209px;
+  height: 46px;
+}
+header:hover .hdUtil .hdSearchBtn {
+  border: 1px solid black;
+}
+header:hover .hdUtil .hdSitemapBtn {
+  border: 1px solid black;
 }
 header .hd {
   width: 100%;
@@ -23,7 +44,7 @@ header .hd .hdLogo {
   margin-left: 7.8rem;
   font-size: 0;
   background: url("../../img/zetaplan_splite.png") no-repeat -7px -5px;
-  background-size: 560px 240px;
+  background-size: 599px 280px;
   width: 209px;
   height: 47px;
 }
@@ -34,7 +55,9 @@ header .hd .hdLogo {
   justify-content: space-between;
 }
 .hdGnbArea .hdDep1:hover > .hdDep2 {
-  display: flex;
+  visibility: visible;
+  height: 20rem;
+  transition: 1s;
 }
 .hdGnbArea .hdDep1:hover > .hdSub {
   color: #1527A0;
@@ -56,19 +79,22 @@ header .hd .hdLogo {
   background-color: #f9f9f9;
   color: #000;
   width: 100vw;
-  min-height: 100px;
-  display: none;
+  height: 0;
+  display: flex;
   justify-content: center;
   border-top: 1px solid #e0e0e0;
-}
-.hdGnbArea .hdDep1 .hdDep2 .hdMargin {
-  margin-left: 3.5rem;
+  visibility: hidden;
+  overflow: hidden;
 }
 .hdGnbArea .hdDep1 .hdDep2 > li {
   padding: 2rem;
+  min-width: 13rem;
 }
 .hdGnbArea .hdDep1 .hdDep2 > li:hover {
   background-color: rgba(21, 39, 160, 0.13);
+}
+.hdGnbArea .hdDep1 .hdDep2 > li:hover > a {
+  color: #1527A0;
 }
 .hdGnbArea .hdDep1 .hdDep2 > li > a {
   display: block;
@@ -78,6 +104,9 @@ header .hd .hdLogo {
 }
 .hdGnbArea .hdDep1 .hdDep2 > li .hdDep3 li {
   margin-top: 2rem;
+}
+.hdGnbArea .hdDep1 .hdDep2 > li .hdDep3 li:hover > a {
+  color: #1527A0;
 }
 .hdGnbArea .hdDep1 .hdDep2 > li .hdDep3 li a {
   font-family: "Noto Sans KR";
@@ -131,17 +160,18 @@ header .hd .hdLogo {
 
 /* search 창 */
 .hdSearch {
-  position: fixed;
-  top: 12.1rem;
+  position: absolute;
+  top: 12rem;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 400rem;
   background-color: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid #e0e0e0;
 }
 .hdSearch .hdSearchWrap {
   width: 100%;
   height: 35rem;
-  background-color: #F9F9F9;
+  background-color: #f0f0f0;
 }
 .hdSearch .hdSearchWrap .hdSearchContent {
   width: 70rem;
@@ -192,24 +222,36 @@ header .hd .hdLogo {
   font-family: "Noto Sans KR";
   font-weight: 400;
   font-size: 1.1rem;
+  background-color: #fff;
 }
 
 /* sitemap */
-.hdSitemap {
-  position: relative;
+.hdModal {
+  position: fixed;
   top: 0;
-  left: 0;
+  left: 100vw;
   background-color: #fff;
+  width: 100vw;
+  min-height: 50rem;
+  max-height: 80rem;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.hdModal.hdOpenModal {
+  visibility: visible;
+  left: 0;
+  transition: 1s;
+}
+
+.hdSitemap {
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
-  opacity: 0;
-  z-index: -1000;
 }
 .hdSitemap .hdSmLeft {
   background: url(../../img/bg/consul_bg@2x.png) no-repeat center/cover;
   width: 35%;
-  height: 100vh;
 }
 .hdSitemap .hdSmLeft h2 {
   margin-top: 6rem;
@@ -240,7 +282,8 @@ header .hd .hdLogo {
 }
 .hdSitemap .hdSmRight {
   width: 65%;
-  height: 100vh;
+  height: 100%;
+  color: #000;
 }
 .hdSitemap .hdSmRight .hdSmArea {
   margin-left: 15rem;
@@ -267,12 +310,11 @@ header .hd .hdLogo {
 .hdSitemap .hdSmRight .hdSmArea .hdSmList > a span::after {
   content: "";
   height: 1rem;
-  width: 100%;
+  width: 0;
   background-color: rgba(21, 39, 158, 0.502);
   position: absolute;
   top: 1.6rem;
   left: 0;
-  opacity: 0;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 {
   display: flex;
@@ -301,12 +343,13 @@ header .hd .hdLogo {
   color: #1527A0;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList:hover > a > span::after {
-  opacity: 1;
+  width: 100%;
+  transition: 0.4s;
 }
 .hdSitemap .hdSmRight button {
   position: absolute;
   top: 6rem;
-  right: 5rem;
+  right: 7rem;
   background: url("../../img/zetaplan_splite.png") no-repeat -574px -101px;
   background-size: 599px 280px;
   width: 19px;
