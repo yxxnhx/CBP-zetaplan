@@ -25,7 +25,8 @@ import ZetaCi from './pages/zeta/ZetaCi';
 import Zeta from './pages/zeta/index';
 import DataInfo from './pages/notice/DataInfo';
 import ZetaPeople from './pages/zeta/ZetaPeople';
-import { useState } from 'react'
+import { useState } from 'react';
+import News from './pages/notice/News';
 function App() {
   const [hdSubStyle, setHdSubStyle] = useState(false);
 
@@ -41,7 +42,7 @@ function App() {
     <div className="App">
       <ResetStyle />
       <BrowserRouter>
-        {  true ? <Header className="" /> :  <Header className="" />  }
+        {true ? <Header className="" /> : <Header className="" />}
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />
@@ -64,6 +65,7 @@ function App() {
           <Route path="/qna" element={<Qna />} />
           <Route path="/dataInfo" element={<DataInfo />} />
           <Route path="/zeta-people" element={<ZetaPeople />} />
+          <Route path="/news" element={<News />} />
         </Routes>
       </BrowserRouter>
       <Footer />

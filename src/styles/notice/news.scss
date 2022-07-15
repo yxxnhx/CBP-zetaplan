@@ -1,0 +1,117 @@
+@import '../GlobalStyle.scss';
+
+.newsInner {
+  @include Inner;
+
+  .newsTitleBox {
+    border-bottom: 1px solid $basic-gray3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .newsTabTitle {
+      font-size: 3.2rem;
+      font-family: 'Noto Sans KR',sans-serif;
+      padding-bottom: 20px;
+    }
+
+    .newsTabList {
+      display: flex;
+      font-weight: bold;
+
+      li {
+        margin-left: 50px;
+        font-size: 2.24rem;
+        position: relative;
+
+        &:hover {
+          color: $main-color;
+
+          &::after {
+            opacity: 1;
+          }
+        }
+
+        &::after {
+          content: "";
+          width: 94px;
+          height: 2px;
+          display: block;
+          background-color: $main-color;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -16px;
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .newsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 178px; 
+    
+    
+    .newsContentBox {
+      width: 400px;
+      height: 570px;
+      .newsTitle {
+        font-size: 3.04rem;
+        width: 329px;
+        height: 166px;
+        font-weight: bold;
+      }
+
+      .newsSummary {
+        font-size: 2.4rem;
+        width: 398px;
+        height: 176px;
+        font-weight: 600;
+      }
+
+      .newsCreated {
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+      
+
+    }
+
+    .newsThumbnail {
+      width: 904px;
+      height: 550px;
+    } 
+  }
+
+  .newsSearchBox {
+    position: relative;
+    width: 470px;
+    margin-top: 328px;
+
+    .newsInput {
+      width: 470px;
+      border: none;
+      border-bottom: 1px solid #707070;
+      font-size: 2rem;
+      display: block;
+      outline: none;s
+
+      &::placeholder {
+        color: $basic-black;
+
+      }
+    }
+
+    .newsmagnifier {
+      display: block;
+      background: url('../../img/zetaplan_splite.png')  no-repeat -419px -151px;
+      background-size: 599px 280px;
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
