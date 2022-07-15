@@ -13,6 +13,10 @@ import Gbindex from './pages/global/index';
 import GbStrategy from './pages/global/GbStrategy';
 import GbCase from './pages/global/GbCase';
 import Landing from './pages/landing/index';
+import MngConsulting from './pages/management/MngConsulting';
+import MngCertify from './pages/management/MngCertify';
+import MngTrade from './pages/management/Mngtrade';
+import MngValue from './pages/management/MngValue';
 import MaipoInfo from './pages/maipo/MaipoInfo';
 import Qna from './pages/notice/Qna';
 import Footer from './components/common/Footer/index';
@@ -45,6 +49,10 @@ function App() {
           <Route path="/ir-perfo" element={<IrPerfo />} />
           <Route path="/ir-plan" element={<IrPlan />} />
           <Route path="/ir-process" element={<IrProcess />} />
+          <Route path="/mng-consulting" element={<MngConsulting />} />
+          <Route path="/mng-certify" element={<MngCertify />} />
+          <Route path="/mng-trade" element={<MngTrade />} />
+          <Route path="/mng-value" element={<MngValue />} />
           <Route path="/zeta" element={<Zeta />} />
           <Route path="/zeta-ci" element={<ZetaCi />} />
           <Route path="/zeta-network" element={<ZetaNetwork />} />

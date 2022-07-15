@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+.mngSubTitle {
+  font-size: 3.2rem;
+  font-weight: 900;
+  padding-left: 3rem;
+  position: relative;
+  margin: 7.8rem;
+}
+.mngSubTitle::before {
+  content: "";
+  display: block;
+  background: url("./../../img/title_box@2x.png") no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mngSubTitle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+
+.mngSubTitleNb {
+  font-size: 3.2rem;
+  font-weight: 900;
+  padding-left: 3rem;
+  margin-left: 7.8rem;
+  position: relative;
+}
+.mngSubTitleNb::before {
+  content: "";
+  display: block;
+  background: url("../../img/title_box@2x.png") no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mngSummary {
+  width: 132.7rem;
+  height: 26.6rem;
+  margin-left: 8.3rem;
+}
+.mngSummary p {
+  font-size: 2.4rem;
+  line-height: 1.7;
+}
+
+.mngConsultingProcessImg {
+  width: 90rem;
+  margin: 9.4rem 25rem;
+}
+
+.mngFourCircle {
+  display: flex;
+  width: 90rem;
+  justify-content: center;
+  align-items: center;
+  margin: 9.5rem 14rem;
+}
+.mngFourCircle li {
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  border: 1px solid #1527A0;
+  margin-right: 4rem;
+  position: relative;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+}
+.mngFourCircle li:hover {
+  background-color: #1527A0;
+  color: #fff;
+}
+.mngFourCircle li::before {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 1px;
+  border-bottom: 1px dashed black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -4rem;
+}
+.mngFourCircle li:first-child::before {
+  display: none;
+}
+
+.mngFiveCircle {
+  display: flex;
+  width: 115rem;
+  justify-content: center;
+  align-items: center;
+  margin: 9.5rem 20rem;
+  position: relative;
+}
+.mngFiveCircle li {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 1px solid #1527A0;
+  margin-right: 4rem;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+}
+.mngFiveCircle li:hover {
+  background-color: #1527A0;
+  color: #fff;
+}
+.mngFiveCircle li::before {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 1px;
+  border-bottom: 1px dashed black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -4rem;
+}
+.mngFiveCircle li:first-child::before {
+  display: none;
+}
+
+.mngCircleTxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-9rem);
+}
+.mngCircleTxt p {
+  padding-left: 8rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.mngConsultingTxt {
+  position: absolute;
+  top: 193rem;
+  left: 14rem;
+}
+.mngConsultingTxt p {
+  font-size: 1.6rem;
+  padding-left: 3rem;
+  line-height: 1.5;
+}
+
+.mngSmTitle {
+  width: 30rem;
+  font-size: 2.4rem;
+  margin-left: 7.6rem;
+  margin-top: 4rem;
+}
+
+.mngFiveTxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(3rem, -8rem);
+}
+.mngFiveTxt p {
+  font-size: 1.6rem;
+  padding-left: 3rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.mngSubTitleNb.mngConsultingPro {
+  margin-top: 20rem;
+}
+
+.mngInner {
+  width: 1440px;
+  padding: 8rem 0;
+  margin: 0 auto;
+}/*# sourceMappingURL=mngConsulting.css.map */

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+
+@import '../GlobalStyle.scss';
+
+.mngSubTitle{
+  @include Subtitle($sub-title, $basic-gray3);
+}
+
+
+.mngSubTitleNb{
+  font-size: $sub-title;
+  font-weight: 900;
+  margin-left: 8rem;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    background: url('../../img/title_box@2x.png') no-repeat;
+    background-size: contain;
+    width: 1rem;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.mngSubTitleNb.mngTradePro{
+  margin-top: 10rem;
+}
+
+.mngTradeProcessImg{
+  width: 90rem;
+  margin: 5.2rem 25rem;
+}
+
+.mngInner{
+  @include Inner
+}

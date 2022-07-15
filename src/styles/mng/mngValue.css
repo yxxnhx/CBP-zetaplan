@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+.mngFourCircle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 120rem;
+  justify-content: center;
+  align-items: center;
+}
+.mngFourCircle li {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 1px solid #1527A0;
+  margin-right: 4rem;
+  position: relative;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+}
+.mngFourCircle li:hover {
+  background-color: #1527A0;
+  color: #fff;
+}
+.mngFourCircle li::before {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 1px;
+  border-bottom: 1px dashed black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -4rem;
+}
+.mngFourCircle li:first-child::before {
+  display: none;
+}
+.mngFourCircle li {
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.mngMenuTab {
+  display: flex;
+  justify-content: end;
+  transform: translate(-10rem, -10rem);
+}
+.mngMenuTab span {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 7rem;
+  position: relative;
+}
+.mngMenuTab span:hover {
+  color: #1527A0;
+}
+.mngMenuTab span:hover::after {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  width: 11rem;
+  background-color: #1527A0;
+  position: absolute;
+  bottom: -3.2rem;
+}
+
+.mngValueTxt {
+  width: 20rem;
+  font-size: 2.08rem;
+  margin-left: 12rem;
+  margin-top: 10rem;
+  position: relative;
+}
+.mngValueTxt::after {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  width: 3rem;
+  background-color: #1527A0;
+  position: absolute;
+  top: 1rem;
+  left: -4rem;
+}
+
+.mngNeedTxt p {
+  font-size: 2rem;
+  margin-top: 6rem;
+  margin-left: 8rem;
+  line-height: 0.5;
+}
+
+.thinGradient {
+  width: 130rem;
+  margin-top: 7.4rem;
+  margin-left: 6.8rem;
+  position: relative;
+}
+
+.mngValueGradientTitle {
+  width: 120rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 78rem;
+  left: 12rem;
+}
+.mngValueGradientTitle span {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.mngFourCircle {
+  position: relative;
+}
+
+.mngValueAssess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 113rem;
+  left: 19rem;
+}
+.mngValueAssess p {
+  padding-left: 8rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.mngCompanyAssess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 155rem;
+  left: 23rem;
+}
+.mngCompanyAssess p {
+  padding-left: 8rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.mngValueTxt.mngValueCompany {
+  top: 5rem;
+}
+
+.mngValueBusiness {
+  display: none;
+}
+
+.mngValueList {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 8.3;
+  margin-left: 8rem;
+  position: relative;
+}
+
+.mngCompanyValue {
+  position: absolute;
+  bottom: -63rem;
+  left: 25rem;
+  line-height: 2;
+}
+.mngCompanyValue div {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.mngCompanyValue p {
+  font-size: 1.6rem;
+}
+.mngCompanyValue span {
+  font-size: 1.8rem;
+}
+
+.mngCompanyValue > div {
+  margin: 2rem 0;
+}
+
+.mngValueTxt.mngValueStep {
+  top: 14rem;
+}
+
+.mngValueProcess {
+  display: inline-block;
+  position: relative;
+  bottom: 10rem;
+  left: 80rem;
+  padding: 4rem;
+}
+.mngValueProcess div {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 5rem;
+}
+.mngValueProcess p {
+  font-size: 1.8rem;
+  line-height: 3;
+}
+
+.mngInner {
+  width: 20rem;
+  height: 20rem;
+  width: 1440px;
+  padding: 8rem 0;
+  margin: 0 auto;
+}
+
+.mngCircleWrap {
+  position: relative;
+  width: 32.8125rem;
+  height: 32.8125rem;
+  margin-left: 1.25rem;
+}
+
+.mngCircle {
+  position: absolute;
+  top: 30rem;
+  left: 20rem;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: rotate linear infinite 40s forwards;
+          animation: rotate linear infinite 40s forwards;
+}
+
+.mngCircleItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 9.0625rem;
+  height: 9.0625rem;
+  border: 0.5rem solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0.625rem 1.25rem rgba(18, 27, 116, 0.18);
+}
+
+.mngCircleItemObject {
+  width: 17rem;
+  height: 17rem;
+  top: -1.875rem;
+  left: 50%;
+  background-color: #1527A0;
+  transform: translate(-16rem, -3rem);
+}
+
+.mngCircleItemConnection {
+  width: 17rem;
+  height: 17rem;
+  bottom: 0.625rem;
+  right: 0;
+  background-color: #1527A0;
+  transform: translate(8rem, -8rem);
+}
+
+.mngCircleItemSpace {
+  width: 17rem;
+  height: 17rem;
+  bottom: 0.625rem;
+  left: 0;
+  background-color: #1527A0;
+  transform: translateY(6rem);
+}
+
+.mngCircleText {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #fff;
+  -webkit-animation: rotate2 linear infinite 40s forwards;
+          animation: rotate2 linear infinite 40s forwards;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate2 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotate2 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.mngCircleBg {
+  background: url("../../img/zetaplan_splite.png") no-repeat -15.0625rem -0.5rem;
+  width: 13.0625rem;
+  height: 2.875rem;
+  background-size: 37.4375rem 17.5rem;
+  position: absolute;
+  left: 32rem;
+  bottom: -15rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 10rem;
+}/*# sourceMappingURL=mngValue.css.map */

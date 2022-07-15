@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+
+@import '../GlobalStyle.scss';
+
+.mngSmTitle{
+  font-size: 2.8rem;
+  margin-left: 8.3rem;
+}
+
+.mngCertifyTxt{
+  width: 132.7rem;
+  margin-left: 8.3rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  p{
+    font-size: $size-lg;
+    line-height: 1.5;
+  }
+}
+
+.mngCertifyCt{
+  color:$main-color;
+  font-size: $size-xl;
+  margin-left: 8.3rem;
+}
+
+.Boldgradient{
+  width: 130rem;
+  margin-top: 7.4rem;
+  margin-left: 6.8rem;
+  position: relative;
+}
+
+.mngGrow{
+  width: 120rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 154rem;
+  left: 12rem;
+  span{
+    color: #fff;
+    font-size: $size-xl;
+  }
+}
+
+.mngGrowTxt{
+  display:flex;
+  justify-content: space-around;
+  width: 130rem;
+  height: 70rem;
+  border: 1px solid #000;
+  padding: 4.8rem 0 7rem;
+  position: absolute;
+  left: 6.8rem;
+  top: 159.8rem;
+  li{
+    line-height: 1.5;
+  }
+}
+.mngGrowTxt li:first-child{
+  font-size:$size-xl; 
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.mngGrowTxt li{
+  font-size: $list-md;
+}
+
+.mngGrowF{
+  margin-left: 4rem;
+}
+.mngGrowM{
+  margin-left: 10rem;
+}
+.mngGrowL{
+  margin-left: 12rem;
+}
+
+.mngInner{
+  @include Inner;
+}
