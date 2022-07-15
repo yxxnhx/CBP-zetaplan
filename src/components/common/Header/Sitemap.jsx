@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 const Sitemap = ({ open, close }) => {
+
+
   return (
     <div className={open ? 'hdOpenModal hdModal' : 'hdModal'}>
       {
@@ -75,7 +77,7 @@ const Sitemap = ({ open, close }) => {
                         <li><Link to={''}>기술가치평가</Link></li>
                       </ul>
                     </li>
-                    <li><Link to={''}>기업인증</Link></li>
+                    <li className='hdMargin2'><Link to={''}>기업인증</Link></li>
                   </ul>
                 </li>
                 <li className='hdSmList'>

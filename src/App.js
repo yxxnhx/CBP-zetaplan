@@ -21,8 +21,10 @@ import ZetaCi from './pages/zeta/ZetaCi';
 import Zeta from './pages/zeta/index';
 import DataInfo from './pages/notice/DataInfo';
 import ZetaPeople from './pages/zeta/ZetaPeople';
-
+import { useState } from 'react'
 function App() {
+  const [hdSubStyle, setHdSubStyle] = useState(false);
+
   /* 서브 페이지에 헤더 배경 하얀색 주려고 넣은 것, 지우지 말아주세요
   const [hdSubStyle, setHdSubStyle] = useState(false);
   function addSubStyle (){
@@ -35,7 +37,7 @@ function App() {
     <div className="App">
       <ResetStyle />
       <BrowserRouter>
-        <Header />
+        {  true ? <Header className="" /> :  <Header className="" />  }
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />

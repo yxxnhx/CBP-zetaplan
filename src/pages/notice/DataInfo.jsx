@@ -1,23 +1,23 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../styles/notice/dataInfo.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
 import mnaInvestmentData from '../../db/m&a-investList.json';
-import InfoList from '../../components/Notice/InfoList';
+// import InfoList from '../../components/Notice/InfoList';
 
 const DataInfo = () => {
-  const title= 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
+  const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
 
   const [dataList, setDataList] = useState([]);
   const [showNum, setShowNum] = useState(3);
 
-  useEffect(()=> {
+  useEffect(() => {
     setDataList(mnaInvestmentData.reverse());
   }, [])
 
 
   const showMoreData = () => {
-    setShowNum((showNum) => { return (showNum += 3)})
+    setShowNum((showNum) => { return (showNum += 3) })
   }
 
   // const showData = dataList.filter((data, index) => {
@@ -48,9 +48,9 @@ const DataInfo = () => {
           <input type="search" placeholder='검색어를 입력하세요' />
         </div>
         <div className='dataInfoLiBox'>
+          {/* <InfoList />
           <InfoList />
-          <InfoList />
-          <InfoList />
+          <InfoList /> */}
         </div>
         <button className='infoMoreBtn' onClick={showMoreData}>더보기</button>
       </div>
