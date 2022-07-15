@@ -1,11 +1,10 @@
 @import '../GlobalStyle.scss';
 
 .gbInner {
-  width: 176.3rem;
-  margin: auto;
+  @include Inner;
 
   .gbTabTitleBox {
-    width: 176.3rem;
+    width: 144rem;
     border-bottom: 0.1rem solid $basic-gray3;
     padding-bottom: 1rem;
     .gbTabTitle {
@@ -41,6 +40,7 @@
 
   .gbMapImg {
     margin: 10rem;
+    width: 155rem;
   }
 
   .gbCasetableBox {

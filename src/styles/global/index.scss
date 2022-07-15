@@ -1,16 +1,17 @@
 @import '../GlobalStyle.scss';
 
 .gbInner {
-  width: 176.3rem;
-  margin: auto;
+  @include Inner;
 
   .gbTabTitleBox {
-    width: 176.3rem;
+    width: 144rem;
     border-bottom: 0.1rem solid $basic-gray3;
     padding-bottom: 1rem;
     .gbTabTitle {
       background-image: url(../../img/title_box.png);
       background-repeat: no-repeat;
+      font-size: 100rem;
+
       font: {
         size: $sub-title;
         weight: bold;
@@ -22,6 +23,7 @@
   .gbContentSubTitle {
     position: relative;
     text-indent: 8.5rem;
+    font-size: 100rem;
     font: {
       size: $sub-title;
       weight: bold;
@@ -54,10 +56,13 @@
 
   .gbProcessImg {
     margin: 5rem 10rem 10rem;
+    width: 120rem;
   }
 
   .gbChartBox {
     margin-top: 7rem;
+    margin-left: 10rem;
+    width: 120rem;
     .gbChart {
       .gbChartListTop {
         display: flex;

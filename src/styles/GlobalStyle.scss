@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
 
-$main-color: #1527A0;
-$sub-red:#83151B;
-$sub-purple: #461D93;
-$basic-gray1:#f0f0f0;
+$main-color: #1527a0;
+$sub-red: #83151b;
+$sub-purple: #461d93;
+$basic-gray1: #f0f0f0;
 $basic-gray2: #e0e0e0;
-$basic-gray3:#333;
-$basic-black:#000;
-$basic-white:#fff;
+$basic-gray3: #333;
+$basic-black: #000;
+$basic-white: #fff;
 $main-title: 4.5rem;
 $sub-title: 3.2rem;
 $size-xl: 2.4rem;
@@ -25,7 +25,7 @@ $size-xs: 1.44rem;
   padding-left: 3rem;
   position: relative;
   &::before {
-    content: "";
+    content: '';
     display: block;
     background: url('./../../img/title_box@2x.png') no-repeat;
     background-size: contain;
@@ -36,7 +36,7 @@ $size-xs: 1.44rem;
     left: 0;
   }
   &::after {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 1px;
@@ -45,7 +45,7 @@ $size-xs: 1.44rem;
     top: 6rem;
     left: 0;
   }
-};
+}
 
 @mixin Circle($size, $circleSize) {
   display: flex;
@@ -67,14 +67,14 @@ $size-xs: 1.44rem;
     justify-content: center;
     align-items: center;
     line-height: 1.7;
-    
+
     &:hover {
       background-color: $main-color;
       color: $basic-white;
     }
 
     &::before {
-      content: "";
+      content: '';
       display: block;
       width: 4rem;
       height: 1px;

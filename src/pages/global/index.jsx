@@ -3,13 +3,12 @@ import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer/index';
 import strategyProcess from '../../img/global/global_strategy.png';
 import strategyGraph from '../../img/global/global_strategy_graph.png';
-import '../../styles/global/index.scss';
+import './../../styles/global/index.scss';
 
 const index = () => {
   return (
     <div>
       <div className="gbInner">
-        <Header />
         <div className="gbTabTitleBox">
           <p className="gbTabTitle">전략수립</p>
         </div>
@@ -115,7 +114,6 @@ const index = () => {
             </li>
           </ul>
         </div>
-        <Footer />
       </div>
     </div>
   );

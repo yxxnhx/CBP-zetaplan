@@ -7,13 +7,12 @@ import '../../styles/global/gbStrategy.scss';
 const GbStrategy = () => {
   return (
     <div>
-      <Header />
       <div className="gbInner">
         <div className="gbTabTitleBox">
           <p className="gbTabTitle">성과</p>
         </div>
         <div className="gbContentTitle">
-          (주)제타플랜인베스트는 중국,대만,베트남, 싱가폴,일본 등 전 세계적으로 우수한 해외 네트워크를 보유하고
+          (주)제타플랜인베스트는 중국,대만,베트남, 싱가폴,일본 등 <br />전 세계적으로 우수한 해외 네트워크를 보유하고
           있습니다.
         </div>
         <p className="gbContentSubTitle">사업분야</p>
@@ -88,15 +87,17 @@ const GbStrategy = () => {
         <p className="gbContentSubTitle">GCC란?</p>
         <p className="gbMaterialContent">
           - “기술기반” 국내업체의 성공적인 해외시장 진출을 위해, 해외 현지 경험과 컨설팅 능력을 갖춘 글로벌기술 사업화
-          센터(GCC)를 통해 종합적인 글로벌 기술 사업화 컨설팅 서비스를 제공합니다.
+          센터(GCC)를 통해 <br />
+          &nbsp;&nbsp; 종합적인 글로벌 기술 사업화 컨설팅 서비스를 제공합니다.
         </p>
         <p className="gbMaterialContent">
           - 정의 : 기술기반 국내 기업의 해외진출 관련 종합적 기술사업화 컨설팅 서비스 제공
         </p>
         <p className="gbMaterialContent">
-          - 제공 서비스 범위:순 상품판매나 거래 알선이 아닌 기술관련 또는 기술기반 국내기업의 현지 진출을 위한
-          시장조사,고객평가, 잠재수요처 발굴, 잠재수요처 컨택 및 거래,알선,법률,계약,회계,세무 등의 종합 컨설팅 원스탑
-          서비스 제공
+          - 제공 서비스 범위:순 상품판매나 거래 알선이 아닌 기술관련 또는 기술기반 국내기업의 현지 진출을 위한 시장조사,
+          고객평가, 잠재수요처 발굴, 잠재수요처 컨택 및 거래,
+          <br />
+          &nbsp; &nbsp;알선, 법률, 계약, 회계, 세무 등의 종합 컨설팅 원스탑 서비스 제공
         </p>
         <p className="gbMaterialContent">
           - 지원대상:우수기술 및 기술기반 제품의 해외기술 사업화를 추진하고자 하는 국내기업,연구소,대학등
@@ -158,23 +159,22 @@ const GbStrategy = () => {
         </div>
         <div className="gbProcessListDesBox">
           <p className="gbProcessListDes">
-            수요기업신청접수(연중) ‣ 기업기술의 평가 (내・외부 전문가) ‣기술사업화 기업의 선정
+            수요기업신청접수 ‣ 기업기술의 평가 (내・외부 전문가) ‣기술사업화 기업의 선정
           </p>
           <p className="gbProcessListDes">
-            ・공급대상기술의 사업화 가능성 분석을 위한 기업 실사 ・기업담당자 면담 및 기술성 검토
+            ・공급대상기술의 사업화 가능성 분석을 위한 기업 실사 ・담당자 면담, 기술성 검토
           </p>
           <p className="gbProcessListDes">
-            ・현지 수요기술 관련 시장조사, 기업발굴, 분석 및 사업화 가능성 검토, 사업화 전략 수립
+            ・현지 수요기술 관련 시장조사, 분석 및 사업화 가능성 검토, 사업화 전략 수립
           </p>
           <p className="gbProcessListDes">
-            ・수요 및 공급기술 매칭 기술소개, 상담회 개최, 계약체결(NDA, MOU 포함) 협상 지원
+            ・수요와 공급기술 매칭 기술소개, 상담회 개최, 계약체결(NDA, MOU 등) 협상 지원
           </p>
           <p className="gbProcessListDes">
             ・사업수행성과보고서 작성 및 성과분석을 토대로 개선 방안 도출, 차년도 사업에 반영
           </p>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

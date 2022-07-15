@@ -1,11 +1,10 @@
 @import '../GlobalStyle.scss';
 
 .gbInner {
-  width: 176.3rem;
-  margin: auto;
+  @include Inner;
 
   .gbTabTitleBox {
-    width: 176.3rem;
+    width: 144rem;
     border-bottom: 0.1rem solid $basic-gray3;
     padding-bottom: 1rem;
     .gbTabTitle {
@@ -52,6 +51,7 @@
 
   .gbGraphImg {
     margin-left: 20rem;
+    width: 120rem;
   }
 
   .gbPerformanceDes {
@@ -75,7 +75,7 @@
   }
 
   .gbContentBox {
-    width: 176.3rem;
+    width: 140rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
     border: 0.1rem solid #707070;
@@ -101,22 +101,33 @@
 
   .gbProcessList {
     display: flex;
+    margin-left: 6rem;
+
     .gbProcessItem {
-      width: 29.2rem;
-      height: 29.2rem;
+      width: 20rem;
+      height: 20rem;
       border-radius: 50%;
       border: 0.1rem solid $main-color;
       display: flex;
-      margin-left: 6rem;
+      margin-right: 6rem;
+
+      &:hover {
+        background-color: $main-color;
+        color: $basic-white;
+        .gbProcessItemT {
+          color: white;
+        }
+      }
+
       .gbProcessItemBox {
         width: 14rem;
         height: 12rem;
-        margin-top: 10rem;
-        margin-left: 8rem;
+        margin-top: 6rem;
+        margin-left: 3rem;
 
         .gbProcessItemT {
           color: #1527a0;
-          margin-bottom: 2.4rem;
+          margin-bottom: 1rem;
           text-align: center;
           font: {
             size: $list-md;
@@ -130,6 +141,7 @@
             weight: bold;
           }
           text-align: center;
+          line-height: 1.5;
         }
       }
     }
@@ -137,19 +149,13 @@
   .gbProcessListDesBox {
     display: flex;
     margin-top: 4rem;
-    margin-left: 6rem;
-    width: 170rem;
+    width: 120rem;
+    margin-left: 8rem;
     justify-content: space-between;
     .gbProcessListDes {
-      width: 21rem;
+      width: 17rem;
       font-size: $size-xs;
       line-height: 1.5;
-      &:first-child {
-        margin-left: 3rem;
-      }
-      &:last-child {
-        margin-right: 3rem;
-      }
     }
   }
 }
