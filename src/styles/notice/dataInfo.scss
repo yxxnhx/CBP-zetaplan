@@ -17,20 +17,77 @@
 
     .infoTabList {
       display: flex;
-      font-size: 2.24rem;
       font-weight: bold;
       
       li {
-        margin-left: 100px; // 122px인데 임시 수정(문의)
+        margin-left: 50px; // 122px인데 임시 수정(문의)
+        font-size: 2.24rem;
+        position: relative;
 
         &:hover {
           color: $main-color;
+
+          &::after {
+            opacity: 1;
+          }
+        }
+
+        &::after {
+          content: "";
+          width: 140px;
+          height: 2px;
+          display: block;
+          background-color: $main-color;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -16px;
+          opacity: 0;
         }
       }
     }
   }
-  .infoSearchBox {
 
+  .infoSearchCon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    margin-top: 94px;
+
+    span {
+      font-size: 1.76rem;
+    }
+    
+    .infoSearchBox {
+      position: relative;
+      width: 450px;
+
+      .infoInput {
+        width: 450px;
+        border: none;
+        border-bottom: 1px solid #707070;
+        font-size: 2rem;
+        display: block;
+        outline: none;s
+
+        &::placeholder {
+          color: $basic-black;
+
+        }
+      }
+
+      .infomagnifier {
+        display: block;
+        background: url('../../img/zetaplan_splite.png')  no-repeat -419px -151px;
+        background-size: 599px 280px;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
   }
 
   .dataInfoLiBox {
@@ -38,10 +95,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     .dataInfoItem {
-      // width: 557px;
-      // height: 395px;
       width: 450px;
       height: 316px;
+      margin-bottom: 50px;
       padding: 56px 103px 103px 54px;
       border: 1px solid $basic-black;
       border-radius: 20px;
@@ -90,7 +146,10 @@
     border-radius: 50px;
     outline: none;
     font-size: 1.6rem;
-    margin: 0 auto;
+    display: block;
+    margin: 167px auto 0;
+    font-size: 1.6rem;
+    font-weight: bold;
   }
 
 }
