@@ -1,0 +1,96 @@
+@import '../GlobalStyle.scss';
+
+.dataInfoInner {
+  @include Inner;
+
+  .infoTitleBox {
+    border-bottom: 1px solid $basic-gray3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .infoTitle {
+      font-size: 3.2rem;
+      font-family: 'Noto Sans KR',sans-serif;
+      padding-bottom: 20px;
+    }
+
+    .infoTabList {
+      display: flex;
+      font-size: 2.24rem;
+      font-weight: bold;
+      
+      li {
+        margin-left: 100px; // 122px인데 임시 수정(문의)
+
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+  .infoSearchBox {
+
+  }
+
+  .dataInfoLiBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .dataInfoItem {
+      // width: 557px;
+      // height: 395px;
+      width: 450px;
+      height: 316px;
+      padding: 56px 103px 103px 54px;
+      border: 1px solid $basic-black;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: 'Noto Sans KR',sans-serif;
+
+      &:hover {
+        background-color: $main-color;
+        color: $basic-white;
+      }
+
+      .infoItemTop {
+        display: flex;
+        justify-content: space-between;
+
+        dd.ddnotice {
+          font-size: 1.92rem;
+          font-weight: bold;
+        }
+        dd.ddCate {
+          font-size: 1.68rem;
+          font-weight: bold;
+        }
+
+      }
+      dt {
+        margin: 49px 0;
+        font-size: 2.32rem;
+        font-weight: bold;
+        line-height: 1.5;
+      }
+      dd.date {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+
+  }
+
+  .infoMoreBtn {
+    width: 295px;
+    height: 78px;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    outline: none;
+    font-size: 1.6rem;
+    margin: 0 auto;
+  }
+
+}
