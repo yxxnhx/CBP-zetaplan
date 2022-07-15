@@ -19,14 +19,32 @@ const ZetaPeople = () => {
       <SubBanner title={title} img={subBg} />
       <div className="inner">
         <div className="zetaPeoSubtitle">PEOPLE</div>
-        <ul>
-          <li>
-            <img src="" alt="" />
-            <title></title>
-          </li>
+        <ul className='zetaPeoList'>
+          {
+            peopleData.map((zetaPerson, i) => {
+              return (
+                <li className='zetaPeoBox'>
+                  <div className="zetaPeoImgBOX">
+                    <img src={require('./../../img/zeta/people/'+peopleData[i].img)} alt="zetaPerson" key={zetaPerson.id}/>
+                    <div className="zetaPeoTBox">
+                    </div>
+                  </div>
+                  <div className="zetaDimmed">
+                    <div className="zetaPeoTop">
+                      <h2 className="zetaPeoName">{zetaPerson.name}</h2>
+                      <p className="zetaPeoHPos">{zetaPerson.hoverPos}</p>
+                      <p className="zetaPeoPos">{zetaPerson.position}</p>
+                    </div>
+                    <div className='zetaPeoDetail' dangerouslySetInnerHTML={{ __html: peopleData[i].detailInfo }}></div>
+                  </div>
+                </li>
+              )
+            })
+          }
         </ul>
       </div>
     </div>
+
   );
 };
 

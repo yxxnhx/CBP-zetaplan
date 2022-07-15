@@ -9,3 +9,78 @@
   @include Subtitle($sub-title, $basic-gray3)
 }
 
+.zetaPeoList {
+  // display: flex;
+  // justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 8.5rem 0;
+}
+
+.zetaPeoBox {
+  margin: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.zetaPeoImgBOX img {
+  width: 35rem;
+  height: 55rem;
+  border-radius: 5px;
+}
+
+.zetaDimmed {
+  width: 35rem;
+  height: 55rem;
+  position: absolute;
+  top: 40rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5rem 2rem 2rem 2rem;
+  box-sizing: border-box;
+  .zetaPeoName {
+    font-size: $size-xl;
+    margin-bottom: 1.5rem;
+  }
+
+  .zetaPeoPos {
+    font-size: $size-sm;
+    color: $main-color;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+
+  }
+
+  .zetaPeoDetail {
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+
+  .zetaPeoHPos {
+    font-size: $size-xs;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+
+}
+
+.zetaPeoDes {
+  align-self: flex-end;
+}
+
+.zetaPeoBox {
+  .zetaDimmed:hover {
+    background-color: rgba($color: $main-color, $alpha: 0.8);
+    color: #fff;
+    top: 0;
+    left: 0;
+    .zetaPeoPos {
+      font-size: $size-sm;
+      color: #fff;
+    }
+  }
+}

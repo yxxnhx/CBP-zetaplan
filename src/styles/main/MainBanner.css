@@ -30,26 +30,32 @@
   left: 6%;
 }
 
-.swiper-button-prev {
-  background: url("../../../src/img/zetaplan_splite.png") no-repeat -395px -447px;
-  width: 16px;
-  height: 26px;
-  left: 11.1rem;
-  right: auto;
-  top: 83rem;
-}
 .swiper-button-prev::after {
   display: none;
 }
 
-.swiper-button-next {
-  background: url("../../../src/img/zetaplan_splite.png") no-repeat -477px -449px;
-  width: 16px;
-  height: 25px;
-  right: 150rem;
-  left: auto;
-  top: 83rem;
-}
 .swiper-button-next::after {
   display: none;
+}
+
+.swiperBtnBox {
+  width: 8rem;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 30%;
+  left: 6%;
+  z-index: 10;
+}
+.swiperBtnBox .prev {
+  background: url("../../../src/img/zetaplan_splite.png") no-repeat -390px -442px;
+  width: 16px;
+  height: 25px;
+  font-size: 0;
+}
+.swiperBtnBox .next {
+  background: url("../../../src/img/zetaplan_splite.png") no-repeat -472px -443px;
+  width: 16px;
+  height: 25px;
+  font-size: 0;
 }/*# sourceMappingURL=MainBanner.css.map */

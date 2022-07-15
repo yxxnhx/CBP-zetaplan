@@ -1,32 +1,27 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation, Pagination, Autoplay, EffectFade} from 'swiper';
+import { Navigation, Autoplay} from 'swiper';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
 import './../../styles/main/MainBanner.scss';
 
-
 const MainBanner = () => {
-  const pagination = {
-    el: '.pagination-box',
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
-    }, }
+  const navigationBtn = {
+    nextEl: '.next',
+    prevEl: '.prev',
+  };
 
   return (
     <div>
       <Swiper className='mySlider'
-        modules={[Navigation, Pagination, Autoplay, EffectFade]}
-        navigation={true}
-        effect={'fade'}
-        pagination={pagination}
+        modules={[Navigation, Autoplay]}
+        navigation={navigationBtn}
         loop={true} 
         autoplay={{
-          delay: 2500,
+          delay: 2000,
           disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         }}
         spaceBetween={0}
         slidesPerView={1}
@@ -58,6 +53,10 @@ const MainBanner = () => {
             </div>
           </div>
         </SwiperSlide>
+        <div className="swiperBtnBox">
+          <button type='button' className='prev'>Prev</button>
+          <button type='button' className='next'>Next</button>
+        </div> 
       </Swiper>
     </div>
   );

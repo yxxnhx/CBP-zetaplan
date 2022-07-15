@@ -36,4 +36,70 @@
   position: absolute;
   top: 6rem;
   left: 0;
+}
+
+.zetaPeoList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 8.5rem 0;
+}
+
+.zetaPeoBox {
+  margin: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.zetaPeoImgBOX img {
+  width: 35rem;
+  height: 55rem;
+  border-radius: 5px;
+}
+
+.zetaDimmed {
+  width: 35rem;
+  height: 55rem;
+  position: absolute;
+  top: 40rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5rem 2rem 2rem 2rem;
+  box-sizing: border-box;
+}
+.zetaDimmed .zetaPeoName {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+.zetaDimmed .zetaPeoPos {
+  font-size: 1.6rem;
+  color: #1527a0;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+.zetaDimmed .zetaPeoDetail {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+.zetaDimmed .zetaPeoHPos {
+  font-size: 1.44rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.zetaPeoDes {
+  align-self: flex-end;
+}
+
+.zetaPeoBox .zetaDimmed:hover {
+  background-color: rgba(21, 39, 160, 0.8);
+  color: #fff;
+  top: 0;
+  left: 0;
+}
+.zetaPeoBox .zetaDimmed:hover .zetaPeoPos {
+  font-size: 1.6rem;
+  color: #fff;
 }/*# sourceMappingURL=zetaPeople.css.map */
