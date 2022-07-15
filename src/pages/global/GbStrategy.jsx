@@ -1,18 +1,20 @@
 import React from 'react';
-import Header from '../../components/common/Header';
-import Footer from '../../components/common/Footer/index';
 import globalPerformance from '../../img/global/global_performance.png';
 import '../../styles/global/gbStrategy.scss';
+import SubBanner from '../../components/common/SubBanner/index';
+import subBg from '../../img/global/global_sub_bg.png';
 
 const GbStrategy = () => {
+  const title = 'ZETA PLAN은 전 세계적으로<br/> 우수한 해외 네트워크를 보유하고 있습니다.';
   return (
     <div>
+      <SubBanner title={title} img={subBg} />
       <div className="gbInner">
         <div className="gbTabTitleBox">
           <p className="gbTabTitle">성과</p>
         </div>
         <div className="gbContentTitle">
-          (주)제타플랜인베스트는 중국,대만,베트남, 싱가폴,일본 등 <br />전 세계적으로 우수한 해외 네트워크를 보유하고
+          (주)제타플랜인베스트는 중국,대만,베트남, 싱가폴,일본 등<br /> 전 세계적으로 우수한 해외 네트워크를 보유하고
           있습니다.
         </div>
         <p className="gbContentSubTitle">사업분야</p>
@@ -21,9 +23,9 @@ const GbStrategy = () => {
         <p className="gbMaterialTitle">✔︎ 기술거래·기술이전컨설팅</p>
         <p className="gbMaterialContent">
           • 해외기술이전사업 진출이후 베이징기술교역촉진중심, Transpacific IP, IPA VIETNAM, 주한영국상공회의소(BCCK),
-          이스라엘 ABG 등과 기술이전 업무협약을 체결하였고,
           <br />
-          &nbsp; &nbsp; 그 외 해외 정부기관들을 통한 기술이전 네트워크 구축
+          &nbsp;&nbsp;이스라엘 ABG 등과 기술이전 업무협약을 체결하였고, 그 외 해외 정부기관들을 통한 기술이전 네트워크
+          구축
         </p>
         <p className="gbMaterialContent">
           • 국내에는 한국발명진흥회, 농업기술실용화재단, 중소기업청 해외민간네트워크 등을 통해 한국과 해외간의 공식적인
@@ -56,7 +58,7 @@ const GbStrategy = () => {
           <p className="gbContentBoxT">
             02
             <br />
-            해외 수출지원실적 및 진출 성공의 노하우 보유
+            해외 수출지원실적 및<br /> 진출 성공의 노하우 보유
           </p>
           <p className="gbContentBoxC">
             • 수요기업과 공급기업 무역을 위한 공식 매칭 가능
@@ -87,17 +89,16 @@ const GbStrategy = () => {
         <p className="gbContentSubTitle">GCC란?</p>
         <p className="gbMaterialContent">
           - “기술기반” 국내업체의 성공적인 해외시장 진출을 위해, 해외 현지 경험과 컨설팅 능력을 갖춘 글로벌기술 사업화
-          센터(GCC)를 통해 <br />
-          &nbsp;&nbsp; 종합적인 글로벌 기술 사업화 컨설팅 서비스를 제공합니다.
+          센터(GCC)를 통해 종합적인 글로벌 기술 사업화 컨설팅 서비스를 제공합니다.
         </p>
         <p className="gbMaterialContent">
           - 정의 : 기술기반 국내 기업의 해외진출 관련 종합적 기술사업화 컨설팅 서비스 제공
         </p>
         <p className="gbMaterialContent">
           - 제공 서비스 범위:순 상품판매나 거래 알선이 아닌 기술관련 또는 기술기반 국내기업의 현지 진출을 위한 시장조사,
-          고객평가, 잠재수요처 발굴, 잠재수요처 컨택 및 거래,
-          <br />
-          &nbsp; &nbsp;알선, 법률, 계약, 회계, 세무 등의 종합 컨설팅 원스탑 서비스 제공
+          고객평가, <br />
+          &nbsp;&nbsp;&nbsp;잠재수요처 발굴, 잠재수요처 컨택 및 거래, 알선, 법률, 계약, 회계, 세무 등의 종합 컨설팅
+          원스탑 서비스 제공
         </p>
         <p className="gbMaterialContent">
           - 지원대상:우수기술 및 기술기반 제품의 해외기술 사업화를 추진하고자 하는 국내기업,연구소,대학등
@@ -159,19 +160,27 @@ const GbStrategy = () => {
         </div>
         <div className="gbProcessListDesBox">
           <p className="gbProcessListDes">
-            수요기업신청접수 ‣ 기업기술의 평가 (내・외부 전문가) ‣기술사업화 기업의 선정
+            기업신청접수
+            <br />
+            ‣기업기술 평가
+            <br />
+            ‣기업의 선정
           </p>
           <p className="gbProcessListDes">
-            ・공급대상기술의 사업화 가능성 분석을 위한 기업 실사 ・담당자 면담, 기술성 검토
+            공급대상기술
+            <br />
+            가능성 분석
+            <br />
+            기술성 검토
           </p>
+          <p className="gbProcessListDes">현지 수요기술 관련 시장조사, 기업발굴, 분석</p>
+          <p className="gbProcessListDes">기술소개, 상담회 개최, 계약체결 협상 지원</p>
           <p className="gbProcessListDes">
-            ・현지 수요기술 관련 시장조사, 분석 및 사업화 가능성 검토, 사업화 전략 수립
-          </p>
-          <p className="gbProcessListDes">
-            ・수요와 공급기술 매칭 기술소개, 상담회 개최, 계약체결(NDA, MOU 등) 협상 지원
-          </p>
-          <p className="gbProcessListDes">
-            ・사업수행성과보고서 작성 및 성과분석을 토대로 개선 방안 도출, 차년도 사업에 반영
+            성과분석 바탕
+            <br />
+            개선 방안 도출,
+            <br />
+            차년도 반영
           </p>
         </div>
       </div>

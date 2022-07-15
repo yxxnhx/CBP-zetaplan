@@ -4,14 +4,12 @@
   @include Inner;
 
   .gbTabTitleBox {
-    width: 144rem;
+    width: 176.3rem;
     border-bottom: 0.1rem solid $basic-gray3;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     .gbTabTitle {
       background-image: url(../../img/title_box.png);
       background-repeat: no-repeat;
-      font-size: 100rem;
-
       font: {
         size: $sub-title;
         weight: bold;
@@ -23,12 +21,12 @@
   .gbContentSubTitle {
     position: relative;
     text-indent: 8.5rem;
-    font-size: 100rem;
     font: {
-      size: $sub-title;
+      size: 2.6rem;
       weight: bold;
     }
-    margin-top: 10rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
     &:before {
       content: '';
       position: absolute;
@@ -40,33 +38,41 @@
     }
   }
 
+  .gbMaterialBox {
+    margin-bottom: 5rem;
+  }
+
   .gbMaterialTitle {
     font: {
-      size: $size-lg;
+      size: 2.3rem;
       weight: bold;
     }
-    margin-bottom: 4.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .gbMaterialContent {
-    font-size: $list-md;
-    margin-bottom: 4.5rem;
+    font-size: $size-lg;
+    margin-bottom: 3.5rem;
     line-height: 1.5;
   }
 
   .gbProcessImg {
+    margin: 5rem 10rem 10rem;
+    width: 135rem;
+  }
+
+  .gbProcessChartImg {
     margin: 5rem 10rem 10rem;
     width: 120rem;
   }
 
   .gbChartBox {
     margin-top: 7rem;
-    margin-left: 10rem;
-    width: 120rem;
     .gbChart {
       .gbChartListTop {
         display: flex;
-        font-size: $size-xl;
+        font-size: 2.3rem;
         border-top: 0.3rem solid $basic-gray3;
         border-bottom: 0.3rem solid $basic-gray3;
         padding: 2rem 0;
@@ -90,7 +96,7 @@
 
       .gbchartList {
         display: flex;
-        font-size: $size-xl;
+        font-size: $sub-title;
         border-bottom: 0.1rem solid $basic-gray3;
         padding: 2rem 0;
         display: flex;

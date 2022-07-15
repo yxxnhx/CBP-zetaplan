@@ -6,7 +6,7 @@
   .gbTabTitleBox {
     width: 144rem;
     border-bottom: 0.1rem solid $basic-gray3;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     .gbTabTitle {
       background-image: url(../../img/title_box.png);
       background-repeat: no-repeat;
@@ -22,11 +22,11 @@
     position: relative;
     text-indent: 8.5rem;
     font: {
-      size: 3.5rem;
+      size: 2.6rem;
       weight: bold;
     }
-    margin-top: 10rem;
-    margin-bottom: 6.4375rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
     &:before {
       content: '';
       position: absolute;
@@ -41,19 +41,34 @@
   .gbMapImg {
     margin: 10rem;
     width: 155rem;
+    margin-top: 15rem;
+    width: 130rem;
   }
+}
 
-  .gbCasetableBox {
-    .gbCasetable {
-      .gbCasetableLi {
-        display: flex;
+.accoBox {
+  display: flex;
+  margin-top: 2rem;
 
-        .gbCasetableCom {
-          font-size: 30px;
-        }
-        .gbCasetableCon {
-          font-size: 30px;
-        }
+  .titleBox {
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    width: 50rem;
+
+    .title {
+      font-size: 2.1rem;
+      color: $main-color;
+      margin-left: 2rem;
+    }
+  }
+  .txt {
+    width: 100rem;
+    ul {
+      margin-bottom: 3rem;
+      li {
+        font-size: 2.1rem;
+        line-height: 2;
       }
     }
   }
