@@ -14,6 +14,7 @@ const GlobalNetwork = () => {
           <li>Beijing, CHINA</li>
           <li>Seoul, KOREA</li>
           <li>GwangJu, KOREA</li>
+          {/* <p>수정중</p> */}gi
         </ul>
       </div>
     </div>
