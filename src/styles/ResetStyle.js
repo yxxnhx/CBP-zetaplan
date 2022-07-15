@@ -20,6 +20,8 @@ const ResetStyle = createGlobalStyle`
 
   body {
     line-height: 1;
+    overflow-x: hidden;
+    width: 100vw;
   }
 
   ol, ul ,li {

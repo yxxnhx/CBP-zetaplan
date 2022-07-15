@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.qnaTable {
+  border-top: 5px solid #707070;
+  width: 100%;
+}
+.qnaTable .qnaThead .qnaThTr {
+  border-bottom: 1px solid #707070;
+  height: 113px;
+}
+.qnaTable .qnaThead .qnaThTr th {
+  font-size: 1.92rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+}
+.qnaTable .qnaTbody {
+  border-bottom: 1px solid #707070;
+}
+.qnaTable .qnaTbody .qnaTbTr {
+  border-bottom: 1px solid #f0f0f0;
+  height: 113px;
+}
+.qnaTable .qnaTbody .qnaTbTr:last-child {
+  border-bottom: none;
+}
+.qnaTable .qnaTbody .qnaTbTr:hover {
+  background-color: rgba(21, 39, 160, 0.07);
+}
+.qnaTable .qnaTbody .qnaTbTr td {
+  font-size: 1.92rem;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+}
+.qnaTable .qnaTbody .qnaTbTr td.qnaTbodyTitle {
+  font-weight: bold;
+  text-align: start;
+}
+.qnaTable .qnaTbody .qnaTbTr td button {
+  width: 190px;
+  height: 50px;
+  font-size: 1.92rem;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.qnaTable .qnaTbody .qnaTbTr td.answerBtn button {
+  border: 1px solid #e0e0e0;
+  background-color: #f0f0f0;
+}
+.qnaTable .qnaTbody .qnaTbTr td.isAnswerBtn button {
+  border: 1px solid #707070;
+  background-color: #1527a0;
+  color: #fff;
+}/*# sourceMappingURL=qnaTable.css.map */

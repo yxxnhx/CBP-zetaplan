@@ -20,6 +20,7 @@ import ZetaNetwork from './pages/zeta/ZetaNetwork';
 import ZetaCi from './pages/zeta/ZetaCi';
 import Zeta from './pages/zeta/index';
 import DataInfo from './pages/notice/DataInfo';
+import ZetaPeople from './pages/zeta/ZetaPeople';
 
 function App() {
   /* 서브 페이지에 헤더 배경 하얀색 주려고 넣은 것, 지우지 말아주세요
@@ -39,19 +40,20 @@ function App() {
           <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />
           <Route path="/ir" element={<Ir />} />
-          <Route path="/irPerfo" element={<IrPerfo />} />
-          <Route path="/irPlan" element={<IrPlan />} />
-          <Route path="/irProcess" element={<IrProcess />} />
+          <Route path="/ir-perfo" element={<IrPerfo />} />
+          <Route path="/ir-plan" element={<IrPlan />} />
+          <Route path="/ir-process" element={<IrProcess />} />
           <Route path="/zeta" element={<Zeta />} />
-          <Route path="/zetaci" element={<ZetaCi />} />
-          <Route path="/zetanetwork" element={<ZetaNetwork />} />
-          <Route path="/Gbindex" element={<Gbindex />} />
-          <Route path="/GbStrategy" element={<GbStrategy />} />
-          <Route path="/GbCase" element={<GbCase />} />
+          <Route path="/zeta-ci" element={<ZetaCi />} />
+          <Route path="/zeta-network" element={<ZetaNetwork />} />
+          <Route path="/gb" element={<Gbindex />} />
+          <Route path="/gb-trategy" element={<GbStrategy />} />
+          <Route path="/gb-case" element={<GbCase />} />
           <Route path="/landing" element={<Landing />} />
           <Route path="/maipo" element={<MaipoInfo />} />
           <Route path="/qna" element={<Qna />} />
           <Route path="/dataInfo" element={<DataInfo />} />
+          <Route path="/zeta-people" element={<ZetaPeople />} />
         </Routes>
       </BrowserRouter>
       <Footer />

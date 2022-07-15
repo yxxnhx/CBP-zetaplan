@@ -1,6 +1,9 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
 .ztTitle {
   font-size: 3.2rem;
   font-weight: 900;
@@ -14,7 +17,7 @@
   background: url("./../../img/title_box@2x.png") no-repeat;
   background-size: contain;
   width: 1rem;
-  height: 4rem;
+  height: 3rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -41,9 +44,8 @@
 }
 .ztInfoBox .ztInner {
   width: 1440px;
-  margin: 0 auto;
   padding: 8rem 0;
-  /*margin:8rem auto 를 위로 수정해야할듯*/
+  margin: 0 auto;
 }
 
 .ztIntro {
@@ -125,9 +127,8 @@
 
 .ztRedTabBox .ztRedTabInner {
   width: 1440px;
-  margin: 0 auto;
   padding: 8rem 0;
-  /*margin:8rem auto 를 위로 수정해야할듯*/
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -249,9 +250,8 @@
 
 .ztNetWorkBox .ztNtInner {
   width: 1440px;
-  margin: 0 auto;
   padding: 8rem 0;
-  /*margin:8rem auto 를 위로 수정해야할듯*/
+  margin: 0 auto;
   font-family: "Roboto", "Noto Sans KR", sans-serif;
 }
 
@@ -268,7 +268,7 @@
   background: url("./../../img/title_box@2x.png") no-repeat;
   background-size: contain;
   width: 1rem;
-  height: 4rem;
+  height: 3rem;
   position: absolute;
   top: 0;
   left: 0;

@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
 .gbInner {
-  width: 176.3rem;
-  margin: auto;
+  width: 1440px;
+  padding: 8rem 0;
+  margin: 0 auto;
 }
 .gbInner .gbTabTitleBox {
-  width: 176.3rem;
+  width: 144rem;
   border-bottom: 0.1rem solid #333;
   padding-bottom: 1rem;
 }
@@ -28,12 +33,13 @@
   position: absolute;
   width: 6rem;
   height: 0.5rem;
-  background-color: #1527A0;
+  background-color: #1527a0;
   top: 30%;
   left: 0;
 }
 .gbInner .gbMapImg {
   margin: 10rem;
+  width: 155rem;
 }
 .gbInner .gbCasetableBox .gbCasetable .gbCasetableLi {
   display: flex;

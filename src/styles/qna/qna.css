@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.qnaInner {
+  width: 1440px;
+  padding: 8rem 0;
+  margin: 0 auto;
+}
+.qnaInner .qnaTitleBox {
+  border-bottom: 1px solid #707070;
+  width: auto;
+}
+.qnaInner .qnaTitleBox .qnaTitle {
+  font-size: 3.2rem;
+  font-family: "Noto Sans KR", sans-serif;
+  padding-bottom: 20px;
+}
+.qnaInner .qnaSearchInput {
+  height: 180px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.qnaInner .qnaSearchInput .qnaSelect {
+  width: 139px;
+  height: 70px;
+  font-size: 1.6rem;
+  text-align: center;
+  outline: none;
+  font-weight: 500;
+}
+.qnaInner .qnaSearchInput .qnaSearch {
+  width: 542px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #707070;
+  font-size: 2rem;
+  margin-left: 62px;
+}/*# sourceMappingURL=qna.css.map */

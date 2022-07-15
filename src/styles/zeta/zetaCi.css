@@ -1,6 +1,9 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
 .ztCiContain {
   background-color: #000;
   color: #fff;
@@ -8,9 +11,8 @@
 
 .ztInner {
   width: 1440px;
-  margin: 0 auto;
   padding: 8rem 0;
-  /*margin:8rem auto 를 위로 수정해야할듯*/
+  margin: 0 auto;
 }
 
 .ztCiBox .ztColTitle {
@@ -152,7 +154,7 @@
 .ztColSt .ztColStBox .ztColStIn .ztColStInBox .ztColStInRed .ztColStInRImg {
   width: 9.8rem;
   height: 9.8rem;
-  background: #83151B;
+  background: #83151b;
   text-indent: -9999px;
   font-size: 0;
 }
@@ -174,7 +176,7 @@
 .ztColSt .ztColStBox .ztColStIn .ztColStInBox .ztColStInBlue .ztColStInBImg {
   width: 9.8rem;
   height: 9.8rem;
-  background: #1527A0;
+  background: #1527a0;
   text-indent: -9999px;
   font-size: 0;
 }
@@ -201,7 +203,7 @@
   height: 12rem;
   margin: 0 auto;
   position: relative;
-  background-color: #461D93;
+  background-color: #461d93;
 }
 .ztColSt .ztColStBox .ztColStIn .ztColStInBox .ztNewImg::after {
   content: "#461D93";
@@ -225,6 +227,6 @@
   margin-top: 16rem;
   text-align: center;
   font-size: 2.4rem;
-  color: #461D93;
+  color: #461d93;
   font-weight: 700;
 }/*# sourceMappingURL=zetaCi.css.map */
