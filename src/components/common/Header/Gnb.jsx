@@ -19,9 +19,9 @@ const Gnb = () => {
       <li className='hdDep1'>
         <Link to={'/maipo'} className='hdSub'>M&A / IPO</Link>
         <ul className='hdDep2'>
-          <li><Link to={''}>개요</Link></li>
-          <li><Link to={''}>Process</Link></li>
-          <li><Link to={''}>성과</Link></li>
+          <li><Link to={'/maipo'}>개요</Link></li>
+          <li><Link to={'/maipo-pro'}>Process</Link></li>
+          <li><Link to={'/maipo-perfo'}>성과</Link></li>
         </ul>
       </li>
       <li className='hdDep1'>

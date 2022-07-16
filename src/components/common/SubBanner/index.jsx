@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import splite from '../../../img/zetaplan_splite.png';
 
-const SubBanner = ({title, img}) => {
+const SubBanner = ({ title, img }) => {
   return (
     <SubBannerContainer img={`${img}`}>
       <SubBannerTextContainer>
         <div className='leftBracket'></div>
-        <p dangerouslySetInnerHTML={{__html: title}}></p>
+        <p dangerouslySetInnerHTML={{ __html: title }}></p>
         <div className='rightBracket'></div>
       </SubBannerTextContainer>
     </SubBannerContainer>

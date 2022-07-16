@@ -17,7 +17,9 @@ import MngConsulting from './pages/management/MngConsulting';
 import MngCertify from './pages/management/MngCertify';
 import MngTrade from './pages/management/Mngtrade';
 import MngValue from './pages/management/MngValue';
-import MaipoInfo from './pages/maipo/MaipoInfo';
+import MaIpoInfo from './pages/maipo/MaIpoInfo';
+import MaIpoPro from './pages/maipo/MaIpoPro';
+import MaIpoPerfo from './pages/maipo/MaIpoPerfo';
 import Qna from './pages/notice/Qna';
 import Footer from './components/common/Footer/index';
 import ZetaNetwork from './pages/zeta/ZetaNetwork';
@@ -25,10 +27,10 @@ import ZetaCi from './pages/zeta/ZetaCi';
 import Zeta from './pages/zeta/index';
 import DataInfo from './pages/notice/DataInfo';
 import ZetaPeople from './pages/zeta/ZetaPeople';
-import { useState } from 'react';
 import News from './pages/notice/News';
+
+
 function App() {
-  const [hdSubStyle, setHdSubStyle] = useState(false);
 
   /* 서브 페이지에 헤더 배경 하얀색 주려고 넣은 것, 지우지 말아주세요
   const [hdSubStyle, setHdSubStyle] = useState(false);
@@ -42,7 +44,8 @@ function App() {
     <div className="App">
       <ResetStyle />
       <BrowserRouter>
-        {true ? <Header className="" /> : <Header className="" />}
+        <Header />
+        {/* {  true ? <Header className="" /> :  <Header className="" />  } */}
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />
@@ -61,7 +64,9 @@ function App() {
           <Route path="/gb-trategy" element={<GbStrategy />} />
           <Route path="/gb-case" element={<GbCase />} />
           <Route path="/landing" element={<Landing />} />
-          <Route path="/maipo" element={<MaipoInfo />} />
+          <Route path="/maipo" element={<MaIpoInfo />} />
+          <Route path="/maipo-pro" element={<MaIpoPro />} />
+          <Route path="/maipo-perfo" element={<MaIpoPerfo />} />
           <Route path="/qna" element={<Qna />} />
           <Route path="/dataInfo" element={<DataInfo />} />
           <Route path="/zeta-people" element={<ZetaPeople />} />
