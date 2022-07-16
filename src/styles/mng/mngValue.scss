@@ -56,27 +56,30 @@ $mngCircleSize : 20rem;
 
 
 .mngNeedTxt{
-  p{
-    font-size: 2rem;
-    margin-top: 6rem;
-    margin-left: 8rem;
-    line-height: 0.5;
-  }
+      width: 132.7rem;
+      margin-left: 9rem;
+      margin-top: 6rem;
+      p{
+        font-size: $size-lg;
+        font-family:'Noto Sans KR';
+        line-height: 1.7;
+    }
 }
+
 .thinGradient{
   width: 130rem;
   margin-top: 7.4rem;
   margin-left: 6.8rem;
-  position: relative;
 }
+
 .mngValueGradientTitle{
   width: 120rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  top: 78rem;
-  left: 12rem;
+  margin-left: 11rem;
+  margin-top: -4rem;
+  
   span{
     color: #fff;
     font-size: $size-xl;
@@ -91,12 +94,11 @@ $mngCircleSize : 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 113rem;
-  left: 19rem;
+  margin-left: -10rem;
   p{
     padding-left: 8rem;
     font-size: $size-sm;
+    font-family:'Noto Sans KR';
     line-height: 1.5;
     text-align: center;
   }
@@ -106,12 +108,11 @@ $mngCircleSize : 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 155rem;
-  left: 23rem;
+  margin-left: -2rem;
   p{
     padding-left: 8rem;
     font-size: $size-sm;
+    font-family:'Noto Sans KR';
     line-height: 1.5;
     text-align: center;
   }
@@ -121,32 +122,41 @@ $mngCircleSize : 20rem;
   top:5rem;
 }
 
+
 .mngValueBusiness{
   display: none;
 }
 
+
 //skillVallue
 
+/*
+.mngSkillValue{
+  display: none;
+}*/
+
+.mngValueTxtBox{
+  display: flex;
+}
 
 .mngValueList{
   font-size: 3rem;
   font-weight: bold;
   line-height: 8.3;
-  margin-left: 8rem;
-  position: relative;
+  margin-left: 10rem;
 }
 
 .mngCompanyValue{
-  position: absolute;
-  bottom: -63rem;
-  left: 25rem;
   line-height: 2;
+  margin-left: 10rem;
+  margin-top: 4.5rem;
   div{
     font-size: 1.8rem;
     font-weight: bold;
   }
   p{
     font-size: 1.6rem;
+    font-family:'Noto Sans KR';
   }
   span{
     font-size: 1.8rem;
@@ -174,16 +184,9 @@ $mngCircleSize : 20rem;
   }
  p{
    font-size: 1.8rem;
+   font-family:'Noto Sans KR';
    line-height: 3;
  }
-}
-
-
-
-.mngInner{
-  width: 20rem;
-  height: 20rem;
-  @include Inner;
 }
 
 
@@ -221,7 +224,7 @@ $mngCircleSize : 20rem;
   height: 17rem;
   top:-1.875rem;
   left:50%; background-color : $main-color;
-  transform: translate(-16rem, -3rem);
+  transform: translate(-16rem, -6rem);
   }
 
 .mngCircleItemConnection {
@@ -229,7 +232,7 @@ $mngCircleSize : 20rem;
   height: 17rem;
   bottom:.625rem;
   right:0; background-color:$main-color ; 
-  transform:translate(8rem, -8rem)
+  transform:translate(10rem, -8rem)
 }
 
 .mngCircleItemSpace {
@@ -237,7 +240,7 @@ $mngCircleSize : 20rem;
   height: 17rem;
   bottom:.625rem;
   left:0; background-color:$main-color;
-  transform:translateY(6rem);
+  transform:translateY(9rem);
   }
 
 .mngCircleText {
@@ -250,14 +253,18 @@ $mngCircleSize : 20rem;
 @keyframes rotate2 {0%{}100%{transform:rotate(-360deg);}}
 
 .mngCircleBg {
-  background: url('../../img/zetaplan_splite.png') no-repeat -15.0625rem -0.5rem ;
-	width: 13.0625rem;
-	height: 2.875rem;
-  background-size: 37.4375rem 17.5rem;
+  background: url('../../img/main/zetaplanLogo.svg') no-repeat ;
+	width: 100%;
+	height: 100%;
   position: absolute;
-  left: 32rem;
-  bottom: -15rem;
-  border: 1px solid #ccc;
+  bottom: -30rem;
+  left: 22rem;
+  border: 1rem solid #ccc;
+  background-size: 100% 100%;
   border-radius: 50%;
-  padding: 10rem;
+  box-shadow:0 .625rem 1.25rem rgba(18, 27, 116, .18);
+}
+
+.mngInner{
+  @include Inner;
 }

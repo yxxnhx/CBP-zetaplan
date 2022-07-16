@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
 .mngSubTitle {
   font-size: 3.2rem;
   font-weight: 900;
@@ -34,6 +38,7 @@
   font-weight: 900;
   padding-left: 3rem;
   margin-left: 7.8rem;
+  margin-top: 3rem;
   position: relative;
 }
 .mngSubTitleNb::before {
@@ -42,7 +47,7 @@
   background: url("../../img/title_box@2x.png") no-repeat;
   background-size: contain;
   width: 1rem;
-  height: 4rem;
+  height: 3rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -51,10 +56,10 @@
 .mngSummary {
   width: 132.7rem;
   height: 26.6rem;
-  margin-left: 8.3rem;
+  margin-left: 9rem;
 }
 .mngSummary p {
-  font-size: 2.4rem;
+  font-size: 2.08rem;
   line-height: 1.7;
 }
 
@@ -68,13 +73,13 @@
   width: 90rem;
   justify-content: center;
   align-items: center;
-  margin: 9.5rem 14rem;
+  margin: 9rem 14rem 2rem;
 }
 .mngFourCircle li {
   width: 35rem;
   height: 35rem;
   border-radius: 50%;
-  border: 1px solid #1527A0;
+  border: 1px solid #1527a0;
   margin-right: 4rem;
   position: relative;
   font-size: 2.1rem;
@@ -86,7 +91,7 @@
   line-height: 1.7;
 }
 .mngFourCircle li:hover {
-  background-color: #1527A0;
+  background-color: #1527a0;
   color: #fff;
 }
 .mngFourCircle li::before {
@@ -109,14 +114,13 @@
   width: 115rem;
   justify-content: center;
   align-items: center;
-  margin: 9.5rem 20rem;
-  position: relative;
+  margin: 9rem 16rem 2rem;
 }
 .mngFiveCircle li {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  border: 1px solid #1527A0;
+  border: 1px solid #1527a0;
   margin-right: 4rem;
   position: relative;
   font-size: 1.6rem;
@@ -128,7 +132,7 @@
   line-height: 1.7;
 }
 .mngFiveCircle li:hover {
-  background-color: #1527A0;
+  background-color: #1527a0;
   color: #fff;
 }
 .mngFiveCircle li::before {
@@ -150,44 +154,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-9rem);
 }
 .mngCircleTxt p {
-  padding-left: 8rem;
+  padding-left: 3rem;
   font-size: 1.6rem;
   line-height: 1.5;
-  text-align: center;
+  font-family: "Noto Sans KR";
+  margin-bottom: 10rem;
+  margin-top: 2rem;
 }
 
-.mngConsultingTxt {
-  position: absolute;
-  top: 193rem;
-  left: 14rem;
-}
 .mngConsultingTxt p {
   font-size: 1.6rem;
+  font-family: "Noto Sans KR";
   padding-left: 3rem;
   line-height: 1.5;
+  margin-left: 8rem;
+  margin-top: 4rem;
 }
 
 .mngSmTitle {
   width: 30rem;
   font-size: 2.4rem;
   margin-left: 7.6rem;
-  margin-top: 4rem;
+  margin-top: 10rem;
 }
 
 .mngFiveTxt {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(3rem, -8rem);
 }
 .mngFiveTxt p {
   font-size: 1.6rem;
+  font-family: "Noto Sans KR";
   padding-left: 3rem;
   text-align: center;
   line-height: 1.5;
+  margin-bottom: 10rem;
 }
 
 .mngSubTitleNb.mngConsultingPro {
