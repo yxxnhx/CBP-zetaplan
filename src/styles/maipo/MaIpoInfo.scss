@@ -6,13 +6,13 @@
 }
 
 /* head */
-.maInfoHead {
+.miInfoHead {
   display: flex;
   justify-content: space-between;
   @include Subtitle($sub-title, $basic-gray3)
 }
 
-.maInfoTab {
+.miInfoTab {
   display: flex;
 
   button {
@@ -36,19 +36,26 @@
         left: 0;
       }
     }
+  }
+}
 
+// 버튼 클릭 후 효과
+.miInfoTab>button.on {
+  color: $main-color;
 
+  &::after {
+    background-color: $main-color;
   }
 }
 
 
 /* content */
-.maInfoMainImg {
+.miInfoMainImg {
   width: 100%;
   padding-top: 9.1rem;
 }
 
-.maInfoTxt {
+.miInfoTxt {
   width: 100%;
   text-align: center;
   margin-top: 12.1rem;

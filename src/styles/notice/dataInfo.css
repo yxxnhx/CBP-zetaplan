@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.dataInfoInner {
+  width: 1440px;
+  padding: 8rem 0;
+  margin: 0 auto;
+}
+.dataInfoInner .infoTitleBox {
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dataInfoInner .infoTitleBox .infoTitle {
+  font-size: 3.2rem;
+  font-family: "Noto Sans KR", sans-serif;
+  padding-bottom: 20px;
+}
+.dataInfoInner .infoTitleBox .infoTabList {
+  display: flex;
+  font-weight: bold;
+}
+.dataInfoInner .infoTitleBox .infoTabList li {
+  margin-left: 50px;
+  font-size: 2.24rem;
+  position: relative;
+}
+.dataInfoInner .infoTitleBox .infoTabList li:hover {
+  color: #1527a0;
+}
+.dataInfoInner .infoTitleBox .infoTabList li:hover::after {
+  opacity: 1;
+}
+.dataInfoInner .infoTitleBox .infoTabList li::after {
+  content: "";
+  width: 140px;
+  height: 2px;
+  display: block;
+  background-color: #1527a0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -16px;
+  opacity: 0;
+}
+.dataInfoInner .infoSearchCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  margin-top: 94px;
+}
+.dataInfoInner .infoSearchCon span {
+  font-size: 1.76rem;
+}
+.dataInfoInner .infoSearchCon .infoSearchBox {
+  position: relative;
+  width: 450px;
+}
+.dataInfoInner .infoSearchCon .infoSearchBox .infoInput {
+  width: 450px;
+  border: none;
+  border-bottom: 1px solid #707070;
+  font-size: 2rem;
+  display: block;
+  outline: none;
+}
+s .dataInfoInner .infoSearchCon .infoSearchBox .infoInput::-moz-placeholder {
+  color: #000;
+}
+s .dataInfoInner .infoSearchCon .infoSearchBox .infoInput:-ms-input-placeholder {
+  color: #000;
+}
+s .dataInfoInner .infoSearchCon .infoSearchBox .infoInput::placeholder {
+  color: #000;
+}
+.dataInfoInner .infoSearchCon .infoSearchBox .infomagnifier {
+  display: block;
+  background: url("../../img/zetaplan_splite.png") no-repeat -419px -151px;
+  background-size: 599px 280px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.dataInfoInner .dataInfoLiBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.dataInfoInner .dataInfoLiBox .dataInfoItem {
+  width: 450px;
+  height: 316px;
+  margin-bottom: 50px;
+  padding: 56px 103px 103px 54px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.dataInfoInner .dataInfoLiBox .dataInfoItem:hover {
+  background-color: #1527a0;
+  color: #fff;
+}
+.dataInfoInner .dataInfoLiBox .dataInfoItem .infoItemTop {
+  display: flex;
+  justify-content: space-between;
+}
+.dataInfoInner .dataInfoLiBox .dataInfoItem .infoItemTop dd.ddnotice {
+  font-size: 1.92rem;
+  font-weight: bold;
+}
+.dataInfoInner .dataInfoLiBox .dataInfoItem .infoItemTop dd.ddCate {
+  font-size: 1.68rem;
+  font-weight: bold;
+}
+.dataInfoInner .dataInfoLiBox .dataInfoItem dt {
+  margin: 49px 0;
+  font-size: 2.32rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.dataInfoInner .dataInfoLiBox .dataInfoItem dd.date {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.dataInfoInner .infoMoreBtn {
+  width: 295px;
+  height: 78px;
+  border: 1px solid #707070;
+  border-radius: 50px;
+  outline: none;
+  font-size: 1.6rem;
+  display: block;
+  margin: 167px auto 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+}/*# sourceMappingURL=dataInfo.css.map */

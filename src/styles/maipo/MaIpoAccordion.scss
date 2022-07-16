@@ -1,0 +1,436 @@
+@import '../GlobalStyle.scss';
+
+/* 일반적 절차 */
+.maContainer {
+  width: 100%;
+  max-width: 170rem;
+  margin: auto;
+}
+
+.maAcco {
+  width: 100%;
+  max-width: 170rem;
+  margin: 18px auto;
+
+  .maAccoHeading {
+    border: 1px solid $main-color;
+    padding: 10px 0;
+    background-color: #fff;
+    color: #000;
+
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+    }
+
+    .maContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        font-size: $size-lg;
+        letter-spacing: 1.2px;
+        font-weight: bold;
+        margin: 1.7rem 5.4rem;
+      }
+    }
+  }
+
+  .onmaAccoHeading {
+    background-color: $main-color;
+    color: #fff;
+    letter-spacing: 1.2px;
+    padding: 10px 0;
+
+    p {
+      font-size: $size-lg;
+      font-weight: bold;
+      margin: 1.7rem 5.4rem;
+
+    }
+
+    span {
+      background: url('./../../img/zetaplan_splite.png') no-repeat -137px -235px;
+      background-size: 599px 280px;
+      width: 22px;
+      height: 14px;
+      cursor: pointer;
+      margin-right: 4rem;
+      font-size: 0;
+    }
+  }
+
+
+  .maAccoContent {
+    border: 1px solid $basic-gray3;
+    height: 0;
+    opacity: 0;
+    display: flex;
+    overflow: hidden;
+    transform: all 600ms ease-in-out;
+    width: 100%;
+    max-width: 170rem;
+
+    .maContainer {
+
+      p {
+        font-size: $size-sm;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+
+
+.maAccoContents .show {
+  height: 18rem;
+  opacity: 1;
+  font-size: $size-sm;
+  width: 100%;
+  max-width: 170rem;
+  margin: 8rem auto;
+}
+
+.maAccoTxt {
+  font-size: $size-sm;
+  border: 1px solid #707070;
+  border-top: 1px solid transparent;
+  width: 100%;
+  max-width: 170rem;
+
+  >div>div {
+    background-image: url(../../img/m&a_ipo/m&a_ipo_process.png);
+    background-size: 90rem 135rem;
+    background-repeat: no-repeat;
+    background-position: top left;
+    margin: 7.3rem auto;
+    width: 85%;
+    height: 135.3rem;
+    position: relative;
+
+
+    >div:nth-child(1) {
+      top: 0;
+      left: 0;
+
+      >ul>p>span {
+        background: url('../../img/m&a_ipo/m&a_splite.png') no-repeat 0px 0px;
+        background-size: 300px 35px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    >div:nth-child(2) {
+      top: 11.6rem;
+      left: 80.9rem;
+
+      >ul>p>span {
+        background: url('../../img/m&a_ipo/m&a_splite.png') no-repeat -43px 0px;
+        background-size: 360px 40px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    >div:nth-child(3) {
+      top: 27.1rem;
+      left: 0;
+
+      >ul>p>span {
+        background: url('../../img/m&a_ipo/m&a_splite.png') no-repeat -66px 0px;
+        background-size: 300px 35px;
+        width: 37px;
+        height: 35px;
+      }
+    }
+
+    >div:nth-child(4) {
+      top: 45.5rem;
+      left: 80.9rem;
+
+      >ul>p>span {
+        background: url('../../img/m&a_ipo/m&a_splite.png') no-repeat -125px 0px;
+        background-size: 355px 45px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    >div:nth-child(5) {
+      top: 62.6rem;
+      left: 0;
+
+      >ul>p>span {
+        background: url('../../img/m&a_ipo/m&a_splite.png') no-repeat -163px 0px;
+        background-size: 355px 43px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    >div:nth-child(6) {
+      top: 81rem;
+      left: 80.9rem;
+
+      >ul>p>span {
+        background: url('../../img/m&a_ipo/m&a_splite.png') no-repeat -200px 0px;
+        background-size: 355px 40px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    >div:nth-child(7) {
+      top: 98rem;
+      left: 0;
+
+      >ul>p>span {
+        background: url('../../img/m&a_ipo/m&a_splite.png') no-repeat -242px 0px;
+        background-size: 355px 40px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    >div:nth-child(8) {
+      top: 109rem;
+      left: 80.9rem;
+
+      >ul>p>span {
+        background: url('../../img/m&a_ipo/m&a_splite.png') no-repeat -280px 0px;
+        background-size: 355px 40px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    >div:nth-child(9) {
+      top: 126rem;
+      left: 0;
+
+      >ul>p>span {
+        background: url('../../img/m&a_ipo/m&a_splite.png') no-repeat -320px 0px;
+        background-size: 355px 40px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+
+    >div {
+      width: 45%;
+      position: absolute;
+      display: flex;
+
+      &:hover>div>p {
+        opacity: 1;
+        transition: 0.5s;
+      }
+
+      >div {
+        display: flex;
+        width: 16.5%;
+
+        >p {
+          width: 100%;
+          height: 9rem;
+          border-radius: 100%;
+          text-align: center;
+          padding-top: 3.4rem;
+          padding-left: 0.5rem;
+          background-color: $main-color;
+          opacity: 0;
+
+          >span {
+            font-family: 'Noto Sans Kr';
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: $basic-white;
+
+          }
+        }
+      }
+
+      >ul {
+        width: 60%;
+        padding-top: 2.2rem;
+        padding-left: 2rem;
+
+        >p {
+          font-family: 'Noto Sans Kr';
+          font-size: 1.9rem;
+          font-weight: 700;
+          line-height: 4rem;
+          display: flex;
+
+          >span {
+            margin-left: 1rem;
+          }
+        }
+
+        >li {
+          font-family: 'Noto Sans Kr';
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+        }
+      }
+
+
+
+    }
+
+
+  }
+
+}
+
+.maAccoBtn {
+  background: url('./../../img/zetaplan_splite.png') no-repeat -137px -194px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+  cursor: pointer;
+  margin-right: 4rem;
+}
+
+.upmaAccoBtn {
+  background: url('./../../img/zetaplan_splite.png') no-repeat -137px -235px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+  cursor: pointer;
+  margin-right: 4rem;
+}
+
+
+
+/* 중개기관을 통한 절차 */
+
+.ipoContainer {
+  width: 100%;
+  max-width: 170rem;
+  margin: auto;
+}
+
+.ipoAcco {
+  width: 100%;
+  max-width: 170rem;
+  margin: 18px auto;
+
+  .ipoAccoHeading {
+    border: 1px solid $main-color;
+    padding: 10px 0;
+    background-color: #fff;
+    color: #000;
+
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+    }
+
+    .ipoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        font-size: $size-lg;
+        letter-spacing: 1.2px;
+        font-weight: bold;
+        margin: 1.7rem 5.4rem;
+      }
+    }
+  }
+
+  .onipoAccoHeading {
+    background-color: $main-color;
+    color: #fff;
+    letter-spacing: 1.2px;
+    padding: 10px 0;
+
+    p {
+      font-size: $size-lg;
+      font-weight: bold;
+      margin: 1.7rem 5.4rem;
+
+    }
+
+    span {
+      background: url('./../../img/zetaplan_splite.png') no-repeat -137px -235px;
+      background-size: 599px 280px;
+      width: 22px;
+      height: 14px;
+      cursor: pointer;
+      margin-right: 4rem;
+      font-size: 0;
+    }
+  }
+
+
+  .ipoAccoContent {
+    border: 1px solid $basic-gray3;
+    height: 0;
+    opacity: 0;
+    display: flex;
+    overflow: hidden;
+    transform: all 600ms ease-in-out;
+    width: 100%;
+    max-width: 170rem;
+
+    .ipoContainer {
+
+      p {
+        font-size: $size-sm;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+
+
+.ipoAccoContent .show {
+  height: 18rem;
+  opacity: 1;
+  font-size: $size-sm;
+  width: 100%;
+  max-width: 170rem;
+  margin: 8rem auto;
+}
+
+.ipoAccoTxt {
+  font-size: $size-sm;
+  border: 1px solid #707070;
+  border-top: 1px solid transparent;
+  width: 100%;
+  max-width: 170rem;
+
+  >div {
+    background: url(../../img/m&a_ipo/m&a_process@2x.png) no-repeat center / cover;
+    width: 80%;
+    height: 155rem;
+    margin: 7.3rem auto;
+  }
+
+}
+
+.ipoAccoBtn {
+  background: url('./../../img/zetaplan_splite.png') no-repeat -137px -194px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+  cursor: pointer;
+  margin-right: 4rem;
+}
+
+.upipoAccoBtn {
+  background: url('./../../img/zetaplan_splite.png') no-repeat -137px -235px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+  cursor: pointer;
+  margin-right: 4rem;
+}

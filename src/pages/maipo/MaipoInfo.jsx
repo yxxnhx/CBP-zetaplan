@@ -1,7 +1,7 @@
 import React from 'react';
 import SubBanner from '../../components/common/SubBanner';
-import maIpoSubImg from '../../img/m&a_ipo/m&a_ipo_sub_bg@2x.png'
-import '../../styles/maipo/MaIpo.scss'
+import MaIpoSubImg from '../../img/m&a_ipo/m&a_ipo_sub_bg@2x.png'
+import '../../styles/maipo/MaIpoInfo.scss'
 import MaInfo from './tab/MaInfo';
 import IpoInfo from './tab/IpoInfo';
 import { useState } from 'react';
@@ -13,32 +13,32 @@ const MaIpoInfo = () => {
 
   const tabContentents = [
     {
-      tabSubTitle: (<SubBanner title={maTitle} img={maIpoSubImg} />),
-      tabHead: (<button key={0} /* className={activeIndex === 0 ? 'is-active' : ''} */ onClick={() => tabClick(0)}> M&A </button>),
+      tabSubTitle: (<SubBanner title={maTitle} img={MaIpoSubImg} />),
+      tabHead: (<button key={0} /* className={active === 0 ? 'on' : ''} */ onClick={() => tabClick(0)}> M&A </button>),
       tabContent: (<MaInfo />)
     },
     {
-      tabSubTitle: (<SubBanner title={ipoTitle} img={maIpoSubImg} />),
-      tabHead: (<button key={1} /* className={activeIndex === 1 ? 'is-active' : ''} */ onClick={() => tabClick(1)}> IPO </button>),
+      tabSubTitle: (<SubBanner title={ipoTitle} img={MaIpoSubImg} />),
+      tabHead: (<button key={1} /* className={active === 1 ? 'on' : ''} */ onClick={() => tabClick(1)}> IPO </button>),
       tabContent: (<IpoInfo />)
     }
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [active, setActive] = useState(0);
 
   const tabClick = (index) => {
-    setActiveIndex(index)
+    setActive(index)
   }
 
   return (
-    <div className='maipoInfo'>
+    <div className='miInfo'>
 
-      {tabContentents[activeIndex].tabSubTitle}
+      {tabContentents[active].tabSubTitle}
 
       <div className='inner'>
-        <div className='maInfoHead'>
+        <div className='miInfoHead'>
           개요
-          <div className='maInfoTab'>
+          <div className='miInfoTab'>
             {
               tabContentents.map((section, index) => {
                 return section.tabHead
@@ -47,7 +47,7 @@ const MaIpoInfo = () => {
           </div>
         </div>
 
-        {tabContentents[activeIndex].tabContent}
+        {tabContentents[active].tabContent}
 
       </div>
     </div >

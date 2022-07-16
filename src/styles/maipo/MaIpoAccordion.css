@@ -1,0 +1,366 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+/* 일반적 절차 */
+.maContainer {
+  width: 100%;
+  max-width: 170rem;
+  margin: auto;
+}
+
+.maAcco {
+  width: 100%;
+  max-width: 170rem;
+  margin: 18px auto;
+}
+.maAcco .maAccoHeading {
+  border: 1px solid #1527a0;
+  padding: 10px 0;
+  background-color: #fff;
+  color: #000;
+}
+.maAcco .maAccoHeading:hover {
+  background-color: #1527a0;
+  color: #fff;
+}
+.maAcco .maAccoHeading .maContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.maAcco .maAccoHeading .maContainer p {
+  font-size: 2.08rem;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  margin: 1.7rem 5.4rem;
+}
+.maAcco .onmaAccoHeading {
+  background-color: #1527a0;
+  color: #fff;
+  letter-spacing: 1.2px;
+  padding: 10px 0;
+}
+.maAcco .onmaAccoHeading p {
+  font-size: 2.08rem;
+  font-weight: bold;
+  margin: 1.7rem 5.4rem;
+}
+.maAcco .onmaAccoHeading span {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -235px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+  cursor: pointer;
+  margin-right: 4rem;
+  font-size: 0;
+}
+.maAcco .maAccoContent {
+  border: 1px solid #333;
+  height: 0;
+  opacity: 0;
+  display: flex;
+  overflow: hidden;
+  transform: all 600ms ease-in-out;
+  width: 100%;
+  max-width: 170rem;
+}
+.maAcco .maAccoContent .maContainer p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.maAccoContents .show {
+  height: 18rem;
+  opacity: 1;
+  font-size: 1.6rem;
+  width: 100%;
+  max-width: 170rem;
+  margin: 8rem auto;
+}
+
+.maAccoTxt {
+  font-size: 1.6rem;
+  border: 1px solid #707070;
+  border-top: 1px solid transparent;
+  width: 100%;
+  max-width: 170rem;
+}
+.maAccoTxt > div > div {
+  background-image: url(../../img/m&a_ipo/m&a_ipo_process.png);
+  background-size: 90rem 135rem;
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin: 7.3rem auto;
+  width: 85%;
+  height: 135.3rem;
+  position: relative;
+}
+.maAccoTxt > div > div > div:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.maAccoTxt > div > div > div:nth-child(1) > ul > p > span {
+  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat 0px 0px;
+  background-size: 300px 35px;
+  width: 35px;
+  height: 35px;
+}
+.maAccoTxt > div > div > div:nth-child(2) {
+  top: 11.6rem;
+  left: 80.9rem;
+}
+.maAccoTxt > div > div > div:nth-child(2) > ul > p > span {
+  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -43px 0px;
+  background-size: 360px 40px;
+  width: 35px;
+  height: 35px;
+}
+.maAccoTxt > div > div > div:nth-child(3) {
+  top: 27.1rem;
+  left: 0;
+}
+.maAccoTxt > div > div > div:nth-child(3) > ul > p > span {
+  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -66px 0px;
+  background-size: 300px 35px;
+  width: 37px;
+  height: 35px;
+}
+.maAccoTxt > div > div > div:nth-child(4) {
+  top: 45.5rem;
+  left: 80.9rem;
+}
+.maAccoTxt > div > div > div:nth-child(4) > ul > p > span {
+  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -125px 0px;
+  background-size: 355px 45px;
+  width: 35px;
+  height: 35px;
+}
+.maAccoTxt > div > div > div:nth-child(5) {
+  top: 62.6rem;
+  left: 0;
+}
+.maAccoTxt > div > div > div:nth-child(5) > ul > p > span {
+  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -163px 0px;
+  background-size: 355px 43px;
+  width: 35px;
+  height: 35px;
+}
+.maAccoTxt > div > div > div:nth-child(6) {
+  top: 81rem;
+  left: 80.9rem;
+}
+.maAccoTxt > div > div > div:nth-child(6) > ul > p > span {
+  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -200px 0px;
+  background-size: 355px 40px;
+  width: 35px;
+  height: 35px;
+}
+.maAccoTxt > div > div > div:nth-child(7) {
+  top: 98rem;
+  left: 0;
+}
+.maAccoTxt > div > div > div:nth-child(7) > ul > p > span {
+  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -242px 0px;
+  background-size: 355px 40px;
+  width: 35px;
+  height: 35px;
+}
+.maAccoTxt > div > div > div:nth-child(8) {
+  top: 109rem;
+  left: 80.9rem;
+}
+.maAccoTxt > div > div > div:nth-child(8) > ul > p > span {
+  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -280px 0px;
+  background-size: 355px 40px;
+  width: 35px;
+  height: 35px;
+}
+.maAccoTxt > div > div > div:nth-child(9) {
+  top: 126rem;
+  left: 0;
+}
+.maAccoTxt > div > div > div:nth-child(9) > ul > p > span {
+  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -320px 0px;
+  background-size: 355px 40px;
+  width: 35px;
+  height: 35px;
+}
+.maAccoTxt > div > div > div {
+  width: 45%;
+  position: absolute;
+  display: flex;
+}
+.maAccoTxt > div > div > div:hover > div > p {
+  opacity: 1;
+  transition: 0.5s;
+}
+.maAccoTxt > div > div > div > div {
+  display: flex;
+  width: 16.5%;
+}
+.maAccoTxt > div > div > div > div > p {
+  width: 100%;
+  height: 9rem;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 3.4rem;
+  padding-left: 0.5rem;
+  background-color: #1527a0;
+  opacity: 0;
+}
+.maAccoTxt > div > div > div > div > p > span {
+  font-family: "Noto Sans Kr";
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #fff;
+}
+.maAccoTxt > div > div > div > ul {
+  width: 60%;
+  padding-top: 2.2rem;
+  padding-left: 2rem;
+}
+.maAccoTxt > div > div > div > ul > p {
+  font-family: "Noto Sans Kr";
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 4rem;
+  display: flex;
+}
+.maAccoTxt > div > div > div > ul > p > span {
+  margin-left: 1rem;
+}
+.maAccoTxt > div > div > div > ul > li {
+  font-family: "Noto Sans Kr";
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.maAccoBtn {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -194px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+  cursor: pointer;
+  margin-right: 4rem;
+}
+
+.upmaAccoBtn {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -235px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+  cursor: pointer;
+  margin-right: 4rem;
+}
+
+/* 중개기관을 통한 절차 */
+.ipoContainer {
+  width: 100%;
+  max-width: 170rem;
+  margin: auto;
+}
+
+.ipoAcco {
+  width: 100%;
+  max-width: 170rem;
+  margin: 18px auto;
+}
+.ipoAcco .ipoAccoHeading {
+  border: 1px solid #1527a0;
+  padding: 10px 0;
+  background-color: #fff;
+  color: #000;
+}
+.ipoAcco .ipoAccoHeading:hover {
+  background-color: #1527a0;
+  color: #fff;
+}
+.ipoAcco .ipoAccoHeading .ipoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ipoAcco .ipoAccoHeading .ipoContainer p {
+  font-size: 2.08rem;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  margin: 1.7rem 5.4rem;
+}
+.ipoAcco .onipoAccoHeading {
+  background-color: #1527a0;
+  color: #fff;
+  letter-spacing: 1.2px;
+  padding: 10px 0;
+}
+.ipoAcco .onipoAccoHeading p {
+  font-size: 2.08rem;
+  font-weight: bold;
+  margin: 1.7rem 5.4rem;
+}
+.ipoAcco .onipoAccoHeading span {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -235px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+  cursor: pointer;
+  margin-right: 4rem;
+  font-size: 0;
+}
+.ipoAcco .ipoAccoContent {
+  border: 1px solid #333;
+  height: 0;
+  opacity: 0;
+  display: flex;
+  overflow: hidden;
+  transform: all 600ms ease-in-out;
+  width: 100%;
+  max-width: 170rem;
+}
+.ipoAcco .ipoAccoContent .ipoContainer p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.ipoAccoContent .show {
+  height: 18rem;
+  opacity: 1;
+  font-size: 1.6rem;
+  width: 100%;
+  max-width: 170rem;
+  margin: 8rem auto;
+}
+
+.ipoAccoTxt {
+  font-size: 1.6rem;
+  border: 1px solid #707070;
+  border-top: 1px solid transparent;
+  width: 100%;
+  max-width: 170rem;
+}
+.ipoAccoTxt > div {
+  background: url(../../img/m&a_ipo/m&a_process@2x.png) no-repeat center/cover;
+  width: 80%;
+  height: 155rem;
+  margin: 7.3rem auto;
+}
+
+.ipoAccoBtn {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -194px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+  cursor: pointer;
+  margin-right: 4rem;
+}
+
+.upipoAccoBtn {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -235px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+  cursor: pointer;
+  margin-right: 4rem;
+}/*# sourceMappingURL=MaIpoAccordion.css.map */

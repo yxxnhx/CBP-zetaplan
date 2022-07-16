@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.newsInner {
+  width: 1440px;
+  padding: 8rem 0;
+  margin: 0 auto;
+}
+.newsInner .newsTitleBox {
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newsInner .newsTitleBox .newsTabTitle {
+  font-size: 3.2rem;
+  font-family: "Noto Sans KR", sans-serif;
+  padding-bottom: 20px;
+}
+.newsInner .newsTitleBox .newsTabList {
+  display: flex;
+  font-weight: bold;
+}
+.newsInner .newsTitleBox .newsTabList li {
+  margin-left: 50px;
+  font-size: 2.24rem;
+  position: relative;
+}
+.newsInner .newsTitleBox .newsTabList li:hover {
+  color: #1527a0;
+}
+.newsInner .newsTitleBox .newsTabList li:hover::after {
+  opacity: 1;
+}
+.newsInner .newsTitleBox .newsTabList li::after {
+  content: "";
+  width: 94px;
+  height: 2px;
+  display: block;
+  background-color: #1527a0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -16px;
+  opacity: 0;
+}
+.newsInner .newsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 178px;
+}
+.newsInner .newsContainer .newsContentBox {
+  width: 400px;
+  height: 570px;
+}
+.newsInner .newsContainer .newsContentBox .newsTitle {
+  font-size: 3.04rem;
+  width: 329px;
+  height: 166px;
+  font-weight: bold;
+}
+.newsInner .newsContainer .newsContentBox .newsSummary {
+  font-size: 2.4rem;
+  width: 398px;
+  height: 176px;
+  font-weight: 600;
+}
+.newsInner .newsContainer .newsContentBox .newsCreated {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.newsInner .newsContainer .newsThumbnail {
+  width: 904px;
+  height: 550px;
+}
+.newsInner .newsSearchBox {
+  position: relative;
+  width: 470px;
+  margin-top: 328px;
+}
+.newsInner .newsSearchBox .newsInput {
+  width: 470px;
+  border: none;
+  border-bottom: 1px solid #707070;
+  font-size: 2rem;
+  display: block;
+  outline: none;
+}
+s .newsInner .newsSearchBox .newsInput::-moz-placeholder {
+  color: #000;
+}
+s .newsInner .newsSearchBox .newsInput:-ms-input-placeholder {
+  color: #000;
+}
+s .newsInner .newsSearchBox .newsInput::placeholder {
+  color: #000;
+}
+.newsInner .newsSearchBox .newsmagnifier {
+  display: block;
+  background: url("../../img/zetaplan_splite.png") no-repeat -419px -151px;
+  background-size: 599px 280px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}/*# sourceMappingURL=news.css.map */

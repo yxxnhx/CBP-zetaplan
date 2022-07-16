@@ -4,10 +4,10 @@ import ipoInfoMainImg from '../../../img/m&a_ipo/ipo_summery@2x.png'
 
 const IpoInfo = () => {
   return (
-    <div className='maInfoContent'>
-      <img className='maInfoMainImg' src={ipoInfoMainImg} alt="M&A 개요 메인 이미지" />
+    <div className='miInfoContent'>
+      <img className='miInfoMainImg' src={ipoInfoMainImg} alt="M&A 개요 메인 이미지" />
 
-      <div className='maInfoTxt'>
+      <div className='miInfoTxt'>
         <p>Initial Public Offering</p>
         <p>
           어떤 기업의 주식이 증권시장에서 공식적으로 거래되기 위해서는 우선 상장이라는 과정을 거쳐야 합니다.

@@ -1,0 +1,229 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.inner {
+  width: 1440px;
+  padding: 8rem 0;
+  margin: 0 auto;
+}
+
+/* head */
+.miProHead {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3.2rem;
+  font-weight: 900;
+  padding-left: 3rem;
+  position: relative;
+}
+.miProHead::before {
+  content: "";
+  display: block;
+  background: url("./../../img/title_box@2x.png") no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.miProHead::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+
+.miProTab {
+  display: flex;
+}
+.miProTab button {
+  width: 13rem;
+  position: relative;
+  line-height: 4.1rem;
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.miProTab button:hover {
+  color: #1527a0;
+}
+.miProTab button:hover::after {
+  content: "";
+  height: 0.3rem;
+  width: 100%;
+  background-color: #1527a0;
+  position: absolute;
+  top: 5.9rem;
+  left: 0;
+}
+
+.miProTab > button.on {
+  color: #1527a0;
+}
+.miProTab > button.on::after {
+  background-color: #1527a0;
+}
+
+/* content */
+.maPro {
+  margin-top: 10rem;
+}
+
+/* ipo 부분 */
+.ipoProWrap {
+  margin: 12rem auto;
+  background-image: url(../../img/m&a_ipo/m&a_ipo_process.png);
+  background-size: 90rem 135rem;
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 86%;
+  height: 135.3rem;
+  position: relative;
+}
+.ipoProWrap > div:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.ipoProWrap > div:nth-child(1) > ul > p > span {
+  background: url("../../img/m&a_ipo/ipo_splite.png") no-repeat 0 -5px;
+  background-size: 470px 55px;
+  width: 45px;
+  height: 45px;
+}
+.ipoProWrap > div:nth-child(2) {
+  top: 11.6rem;
+  left: 80.9rem;
+}
+.ipoProWrap > div:nth-child(2) > ul > p > span {
+  background: url("../../img/m&a_ipo/ipo_splite.png") no-repeat -51px -5px;
+  background-size: 470px 55px;
+  width: 47px;
+  height: 45px;
+}
+.ipoProWrap > div:nth-child(3) {
+  top: 27.1rem;
+  left: 0;
+}
+.ipoProWrap > div:nth-child(3) > ul > p > span {
+  background: url("../../img/m&a_ipo/ipo_splite.png") no-repeat -101px -5px;
+  background-size: 470px 55px;
+  width: 47px;
+  height: 45px;
+}
+.ipoProWrap > div:nth-child(4) {
+  top: 45.5rem;
+  left: 80.9rem;
+}
+.ipoProWrap > div:nth-child(4) > ul > p > span {
+  background: url("../../img/m&a_ipo/ipo_splite.png") no-repeat -161px -5px;
+  background-size: 470px 55px;
+  width: 47px;
+  height: 45px;
+}
+.ipoProWrap > div:nth-child(5) {
+  top: 62.6rem;
+  left: 0;
+}
+.ipoProWrap > div:nth-child(5) > ul > p > span {
+  background: url("../../img/m&a_ipo/ipo_splite.png") no-repeat -210px -5px;
+  background-size: 470px 55px;
+  width: 47px;
+  height: 45px;
+}
+.ipoProWrap > div:nth-child(6) {
+  top: 81rem;
+  left: 80.9rem;
+}
+.ipoProWrap > div:nth-child(6) > ul > p > span {
+  background: url("../../img/m&a_ipo/ipo_splite.png") no-repeat -260px -5px;
+  background-size: 470px 55px;
+  width: 47px;
+  height: 50px;
+}
+.ipoProWrap > div:nth-child(7) {
+  top: 98rem;
+  left: 0;
+}
+.ipoProWrap > div:nth-child(7) > ul > p > span {
+  background: url("../../img/m&a_ipo/ipo_splite.png") no-repeat -315px -5px;
+  background-size: 470px 55px;
+  width: 47px;
+  height: 50px;
+}
+.ipoProWrap > div:nth-child(8) {
+  top: 109rem;
+  left: 80.9rem;
+}
+.ipoProWrap > div:nth-child(8) > ul > p > span {
+  background: url("../../img/m&a_ipo/ipo_splite.png") no-repeat -365px -5px;
+  background-size: 470px 55px;
+  width: 47px;
+  height: 50px;
+}
+.ipoProWrap > div:nth-child(9) {
+  top: 126rem;
+  left: 0;
+}
+.ipoProWrap > div:nth-child(9) > ul > p > span {
+  background: url("../../img/m&a_ipo/ipo_splite.png") no-repeat -404px -5px;
+  background-size: 460px 55px;
+  width: 52px;
+  height: 50px;
+}
+.ipoProWrap .ipoStap {
+  width: 45%;
+  position: absolute;
+  display: flex;
+}
+.ipoProWrap .ipoStap:hover > div > p {
+  opacity: 1;
+  transition: 0.5s;
+}
+.ipoProWrap .ipoStap .ipoCircle {
+  display: flex;
+  width: 16.5%;
+}
+.ipoProWrap .ipoStap .ipoCircle > p {
+  width: 100%;
+  height: 9rem;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 3.4rem;
+  padding-left: 0.5rem;
+  background-color: #1527a0;
+  opacity: 0;
+}
+.ipoProWrap .ipoStap .ipoCircle > p > span {
+  font-family: "Noto Sans Kr";
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #fff;
+}
+.ipoProWrap .ipoStap .ipoTxt {
+  width: 60%;
+  padding-top: 2.2rem;
+  padding-left: 2rem;
+}
+.ipoProWrap .ipoStap .ipoTxt > p {
+  font-family: "Noto Sans Kr";
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 4rem;
+  display: flex;
+}
+.ipoProWrap .ipoStap .ipoTxt > p > span {
+  margin-left: 1.5rem;
+}
+.ipoProWrap .ipoStap .ipoTxt > li {
+  font-family: "Noto Sans Kr";
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}/*# sourceMappingURL=MaIpoPro.css.map */

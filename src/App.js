@@ -65,8 +65,8 @@ function App() {
           <Route path="/gb-case" element={<GbCase />} />
           <Route path="/landing" element={<Landing />} />
           <Route path="/maipo" element={<MaIpoInfo />} />
-          <Route path="/maipo-pro" element={<MaIpoPro />} />
-          <Route path="/maipo-perfo" element={<MaIpoPerfo />} />
+          <Route path="/maipo-process" element={<MaIpoPro />} />
+          <Route path="/maipo-performance" element={<MaIpoPerfo />} />
           <Route path="/qna" element={<Qna />} />
           <Route path="/dataInfo" element={<DataInfo />} />
           <Route path="/zeta-people" element={<ZetaPeople />} />

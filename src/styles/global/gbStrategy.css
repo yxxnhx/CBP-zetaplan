@@ -9,9 +9,9 @@
   margin: 0 auto;
 }
 .gbInner .gbTabTitleBox {
-  width: 144rem;
+  width: 176.3rem;
   border-bottom: 0.1rem solid #333;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 .gbInner .gbTabTitleBox .gbTabTitle {
   background-image: url(../../img/title_box.png);
@@ -22,19 +22,18 @@
 }
 .gbInner .gbContentTitle {
   margin: 13rem auto 7.5rem;
-  width: 115.8rem;
-  font-size: 4.5rem;
+  font-size: 3.2rem;
   font-weight: bold;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 .gbInner .gbContentSubTitle {
   position: relative;
   text-indent: 8.5rem;
-  font-size: 3.5rem;
+  font-size: 2.6rem;
   font-weight: bold;
-  margin-top: 6.25rem;
-  margin-bottom: 6.4375rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 .gbInner .gbContentSubTitle:before {
   content: "";
@@ -46,26 +45,29 @@
   left: 0;
 }
 .gbInner .gbGraphImg {
+  margin-top: 5rem;
   margin-left: 20rem;
-  width: 120rem;
+  width: 130rem;
 }
 .gbInner .gbPerformanceDes {
   font-size: 2.08rem;
   width: 69.6rem;
-  margin: 8rem auto 25.4rem;
+  margin: 9rem auto 15rem;
+  text-align: center;
 }
 .gbInner .gbMaterialTitle {
-  font-size: 2.08rem;
+  font-size: 2.3rem;
   font-weight: bold;
-  margin-bottom: 4.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .gbInner .gbMaterialContent {
-  font-size: 1.92rem;
-  margin-bottom: 4.5rem;
-  line-height: 1.5;
+  font-size: 2.08rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
 }
 .gbInner .gbContentBox {
-  width: 140rem;
+  width: 176.3rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
   border: 0.1rem solid #707070;
@@ -73,51 +75,46 @@
   margin-bottom: 3.3rem;
 }
 .gbInner .gbContentBox .gbContentBoxT {
-  font-size: 2.08rem;
+  font-size: 2.3rem;
   font-weight: bold;
   line-height: 1.5;
   width: 33rem;
   margin-left: 4.375rem;
   margin-right: 10.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .gbInner .gbContentBox .gbContentBoxC {
-  font-size: 1.92rem;
-  line-height: 1.5;
+  font-size: 2.15rem;
+  line-height: 2;
 }
 .gbInner .gbProcessList {
   display: flex;
-  margin-left: 6rem;
 }
 .gbInner .gbProcessList .gbProcessItem {
-  width: 20rem;
-  height: 20rem;
+  width: 22rem;
+  height: 22rem;
   border-radius: 50%;
   border: 0.1rem solid #1527a0;
   display: flex;
-  margin-right: 6rem;
-}
-.gbInner .gbProcessList .gbProcessItem:hover {
-  background-color: #1527a0;
-  color: #fff;
-}
-.gbInner .gbProcessList .gbProcessItem:hover .gbProcessItemT {
-  color: white;
+  margin-left: 6rem;
 }
 .gbInner .gbProcessList .gbProcessItem .gbProcessItemBox {
   width: 14rem;
   height: 12rem;
   margin-top: 6rem;
-  margin-left: 3rem;
+  margin-left: 4rem;
 }
 .gbInner .gbProcessList .gbProcessItem .gbProcessItemBox .gbProcessItemT {
   color: #1527a0;
-  margin-bottom: 1rem;
+  margin-bottom: 2.4rem;
   text-align: center;
-  font-size: 1.92rem;
+  font-size: 2.1rem;
   font-weight: bold;
 }
 .gbInner .gbProcessList .gbProcessItem .gbProcessItemBox .gbProcessItemC {
-  font-size: 1.92rem;
+  font-size: 2.08rem;
   font-weight: bold;
   text-align: center;
   line-height: 1.5;
@@ -125,12 +122,18 @@
 .gbInner .gbProcessListDesBox {
   display: flex;
   margin-top: 4rem;
-  width: 120rem;
-  margin-left: 8rem;
+  margin-left: 5rem;
+  width: 140rem;
   justify-content: space-between;
 }
 .gbInner .gbProcessListDesBox .gbProcessListDes {
-  width: 17rem;
-  font-size: 1.44rem;
+  width: 13rem;
+  font-size: 1.92rem;
   line-height: 1.5;
+}
+.gbInner .gbProcessListDesBox .gbProcessListDes:first-child {
+  margin-left: 6rem;
+}
+.gbInner .gbProcessListDesBox .gbProcessListDes:last-child {
+  margin-right: 7rem;
 }/*# sourceMappingURL=gbStrategy.css.map */

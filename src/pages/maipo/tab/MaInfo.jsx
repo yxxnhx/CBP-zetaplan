@@ -3,10 +3,10 @@ import maInfoMainImg from '../../../img/m&a_ipo/m&a_summery@2x.png'
 
 const MaInfo = () => {
   return (
-    <div className='maInfoContent'>
-      <img className='maInfoMainImg' src={maInfoMainImg} alt="M&A 개요 메인 이미지" />
+    <div className='miInfoContent'>
+      <img className='miInfoMainImg' src={maInfoMainImg} alt="M&A 개요 메인 이미지" />
 
-      <div className='maInfoTxt'>
+      <div className='miInfoTxt'>
         <p>Mergers And Acquisitions</p>
         <p>
           M&A는 둘 이상의 회사가 합쳐져 하나의 회사가 되는 합병(Merger)과

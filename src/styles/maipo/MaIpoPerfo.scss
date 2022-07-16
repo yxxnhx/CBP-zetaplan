@@ -1,0 +1,56 @@
+@import '../GlobalStyle.scss';
+
+.inner {
+  @include Inner;
+
+}
+
+/* head */
+.miPerfoHead {
+  display: flex;
+  justify-content: space-between;
+  @include Subtitle($sub-title, $basic-gray3)
+}
+
+.miPerfoTab {
+  display: flex;
+
+  button {
+    width: 13rem;
+    position: relative;
+    line-height: 4.1rem;
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+    font-size: 2.8rem;
+
+    &:hover {
+      color: $main-color;
+
+      &::after {
+        content: '';
+        height: 0.3rem;
+        width: 100%;
+        background-color: $main-color;
+        position: absolute;
+        top: 5.9rem;
+        left: 0;
+      }
+    }
+  }
+}
+
+// 버튼 클릭 후 효과
+.miInfoTab>button.on {
+  color: $main-color;
+
+  &::after {
+    background-color: $main-color;
+  }
+}
+
+
+/* content */
+.miPerfoMainImg {
+  width: 90%;
+  margin: 10rem 7rem;
+}

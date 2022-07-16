@@ -13,7 +13,7 @@ header.hdSubStyle {
 */
 header {
   width: 100%;
-  height: 12.1rem;
+  height: 14.1rem;
   background-color: #000;
   /* background: url(../../img/main/banner/mainbanner01.png) no-repeat center / cover; */
   position: relative;
@@ -22,22 +22,29 @@ header {
 header:hover > .hd {
   background-color: #fff;
   color: #000;
+  transition: 0.5s;
 }
 header:hover > .hd .hdLogo {
-  background: url("../../img/zetaplan_splite.png") no-repeat -241px -8px;
+  background: url("../../img/zetaplan_splite.png") no-repeat -240px -8px;
   background-size: 599px 280px;
   width: 209px;
   height: 46px;
 }
 header:hover .hdUtil .hdSearchBtn {
-  border: 1px solid black;
+  background: url("../../img/zetaplan_splite.png") no-repeat -419px -151px;
+  background-size: 599px 280px;
+  width: 18px;
+  height: 18px;
 }
 header:hover .hdUtil .hdSitemapBtn {
-  border: 1px solid black;
+  background: url("../../img/zetaplan_splite.png") no-repeat -487px -153px;
+  background-size: 599px 280px;
+  width: 21px;
+  height: 13px;
 }
 header .hd {
   width: 100%;
-  height: 12.1rem;
+  height: 14.1rem;
   display: flex;
   justify-content: space-between;
   color: #fff;
@@ -47,7 +54,7 @@ header .hd .hdLogo {
   margin-top: 4.1rem;
   margin-left: 7.8rem;
   font-size: 0;
-  background: url("../../img/zetaplan_splite.png") no-repeat -7px -5px;
+  background: url("../../img/zetaplan_splite.png") no-repeat -6px -5px;
   background-size: 599px 280px;
   width: 209px;
   height: 47px;
@@ -60,25 +67,25 @@ header .hd .hdLogo {
 }
 .hdGnbArea .hdDep1:hover > .hdDep2 {
   visibility: visible;
-  height: 20rem;
+  height: 25rem;
   transition: 1s;
 }
 .hdGnbArea .hdDep1:hover > .hdSub {
   color: #1527a0;
 }
 .hdGnbArea .hdDep1 .hdSub {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   font-family: "Montserrat";
   font-weight: 600;
   display: block;
-  width: 12.5rem;
-  height: 12.1rem;
-  line-height: 12.1rem;
+  width: 15.5rem;
+  height: 14.1rem;
+  line-height: 14.1rem;
   text-align: center;
 }
 .hdGnbArea .hdDep1 .hdDep2 {
   position: absolute;
-  top: 12.1rem;
+  top: 14.1rem;
   left: 0;
   background-color: #f9f9f9;
   color: #000;
@@ -91,8 +98,8 @@ header .hd .hdLogo {
   overflow: hidden;
 }
 .hdGnbArea .hdDep1 .hdDep2 > li {
-  padding: 2rem;
-  min-width: 13rem;
+  padding: 2.5rem;
+  min-width: 14rem;
 }
 .hdGnbArea .hdDep1 .hdDep2 > li:hover {
   background-color: rgba(21, 39, 160, 0.13);
@@ -102,7 +109,7 @@ header .hd .hdLogo {
 }
 .hdGnbArea .hdDep1 .hdDep2 > li > a {
   display: block;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-family: "Noto Sans KR";
   font-weight: 700;
 }
@@ -115,20 +122,20 @@ header .hd .hdLogo {
 .hdGnbArea .hdDep1 .hdDep2 > li .hdDep3 li a {
   font-family: "Noto Sans KR";
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 
 /* util */
 .hdUtil {
   width: 15rem;
-  height: 12.1rem;
-  padding-top: 5.2rem;
+  height: 14.1rem;
+  padding-top: 5.7rem;
   display: flex;
   justify-content: space-between;
   margin-right: 7.8rem;
 }
 .hdUtil .hdLang > a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Montserrat";
   font-weight: 600;
   display: block;
@@ -141,25 +148,27 @@ header .hd .hdLogo {
   display: none;
 }
 .hdUtil .hdLang .hdLangLi a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Montserrat";
   font-weight: 600;
   display: block;
   padding-bottom: 1rem;
 }
 .hdUtil .hdSearchBtn {
-  background: url("../../img/zetaplan_splite.png") no-repeat -40.3rem -11.4rem;
-  background-size: 59.9rem 28rem;
-  width: 1.7rem;
-  height: 1.7rem;
+  background: url("../../img/zetaplan_splite.png") no-repeat -403px -114px;
+  background-size: 599px 280px;
+  width: 18px;
+  height: 18px;
   font-size: 0;
+  margin-top: 0.1rem;
 }
 .hdUtil .hdSitemapBtn {
-  background: url("../../img/zetaplan_splite.png") no-repeat -47.1rem -11.7rem;
-  background-size: 59.9rem 28rem;
-  width: 2.1rem;
-  height: 1.3rem;
+  background: url("../../img/zetaplan_splite.png") no-repeat -471px -117px;
+  background-size: 599px 280px;
+  width: 21px;
+  height: 13px;
   font-size: 0;
+  margin-top: 0.2rem;
 }
 
 /* search 창 */
@@ -168,47 +177,47 @@ header .hd .hdLogo {
   top: 12rem;
   left: 0;
   width: 100%;
-  height: 400rem;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   border-top: 1px solid #e0e0e0;
 }
 .hdSearch .hdSearchWrap {
   width: 100%;
-  height: 35rem;
+  height: 45.6rem;
   background-color: #f0f0f0;
 }
 .hdSearch .hdSearchWrap .hdSearchContent {
-  width: 70rem;
+  width: 90rem;
   margin: auto;
-  padding: 8rem;
+  padding-top: 12rem;
 }
 .hdSearch .hdSearchWrap .hdSearchContent .hdSearchInput {
   position: relative;
 }
 .hdSearch .hdSearchWrap .hdSearchContent .hdSearchInput input {
-  width: 50rem;
-  height: 5rem;
-  border-radius: 3rem;
+  width: 100%;
+  height: 7rem;
+  border-radius: 5rem;
   border: 1px solid #e0e0e0;
   background-color: #fff;
-  padding: 2rem;
-  font-size: 1.4rem;
+  padding: 4rem;
+  font-size: 2.3rem;
   font-family: "Noto Sans KR";
   font-weight: 700;
   color: #707070;
 }
 .hdSearch .hdSearchWrap .hdSearchContent .hdSearchInput button {
-  background: url("../../img/zetaplan_splite.png") no-repeat -45.2rem -8rem;
-  background-size: 52rem 23rem;
-  width: 3rem;
-  height: 3rem;
+  background: url("../../img/zetaplan_splite.png") no-repeat -522px -98px;
+  background-size: 599px 280px;
+  width: 33px;
+  height: 33px;
   position: absolute;
-  top: 1rem;
-  right: 5.5rem;
+  top: 2.5rem;
+  right: 3rem;
   font-size: 0;
 }
 .hdSearch .hdSearchWrap .hdSearchContent .hdButtonsArea p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #707070;
   font-family: "Noto Sans KR";
   font-weight: 500;
@@ -220,12 +229,12 @@ header .hd .hdLogo {
 }
 .hdSearch .hdSearchWrap .hdSearchContent .hdButtonsArea .hdButtons button {
   border: 1px solid #e0e0e0;
-  border-radius: 0.5rem;
-  padding: 1rem 1.7rem;
+  border-radius: 1rem;
+  padding: 1.5rem 2.2rem;
   margin-right: 2rem;
   font-family: "Noto Sans KR";
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   background-color: #fff;
 }
 
@@ -236,8 +245,7 @@ header .hd .hdLogo {
   left: 100vw;
   background-color: #fff;
   width: 100vw;
-  min-height: 50rem;
-  max-height: 80rem;
+  height: 100vh;
   overflow: hidden;
   visibility: hidden;
 }
@@ -260,8 +268,8 @@ header .hd .hdLogo {
 .hdSitemap .hdSmLeft h2 {
   margin-top: 6rem;
   margin-left: 6rem;
-  background: url("../../img/zetaplan_splite.png") no-repeat -7px -5px;
-  background-size: 570px 250px;
+  background: url("../../img/zetaplan_splite.png") no-repeat -6px -5px;
+  background-size: 599px 280px;
   width: 209px;
   height: 47px;
   font-size: 0;
@@ -271,18 +279,18 @@ header .hd .hdLogo {
   color: #fff;
 }
 .hdSitemap .hdSmLeft p:nth-child(2) {
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-family: "Noto Sans KR";
   font-weight: 900;
-  line-height: 6rem;
-  margin-top: 10rem;
+  line-height: 7.4rem;
+  margin-top: 12.5rem;
 }
 .hdSitemap .hdSmLeft p:nth-child(3) {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Noto Sans KR";
   font-weight: 400;
-  line-height: 4.5rem;
-  margin-top: 20rem;
+  line-height: 6rem;
+  margin-top: 26.1rem;
 }
 .hdSitemap .hdSmRight {
   width: 65%;
@@ -290,23 +298,22 @@ header .hd .hdLogo {
   color: #000;
 }
 .hdSitemap .hdSmRight .hdSmArea {
-  margin-left: 15rem;
-  margin-top: 10rem;
+  margin-left: 19.1rem;
+  margin-top: 13.4rem;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList {
   display: flex;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
   position: relative;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList > a {
-  font-size: 2.5rem;
-  width: 20rem;
+  width: 25rem;
   font-family: "Montserrat";
   font-weight: 700;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList > a span {
   position: relative;
-  font-size: 2.5rem;
+  font-size: 3rem;
   width: 20rem;
   font-family: "Montserrat";
   font-weight: 700;
@@ -317,7 +324,7 @@ header .hd .hdLogo {
   width: 0;
   background-color: rgba(21, 39, 158, 0.502);
   position: absolute;
-  top: 1.6rem;
+  top: 2.2rem;
   left: 0;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 {
@@ -326,22 +333,26 @@ header .hd .hdLogo {
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 .hdSmMargin {
   margin-left: 3.5rem;
 }
+.hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 .hdMargin2 {
+  margin-left: -5rem;
+}
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 li {
   margin-right: 2.5rem;
-  line-height: 2.5rem;
+  line-height: 2.9rem;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 li:hover > a {
   color: #1527a0;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 li > a {
-  font-size: 1.5rem;
+  font-size: 2.1rem;
   font-family: "Noto Sans KR";
   font-weight: 700;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 li .hdSmList3 li a {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-family: "Noto Sans KR";
   font-weight: 400;
+  line-height: 4rem;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 li .hdSmList3 li:hover > a {
   color: #1527a0;
@@ -352,8 +363,8 @@ header .hd .hdLogo {
 }
 .hdSitemap .hdSmRight button {
   position: absolute;
-  top: 6rem;
-  right: 7rem;
+  top: 8.8rem;
+  right: 8.7rem;
   background: url("../../img/zetaplan_splite.png") no-repeat -574px -101px;
   background-size: 599px 280px;
   width: 19px;

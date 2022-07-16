@@ -1,0 +1,238 @@
+@import '../GlobalStyle.scss';
+
+.inner {
+  @include Inner;
+
+}
+
+/* head */
+.miProHead {
+  display: flex;
+  justify-content: space-between;
+  @include Subtitle($sub-title, $basic-gray3)
+}
+
+.miProTab {
+  display: flex;
+
+  button {
+    width: 13rem;
+    position: relative;
+    line-height: 4.1rem;
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+    font-size: 2.8rem;
+
+    &:hover {
+      color: $main-color;
+
+      &::after {
+        content: '';
+        height: 0.3rem;
+        width: 100%;
+        background-color: $main-color;
+        position: absolute;
+        top: 5.9rem;
+        left: 0;
+      }
+    }
+  }
+}
+
+// 버튼 클릭 후 효과
+.miProTab>button.on {
+  color: $main-color;
+
+  &::after {
+    background-color: $main-color;
+  }
+}
+
+
+/* content */
+.maPro {
+  margin-top: 10rem;
+}
+
+/* ipo 부분 */
+.ipoProWrap {
+  margin: 12rem auto;
+  background-image: url(../../img/m&a_ipo/m&a_ipo_process.png);
+  background-size: 90rem 135rem;
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 86%;
+  height: 135.3rem;
+  position: relative;
+
+  >div:nth-child(1) {
+    top: 0;
+    left: 0;
+
+    >ul>p>span {
+      background: url('../../img/m&a_ipo/ipo_splite.png') no-repeat 0 -5px;
+      background-size: 470px 55px;
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  >div:nth-child(2) {
+    top: 11.6rem;
+    left: 80.9rem;
+
+    >ul>p>span {
+      background: url('../../img/m&a_ipo/ipo_splite.png') no-repeat -51px -5px;
+      background-size: 470px 55px;
+      width: 47px;
+      height: 45px;
+    }
+  }
+
+  >div:nth-child(3) {
+    top: 27.1rem;
+    left: 0;
+
+    >ul>p>span {
+      background: url('../../img/m&a_ipo/ipo_splite.png') no-repeat -101px -5px;
+      background-size: 470px 55px;
+      width: 47px;
+      height: 45px;
+    }
+  }
+
+  >div:nth-child(4) {
+    top: 45.5rem;
+    left: 80.9rem;
+
+    >ul>p>span {
+      background: url('../../img/m&a_ipo/ipo_splite.png') no-repeat -161px -5px;
+      background-size: 470px 55px;
+      width: 47px;
+      height: 45px;
+    }
+  }
+
+  >div:nth-child(5) {
+    top: 62.6rem;
+    left: 0;
+
+    >ul>p>span {
+      background: url('../../img/m&a_ipo/ipo_splite.png') no-repeat -210px -5px;
+      background-size: 470px 55px;
+      width: 47px;
+      height: 45px;
+    }
+  }
+
+  >div:nth-child(6) {
+    top: 81rem;
+    left: 80.9rem;
+
+    >ul>p>span {
+      background: url('../../img/m&a_ipo/ipo_splite.png') no-repeat -260px -5px;
+      background-size: 470px 55px;
+      width: 47px;
+      height: 50px;
+    }
+  }
+
+  >div:nth-child(7) {
+    top: 98rem;
+    left: 0;
+
+    >ul>p>span {
+      background: url('../../img/m&a_ipo/ipo_splite.png') no-repeat -315px -5px;
+      background-size: 470px 55px;
+      width: 47px;
+      height: 50px;
+    }
+  }
+
+  >div:nth-child(8) {
+    top: 109rem;
+    left: 80.9rem;
+
+    >ul>p>span {
+      background: url('../../img/m&a_ipo/ipo_splite.png') no-repeat -365px -5px;
+      background-size: 470px 55px;
+      width: 47px;
+      height: 50px;
+    }
+  }
+
+  >div:nth-child(9) {
+    top: 126rem;
+    left: 0;
+
+    >ul>p>span {
+      background: url('../../img/m&a_ipo/ipo_splite.png') no-repeat -404px -5px;
+      background-size: 460px 55px;
+      width: 52px;
+      height: 50px;
+    }
+  }
+
+
+  .ipoStap {
+    width: 45%;
+    position: absolute;
+    display: flex;
+
+    &:hover>div>p {
+      opacity: 1;
+      transition: 0.5s;
+    }
+
+    .ipoCircle {
+      display: flex;
+      width: 16.5%;
+
+      >p {
+        width: 100%;
+        height: 9rem;
+        border-radius: 100%;
+        text-align: center;
+        padding-top: 3.4rem;
+        padding-left: 0.5rem;
+        background-color: $main-color;
+        opacity: 0;
+
+        >span {
+          font-family: 'Noto Sans Kr';
+          font-size: 1.9rem;
+          font-weight: 700;
+          color: $basic-white;
+
+        }
+      }
+    }
+
+    .ipoTxt {
+      width: 60%;
+      padding-top: 2.2rem;
+      padding-left: 2rem;
+
+      >p {
+        font-family: 'Noto Sans Kr';
+        font-size: 1.9rem;
+        font-weight: 700;
+        line-height: 4rem;
+        display: flex;
+
+        >span {
+          margin-left: 1.5rem;
+        }
+      }
+
+      >li {
+        font-family: 'Noto Sans Kr';
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+      }
+    }
+
+
+
+  }
+}

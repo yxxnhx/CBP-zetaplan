@@ -11,7 +11,7 @@
 .gbInner .gbTabTitleBox {
   width: 144rem;
   border-bottom: 0.1rem solid #333;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 .gbInner .gbTabTitleBox .gbTabTitle {
   background-image: url(../../img/title_box.png);
@@ -23,10 +23,10 @@
 .gbInner .gbContentSubTitle {
   position: relative;
   text-indent: 8.5rem;
-  font-size: 3.5rem;
+  font-size: 2.6rem;
   font-weight: bold;
-  margin-top: 10rem;
-  margin-bottom: 6.4375rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 .gbInner .gbContentSubTitle:before {
   content: "";
@@ -40,13 +40,32 @@
 .gbInner .gbMapImg {
   margin: 10rem;
   width: 155rem;
+  margin-top: 15rem;
+  width: 130rem;
 }
-.gbInner .gbCasetableBox .gbCasetable .gbCasetableLi {
+
+.accoBox {
   display: flex;
+  margin-top: 2rem;
 }
-.gbInner .gbCasetableBox .gbCasetable .gbCasetableLi .gbCasetableCom {
-  font-size: 30px;
+.accoBox .titleBox {
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  width: 50rem;
 }
-.gbInner .gbCasetableBox .gbCasetable .gbCasetableLi .gbCasetableCon {
-  font-size: 30px;
+.accoBox .titleBox .title {
+  font-size: 2.1rem;
+  color: #1527a0;
+  margin-left: 2rem;
+}
+.accoBox .txt {
+  width: 100rem;
+}
+.accoBox .txt ul {
+  margin-bottom: 3rem;
+}
+.accoBox .txt ul li {
+  font-size: 2.1rem;
+  line-height: 2;
 }/*# sourceMappingURL=gbCase.css.map */
