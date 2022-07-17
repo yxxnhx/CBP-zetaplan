@@ -23,16 +23,12 @@
         margin-left: 50px; // 122px인데 임시 수정(문의)
         font-size: 2.24rem;
         position: relative;
-
-        &:hover {
-          color: $main-color;
-
-          &::after {
-            opacity: 1;
-          }
+        
+        &.active {
+          color : $main-color
         }
 
-        &::after {
+        &.active::after {
           content: "";
           width: 140px;
           height: 2px;
@@ -42,7 +38,7 @@
           left: 50%;
           transform: translateX(-50%);
           bottom: -16px;
-          opacity: 0;
+          opacity: 1;
         }
       }
     }

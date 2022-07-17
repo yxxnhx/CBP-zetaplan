@@ -5,31 +5,36 @@
     "title": "포토트랜지스터 및 이를 포함하는 이미징 장치",
     "type": "기술 수요",
     "field": "전기/전자",
+    "createdAt": "2022-06-25",
     "content": "<div class='content-view'><table border='1'><tbody><tr><td>기술명</td><td>포토트랜지스터 및 이를 포함하는 이미징 장치</td></tr><tr><td>프로젝트 타입</td><td>기술 수요</td></tr><tr><td>기술분야</td><td>전기/전자</td></tr><tr><td>지적 재산권 양식</td><td>-</td></tr><tr><td>희망거래유형</td><td>합작/이전</td></tr><tr><td>추천 파트너</td><td>유한 책임 회사, 파트너십<br>대학<br>비 대학, 독립 연구 기관<br>다른 정부 부처<br>상장 기업<br>주식회사</td></tr><tr><td>기술설명</td><td>문의요망</td></tr><tr><td>연락처</td><td>제타플랜 기술이전사업부 임용택 이사<br>TEL : 02-538-4801<br>E-mail : brkim0622@daum.net</td></tr><tr><td>구매기간</td><td>2022-05-16~ 2023-05-16</td></tr></tbody></table></div>"
   },
+  
   {
     "id": 2,
-    "category": "판매",
-    "title": "갈대 추출물 또는 그 유산균 발효물을 이용한 피부 주름 개선용 조성물",
-    "type": "기술 수요",
-    "field": "화공",
-    "content": "<div class='content-view'><table border='1'><tbody><tr><td>기술명</td><td>갈대 추출물 또는 그 유산균 발효물을 이용한 피부 주름 개선용 조성물</td></tr><tr><td>프로젝트 타입</td><td>기술 수요</td></tr><tr><td>기술분야</td><td>화공</td></tr><tr><td>지적 재산권 양식</td><td>-</td></tr><tr><td>희망거래유형</td><td>합작/이전</td></tr><tr><td>추천 파트너</td><td>유한 책임 회사, 파트너십<br>대학<br>비 대학, 독립 연구 기관<br>다른 정부 부처<br>상장 기업<br>주식회사</td></tr><tr><td>기술설명</td><td>문의요망</td></tr><tr><td>연락처</td><td>제타플랜 기술이전사업부 임용택 이사<br>TEL : 02-538-4801<br>E-mail : brkim0622@daum.net</td></tr><tr><td>구매기간</td><td>2022-06-30~ 2023-06-30</td></tr></tbody></table></div>"
-  },
-  {
-    "id": 3,
     "category": "구매",
     "title": "유수 분리 필터 및 그의 제조 방법",
     "type": "기술 수요",
     "field": "물리학",
+    "createdAt": "2022-06-28",
     "content": "<div class='content-view'><table border='1'><tbody><tr><td>기술명</td><td>유수 분리 필터 및 그의 제조 방법</td></tr><tr><td>프로젝트 타입</td><td>기술 수요</td></tr><tr><td>기술분야</td><td>물리학</td></tr><tr><td>지적 재산권 양식</td><td>-</td></tr><tr><td>희망거래유형</td><td>합작/이전</td></tr><tr><td>추천 파트너</td><td>유한 책임 회사, 파트너십<br>대학<br>비 대학, 독립 연구 기관<br>다른 정부 부처<br>상장 기업<br>주식회사</td></tr><tr><td>기술설명</td><td>문의요망</td></tr><tr><td>연락처</td><td>제타플랜 기술이전사업부 임용택 이사<br>TEL : 02-538-4801<br>E-mail : brkim0622@daum.net</td></tr><tr><td>구매기간</td><td>2022-07-07~ 2023-07-07</td></tr></tbody></table>div>"
   },
   {
-    "id": 4,
+    "id": 3,
     "category": "판매",
     "title": "3차원 프린터",
     "type": "기술 수요",
     "field": "전기/전자",
+    "createdAt": "2022-06-28",
     "content": "<div class='content-view'><table border='1'><tbody><tr><td>기술명</td><td>3차원 프린터</td></tr><tr><td>프로젝트 타입</td><td>기술 수요</td></tr><tr><td>기술분야</td><td>전기/전자</td></tr><tr><td>지적 재산권 양식</td><td>-</td></tr><tr><td>희망거래유형</td><td>합작/이전</td></tr><tr><td>추천 파트너</td><td>유한 책임 회사, 파트너십<br>대학<br>비 대학, 독립 연구 기관<br>다른 정부 부처<br>상장 기업<br>주식회사</td></tr><tr><td>기술설명</td><td>문의요망</td></tr><tr><td>연락처</td><td>제타플랜 기술이전사업부 임용택 이사<br>TEL : 02-538-4801<br>E-mail : brkim0622@daum.net</td></tr><tr><td>구매기간</td><td>2022-06-28~ 2023-06-28</td></tr></tbody></table>&nbsp;div>"
+  },
+  {
+    "id": 4,
+    "category": "판매",
+    "title": "갈대 추출물 또는 그 유산균 발효물을 이용한 피부 주름 개선용 조성물",
+    "type": "기술 수요",
+    "field": "화공",
+    "createdAt": "2022-06-30",
+    "content": "<div class='content-view'><table border='1'><tbody><tr><td>기술명</td><td>갈대 추출물 또는 그 유산균 발효물을 이용한 피부 주름 개선용 조성물</td></tr><tr><td>프로젝트 타입</td><td>기술 수요</td></tr><tr><td>기술분야</td><td>화공</td></tr><tr><td>지적 재산권 양식</td><td>-</td></tr><tr><td>희망거래유형</td><td>합작/이전</td></tr><tr><td>추천 파트너</td><td>유한 책임 회사, 파트너십<br>대학<br>비 대학, 독립 연구 기관<br>다른 정부 부처<br>상장 기업<br>주식회사</td></tr><tr><td>기술설명</td><td>문의요망</td></tr><tr><td>연락처</td><td>제타플랜 기술이전사업부 임용택 이사<br>TEL : 02-538-4801<br>E-mail : brkim0622@daum.net</td></tr><tr><td>구매기간</td><td>2022-06-30~ 2023-06-30</td></tr></tbody></table></div>"
   },
   {
     "id": 5,
@@ -37,6 +42,7 @@
     "title": "물여뀌 추출물을 이용한 항산화용 조성물",
     "type": "기술 수요",
     "field": "보건의료",
+    "createdAt": "2022-07-01",
     "content": "<div class='content-view'><table border='1'><tbody><tr><td>기술명</td><td>&nbsp;물여뀌 추출물을 이용한 항산화용 조성물</td></tr><tr><td>프로젝트 타입</td><td>기술 수요</td></tr><tr><td>기술분야</td><td>보건의료</td></tr><tr><td>지적 재산권 양식</td><td>-</td></tr><tr><td>희망거래유형</td><td>합작/이전</td></tr><tr><td>추천 파트너</td><td>유한 책임 회사, 파트너십<br>대학<br>비 대학, 독립 연구 기관<br>다른 정부 부처<br>상장 기업<br>주식회사</td></tr><tr><td>기술설명</td><td>문의요망</td></tr><tr><td>연락처</td><td>제타플랜 기술이전사업부 임용택 이사<br>TEL : 02-538-4801<br>E-mail : brkim0622@daum.net</td></tr><tr><td>구매기간</td><td>2022-07-01~ 2023-07-01</td></tr></tbody></table></div>"
   },
   {
@@ -45,6 +51,7 @@
     "title": "메티실린 내성 황색포도상구균의 생장을 억제하는 신규 미생물 파우시박터 속 CR182 균주",
     "type": "기술 수요",
     "field": "보건의료",
+    "createdAt": "2022-07-01",
     "content": "<div class='content-view'><table border='1><tbody><tr><td>기술명</td><td>메티실린 내성 황색포도상구균의 생장을 억제하는 신규 미생물 파우시박터 속 CR182 균주</td></tr><tr><td>프로젝트 타입</td><td>기술 수요</td></tr><tr><td>기술분야</td><td>보건의료</td></tr><tr><td>지적 재산권 양식</td><td>-</td></tr><tr><td>희망거래유형</td><td>합작/이전</td></tr><tr><td>추천 파트너</td><td>유한 책임 회사, 파트너십<br>대학<br>비 대학, 독립 연구 기관<br>다른 정부 부처<br>상장 기업<br>주식회사</td></tr><tr><td>기술설명</td><td>문의요망</td></tr><tr><td>연락처</td><td>제타플랜 기술이전사업부 임용택 이사<br>TEL : 02-538-4801<br>E-mail : brkim0622@daum.net</td></tr><tr><td>구매기간</td><td>2022-07-01~ 2023-07-01</td></tr></tbody></table>div>"
   },
   {
@@ -53,6 +60,7 @@
     "title": "보호 대상자를 위한 모니터링 장치 및 방법",
     "type": "기술 수요",
     "field": "기계",
+    "createdAt": "2022-07-04",
     "content": "<div class='content-view'><table border='1'><tbody><tr><td>기술명</td><td>보호 대상자를 위한 모니터링 장치 및 방법</td></tr><tr><td>프로젝트 타입</td><td>기술 수요</td></tr><tr><td>기술분야</td><td>기계</td></tr><tr><td>지적 재산권 양식</td><td>-</td></tr><tr><td>희망거래유형</td><td>합작/이전</td></tr><tr><td>추천 파트너</td><td>유한 책임 회사, 파트너십<br>대학<br>비 대학, 독립 연구 기관<br>다른 정부 부처<br>상장 기업<br>주식회사</td></tr><tr><td>기술설명</td><td>문의요망</td></tr><tr><td>연락처</td><td>제타플랜 기술이전사업부 임용택 이사<br>TEL : 02-538-4801<br>E-mail : brkim0622@daum.net</td></tr><tr><td>구매기간</td><td>2022-07-04~ 2023-07-04</td></tr></tbody></table></div>"
   },
   {
@@ -61,6 +69,7 @@
     "title": "벤토나이트-하이드로겔 복합체 및 이의 제조방법",
     "type": "기술 수요",
     "field": "지구과학",
+    "createdAt": "2022-07-04",
     "content": "<div class='content-view'><table border='1'><tbody><tr><td>기술명</td><td>벤토나이트-하이드로겔 복합체 및 이의 제조방법</td></tr><tr><td>프로젝트 타입</td><td>기술 수요</td></tr><tr><td>기술분야</td><td>지구과학</td></tr><tr><td>지적 재산권 양식</td><td>-</td></tr><tr><td>희망거래유형</td><td>합작/이전</td></tr><tr><td>추천 파트너</td><td>유한 책임 회사, 파트너십<br>대학<br>비 대학, 독립 연구 기관<br>다른 정부 부처<br>상장 기업<br>주식회사</td></tr><tr><td>기술설명</td><td>문의요망</td></tr><tr><td>연락처</td><td>제타플랜 기술이전사업부 임용택 이사<br>TEL : 02-538-4801<br>E-mail : brkim0622@daum.net</td></tr><tr><td>구매기간</td><td>2022-07-04~ 2023-07-04</td></tr></tbody></table>div>"
   },
   {
@@ -69,6 +78,7 @@
     "title": "닭에서 인플루엔자 바이러스 감염 관련된 IFI6 유전자 발현과 이용",
     "type": "기술 수요",
     "field": "농림수산식품",
+    "createdAt": "2022-07-06",
     "content": "<div class='content-view'><table border='1'><tbody><tr><td>기술명</td><td>닭에서 인플루엔자 바이러스 감염 관련된 IFI6 유전자 발현과 이용</td></tr><tr><td>프로젝트 타입</td><td>기술 수요</td></tr><tr><td>기술분야</td><td>농림수산식품</td></tr><tr><td>지적 재산권 양식</td><td>-</td></tr><tr><td>희망거래유형</td><td>합작/이전</td></tr><tr><td>추천 파트너</td><td>유한 책임 회사, 파트너십<br>대학<br>비 대학, 독립 연구 기관<br>다른 정부 부처<br>상장 기업<br>주식회사</td></tr><tr><td>기술설명</td><td>문의요망</td></tr><tr><td>연락처</td><td>제타플랜 기술이전사업부 임용택 이사<br>TEL : 02-538-4801<br>E-mail : brkim0622@daum.net</td></tr><tr><td>구매기간</td><td>2022-07-06~ 2023-07-06</td></tr></tbody></table></div>"
   },
   {
@@ -77,6 +87,7 @@
     "title": "리놀레산 및 리놀렌산을 고농도로 포함한 바이오 오일 생산 미세조류인 파라클로렐라 속 KSN1 균주 및 이의 용도",
     "type": "기술 수요",
     "field": "보건의료",
+    "createdAt": "2022-07-06",
     "content": "<div class='content-view'><table border='1'><tbody><tr><td>기술명</td><td>리놀레산 및 리놀렌산을 고농도로 포함한 바이오 오일 생산 미세조류인 파라클로렐라 속 KSN1 균주 및 이의 용도</td></tr><tr><td>프로젝트 타입</td><td>기술 수요</td></tr><tr><td>기술분야</td><td>보건의료</td></tr><tr><td>지적 재산권 양식</td><td>-</td></tr><tr><td>희망거래유형</td><td>합작/이전</td></tr><tr><td>추천 파트너</td><td>유한 책임 회사, 파트너십<br>대학<br>비 대학, 독립 연구 기관<br>다른 정부 부처<br>상장 기업<br>주식회사</td></tr><tr><td>기술설명</td><td>문의요망</td></tr><tr><td>연락처</td><td>제타플랜 기술이전사업부 임용택 이사<br>TEL : 02-538-4801<br>E-mail : brkim0622@daum.net</td></tr><tr><td>구매기간</td><td>2022-07-06~ 2023-07-06</td></tr></tbody></table>iv>"
   }
 ]

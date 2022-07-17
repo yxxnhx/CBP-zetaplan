@@ -18,7 +18,7 @@ export default SubBanner;
 
 const SubBannerContainer = styled.div`
   width: 100%;
-  height: 620px;
+  height: 480px;
   background: url(${props => props.img}) no-repeat;
   background-size: cover;
   position: relative;

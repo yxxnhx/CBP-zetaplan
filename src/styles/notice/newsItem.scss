@@ -1,0 +1,43 @@
+@import '../GlobalStyle.scss';
+
+.newsItemContainer {
+  width: 440px;
+  margin: 113px 0;
+
+  .thumbnail {
+    width: 440px;
+    height: auto;
+    min-height: 370px;
+    margin-bottom: 49px;
+  }
+  .newsTitle {
+    width: 300px;
+    font-size: $size-xl;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  .newsContent {
+    width: 408px;
+    height: 116px;
+    font-size: $list-md;
+    line-height: 1.5;
+    margin: 25px 0 52px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    h3, div, p, li {
+      font-size: $list-md;
+      font-weight: normal;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      list-style: none;
+
+    }
+
+  }
+  .createdAt {
+    font-size: $size-sm;
+  }
+}

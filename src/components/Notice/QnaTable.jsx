@@ -3,7 +3,6 @@ import '../../styles/qna/qnaTable.scss';
 import QnaTableList from './QnaTableList';
 
 const QnaTable = ({qnaJsonList}) => {
-  const reverseData = qnaJsonList.reverse();
   return (
     <>
       <table className='qnaTable'>
@@ -18,9 +17,9 @@ const QnaTable = ({qnaJsonList}) => {
           </tr>
         </thead>
         <tbody className='qnaTbody'>
-          {reverseData.map((it) => {
+          {qnaJsonList.map((data) => {
             return (
-              <QnaTableList key={`qnaList_${it.id}`} {...it} />
+              <QnaTableList key={`qnaList_${data.id}`} {...data} />
             )
           })}
         </tbody>

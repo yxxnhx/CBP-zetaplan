@@ -24,36 +24,37 @@
         font-size: 2.24rem;
         position: relative;
 
-        &:hover {
+        &.active {
           color: $main-color;
 
           &::after {
+            content: "";
+            width: 94px;
+            height: 2px;
+            display: block;
+            background-color: $main-color;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -16px;
             opacity: 1;
           }
-        }
-
-        &::after {
-          content: "";
-          width: 94px;
-          height: 2px;
-          display: block;
-          background-color: $main-color;
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: -16px;
-          opacity: 0;
         }
       }
     }
   }
+
+  .swiper-slide {
+
+  }
+
   .newsContainer {
     display: flex;
     justify-content: space-between;
     margin-top: 178px; 
     
-    
     .newsContentBox {
+      flex: 30%;
       width: 400px;
       height: 570px;
       .newsTitle {
@@ -67,14 +68,30 @@
         font-size: 2.4rem;
         width: 398px;
         height: 176px;
-        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: normal;
+
+        p {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: $size-xl;
+          line-height: 1.5;
+
+        }
       }
 
       .newsCreated {
         font-size: 1.6rem;
         font-weight: 600;
+        margin: 57px 0 40px;
       }
       
+      img {
+        width: auto;
+      }
 
     }
 
@@ -87,7 +104,7 @@
   .newsSearchBox {
     position: relative;
     width: 470px;
-    margin-top: 328px;
+    margin: 328px 0 57px 970px;
 
     .newsInput {
       width: 470px;
@@ -113,5 +130,87 @@
       right: 0;
       top: 0;
     }
+  }
+
+  .newsListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .swiperBtnBox {
+    width: 138px;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+
+    .prevBtnBox {
+      width: 64px;
+      min-width: 64px;
+      height: 64px;
+      min-height: 64px;
+      border-radius: 50%;
+      background-color: $basic-gray1;
+      position: relative;
+
+      &.active {
+        background-color: $main-color;
+
+        .prev {
+          background: url('../../img/zetaplan_splite.png') no-repeat -195px -221px;
+          background-size: 599px 280px;
+          width: 8px;
+          height: 13px;
+        }
+      }
+
+      .prev {
+        background: url('../../img/zetaplan_splite.png') no-repeat -278px -201px;
+        background-size: 599px 280px;
+        width: 8px;
+        height: 13px;
+        position: absolute;
+        left: 45%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      
+    }
+
+    .nextBtnBox {
+      width: 64px;
+      min-width: 64px;
+      height: 64px;
+      min-height: 64px;
+      border-radius: 50%;
+      background-color: $basic-gray1;
+      position: relative;
+      padding: 14px 10px;
+
+      .next {
+        background: url('../../img/zetaplan_splite.png') no-repeat -298px -201px;
+        background-size: 599px 280px;
+        width: 8px;
+        height: 13px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &.active {
+        background-color: $main-color;
+
+        .next {
+          background: url('../../img/zetaplan_splite.png') no-repeat -236px -221px;
+          background-size: 599px 280px;
+          width: 8px;
+          height: 13px;
+        }
+      }
+
+    }
+
+
   }
 }

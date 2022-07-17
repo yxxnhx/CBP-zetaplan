@@ -1,0 +1,135 @@
+@import '../GlobalStyle.scss';
+
+.qnaDetailInner {
+  @include Inner;
+  position: relative;
+
+  .qnaTitleBox {
+    border-bottom: 1px solid #707070;
+    width: auto;
+
+    .qnaTitle {
+      font-size: 3.2rem;
+      font-family: 'Noto Sans KR',sans-serif;
+      padding-bottom: 20px;
+
+    }
+  }
+  
+  .qnaSubTitle {
+    font-size: 3.04rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: $basic-black;
+      height: 1px;
+      width: 50px;
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+      
+    }
+  }
+  
+  .qnaDetailInfo {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $basic-gray2;
+    padding-bottom: 1.6rem;
+
+    li {
+      font-size: 1.4rem;
+      color: $basic-gray3;
+      font-weight: 400;
+      margin-right: 50px;
+    }
+  }
+
+  .qnaContent {
+    .content {
+      padding: 45px 0;
+      text-align: center;
+      border-bottom: 1px solid $basic-gray2;
+      color: $basic-gray3;
+
+      div {
+        font-size: $size-sm;
+        line-height: 1.5;
+      }
+    }
+  }
+  
+  .answerInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 40px;
+
+    .answerInfoText {
+      font-size: 1.5rem;
+      position: relative;
+      padding-left: 30px;
+
+      &::before {
+        content: "";
+        display: block;
+        background: url('../../img/zetaplan_splite.png') no-repeat -185px -114px;
+        background-size: 599px 280px;
+        width: 25px;
+        height: 12px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    .answerDate {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  .answerContent {
+    padding-bottom: 45px;
+    border-bottom: 1px solid #707070;
+
+    .content {
+      background-color: $basic-gray1;
+      padding: 35px 40px;
+      p {
+        span {
+          color: $basic-gray3;
+          font-size: $size-sm;
+          line-height: 1.5;
+        }
+      }
+      div {
+        color: $basic-gray3;
+        font-size: $size-sm;
+        line-height: 1.5;
+      }
+
+    }
+  }
+
+  .qnaListBtn {
+    display: block;
+    width: 112px;
+    height: 40px;
+    background-color: $main-color;
+    color: $basic-white;
+    font-size: $size-sm;
+    padding: 10px 40px;
+    margin: 30px auto 0;
+    // position: absolute;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // bottom: 0;
+  }
+  
+}

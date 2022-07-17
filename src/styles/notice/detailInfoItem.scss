@@ -1,0 +1,13 @@
+@import '../GlobalStyle.scss';
+
+.detailInfoInner {
+  @include Inner;
+
+  .detailInfoTitleBox {
+    
+    p {
+      font-size: $sub-title;
+    }
+  }
+
+}

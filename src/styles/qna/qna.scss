@@ -27,14 +27,60 @@
       font-weight: 500;
     }
 
-    .qnaSearch {
-      width: 542px;
-      height: 50px;
-      outline: none;
-      border: none;
-      border-bottom: 1px solid #707070;
-      font-size: 2rem;
-      margin-left: 62px;
+    .qnaSearchBox {
+      position: relative;
+
+      .qnaSearch {
+        width: 542px;
+        height: 50px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #707070;
+        font-size: 2rem;
+        margin-left: 62px;
+      }
+      
+      .qnamagnifier {
+        display: block;
+        background: url('../../img/zetaplan_splite.png')  no-repeat -419px -151px;
+        background-size: 599px 280px;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        right: 0;
+        bottom: 15px;
+
+      }
+
     }
+
+  }
+  .pagination {
+    display: flex;
+    width: 890px;
+    margin: 70px auto 88px;
+    justify-content: center;
+    .page-item {
+      
+      a {
+        display: block;
+        width: 58px;
+        height: 58px;
+        padding: 21px;
+        text-align: center;
+        font-size: $size-sm;
+        cursor: pointer;
+      }
+
+      &.active {
+        background-color: $main-color;
+        color: $basic-white;
+      }
+
+      &.disabled {
+        display: none;
+      }
+    }
+
   }
 }
