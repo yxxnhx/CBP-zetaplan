@@ -17,7 +17,6 @@ const PaginatedItems = ({ handlePageClick, currentItems, pageCount }) => {
         previousLinkClassName="page-link"
         nextClassName="page-item"
         nextLinkClassName="page-link"
-        breakLabel="..."
         breakClassName="page-item"
         breakLinkClassName="page-link"
         containerClassName="pagination"

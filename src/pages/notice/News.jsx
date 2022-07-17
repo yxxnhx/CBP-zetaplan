@@ -34,7 +34,6 @@ const News = () => {
     setData(getSelectedData());
   }, [selectedIndex]);
 
-
   const getSelectedData = () => {
     switch (selectedIndex) {
     case 0:
@@ -73,8 +72,8 @@ const News = () => {
         </div>
         <div className='newsListContainer'>
           {
-            data.map((datalist)=> {
-              return <NewsList key={datalist.id} items={datalist} selectedIndex={selectedIndex} />
+            currentItems.map((datalist)=> {
+              return <NewsList key={datalist.id} items={datalist} selectedIndex={selectedIndex} currentItems={currentItems} />
 
             })
           }

@@ -4,10 +4,10 @@ import 'swiper/css';
 import { Navigation, Autoplay} from 'swiper';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import thumbnail from '../../img/notice/notice_thumbnail.png';
 
 const NewsSwiper = ({items}) => {
-  
-  const [click, setClick] = useState(!false);
+ 
   const [selectNum, setSelectNum] = useState(0);
 
   const getClassName = (selectedNum) => {
@@ -44,7 +44,10 @@ const NewsSwiper = ({items}) => {
                     <p className='newsSummary' dangerouslySetInnerHTML={{__html: item.content}}></p>
                     <p className='newsCreated'>{item.createdAt}</p>
                   </div>
-                  <img className='newsThumbnail' src={item.img} alt={item.alt} style={{width: '900px', height: 'auto', maxHeight: '570px'}}/>
+                  {
+                    item.img.length === 0 ? <img className='thumbnail' src={thumbnail} alt="뉴스 칼럼 대표 이미지" style={{width: '900px', height: 'auto', maxHeight: '570px'}} /> : <img className='thumbnail' src={item.img} alt="" style={{width: '900px', height: 'auto', maxHeight: '570px'}} />
+                  }
+                  {/* <img className='newsThumbnail' src={item.img} alt={item.alt} style={{width: '900px', height: 'auto', maxHeight: '570px'}}/> */}
                 </div> 
               </SwiperSlide>
             )})
