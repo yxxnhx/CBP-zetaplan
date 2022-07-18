@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const InfoList = ({item, selectedIndex}) => {
+  // console.log(item);
   const navigate = useNavigate();
   
   const hasCategory = !!item.category;

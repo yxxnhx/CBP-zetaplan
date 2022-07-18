@@ -67,16 +67,15 @@
       .newsSummary {
         font-size: 2.4rem;
         width: 398px;
-        height: 176px;
-        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        word-break: break-word;    
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
         font-weight: normal;
 
         p, ul li {
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
           font-size: $size-xl;
           line-height: 1.5;
 

@@ -18,20 +18,22 @@
   }
   .newsContent {
     width: 408px;
-    height: 116px;
     font-size: $list-md;
     line-height: 1.5;
     margin: 25px 0 52px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    word-break: break-word;    
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
 
     h3, div, p, ul li {
       font-size: $list-md;
       font-weight: normal;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      // white-space: nowrap;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
       list-style: none;
 
     }

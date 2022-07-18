@@ -1,9 +1,9 @@
 @import '../GlobalStyle.scss';
 
-.detailInfoInner {
+.newsDetailInner {
   @include Inner;
-
-  .detailInfoTitleBox {
+  
+  .detailTitle {
     padding-bottom: 20px;
     border-bottom: 1px solid $basic-gray3;
     p {
@@ -11,10 +11,9 @@
       font-weight: bold;
     }
   }
-
-  .detailContentInner {
+  .detailItemBox {
     border-bottom: 1px solid $basic-gray2;
-    .detailTitle {
+    .detailItemTitle {
       padding: 35px;
       text-align: center;
       font-size: $size-xl;
@@ -22,53 +21,27 @@
       border-bottom: 1px solid $basic-gray2;
 
     }
-    img {
-
-    }
-
-    .content {
+    .contentBox {
       width: 1000px;
       margin: 60px auto;
 
-      .content-view {
-        font-size: $size-sm;
-        line-height: 1.5;
+      img {
+        width: auto;
+        margin: 0 auto 30px;
 
       }
+      .content {
 
-      table {
-        width: 100%;
-        text-align: center;
-        tr {
-          & > td:nth-of-type(1) {
-            background-color: $basic-gray1;
-            font-weight: 600;
-          }
-        }
-        td {
-          height: 32px;
+        p, li, div {
+          font-size: $size-sm;
+          font-weight: normal;
+          line-height: 1.5;
         }
       }
-
-      li, p, tr, td, a {
-        font-size: $size-sm;
-        font-weight: normal;
-        line-height: 1.5;
-      }
-
-      strong {
-        font-size: $size-sm;
-        line-height: 1.5;
-
-      }
-      
 
     }
-
-
   }
-
-  .infoListBtn {
+  .newsListBtn {
     display: block;
     width: 120px;
     height: 40px;
@@ -78,9 +51,5 @@
     padding: 10px 40px;
     margin: 70px auto 0;
     text-align: center;
-
   }
-
-
-
 }

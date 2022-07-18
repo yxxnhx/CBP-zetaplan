@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Index from './pages';
 import ResetStyle from './styles/ResetStyle';
 import './styles/GlobalStyle.scss';
@@ -30,6 +30,7 @@ import ZetaPeople from './pages/zeta/ZetaPeople';
 import News from './pages/notice/News';
 import QnaDetail from './pages/notice/QnaDetail';
 import DetailInfoItem from './pages/notice/DetailInfoItem';
+import NewsDetailItem from './pages/notice/NewsDetailItem';
 function App() {
   /* 서브 페이지에 헤더 배경 하얀색 주려고 넣은 것, 지우지 말아주세요
   const [hdSubStyle, setHdSubStyle] = useState(false);
@@ -69,13 +70,10 @@ function App() {
           <Route path="/qna" element={<Qna />} />
           <Route path="/qna/:id" element={<QnaDetail />} />
           <Route path="/datainfo" element={<DataInfo />} />
-          <Route path="/datainfo/m&a-inves/t:id" element={<DetailInfoItem />} />
-          <Route path="/datainfo/goverment-support/:id" element={<DetailInfoItem />} />
-          <Route path="/datainfo/fund-support/:id" element={<DetailInfoItem />} />
-          <Route path="/datainfo/technology-trade/:id" element={<DetailInfoItem />} />
-          <Route path="/datainfo/consulting-list/:id" element={<DetailInfoItem />} />
+          <Route path="/datainfo/:category/:id" element={<DetailInfoItem />} />
           <Route path="/zeta-people" element={<ZetaPeople />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news/:category/:id" element={<NewsDetailItem />} />
         </Routes>
       </BrowserRouter>
       <Footer />

@@ -1,7 +1,7 @@
 import React from 'react';
 import SubBanner from '../../components/common/SubBanner';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
-import { useParams, Link, useLocation } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import mnaInvestmentData from '../../db/m&a-investList.json';
 import govSupportData from '../../db/govSupportList.json';
@@ -11,25 +11,39 @@ import consultData from '../../db/consultingList.json';
 import '../../styles/notice/detailInfoItem.scss';
 
 const DetailInfoItem = () => {
-  const {id} = useParams();
-  const location = useLocation();
+  const { category, id } = useParams();
+  const [data, setData] = useState([]);
 
-  console.log(location);
+  const [detailData, setDetailData] = useState(null);
 
-  const [data, setData] = useState(null);
-
-  const totlaData = [mnaInvestmentData, govSupportData, fundSupportData, techData, consultData];
+  const getDataByCategory = () => {
+    switch (category) {
+    case 'm&a-invest':
+      return mnaInvestmentData;
+    case 'government-support':
+      return govSupportData;
+    case 'fund-support':
+      return fundSupportData;
+    case 'technology-trade':
+      return techData;
+    case 'consulting-list':
+    default:
+      return consultData;
+    }
+  }
 
   useEffect(()=> {
-    const detailData = mnaInvestmentData.find((element) => element.id === parseInt(id));
-    setData(detailData);
-    console.log(detailData);
-
-  }, [])
+    setData(getDataByCategory());
+  }, [category])
+  
+  useEffect(()=> {
+    const filteredData = data.find((element) => element.id === parseInt(id));
+    setDetailData(filteredData);
+  }, [data])
 
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다';
 
-  if(!data) {
+  if(!detailData) {
     return <div></div>;
   }
 
@@ -40,13 +54,13 @@ const DetailInfoItem = () => {
         <div className='detailInfoTitleBox'>
           <p>자료</p>
         </div>
-        <div>
-          <p>{data.title}</p>
+        <div className='detailContentInner'>
+          <p className='detailTitle'>{detailData.title}</p>
           <img src="../../img/notice/data_info/investImg_1.png" alt="" />
-          <div dangerouslySetInnerHTML={{__html: data.content}}>
+          <div className="content" dangerouslySetInnerHTML={{__html: detailData.content}}>
           </div>
         </div>
-        <Link to='/datainfo' className='infoListBtn'>목록</Link>      
+        <Link to='/datainfo' className='infoListBtn'>목록</Link>
       </div>
     </div>
   );

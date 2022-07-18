@@ -65,7 +65,7 @@ const News = () => {
             <li className={getActiveClassName(1)} onClick={()=> setSelectedIndex(1)}>Column</li>
           </ul>
         </div>
-        <NewsSwiper items={data} />
+        <NewsSwiper items={data} selectedIndex={selectedIndex} />
         <div className='newsSearchBox'>
           <input className="newsInput" type="text" placeholder='검색어를 입력하세요' />
           <span className='newsmagnifier'></span>
