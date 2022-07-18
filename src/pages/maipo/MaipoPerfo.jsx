@@ -37,7 +37,7 @@ const MaIpoPerfo = () => {
 
       <div className='inner'>
         <div className='miPerfoHead'>
-          개요
+          성과
           <div className='miPerfoTab'>
             {
               tabContentents.map((section, index) => {

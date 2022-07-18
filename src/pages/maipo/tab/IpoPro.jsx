@@ -4,7 +4,7 @@ const IpoPro = () => {
   return (
     <div className='ipoProWrap'>
       <div className='ipoStap'>
-        <div className='ipoCircle'>
+        <div className='ipoProCircle'>
           <p><span>예비</span></p>
         </div>
         <ul className='ipoTxt'>
@@ -13,7 +13,7 @@ const IpoPro = () => {
         </ul>
       </div>
       <div className='ipoStap'>
-        <div className='ipoCircle'>
+        <div className='ipoProCircle'>
           <p><span>01</span></p>
         </div>
         <ul className='ipoTxt'>
@@ -22,7 +22,7 @@ const IpoPro = () => {
         </ul>
       </div>
       <div className='ipoStap'>
-        <div className='ipoCircle'>
+        <div className='ipoProCircle'>
           <p><span>02</span></p>
         </div>
         <ul className='ipoTxt'>
@@ -31,7 +31,7 @@ const IpoPro = () => {
         </ul>
       </div>
       <div className='ipoStap'>
-        <div className='ipoCircle'>
+        <div className='ipoProCircle'>
           <p><span>03</span></p>
         </div>
         <ul className='ipoTxt'>
@@ -40,7 +40,7 @@ const IpoPro = () => {
         </ul>
       </div>
       <div className='ipoStap'>
-        <div className='ipoCircle'>
+        <div className='ipoProCircle'>
           <p><span>04</span></p>
         </div>
         <ul className='ipoTxt'>
@@ -49,7 +49,7 @@ const IpoPro = () => {
         </ul>
       </div>
       <div className='ipoStap'>
-        <div className='ipoCircle'>
+        <div className='ipoProCircle'>
           <p><span>05</span></p>
         </div>
         <ul className='ipoTxt'>
@@ -58,7 +58,7 @@ const IpoPro = () => {
         </ul>
       </div>
       <div className='ipoStap'>
-        <div className='ipoCircle'>
+        <div className='ipoProCircle'>
           <p><span>06</span></p>
         </div>
         <ul className='ipoTxt'>
@@ -67,7 +67,7 @@ const IpoPro = () => {
         </ul>
       </div>
       <div className='ipoStap'>
-        <div className='ipoCircle'>
+        <div className='ipoProCircle'>
           <p><span>07</span></p>
         </div>
         <ul className='ipoTxt'>
@@ -76,7 +76,7 @@ const IpoPro = () => {
         </ul>
       </div>
       <div className='ipoStap'>
-        <div className='ipoCircle'>
+        <div className='ipoProCircle'>
           <p><span>08</span></p>
         </div>
         <ul className='ipoTxt'>

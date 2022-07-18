@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../styles/maipo/MaIpoAccordion.scss';
 
-const MaIpoAccordion = ({ title, active, setActive, content }) => {
+const MaAccordionBottom = ({ title, active, setActive, content }) => {
   return (
     <div className="ipoAcco">
       <div className={(active === title ? 'on' : '') + 'ipoAccoHeading'} onClick={() => setActive(title)}>
@@ -12,11 +12,11 @@ const MaIpoAccordion = ({ title, active, setActive, content }) => {
       </div>
       <div className={(active === title ? 'show' : '') + 'ipoAccoContent'}>
         <div className="ipoContainer">
-          <p className="ipoAccoTxt">{content}</p>
+          <div className="ipoAccoTxt">{content}</div>
         </div>
       </div>
     </div>
   );
 };
 
-export default MaIpoAccordion;
+export default MaAccordionBottom;

@@ -1,6 +1,6 @@
 import React from 'react';
-import MaIpoAccordion from './MaProAccordion';
-import IpoProAccordion from './IpoProAccordion';
+import MaAccordionTop from './MaAccordionTop';
+import MaAccordionBottom from './MaAccordionBottom';
 import { useState } from 'react';
 
 const MaPro = () => {
@@ -21,8 +21,8 @@ const MaPro = () => {
   return (
     <div className='maPro'>
 
-      <MaIpoAccordion title={'일반적 절차'} content={<div className='miAccordion' dangerouslySetInnerHTML={{ __html: MaProAcco[0].content }}></div>} active={active} setActive={setActive} />
-      <IpoProAccordion title={'중개기관을 통한 절차'} content={<div className='miAccordion' dangerouslySetInnerHTML={{ __html: MaProAcco[1].content }}></div>} active={active} setActive={setActive} />
+      <MaAccordionTop title={'일반적 절차'} content={<div className='miAccordion' dangerouslySetInnerHTML={{ __html: MaProAcco[0].content }}></div>} active={active} setActive={setActive} />
+      <MaAccordionBottom title={'중개기관을 통한 절차'} content={<div className='miAccordion' dangerouslySetInnerHTML={{ __html: MaProAcco[1].content }}></div>} active={active} setActive={setActive} />
 
     </div>
 

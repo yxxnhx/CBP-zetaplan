@@ -16,10 +16,8 @@ header.hdSubStyle {
 header {
   width: 100%;
   height: $header-height;
-  background-color: $basic-black;
-  /* background: url(../../img/main/banner/mainbanner01.png) no-repeat center / cover; */
   position: relative;
-  z-index: 1000;
+  z-index: 10000000;
 
   &:hover>.hd {
     background-color: $basic-white;
