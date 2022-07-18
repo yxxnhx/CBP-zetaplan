@@ -17,6 +17,7 @@ import MngConsulting from './pages/management/MngConsulting';
 import MngCertify from './pages/management/MngCertify';
 import MngTrade from './pages/management/Mngtrade';
 import MngValue from './pages/management/MngValue';
+import MngCredit from './pages/management/MngCredit';
 import MaIpoInfo from './pages/maipo/MaIpoInfo';
 import Qna from './pages/notice/Qna';
 import Footer from './components/common/Footer/index';
@@ -34,10 +35,20 @@ import ConsultingPage from './components/common/Consulting/ConsultingPage';
 import ZetaHistory from './pages/zeta/ZetaHistory';
 import ZetaConsul from './pages/zeta/ZetaConsul';
 import ZetaMap from './pages/zeta/ZetaMap';
+<<<<<<< Updated upstream
+import MaIpoPro from './pages/maipo/MaIpoPro';
+import MaIpoPerfo from './pages/maipo/MaIpoPerfo';
+import { useState } from 'react';
+import ScrollToTop from './components/common/ScrollTop';
+=======
+import { useState } from 'react'
 import MaIpoPro from './pages/maipo/MaIpoPro';
 import MaIpoPerfo from './pages/maipo/MaIpoPerfo';
 
-import ScrollToTop from './components/common/ScrollTop';
+function App() {
+  const [hdSubStyle, setHdSubStyle] = useState(false);
+>>>>>>> Stashed changes
+
 function App() {
   /* const [hdSubStyle, setHdSubStyle] = useState(false);
   function addSubStyle (){
@@ -63,6 +74,7 @@ function App() {
           <Route path="/mng-certify" element={<MngCertify />} />
           <Route path="/mng-trade" element={<MngTrade />} />
           <Route path="/mng-value" element={<MngValue />} />
+          <Route path="/mng-credit" element={<MngCredit />} />
           <Route path="/zeta" element={<Zeta />} />
           <Route path="/zeta-ci" element={<ZetaCi />} />
           <Route path="/zeta-network" element={<ZetaNetwork />} />

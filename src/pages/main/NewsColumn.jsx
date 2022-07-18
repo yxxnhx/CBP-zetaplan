@@ -35,7 +35,7 @@ const NewsColumn = () => {
             modules={[Navigation, Pagination]}
             navigation={navigationBtn}
             loop={true}
-            spaceAround={0}
+            spaceBetween={0}
             slidesPerView={3}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')}
