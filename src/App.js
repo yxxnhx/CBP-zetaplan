@@ -31,6 +31,8 @@ import News from './pages/notice/News';
 import QnaDetail from './pages/notice/QnaDetail';
 import DetailInfoItem from './pages/notice/DetailInfoItem';
 import NewsDetailItem from './pages/notice/NewsDetailItem';
+import Consulting from './components/common/Consulting/index';
+import ConsultingPage from './components/common/Consulting/ConsultingPage';
 function App() {
   /* 서브 페이지에 헤더 배경 하얀색 주려고 넣은 것, 지우지 말아주세요
   const [hdSubStyle, setHdSubStyle] = useState(false);
@@ -47,7 +49,8 @@ function App() {
         <Header />
         {/* {  true ? <Header className="" /> :  <Header className="" />  } */}
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/main" element={<Index />} />
           <Route path="/login" element={<Login />} />
           <Route path="/ir" element={<Ir />} />
           <Route path="/ir-perfo" element={<IrPerfo />} />
@@ -63,7 +66,6 @@ function App() {
           <Route path="/gb" element={<Gbindex />} />
           <Route path="/gb-trategy" element={<GbStrategy />} />
           <Route path="/gb-case" element={<GbCase />} />
-          <Route path="/landing" element={<Landing />} />
           <Route path="/maipo" element={<MaIpoInfo />} />
           <Route path="/maipo-process" element={<MaIpoPro />} />
           <Route path="/maipo-performance" element={<MaIpoPerfo />} />
@@ -72,10 +74,12 @@ function App() {
           <Route path="/datainfo" element={<DataInfo />} />
           <Route path="/datainfo/:category/:id" element={<DetailInfoItem />} />
           <Route path="/zeta-people" element={<ZetaPeople />} />
+          <Route path="/consulting" element={<ConsultingPage />} />
           <Route path="/news" element={<News />} />
           <Route path="/news/:category/:id" element={<NewsDetailItem />} />
         </Routes>
       </BrowserRouter>
+      <Consulting />
       <Footer />
     </div>
   );

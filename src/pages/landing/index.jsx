@@ -3,6 +3,7 @@ import './../../styles/landing/index.scss'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
   useEffect(() => {
@@ -55,8 +56,8 @@ const Landing = () => {
         </div>
       </div>
       <div className="btnArea">
-        <button>자세히 보기</button>
-        <button>컨설팅 신청</button>
+        <button><Link to='/main'>자세히 보기</Link></button>
+        <button><Link to='/consulting'>컨설팅 신청</Link></button>
       </div>
     </div>
   );
