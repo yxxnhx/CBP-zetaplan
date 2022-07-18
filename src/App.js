@@ -18,8 +18,6 @@ import MngCertify from './pages/management/MngCertify';
 import MngTrade from './pages/management/Mngtrade';
 import MngValue from './pages/management/MngValue';
 import MaIpoInfo from './pages/maipo/MaIpoInfo';
-import MaIpoPro from './pages/maipo/MaIpoPro';
-import MaIpoPerfo from './pages/maipo/MaIpoPerfo';
 import Qna from './pages/notice/Qna';
 import Footer from './components/common/Footer/index';
 import ZetaNetwork from './pages/zeta/ZetaNetwork';
@@ -37,7 +35,12 @@ import ZetaHistory from './pages/zeta/ZetaHistory';
 import ZetaConsul from './pages/zeta/ZetaConsul';
 import ZetaMap from './pages/zeta/ZetaMap';
 
+import { useState } from 'react'
+import MaIpoPro from './pages/maipo/MaIpoPro';
+import MaIpoPerfo from './pages/maipo/MaIpoPerfo';
 function App() {
+  const [hdSubStyle, setHdSubStyle] = useState(false);
+
   /* 서브 페이지에 헤더 배경 하얀색 주려고 넣은 것, 지우지 말아주세요
   const [hdSubStyle, setHdSubStyle] = useState(false);
   function addSubStyle (){
@@ -50,8 +53,7 @@ function App() {
     <div className="App">
       <ResetStyle />
       <BrowserRouter>
-        <Header />
-        {/* {  true ? <Header className="" /> :  <Header className="" />  } */}
+        {  true ? <Header className="" /> :  <Header className="" />  }
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/main" element={<Index />} />
@@ -78,14 +80,16 @@ function App() {
           <Route path="/zeta-consul" element={<ZetaConsul />} />
           <Route path="/zeta-network" element={<ZetaNetwork />} />
           <Route path="/zeta-map" element={<ZetaMap />} />
+          <Route path="/landing" element={<Landing />} />
+          <Route path="/maipo" element={<MaIpoInfo />} />
           <Route path="/qna" element={<Qna />} />
-          <Route path="/qna/:id" element={<QnaDetail />} />
-          <Route path="/datainfo" element={<DataInfo />} />
-          <Route path="/datainfo/:category/:id" element={<DetailInfoItem />} />
+          <Route path="/dataInfo" element={<DataInfo />} />
           <Route path="/zeta-people" element={<ZetaPeople />} />
           <Route path="/consulting" element={<ConsultingPage />} />
           <Route path="/news" element={<News />} />
           <Route path="/news/:category/:id" element={<NewsDetailItem />} />
+          <Route path="/qna/:id" element={<QnaDetail />} />
+          <Route path="/datainfo/:category/:id" element={<DetailInfoItem />} />
         </Routes>
       </BrowserRouter>
       <Consulting />

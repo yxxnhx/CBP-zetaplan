@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.mngCreditReportTitle {
+  margin-top: 2rem;
+}
+
+.mngCreditWrapper {
+  margin: 15rem 0 15rem -7rem;
+  display: flex;
+  width: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.mngAccordion {
+  width: 50rem;
+}
+
+.mngCreditItem {
+  margin-bottom: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+.mngCreditBtn {
+  width: 125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #1527a0;
+  padding: 3rem 2rem;
+  font-size: 2.4rem;
+  letter-spacing: 1.2px;
+  color: #000;
+}
+
+.mngCreditTitle {
+  font-size: 2.08rem;
+}
+
+.mngCreditContent {
+  color: #000;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.mngCreditContent.show {
+  width: 125rem;
+  height: auto;
+  max-height: 999rem;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  border: 1px solid #1527a0;
+}
+
+.mngCreditBtn.on {
+  background-color: #1527a0;
+  color: #fff;
+}
+
+.mngUnderBtn {
+  background: url("../../img/zetaplan_splite.png") no-repeat -137px -194px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+}
+
+.mngTopBtn {
+  background: url("../../img/zetaplan_splite.png") no-repeat -137px -235px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+}
+
+.mngCreditTxt {
+  padding: 2rem;
+  line-height: 1.5;
+}
+.mngCreditTxt p {
+  font-family: "Noto Sans KR";
+  font-size: 1.7rem;
+}
+
+.mngCreditImg {
+  width: 90%;
+  height: 70%;
+  transform: translateX(8rem);
+  padding: 2rem 0;
+}
+
+.mngCreditApart {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  color: #1527a0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.mngCreditApartTxt {
+  margin: 1rem 2rem;
+}
+.mngCreditApartTxt li {
+  font-size: 1.7rem;
+  font-family: "Noto Sans KR";
+  line-height: 1.5;
+}
+
+.mngCreditbold {
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mngCreditCombine {
+  padding: 2rem;
+  line-height: 1.5;
+}
+.mngCreditCombine div {
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-top: 1.5rem;
+}
+.mngCreditCombine p {
+  font-size: 1.6rem;
+  font-family: "Noto Sans KR";
+}
+
+.mngCreditReport {
+  height: 80rem;
+  margin-left: 5rem;
+  padding: 4rem;
+}
+.mngCreditReport div {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 5rem;
+}
+.mngCreditReport p {
+  font-size: 1.8rem;
+  font-family: "Noto Sans KR";
+  line-height: 3;
+}
+
+.mngCreditApply {
+  width: 21rem;
+  background-color: #1527a0;
+  font-size: 1.92rem;
+  color: #fff;
+  padding: 3rem;
+  margin-left: 65rem;
+}
+
+.mngInner {
+  width: 1440px;
+  padding: 8rem 0;
+  margin: 0 auto;
+}/*# sourceMappingURL=mngCredit.css.map */

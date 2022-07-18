@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
 * {
   font-family: "Roboto", "Noto Sans KR", sans-serif;
@@ -75,4 +76,138 @@
 .miPerfoMainImg {
   width: 90%;
   margin: 10rem 7rem;
+}
+
+/* ipo 성과 */
+.ipoPerfo {
+  display: flex;
+  margin-top: 25rem;
+}
+
+.ipoCircleWrap {
+  position: relative;
+  width: 25%;
+  height: 35rem;
+}
+
+.ipoCircle {
+  position: absolute;
+  left: 12rem;
+  top: 5rem;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: rotate linear infinite 40s forwards;
+          animation: rotate linear infinite 40s forwards;
+}
+
+.ipoCircleItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 9.0625rem;
+  height: 9.0625rem;
+  border: 0.5rem solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0.625rem 1.25rem rgba(18, 27, 116, 0.18);
+}
+
+.ipoCircleItemObject {
+  width: 18rem;
+  height: 18rem;
+  top: -1.875rem;
+  left: 50%;
+  background-color: #070F76;
+  transform: translate(-23rem, -9rem);
+}
+
+.ipoCircleItemConnection {
+  width: 18rem;
+  height: 18rem;
+  bottom: 0.625rem;
+  right: 0;
+  background-color: #1E3A8B;
+  transform: translate(14rem, -10rem);
+}
+
+.ipoCircleItemSpace {
+  width: 18rem;
+  height: 18rem;
+  bottom: 0.625rem;
+  left: 0;
+  background-color: #583CF2;
+  transform: translate(-2rem, 13rem);
+}
+
+.ipoCircleText {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  -webkit-animation: rotate2 linear infinite 40s forwards;
+          animation: rotate2 linear infinite 40s forwards;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate2 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotate2 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.ipoCircleBg {
+  background: url("../../img/main/zetaplanLogo.svg") no-repeat 5rem 3rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 12rem;
+  top: 5rem;
+  border: 1rem solid #ccc;
+  background-size: 80% 80%;
+  border-radius: 50%;
+  box-shadow: 0 0.625rem 1.25rem rgba(18, 27, 116, 0.18);
+}
+
+.ipoValueProcess {
+  position: relative;
+  bottom: 15rem;
+  left: 30rem;
+  padding: 4rem;
+}
+.ipoValueProcess h3 {
+  font-size: 3.2rem;
+  margin-top: 4rem;
+}
+.ipoValueProcess h3:nth-of-type(1) {
+  color: #070F76;
+}
+.ipoValueProcess h3:nth-of-type(2) {
+  color: #1E3A8B;
+}
+.ipoValueProcess h3:nth-of-type(3) {
+  color: #583CF2;
+}
+.ipoValueProcess div {
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 7rem;
+}
+.ipoValueProcess p {
+  font-size: 1.8rem;
+  font-family: "Noto Sans KR";
+  line-height: 2.8rem;
+  color: gray;
 }/*# sourceMappingURL=MaIpoPerfo.css.map */

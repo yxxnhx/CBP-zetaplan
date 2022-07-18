@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.newsItemContainer {
+  width: 440px;
+  margin: 113px 0;
+}
+.newsItemContainer .thumbnail {
+  width: 440px;
+  height: auto;
+  min-height: 370px;
+  margin-bottom: 49px;
+}
+.newsItemContainer .newsTitle {
+  width: 300px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.newsItemContainer .newsContent {
+  width: 408px;
+  font-size: 1.92rem;
+  line-height: 1.5;
+  margin: 25px 0 52px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.newsItemContainer .newsContent h3, .newsItemContainer .newsContent div, .newsItemContainer .newsContent p, .newsItemContainer .newsContent ul li {
+  font-size: 1.92rem;
+  font-weight: normal;
+  list-style: none;
+}
+.newsItemContainer .createdAt {
+  font-size: 1.6rem;
+}/*# sourceMappingURL=newsItem.css.map */

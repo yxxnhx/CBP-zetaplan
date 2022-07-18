@@ -49,21 +49,25 @@
   line-height: 1.3;
 }
 
-.mngMenuTab {
+.mngMentTabEdge {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+}
+
+.mngMenuTab {
   transform: translate(-10rem, -10rem);
 }
-.mngMenuTab span {
+.mngMenuTab li {
   font-size: 2rem;
   font-weight: bold;
   margin-left: 7rem;
   position: relative;
 }
-.mngMenuTab span:hover {
+
+.isActive {
   color: #1527a0;
 }
-.mngMenuTab span:hover::after {
+.isActive::after {
   content: "";
   display: block;
   height: 0.3rem;
@@ -73,11 +77,15 @@
   bottom: -3.2rem;
 }
 
+.mngValueTitle {
+  margin-top: -3rem;
+}
+
 .mngValueTxt {
   width: 20rem;
   font-size: 2.08rem;
   margin-left: 12rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
   position: relative;
 }
 .mngValueTxt::after {
@@ -94,7 +102,7 @@
 .mngNeedTxt {
   width: 132.7rem;
   margin-left: 9rem;
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 .mngNeedTxt p {
   font-size: 2.08rem;
@@ -157,14 +165,6 @@
   top: 5rem;
 }
 
-.mngValueBusiness {
-  display: none;
-}
-
-/*
-.mngSkillValue{
-  display: none;
-}*/
 .mngValueTxtBox {
   display: flex;
 }
@@ -198,15 +198,17 @@
 }
 
 .mngValueTxt.mngValueStep {
-  top: 14rem;
+  top: 2rem;
+}
+
+.mngValueCompanyProcess {
+  display: flex;
+  justify-content: space-between;
 }
 
 .mngValueProcess {
-  display: inline-block;
-  position: relative;
-  bottom: 10rem;
-  left: 80rem;
-  padding: 4rem;
+  margin-right: 15rem;
+  margin-top: 10rem;
 }
 .mngValueProcess div {
   font-size: 2.2rem;
@@ -223,12 +225,11 @@
   position: relative;
   width: 32.8125rem;
   height: 32.8125rem;
-  margin-left: 1.25rem;
 }
 
 .mngCircle {
   position: absolute;
-  top: 30rem;
+  top: 20rem;
   left: 20rem;
   width: 100%;
   height: 100%;
@@ -254,7 +255,7 @@
   top: -1.875rem;
   left: 50%;
   background-color: #1527a0;
-  transform: translate(-16rem, -6rem);
+  transform: translate(-22rem, -6rem);
 }
 
 .mngCircleItemConnection {
@@ -263,7 +264,7 @@
   bottom: 0.625rem;
   right: 0;
   background-color: #1527a0;
-  transform: translate(10rem, -8rem);
+  transform: translate(12rem, -8rem);
 }
 
 .mngCircleItemSpace {
@@ -272,7 +273,7 @@
   bottom: 0.625rem;
   left: 0;
   background-color: #1527a0;
-  transform: translateY(9rem);
+  transform: translateY(11rem);
 }
 
 .mngCircleText {
@@ -305,14 +306,14 @@
   }
 }
 .mngCircleBg {
-  background: url("../../img/main/zetaplanLogo.svg") no-repeat;
-  width: 100%;
-  height: 100%;
+  background: url("../../img/main/zetaplanLogo.svg") no-repeat 7rem;
+  width: 110%;
+  height: 110%;
   position: absolute;
-  bottom: -30rem;
-  left: 22rem;
-  border: 1rem solid #ccc;
-  background-size: 100% 100%;
+  bottom: -20rem;
+  left: 20rem;
+  border: 0.8rem solid #e0e0e0;
+  background-size: 60% 60%;
   border-radius: 50%;
   box-shadow: 0 0.625rem 1.25rem rgba(18, 27, 116, 0.18);
 }

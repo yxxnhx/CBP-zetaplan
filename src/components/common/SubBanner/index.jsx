@@ -1,13 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import splite from '../../../img/zetaplan_splite.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const SubBanner = ({ title, img }) => {
+  useEffect(() => {
+    AOS.init();
+  })
+
   return (
     <SubBannerContainer img={`${img}`}>
       <SubBannerTextContainer>
         <div className='leftBracket'></div>
-        <p dangerouslySetInnerHTML={{ __html: title }}></p>
+        <p data-aos="zoom-in" dangerouslySetInnerHTML={{ __html: title }}></p>
         <div className='rightBracket'></div>
       </SubBannerTextContainer>
     </SubBannerContainer>

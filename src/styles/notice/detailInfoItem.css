@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.detailInfoInner {
+  width: 1440px;
+  padding: 8rem 0;
+  margin: 0 auto;
+}
+.detailInfoInner .detailInfoTitleBox {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+.detailInfoInner .detailInfoTitleBox p {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.detailInfoInner .detailContentInner {
+  border-bottom: 1px solid #e0e0e0;
+}
+.detailInfoInner .detailContentInner .detailTitle {
+  padding: 35px;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-bottom: 1px solid #e0e0e0;
+}
+.detailInfoInner .detailContentInner .content {
+  width: 1000px;
+  margin: 60px auto;
+}
+.detailInfoInner .detailContentInner .content .content-view {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.detailInfoInner .detailContentInner .content table {
+  width: 100%;
+  text-align: center;
+}
+.detailInfoInner .detailContentInner .content table tr > td:nth-of-type(1) {
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+.detailInfoInner .detailContentInner .content table td {
+  height: 32px;
+}
+.detailInfoInner .detailContentInner .content li, .detailInfoInner .detailContentInner .content p, .detailInfoInner .detailContentInner .content tr, .detailInfoInner .detailContentInner .content td, .detailInfoInner .detailContentInner .content a {
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.detailInfoInner .detailContentInner .content strong {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.detailInfoInner .infoListBtn {
+  display: block;
+  width: 120px;
+  height: 40px;
+  background-color: #1527a0;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 10px 40px;
+  margin: 70px auto 0;
+  text-align: center;
+}/*# sourceMappingURL=detailInfoItem.css.map */

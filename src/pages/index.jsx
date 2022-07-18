@@ -5,6 +5,7 @@ import GlobalNetwork from './main/GlobalNetwork';
 import OurBusiness from './main/OurBusiness';
 import Performance from './main/Performance';
 import ZetaIntroduction from './main/ZetaIntroduction';
+import NewsColumn from './main/NewsColumn';
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <OurBusiness />
       <Performance />
       <ZetaIntroduction />
+      <NewsColumn />
       <Partners />
       <GlobalNetwork />
     </div>
