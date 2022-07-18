@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+@import '../GlobalStyle.scss';
+
+.pfWrap {
+  width: 100vw;
+  height: 90rem;
+  display: flex;
+  justify-content: center;
+
+  .pfCon {
+    background: url(./../../img/main/performance/performance_bg.png) no-repeat;
+    width: 100vw;
+
+    .pfMaintitle {
+      margin: 4rem;
+      display: flex;
+      justify-content: flex-start;
+
+      h1 {
+        color: $basic-white;
+        font : {
+          size: $main-title;
+          weight: bold;
+        }
+      }
+    }
+
+    .pfListCon {
+      margin: 3rem auto;
+      display: flex;
+      width: 177rem;
+      height: 6.17rem;
+      justify-content: space-between;
+      position: relative;
+      bottom: 0.8rem;
+
+      .pfList {
+        height: 61.7rem;
+        background-color: $basic-gray1;
+
+        .pfConBox {
+          margin-left: 18rem;
+          width: 4.3rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .pfIconBox {
+            margin-top: 6rem;
+            height: 100px;
+          }
+
+          .pfTitle {
+            margin-top: 2.5rem;
+            font: {
+              size: 3.6rem;
+              weight: bold;
+            }
+            color: $main-color;
+            margin-bottom: 2rem;
+            width: 13.5rem;
+            text-align: center;
+          }
+
+          .pfCount {
+            font: {
+              size: 7.6rem;
+              weight: bold;
+            }
+          }
+
+          .pfDes {
+            font-size: $size-lg;
+            line-height: 1.5;
+            border-top: 1px solid $basic-black;
+            width: 34rem;
+            padding-top: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
