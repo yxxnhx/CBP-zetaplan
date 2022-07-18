@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.ztCsBox .ztTitle {
+  color: #000;
+  margin-bottom: 12rem;
+}
+
+.ztCsTitle .ztCsTitleBig {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 3.6rem;
+  margin-bottom: 2.2rem;
+}
+.ztCsTitle .ztCsTitleSub {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 2.24rem;
+  color: #707070;
+}
+
+.ztCsDataBox {
+  padding-top: 18rem;
+}
+.ztCsDataBox .ztCsData {
+  display: flex;
+  justify-content: space-between;
+}
+.ztCsDataBox .ztCsData .ztCsDataTitle {
+  flex: 40%;
+}
+.ztCsDataBox .ztCsData .ztCsDataTitle .ztCsDataNum {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 2.24rem;
+}
+.ztCsDataBox .ztCsData .ztCsDataTitle .ztCsDataNum::after {
+  content: "";
+  display: inline-block;
+  width: 9.4rem;
+  height: 0.5rem;
+  background: #461D93;
+  vertical-align: middle;
+  margin-left: 2rem;
+}
+.ztCsDataBox .ztCsData .ztCsDataTitle .ztCsDataSub {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-top: 2rem;
+  margin-bottom: 24rem;
+  text-indent: 4.5rem;
+}
+.ztCsDataBox .ztCsData .ztCsDataCont {
+  flex: 60%;
+}
+.ztCsDataBox .ztCsData .ztCsDataCont ul {
+  line-height: 2.5;
+}
+.ztCsDataBox .ztCsData .ztCsDataCont ul li {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 2.4rem;
+}/*# sourceMappingURL=zetaConsul.css.map */

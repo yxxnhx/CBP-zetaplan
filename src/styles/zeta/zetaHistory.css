@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.ztHisBox .ztTitle {
+  color: #000;
+}
+
+.ztHisContent {
+  display: flex;
+  margin-top: 10rem;
+}
+.ztHisContent .ztHisTitle {
+  flex: 35%;
+  margin-top: 8rem;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 50rem;
+  left: 0;
+  top: 8rem;
+}
+.ztHisContent .ztHisTitle .ztHisTitleOr {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+.ztHisContent .ztHisTitle .ztHisTitleLi {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 6.5rem;
+  cursor: pointer;
+  color: #707070;
+}
+.ztHisContent .ztHisTitle .ztHisTitleLi:hover {
+  color: #333;
+}
+.ztHisContent .ztHisTitle .ztHisTitleLiOn {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 4rem;
+  color: #1527A0;
+  margin-bottom: 6.5rem;
+  cursor: pointer;
+}
+.ztHisContent .ztHisTxtBox {
+  flex: 65%;
+}
+
+.ztHisTxtsBoxs {
+  padding-top: 3rem;
+}
+.ztHisTxtsBoxs .ztHisTxtCotain .ztHisTxtsTotal {
+  margin-top: 6rem;
+}
+
+.ztHisTxtsTitle {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: #1527A0;
+  border-bottom: 2.5px solid #707070;
+  padding-bottom: 1.5rem;
+}
+
+.ztHisTexts {
+  display: flex;
+}
+.ztHisTexts .ztHisTxtYear {
+  flex: 10%;
+  margin-right: 2rem;
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #1527A0;
+  margin-top: 1.5rem;
+}
+.ztHisTexts .ztHisTxtYear::after {
+  content: "";
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border: 2px solid #1527A0;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+.ztHisTexts .ztHisListsTxt {
+  flex: 90%;
+  margin-bottom: 5rem;
+}
+.ztHisTexts .ztHisListsTxt .ztHisListTxt {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 1.92rem;
+  line-height: 3;
+}/*# sourceMappingURL=zetaHistory.css.map */

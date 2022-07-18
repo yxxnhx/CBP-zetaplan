@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
-// @import url('../GlobalStyle.scss');
 @import '../GlobalStyle.scss';
 
 $zt-ftMd:500;
 $zt-ftBold:700;
-
 $zt-MonSubTitle:1.84rem;
 $zt-MonMainTitle:4.16rem;
+$zt-NotoTxtM:3rem;
 $zt-ConTitle:2.56rem;
 $zt-riBk:#011933;
 $zt-grayColor:#707070;
@@ -24,8 +23,10 @@ $zt-grayColor:#707070;
 }
 
 .ztCiContain{
-  background-color: $basic-black;
   color:$basic-white;
+  height: 100vh;
+  background: url('./../../img/main/main_galexy_bg@2x.png')no-repeat top;
+  background-size: cover;
 }
 
 .ztInner{
@@ -53,12 +54,15 @@ $zt-grayColor:#707070;
   .ztCiInfoTxt{
     font-weight:$zt-ftBold;
     margin-top: 9.5rem;
-    font-size: $size-xl;
+    font-size: $zt-NotoTxtM;
     text-align: center;
     margin-bottom: 10.5rem;
     line-height: 2;
     span{
       display: block;
+    }
+    &:hover{
+      color:rgb(238, 238, 210);
     }
   }
 }
@@ -114,43 +118,7 @@ $zt-grayColor:#707070;
   }
 }
 
-.ztCiSt{
-  .ztTitle{
-   
-  }
-  .ztCiStBox{
-    .ztCiStImg{
-      .ztCiStImgfull{
-        .ztCiStImgfTitle{
-          
-        }
-        .ztCiStImgfLogo{
-
-        }
-      }
-      .ztCiStImgSim{
-        .ztCiStImgsTitle{
-
-        }
-        .ztCiStImgLogo{
-
-        }
-      }
-    }
-  }
-  .ztCiStTxt{
-    p{
-      span{
-       
-      }
-    }
-  }
-}
-
 .ztColSt{
-  .ztTitle{
-
-  }
   .ztColStBox{
     .ztColStIn{
       padding: 0 14rem;

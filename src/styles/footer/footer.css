@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.ftBox {
+  background: #1C1C1C;
+  color: #fff;
+  font-size: 1.8rem;
+}
+.ftBox .ftInner {
+  padding: 8rem 7.8rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ftLogo {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -0.7rem -0.5rem;
+  background-size: 59.9rem 28rem;
+  width: 20.9rem;
+  height: 4.7rem;
+  cursor: pointer;
+}
+
+.ftInfoBox {
+  display: flex;
+  font-size: 2.3rem;
+  margin: 5rem 0;
+}
+.ftInfoBox .ftInfoList {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 1.84rem;
+  cursor: pointer;
+}
+.ftInfoBox .ftInfoList:hover {
+  cursor: pointer;
+  color: #1527A0;
+}
+.ftInfoBox .ftInfoList::after {
+  content: "";
+  display: inline-block;
+  width: 0.2rem;
+  height: 1rem;
+  background-color: #707070;
+  margin: 0 2.4rem;
+}
+.ftInfoBox .ftInfoList:last-child::after {
+  display: none;
+}
+
+.ftAddr .ftAddrText {
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  font-size: 1.84rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+.ftAddr .ftAddrText .ftGoto {
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  font-size: 1.84rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.ftAddr .ftAddrText .ftGoto:hover {
+  color: #1527A0;
+}
+
+.ftAddrStyle {
+  margin: 3rem 0;
+}
+
+.ftSnsBox {
+  display: flex;
+  justify-content: space-between;
+}
+.ftSnsBox .ftSnsFb {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -0.6rem -10rem;
+  background-size: 59.9rem 28rem;
+  width: 4.1rem;
+  height: 4.1rem;
+  cursor: pointer;
+  margin-right: 0.7rem;
+}
+.ftSnsBox .ftSnsFb:hover {
+  opacity: 0.8;
+}
+.ftSnsBox .ftSnsYou {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -5.3rem -10rem;
+  background-size: 59.9rem 28rem;
+  width: 4.1rem;
+  height: 4.1rem;
+  cursor: pointer;
+  margin-right: 0.7rem;
+}
+.ftSnsBox .ftSnsYou:hover {
+  opacity: 0.8;
+}
+.ftSnsBox .ftSnsBl {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -10rem -10rem;
+  background-size: 59.9rem 28rem;
+  width: 4.1rem;
+  height: 4.1rem;
+  cursor: pointer;
+}
+.ftSnsBox .ftSnsBl:hover {
+  opacity: 0.8;
+}
+
+.ftModal {
+  width: 55%;
+  height: 70%;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  background: #e0e0e0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5rem 8rem;
+  overflow: scroll;
+}
+.ftModal .ftModalClose {
+  font-size: 4rem;
+  cursor: pointer;
+  position: absolute;
+  right: 8rem;
+  background: url("./../../img/zetaplan_splite.png") no-repeat -57.4rem -10rem;
+  background-size: 59.9rem 28rem;
+  width: 1.9rem;
+  height: 1.8rem;
+}
+.ftModal .ftModalClose:hover {
+  opacity: 0.4;
+}
+.ftModal .ftModalTextBox {
+  margin-top: 5rem;
+}
+.ftModal .ftModalTextBox .ftModalTitle {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+}
+.ftModal .ftModalTextBox .ftModalTxt {
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.ftModal .ftModalTextBox .ftModalTxt .ftModalTxts {
+  margin-top: 2rem;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.ftModal .ftModalTextBox .ftModalTxtLast {
+  margin-top: 3rem;
+}/*# sourceMappingURL=footer.css.map */

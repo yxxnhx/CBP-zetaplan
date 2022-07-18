@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+@import '../GlobalStyle.scss';
+
+$zt-ftBold:700;
+$zt-MidFtSz:2.8rem;
+$zt-smFtSz:2.24rem;
+$zt-grayColor:#707070;
+
+@mixin ztNotoKr($zt-krWeight,$zt-krSize){
+  font-family: 'Noto Sans KR';
+  font-weight:$zt-krWeight;
+  font-size:$zt-krSize;
+}
+@mixin ztMapIconOr($ztIconX,$ztIconY,$ztIconW,$ztIconH) {
+  background: url('./../../img/zetaplan_splite.png') no-repeat $ztIconX $ztIconY;
+  background-size: 59.9rem 28rem;
+  width: $ztIconW;
+  height:$ztIconH;
+  font-size: 0;
+  text-indent: -9999px;
+  vertical-align: text-bottom;
+}
+
+.ztMapOn{display: block;}
+.ztMapOff{display: none;}
+
+.ztMapBox .ztMapTitle{
+  color:$basic-black;
+  margin-bottom: 15.4rem;
+}
+.ztMapBtnBox{text-align: center;}
+.ztMapBtn{
+  width: 25rem;
+  height: 8rem;
+  background-color:$basic-white;
+  border: 1px solid $zt-grayColor;
+  color: $zt-grayColor;
+  @include ztNotoKr($zt-ftBold, $zt-smFtSz);
+  display: inline-block;
+  margin-bottom: 9.5rem;
+  margin-right: 1.4rem;
+  &:hover{
+    background-color:$main-color;
+    color: $basic-white;
+    opacity: 0.8;
+  }
+}
+.ztMapBtnOn{
+  background-color:$main-color;
+  color: $basic-white;
+}
+
+.ztMapGuide{
+  margin-top: 9.2rem;
+  li{
+    height: 8rem;
+    line-height: 8rem;
+    border-bottom: 1px solid #8E8E91;
+    span{
+      color: $zt-grayColor;
+      display: inline-block;
+      @include ztNotoKr($zt-ftBold, $zt-smFtSz);
+    }
+    .ztMapStitle{
+      width:15rem;
+      margin-left: 5.8rem;
+    }
+  }
+  .ztMapAddr{
+    border-top:2px solid $main-color;
+    .ztMapIcon{
+      @include ztMapIconOr(-37.6rem,-19.8rem,2.2rem,2.9rem);
+    }
+  }
+  .ztMapTel{
+    display: block;
+    .ztMapIcon{
+      @include ztMapIconOr(-33.2rem,-20.4rem,2.3rem,2.3rem);
+    }
+  }
+  .ztMapFax{
+    .ztMapIcon{
+      @include ztMapIconOr(-41.7rem,-20rem,2.7rem,2.5rem);
+    }
+  }
+  .ztMapNon{
+    display: none;
+  }
+}

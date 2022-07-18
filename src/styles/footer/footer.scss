@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+@import '../GlobalStyle.scss';
+
+$ft-LiSize:1.84rem;
+$ft-Msize:1.55rem;
+$ft-SmSize:1.12rem;
+$zt-ftBold:700;
+$zt-ftNormal:400;
+
+@mixin ztNotoKr($zt-krWeight,$zt-krSize){
+  font-family: 'Noto Sans KR';
+  font-weight:$zt-krWeight;
+  font-size:$zt-krSize;
+};
+@mixin ftLogoOr($ftBgX,$ftBgY){
+  background:  url('./../../img/zetaplan_splite.png') no-repeat $ftBgX $ftBgY;
+	background-size: 59.9rem 28rem;
+	width: 4.1rem;
+	height:4.1rem;
+  cursor: pointer;
+  &:hover {
+    opacity:0.8;
+  };
+};
+
+.ftBox{
+  background: #1C1C1C;
+  color:#fff;
+  font-size:1.8rem;
+  .ftInner{
+    padding: 8rem 7.8rem;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+  };
+};
+
+.ftLogo{
+  background:  url('./../../img/zetaplan_splite.png') no-repeat -0.7rem -0.5rem;
+	background-size: 59.9rem 28rem;
+	width: 20.9rem;
+	height: 4.7rem;
+  cursor: pointer;
+};
+
+.ftInfoBox {
+  display:flex;
+  font-size:2.3rem;
+  margin:5rem 0;
+  .ftInfoList{
+    @include ztNotoKr($zt-ftBold,$ft-LiSize);
+    cursor: pointer;
+    &:hover {
+      cursor: pointer;
+      color:$main-color;
+    };
+    &::after {
+      content:'';
+      display:inline-block;
+      width:0.2rem;
+      height:1rem;
+      background-color:#707070;
+      margin:0 2.4rem;
+    };
+    &:last-child::after{
+      display:none;
+    };
+  };
+};
+
+.ftAddr{
+  .ftAddrText{
+    @include ztNotoKr($zt-ftNormal,$ft-Msize);
+    line-height:2.5rem;
+    .ftGoto{
+      @include ztNotoKr($zt-ftNormal,$ft-Msize);
+      cursor: pointer;
+      &:hover{
+        color:$main-color;
+      };
+    };
+  };
+};
+.ftAddrStyle{
+  margin:3rem 0;
+};
+
+.ftSnsBox{
+  display: flex;
+  justify-content: space-between;
+  .ftSnsFb{
+    @include ftLogoOr(-0.6rem,-10rem);
+    margin-right: 0.7rem;
+  };
+  .ftSnsYou{
+    @include ftLogoOr(-5.3rem,-10rem);
+    margin-right: 0.7rem;
+  };
+  .ftSnsBl{
+    @include ftLogoOr(-10rem,-10rem);
+  };
+};
+
+.ftModal{
+  width: 55%;
+  height: 70%;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  background: $basic-gray2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding:3rem 8rem;
+  overflow:auto;
+  z-index: 999;
+  .ftModalClose{
+    font-size: 4rem;
+    cursor: pointer;
+    position: absolute;
+    right:8rem;
+    background:  url('./../../img/zetaplan_splite.png') no-repeat -57.4rem -10rem;
+    background-size: 59.9rem 28rem;
+    width: 1.9rem;
+    height: 1.8rem;
+    &:hover{
+      opacity: 0.4;
+    };
+  };
+  .ftModalTextBox{
+    margin-top: 5rem;
+    .ftModalTitle{
+      @include ztNotoKr($zt-ftBold,$sub-title);
+      margin-bottom:4rem;
+    };
+    .ftModalTxt{
+      @include ztNotoKr($zt-ftNormal,$size-sm);
+      line-height:2rem;
+      .ftModalTxts{
+        margin-top: 2rem;
+        @include ztNotoKr($zt-ftNormal,$size-sm);
+      };
+    };
+    .ftModalTxtLast{
+      margin-top: 3rem;
+    };
+  };
+};
+
+.ftsModal{
+  width: 40%;
+  height: 55%;
+}
+.ftModalTextBox{
+  line-height: 2.3;
+}
+.ftModal .ftModalTextBox .ftsModalTxt{
+  @include ztNotoKr($zt-ftNormal,$size-lg);
+};
+.ftModal .ftModalTextBox .ftsModalTxt span{
+  @include ztNotoKr($zt-ftNormal,$size-lg);
+};
+
+.ftsModalTxt{
+  cursor: pointer;
+  .ftModalHv{
+    &:hover{
+    color:$main-color;
+    @include ztNotoKr($zt-ftBold,$size-lg);
+  }
+  }
+}
+.ftsModalTxtLast{
+  color:$main-color;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+@import '../GlobalStyle.scss';
+
+$zt-ftMd:500;
+$zt-ftBold:700;
+$zt-BigFtSz:3.6rem;
+$zt-MidFtSz:2.8rem;
+$zt-smFtSz:2.24rem;
+$zt-grayColor:#707070;
+
+@mixin ztNotoKr($zt-krWeight,$zt-krSize){
+    font-family: 'Noto Sans KR';
+    font-weight:$zt-krWeight;
+    font-size:$zt-krSize;
+}
+
+.ztCsBox .ztTitle{
+    color: $basic-black;
+    margin-bottom: 12rem;
+}
+
+.ztCsTitle{
+    .ztCsTitleBig{
+       @include ztNotoKr($zt-ftBold,$zt-BigFtSz);
+       margin-bottom: 2.2rem;
+    }
+    .ztCsTitleSub{
+        @include ztNotoKr($zt-ftBold,$zt-smFtSz);
+        color:$zt-grayColor;
+    }
+}
+
+.ztCsDataBox{
+    padding-top: 18rem;
+    .ztCsData{
+        display: flex;
+        justify-content: space-between;
+        .ztCsDataTitle{
+            flex: 40%;
+            .ztCsDataNum{
+                @include ztNotoKr($zt-ftBold,$zt-smFtSz);
+                &::after{
+                  content: '';
+                  display: inline-block;
+                  width: 9.4rem;
+                  height:0.5rem;
+                  background:$sub-purple;
+                  vertical-align: middle;
+                  margin-left: 2rem;
+                }
+            }
+            .ztCsDataSub{
+                @include ztNotoKr($zt-ftBold,$zt-MidFtSz);
+                margin-top: 2rem;
+                margin-bottom: 24rem;
+                text-indent: 4.5rem;
+            }
+        }
+        .ztCsDataCont{
+            flex: 60%;
+            ul{
+                line-height:2.5;
+                li{
+                    @include ztNotoKr($zt-ftBold,$size-xl);
+                }
+            }
+        }
+    }
+}
+

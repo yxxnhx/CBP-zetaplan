@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+@import '../GlobalStyle.scss';
+
+$zt-ftBold:700;
+$zt-OnFtSz:4rem;
+$zt-grayColor:#707070;
+
+@mixin ztNotoKr($zt-krWeight,$zt-krSize){
+  font-family: 'Noto Sans KR';
+  font-weight:$zt-krWeight;
+  font-size:$zt-krSize;
+}
+
+.ztHisBox .ztTitle{
+  color: $basic-black;
+}
+
+.ztHisContent{
+  display: flex;
+  margin-top: 10rem;
+  .ztHisTitle{
+    flex:35%;
+    margin-top:8rem;
+    position: sticky;
+    height: 50rem;
+    left: 0;
+    top:8rem; 
+ 
+    .ztHisTitleOr{
+      @include ztNotoKr($zt-ftBold,$sub-title);
+      line-height: 1.4;
+      margin-bottom: 2rem;
+    }
+    .ztHisTitleLi{
+      @include ztNotoKr($zt-ftBold,$sub-title);
+      margin-bottom: 6.5rem;
+      cursor: pointer;
+      color:$zt-grayColor;
+      &:hover{
+        color:$basic-gray3;
+      }
+    }
+    .ztHisTitleLiOn{
+      @include ztNotoKr($zt-ftBold,$zt-OnFtSz);
+      color:$main-color;
+      margin-bottom: 6.5rem;
+      cursor: pointer;
+    }
+
+  }
+  .ztHisTxtBox{
+    flex:65%;
+  }
+}
+
+.ztHisTxtsBoxs{
+  padding-top: 3rem;
+  .ztHisTxtCotain{
+    .ztHisTxtsTotal{
+      margin-top: 6rem;
+    }
+  }
+}
+
+.ztHisTxtsTitle{
+  @include ztNotoKr($zt-ftBold,$sub-title);
+  color:$main-color;
+  border-bottom:2.5px solid $zt-grayColor;
+  padding-bottom: 1.5rem;
+}
+
+.ztHisTexts{
+  display: flex;
+  .ztHisTxtYear{
+    flex: 10%;
+    margin-right: 2rem;
+    @include ztNotoKr($zt-ftBold,$size-xl);
+    color:$main-color;
+    margin-top: 1.5rem;
+    &::after{
+      content: '';
+      display: inline-block;
+      width: 0.4rem;
+      height: 0.4rem;
+      border: 2px solid $main-color;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-left: 1rem;
+    }
+  }
+  .ztHisListsTxt{
+    flex: 90%;
+    margin-bottom: 5rem;
+    .ztHisListTxt{
+      @include ztNotoKr($zt-ftBold,$list-md);
+      line-height:3;
+    }
+  }
+}

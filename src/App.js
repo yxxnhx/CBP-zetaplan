@@ -33,6 +33,10 @@ import DetailInfoItem from './pages/notice/DetailInfoItem';
 import NewsDetailItem from './pages/notice/NewsDetailItem';
 import Consulting from './components/common/Consulting/index';
 import ConsultingPage from './components/common/Consulting/ConsultingPage';
+import ZetaHistory from './pages/zeta/ZetaHistory';
+import ZetaConsul from './pages/zeta/ZetaConsul';
+import ZetaMap from './pages/zeta/ZetaMap';
+
 function App() {
   /* 서브 페이지에 헤더 배경 하얀색 주려고 넣은 것, 지우지 말아주세요
   const [hdSubStyle, setHdSubStyle] = useState(false);
@@ -69,6 +73,11 @@ function App() {
           <Route path="/maipo" element={<MaIpoInfo />} />
           <Route path="/maipo-process" element={<MaIpoPro />} />
           <Route path="/maipo-performance" element={<MaIpoPerfo />} />
+          <Route path="/zeta-history" element={<ZetaHistory />} />
+          <Route path="/zeta-ci" element={<ZetaCi />} />
+          <Route path="/zeta-consul" element={<ZetaConsul />} />
+          <Route path="/zeta-network" element={<ZetaNetwork />} />
+          <Route path="/zeta-map" element={<ZetaMap />} />
           <Route path="/qna" element={<Qna />} />
           <Route path="/qna/:id" element={<QnaDetail />} />
           <Route path="/datainfo" element={<DataInfo />} />

@@ -1,0 +1,40 @@
+[
+  {
+  "id":0,
+  "title":"서울본사",
+  "mapImg":"ZetaKrMap",
+  "address":"서울특별시 금천구 디지털로 130 남성프라자 1210호",
+  "tel":"02-538-4801",
+  "fax":"02-6008-4779"
+  },{
+    "id":1,
+    "title":"China",
+    "mapImg":"ZetaCnMap",
+    "address":"6F, Beiguang Building, No.23, Huangsi Street, Xicheng District, Beijing, China",
+    "tel":"+86-10-8223-4950",
+    "fax":""
+  },{
+    "id":2,
+    "title":"Vietnam",
+    "mapImg":"ZetaVtmMap",
+    "address":"No 241, Tang Thiet Giap Apartment, 110 Hoang Quoc Viet Street, Cau Giay District, Hanoi City, VietNam",
+    "tel":"+84-4-6281-7522",
+    "fax":""
+  },
+  {
+    "id":3,
+    "title":"Indonesia",
+    "mapImg":"ZetaIndoMap",
+    "address":"Ini Office 2 Jl Jenderal Gatot Subroto Kav.58, Kuningan Timur setiabudi Jakarta Selatan, Indonesia",
+    "tel":"",
+    "fax":""
+  },
+  {
+    "id":4,
+    "title":"호남본부",
+    "mapImg":"ZetaHnMap",
+    "address":"광주광역시 서구 치평로 124 케이원오피스타운 726호",
+    "tel":"(062)373-4142",
+    "fax":""
+  }
+]

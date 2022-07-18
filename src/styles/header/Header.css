@@ -177,7 +177,7 @@ header .hd .hdLogo {
   top: 12rem;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 400rem;
   background-color: rgba(0, 0, 0, 0.6);
   border-top: 1px solid #e0e0e0;
 }
