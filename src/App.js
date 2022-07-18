@@ -37,20 +37,20 @@ import ZetaMap from './pages/zeta/ZetaMap';
 import MaIpoPro from './pages/maipo/MaIpoPro';
 import MaIpoPerfo from './pages/maipo/MaIpoPerfo';
 
+import ScrollToTop from './components/common/ScrollTop';
 function App() {
-
   /* const [hdSubStyle, setHdSubStyle] = useState(false);
   function addSubStyle (){
     setHdSubStyle(true);
   } */
- 
 
   return (
     <div className="App">
       <ResetStyle />
       <BrowserRouter>
-        <Header/>
-        {/* { hdSubStyle === true ? <Header className="hdSubStyle" /> : <Header/> } */}
+        <ScrollToTop />
+        <Header />
+        {/* {  true ? <Header className="" /> :  <Header className="" />  } */}
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/main" element={<Index />} />
@@ -70,7 +70,16 @@ function App() {
           <Route path="/gb-trategy" element={<GbStrategy />} />
           <Route path="/gb-case" element={<GbCase />} />
           <Route path="/landing" element={<Landing />} />
-          <Route path="/maipo" element={<MaIpoInfo onLoad={()=>{console.log('꺼져')}} />} />
+          <Route
+            path="/maipo"
+            element={
+              <MaIpoInfo
+                onLoad={() => {
+                  console.log('꺼져');
+                }}
+              />
+            }
+          />
           <Route path="/maipo-process" element={<MaIpoPro />} />
           <Route path="/maipo-performance" element={<MaIpoPerfo />} />
           <Route path="/zeta-history" element={<ZetaHistory />} />
