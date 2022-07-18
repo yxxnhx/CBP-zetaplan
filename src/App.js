@@ -35,19 +35,9 @@ import ConsultingPage from './components/common/Consulting/ConsultingPage';
 import ZetaHistory from './pages/zeta/ZetaHistory';
 import ZetaConsul from './pages/zeta/ZetaConsul';
 import ZetaMap from './pages/zeta/ZetaMap';
-<<<<<<< Updated upstream
 import MaIpoPro from './pages/maipo/MaIpoPro';
 import MaIpoPerfo from './pages/maipo/MaIpoPerfo';
-import { useState } from 'react';
 import ScrollToTop from './components/common/ScrollTop';
-=======
-import { useState } from 'react'
-import MaIpoPro from './pages/maipo/MaIpoPro';
-import MaIpoPerfo from './pages/maipo/MaIpoPerfo';
-
-function App() {
-  const [hdSubStyle, setHdSubStyle] = useState(false);
->>>>>>> Stashed changes
 
 function App() {
   /* const [hdSubStyle, setHdSubStyle] = useState(false);
