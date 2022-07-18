@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.consulBtnArea {
+  position: relative;
+}
+.consulBtnArea:hover .consulDimmed {
+  opacity: 1;
+  transition: all 0.1s linear;
+}
+
+.consulBtn {
+  background-color: #1527a0;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10rem;
+  right: 13rem;
+}
+.consulBtn img {
+  width: 4rem;
+  height: auto;
+  margin: 0.3rem;
+}
+
+.consulDimmed {
+  width: 20rem;
+  height: 6rem;
+  background: url("./../../img/bg/consul_hover_box.png") no-repeat;
+  background-size: contain;
+  position: fixed;
+  bottom: 10rem;
+  right: 12rem;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.consulDimmed img {
+  width: 4rem;
+  height: auto;
+  margin: 1rem 0.3rem;
+}
+.consulDimmed p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.consulBox {
+  display: flex;
+}
+.consulBox .consulBg {
+  background: url("./../../img/bg/consul_bg@2x.png") no-repeat;
+  width: 400px;
+  height: 800px;
+  padding: 5.1rem 3.1rem 5.1rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.consulBox .consulBg h1 {
+  font-size: 3.4rem;
+  color: #fff;
+  line-height: 1.5;
+}
+.consulBox .consulBg .zetaLogo {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -6px -5px;
+  background-size: 599px 280px;
+  width: 209px;
+  height: 47px;
+  font-size: 0;
+}
+.consulBox .consulForm {
+  width: 88.5rem;
+  height: 800px;
+  overflow: auto;
+  padding: 5rem 3rem 5rem 5rem;
+  box-sizing: border-box;
+}
+.consulBox .consulForm h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-bottom: 3.2rem;
+}
+.consulBox .consulForm .nameForm {
+  display: flex;
+  flex-direction: column;
+  width: 79rem;
+  margin: auto;
+}
+
+legend {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+label {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.7;
+  width: 30rem;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 21rem;
+  font-size: 1.6rem;
+  margin-left: 3rem;
+}
+
+.fieldset {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 6.4rem;
+  width: 75rem;
+}
+
+.info {
+  margin-bottom: 6.4rem;
+}
+
+.legend {
+  margin-bottom: 3rem;
+}
+
+.website, .address {
+  width: 75rem;
+}
+.website .webSiteInput, .website .addressInput, .address .webSiteInput, .address .addressInput {
+  width: 65rem;
+}
+
+.selectFieldset {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.selectFieldset .selectLabel {
+  margin-right: 1rem;
+  width: 33rem;
+}
+.selectFieldset .selectLabel .select {
+  width: 20rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 1.4rem;
+  font-family: "Noto Sans KR";
+}
+
+.consulFieldset {
+  margin-top: 5rem;
+}
+.consulFieldset .consulLabel {
+  width: 78rem;
+  height: 20rem;
+}
+.consulFieldset .consulLabel .consultingInput {
+  border: 1px solid #000;
+  width: 78rem;
+  height: 20rem;
+  margin: 0;
+}
+
+.consultingBtn {
+  background-color: #1527a0;
+  width: 20rem;
+  height: 7rem;
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 3rem auto;
+}/*# sourceMappingURL=index.css.map */
