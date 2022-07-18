@@ -7,17 +7,17 @@ $header-height: 14.1rem;
 
 
 /* header 전체 */
-/* 서브 페이지에 헤더 배경 하얀색, 기본틀
-header.hdSubStyle {
-  color: red;
-} 
-*/
+.hdSubStyle {
+  background-color: red;
+}
+
 
 header {
   width: 100%;
   height: $header-height;
   position: relative;
   z-index: 10000000;
+  background-color: black;
 
   &:hover>.hd {
     background-color: $basic-white;
@@ -85,11 +85,11 @@ header {
     }
 
     .hdSub {
-      font-size: 2.3rem;
+      font-size: 2.2rem;
       font-family: 'Montserrat';
       font-weight: 600;
       display: block;
-      width: 15.5rem;
+      width: 16rem;
       height: $header-height;
       line-height: $header-height;
       text-align: center;
@@ -123,7 +123,7 @@ header {
 
         >a {
           display: block;
-          font-size: 2rem;
+          font-size: 1.9rem;
           font-family: 'Noto Sans KR';
           font-weight: 700;
         }
@@ -317,7 +317,7 @@ header {
 
   .hdSmLeft {
     background: url(../../img/bg/consul_bg@2x.png) no-repeat center / cover;
-    width: 35%;
+    width: 30%;
 
     h2 {
       margin-top: 6rem;
@@ -352,13 +352,13 @@ header {
   }
 
   .hdSmRight {
-    width: 65%;
+    width: 70%;
     height: 100%;
     color: $basic-black;
 
     .hdSmArea {
-      margin-left: 19.1rem;
-      margin-top: 13.4rem;
+      margin-left: 15rem;
+      margin-top: 12rem;
 
       .hdSmList {
         display: flex;
@@ -372,7 +372,7 @@ header {
 
           span {
             position: relative;
-            font-size: 3rem;
+            font-size: 2.8rem;
             width: 20rem;
             font-family: 'Montserrat';
             font-weight: 700;
@@ -398,19 +398,18 @@ header {
           }
 
           .hdMargin2 {
-            margin-left: -5rem;
+            margin-left: -4rem;
           }
 
           li {
             margin-right: 2.5rem;
-            line-height: 2.9rem;
 
             &:hover>a {
               color: $main-color;
             }
 
             >a {
-              font-size: 2.1rem;
+              font-size: 1.9rem;
               font-family: 'Noto Sans KR';
               font-weight: 700;
             }
@@ -420,10 +419,12 @@ header {
               li {
 
                 a {
-                  font-size: 2rem;
+                  font-size: 1.6rem;
                   font-family: 'Noto Sans KR';
                   font-weight: 400;
-                  line-height: 4rem;
+                  line-height: 2.5rem;
+                  margin-top: 1rem;
+                  display: block;
                 }
 
                 &:hover>a {

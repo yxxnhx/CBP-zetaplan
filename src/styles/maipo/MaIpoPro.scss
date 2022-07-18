@@ -44,7 +44,13 @@
   color: $main-color;
 
   &::after {
+    content: '';
+    height: 0.3rem;
+    width: 100%;
     background-color: $main-color;
+    position: absolute;
+    top: 5.9rem;
+    left: 0;
   }
 }
 

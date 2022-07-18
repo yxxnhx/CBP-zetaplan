@@ -34,26 +34,23 @@ import ConsultingPage from './components/common/Consulting/ConsultingPage';
 import ZetaHistory from './pages/zeta/ZetaHistory';
 import ZetaConsul from './pages/zeta/ZetaConsul';
 import ZetaMap from './pages/zeta/ZetaMap';
-
-import { useState } from 'react'
 import MaIpoPro from './pages/maipo/MaIpoPro';
 import MaIpoPerfo from './pages/maipo/MaIpoPerfo';
-function App() {
-  const [hdSubStyle, setHdSubStyle] = useState(false);
 
-  /* 서브 페이지에 헤더 배경 하얀색 주려고 넣은 것, 지우지 말아주세요
-  const [hdSubStyle, setHdSubStyle] = useState(false);
+function App() {
+
+  /* const [hdSubStyle, setHdSubStyle] = useState(false);
   function addSubStyle (){
-    if(setHdSubStyle(!false)){
-    }
-  } 
-  */
+    setHdSubStyle(true);
+  } */
+ 
 
   return (
     <div className="App">
       <ResetStyle />
       <BrowserRouter>
-        {  true ? <Header className="" /> :  <Header className="" />  }
+        <Header/>
+        {/* { hdSubStyle === true ? <Header className="hdSubStyle" /> : <Header/> } */}
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/main" element={<Index />} />
@@ -72,7 +69,8 @@ function App() {
           <Route path="/gb" element={<Gbindex />} />
           <Route path="/gb-trategy" element={<GbStrategy />} />
           <Route path="/gb-case" element={<GbCase />} />
-          <Route path="/maipo" element={<MaIpoInfo />} />
+          <Route path="/landing" element={<Landing />} />
+          <Route path="/maipo" element={<MaIpoInfo onLoad={()=>{console.log('꺼져')}} />} />
           <Route path="/maipo-process" element={<MaIpoPro />} />
           <Route path="/maipo-performance" element={<MaIpoPerfo />} />
           <Route path="/zeta-history" element={<ZetaHistory />} />

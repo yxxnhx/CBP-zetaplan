@@ -68,7 +68,7 @@ const Sitemap = ({ open, close }) => {
                 <li className='hdSmList'>
                   <Link to={''}><span>경영・평가</span></Link>
                   <ul className='hdSmList2'>
-                    <li><Link to={''}>개요</Link></li>
+                    <li><Link to={''}>경영컨설팅</Link></li>
                     <li><Link to={''}>기술거래</Link></li>
                     <li>
                       <Link to={''}>가치평가</Link>
@@ -77,7 +77,8 @@ const Sitemap = ({ open, close }) => {
                         <li><Link to={''}>기술가치평가</Link></li>
                       </ul>
                     </li>
-                    <li className='hdMargin2'><Link to={''}>기업인증</Link></li>
+                    <li className='hdMargin2'><Link to={''}>신용평가</Link></li>
+                    <li><Link to={''}>기업인증</Link></li>
                   </ul>
                 </li>
                 <li className='hdSmList'>

@@ -44,7 +44,7 @@ const Gnb = () => {
       <li className='hdDep1'>
         <Link to={'/mana'} className='hdSub'>경영・평가</Link>
         <ul className='hdDep2'>
-          <li><Link to={''}>개요</Link></li>
+          <li><Link to={''}>경영컨설팅</Link></li>
           <li><Link to={''}>기술거래</Link></li>
           <li>
             <Link to={''}>가치평가</Link>
@@ -53,6 +53,7 @@ const Gnb = () => {
               <li><Link to={''}>기술가치평가</Link></li>
             </ul>
           </li>
+          <li><Link to={''}>신용평가</Link></li>
           <li><Link to={''}>기업인증</Link></li>
         </ul>
       </li>
