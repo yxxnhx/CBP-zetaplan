@@ -22,7 +22,7 @@
 	border-radius: 50%;
 	position: fixed;
 	bottom: 10rem;
-	right: 13rem;
+	right: 4rem;
 
 	img {
 		width: 4rem;
@@ -39,10 +39,9 @@
 	background-size: contain;
 	position: fixed;
 	bottom: 10rem;
-	right: 10rem;
+	right: 0rem;
 	opacity: 0;
 	display: flex;
-	// justify-content: center;
 	align-items: center;
 	img {
 		width: 4rem;
@@ -290,41 +289,6 @@
 	z-index: 999;
 }
 
-// 페이지 ver
 
-.consulPage {
-	background: url('./../../img/bg/consulPageBlue_bg@2x.png') no-repeat
-}
 
-.consulInner {
-  @include Inner;
-
-	.consultingAppForm {
-		margin-top: 10rem;
-
-		.consulPageInner {
-			background-color: #fff;
-			padding: 10rem;
-			margin: auto;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-
-			.consulFormTitle {
-				font-size: 3.5rem;
-				font-weight: bold;
-				font-family: 'Montserrat';
-				margin-bottom: 3.2rem;
-
-				.consulPageFormArea {
-
-					.pageFieldset {
-						width: 120rem;
-					}
-				}
-			}
-		}
-	}
-}
 

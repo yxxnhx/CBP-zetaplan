@@ -37,7 +37,7 @@
 }
 .ftInfoBox .ftInfoList:hover {
   cursor: pointer;
-  color: #1527A0;
+  color: #1527a0;
 }
 .ftInfoBox .ftInfoList::after {
   content: "";
@@ -54,19 +54,17 @@
 .ftAddr .ftAddrText {
   font-family: "Noto Sans KR";
   font-weight: 400;
-  font-size: 1.84rem;
-  font-size: 1.4rem;
+  font-size: 1.55rem;
   line-height: 2.5rem;
 }
 .ftAddr .ftAddrText .ftGoto {
   font-family: "Noto Sans KR";
   font-weight: 400;
-  font-size: 1.84rem;
-  font-size: 1.4rem;
+  font-size: 1.55rem;
   cursor: pointer;
 }
 .ftAddr .ftAddrText .ftGoto:hover {
-  color: #1527A0;
+  color: #1527a0;
 }
 
 .ftAddrStyle {
@@ -119,8 +117,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 5rem 8rem;
-  overflow: scroll;
+  padding: 3rem 8rem;
+  overflow: auto;
+  z-index: 999;
 }
 .ftModal .ftModalClose {
   font-size: 4rem;
@@ -158,4 +157,39 @@
 }
 .ftModal .ftModalTextBox .ftModalTxtLast {
   margin-top: 3rem;
+}
+
+.ftsModal {
+  width: 40%;
+  height: 55%;
+}
+
+.ftModalTextBox {
+  line-height: 2.3;
+}
+
+.ftModal .ftModalTextBox .ftsModalTxt {
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  font-size: 2.08rem;
+}
+
+.ftModal .ftModalTextBox .ftsModalTxt span {
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  font-size: 2.08rem;
+}
+
+.ftsModalTxt {
+  cursor: pointer;
+}
+.ftsModalTxt .ftModalHv:hover {
+  color: #1527a0;
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 2.08rem;
+}
+
+.ftsModalTxtLast {
+  color: #1527a0;
 }/*# sourceMappingURL=footer.css.map */

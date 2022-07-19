@@ -6,16 +6,16 @@
 }
 
 /* header 전체 */
-/* 서브 페이지에 헤더 배경 하얀색, 기본틀
-header.hdSubStyle {
-  color: red;
-} 
-*/
+.hdSubStyle {
+  background-color: red;
+}
+
 header {
   width: 100%;
   height: 14.1rem;
   position: relative;
   z-index: 10000000;
+  background-color: black;
 }
 header:hover > .hd {
   background-color: #fff;
@@ -72,11 +72,11 @@ header .hd .hdLogo {
   color: #1527a0;
 }
 .hdGnbArea .hdDep1 .hdSub {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-family: "Montserrat";
   font-weight: 600;
   display: block;
-  width: 15.5rem;
+  width: 16rem;
   height: 14.1rem;
   line-height: 14.1rem;
   text-align: center;
@@ -107,7 +107,7 @@ header .hd .hdLogo {
 }
 .hdGnbArea .hdDep1 .hdDep2 > li > a {
   display: block;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-family: "Noto Sans KR";
   font-weight: 700;
 }
@@ -175,7 +175,7 @@ header .hd .hdLogo {
   top: 12rem;
   left: 0;
   width: 100%;
-  height: 400rem;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   border-top: 1px solid #e0e0e0;
 }
@@ -261,7 +261,7 @@ header .hd .hdLogo {
 }
 .hdSitemap .hdSmLeft {
   background: url(../../img/bg/consul_bg@2x.png) no-repeat center/cover;
-  width: 35%;
+  width: 30%;
 }
 .hdSitemap .hdSmLeft h2 {
   margin-top: 6rem;
@@ -291,13 +291,13 @@ header .hd .hdLogo {
   margin-top: 26.1rem;
 }
 .hdSitemap .hdSmRight {
-  width: 65%;
+  width: 70%;
   height: 100%;
   color: #000;
 }
 .hdSitemap .hdSmRight .hdSmArea {
-  margin-left: 19.1rem;
-  margin-top: 13.4rem;
+  margin-left: 15rem;
+  margin-top: 12rem;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList {
   display: flex;
@@ -311,7 +311,7 @@ header .hd .hdLogo {
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList > a span {
   position: relative;
-  font-size: 3rem;
+  font-size: 2.8rem;
   width: 20rem;
   font-family: "Montserrat";
   font-weight: 700;
@@ -332,25 +332,26 @@ header .hd .hdLogo {
   margin-left: 3.5rem;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 .hdMargin2 {
-  margin-left: -5rem;
+  margin-left: -4rem;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 li {
   margin-right: 2.5rem;
-  line-height: 2.9rem;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 li:hover > a {
   color: #1527a0;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 li > a {
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   font-family: "Noto Sans KR";
   font-weight: 700;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 li .hdSmList3 li a {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: "Noto Sans KR";
   font-weight: 400;
-  line-height: 4rem;
+  line-height: 2.5rem;
+  margin-top: 1rem;
+  display: block;
 }
 .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 li .hdSmList3 li:hover > a {
   color: #1527a0;

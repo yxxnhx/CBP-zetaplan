@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.pfWrap {
+  width: 100vw;
+  height: 90rem;
+  display: flex;
+  justify-content: center;
+}
+.pfWrap .pfCon {
+  background: url(./../../img/main/performance/performance_bg.png) no-repeat;
+  width: 100vw;
+}
+.pfWrap .pfCon .pfMaintitle {
+  margin: 4rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.pfWrap .pfCon .pfMaintitle h1 {
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+.pfWrap .pfCon .pfListCon {
+  margin: 3rem auto;
+  display: flex;
+  width: 177rem;
+  height: 6.17rem;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0.8rem;
+}
+.pfWrap .pfCon .pfListCon .pfList {
+  height: 61.7rem;
+  background-color: #f0f0f0;
+}
+.pfWrap .pfCon .pfListCon .pfList .pfConBox {
+  margin-left: 18rem;
+  width: 4.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pfWrap .pfCon .pfListCon .pfList .pfConBox .pfIconBox {
+  margin-top: 6rem;
+  height: 100px;
+}
+.pfWrap .pfCon .pfListCon .pfList .pfConBox .pfTitle {
+  margin-top: 2.5rem;
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: #1527a0;
+  margin-bottom: 2rem;
+  width: 13.5rem;
+  text-align: center;
+}
+.pfWrap .pfCon .pfListCon .pfList .pfConBox .pfCount {
+  font-size: 7.6rem;
+  font-weight: bold;
+}
+.pfWrap .pfCon .pfListCon .pfList .pfConBox .pfDes {
+  font-size: 2.08rem;
+  line-height: 1.5;
+  border-top: 1px solid #000;
+  width: 34rem;
+  padding-top: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}/*# sourceMappingURL=Performance.css.map */

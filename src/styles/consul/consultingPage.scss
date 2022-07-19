@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+@import '../GlobalStyle.scss';
+
+.consulPage {
+	background: url('./../../img/bg/consulPageBlue_bg@2x.png') no-repeat
+}
+
+.consulInner {
+  @include Inner;
+
+	.consultingAppForm {
+		margin-top: 10rem;
+
+		.consulPageInner {
+			background-color: #fff;
+			padding: 10rem;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+
+			.consulFormTitle {
+				font-size: 3.5rem;
+				font-weight: bold;
+				font-family: 'Montserrat';
+				margin-bottom: 3.2rem;
+
+			}
+		}
+	}
+}
+
+.consulPageFormArea {
+  width: 120rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pageFieldset {
+  width: 120rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 6.4rem;
+  
+  .pageConsulCategory {
+    display: flex;
+    flex-direction: column;
+
+    .pageConsulItem {
+      width: 48rem;
+      display: flex;
+      justify-content: space-between;
+  
+      label {
+        font-size: 1.6rem;
+        line-height: 2.7;
+        width: 7rem;
+      }
+      
+      input {
+        border: none;
+        border-bottom: 1px solid #000;
+        width: 40rem;
+        font-size: 1.6rem;
+        margin-left: 3rem;
+        font-weight: lighter;
+      }
+    }
+    .errorBox {
+      font-size: 1.4rem;
+      color: $sub-red;
+      align-self: flex-end;
+      margin: 1rem 0 0 3rem;
+    }
+  }
+}
+
+.pageConsulLongCategory {
+  display: flex;
+	flex-direction: column;
+
+  .pageConsulLongItem {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		.website, .address {
+			font-size: 1.6rem;
+			line-height: 2.7;
+		}
+
+    .webSiteInput, .addressInput {
+			width: 111rem;
+			border: none;
+			border-bottom: 1px solid #000;
+			font-size: 1.6rem;
+			margin-left: 3rem;
+		}
+
+    .address {
+      margin-right: 3rem;
+    }
+  }
+  .errorBox {
+    font-size: 1.4rem;
+    color: $sub-red;
+    align-self: flex-end;
+    margin: 1rem 0 0 3rem;
+  }
+}
+
+.pageFieldset.long {
+  margin-top: 6.4rem;
+
+  .pageConsultingCategory {
+    width: 123rem;
+
+    .pageConsultingItem {
+    .consultingInput {
+      width: 100%;
+      border: 1px solid #000;
+      height: 20rem;
+      margin: 0;
+    }
+    }
+  }
+}

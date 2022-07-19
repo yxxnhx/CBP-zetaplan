@@ -7,13 +7,13 @@ const Gnb = () => {
       <li className='hdDep1'>
         <Link to={'/zeta'} className='hdSub'>Zeta</Link>
         <ul className='hdDep2'>
-          <li><Link to={''}>회사소개</Link></li>
-          <li><Link to={''}>연혁</Link></li>
-          <li><Link to={''}>CI</Link></li>
-          <li><Link to={''}>컨설팅 부문</Link></li>
-          <li><Link to={''}>PEOPLE</Link></li>
-          <li><Link to={''}>오시는 길</Link></li>
-          <li><Link to={''}>제휴 네트워크</Link></li>
+          <li><Link to={'/zeta'}>회사소개</Link></li>
+          <li><Link to={'/zeta-history'}>연혁</Link></li>
+          <li><Link to={'/zeta-ci'}>CI</Link></li>
+          <li><Link to={'/zeta-consul'}>컨설팅 부문</Link></li>
+          <li><Link to={'/zeta-people'}>PEOPLE</Link></li>
+          <li><Link to={'/zeta-map'}>오시는 길</Link></li>
+          <li><Link to={'/zeta-network'}>제휴 네트워크</Link></li>
         </ul>
       </li>
       <li className='hdDep1'>
@@ -27,48 +27,48 @@ const Gnb = () => {
       <li className='hdDep1'>
         <Link to={'/ir'} className='hdSub'>투자 IR</Link>
         <ul className='hdDep2'>
-          <li><Link to={''}>개요</Link></li>
-          <li><Link to={''}>사업계획서</Link></li>
-          <li><Link to={''}>Process</Link></li>
-          <li><Link to={''}>성과</Link></li>
+          <li><Link to={'/ir'}>개요</Link></li>
+          <li><Link to={'/ir-plan'}>사업계획서</Link></li>
+          <li><Link to={'/ir-process'}>Process</Link></li>
+          <li><Link to={'/ir-perfo'}>성과</Link></li>
         </ul>
       </li>
       <li className='hdDep1'>
-        <Link to={'/Gbindex'} className='hdSub'>해외진출</Link>
+        <Link to={'/gb'} className='hdSub'>해외진출</Link>
         <ul className='hdDep2'>
-          <li><Link to={''}>개요</Link></li>
-          <li><Link to={''}>전략수립</Link></li>
-          <li><Link to={''}>해외진출사례</Link></li>
+          <li><Link to={'/gb'}>개요</Link></li>
+          <li><Link to={'/gb-strategy'}>전략수립</Link></li>
+          <li><Link to={'/gb-case'}>해외진출사례</Link></li>
         </ul>
       </li>
       <li className='hdDep1'>
-        <Link to={'/mana'} className='hdSub'>경영・평가</Link>
+        <Link to={'/mng'} className='hdSub'>경영・평가</Link>
         <ul className='hdDep2'>
-          <li><Link to={''}>경영컨설팅</Link></li>
-          <li><Link to={''}>기술거래</Link></li>
+          <li><Link to={'/mng'}>경영컨설팅</Link></li>
+          <li><Link to={'/mng-trade'}>기술거래</Link></li>
           <li>
-            <Link to={''}>가치평가</Link>
+            <Link to={'/mng-value'}>가치평가</Link>
             <ul className='hdDep3'>
               <li><Link to={''}>기업가치평가</Link></li>
               <li><Link to={''}>기술가치평가</Link></li>
             </ul>
           </li>
-          <li><Link to={''}>신용평가</Link></li>
-          <li><Link to={''}>기업인증</Link></li>
+          <li><Link to={'/mng-credit'}>신용평가</Link></li>
+          <li><Link to={'/mng-certify'}>기업인증</Link></li>
         </ul>
       </li>
       <li className='hdDep1'>
         <Link to={'/news'} className='hdSub'>소식・자료</Link>
         <ul className='hdDep2'>
           <li>
-            <Link to={''}>소식</Link>
+            <Link to={'/news'}>소식</Link>
             <ul className='hdDep3'>
               <li><Link to={''}>NEWS</Link></li>
               <li><Link to={''}>COLUMN</Link></li>
             </ul>
           </li>
           <li>
-            <Link to={''}>자료</Link>
+            <Link to={'/dataInfo'}>자료</Link>
             <ul className='hdDep3'>
               <li><Link to={''}>M&A・ 투자정보</Link></li>
               <li><Link to={''}>정부지원사업</Link></li>
@@ -76,7 +76,7 @@ const Gnb = () => {
               <li><Link to={''}>컨설팅 실적</Link></li>
             </ul>
           </li>
-          <li><Link to={''}>Q&A</Link></li>
+          <li><Link to={'/qna'}>Q&A</Link></li>
         </ul>
       </li>
     </ul>

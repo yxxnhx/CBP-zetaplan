@@ -1,5 +1,5 @@
 import React from 'react';
-import './../../../styles/consul/index.scss'
+import './../../../styles/consul/consultingPage.scss'
 import { useState } from 'react';
 import SubBanner from './../SubBanner'
 import subBg from './../../../img/bg/consulPage_bg@2x.png'
@@ -96,8 +96,8 @@ const ConsultingPage = ({open, close}) => {
             <div className="consulPageFormArea">
               <fieldset className='pageFieldset'>
                 <legend className='legend'>신청인 정보</legend>
-                <div className="consulCategory">
-                  <div className='consulItem'>
+                <div className="pageConsulCategory">
+                  <div className='pageConsulItem'>
                     <label htmlFor="fullName" className='formKey'> 이름 </label> 
                     <input 
                       className="nameInput" 
@@ -112,8 +112,8 @@ const ConsultingPage = ({open, close}) => {
                     {errors.fullName || <p className='error'>{errors.fullName}</p>}
                   </div>
                 </div>
-                <div className="consulCategory">
-                  <div className='consulItem'>
+                <div className="pageConsulCategory">
+                  <div className='pageConsulItem'>
                     <label htmlFor="company" className='formKey'>회사</label>
                     <input 
                       className="companyInput" 
@@ -128,8 +128,8 @@ const ConsultingPage = ({open, close}) => {
                     {errors.company || <p className='error'>{errors.company}</p>}
                   </div>
                 </div>
-                <div className="consulCategory">
-                  <div className="consulItem">
+                <div className="pageConsulCategory">
+                  <div className="pageConsulItem">
                     <label htmlFor="email" className='formKey'>이메일</label>
                     <input 
                       className="emailInput" 
@@ -144,8 +144,8 @@ const ConsultingPage = ({open, close}) => {
                     {errors.email || <p className='error'>{errors.email}</p>}
                   </div>
                 </div>
-                <div className="consulCategory">
-                  <div className="consulItem">
+                <div className="pageConsulCategory">
+                  <div className="pageConsulItem">
                     <label htmlFor="position" className='formKey'>직책</label>
                     <input 
                       className="positionInput" 
@@ -159,8 +159,8 @@ const ConsultingPage = ({open, close}) => {
                     {errors.position || <p className='error'>{errors.position}</p>}
                   </div>
                 </div>
-                <div className="consulCategory">
-                  <div className="consulItem">
+                <div className="pageConsulCategory">
+                  <div className="pageConsulItem">
                     <label htmlFor="tell" className='formKey'>연락처</label>
                     <input 
                       className="tellInput" 
@@ -175,10 +175,10 @@ const ConsultingPage = ({open, close}) => {
                   </div>
                 </div>
               </fieldset>
-              <fieldset className='fieldset'>
+              <fieldset className='pageFieldset'>
                 <legend className='legend'>회사 정보</legend>
-                <div className="consulCategory">
-                  <div className="consulItem">
+                <div className="pageConsulCategory">
+                  <div className="pageConsulItem">
                     <label htmlFor="companyName" className='formKey'>회사명</label>
                     <input 
                       className="companyNameInput" 
@@ -193,8 +193,8 @@ const ConsultingPage = ({open, close}) => {
                     {errors.companyName || <p id='error'>{errors.companyName}</p>}
                   </div>
                 </div>
-                <div className="consulCategory">
-                  <div className="consulItem">
+                <div className="pageConsulCategory">
+                  <div className="pageConsulItem">
                     <label htmlFor="companyYear">설립년도</label>
                     <input 
                       className="companyYearInput" 
@@ -205,8 +205,8 @@ const ConsultingPage = ({open, close}) => {
                       value={values.companyYear} />
                   </div>
                 </div>
-                <div className="consulCategory">
-                  <div className="consulItem">
+                <div className="pageConsulCategory">
+                  <div className="pageConsulItem">
                     <label htmlFor="category">분류</label>
                     <input 
                       className="categoryInput" 
@@ -217,8 +217,8 @@ const ConsultingPage = ({open, close}) => {
                       value={values.category} />
                   </div>
                 </div>
-                <div className="consulCategory">
-                  <div className="consulItem">
+                <div className="pageConsulCategory">
+                  <div className="pageConsulItem">
                     <label htmlFor="business">사업분야</label>
                     <input 
                       className="businessInput" 
@@ -229,8 +229,8 @@ const ConsultingPage = ({open, close}) => {
                       value={values.business} />
                   </div>
                 </div>
-                <div className="consulCategory">
-                  <div className="consulItem">
+                <div className="pageConsulCategory">
+                  <div className="pageConsulItem">
                     <label htmlFor="capital">자본금</label>
                     <input 
                       className="capitalInput" 
@@ -241,8 +241,8 @@ const ConsultingPage = ({open, close}) => {
                       value={values.debt}  />
                   </div>
                 </div>
-                <div className="consulCategory">
-                  <div className="consulItem">
+                <div className="pageConsulCategory">
+                  <div className="pageConsulItem">
                     <label htmlFor="property">자산</label>
                     <input 
                       className="propertyInput" 
@@ -253,8 +253,8 @@ const ConsultingPage = ({open, close}) => {
                       value={values.property} />
                   </div>
                 </div>
-                <div className="consulCategory">
-                  <div className="consulItem">
+                <div className="pageConsulCategory">
+                  <div className="pageConsulItem">
                     <label htmlFor="debt">부채</label>
                     <input 
                       className="debtInput" 
@@ -265,8 +265,8 @@ const ConsultingPage = ({open, close}) => {
                       value={values.debt} />
                   </div>
                 </div>
-                <div className="consulCategory">
-                  <div className="consulItem">
+                <div className="pageConsulCategory">
+                  <div className="pageConsulItem">
                     <label htmlFor="prevSales">전기매출</label>
                     <input 
                       className="prevSalesInput" 
@@ -277,8 +277,8 @@ const ConsultingPage = ({open, close}) => {
                       value={values.predSales} />
                   </div>
                 </div>
-                <div className="consulCategory">
-                  <div className="consulItem">
+                <div className="pageConsulCategory">
+                  <div className="pageConsulItem">
                     <label htmlFor="thisSales">당기매출</label>
                     <input 
                       className="thisSalesInput" 
@@ -289,8 +289,8 @@ const ConsultingPage = ({open, close}) => {
                       value={values.thisSales} />
                   </div>
                 </div>
-                <div className="consulCategory">
-                  <div className="consulItem">
+                <div className="pageConsulCategory">
+                  <div className="pageConsulItem">
                     <label htmlFor="predSales">예상매출</label>
                     <input 
                       className="predSalesInput" 
@@ -301,8 +301,8 @@ const ConsultingPage = ({open, close}) => {
                       value={values.predSales} />
                   </div>
                 </div>
-                <div className="consulLongCategory ">
-                  <div className="consulLongItem">
+                <div className="pageConsulLongCategory ">
+                  <div className="pageConsulLongItem">
                     <label htmlFor="webSite" className='website long'>웹사이트</label>
                     <input 
                       className="webSiteInput" 
@@ -313,8 +313,8 @@ const ConsultingPage = ({open, close}) => {
                       value={values.webSite} />
                   </div>
                 </div>
-                <div className="consulLongCategory">
-                  <div className="consulLongItem">
+                <div className="pageConsulLongCategory">
+                  <div className="pageConsulLongItem">
                     <label htmlFor="address" className='address long formKey'>주소</label>
                     <input 
                       className="addressInput" 
@@ -453,10 +453,10 @@ const ConsultingPage = ({open, close}) => {
                   </div>
                 </div>
               </fieldset>
-              <fieldset className='consulFieldset'>
+              <fieldset className='pageFieldset long'>
                 <legend className='legend consulLegend'>상담 신청 내용</legend> 
-                <div className="consultingCategory">
-                  <div className="consultingItem">
+                <div className="pageConsultingCategory">
+                  <div className="pageConsultingItem">
                     <label htmlFor="consulting"  className='consulLabel'></label>
                     <input 
                       className="consultingInput" 

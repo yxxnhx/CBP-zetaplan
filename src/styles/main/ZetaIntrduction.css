@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.ziWrap {
+  background: linear-gradient(to right, #1527a0 60%, #461d93);
+}
+.ziWrap .ziTitleCon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 83.4rem;
+  margin-left: 8rem;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 8rem;
+}
+.ziWrap .ziTitleCon .ziTitleBlue {
+  font-size: 5.5rem;
+  font-weight: bold;
+  font-family: Montserrat;
+  color: #1527a0;
+}
+.ziWrap .ziTitleCon .ziTitleBlack {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: Montserrat;
+}
+.ziWrap .ziContentBox {
+  display: flex;
+}
+.ziWrap .ziContentBox .ziCompanyDes {
+  font-size: 2rem;
+  color: #fff;
+  width: 85rem;
+  text-align: left;
+  margin-left: 8rem;
+  position: relative;
+  bottom: 6rem;
+  line-height: 1.5;
+}
+.ziWrap .ziContentBox .ziLinkBox {
+  display: flex;
+  color: #fff;
+  margin-left: 30rem;
+  position: relative;
+  bottom: 6rem;
+}
+.ziWrap .ziContentBox .ziLinkBox .ziCompanyLink a {
+  display: block;
+  border: 1px solid #fff;
+  width: 26.8rem;
+  height: 6.3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+  margin-right: 6rem;
+  font-size: 1.8rem;
+}
+.ziWrap .ziContentBox .ziLinkBox .ziCompanyLink a:after {
+  content: "";
+  background: url(./../../img/zetaplan_splite.png) no-repeat -512px -234px;
+  width: 57px;
+  height: 15px;
+  position: absolute;
+  top: 2rem;
+  left: 50rem;
+}
+.ziWrap .ziContentBox .ziLinkBox .ziEstablishmentLink a {
+  display: block;
+  border: 1px solid #fff;
+  width: 26.8rem;
+  height: 6.3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+  font-size: 1.8rem;
+}
+.ziWrap .ziContentBox .ziLinkBox .ziEstablishmentLink a:after {
+  content: "";
+  background: url(./../../img/zetaplan_splite.png) no-repeat -512px -234px;
+  width: 57px;
+  height: 15px;
+  position: absolute;
+  top: 2rem;
+  left: 17rem;
+}/*# sourceMappingURL=ZetaIntrduction.css.map */

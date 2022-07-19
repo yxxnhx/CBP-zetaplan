@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.consulPage {
+  background: url("./../../img/bg/consulPageBlue_bg@2x.png") no-repeat;
+}
+
+.consulInner {
+  width: 1440px;
+  padding: 8rem 0;
+  margin: 0 auto;
+}
+.consulInner .consultingAppForm {
+  margin-top: 10rem;
+}
+.consulInner .consultingAppForm .consulPageInner {
+  background-color: #fff;
+  padding: 10rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.consulInner .consultingAppForm .consulPageInner .consulFormTitle {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-bottom: 3.2rem;
+}
+
+.consulPageFormArea {
+  width: 120rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pageFieldset {
+  width: 120rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 6.4rem;
+}
+.pageFieldset .pageConsulCategory {
+  display: flex;
+  flex-direction: column;
+}
+.pageFieldset .pageConsulCategory .pageConsulItem {
+  width: 48rem;
+  display: flex;
+  justify-content: space-between;
+}
+.pageFieldset .pageConsulCategory .pageConsulItem label {
+  font-size: 1.6rem;
+  line-height: 2.7;
+  width: 7rem;
+}
+.pageFieldset .pageConsulCategory .pageConsulItem input {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 40rem;
+  font-size: 1.6rem;
+  margin-left: 3rem;
+  font-weight: lighter;
+}
+.pageFieldset .pageConsulCategory .errorBox {
+  font-size: 1.4rem;
+  color: #83151b;
+  align-self: flex-end;
+  margin: 1rem 0 0 3rem;
+}
+
+.pageConsulLongCategory {
+  display: flex;
+  flex-direction: column;
+}
+.pageConsulLongCategory .pageConsulLongItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.pageConsulLongCategory .pageConsulLongItem .website, .pageConsulLongCategory .pageConsulLongItem .address {
+  font-size: 1.6rem;
+  line-height: 2.7;
+}
+.pageConsulLongCategory .pageConsulLongItem .webSiteInput, .pageConsulLongCategory .pageConsulLongItem .addressInput {
+  width: 111rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 1.6rem;
+  margin-left: 3rem;
+}
+.pageConsulLongCategory .pageConsulLongItem .address {
+  margin-right: 3rem;
+}
+.pageConsulLongCategory .errorBox {
+  font-size: 1.4rem;
+  color: #83151b;
+  align-self: flex-end;
+  margin: 1rem 0 0 3rem;
+}
+
+.pageFieldset.long {
+  margin-top: 6.4rem;
+}
+.pageFieldset.long .pageConsultingCategory {
+  width: 123rem;
+}
+.pageFieldset.long .pageConsultingCategory .pageConsultingItem .consultingInput {
+  width: 100%;
+  border: 1px solid #000;
+  height: 20rem;
+  margin: 0;
+}/*# sourceMappingURL=consultingPage.css.map */

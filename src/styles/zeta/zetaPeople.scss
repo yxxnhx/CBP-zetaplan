@@ -10,8 +10,6 @@
 }
 
 .zetaPeoList {
-  // display: flex;
-  // justify-content: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 8.5rem 0;
@@ -72,8 +70,8 @@
   align-self: flex-end;
 }
 
-.zetaPeoBox {
-  .zetaDimmed:hover {
+.zetaPeoBox:hover {
+  .zetaDimmed {
     background-color: rgba($color: $main-color, $alpha: 0.8);
     color: #fff;
     top: 0;

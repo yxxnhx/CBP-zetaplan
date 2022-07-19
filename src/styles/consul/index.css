@@ -14,15 +14,15 @@
 
 .consulBtn {
   background-color: #1527a0;
-  width: 6rem;
-  height: 6rem;
+  width: 7rem;
+  height: 7rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   border-radius: 50%;
   position: fixed;
   bottom: 10rem;
-  right: 13rem;
+  right: 4rem;
 }
 .consulBtn img {
   width: 4rem;
@@ -31,37 +31,41 @@
 }
 
 .consulDimmed {
-  width: 20rem;
-  height: 6rem;
-  background: url("./../../img/bg/consul_hover_box.png") no-repeat;
+  width: 25rem;
+  height: 7rem;
+  background: url("./../../img/bg/consul_hover_box@2x.png") no-repeat;
   background-size: contain;
   position: fixed;
   bottom: 10rem;
-  right: 12rem;
+  right: 0rem;
   opacity: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .consulDimmed img {
   width: 4rem;
   height: auto;
-  margin: 1rem 0.3rem;
+  margin: 1rem 1rem 1rem 3.3rem;
 }
 .consulDimmed p {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
 .consulBox {
   display: flex;
+  position: fixed;
+  top: 11%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
 }
 .consulBox .consulBg {
   background: url("./../../img/bg/consul_bg@2x.png") no-repeat;
   width: 400px;
   height: 800px;
-  padding: 5.1rem 3.1rem 5.1rem 2rem;
+  padding: 5.1rem 3.1rem 5.1rem 4rem;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -85,40 +89,32 @@
   overflow: auto;
   padding: 5rem 3rem 5rem 5rem;
   box-sizing: border-box;
+  background-color: #fff;
 }
-.consulBox .consulForm h2 {
+.consulBox .consulForm .consulFormTop {
+  display: flex;
+  justify-content: space-between;
+}
+.consulBox .consulForm .consulFormTop .consulFormTitle {
   font-size: 3.5rem;
   font-weight: bold;
   font-family: "Montserrat";
   margin-bottom: 3.2rem;
 }
-.consulBox .consulForm .nameForm {
+.consulBox .consulForm .consulFormTop .closeButton {
+  background: url("./../../img/zetaplan_splite.png") no-repeat -574px -101px;
+  background-size: 599px 280px;
+  width: 19px;
+  height: 18px;
+  font-size: 0;
+}
+.consulBox .consulForm .consultingAppForm {
   display: flex;
   flex-direction: column;
   width: 79rem;
   margin: auto;
-}
-
-legend {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 3rem;
-}
-
-label {
-  font-size: 1.6rem;
-  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  line-height: 2.7;
-  width: 30rem;
-}
-
-input {
-  border: none;
-  border-bottom: 1px solid #000;
-  width: 21rem;
-  font-size: 1.6rem;
-  margin-left: 3rem;
 }
 
 .fieldset {
@@ -135,44 +131,9 @@ input {
 
 .legend {
   margin-bottom: 3rem;
-}
-
-.website, .address {
-  width: 75rem;
-}
-.website .webSiteInput, .website .addressInput, .address .webSiteInput, .address .addressInput {
-  width: 65rem;
-}
-
-.selectFieldset {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.selectFieldset .selectLabel {
-  margin-right: 1rem;
-  width: 33rem;
-}
-.selectFieldset .selectLabel .select {
-  width: 20rem;
-  border: none;
-  border-bottom: 1px solid #000;
-  font-size: 1.4rem;
-  font-family: "Noto Sans KR";
-}
-
-.consulFieldset {
-  margin-top: 5rem;
-}
-.consulFieldset .consulLabel {
-  width: 78rem;
-  height: 20rem;
-}
-.consulFieldset .consulLabel .consultingInput {
-  border: 1px solid #000;
-  width: 78rem;
-  height: 20rem;
-  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
 }
 
 .consultingBtn {
@@ -182,4 +143,118 @@ input {
   color: #fff;
   font-size: 1.8rem;
   margin: 3rem auto;
+}
+
+.formKey {
+  position: relative;
+}
+.formKey::after {
+  content: "*";
+  color: #83151b;
+  position: absolute;
+  top: -1rem;
+  left: 5rem;
+}
+
+.consulCategory {
+  display: flex;
+  flex-direction: column;
+}
+.consulCategory .consulItem {
+  display: flex;
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+}
+.consulCategory .consulItem label {
+  font-size: 1.6rem;
+  line-height: 2.7;
+  width: 6rem;
+}
+.consulCategory .consulItem input {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 23rem;
+  font-size: 1.6rem;
+  margin-left: 3rem;
+}
+.consulCategory .errorBox {
+  font-size: 1.4rem;
+  color: #83151b;
+  align-self: flex-end;
+  margin: 1rem 0 0 3rem;
+}
+
+.consulLongCategory {
+  display: flex;
+  flex-direction: column;
+}
+.consulLongCategory .consulLongItem {
+  width: 75rem;
+  display: flex;
+  justify-content: space-between;
+}
+.consulLongCategory .consulLongItem .website, .consulLongCategory .consulLongItem .address {
+  font-size: 1.6rem;
+  line-height: 2.7;
+}
+.consulLongCategory .consulLongItem .webSiteInput, .consulLongCategory .consulLongItem .addressInput {
+  width: 63rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 1.6rem;
+  margin-left: 3rem;
+}
+.consulLongCategory .errorBox {
+  font-size: 1.4rem;
+  color: #83151b;
+  align-self: flex-end;
+  margin: 1rem 0 0 3rem;
+}
+
+.selectFieldset {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.selectFieldset .selectCategory .selectItem {
+  display: flex;
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+}
+.selectFieldset .selectCategory .selectItem .selectLabel {
+  margin-right: 1rem;
+  width: 33rem;
+  font-size: 1.6rem;
+  line-height: 2.7;
+  font-family: "Noto Sans KR";
+}
+.selectFieldset .selectCategory .selectItem .select {
+  width: 38rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 1.4rem;
+  font-family: "Noto Sans KR";
+}
+
+.consulFieldset {
+  margin-top: 5rem;
+}
+.consulFieldset .consultingCategory .consultingItem .consultingInput {
+  border: 1px solid #000;
+  width: 78rem;
+  height: 20rem;
+  margin: 0;
+}
+
+.consulOverlay {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
 }/*# sourceMappingURL=index.css.map */

@@ -38,6 +38,7 @@ import ZetaMap from './pages/zeta/ZetaMap';
 import MaIpoPro from './pages/maipo/MaIpoPro';
 import MaIpoPerfo from './pages/maipo/MaIpoPerfo';
 import ScrollToTop from './components/common/ScrollTop';
+import TopBtn from './components/common/TopBtn';
 
 function App() {
   /* const [hdSubStyle, setHdSubStyle] = useState(false);
@@ -56,22 +57,29 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/main" element={<Index />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/zeta" element={<Zeta />} />
+          <Route path="/zeta-history" element={<ZetaHistory />} />
+          <Route path="/zeta-ci" element={<ZetaCi />} />
+          <Route path="/zeta-consul" element={<ZetaConsul />} />
+          <Route path="/zeta-people" element={<ZetaPeople />} />
+          <Route path="/zeta-map" element={<ZetaMap />} />
+          <Route path="/zeta-network" element={<ZetaNetwork />} />
+          <Route path="/zeta-network" element={<ZetaNetwork />} />
+          <Route path="/maipo" element={<MaIpoInfo />} />
+          <Route path="/maipo-process" element={<MaIpoPro />} />
+          <Route path="/maipo-performance" element={<MaIpoPerfo />} />
           <Route path="/ir" element={<Ir />} />
-          <Route path="/ir-perfo" element={<IrPerfo />} />
           <Route path="/ir-plan" element={<IrPlan />} />
           <Route path="/ir-process" element={<IrProcess />} />
-          <Route path="/mng-consulting" element={<MngConsulting />} />
+          <Route path="/ir-perfo" element={<IrPerfo />} />
+          <Route path="/gb" element={<Gbindex />} />
+          <Route path="/gb-strategy" element={<GbStrategy />} />
+          <Route path="/gb-case" element={<GbCase />} />
+          <Route path="/mng" element={<MngConsulting />} />
+          <Route path="/mng-credit" element={<MngCredit />} />
           <Route path="/mng-certify" element={<MngCertify />} />
           <Route path="/mng-trade" element={<MngTrade />} />
           <Route path="/mng-value" element={<MngValue />} />
-          <Route path="/mng-credit" element={<MngCredit />} />
-          <Route path="/zeta" element={<Zeta />} />
-          <Route path="/zeta-ci" element={<ZetaCi />} />
-          <Route path="/zeta-network" element={<ZetaNetwork />} />
-          <Route path="/gb" element={<Gbindex />} />
-          <Route path="/gb-trategy" element={<GbStrategy />} />
-          <Route path="/gb-case" element={<GbCase />} />
-          <Route path="/landing" element={<Landing />} />
           <Route
             path="/maipo"
             element={
@@ -82,26 +90,17 @@ function App() {
               />
             }
           />
-          <Route path="/maipo-process" element={<MaIpoPro />} />
-          <Route path="/maipo-performance" element={<MaIpoPerfo />} />
-          <Route path="/zeta-history" element={<ZetaHistory />} />
-          <Route path="/zeta-ci" element={<ZetaCi />} />
-          <Route path="/zeta-consul" element={<ZetaConsul />} />
-          <Route path="/zeta-network" element={<ZetaNetwork />} />
-          <Route path="/zeta-map" element={<ZetaMap />} />
-          <Route path="/landing" element={<Landing />} />
-          <Route path="/maipo" element={<MaIpoInfo />} />
-          <Route path="/qna" element={<Qna />} />
-          <Route path="/dataInfo" element={<DataInfo />} />
-          <Route path="/zeta-people" element={<ZetaPeople />} />
-          <Route path="/consulting" element={<ConsultingPage />} />
           <Route path="/news" element={<News />} />
           <Route path="/news/:category/:id" element={<NewsDetailItem />} />
-          <Route path="/qna/:id" element={<QnaDetail />} />
+          <Route path="/dataInfo" element={<DataInfo />} />
           <Route path="/datainfo/:category/:id" element={<DetailInfoItem />} />
+          <Route path="/qna" element={<Qna />} />
+          <Route path="/qna/:id" element={<QnaDetail />} />
+          <Route path="/consulting" element={<ConsultingPage />} />
         </Routes>
       </BrowserRouter>
       <Consulting />
+      <TopBtn />
       <Footer />
     </div>
   );

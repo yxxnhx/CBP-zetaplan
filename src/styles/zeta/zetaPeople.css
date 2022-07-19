@@ -93,13 +93,13 @@
   align-self: flex-end;
 }
 
-.zetaPeoBox .zetaDimmed:hover {
+.zetaPeoBox:hover .zetaDimmed {
   background-color: rgba(21, 39, 160, 0.8);
   color: #fff;
   top: 0;
   left: 0;
 }
-.zetaPeoBox .zetaDimmed:hover .zetaPeoPos {
+.zetaPeoBox:hover .zetaDimmed .zetaPeoPos {
   font-size: 1.6rem;
   color: #fff;
 }/*# sourceMappingURL=zetaPeople.css.map */

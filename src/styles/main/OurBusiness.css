@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.obWrapper {
+  width: 100vw;
+  height: 102.6rem;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.obWrapper .obCon {
+  width: 178rem;
+  height: 90rem;
+  margin: 62px auto;
+}
+.obWrapper .obCon .obTitle {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+.obWrapper .obCon .obInner {
+  display: flex;
+  justify-content: space-between;
+}
+.obWrapper .obCon .obInner .obList {
+  height: 69rem;
+  margin-right: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex: 1 1 0%;
+  background: white;
+  position: relative;
+}
+.obWrapper .obCon .obInner .obList .videoCon {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.obWrapper .obCon .obInner .obList .videoCon video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 85.2rem;
+  height: 69rem;
+  border-radius: 1rem;
+  position: relative;
+}
+.obWrapper .obCon .obInner .obList .obVideoDes {
+  position: absolute;
+  color: white;
+  top: 55rem;
+  left: 5rem;
+}
+.obWrapper .obCon .obInner .obList .obVideoDes .obVideoDesT {
+  font-weight: bold;
+  font-size: 4.5rem;
+  font-family: Montserrat;
+}
+.obWrapper .obCon .obInner .obList .obVideoDes .obVideoDesC {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+.obWrapper .obCon .obInner .obList:hover {
+  flex: 3 1 0%;
+  transition: 1s;
+}
+.obWrapper .obCon .obInner .obList:hover .videoCon {
+  display: flex;
+}
+.obWrapper .obCon .obInner .professional {
+  background: url(./../../img/main/business/ourBusiness_01_profession.png);
+}
+.obWrapper .obCon .obInner .global {
+  background: url(./../../img/main/business/ourBusiness_02_global.png);
+}
+.obWrapper .obCon .obInner .trust {
+  background: url(./../../img/main/business/ourBusiness_03_custumize.png);
+}
+.obWrapper .obCon .obInner .customized {
+  background: url(./../../img/main/business/ourBusiness_04_trust.png);
+}/*# sourceMappingURL=OurBusiness.css.map */

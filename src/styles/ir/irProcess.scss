@@ -33,11 +33,10 @@
 
 // accordion start
 .irAccordion {
-  .irAccoContentT {
+  .irProcessTitle {
     font-size: $size-lg;
     font-weight: bold;
-    margin-bottom: 5rem;
-    margin-left: 3rem;
+    margin: 2rem 3rem;
   }
 
   .irAccoCircleArea {
@@ -47,7 +46,6 @@
   }
   
   .irAccoProCircleContent {
-    margin: auto 4rem;
     width: 130rem;
     .irAccoProCircleM {
       @include Circle(130rem, 18rem);
@@ -104,13 +102,6 @@
     }
 
   }
-}
-
-.irContentT {
-  font-size: $size-lg;
-  font-weight: bold;
-  margin-bottom: 5rem;
-  
 }
 
 
@@ -179,7 +170,7 @@
       margin: auto;
       position: absolute;
       bottom: 13rem;
-      left: 27rem;
+      left: 22rem;
   
       li {
         font-size: $size-sm;
@@ -205,22 +196,88 @@
   }
 }
 
+.irProcessStation {
+  width: 78%;
+  height: auto; 
+}
 
-  .irProcess01 {
-    background: url(./../../img/ir/ir_process01@2x.png) no-repeat;
-    background-size: contain;
-    width: 140rem;
-    height: 70rem; 
-    font-size: 0;
-    margin: auto 35rem;
-    padding: 2rem 20rem;
-  }
+.irProcessStep {
+  width: auto;
+  height: 90rem; 
+}
 
-  .irProcess02 {
-    background: url(./../../img/ir/ir_process02@2x.png) no-repeat;
-    background-size: contain;
-    width: auto;
-    height: 90rem; 
-    font-size: 0;
-    margin: auto;
+.irProcessWrapper{
+  display: flex;
+  width: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.irAccordion{
+  width: 100%;
+
+}
+.irProcessItem{
+  margin-bottom: 0.5rem;
+  padding: 2rem;
+  width: 140rem;
+  box-sizing: border-box;
+
+
+  .irProcessBtn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid $main-color;
+    padding: 1rem 2rem;
+    font-size: $size-xl;
+    letter-spacing: 1.2px;
+    color: #000;
   }
+}
+
+.irProcessContent{
+  max-height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.irProcessContent.show{
+  height: auto;
+  max-height: 999rem;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+  border: 1px solid $main-color;
+}
+
+.irProcessBtn.on{
+  background-color: $main-color;
+  color: #fff;
+}
+
+.irUnderBtn{
+  background: url('../../img/zetaplan_splite.png') no-repeat -137px -194px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+}
+.irTopBtn{
+  background: url('../../img/zetaplan_splite.png') no-repeat -137px -235px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+}
+
+.irAccoContentArea {
+  padding: 3rem;
+  .irAccoContentT {
+    font-size: $size-lg;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    
+  }
+}
+
+.irAccoCenter {
+  display: flex;
+  justify-content: center;
+}
