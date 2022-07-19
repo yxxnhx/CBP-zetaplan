@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import SubBanner from '../../components/common/SubBanner';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
 import QnaTable from '../../components/Notice/QnaTable';
@@ -6,9 +6,13 @@ import '../../styles/qna/qna.scss'
 import qnaJsonList from '../../db/qna.json';
 import PaginatedItems from './Pagination';
 
+const Qna = ({ setHdSubStyle }) => {
 
-const Qna = () => {
-  
+  /* header 배경색 변경 */
+  useEffect(() => {
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle])
+
   const itemsPerPage = 10;
 
   const [data, setData] = useState([]);
@@ -31,21 +35,21 @@ const Qna = () => {
     setItemOffset(newOffset);
   };
 
-  useEffect(()=> {
+  useEffect(() => {
     const reverseData = [...qnaJsonList].reverse();
     setData(reverseData);
   }, [])
 
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
-  
+
   if (currentItems === null) {
     return <div></div>;
   }
-  
+
   console.log(currentItems);
   return (
     <div>
-      <SubBanner title={title} img={subBg}/>
+      <SubBanner title={title} img={subBg} />
       <div className='qnaInner'>
         <div className='qnaTitleBox'>
           <h2 className='qnaTitle'>Q&A</h2>

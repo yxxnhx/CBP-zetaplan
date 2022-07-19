@@ -4,9 +4,17 @@ import strategyGraph from '../../img/global/global_strategy_graph.png';
 import '../../styles/global/index.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/global/global_sub_bg.png';
+import { useEffect } from 'react';
 
-const index = () => {
+const index = ({ setHdSubStyle }) => {
   const title = 'ZETA PLAN은 전 세계적으로<br/> 우수한 해외 네트워크를 보유하고 있습니다.';
+
+  /* header 배경색 변경 */
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle])
+
   return (
     <div>
       <SubBanner title={title} img={subBg} />

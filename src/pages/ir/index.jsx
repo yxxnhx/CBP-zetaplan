@@ -2,9 +2,16 @@ import React from 'react';
 import './../../styles/ir/index.scss'
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/ir/ir_sub_bg@2x.png'
+import { useEffect } from 'react';
 
-const Ir = () => {
+const Ir = ({ setHdSubStyle }) => {
   const title = '지원기관 네트워크를 통해 <br />기업의 맞춤 컨설팅을 지원합니다.'
+
+  /* header 배경색 변경 */
+  useEffect(() => {
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle]);
+
   return (
     <div>
       <SubBanner title={title} img={subBg} />

@@ -4,10 +4,15 @@ import '../../styles/global/gbCase.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/global/global_sub_bg.png';
 import GbAccordion from './GbAccordion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-const GbCase = () => {
+const GbCase = ({ setHdSubStyle }) => {
   const title = 'ZETA PLAN은 전 세계적으로<br/> 우수한 해외 네트워크를 보유하고 있습니다.';
+
+  /* header 배경색 변경 */
+  useEffect(() => {
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle])
 
   const acco = [
     {

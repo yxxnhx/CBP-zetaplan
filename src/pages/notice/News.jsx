@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+/* import React, { useEffect, useState } from 'react';
 import SubBanner from '../../components/common/SubBanner';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
 import '../../styles/notice/news.scss';
@@ -8,7 +8,7 @@ import columnData from '../../db/column.json';
 import NewsSwiper from '../../components/Notice/NewsSwiper';
 import PaginatedItems from './Pagination';
 
-const News = () => {
+const News = ({ setHdSubStyle }) => {
   const itemsPerPage = 6;
 
   const [data, setData] = useState([]);
@@ -30,17 +30,23 @@ const News = () => {
     setItemOffset(newOffset);
   };
 
-  useEffect(()=> {
+  useEffect(() => {
     setData(getSelectedData());
   }, [selectedIndex]);
 
+
+  useEffect(() => {
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle])
+
+  
   const getSelectedData = () => {
     switch (selectedIndex) {
-    case 0:
-      return newsData;
-    case 1:
-    default:
-      return columnData;
+      case 0:
+        return newsData;
+      case 1:
+      default:
+        return columnData;
     }
   }
 
@@ -48,7 +54,7 @@ const News = () => {
     return index === selectedIndex ? 'active' : undefined;
   }
 
-  const title ='ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다';
+  const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다';
 
   if (currentItems === null) {
     return <div></div>;
@@ -61,8 +67,8 @@ const News = () => {
         <div className='newsTitleBox'>
           <h2 className='newsTabTitle'>소식</h2>
           <ul className='newsTabList'>
-            <li className={getActiveClassName(0)} onClick={()=> setSelectedIndex(0)}>News</li>
-            <li className={getActiveClassName(1)} onClick={()=> setSelectedIndex(1)}>Column</li>
+            <li className={getActiveClassName(0)} onClick={() => setSelectedIndex(0)}>News</li>
+            <li className={getActiveClassName(1)} onClick={() => setSelectedIndex(1)}>Column</li>
           </ul>
         </div>
         <NewsSwiper items={data} selectedIndex={selectedIndex} />
@@ -72,7 +78,7 @@ const News = () => {
         </div>
         <div className='newsListContainer'>
           {
-            currentItems.map((datalist)=> {
+            currentItems.map((datalist) => {
               return <NewsList key={datalist.id} items={datalist} selectedIndex={selectedIndex} currentItems={currentItems} />
 
             })
@@ -84,4 +90,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default News; */

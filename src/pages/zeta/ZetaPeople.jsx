@@ -6,13 +6,18 @@ import subBg from '../../img/zeta/zeta_sub_bg@2x.png'
 import './../../styles/zeta/zetaPeople.scss'
 
 
-const ZetaPeople = () => {
+const ZetaPeople = ({ setHdSubStyle }) => {
   const title = '제타 플랜의 전문가들이 돕겠습니다.'
 
   const [peopleDb, setPeopleDb] = useState([]);
-  useEffect(()=>{
+  useEffect(() => {
     setPeopleDb(peopleData);
-  },[])
+  }, [])
+
+  /* header 배경색 변경 */
+  useEffect(() => {
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle])
 
   return (
     <div>
@@ -25,7 +30,7 @@ const ZetaPeople = () => {
               return (
                 <li className='zetaPeoBox'>
                   <div className="zetaPeoImgBOX">
-                    <img src={require('./../../img/zeta/people/'+peopleData[i].img)} alt="zetaPerson" key={zetaPerson.id}/>
+                    <img src={require('./../../img/zeta/people/' + peopleData[i].img)} alt="zetaPerson" key={zetaPerson.id} />
                     <div className="zetaPeoTBox">
                     </div>
                   </div>

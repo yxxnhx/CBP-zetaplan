@@ -2,9 +2,15 @@ import React from 'react';
 import './../../styles/ir/irPlan.scss'
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/ir/ir_sub_bg@2x.png'
+import { useEffect } from 'react';
 
-const IrPlan = () => {
+const IrPlan = ({ setHdSubStyle }) => {
   const title = 'ZETA PLAN은 지속적인 투자유치 멘토링으로 <br /> 성공적인 투자을 지원합니다'
+
+  /* header 배경색 변경 */
+  useEffect(() => {
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle])
 
   return (
     <div>

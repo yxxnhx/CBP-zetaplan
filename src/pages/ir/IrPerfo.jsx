@@ -2,10 +2,14 @@ import React from 'react';
 import './../../styles/ir/irPerfo.scss'
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/ir/ir_sub_bg@2x.png'
+import { useEffect } from 'react';
 
-
-const IrPerfo = () => {
+const IrPerfo = ({ setHdSubStyle }) => {
   const title = 'IR지원, 해외투자유치, 성장 지원 컨설팅에 <br /> 최적화된 ZETA PLAN'
+  /* header 배경색 변경 */
+  useEffect(() => {
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle])
   return (
     <div>
       <SubBanner title={title} img={subBg} />
@@ -41,7 +45,7 @@ const IrPerfo = () => {
             <li className='irPerfoContentTitle'>(주)000월드와이드 의료기술 보유기업의 투자유치 및 성과</li>
             <li>
               <ul className='irPerfoContentDetail'>
-                <li className='irPerfoContentTxt'><span>컨설팅 내용</span>: 골다공증진단기기, 뇌혈관진단기기 등 세계최고등급 기술 보유기업의 글로벌 사업확장에 대한  IR 및 투자유치 지원</li> 
+                <li className='irPerfoContentTxt'><span>컨설팅 내용</span>: 골다공증진단기기, 뇌혈관진단기기 등 세계최고등급 기술 보유기업의 글로벌 사업확장에 대한  IR 및 투자유치 지원</li>
                 <li className='irPerfoContentTxt'><span>투자 컨설팅</span> : GE(General Electric) 세계1위 의료기업과 공동개발 및 납품 및 해외 지사설립과 마케팅다변화를 위한 IR 실행</li>
                 <li className='irPerfoContentTxt'><span>진행경과</span> : KITIA를 통한 투자기관 선정지원, IR컨설팅</li>
                 <li className='irPerfoContentTxt'><span>투자유치</span> :산업은행 기술금융 특허담보대출 15억 완료, LB/송현/알바트로스 인베스트먼트 3개사와 투자 협의 중 (50억 규모)</li>

@@ -1,23 +1,28 @@
 import React from 'react';
-import GradientImg from '../../img/me/me_gradient_box@2x.png'; 
+import GradientImg from '../../img/me/me_gradient_box@2x.png';
 import '../../styles/mng/mngValue.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/me/me_sub_bg@2x.png';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-const MngValue = () => {
+const MngValue = ({ setHdSubStyle }) => {
   const title = '효율적인 자산관리와 적절한<br />투자관련 의사결정을 지원합니다.'
   const [activeIndex, setActiveIndex] = useState(0);
-  const tabClickHandler=(index)=>{
+  const tabClickHandler = (index) => {
     setActiveIndex(index)
   }
 
+  /* header 배경색 변경 */
+  useEffect(() => {
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle])
+
   const mngValueContents = [
     {
-      tabTitle:(
-        <li className={activeIndex===0 ?'isActive' : ''} onClick={()=>tabClickHandler(0)} >기업가치평가</li>
+      tabTitle: (
+        <li className={activeIndex === 0 ? 'isActive' : ''} onClick={() => tabClickHandler(0)} >기업가치평가</li>
       ),
-      tabContent:(
+      tabContent: (
         <div className='mngValueBusiness'>
           <h2 className='mngSmTitle mngValueTitle'>기업가치평가</h2>
           <h4 className='mngValueTxt'>필요성</h4>
@@ -26,7 +31,7 @@ const MngValue = () => {
             <p>기업가치평가가 필요하며, 진행하게 되면 기업가치 중 무형자산의 기여도가 증가한다.</p>
           </div>
           <h4 className='mngValueTxt'>기업가치 평가요인</h4>
-          <img src={GradientImg} alt="그라데이션" className='thinGradient'/>
+          <img src={GradientImg} alt="그라데이션" className='thinGradient' />
           <div className='mngValueGradientTitle'>
             <span>기업내적요인</span>
             <span>기업외적요인</span>
@@ -79,10 +84,10 @@ const MngValue = () => {
       )
     },
     {
-      tabTitle:(
-        <li className={activeIndex===1 ? 'isActive': ''} onClick={()=>tabClickHandler(1)}>기술가치평가</li>
+      tabTitle: (
+        <li className={activeIndex === 1 ? 'isActive' : ''} onClick={() => tabClickHandler(1)}>기술가치평가</li>
       ),
-      tabContent:(
+      tabContent: (
         <div className='mngSkillValue'>
           <h2 className='mngSmTitle mngValueTitle'>기술가치평가</h2>
           <h4 className='mngValueTxt'>필요성</h4>
@@ -140,7 +145,7 @@ const MngValue = () => {
         </div>
       )
     }
-  ] ;
+  ];
 
 
   return (
@@ -151,8 +156,8 @@ const MngValue = () => {
           <h2 className='mngSubTitle'>가치평가</h2>
           <div className='mngMentTabEdge'>
             {
-              mngValueContents.map((section,index) => {
-                return(
+              mngValueContents.map((section, index) => {
+                return (
                   <ul key={index} className='mngMenuTab'>
                     {section.tabTitle}
                   </ul>

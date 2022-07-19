@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+/* import React, { useState, useEffect } from 'react';
 import '../../styles/notice/dataInfo.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
@@ -9,7 +9,7 @@ import techData from '../../db/technologyList.json';
 import consultData from '../../db/consultingList.json';
 import InfoItem from '../../components/Notice/InfoItem';
 
-const DataInfo = () => {
+const DataInfo = ({ setHdSubStyle }) => {
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
 
   const [filteredList, setFilteredList] = useState([]);
@@ -17,16 +17,18 @@ const DataInfo = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [dataList, setDataList] = useState([]);
 
-  useEffect(()=> {
+  useEffect(() => {
     setShowNum(6);
     setDataList(getSelectedData());
-    // console.log(dataList);
-    // console.log(filteredList);
   }, [selectedIndex])
 
-  useEffect(()=> {
+  useEffect(() => {
     setFilteredList(dataList.slice(0, showNum));
   }, [dataList])
+
+  useEffect(() => {
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle])
 
   const showMoreData = () => {
     const result = dataList.length - filteredList.length;
@@ -38,21 +40,20 @@ const DataInfo = () => {
 
   const getSelectedData = () => {
     switch (selectedIndex) {
-    case 0:
-      return mnaInvestmentData;
-    case 1:
-      return govSupportData;
-    case 2:
-      return fundSupportData;
-    case 3:
-      return techData;
-    case 4:
-    default:
-      return consultData;
+      case 0:
+        return mnaInvestmentData;
+      case 1:
+        return govSupportData;
+      case 2:
+        return fundSupportData;
+      case 3:
+        return techData;
+      case 4:
+      default:
+        return consultData;
     }
   }
 
-  // event.target === selectedIndex
 
   const getActiveClassName = (index) => {
     return index === selectedIndex ? 'active' : undefined;
@@ -93,4 +94,4 @@ const DataInfo = () => {
   );
 };
 
-export default DataInfo;
+export default DataInfo; */

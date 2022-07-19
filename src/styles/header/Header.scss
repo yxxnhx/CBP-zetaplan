@@ -7,18 +7,47 @@ $header-height: 14.1rem;
 
 
 /* header 전체 */
-.hdSubStyle {
-  background-color: red;
-}
 
 
-header {
-  width: 100%;
+header.hdMain {
+  width: 100vw;
   height: $header-height;
-  position: relative;
-  z-index: 10000000;
-  background-color: black;
+  position: absolute;
+  z-index: 1000;
+  transition: 0.5s;
 
+  /* 서브 페이지에 들어가면 바뀔 것 */
+  &.hdSub {
+    position: relative;
+    background-color: $basic-white;
+
+    .hd .hdLogo {
+      background: url('../../img/zetaplan_splite.png') no-repeat -240px -8px;
+      background-size: 599px 280px;
+      width: 209px;
+      height: 46px;
+    }
+
+    .hdUtil .hdSearchBtn {
+      background: url('../../img/zetaplan_splite.png') no-repeat -419px -151px;
+      background-size: 599px 280px;
+      width: 18px;
+      height: 18px;
+    }
+
+    .hdUtil .hdSitemapBtn {
+      background: url('../../img/zetaplan_splite.png') no-repeat -487px -153px;
+      background-size: 599px 280px;
+      width: 21px;
+      height: 13px;
+    }
+
+    .hdGnbArea {
+      color: black;
+    }
+  }
+
+  /* 메인에 호버되면 바뀔 것 */
   &:hover>.hd {
     background-color: $basic-white;
     color: $basic-black;

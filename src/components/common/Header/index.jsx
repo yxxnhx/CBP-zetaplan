@@ -4,9 +4,9 @@ import Gnb from './Gnb';
 import Util from './Util';
 import '../../../styles/header/Header.scss'
 
-const Header = () => {
+const Header = ({ hdSubStyle }) => {
   return (
-    <header>
+    <header className={hdSubStyle}>
       <div className='hd'>
         <h1>
           <Link to={'/main'} className='hdLogo'>zeta plan</Link>

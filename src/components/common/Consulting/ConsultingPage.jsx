@@ -1,47 +1,52 @@
 import React from 'react';
-import './../../../styles/consul/consultingPage.scss'
-import { useState } from 'react';
+import './../../../styles/consul/index.scss'
+import { useState, useEffect } from 'react';
 import SubBanner from './../SubBanner'
 import subBg from './../../../img/bg/consulPage_bg@2x.png'
 
 
 
-const ConsultingPage = ({open, close}) => {
+const ConsultingPage = ({ open, close, setHdSubStyle }) => {
   const title = '기업맞춤형 컨설팅으로 <br /> 진심을 다해 상담하겠습니다'
+
+  /* header 배경색 변경 */
+  useEffect(() => {
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle])
 
   const [errors, setErrors] = useState({});
   const [values, setValues] = useState({
-    fullName:'',
-    company:'',
-    email:'',
-    position:'',
-    tell:'',
-    companyName:'',
-    companyYear:'',
-    category:'',
-    business:'',
-    capital:'',
-    property:'',
-    debt:'',
-    prevSales:'',
-    thisSales:'',
-    predSales:'',
-    webSite:'',
-    address:'',
-    ma:'',
-    ipo:'',
-    certificate:'',
-    policyFund:'',
-    foundation:'',
-    system:'',
-    consulting:'' 
+    fullName: '',
+    company: '',
+    email: '',
+    position: '',
+    tell: '',
+    companyName: '',
+    companyYear: '',
+    category: '',
+    business: '',
+    capital: '',
+    property: '',
+    debt: '',
+    prevSales: '',
+    thisSales: '',
+    predSales: '',
+    webSite: '',
+    address: '',
+    ma: '',
+    ipo: '',
+    certificate: '',
+    policyFund: '',
+    foundation: '',
+    system: '',
+    consulting: ''
   })
 
   const handleChange = (e) => {
     setValues({
       ...values,
       [e.target.name]: e.target.value
-    }) 
+    })
   }
 
   const isValidEmail = values.email.includes('@') && values.email.includes('.');
@@ -49,7 +54,7 @@ const ConsultingPage = ({open, close}) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     setErrors(validation(values));
-    if (!isValidEmail || values['fullName' || 'company' || 'position' || 'tell' || 'companyName' || 'address'].length <= 0)  {
+    if (!isValidEmail || values['fullName' || 'company' || 'position' || 'tell' || 'companyName' || 'address'].length <= 0) {
       alert('필수 입력을 확인하세요.')
     } else {
       alert('상담 신청이 완료되었습니다')
@@ -58,7 +63,7 @@ const ConsultingPage = ({open, close}) => {
 
   const validation = (values) => {
     let errors = {};
-  
+
     if (!values.fullName) {
       errors.fullName = '이름을 입력해주세요';
     }
@@ -98,13 +103,13 @@ const ConsultingPage = ({open, close}) => {
                 <legend className='legend'>신청인 정보</legend>
                 <div className="pageConsulCategory">
                   <div className='pageConsulItem'>
-                    <label htmlFor="fullName" className='formKey'> 이름 </label> 
-                    <input 
-                      className="nameInput" 
-                      name="fullName" 
+                    <label htmlFor="fullName" className='formKey'> 이름 </label>
+                    <input
+                      className="nameInput"
+                      name="fullName"
                       id="fullName"
-                      type="text" 
-                      onChange={handleChange} 
+                      type="text"
+                      onChange={handleChange}
                       value={values.fullName}
                       required />
                   </div>
@@ -115,14 +120,14 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulCategory">
                   <div className='pageConsulItem'>
                     <label htmlFor="company" className='formKey'>회사</label>
-                    <input 
-                      className="companyInput" 
-                      name="company" 
-                      id="company" 
-                      type="text" 
-                      onChange={handleChange} 
+                    <input
+                      className="companyInput"
+                      name="company"
+                      id="company"
+                      type="text"
+                      onChange={handleChange}
                       value={values.company}
-                      required/>
+                      required />
                   </div>
                   <div className="errorBox">
                     {errors.company || <p className='error'>{errors.company}</p>}
@@ -131,11 +136,11 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulCategory">
                   <div className="pageConsulItem">
                     <label htmlFor="email" className='formKey'>이메일</label>
-                    <input 
-                      className="emailInput" 
-                      name="email" 
-                      id="email" 
-                      type="text" 
+                    <input
+                      className="emailInput"
+                      name="email"
+                      id="email"
+                      type="text"
                       onChange={handleChange}
                       value={values.email}
                       required />
@@ -147,10 +152,10 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulCategory">
                   <div className="pageConsulItem">
                     <label htmlFor="position" className='formKey'>직책</label>
-                    <input 
-                      className="positionInput" 
-                      name="position" 
-                      type="text" 
+                    <input
+                      className="positionInput"
+                      name="position"
+                      type="text"
                       onChange={handleChange}
                       value={values.position}
                       required />
@@ -162,10 +167,10 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulCategory">
                   <div className="pageConsulItem">
                     <label htmlFor="tell" className='formKey'>연락처</label>
-                    <input 
-                      className="tellInput" 
-                      name="tell" 
-                      type="text" 
+                    <input
+                      className="tellInput"
+                      name="tell"
+                      type="text"
                       onChange={handleChange}
                       value={values.tell}
                       required />
@@ -180,11 +185,11 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulCategory">
                   <div className="pageConsulItem">
                     <label htmlFor="companyName" className='formKey'>회사명</label>
-                    <input 
-                      className="companyNameInput" 
-                      name="companyName" 
-                      id="companyName" 
-                      type="text" 
+                    <input
+                      className="companyNameInput"
+                      name="companyName"
+                      id="companyName"
+                      type="text"
                       onChange={handleChange}
                       value={values.companyName}
                       required />
@@ -196,11 +201,11 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulCategory">
                   <div className="pageConsulItem">
                     <label htmlFor="companyYear">설립년도</label>
-                    <input 
-                      className="companyYearInput" 
-                      name="companyYear" 
-                      id="companyYear" 
-                      type="text" 
+                    <input
+                      className="companyYearInput"
+                      name="companyYear"
+                      id="companyYear"
+                      type="text"
                       onChange={handleChange}
                       value={values.companyYear} />
                   </div>
@@ -208,11 +213,11 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulCategory">
                   <div className="pageConsulItem">
                     <label htmlFor="category">분류</label>
-                    <input 
-                      className="categoryInput" 
-                      name="category" 
-                      id="category" 
-                      type="text" 
+                    <input
+                      className="categoryInput"
+                      name="category"
+                      id="category"
+                      type="text"
                       onChange={handleChange}
                       value={values.category} />
                   </div>
@@ -220,11 +225,11 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulCategory">
                   <div className="pageConsulItem">
                     <label htmlFor="business">사업분야</label>
-                    <input 
-                      className="businessInput" 
-                      name="business" 
-                      id="business" 
-                      type="text" 
+                    <input
+                      className="businessInput"
+                      name="business"
+                      id="business"
+                      type="text"
                       onChange={handleChange}
                       value={values.business} />
                   </div>
@@ -232,23 +237,23 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulCategory">
                   <div className="pageConsulItem">
                     <label htmlFor="capital">자본금</label>
-                    <input 
-                      className="capitalInput" 
-                      name="capital" 
-                      id="capital" 
-                      type="text" 
+                    <input
+                      className="capitalInput"
+                      name="capital"
+                      id="capital"
+                      type="text"
                       onChange={handleChange}
-                      value={values.debt}  />
+                      value={values.debt} />
                   </div>
                 </div>
                 <div className="pageConsulCategory">
                   <div className="pageConsulItem">
                     <label htmlFor="property">자산</label>
-                    <input 
-                      className="propertyInput" 
-                      name="property" 
-                      id="property" 
-                      type="text" 
+                    <input
+                      className="propertyInput"
+                      name="property"
+                      id="property"
+                      type="text"
                       onChange={handleChange}
                       value={values.property} />
                   </div>
@@ -256,11 +261,11 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulCategory">
                   <div className="pageConsulItem">
                     <label htmlFor="debt">부채</label>
-                    <input 
-                      className="debtInput" 
-                      name="debt" 
-                      id="debt" 
-                      type="text" 
+                    <input
+                      className="debtInput"
+                      name="debt"
+                      id="debt"
+                      type="text"
                       onChange={handleChange}
                       value={values.debt} />
                   </div>
@@ -268,11 +273,11 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulCategory">
                   <div className="pageConsulItem">
                     <label htmlFor="prevSales">전기매출</label>
-                    <input 
-                      className="prevSalesInput" 
-                      name="prevSales" 
-                      id="prevSales" 
-                      type="text" 
+                    <input
+                      className="prevSalesInput"
+                      name="prevSales"
+                      id="prevSales"
+                      type="text"
                       onChange={handleChange}
                       value={values.predSales} />
                   </div>
@@ -280,11 +285,11 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulCategory">
                   <div className="pageConsulItem">
                     <label htmlFor="thisSales">당기매출</label>
-                    <input 
-                      className="thisSalesInput" 
-                      name="thisSales" 
-                      id="thisSales" 
-                      type="text" 
+                    <input
+                      className="thisSalesInput"
+                      name="thisSales"
+                      id="thisSales"
+                      type="text"
                       onChange={handleChange}
                       value={values.thisSales} />
                   </div>
@@ -292,11 +297,11 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulCategory">
                   <div className="pageConsulItem">
                     <label htmlFor="predSales">예상매출</label>
-                    <input 
-                      className="predSalesInput" 
-                      name="predSales" 
-                      id="predSales" 
-                      type="text" 
+                    <input
+                      className="predSalesInput"
+                      name="predSales"
+                      id="predSales"
+                      type="text"
                       onChange={handleChange}
                       value={values.predSales} />
                   </div>
@@ -304,11 +309,11 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulLongCategory ">
                   <div className="pageConsulLongItem">
                     <label htmlFor="webSite" className='website long'>웹사이트</label>
-                    <input 
-                      className="webSiteInput" 
-                      name="webSite" 
-                      id="webSite" 
-                      type="text" 
+                    <input
+                      className="webSiteInput"
+                      name="webSite"
+                      id="webSite"
+                      type="text"
                       onChange={handleChange}
                       value={values.webSite} />
                   </div>
@@ -316,17 +321,17 @@ const ConsultingPage = ({open, close}) => {
                 <div className="pageConsulLongCategory">
                   <div className="pageConsulLongItem">
                     <label htmlFor="address" className='address long formKey'>주소</label>
-                    <input 
-                      className="addressInput" 
-                      name="address" 
-                      id="address" 
-                      type="text" 
+                    <input
+                      className="addressInput"
+                      name="address"
+                      id="address"
+                      type="text"
                       onChange={handleChange}
                       value={values.address}
                       required />
                   </div>
                   <div className='errorBox'>
-                    {errors.address  || <p className='error'>{errors.address}</p>}
+                    {errors.address || <p className='error'>{errors.address}</p>}
                   </div>
                 </div>
               </fieldset>
@@ -411,14 +416,14 @@ const ConsultingPage = ({open, close}) => {
                       <option value="tax">세무회계</option>
                       <option value="personal">인사/노무</option>
                       <option value="consultation">쿠폰제컨설팅</option>
-                      <option value="etc">기타</option>        
+                      <option value="etc">기타</option>
                     </select>
                   </div>
                 </div>
                 <div className="selectCategory">
                   <div className="selectItem">
                     <label htmlFor="system" className='selectLabel'>품질 / 시스템</label>
-                    <select name="system" id="system"  className='select' value={values.system} onChange={handleChange}>
+                    <select name="system" id="system" className='select' value={values.system} onChange={handleChange}>
                       <option value="iso">ISO</option>
                       <option value="net">NET</option>
                       <option value="nep">NEP</option>
@@ -454,17 +459,17 @@ const ConsultingPage = ({open, close}) => {
                 </div>
               </fieldset>
               <fieldset className='pageFieldset long'>
-                <legend className='legend consulLegend'>상담 신청 내용</legend> 
+                <legend className='legend consulLegend'>상담 신청 내용</legend>
                 <div className="pageConsultingCategory">
                   <div className="pageConsultingItem">
-                    <label htmlFor="consulting"  className='consulLabel'></label>
-                    <input 
-                      className="consultingInput" 
-                      name="consulting" 
-                      id="consulting" 
-                      type="text" 
-                      onChange={handleChange }
-                      value={values.consulting} />                        
+                    <label htmlFor="consulting" className='consulLabel'></label>
+                    <input
+                      className="consultingInput"
+                      name="consulting"
+                      id="consulting"
+                      type="text"
+                      onChange={handleChange}
+                      value={values.consulting} />
                   </div>
                 </div>
               </fieldset>
@@ -473,8 +478,8 @@ const ConsultingPage = ({open, close}) => {
           </div>
 
         </form>
-      </div>
-    </div>
+      </div >
+    </div >
 
   );
 };

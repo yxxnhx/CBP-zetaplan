@@ -6,9 +6,14 @@ import OurBusiness from './main/OurBusiness';
 import Performance from './main/Performance';
 import ZetaIntroduction from './main/ZetaIntroduction';
 import NewsColumn from './main/NewsColumn';
+import { useEffect } from 'react';
 import InformationList from '../components/main/InformationList';
 
-const Index = () => {
+const Index = ({ setHdSubStyle }) => {
+  useEffect(() => {
+    setHdSubStyle('hdMain')
+  }, [setHdSubStyle])
+
   return (
     <div>
       <MainBanner />

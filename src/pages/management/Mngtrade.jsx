@@ -3,9 +3,16 @@ import ProcessImg from '../../img/me/me_process@2x.png';
 import '../../styles/mng/mngTrade.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/me/me_sub_bg@2x.png';
+import { useEffect } from 'react';
 
-const MngTrade = () => {
+const MngTrade = ({ setHdSubStyle }) => {
   const title = '국내는 물론, 해외로 나아갈<br />기술이전 컨설팅을 지원합니다.'
+
+  /* header 배경색 변경 */
+  useEffect(() => {
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle])
+
   return (
     <div>
       <SubBanner title={title} img={subBg} />
@@ -23,7 +30,7 @@ const MngTrade = () => {
         </div>
         <div>
           <h2 className='mngSubTitleNb mngTradePro'>Process</h2>
-          <img src={ProcessImg} alt='process' className='mngTradeProcessImg'/>
+          <img src={ProcessImg} alt='process' className='mngTradeProcessImg' />
         </div>
       </div>
     </div>
