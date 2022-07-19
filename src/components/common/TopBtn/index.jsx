@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import buttonImgB from './../../../img/bg/top_button_blue@2x.png'
+import buttonImgB from './../../../img/bg/top_button_Blue@2x.png'
 import buttonImgW from './../../../img/bg/top_button_white@2x.png'
 
 export default function TopButton() {
