@@ -14,7 +14,7 @@ const MainBanner = () => {
 
   return (
     <div>
-      <Swiper className='mySlider'
+      <Swiper className='myMainSlider'
         modules={[Navigation, Autoplay]}
         navigation={navigationBtn}
         loop={true} 

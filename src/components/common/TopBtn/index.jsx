@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import buttonImg from './../../../img/bg/top_button@2x.png'
-import buttonImgB from './../../../img/bg/top_button_Blue@2x.png'
+import buttonImgW from './../../../img/bg/top_button_white@2x.png'
 
 export default function TopButton() {
 
@@ -46,17 +46,20 @@ const ScrollContainer = styled.div `
 `
 const TopBtn = styled.button `
   background-image: url(${buttonImg});
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 3rem;
-  height: 3rem;
+  height: 2.3rem;
   position: fixed;
   right: 6rem;
   bottom: 4rem;
   &:hover {
-    background-image: url(${buttonImgB});
+    background-image: url(${buttonImgW});
     background-size: cover;
-    width: 3rem;
-    height: 3rem;
+    width: 7rem;
+    height: 7rem;
+    right: 4rem;
+    bottom: 2rem;
   }
 `
 
