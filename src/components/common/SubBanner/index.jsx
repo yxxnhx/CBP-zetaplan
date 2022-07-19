@@ -14,7 +14,7 @@ const SubBanner = ({ title, img }) => {
     <SubBannerContainer img={`${img}`}>
       <SubBannerTextContainer>
         <div className='leftBracket'></div>
-        <p data-aos="zoom-in" dangerouslySetInnerHTML={{ __html: title }}></p>
+        <p data-aos="zoom-in" data-aos-duration="2150" dangerouslySetInnerHTML={{ __html: title }}></p>
         <div className='rightBracket'></div>
       </SubBannerTextContainer>
     </SubBannerContainer>

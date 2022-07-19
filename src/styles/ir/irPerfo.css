@@ -5,7 +5,7 @@
 }
 
 .inner {
-  width: 1440px;
+  max-width: 75vw;
   padding: 8rem 0;
   margin: 0 auto;
 }
@@ -39,21 +39,23 @@
 }
 
 .irPerfoContent {
-  margin: 5rem 0;
+  margin: 8rem 0;
 }
 .irPerfoContent .irPerfoContentBox {
-  margin: 3rem 0;
+  margin: 8rem 0;
 }
 .irPerfoContent .irPerfoContentBox .irPerfoContentTitle {
   font-size: 2.3rem;
   font-weight: bold;
   margin-bottom: 1.2rem;
+  font-family: "Noto Sans KR";
 }
 
 .irPerfoContentTxt {
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.7;
+  font-family: "Noto Sans KR";
 }
 .irPerfoContentTxt span {
   font-size: 2rem;

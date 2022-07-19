@@ -23,6 +23,8 @@ const Partners = () => {
       return '<span class="' + className + '">' + (index + 1) + '</span>';
     }, }
 
+
+
   return (
     <div className='partner'>
       <div>
@@ -39,6 +41,21 @@ const Partners = () => {
           }}
           spaceBetween={3}
           slidesPerView={7}
+          breakpoints={{
+            1024: {
+              slidesPerView:4,
+              spaceBetween:5
+            },
+            768: {
+              slidesPerView:2,
+              spaceBetween:8
+            },
+            360: {
+              slidesPerView:10,
+              spaceBetween:2
+            },
+
+          }}
         >
           <div className="netLogoList">
             {

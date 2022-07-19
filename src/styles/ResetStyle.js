@@ -51,6 +51,24 @@ const ResetStyle = createGlobalStyle`
     font-size: 62.5%;
     box-sizing: border-box;
   }
+
+
+  @media (min-width: 768px) and (max-width: 1023px){
+    * {
+      font-size: 50%;
+      box-sizing: border-box;
+    }
+
+  }
+  @media (min-width: 360px) and (max-width: 767px){
+    * {
+      font-size: 40%;
+      box-sizing: border-box;
+    }
+
+  }
+
+
 `;
 
 export default ResetStyle;

@@ -10,15 +10,16 @@
 }
 
 .irPerfoContent {
-  margin: 5rem 0;
+  margin: 8rem 0;
 
   .irPerfoContentBox {
-    margin: 3rem 0;
+    margin: 8rem 0;
 
     .irPerfoContentTitle {
       font-size: 2.3rem;
       font-weight: bold;
       margin-bottom: 1.2rem;
+      font-family: 'Noto Sans KR';
     }
   }
 }
@@ -27,9 +28,12 @@
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.7;
+  font-family: 'Noto Sans KR';
+
 
   span {
     font-size: 2rem;
     font-weight: bold;
   }
 }
+
