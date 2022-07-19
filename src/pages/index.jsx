@@ -8,6 +8,8 @@ import ZetaIntroduction from './main/ZetaIntroduction';
 import NewsColumn from './main/NewsColumn';
 import { useEffect } from 'react';
 import InformationList from '../components/main/InformationList';
+import styled from 'styled-components';
+import mainBg from './../img/main/main_galexy_bg@2x.png'
 
 const Index = ({ setHdSubStyle }) => {
   useEffect(() => {
@@ -20,12 +22,17 @@ const Index = ({ setHdSubStyle }) => {
       <OurBusiness />
       <Performance />
       <ZetaIntroduction />
-      <NewsColumn />
-      <InformationList />
-      <Partners />
-      <GlobalNetwork />
+      <MainBackGround>
+        <NewsColumn />
+        <Partners />
+        <GlobalNetwork />
+      </MainBackGround>
     </div>
   );
 };
+
+const MainBackGround = styled.div `
+  background-image: url(${mainBg});
+`
 
 export default Index;

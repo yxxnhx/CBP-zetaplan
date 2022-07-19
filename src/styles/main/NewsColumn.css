@@ -4,79 +4,71 @@
   font-family: "Roboto", "Noto Sans KR", sans-serif;
 }
 
-.mainNewsColumn {
-  width: 100vw;
-  height: 100vh;
-  background: url(../../img/main/main_galexy_bg@2x.png) no-repeat;
+.mainNewsInner {
+  width: 85vw;
+  padding: 8rem 0;
+  margin: 0 auto;
 }
-
-.NewsColumnTitle {
+.mainNewsInner .mainNewsTop {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2.5rem;
 }
-.NewsColumnTitle h1 {
+.mainNewsInner .mainNewsTop .mainNewTitle {
   font-size: 5rem;
   font-family: "Montserrat";
   font-weight: bold;
   color: #fff;
-  padding-bottom: 9rem;
-  padding-left: 5rem;
-  padding-top: 10rem;
 }
-
-.newsColumnMore {
-  width: 14rem;
-  height: 4rem;
+.mainNewsInner .mainNewsTop .newsColumnMore {
+  width: 19rem;
+  height: 5rem;
   border: 1px solid #fff;
-  border-radius: 2rem;
+  border-radius: 3rem;
   color: #fff;
-  margin-top: 10rem;
-  margin-right: 5rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   position: relative;
   text-align: center;
-  line-height: 2.6;
+  line-height: 5rem;
+  padding-right: 1rem;
 }
-.newsColumnMore::after {
+.mainNewsInner .mainNewsTop .newsColumnMore::after {
   content: "";
   background: url("../../img/zetaplan_splite.png") no-repeat -236px -221px;
   background-size: 599px 280px;
   width: 8px;
   height: 13px;
   position: absolute;
-  bottom: 1.3rem;
-  left: 11rem;
+  bottom: 1.6rem;
+  left: 13rem;
+}
+.mainNewsInner .mainNewsColumn {
+  width: 100%;
+  height: 73.5rem;
+  background-color: #1527a0;
+  padding: 9rem 0rem 9rem 8rem;
+  box-sizing: border-box;
 }
 
 .newsColumBox {
-  width: 90%;
-  height: 60rem;
+  width: 130rem;
+  height: 50rem;
   margin-left: 7rem;
-  background-color: #1527a0;
-}
-
-.newsColumnHeader {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
 }
 
 .newsColumnTab {
-  display: inline-block;
+  display: flex;
+  margin-bottom: 5rem;
 }
 .newsColumnTab button {
   border: 1px solid #fff;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 2.3rem 2.6rem;
   margin-left: 1rem;
-  margin-top: 5rem;
   color: #fff;
   font-size: 1.5rem;
   font-family: "Montserrat";
-}
-
-.newsColumnTab button:first-child {
-  margin-left: 4rem;
 }
 
 .newsColumnBtn {
@@ -110,4 +102,22 @@
   width: 20rem;
   height: 20rem;
   margin-top: 8rem;
+}
+
+.mainNCBox {
+  width: 43.5rem;
+  height: 44rem;
+  padding: 24rem 28rem;
+  box-sizing: border-box;
+}
+.mainNCBox .mainNCCategory {
+  font-size: 2rem;
+}
+.mainNCBox .mainNCTitle {
+  font-size: 2.6rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.mainNCBox .mainNCDate {
+  font-size: 1.8rem;
 }/*# sourceMappingURL=NewsColumn.css.map */

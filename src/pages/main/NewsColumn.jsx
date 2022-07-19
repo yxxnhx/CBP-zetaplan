@@ -1,97 +1,70 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { Navigation, Pagination } from 'swiper';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import './../../styles/main/NewsColumn.scss';
 import { Link } from 'react-router-dom';
-//import { useState } from 'react';
-import newsColumnImg from '../../img/zeta/people/people_03lim.png';
-import newsColumnImg2 from '../../img/zeta/people/people_01kim.png';
-
+import MainAll from './MainAll';
+import MainNews from './MainNews';
+import MainColumn from './MainColumn';
+import { useState, useEffect } from 'react';
 
 const NewsColumn = () => {
-  const navigationBtn = {
-    nextEl: '.prev',
-    prevEl: '.next',
-  };
+  const mainNCList = [
+    {
+      id: 0,
+      title: 'ALL',
+    },
+    {
+      id: 1,
+      title: 'NEWS',
+    },
+    {
+      id: 2,
+      title: 'COLUMNS',
+    }
+  ];
+  
+  const [mainCLi,setMainCLi]=useState([]);
+  useEffect(()=>{
+    setMainCLi(mainNCList);
+  },[])
+
+  const [mainCLView,setMainCLView]=useState(0);
 
   
   return (
-    <div>
+    <div className='mainNewsInner'>
+      <div className="mainNewsTop">
+        <h1 className='mainNewTitle'>NEWS & COLUMN</h1>
+        <Link to='/news' className='newsColumnMore'>더보기</Link>
+      </div>
       <div className="mainNewsColumn">
-        <div className='NewsColumnTitle'>
-          <h1>NEWS & COLUMN</h1>
-          <Link to='/news' className='newsColumnMore'>더보기</Link>
-        </div>
         <div className="newsColumBox">
           <div className='newsColumnTab'>
-            <button>ALL</button>
-            <button>NEWS</button>
-            <button>COLUMN</button>
+            {
+              mainCLi.map(function(data, i) {
+                console.log(i)
+                return (
+                  <button onClick={() => setMainCLView(i)} key={data.id} className={mainCLView===i?'mainNCTap mainNCTapOn':'mainNCTap mainNCTapOff'}>{mainCLi[i].title}</button>
+                )
+              })
+            }
           </div>
-          <Swiper className='mySlider'
-            modules={[Navigation, Pagination]}
-            navigation={navigationBtn}
-            loop={true}
-            spaceBetween={0}
-            slidesPerView={3}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
-          >
-            <SwiperSlide>
-              {
-                <div>
-                  <div className="newsColumnBtn">
-                    <button type='button' className='prev'>Prev</button>
-                    <button type='button' className='next'>Next</button>
-                  </div>
-                  <div className='NewsColumnContent'>
-                    <img src={newsColumnImg} alt="" className='newsColumnImg'/>
-                    <img src={newsColumnImg} alt="" className='newsColumnImg'/>
-                    <img src={newsColumnImg} alt="" className='newsColumnImg'/>
-                    <img src={newsColumnImg} alt="" className='newsColumnImg'/>
-                    <img src={newsColumnImg} alt="" className='newsColumnImg'/>
-                  </div>
+          {
+            mainCLi.map(function(data, i) {
+              console.log(i)
+              console.log(data)
+              return (
+                <div key={data.id}  className={mainCLView===i? 'mainSlide mainSlideOn':'mainSlide mainSlideOff'}>
+                  <div>{i === 0 ? <MainAll /> :  null}</div>
+                  <div>{i === 1 ? <MainNews /> :  null}</div>
+                  <div>{i === 2 ? <MainColumn /> :  null}</div>
                 </div>
-              }
-            </SwiperSlide> 
-            <SwiperSlide>
-              {
-                <div>
-                  <div className="newsColumnBtn">
-                    <button type='button' className='prev'>Prev</button>
-                    <button type='button' className='next'>Next</button>
-                  </div>
-                  <div className='NewsColumnContent'>
-                    <img src={newsColumnImg2} alt="" className='newsColumnImg'/>
-                    <img src={newsColumnImg2} alt="" className='newsColumnImg'/>
-                    <img src={newsColumnImg2} alt="" className='newsColumnImg'/>
-                    <img src={newsColumnImg2} alt="" className='newsColumnImg'/>
-                    <img src={newsColumnImg2} alt="" className='newsColumnImg'/>
-                  </div>
-                </div>
-              }
-            </SwiperSlide> 
-            <SwiperSlide>
-              {
-                <div>
-                  <div className="newsColumnBtn">
-                    <button type='button' className='prev'>Prev</button>
-                    <button type='button' className='next'>Next</button>
-                  </div>
-                  <div className='NewsColumnContent'>
-                    <img src={newsColumnImg} alt="" className='newsColumnImg'/>
-                    <img src={newsColumnImg} alt="" className='newsColumnImg'/>
-                    <img src={newsColumnImg} alt="" className='newsColumnImg'/>
-                    <img src={newsColumnImg} alt="" className='newsColumnImg'/>
-                    <img src={newsColumnImg} alt="" className='newsColumnImg'/>
-                  </div>
-                </div>
-              }
-            </SwiperSlide> 
-          </Swiper>
+              )
+            })
+
+          }
+          {/* <MainAll />
+          <MainNews />
+          <MainColumn /> */}
         </div>
       </div>
     </div>
