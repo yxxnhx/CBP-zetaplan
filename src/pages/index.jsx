@@ -6,6 +6,7 @@ import OurBusiness from './main/OurBusiness';
 import Performance from './main/Performance';
 import ZetaIntroduction from './main/ZetaIntroduction';
 import NewsColumn from './main/NewsColumn';
+import InformationList from '../components/main/InformationList';
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <Performance />
       <ZetaIntroduction />
       <NewsColumn />
+      <InformationList />
       <Partners />
       <GlobalNetwork />
     </div>

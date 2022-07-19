@@ -1,0 +1,62 @@
+@import '../GlobalStyle.scss';
+
+.infoSwiperBoxList {
+  @include Inner;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .infoSwipBox {
+    width: 647px;
+    background-color: $basic-white;
+    height: 314px;
+    margin-bottom: 40px;
+    border-radius: 29px;
+    padding: 53px 91px 41px 66px;
+    position: relative;
+
+    .infoSwiperTitle {
+      font-size: $size-xl;
+      font-family: 'Noto Sans KR',sans-serif;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: $main-color;
+      color: $basic-white;
+    }
+
+    .infoConTitle {
+      font-size: 1.84rem;
+      font-family: 'Noto Sans KR',sans-serif;
+      line-height: 1.5;
+      height: 68px;
+      margin: 49px 0;
+    }
+    .infoConDate {
+      font-size: 1.84rem;
+      font-family: 'Noto Sans KR',sans-serif;
+    }
+    
+    .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+      position: absolute;
+      top: 0;
+    }
+
+  }
+
+
+}
+
+.mainInfoMoreBtn {
+  background-color: $basic-white;
+  width: 295px;
+  height: 78px;
+  border-radius: 50px;
+  display: block;
+  font-size: $size-sm;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto 4rem;
+  padding: 31px 0;
+}
