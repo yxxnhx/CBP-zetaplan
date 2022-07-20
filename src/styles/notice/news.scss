@@ -21,6 +21,7 @@
 
       li {
         margin-left: 50px;
+        font-family: 'Noto Sans KR',sans-serif;
         font-size: 2.24rem;
         position: relative;
 
@@ -44,10 +45,6 @@
     }
   }
 
-  .swiper-slide {
-
-  }
-
   .newsContainer {
     display: flex;
     justify-content: space-between;
@@ -57,11 +54,15 @@
       flex: 30%;
       width: 400px;
       height: 570px;
+
       .newsTitle {
         font-size: 3.04rem;
         width: 329px;
         height: 166px;
         font-weight: bold;
+        line-height: 1.7;
+        word-break: keep-all;
+  
       }
 
       .newsSummary {
@@ -76,13 +77,15 @@
         font-weight: normal;
 
         p, ul li {
+          font-family: 'Noto Sans KR',sans-serif;
           font-size: $size-xl;
-          line-height: 1.5;
+          line-height: 1.7;
 
         }
       }
 
       .newsCreated {
+        font-family: 'Noto Sans KR',sans-serif;
         font-size: 1.6rem;
         font-weight: 600;
         margin: 57px 0 40px;
@@ -100,41 +103,50 @@
     } 
   }
 
-  .newsSearchBox {
+  .newsListContainer {
     position: relative;
-    width: 470px;
-    margin: 328px 0 57px 970px;
+    margin-top: 250px;
 
-    .newsInput {
-      width: 470px;
-      border: none;
-      border-bottom: 1px solid #707070;
-      font-size: 2rem;
-      display: block;
-      outline: none;s
-
-      &::placeholder {
-        color: $basic-black;
-
-      }
-    }
-
-    .newsmagnifier {
-      display: block;
-      background: url('../../img/zetaplan_splite.png')  no-repeat -419px -151px;
-      background-size: 599px 280px;
-      width: 18px;
-      height: 18px;
+    .newsSearchBox {
       position: absolute;
       right: 0;
       top: 0;
-    }
-  }
+      width: 30rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid #707070;
 
-  .newsListContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+      .newsInput {
+        width: 28rem;
+        border: none;
+        font-size: 2rem;
+        display: block;
+        outline: none;
+
+  
+        &::placeholder {
+          color: $basic-black;
+  
+        }
+      }
+  
+      .newsmagnifier {
+        display: block;
+        background: url('../../img/zetaplan_splite.png')  no-repeat -419px -151px;
+        background-size: 599px 280px;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .newsListBox {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
   
   .swiperBtnBox {
@@ -223,6 +235,7 @@
         height: 58px;
         padding: 21px;
         text-align: center;
+        font-family: 'Noto Sans KR',sans-serif;
         font-size: $size-sm;
         cursor: pointer;
       }

@@ -1,4 +1,4 @@
-/* import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SubBanner from '../../components/common/SubBanner';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
 import '../../styles/notice/news.scss';
@@ -7,9 +7,12 @@ import newsData from '../../db/newsList.json';
 import columnData from '../../db/column.json';
 import NewsSwiper from '../../components/Notice/NewsSwiper';
 import PaginatedItems from './Pagination';
+import { useNavigate } from 'react-router-dom';
 
 const News = ({ setHdSubStyle }) => {
   const itemsPerPage = 6;
+
+  const navigate = useNavigate();
 
   const [data, setData] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -42,11 +45,11 @@ const News = ({ setHdSubStyle }) => {
   
   const getSelectedData = () => {
     switch (selectedIndex) {
-      case 0:
-        return newsData;
-      case 1:
-      default:
-        return columnData;
+    case 0:
+      return newsData;
+    case 1:
+    default:
+      return columnData;
     }
   }
 
@@ -67,22 +70,28 @@ const News = ({ setHdSubStyle }) => {
         <div className='newsTitleBox'>
           <h2 className='newsTabTitle'>소식</h2>
           <ul className='newsTabList'>
-            <li className={getActiveClassName(0)} onClick={() => setSelectedIndex(0)}>News</li>
-            <li className={getActiveClassName(1)} onClick={() => setSelectedIndex(1)}>Column</li>
+            <li className={getActiveClassName(0)} onClick={() => {
+              navigate('/news/news')
+              setSelectedIndex(0)}}>News</li>
+            <li className={getActiveClassName(1)} onClick={() => {
+              navigate('/news/column')
+              setSelectedIndex(1)}}>Column</li>
           </ul>
         </div>
         <NewsSwiper items={data} selectedIndex={selectedIndex} />
-        <div className='newsSearchBox'>
-          <input className="newsInput" type="text" placeholder='검색어를 입력하세요' />
-          <span className='newsmagnifier'></span>
-        </div>
         <div className='newsListContainer'>
-          {
-            currentItems.map((datalist) => {
-              return <NewsList key={datalist.id} items={datalist} selectedIndex={selectedIndex} currentItems={currentItems} />
+          <div className='newsSearchBox'>
+            <input className="newsInput" type="text" placeholder='검색어를 입력하세요' />
+            <span className='newsmagnifier'></span>
+          </div>
+          <div className='newsListBox'>
+            {
+              currentItems.map((datalist) => {
+                return <NewsList key={datalist.id} items={datalist} selectedIndex={selectedIndex} currentItems={currentItems} />
 
-            })
-          }
+              })
+            }
+          </div>
         </div>
         <PaginatedItems itemsPerPage={itemsPerPage} handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount} />
       </div>
@@ -90,4 +99,4 @@ const News = ({ setHdSubStyle }) => {
   );
 };
 
-export default News; */
+export default News;

@@ -19,6 +19,7 @@
       font-size: $size-xl;
       font-family: 'Noto Sans KR',sans-serif;
       font-weight: bold;
+      position: absolute;
     }
 
     &:hover {
@@ -41,7 +42,10 @@
     .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
       position: absolute;
       top: 0;
+      left: 70%;
+      transform: translateX(0);
     }
+    
 
   }
 

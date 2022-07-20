@@ -23,7 +23,7 @@ const InfoSwiper = ({data}) => {
 
   const getDataByCate = () => {
     switch (data) {
-    case 'M&A 투자정보':
+    case 'M&A・투자정보':
       return mnaInvestmentData;
     case '정부지원사업 참여 모집':
       return govSupportData;
@@ -49,7 +49,7 @@ const InfoSwiper = ({data}) => {
           clickable: true,
         }}
         modules={[Pagination]}
-        // className="mySwiper"
+        className="informationSlide"
       >
         {
           state.map((item)=> {

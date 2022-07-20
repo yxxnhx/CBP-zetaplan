@@ -1,4 +1,4 @@
-/* import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import SubBanner from '../../components/common/SubBanner';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
@@ -14,11 +14,11 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
 
   const getDataByCategory = () => {
     switch (category) {
-      case 'news':
-        return newsData;
-      case 'column':
-      default:
-        return columnData;
+    case 'news':
+      return newsData;
+    case 'column':
+    default:
+      return columnData;
     }
   }
 
@@ -51,7 +51,7 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
         <div className="detailItemBox">
           <p className="detailItemTitle">{detailData.title}</p>
           <div className="contentBox">
-            <img src={detailData.img} alt="" />
+            <img src={detailData.img} alt={detailData.alt} />
             <div className="content" dangerouslySetInnerHTML={{ __html: detailData.content }}></div>
           </div>
         </div>
@@ -62,4 +62,4 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
   );
 };
 
-export default NewsDetailItem; */
+export default NewsDetailItem;

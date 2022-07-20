@@ -23,6 +23,7 @@
     .qnaTbTr {
       border-bottom: 1px solid $basic-gray1;
       height: 113px;
+      cursor: pointer;
       &:last-child {
         border-bottom: none;
       }

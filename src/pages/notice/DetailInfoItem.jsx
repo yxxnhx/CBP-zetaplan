@@ -1,4 +1,4 @@
-/* import React from 'react';
+import React from 'react';
 import SubBanner from '../../components/common/SubBanner';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
 import { useParams, Link } from 'react-router-dom';
@@ -18,17 +18,17 @@ const DetailInfoItem = ({ setHdSubStyle }) => {
 
   const getDataByCategory = () => {
     switch (category) {
-      case 'm&a-invest':
-        return mnaInvestmentData;
-      case 'government-support':
-        return govSupportData;
-      case 'fund-support':
-        return fundSupportData;
-      case 'technology-trade':
-        return techData;
-      case 'consulting-list':
-      default:
-        return consultData;
+    case 'm&a-invest':
+      return mnaInvestmentData;
+    case 'government-support':
+      return govSupportData;
+    case 'fund-support':
+      return fundSupportData;
+    case 'technology-trade':
+      return techData;
+    case 'consulting-list':
+    default:
+      return consultData;
     }
   }
 
@@ -70,4 +70,4 @@ const DetailInfoItem = ({ setHdSubStyle }) => {
   );
 };
 
-export default DetailInfoItem; */
+export default DetailInfoItem;

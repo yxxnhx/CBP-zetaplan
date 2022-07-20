@@ -1,4 +1,4 @@
-/* import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../styles/notice/dataInfo.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
@@ -8,6 +8,7 @@ import fundSupportData from '../../db/fund-supportList.json';
 import techData from '../../db/technologyList.json';
 import consultData from '../../db/consultingList.json';
 import InfoItem from '../../components/Notice/InfoItem';
+import { useParams, useNavigate } from 'react-router-dom';
 
 const DataInfo = ({ setHdSubStyle }) => {
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
@@ -16,6 +17,8 @@ const DataInfo = ({ setHdSubStyle }) => {
   const [showNum, setShowNum] = useState(6);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [dataList, setDataList] = useState([]);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     setShowNum(6);
@@ -40,17 +43,17 @@ const DataInfo = ({ setHdSubStyle }) => {
 
   const getSelectedData = () => {
     switch (selectedIndex) {
-      case 0:
-        return mnaInvestmentData;
-      case 1:
-        return govSupportData;
-      case 2:
-        return fundSupportData;
-      case 3:
-        return techData;
-      case 4:
-      default:
-        return consultData;
+    case 0:
+      return mnaInvestmentData;
+    case 1:
+      return govSupportData;
+    case 2:
+      return fundSupportData;
+    case 3:
+      return techData;
+    case 4:
+    default:
+      return consultData;
     }
   }
 
@@ -66,11 +69,26 @@ const DataInfo = ({ setHdSubStyle }) => {
         <div className='infoTitleBox'>
           <h2 className='infoTitle'>자료</h2>
           <div className='infoTabList'>
-            <li className={getActiveClassName(0)} onClick={() => setSelectedIndex(0)}>M&A・투자정보</li>
-            <li className={getActiveClassName(1)} onClick={() => setSelectedIndex(1)}>정부지원사업 참여 모집</li>
-            <li className={getActiveClassName(2)} onClick={() => setSelectedIndex(2)}>정책자금 / 기업지원정보</li>
-            <li className={getActiveClassName(3)} onClick={() => setSelectedIndex(3)}>기술거래리스트</li>
-            <li className={getActiveClassName(4)} onClick={() => setSelectedIndex(4)}>컨설팅 실적</li>
+            <li className={getActiveClassName(0)} onClick={() => {
+              navigate('/datainfo/m&a-invest')
+              setSelectedIndex(0)
+            }}>M&A・투자정보</li>
+            <li className={getActiveClassName(1)} onClick={() => {
+              navigate('/datainfo/government-support')
+              setSelectedIndex(1)
+            }}>정부지원사업 참여 모집</li>
+            <li className={getActiveClassName(2)} onClick={() => {
+              navigate('/datainfo/fund-support')
+              setSelectedIndex(1)
+            }}>정책자금 / 기업지원정보</li>
+            <li className={getActiveClassName(3)} onClick={() => {
+              navigate('/datainfo/fund-support')
+              setSelectedIndex(1)
+            }}>기술거래리스트</li>
+            <li className={getActiveClassName(4)} onClick={() => {
+              navigate('/datainfo/fund-support')
+              setSelectedIndex(1)
+            }}>컨설팅 실적</li>
           </div>
         </div>
         <div className='infoSearchCon'>
@@ -94,4 +112,4 @@ const DataInfo = ({ setHdSubStyle }) => {
   );
 };
 
-export default DataInfo; */
+export default DataInfo;

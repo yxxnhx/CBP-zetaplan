@@ -16,7 +16,6 @@ const QnaDetail = ({ setHdSubStyle }) => {
     setData(detailData);
   }, [])
 
-  /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
@@ -37,8 +36,8 @@ const QnaDetail = ({ setHdSubStyle }) => {
         </div>
         <p className='qnaSubTitle'>{data.title}</p>
         <ul className='qnaDetailInfo'>
-          <li>{data.writerName}</li>
-          <li>{data.hit}</li>
+          <li>작성자: {data.writerName}</li>
+          <li>조회수: {data.hit}</li>
           <li>{data.createdAt}</li>
         </ul>
         <div className='qnaContent'>
