@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 import React, { useEffect, useState } from 'react';
-=======
-/*import React, { useEffect, useState } from 'react';
->>>>>>> Stashed changes
 import { Link, useParams } from 'react-router-dom';
 import SubBanner from '../../components/common/SubBanner';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
@@ -66,8 +62,4 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
   );
 };
 
-<<<<<<< Updated upstream
 export default NewsDetailItem;
-=======
-export default NewsDetailItem;*/
->>>>>>> Stashed changes
