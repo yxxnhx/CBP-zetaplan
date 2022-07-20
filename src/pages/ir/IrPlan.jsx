@@ -18,15 +18,15 @@ const IrPlan = ({ setHdSubStyle }) => {
       <div className='inner'>
         <div className="irSubtitle">사업계획서</div>
         <ul className='irCircle'>
-          <li>핵심요약<br />(Executive Summary)</li>
-          <li>기업개요<br />(Corporate Overview)</li>
-          <li>제품/용역<br />(Product&Service)</li>
-          <li>재무계획<br />(Financial Planning)</li>
-          <li>인력/조직<br />(Organization)</li>
-          <li>마케팅능력<br />(Marketing)</li>
-          <li>위험/기회<br />(Risks & Opportunities)</li>
-          <li>실행일정<br />(Action Plan)</li>
-          <li>사업체제<br />(Business System)</li>
+          <li>핵심요약<br /><span>(Executive Summary)</span></li>
+          <li>기업개요<br /><span>(Corporate Overview)</span></li>
+          <li>제품/용역<br /><span>(Product&Service)</span></li>
+          <li>재무계획<br /><span>(Financial Planning)</span></li>
+          <li>인력/조직<br /><span>(Organization)</span></li>
+          <li>마케팅능력<br /><span>(Marketing)</span></li>
+          <li>위험/기회<br /><span>(Risks & <br /> Opportunities)</span></li>
+          <li>실행일정<br /><span>(Action Plan)</span></li>
+          <li>사업체제<br /><span>(Business System)</span></li>
         </ul>
         <div className="irBusinessContent">
           <ul>

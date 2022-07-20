@@ -42,19 +42,26 @@ const Partners = () => {
           spaceBetween={3}
           slidesPerView={7}
           breakpoints={{
+            1920: {
+              slidesPerView:7,
+              spaceBetween:3
+            },
             1024: {
+              slidesPerView:5,
+              spaceBetween:3
+            },
+            900: {
               slidesPerView:4,
-              spaceBetween:5
+              spaceBetween:3
             },
-            768: {
-              slidesPerView:2,
-              spaceBetween:8
+            767 :{
+              slidesPerView:4,
+              spaceBetween:3
             },
-            360: {
-              slidesPerView:10,
+            370: {
+              slidesPerView:4,
               spaceBetween:2
             },
-
           }}
         >
           <div className="netLogoList">
@@ -62,7 +69,7 @@ const Partners = () => {
               netData.map((data, i) => {
                 return (
                   <SwiperSlide key={data.id} >
-                    <img src={require('./../../img/main/logo/'+netData[i].img)} alt='network' height="80rem"className="netLogo"/>
+                    <img src={require('./../../img/main/logo/'+netData[i].img)} alt='network' className="netLogo"/>
                   </SwiperSlide>
                 )
               })
@@ -84,13 +91,35 @@ const Partners = () => {
           }}
           spaceBetween={3}
           slidesPerView={7}
+          breakpoints={{
+            1920: {
+              slidesPerView:7,
+              spaceBetween:3
+            },
+            1024: {
+              slidesPerView:5,
+              spaceBetween:3
+            },
+            900: {
+              slidesPerView:4,
+              spaceBetween:3
+            },
+            767 :{
+              slidesPerView:4,
+              spaceBetween:3
+            },
+            370: {
+              slidesPerView:4,
+              spaceBetween:2
+            },
+          }}
         >
           <div className="netLogoList">
             {
               netData.map((data, i) => {
                 return (
-                  <SwiperSlide key={data.id} >
-                    <img src={require('./../../img/main/logo/'+netData[i].img)} alt='network' height="80rem"className="netLogo"/>
+                  <SwiperSlide key={data.id} className='netLogos'>
+                    <img src={require('./../../img/main/logo/'+netData[i].img)} alt='network' className="netLogo"/>
                   </SwiperSlide>
                 )
               })

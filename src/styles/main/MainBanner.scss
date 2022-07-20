@@ -7,9 +7,9 @@ width: 100vw;
     width: 100%;
     height: 90rem;
   }
-  .mainTitle {
+  .mainTitleArea {
 
-    h1 {
+    .mainTitle {
       font-family: 'Montserrat', sans-serif;
       font-size: 10rem;
       font-weight: bolder;
@@ -18,7 +18,7 @@ width: 100vw;
       top: 24%;
       left: 6%;
     }
-    h2 {
+    .mainDes {
       font-family: 'Noto Sans KR', sans-serif;
       font-size: 3.7rem;
       line-height: 1.7;
@@ -69,4 +69,42 @@ width: 100vw;
 
 .myMainSlider {
   background-color: #000;
+}
+
+.stop {
+  font-size: 10rem;
+  color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .mainBanner {
+    img {
+      height: 60rem;
+    }
+    .mainTitleArea {
+      .mainTitle {
+        font-size: 7rem;
+      }
+      .mainDes {
+        font-size: 3.5rem;
+      } 
+    }
+  }
+
+}
+@media (min-width: 360px) and (max-width: 767px){
+  .mainBanner {
+    img {
+      height: 50rem;
+    }
+    .mainTitleArea {
+      .mainTitle {
+        font-size: 6rem;
+      }
+      .mainDes {
+        font-size: 3rem;
+      } 
+    }
+  }
+
 }

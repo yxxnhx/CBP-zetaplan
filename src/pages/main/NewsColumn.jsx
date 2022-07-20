@@ -62,9 +62,6 @@ const NewsColumn = () => {
             })
 
           }
-          {/* <MainAll />
-          <MainNews />
-          <MainColumn /> */}
         </div>
       </div>
     </div>

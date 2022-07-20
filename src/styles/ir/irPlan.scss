@@ -13,28 +13,34 @@
 .irCircle {
   display: flex;
   flex-wrap: wrap;
-  width: 150rem;
+  width: 82vw;
   justify-content: center;
   align-items: center;
   margin: 8.5rem auto;
   li {
-    width: 24rem;
-    height: 24rem;
+    width: 12.7vw;
+    height: 12.7vw;
     border-radius: 50%;
     border: 1px solid $main-color;
     margin-right: 4rem;
     position: relative;
-    font-size: 2.1rem;
+    font-size: 1.3vw;
     font-weight: bold;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 1.7;
+    flex-direction: column;
     
+    span {
+      font-size: 1.2vw;
+      line-height: 1.5;
+    }
     &:hover {
       background-color: $main-color;
       color: $basic-white;
+
     }
 
     &::before {

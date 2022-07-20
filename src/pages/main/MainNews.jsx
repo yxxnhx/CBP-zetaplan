@@ -7,9 +7,10 @@ import 'swiper/css/pagination';
 import newsData from './../../db/newsList.json'
 import { useState, useEffect } from 'react';
 import './../../styles/main/NewsColumn.scss';
-
+import { useNavigate } from 'react-router-dom';
 
 const MainNews = () => {
+  const navigate = useNavigate();
   const [newsDb, setNewsDb] = useState([]);
   useEffect(()=>{
     setNewsDb(newsData);
@@ -26,7 +27,7 @@ const MainNews = () => {
         modules={[Navigation, Pagination]}
         navigation={navigationBtn}
         loop={true}
-        spaceBetween={10}
+        spaceBetween={100}
         slidesPerView={4}
       >
         <div className="allSliderArea">
@@ -34,7 +35,7 @@ const MainNews = () => {
             newsDb.map((data, i) => {
               return (
                 <SwiperSlide key={data.id}>
-                  <div className="mainNClListBox">
+                  <div className="mainNClListBox" onClick={()=> navigate(`/news/news/${data.id}`)}>
                     <div className="mainNCTxt">
                       <div className="mainNCCategory">{data.category}</div>
                       <div className="mainNCTitle">{data.title}</div>

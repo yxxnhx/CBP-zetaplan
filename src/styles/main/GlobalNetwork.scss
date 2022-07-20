@@ -4,8 +4,11 @@
 .mainGb {
   background: url('./../../img/main/globalnetwork/globalNetwork_bg@2x.png') no-repeat;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 93.4rem;
+  .mainGbInner {
+    width: 90%;
+  }
 
   .mainGbTitle {
     color: #fff;
@@ -38,14 +41,21 @@
         padding: 1rem 2.7rem 1rem 5rem;
         border-radius: 5rem;
         margin-bottom: 5.7rem;
+        span {
+          font-size: 1.6rem;
+          font-weight: bold;
+  
+        }
       &::before {
         content: "";
         display: block;
         background: url('./../../img/main/globalnetwork/location_on_white_24dp.svg');
-        width: 2.4rem;
-        height: 2.4rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 1.7vw;
+        height: 1.9vw;
         position: absolute;
-        top: 0.5rem;
+        top: 0.7rem;
         left: 1.5rem;
       }
       &:hover {
@@ -59,31 +69,42 @@
 }
 .mainGbJ {
   align-self: flex-start;
-  top: 19rem;
-  left: 36rem;
+  top: 76%;
+  left: 18%;
 }
 .mainGbH {
   align-self: flex-start;
-  top: 32rem;
-  left: 52rem;
+  top: 102%;
+  left: 26%;
 }
 .mainGbA {
   align-self: flex-start;
-  top: 47rem;
-  left: 6rem;
+  top: 135%;
+  left: 6%;
 }
 .mainGbB {
-  top: 24rem;
-  left: 116rem;
+  top: 86%;
+  left: 67%;
   align-self: flex-end;
 }
 .mainGbS {
-  top: 33rem;
-  left: 137rem;
+  top: 110%;
+  left: 77%;
   align-self: flex-end;
 }
 .mainGbGJ {
-  top: 39rem;
-  left: 130rem;
+  top: 132%;
+  left: 70%;
   align-self: flex-end;
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+
+}
+@media (min-width: 360px) and (max-width: 767px){
+  .mainCity {
+    display: none;
+  }
+
 }

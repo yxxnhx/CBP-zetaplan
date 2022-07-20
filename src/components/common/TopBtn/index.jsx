@@ -23,7 +23,6 @@ export default function TopButton() {
       }
     }
 
-    console.log(window.scrollY)
     window.addEventListener('scroll', handleShowButton)
     return () => {
       window.removeEventListener('scroll', handleShowButton)
@@ -43,6 +42,7 @@ const ScrollContainer = styled.div `
   width: 10rem;
   height: auto;
   position: relative;
+  z-index: 15;
 `
 const TopBtn = styled.button `
   background-image: url(${buttonImgW});

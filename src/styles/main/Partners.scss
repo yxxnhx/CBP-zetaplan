@@ -29,3 +29,37 @@
     padding-bottom: 4rem;
   }
 
+
+.mySlider {
+
+  .netLogoList {
+    .netLogos {
+    }
+    
+  }
+}
+  .netLogo {
+    width: auto;
+    height: 5vw;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px){
+    .netLogo {
+      background-color: #fff;
+      padding: 0 0.5rem;
+      border-radius: 10px;
+      height: 8vw;
+
+  }
+
+  }
+  @media (min-width: 360px) and (max-width: 767px){
+    .netLogo {
+      background-color: #fff;
+      padding: 0 0.5rem;
+      border-radius: 5px;
+      height: 8vw;
+
+  }
+
+  }

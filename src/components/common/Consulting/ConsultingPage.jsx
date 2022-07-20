@@ -1,5 +1,5 @@
 import React from 'react';
-import './../../../styles/consul/index.scss'
+import './../../../styles/consul/consultingPage.scss'
 import { useState, useEffect } from 'react';
 import SubBanner from './../SubBanner'
 import subBg from './../../../img/bg/consulPage_bg@2x.png'
