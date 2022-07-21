@@ -29,6 +29,43 @@ const MainNews = () => {
         loop={true}
         spaceBetween={100}
         slidesPerView={4}
+        breakpoints={{
+          1500:{
+            spaceBetween:100,
+            slidesPerView:4
+          },
+          1300:{
+            spaceBetween:150,
+            slidesPerView:4
+          },
+          1200:{
+            spaceBetween:50,
+            slidesPerView:3
+          },
+          950:{
+            spaceBetween:70,
+            slidesPerView:3
+          },
+
+          
+          900: {
+            spaceBetween:10,
+            slidesPerView:2.7
+          },
+          600: {
+            spaceBetween:10,
+            slidesPerView:2.5
+          },
+          400: {
+            spaceBetween:10,
+            slidesPerView:1.5
+          },
+          100: {
+            spaceBetween:10,
+            slidesPerView:1.3
+          },
+
+        }}
       >
         <div className="allSliderArea">
           {

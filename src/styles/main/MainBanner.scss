@@ -90,6 +90,24 @@ width: 100vw;
       } 
     }
   }
+  .swiperBtnBox {
+  
+    .prev {
+      background: url('../../../src/img/zetaplan_splite.png') no-repeat -195px -221px;
+      background-size: 599px 280px;
+      width: 8px;
+      height: 13px;
+      font-size: 0;
+    }
+    
+    .next {
+      background: url('../../../src/img/zetaplan_splite.png') -236px -221px;
+      background-size: 599px 280px;
+      width: 8px;
+      height: 13px;
+      font-size: 0;
+    }
+  }
 
 }
 @media (min-width: 360px) and (max-width: 767px){
@@ -104,6 +122,24 @@ width: 100vw;
       .mainDes {
         font-size: 3rem;
       } 
+    }
+  }
+  .swiperBtnBox {
+  
+    .prev {
+      background: url('../../../src/img/zetaplan_splite.png') no-repeat -195px -221px;
+      background-size: 599px 280px;
+      width: 8px;
+      height: 13px;
+      font-size: 0;
+    }
+    
+    .next {
+      background: url('../../../src/img/zetaplan_splite.png') -236px -221px;
+      background-size: 599px 280px;
+      width: 8px;
+      height: 13px;
+      font-size: 0;
     }
   }
 

@@ -10,9 +10,14 @@
     width: 90%;
   }
 
-  .mainGbTitle {
+  .mainGbArea {
     color: #fff;
-    padding: 8.6rem 0 0 5rem;
+    padding: 8.6rem 0 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 93.4rem;
+
     .mainGbTitleT {
       font-size: 5rem;
       font-weight: bold;
@@ -20,47 +25,59 @@
       margin-bottom: 3.5rem;
     }
     .mainGbTitleD {
-      font-size: 2.6rem;
-      font-weight: 500;
-      line-height: 1.7;
+      p {
+        font-size: 2.6rem;
+        font-weight: 500;
+        line-height: 1.7;
+      }
     }
     ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 15rem 20.3rem 16.4rem 17.3rem;
-      position: relative;
+      display: grid;
+      grid-template-columns: auto auto;
+      place-items: center;
+      padding: 3rem 0.3rem 1.4rem 3.3rem;
+      box-sizing: border-box;
+      height: 20vw;
       li {
-        font-size: 1.6rem;
-        font-weight: bold;
-        font-family: 'Montserrat';
-        position: absolute;
-        background-color: transparent;
-        border: 3px solid #fff;
-        padding: 1rem 2.7rem 1rem 5rem;
-        border-radius: 5rem;
-        margin-bottom: 5.7rem;
-        span {
+        display: flex;
+        flex-direction: column;
+
+        .mainGN {
           font-size: 1.6rem;
           font-weight: bold;
-  
+          font-family: 'Montserrat';
+          position: relative;
+          background-color: transparent;
+          border: 3px solid #fff;
+          padding: 1rem 2.7rem 1rem 5rem;
+          border-radius: 5rem;
+          margin-bottom: 1.563vw;
+          display: flex;
+          justify-content: center;
+          display: inline-block;
+
+          span {
+            font-size: 1.6rem;
+            font-weight: bold;
+    
+          }
+        &::before {
+          content: "";
+          display: block;
+          background: url('./../../img/main/globalnetwork/location_on_white_24dp.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 1.3vw;
+          height: 1.5vw;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 1.5rem;
         }
-      &::before {
-        content: "";
-        display: block;
-        background: url('./../../img/main/globalnetwork/location_on_white_24dp.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 1.7vw;
-        height: 1.9vw;
-        position: absolute;
-        top: 0.7rem;
-        left: 1.5rem;
-      }
-      &:hover {
-        background-color: rgba($color: $main-color, $alpha: 0.7);
-        transition: all 0.1s linear;
+        &:hover {
+          background-color: rgba($color: $main-color, $alpha: 0.7);
+          transition: all 0.1s linear;
+        }
       }
 
     }
@@ -69,42 +86,63 @@
 }
 .mainGbJ {
   align-self: flex-start;
-  top: 76%;
-  left: 18%;
+  margin-left: 10rem;
+
 }
 .mainGbH {
   align-self: flex-start;
-  top: 102%;
-  left: 26%;
+  margin-left: 20rem;
 }
 .mainGbA {
   align-self: flex-start;
-  top: 135%;
-  left: 6%;
 }
 .mainGbB {
-  top: 86%;
-  left: 67%;
   align-self: flex-end;
+  margin-right: 5rem;
 }
 .mainGbS {
-  top: 110%;
-  left: 77%;
+  margin-right: 15rem;
   align-self: flex-end;
 }
 .mainGbGJ {
-  top: 132%;
-  left: 70%;
+  margin-right: 5rem;
   align-self: flex-end;
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
-
-
+@media (min-width: 1024px) and (max-width: 1900px) {
+  .mainGb .mainGbInner .mainGbArea {
+    height: 80rem;
+  }
 }
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+  // .mainGb {
+  //   height: 50rem;
+  //   .mainGbArea {
+  //     height: 50rem;
+
+  //   }}
+    .mainGb {
+    height: 65rem;
+}
+
+    .mainGb .mainGbInner .mainGbArea {
+      height: 65rem;
+    }
+}
+
+
+
 @media (min-width: 360px) and (max-width: 767px){
-  .mainCity {
+  .mainGb .mainGbTitle .mainGbTitleD  {
+    font-size: 1.8rem;
+  }
+  .mainGb .mainGbArea ul  {
     display: none;
   }
+  .mainGb {
+    height: 45rem;
+}
 
 }

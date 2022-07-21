@@ -20,15 +20,15 @@
     }
 
     .newsColumnMore{
-      width: 9.896vw;
-      height: 2.604vw;
+      width: 15rem;
+      height: 5rem;
       border: 1px solid #fff;
       border-radius: 3rem;
       color: #fff;
-      font-size: 1vw;
+      font-size: 1.6rem;
       position: relative;
       text-align: center;
-      line-height: 2.604vw;
+      line-height: 5rem;
       padding-right: 1rem;
 
       &::after{
@@ -45,9 +45,9 @@
   }
   .mainNewsColumn {
     width: 100%;
-    height: 37vw;
+    height: 60rem;
     background-color: $main-color;
-    padding: 5vw 0 5rem 5vw;
+    padding: 2rem 0 5rem 5vw;
     box-sizing: border-box;
     }
 }
@@ -61,9 +61,8 @@
 
   .newsColumnTab{
     display: flex;
-    margin-bottom: 5rem;
     position: absolute;
-    top: -1.7rem;
+    top: 24px;
     left: 0;
     z-index: 10;
     .mainNCTap {
@@ -73,6 +72,9 @@
       margin-left: 1rem;
       font-size: 1.5rem;
       font-family: 'Montserrat';
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 
@@ -80,11 +82,11 @@
 
 
   .newsColumnBtn {
-    width: 4.167vw;
+    width: 7.2rem;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 0%;
+    top: 7%;
     left: 73%;
     z-index: 9;
 
@@ -112,19 +114,19 @@
 
 .mainNCSlide {
   width: 100vw;
-  height: 29vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5vw;
+  padding-top: 8vw;
 }
 .mainNClListBox {
-  width: 25vw;
-  height: 23vw;
+  width: 38rem;
+  height: 40rem;
+  cursor: pointer;
 
   .mainNCTxt {
-    width: 25vw;
-    height: 23vw;
+    width: 38rem;
+    height: 40rem;
     padding: 2.4rem 2.8rem;
     box-sizing: border-box;  
     z-index: 10;
@@ -154,13 +156,16 @@
     .mainNCDate {
       font-size: 1.8rem;
       font-family: 'Noto Sans KR';
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 
   .mainNCDimmed {
     position: absolute;
-    width: 25vw;
-    height: 23vw;
+    width: 38rem;
+    height: 40rem;
     background-color: rgba($color: #fff, $alpha: 0.3);
     top: 0;
     left: 0;
@@ -168,8 +173,8 @@
   }
 
     .mainNCBg {
-      width: 25vw;
-      height: 23vw;
+      width: 38rem;
+      height: 40rem;
       position: absolute;
       z-index: -1;
       top: 0;
@@ -178,7 +183,7 @@
       border-radius: 5px;
       
       img {
-        width: 26vw;
+        width: 38rem;
         height: auto;
         max-width: 100%;
         max-height: 100%;
@@ -211,17 +216,92 @@
   color: #fff;
 }
 
+
 @media (min-width: 768px) and (max-width: 1023px){
-
-
+  .mySlider.mainNCSlide {
     .newsColumnBtn {
-      display: none;
+      width: 5rem;
+
+      .prev {
+        background: url('../../../src/img/zetaplan_splite.png') no-repeat -195px -221px;
+        background-size: 599px 280px;
+        width: 8px;
+        height: 13px;
+        font-size: 0;
+      }
+      
+      .next {
+        background: url('../../../src/img/zetaplan_splite.png') -236px -221px;
+        background-size: 599px 280px;
+        width: 8px;
+        height: 13px;
+        font-size: 0;
+      }
     }
 
+  }
+  .newsColumnTab {
+    display: flex;
+    position: absolute;
+    top: 11px;
+    left: 0;
+    z-index: 10;
+  }
+  .mainNewsInner .mainNewsColumn {
+    height: 58rem;
+  }
 }
 @media (min-width: 360px) and (max-width: 767px){
-  .mainCity {
-    display: none;
+  .mySlider.mainNCSlide {
+    .newsColumnBtn {
+      width: 5rem;
+      .prev {
+        background: url('../../../src/img/zetaplan_splite.png') no-repeat -195px -221px;
+        background-size: 599px 280px;
+        width: 8px;
+        height: 13px;
+        font-size: 0;
+      }
+      
+      .next {
+        background: url('../../../src/img/zetaplan_splite.png') -236px -221px;
+        background-size: 599px 280px;
+        width: 8px;
+        height: 13px;
+        font-size: 0;
+      }
+    }
   }
+  .newsColumnMore{
+    &::after{
+      display: none;
+    }
+  }
+  .mainNewsInner .mainNewsTop .newsColumnMore {
+    padding-right: 0;
 
+  }
+  .newsColumnTab {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 10;
+  }
+  .mainNCSlide {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vw;
+  }
+  .mainNewsInner .mainNewsColumn {
+    padding: 4rem 0 5rem 5vw;
+    height: 56rem;
+  }
+  .mySlider.mainNCSlide .newsColumnBtn {
+    top: 0%;
+    left: 73%;
+
+}
 }
