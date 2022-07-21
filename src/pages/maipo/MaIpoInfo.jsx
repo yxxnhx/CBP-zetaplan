@@ -13,7 +13,7 @@ const MaIpoInfo = ({ setHdSubStyle }) => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
 
-  const maTitle = 'M&A는 기업에게 <br /> 재 도약과 성장의 기회를 부여합니다.';
+  const maTitle = 'M&A는 기업에게 <br /> 재도약과 성장의 기회를 부여합니다.';
   const ipoTitle = 'IPO는 기업에게 <br /> 상장을 향한 큰 도약입니다.';
 
   const tabContentents = [

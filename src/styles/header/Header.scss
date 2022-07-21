@@ -28,6 +28,10 @@ header.hdMain {
       height: 46px;
     }
 
+    .hdUtil {
+      color: $basic-black;
+    }
+
     .hdUtil .hdSearchBtn {
       background: url('../../img/zetaplan_splite.png') no-repeat -419px -151px;
       background-size: 599px 280px;
@@ -43,7 +47,7 @@ header.hdMain {
     }
 
     .hdGnbArea {
-      color: black;
+      color: $basic-black;
     }
   }
 

@@ -4,7 +4,7 @@
   @include Inner;
 }
 
-/* head */
+/* 제목 */
 .miPerfoHead {
   display: flex;
   justify-content: space-between;
@@ -54,143 +54,221 @@
 }
 
 
-/* content */
+
+// content
+
+// m&a 성과
 .miPerfoMainImg {
   width: 90%;
-  margin: 10rem 7rem;
+  margin: 5.208vw 5.208vw;
 }
 
-
-
-/* ipo 성과 */
+// ipo 성과
 .ipoPerfo {
   display: flex;
-  margin-top: 25rem;
+  margin-top: 15.625vw;
+  margin-bottom: 7.813vw;
+  margin-left: 10vw;
 }
 
-.ipoCircleWrap {
-  position: relative;
-  width: 25%;
-  height: 35rem;
-}
-
-.ipoCircle {
-  position: absolute;
-  left: 12rem;
-  top: 5rem;
-  width: 100%;
-  height: 100%;
-  animation: rotate linear infinite 40s forwards;
-}
-
-.ipoCircleItem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 9.0625rem;
-  height: 9.0625rem;
-  border: .5rem solid #fff;
+.ipoPerfoCircleWrap {
+  width: 20.833vw;
+  height: 20.833vw;
+  background: url('../../img/icon/zetaplan_logo@2x.png') no-repeat center / 80% 24%;
+  border: 1rem solid #ccc;
   border-radius: 50%;
   box-shadow: 0 .625rem 1.25rem rgba(18, 27, 116, .18);
+  position: relative;
+
+  .ipoPerfoCircle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: circle linear infinite 40s forwards;
+  }
 }
 
-.ipoCircleItemObject {
-  width: 18rem;
-  height: 18rem;
-  top: -1.875rem;
-  left: 50%;
-  background-color: #070F76;
-  transform: translate(-23rem, -9rem);
-}
-
-.ipoCircleItemConnection {
-  width: 18rem;
-  height: 18rem;
-  bottom: .625rem;
-  right: 0;
-  background-color: #1E3A8B;
-  transform: translate(14rem, -10rem)
-}
-
-.ipoCircleItemSpace {
-  width: 18rem;
-  height: 18rem;
-  bottom: .625rem;
-  left: 0;
-  background-color: #583CF2;
-  transform: translate(-2rem, 13rem);
-}
-
-.ipoCircleText {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #fff;
-  animation: rotate2 linear infinite 40s forwards;
-}
-
-@keyframes rotate {
-  0% {}
-
+@keyframes circle {
   100% {
     transform: rotate(360deg);
   }
 }
 
-@keyframes rotate2 {
-  0% {}
+.ipoPerfoCircleItem {
+  width: 9.375vw;
+  height: 9.375vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: .5rem solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 .625rem 1.25rem rgba(18, 27, 116, .18);
 
+  &.ipoPerfoCircleItemRestruc {
+    top: -1.042vw;
+    left: 9.896vw;
+    background-color: #070F76;
+    transform: translate(-11.979vw, -4.688vw);
+  }
+
+  &.ipoPerfoCircleItemFunds {
+    bottom: 0.521vw;
+    right: -0.521vw;
+    background-color: #1E3A8B;
+    transform: translate(7.292vw, -5.208vw)
+  }
+
+  &.ipoPerfoCircleItemPub {
+    bottom: 0.521vw;
+    left: 0;
+    background-color: #583CF2;
+    transform: translate(-1.042vw, 6.771vw);
+  }
+
+  .ipoPerfoCircleTxt {
+    font-size: 1.042vw;
+    color: #fff;
+    animation: txt linear infinite 40s forwards;
+  }
+}
+
+@keyframes txt {
   100% {
     transform: rotate(-360deg);
   }
 }
 
-.ipoCircleBg {
-  background: url('../../img/main/zetaplanLogo.svg') no-repeat 5rem 3rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 12rem;
-  top: 5rem;
-  border: 1rem solid #ccc;
-  background-size: 80% 80%;
-  border-radius: 50%;
-  box-shadow: 0 .625rem 1.25rem rgba(18, 27, 116, .18);
+.ipoPerfoTxt {
+  padding-left: 11.979vw;
+  margin-top: -5.208vw;
+
+  .ipoPerfoTxtTop {
+    font-size: 3rem;
+
+    &:nth-of-type(1) {
+      color: #070F76;
+    }
+
+    &:nth-of-type(2) {
+      color: #1E3A8B;
+    }
+
+    &:nth-of-type(3) {
+      color: #583CF2;
+    }
+  }
+
+  .ipoPerfoTxtMid {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 6rem;
+  }
+
+  .ipoPerfoTxtBt {
+    font-size: 1.7rem;
+    font-family: 'Noto Sans KR';
+    line-height: 3rem;
+    color: gray;
+    margin-bottom: 2.083vw;
+  }
 }
 
-.ipoValueProcess {
-  position: relative;
-  bottom: 15rem;
-  left: 30rem;
-  padding: 4rem;
+@media (max-width:1550px) {
 
-  h3 {
+  .ipoPerfoTxt .ipoPerfoTxtTop {
+    font-size: 2.8rem;
+  }
+
+  .ipoPerfoTxt .ipoPerfoTxtMid {
+    font-size: 3.3rem;
+  }
+
+  .ipoPerfoTxt .ipoPerfoTxtBt {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width:1360px) {
+  .ipoPerfo {
+    display: block;
+    margin-left: 0;
+  }
+
+  .ipoPerfoCircleWrap {
+    top: 2.083vw;
+    left: 26vw;
+    width: 30vw;
+    height: 30vw;
+    background-size: 70%;
+  }
+
+  .ipoPerfoCircleItem {
+    width: 15vw;
+    height: 15vw;
+
+    &.ipoPerfoCircleItemRestruc {
+      top: -6vw;
+      left: 9.896vw;
+    }
+
+    &.ipoPerfoCircleItemFunds {
+      bottom: 0.521vw;
+      right: -5vw;
+    }
+
+    &.ipoPerfoCircleItemPub {
+      bottom: -4vw;
+      left: 0;
+    }
+
+    .ipoPerfoCircleTxt {
+      font-size: 2vw;
+    }
+  }
+
+  .ipoPerfoTxt {
+    margin-top: 20vw;
+    margin-left: 2.5vw;
+  }
+
+  .ipoPerfoTxt .ipoPerfoTxtTop {
+    font-size: 2.8rem;
+  }
+
+  .ipoPerfoTxt .ipoPerfoTxtMid {
     font-size: 3.2rem;
-    margin-top: 4rem;
   }
 
-  h3:nth-of-type(1) {
-    color: #070F76;
+  .ipoPerfoTxt .ipoPerfoTxtBt {
+    font-size: 2rem;
+    margin-bottom: 3vw;
+  }
+}
+
+@media (max-width:1120px) {
+
+  .ipoPerfoTxt .ipoPerfoTxtTop {
+    font-size: 2.5rem;
   }
 
-  h3:nth-of-type(2) {
-    color: #1E3A8B;
+  .ipoPerfoTxt .ipoPerfoTxtMid {
+    font-size: 2.8rem;
   }
 
-  h3:nth-of-type(3) {
-    color: #583CF2;
-  }
-
-  div {
-    font-size: 4.5rem;
-    font-weight: 600;
-    line-height: 7rem;
-  }
-
-  p {
+  .ipoPerfoTxt .ipoPerfoTxtBt {
     font-size: 1.8rem;
-    font-family: 'Noto Sans KR';
-    line-height: 2.8rem;
-    color: gray;
+  }
+}
+
+@media (max-width:810px) {
+  .ipoPerfoTxt {
+    margin-left: -3vw;
+  }
+}
+
+@media (max-width:600px) {
+  .ipoPerfoTxt {
+    margin-left: -6vw;
   }
 }
