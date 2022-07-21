@@ -15,7 +15,7 @@ const Ir = ({ setHdSubStyle }) => {
   return (
     <div>
       <SubBanner title={title} img={subBg} />
-      <div className='inner'>
+      <div className='irInner'>
         <div className="irSubtitle">개요</div>
         <div className="irSubImg">
           <img src={require('./../../img/ir/ir_summery@2x.png')} alt="ir 개요" />

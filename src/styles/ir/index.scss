@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
 @import '../GlobalStyle.scss';
 
-.inner {
+.irInner {
   @include Inner;
+  background-color: #707070
 }
 
 .irSubtitle {
@@ -14,10 +15,13 @@
   justify-content: center;
 }
 
-.irSubImg  img {
-  height: 56vw;
+.irSubImg   {
+  height: 94rem;
   width: auto;
   margin: 7rem 0 14rem;
+  img {
+    height: 100%;
+  }
 }
 
 .irContent {
@@ -72,14 +76,6 @@
         border-bottom: 2px solid black;
       }
     }
-    .irListProcessImg {
-      font-size: 100px;
-      background-color: red;
-      background: url(./../../img/ir/ir_summery@2x.png) no-repeat red;
-      background-size: cover;
-      height: 980px;
-      width: auto;
-    }
 
     
   }
@@ -101,4 +97,31 @@
     font-size: $list-md;
     line-height: 1.7;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .irSubImg   {
+    height: 80rem;
+    width: auto;
+    margin: 7rem 0 14rem;
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+}
+@media (min-width: 360px) and (max-width: 767px){
+  .irSubImg   {
+    height: 60rem;
+    width: auto;
+    margin: 7rem 0 14rem;
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+
+
 }
