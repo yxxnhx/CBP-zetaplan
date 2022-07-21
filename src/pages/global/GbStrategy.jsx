@@ -18,7 +18,7 @@ const GbStrategy = ({ setHdSubStyle }) => {
       <SubBanner title={title} img={subBg} />
       <div className="gbInner">
         <div className="gbTabTitleBox">
-          <p className="gbTabTitle">성과</p>
+          <p className="gbTabTitle">전략수립</p>
         </div>
         <div className="gbContentTitle">
           (주)제타플랜인베스트는 중국,대만,베트남, 싱가폴,일본 등<br /> 전 세계적으로 우수한 해외 네트워크를 보유하고
@@ -47,56 +47,59 @@ const GbStrategy = ({ setHdSubStyle }) => {
           • 기업의 업종 및 성장단계에 맞는 투자자 정보 제공, 투자유치 설명회 개최 및 관심 투자자 매칭 지원 등 투자유치
           정보제공
         </p>
-        <p className="gbContentSubTitle">전문분야 강점</p>
-        <div className="gbContentBox">
-          <p className="gbContentBoxT">
-            01
-            <br />
-            해외 정부의 무역기관 지정
-          </p>
-          <p className="gbContentBoxC">
-            2018년 Being B&R International Co-incubation(ICI)와 MOU
-            <br /> 2017년 인도네시아 Sucofindo 업무 협력
-            <br /> 2016년 중국 강소성 하이먼 정부의 한국대표처 지정 <br />
-            2015년 베트남 IPA VIETNAM과 해외 수출 및 업무제휴 파트너 협약(MOU)
-          </p>
-        </div>
-        <div className="gbContentBox">
-          <p className="gbContentBoxT">
-            02
-            <br />
-            해외 수출지원실적 및<br /> 진출 성공의 노하우 보유
-          </p>
-          <p className="gbContentBoxC">
-            • 수요기업과 공급기업 무역을 위한 공식 매칭 가능
-            <br />
-            • 수요기업발굴, 협상지원, 계약지원, 사후관리 등 중국정부기관과의 협력체계 구축
-            <br />
-            • 2011년 ~ 현재까지 해외 투자/수출/ 기술거래 실적을 연평균 350만USD 달성
-            <br />• 연 7회 이상 기술거래/조인트벤처/투자 상담회 진행
-          </p>
-        </div>
-        <div className="gbContentBox">
-          <p className="gbContentBoxT">
-            03
-            <br />
-            Human Resources
-          </p>
-          <p className="gbContentBoxC">
-            • 석박사급의 이론과 실무를 겸비한 인력 투입 - 해당 분야 프로젝트 경험 보유 인력 풀 보유
-            <br />
-            - 중국관련 투자전문가
-            <br />
-            - 기술거래사 (국내외 7명 보유)
-            <br />
-            - 변리사, 공학박사, 국제공인경영컨설턴트
-            <br />- 중국 바이어 매칭 전문가 Pool 제휴
-          </p>
+        <div className="gbContentBoxWrap">
+          <p className="gbContentSubTitle">전문분야 강점</p>
+          <div className="gbContentBox">
+            <p className="gbContentBoxT">
+              01
+              <br />
+              해외 정부의 무역기관 지정
+            </p>
+            <p className="gbContentBoxC">
+              2018년 Being B&R International Co-incubation(ICI)와 MOU
+              <br /> 2017년 인도네시아 Sucofindo 업무 협력
+              <br /> 2016년 중국 강소성 하이먼 정부의 한국대표처 지정 <br />
+              2015년 베트남 IPA VIETNAM과 해외 수출 및 업무제휴 파트너 협약(MOU)
+            </p>
+          </div>
+          <div className="gbContentBox">
+            <p className="gbContentBoxT">
+              02
+              <br />
+              해외 수출지원실적 및<br /> 진출 성공의 노하우 보유
+            </p>
+            <p className="gbContentBoxC">
+              • 수요기업과 공급기업 무역을 위한 공식 매칭 가능
+              <br />
+              • 수요기업발굴, 협상지원, 계약지원, 사후관리 등 중국정부기관과의 협력체계 구축
+              <br />
+              • 2011년 ~ 현재까지 해외 투자/수출/ 기술거래 실적을 연평균 350만USD 달성
+              <br />• 연 7회 이상 기술거래/조인트벤처/투자 상담회 진행
+            </p>
+          </div>
+          <div className="gbContentBox">
+            <p className="gbContentBoxT">
+              03
+              <br />
+              Human Resources
+            </p>
+            <p className="gbContentBoxC">
+              • 석박사급의 이론과 실무를 겸비한 인력 투입 - 해당 분야 프로젝트 경험 보유 인력 풀 보유
+              <br />
+              - 중국관련 투자전문가
+              <br />
+              - 기술거래사 (국내외 7명 보유)
+              <br />
+              - 변리사, 공학박사, 국제공인경영컨설턴트
+              <br />- 중국 바이어 매칭 전문가 Pool 제휴
+            </p>
+          </div>
         </div>
         <p className="gbContentSubTitle">GCC란?</p>
         <p className="gbMaterialContent">
-          - “기술기반” 국내업체의 성공적인 해외시장 진출을 위해, 해외 현지 경험과 컨설팅 능력을 갖춘 글로벌기술 사업화
-          센터(GCC)를 통해 종합적인 글로벌 기술 사업화 컨설팅 서비스를 제공합니다.
+          - “기술기반” 국내업체의 성공적인 해외시장 진출을 위해, 해외 현지 경험과 컨설팅 능력을 갖춘
+          <br />
+          &nbsp;&nbsp; 글로벌기술 사업화 센터(GCC)를 통해 종합적인 글로벌 기술 사업화 컨설팅 서비스를 제공합니다.
         </p>
         <p className="gbMaterialContent">
           - 정의 : 기술기반 국내 기업의 해외진출 관련 종합적 기술사업화 컨설팅 서비스 제공
@@ -167,11 +170,11 @@ const GbStrategy = ({ setHdSubStyle }) => {
         </div>
         <div className="gbProcessListDesBox">
           <p className="gbProcessListDes">
-            기업신청접수
+            1. 기업신청접수
             <br />
-            ‣기업기술 평가
+            2. 기업기술 평가
             <br />
-            ‣기업의 선정
+            3. 기업의 선정
           </p>
           <p className="gbProcessListDes">
             공급대상기술
@@ -180,8 +183,16 @@ const GbStrategy = ({ setHdSubStyle }) => {
             <br />
             기술성 검토
           </p>
-          <p className="gbProcessListDes">현지 수요기술 관련 시장조사, 기업발굴, 분석</p>
-          <p className="gbProcessListDes">기술소개, 상담회 개최, 계약체결 협상 지원</p>
+          <p className="gbProcessListDes">
+            현지 수요기술
+            <br /> 관련 시장조사, 기업발굴, 분석
+          </p>
+          <p className="gbProcessListDes">
+            기술소개,
+            <br /> 상담회 개최,
+            <br /> 계약체결 <br />
+            협상 지원
+          </p>
           <p className="gbProcessListDes">
             성과분석 바탕
             <br />

@@ -12,19 +12,18 @@
     margin-left: 8rem;
     text-transform: uppercase;
     position: relative;
-    bottom: 8rem;
+    bottom: 7rem;
 
     .ziTitleBlue {
       font: {
-        size: 5.5rem;
-        weight: bold;
+        size: $main-title;
         family: Montserrat;
       }
       color: #1527a0;
     }
     .ziTitleBlack {
       font: {
-        size: 5rem;
+        size: $main-title;
         weight: bold;
         family: Montserrat;
       }
@@ -33,24 +32,24 @@
 
   .ziContentBox {
     display: flex;
+    width: 90%;
+    margin-left: 8rem;
+    position: relative;
+    bottom: 4rem;
 
     .ziCompanyDes {
-      font-size: 2rem;
+      font-size: 0.99vw;
       color: $basic-white;
-      width: 85rem;
       text-align: left;
-      margin-left: 8rem;
-      position: relative;
-      bottom: 6rem;
       line-height: 1.5;
     }
 
     .ziLinkBox {
+      margin-left: 10%;
       display: flex;
       color: $basic-white;
-      margin-left: 30rem;
       position: relative;
-      bottom: 6rem;
+      flex-wrap: nowrap;
 
       .ziCompanyLink a {
         display: block;
@@ -94,6 +93,20 @@
           left: 17rem;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .ziWrap .ziContentBox {
+    flex-direction: column;
+
+    .ziCompanyDes {
+      margin-left: 60px;
+    }
+
+    .ziLinkBox {
+      margin-top: 30px;
     }
   }
 }

@@ -4,7 +4,7 @@
   @include Inner;
 
   .gbTabTitleBox {
-    width: 144rem;
+    width: 85vw;
     border-bottom: 0.1rem solid $basic-gray3;
     padding-bottom: 2rem;
     .gbTabTitle {
@@ -22,7 +22,7 @@
     position: relative;
     text-indent: 8.5rem;
     font: {
-      size: 2.6rem;
+      size: 2.5rem;
       weight: bold;
     }
     margin-top: 8rem;
@@ -39,36 +39,87 @@
   }
 
   .gbMapImg {
-    margin: 10rem;
-    width: 155rem;
-    margin-top: 15rem;
-    width: 130rem;
+    margin: 3.646vw;
+    width: 90%;
   }
-}
 
-.accoBox {
-  display: flex;
-  margin-top: 2rem;
+  .gbAccordion {
+    width: 100%;
 
-  .titleBox {
-    display: flex;
-    align-items: center;
-    padding: 5rem;
-    width: 50rem;
+    .gbProcessItem {
+      margin-bottom: 0.5rem;
+      padding: 2rem;
+      width: 140rem;
+      box-sizing: border-box;
 
-    .title {
-      font-size: 2.1rem;
-      color: $main-color;
-      margin-left: 2rem;
+      .gbProcessBtn {
+        width: 85vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        border: 1px solid $main-color;
+        padding: 3rem 2rem;
+        font-size: 3rem;
+        letter-spacing: 1.2px;
+        color: #000;
+
+        .gbUnderBtn {
+          background: url('../../img/zetaplan_splite.png') no-repeat -137px -194px;
+          background-size: 599px 280px;
+          width: 22px;
+          height: 14px;
+        }
+        .gbTopBtn {
+          background: url('../../img/zetaplan_splite.png') no-repeat -137px -235px;
+          background-size: 599px 280px;
+          width: 22px;
+          height: 14px;
+        }
+      }
+
+      .gbProcessBtn.on {
+        background-color: $main-color;
+        color: #fff;
+      }
+
+      .gbProcessContent {
+        max-height: 0;
+        overflow: hidden;
+        width: 85vw;
+      }
+      .gbProcessContent.show {
+        height: auto;
+        max-height: 999rem;
+        transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+        border: 1px solid $main-color;
+      }
     }
   }
-  .txt {
-    width: 100rem;
-    ul {
-      margin-bottom: 3rem;
-      li {
-        font-size: 2.1rem;
-        line-height: 2;
+
+  .gbAccoContentBox {
+    padding: 3rem;
+    .gbAccoContentArea {
+      display: flex;
+      margin-left: 4.167vw;
+      margin-bottom: 1.563vw;
+      .gbAccoContentT {
+        display: flex;
+        align-items: center;
+        h1 {
+          font-size: 2rem;
+          color: $main-color;
+          width: 30rem;
+        }
+      }
+
+      .gbAccoContentC {
+        ul {
+          li {
+            font-size: 2rem;
+            line-height: 1.5;
+          }
+        }
       }
     }
   }

@@ -12,7 +12,6 @@ const OurBusiness = () => {
         <p className="obTitle">OUR BUSINESS</p>
         <div className="obInner">
           <div className="obList professional">
-            바보
             <div className="videoCon">
               <video src={professional} loop muted autoPlay></video>
               <div className="obVideoDes">

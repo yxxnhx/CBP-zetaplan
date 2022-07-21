@@ -3,82 +3,166 @@
 
 .pfWrap {
   width: 100vw;
-  height: 90rem;
-  display: flex;
-  justify-content: center;
+  height: auto;
+  background: url(./../../img/main/performance/performance_bg.png) no-repeat;
+  margin: auto;
 
   .pfCon {
-    background: url(./../../img/main/performance/performance_bg.png) no-repeat;
-    width: 100vw;
+    width: 150rem;
+    margin: auto;
+    padding-top: 7rem;
+    padding-bottom: 30rem;
 
     .pfMaintitle {
-      margin: 4rem;
-      display: flex;
-      justify-content: flex-start;
-
-      h1 {
-        color: $basic-white;
-        font : {
-          size: $main-title;
-          weight: bold;
-        }
+      color: $basic-white;
+      font : {
+        size: $main-title;
+        weight: bold;
+        family: Montserrat;
       }
+      margin-bottom: 5rem;
     }
 
     .pfListCon {
-      margin: 3rem auto;
+      width: 150rem;
       display: flex;
-      width: 177rem;
-      height: 6.17rem;
       justify-content: space-between;
       position: relative;
       bottom: 0.8rem;
 
       .pfList {
-        height: 61.7rem;
+        height: auto;
         background-color: $basic-gray1;
 
-        .pfConBox {
-          margin-left: 18rem;
-          width: 4.3rem;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+        .pfImgBox {
+          img {
+            width: 36rem;
+          }
+        }
 
+        .pfConBox {
           .pfIconBox {
-            margin-top: 6rem;
-            height: 100px;
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            height: 10rem;
+            img {
+              margin: auto;
+            }
           }
 
           .pfTitle {
-            margin-top: 2.5rem;
+            margin-top: 1rem;
             font: {
-              size: 3.6rem;
+              size: 3rem;
               weight: bold;
             }
             color: $main-color;
             margin-bottom: 2rem;
-            width: 13.5rem;
             text-align: center;
           }
 
           .pfCount {
             font: {
-              size: 7.6rem;
+              size: 6rem;
               weight: bold;
             }
+            display: flex;
+            justify-content: center;
           }
 
           .pfDes {
-            font-size: $size-lg;
+            font-size: 1.7rem;
             line-height: 1.5;
-            border-top: 1px solid $basic-black;
+            border-top: 0.1rem solid $basic-black;
             width: 34rem;
             padding-top: 2rem;
+            padding-bottom: 2rem;
             text-align: center;
-            margin-top: 2rem;
+            margin: 1.5rem auto 0;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pfWrap .pfCon .pfListCon {
+    width: 90vw;
+    height: auto;
+    flex-wrap: wrap;
+    margin-left: 2.604vw;
+
+    .pfList {
+      flex: 3 1 0%;
+      margin-bottom: 2rem;
+      margin-right: 2rem;
+
+      .pfImgBox {
+        display: flex;
+        img {
+          flex: 3 1 0%;
+        }
+      }
+
+      .pfConBox {
+        .pfIconBox {
+          display: none;
+        }
+        .pfTitle {
+          font-size: 4rem;
+          margin-top: 3rem;
+        }
+        .pfCount {
+          font-size: 3.8rem;
+        }
+
+        .pfDes {
+          font-size: 1.8rem;
+          margin-top: 2rem;
+          width: 35rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .pfWrap .pfCon .pfListCon {
+    width: 65vw;
+    height: auto;
+    flex-wrap: wrap;
+    margin-left: 15vw;
+
+    .pfList {
+      flex: 3 1 0%;
+      margin-bottom: 2rem;
+      margin-right: 2rem;
+
+      .pfImgBox {
+        display: flex;
+        img {
+          flex: 3 1 0%;
+        }
+      }
+
+      .pfConBox {
+        .pfIconBox {
+          display: none;
+        }
+        .pfTitle {
+          font-size: 3.5rem;
+          margin-top: 3.5rem;
+        }
+        .pfCount {
+          font-size: 3.3rem;
+        }
+
+        .pfDes {
+          font-size: 1.8rem;
+          margin-top: 2rem;
+          width: 35rem;
         }
       }
     }

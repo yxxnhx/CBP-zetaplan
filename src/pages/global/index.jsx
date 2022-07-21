@@ -20,7 +20,7 @@ const index = ({ setHdSubStyle }) => {
       <SubBanner title={title} img={subBg} />
       <div className="gbInner">
         <div className="gbTabTitleBox">
-          <p className="gbTabTitle">전략수립</p>
+          <p className="gbTabTitle">개요</p>
         </div>
         <p className="gbContentSubTitle">프로그램 개요</p>
         <div className="gbMaterialBox">
@@ -102,7 +102,7 @@ const index = ({ setHdSubStyle }) => {
               <p className="gbChartYear">2019</p>
               <p className="gbChartName">글로벌성과확산강화산업</p>
               <p className="gbChartCom">KIAT</p>
-              <p className="gbChartCon">바이어 발굴 및 매칭, 기술사업화 상담회 개최</p>
+              <p className="gbChartCon">바이어 발굴 및 매칭, 상담회 개최</p>
             </li>
             <li className="gbchartList">
               <p className="gbChartYear">2018</p>
@@ -120,7 +120,7 @@ const index = ({ setHdSubStyle }) => {
               <p className="gbChartYear">2018</p>
               <p className="gbChartName">중소환경기업 사업화기반구축사업</p>
               <p className="gbChartCom">한국환경산업기술원</p>
-              <p className="gbChartCon">해외진출 전략수립 컨설팅, 바이어 발굴 및 매칭</p>
+              <p className="gbChartCon">해외진출 전략수립 컨설팅, 바이어 매칭</p>
             </li>
             <li className="gbchartList">
               <p className="gbChartYear">2018</p>
