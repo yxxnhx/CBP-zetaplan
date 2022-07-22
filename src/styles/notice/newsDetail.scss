@@ -26,8 +26,11 @@
     }
 
     .contentBox {
-      width: 1000px;
+      width: 80%;
       margin: 60px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       img {
         width: auto;

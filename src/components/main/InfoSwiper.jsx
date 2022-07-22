@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../../styles/main/information.scss';
 import mnaInvestmentData from '../../db/m&a-investList.json';
 import govSupportData from '../../db/govSupportList.json';
@@ -14,6 +15,7 @@ import InfoSwiperItem from './InfoSwiperItem';
 
 const InfoSwiper = ({data}) => {
 
+  const navigate = useNavigate();
   const [state, setState] = useState([]);
 
   useEffect(()=> {
@@ -39,14 +41,34 @@ const InfoSwiper = ({data}) => {
     }
   }
 
+  const getUrlByCate = () => {
+    switch (data) {
+    case 'M&A・투자정보':
+      return '/datainfo/m&a-invest';
+    case '정부지원사업 참여 모집':
+      return '/datainfo/government-support';
+    case '정책자금 / 기업지원정보':
+      return '/datainfo/fund-support';
+    case '기술거래 리스트':
+      return '/datainfo/technology-trade';
+    case '컨설팅 실적':
+      return '/datainfo/consulting-list';
+    case 'Q&A':
+    default:
+      return '/qna';
+    }
+
+  }
+
   return (
     <div className="infoSwipBox">
       <p className='infoSwiperTitle'>{data}</p>
       <Swiper
         pagination={{
           dynamicBullets: true,
-          dynamicMainBullets: 5,
+          dynamicMainBullets: 3,
           clickable: true,
+          horizontalClass: 'infoSwiperHorizontal'
         }}
         modules={[Pagination]}
         className="informationSlide"
@@ -54,7 +76,11 @@ const InfoSwiper = ({data}) => {
         {
           state.map((item)=> {
             return (
-              <SwiperSlide key={item.id}>
+              <SwiperSlide key={item.id} onClick={() => {
+                const url= getUrlByCate();
+                navigate(`${url}/${item.id}`)
+
+              }}>
                 <InfoSwiperItem item={item} />
               </SwiperSlide>
             )

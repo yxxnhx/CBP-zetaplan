@@ -25,37 +25,40 @@ const Login = () => {
   };
 
   return (
-    <div className='loginContainer'>
-      <div className='logLeftContainer'>
-        <div className='logText'>
-          <p className='logTextFirst'>반갑습니다</p>
-          <p className='logTextSecond'>ZETAPLAN입니다</p>
+    <div className="loginBackGround">
+      <div className='loginContainer'>
+        <div className='logLeftContainer'>
+          <div className='logText'>
+            <p className='logTextFirst'>반갑습니다</p>
+            <p className='logTextSecond'>ZETAPLAN입니다</p>
+          </div>
+          <a className="loginLogo" href="/">ZETAPLAN 홈페이지로</a>
         </div>
-        <a className="loginLogo" href="/">ZETAPLAN 홈페이지로</a>
+        <div className='logRightContainer'>
+          <form className='loginForm'>
+            <label htmlFor="admin-id">
+              <input 
+                className="logIdInput" 
+                name="admin-id" 
+                type="text" 
+                placeholder='아이디' 
+                ref={adminRef}
+                onChange={onChange} />
+            </label>
+            <label htmlFor="admin-pwd">
+              <input 
+                className="logPwdInput" 
+                type="password"
+                name="admin-pwd" 
+                placeholder='비밀번호' 
+                ref={passwordRef} 
+                onChange={onChange}/>
+            </label>
+            <button className="loginBtn"type="button" onClick={onSubmit}>로그인</button>
+          </form>
+        </div>
       </div>
-      <div className='logRightContainer'>
-        <form className='loginForm'>
-          <label htmlFor="admin-id">
-            <input 
-              className="logIdInput" 
-              name="admin-id" 
-              type="text" 
-              placeholder='아이디' 
-              ref={adminRef}
-              onChange={onChange} />
-          </label>
-          <label htmlFor="admin-pwd">
-            <input 
-              className="logPwdInput" 
-              type="password"
-              name="admin-pwd" 
-              placeholder='비밀번호' 
-              ref={passwordRef} 
-              onChange={onChange}/>
-          </label>
-          <button className="loginBtn"type="button" onClick={onSubmit}>로그인</button>
-        </form>
-      </div>
+
     </div>
   );
 };

@@ -42,7 +42,6 @@ const Qna = ({ setHdSubStyle }) => {
     return <div></div>;
   }
 
-  console.log(currentItems);
   return (
     <div>
       <SubBanner title={title} img={subBg} />
@@ -51,12 +50,18 @@ const Qna = ({ setHdSubStyle }) => {
           <h2 className='qnaTitle'>Q&A</h2>
         </div>
         <div className='qnaSearchInput'>
-          <label htmlFor="qnaCategory"></label>
-          <select className='qnaSelect' name="qanCategory" id="qnaCategory">
-            <option value="all">전체</option>
-            <option value="writer">작성자</option>
-            <option value="createdAt">작성일</option>
-          </select>
+          {/* <div className="qnaSelectBox">
+            <select className='qnaSelect' name="qanCategory" id="qnaCategory">
+              <option value="all">전체</option>
+              <option value="writer">작성자</option>
+              <option value="createdAt">작성일</option>
+            </select> */}
+          <ul className='qnaSearchCategory'>
+            <span className='arrow'></span>
+            <li className='all'>전체</li>
+            <li className='writer'>작성자</li>
+            <li className='writeDate'>작성일</li>
+          </ul>
           <div className='qnaSearchBox'>
             <input className="qnaSearch" type="text" placeholder="검색어를 입력하세요." />
             <span className='qnamagnifier'></span>

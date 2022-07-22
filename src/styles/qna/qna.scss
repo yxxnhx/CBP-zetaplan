@@ -18,6 +18,79 @@
     justify-content: flex-end;
     align-items: center;
 
+    .qnaSelectBox {
+      width: 140px;
+      height: 70px;
+
+      .qnaSelectLabel {
+        background: url('../../img/zetaplan_splite.png') no-repeat -137px -194px;
+        background-size: 599px 280px;
+        width: 22px;
+        height: 14px;
+        position: relative;
+        right: 0;
+    }
+
+    }
+
+    .qnaSearchCategory {
+      width: 140px;
+      height: 70px;
+      position: relative;
+      // z-index: 100;
+      // border: 1px solid #707070;
+
+      .arrow {
+        background: url('../../img/zetaplan_splite.png') no-repeat -137px -194px;
+	      background-size: 599px 280px;
+	      width: 22px;
+	      height: 14px;
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 8px;
+        z-index: 1;
+      }
+
+      .all {
+        text-align: center;
+        font-size: $list-md;
+        font-family: 'Noto Sans KR',sans-serif;
+        line-height: 1.5;
+        border: 1px solid $basic-black;
+        padding: 16px 0;
+        background-color: $basic-white;
+        position: relative;
+        cursor: pointer;
+
+      }
+
+      .writer {
+        text-align: center;
+        font-size: $list-md;
+        font-family: 'Noto Sans KR',sans-serif;
+        line-height: 1.5;
+        border: 1px solid $basic-black;
+        padding: 16px 0;
+        background-color: $basic-white;
+        cursor: pointer;
+      }
+
+      .writeDate {
+        text-align: center;
+        font-size: $list-md;
+        font-family: 'Noto Sans KR',sans-serif;
+        line-height: 1.5;
+        border: 1px solid $basic-black;
+        padding: 16px 0;
+        background-color: $basic-white;
+        cursor: pointer;
+      }
+    }
+    
+    
+    
+
     .qnaSelect {
       width: 139px;
       height: 70px;
@@ -25,6 +98,22 @@
       text-align: center;
       outline: none;
       font-weight: 500;
+      // appearance: none;
+      position: relative;
+      background-color: $basic-white;
+
+      &::after {
+        content: "";
+        background: url('../../img/zetaplan_splite.png') no-repeat -137px -194px;
+	      background-size: 599px 280px;
+	      width: 22px;
+	      height: 14px;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
     }
 
     .qnaSearchBox {
@@ -36,6 +125,7 @@
         outline: none;
         border: none;
         border-bottom: 1px solid #707070;
+        font-family: 'Noto Sans KR',sans-serif;
         font-size: 2rem;
         margin-left: 62px;
       }
@@ -67,6 +157,7 @@
         width: 58px;
         height: 58px;
         padding: 21px;
+        font-family: 'Noto Sans KR',sans-serif;
         text-align: center;
         font-size: $size-sm;
         cursor: pointer;
@@ -83,4 +174,12 @@
     }
 
   }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+
+}
+@media (min-width: 360px) and (max-width: 767px){
+
 }

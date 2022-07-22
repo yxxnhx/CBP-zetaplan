@@ -24,6 +24,7 @@ const Index = ({ setHdSubStyle }) => {
       <ZetaIntroduction />
       <MainBackGround>
         <NewsColumn />
+        <InformationList />
         <Partners />
         <GlobalNetwork />
       </MainBackGround>

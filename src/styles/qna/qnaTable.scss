@@ -4,6 +4,8 @@
   border-top: 5px solid #707070;
   // border-bottom: 1px solid #707070;
   width: 100%;
+  // border-collapse: separate;
+  // border-spacing: 0 10px;
 
   .qnaThead {
 
@@ -24,6 +26,7 @@
       border-bottom: 1px solid $basic-gray1;
       height: 113px;
       cursor: pointer;
+      // border-spacing: 0 100px;
       &:last-child {
         border-bottom: none;
       }
@@ -34,13 +37,38 @@
         font-size: 1.92rem;
         font-family: 'Noto Sans KR',sans-serif;
         text-align: center;
+
+        &.qnaTbodyId {
+          width: 100px;
+
+        }
+
+        // padding: 0 8px;
         &.qnaTbodyTitle {
+          // width: 60%;
+          // padding-right: 1rem;
+          width: 550px;
           font-weight: bold;
           text-align: start;
-          // padding-left: 83px;
         }
-        button {
-          width: 190px;
+
+        &.qnaTbodyWriter {
+          width: 100px;
+          
+
+        }
+
+        &.qnaTbodyDate {
+          width: 200px;
+        }
+
+        &.qnaTbodyHit {
+          width: 100px;
+
+        }
+
+        &.isAnswerBtn > button {
+          width: 12rem;
           height: 50px;
           font-size: 1.92rem;
           font-family: 'Noto Sans KR',sans-serif;

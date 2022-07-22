@@ -8,7 +8,7 @@ import fundSupportData from '../../db/fund-supportList.json';
 import techData from '../../db/technologyList.json';
 import consultData from '../../db/consultingList.json';
 import InfoItem from '../../components/Notice/InfoItem';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const DataInfo = ({ setHdSubStyle }) => {
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
@@ -57,7 +57,6 @@ const DataInfo = ({ setHdSubStyle }) => {
     }
   }
 
-
   const getActiveClassName = (index) => {
     return index === selectedIndex ? 'active' : undefined;
   }
@@ -68,7 +67,7 @@ const DataInfo = ({ setHdSubStyle }) => {
       <div className='dataInfoInner'>
         <div className='infoTitleBox'>
           <h2 className='infoTitle'>자료</h2>
-          <div className='infoTabList'>
+          <ul className='infoTabList'>
             <li className={getActiveClassName(0)} onClick={() => {
               navigate('/datainfo/m&a-invest')
               setSelectedIndex(0)
@@ -79,17 +78,17 @@ const DataInfo = ({ setHdSubStyle }) => {
             }}>정부지원사업 참여 모집</li>
             <li className={getActiveClassName(2)} onClick={() => {
               navigate('/datainfo/fund-support')
-              setSelectedIndex(1)
+              setSelectedIndex(2)
             }}>정책자금 / 기업지원정보</li>
             <li className={getActiveClassName(3)} onClick={() => {
-              navigate('/datainfo/fund-support')
-              setSelectedIndex(1)
+              navigate('/datainfo/technology-trade')
+              setSelectedIndex(3)
             }}>기술거래리스트</li>
             <li className={getActiveClassName(4)} onClick={() => {
-              navigate('/datainfo/fund-support')
-              setSelectedIndex(1)
+              navigate('/datainfo/consulting-list')
+              setSelectedIndex(4)
             }}>컨설팅 실적</li>
-          </div>
+          </ul>
         </div>
         <div className='infoSearchCon'>
           <span>총{dataList.length}개</span>

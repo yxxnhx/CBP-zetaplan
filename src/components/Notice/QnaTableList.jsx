@@ -12,11 +12,11 @@ const QnaTableList = ({id, title, writerName, createdAt, hit, comments}) => {
   return (
     <>
       <tr className="qnaTbTr" onClick={()=> navigate(`/qna/${id}`)}>
-        <td>{id}</td>
+        <td className="qnaTbodyId">{id}</td>
         <td className='qnaTbodyTitle'>{title}</td>
-        <td>{writerName}</td>
-        <td>{createdAt}</td>
-        <td>{hit}</td>
+        <td className="qnaTbodyWriter">{writerName}</td>
+        <td className="qnaTbodyDate">{createdAt}</td>
+        <td className="qnaTbodyHit">{hit}</td>
         <td className='isAnswerBtn'><button className={commentClass}>{commentBtnLabel}</button></td>
       </tr>
     </>

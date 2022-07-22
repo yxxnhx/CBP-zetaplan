@@ -27,12 +27,12 @@
     }
 
     .content {
-      width: 1000px;
+      width: 80%;
       margin: 60px auto;
 
       .content-view {
         font-size: $size-sm;
-        line-height: 1.5;
+        line-height: 1.7;
 
       }
 
@@ -50,21 +50,19 @@
         }
       }
 
-      li, p, tr, td, a {
+      li, p, tr, td, a, pre {
         font-size: $size-sm;
         font-weight: normal;
-        line-height: 1.5;
+        line-height: 1.7;
       }
 
       strong {
         font-size: $size-sm;
-        line-height: 1.5;
+        line-height: 1.7;
 
       }
       
-
     }
-
 
   }
 
