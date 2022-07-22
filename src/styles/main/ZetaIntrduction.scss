@@ -66,7 +66,7 @@
 
         &:after {
           content: '';
-          background: url(./../../img/zetaplan_splite.png) no-repeat -512px -234px;
+          background: url(./../../img/icon/thin_arrow.png) no-repeat;
           width: 57px;
           height: 15px;
           position: absolute;
@@ -87,7 +87,7 @@
 
         &:after {
           content: '';
-          background: url(./../../img/zetaplan_splite.png) no-repeat -512px -234px;
+          background: url(./../../img/icon/thin_arrow.png) no-repeat;
           width: 57px;
           height: 15px;
           position: absolute;
@@ -110,6 +110,49 @@
 
     .ziLinkBox {
       margin: 30px auto 0;
+
+      .ziCompanyLink a {
+        display: block;
+        border: 1px solid $basic-white;
+        width: 26.8rem;
+        height: 6.3rem;
+        display: flex;
+        align-items: center;
+        padding-left: 5rem;
+        margin-right: 6rem;
+        font-size: 1.8rem;
+
+        &:after {
+          content: '';
+          background: url(./../../img/icon/thin_arrow.png) no-repeat;
+          width: 57px;
+          height: 15px;
+          position: absolute;
+          top: 2.5rem;
+          left: 53rem;
+        }
+      }
+
+      .ziEstablishmentLink a {
+        display: block;
+        border: 1px solid $basic-white;
+        width: 26.8rem;
+        height: 6.3rem;
+        display: flex;
+        align-items: center;
+        padding-left: 5rem;
+        font-size: 1.8rem;
+
+        &:after {
+          content: '';
+          background: url(./../../img/icon/thin_arrow.png) no-repeat;
+          width: 57px;
+          height: 15px;
+          position: absolute;
+          top: 2.5rem;
+          left: 20rem;
+        }
+      }
     }
   }
 }
@@ -182,18 +225,12 @@
           height: 6.3rem;
           display: flex;
           align-items: center;
-          padding-left: 5rem;
+          padding-left: 6rem;
           margin-right: 6rem;
           font-size: 1.8rem;
 
           &:after {
-            content: '';
-            background: url(./../../img/zetaplan_splite.png) no-repeat -512px -234px;
-            width: 57px;
-            height: 15px;
-            position: absolute;
-            top: 2rem;
-            left: 50rem;
+            display: none;
           }
         }
 
@@ -204,17 +241,11 @@
           height: 6.3rem;
           display: flex;
           align-items: center;
-          padding-left: 5rem;
+          padding-left: 6rem;
           font-size: 1.8rem;
 
           &:after {
-            content: '';
-            background: url(./../../img/zetaplan_splite.png) no-repeat -512px -234px;
-            width: 57px;
-            height: 15px;
-            position: absolute;
-            top: 2rem;
-            left: 17rem;
+            display: none;
           }
         }
       }

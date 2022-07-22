@@ -9,6 +9,7 @@ import globalIcon from './../../img/main/business/global_icon.png';
 import ipoIcon from './../../img/main/business/ipo_icon.png';
 import irIcon from './../../img/main/business/ir_icon.png';
 import maIcon from './../../img/main/business/m&a_icon.png';
+import mobileBg from './../../img/main/performance/perfomance_mobile.png';
 
 const Performance = () => {
   return (
@@ -17,7 +18,7 @@ const Performance = () => {
         <p className="pfMaintitle">PERFORMANCE</p>
         <div className="pfListCon">
           <div className="pfMQImgBox">
-            <img src={globalBg} alt="배경 이미지" />
+            <img src={mobileBg} alt="배경 이미지" />
           </div>
           <div className="pfList maList">
             <div className="pfImgBox">
