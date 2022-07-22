@@ -12,8 +12,8 @@ const index = ({ setHdSubStyle }) => {
   /* header 배경색 변경 */
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
-    setHdSubStyle('hdMain hdSub')
-  }, [setHdSubStyle])
+    setHdSubStyle('hdMain hdSub');
+  }, [setHdSubStyle]);
 
   return (
     <div>

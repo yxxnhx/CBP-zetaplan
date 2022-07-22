@@ -11,8 +11,8 @@ const ZetaIntroduction = () => {
       </div>
       <div className="ziContentBox">
         <p className="ziCompanyDes">
-          제타플렌은 "지구상의 모든 기업들의 시작과 안정을 위한
-          <br /> 컨설팅 솔루션 제공"이라는 비전을 가지고 경영 컨설팅 서비스를 제공하고 있습니다.
+          제타플렌은 "지구상의 모든 기업들의 시작과 안정을 위한 컨설팅 솔루션 제공"이라는 비전을 가지고 경영 컨설팅
+          서비스를 제공하고 있습니다.
         </p>
         <div className="ziLinkBox">
           <div className="ziCompanyLink">

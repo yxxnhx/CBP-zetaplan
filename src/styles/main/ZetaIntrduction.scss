@@ -32,13 +32,15 @@
 
   .ziContentBox {
     display: flex;
+    justify-content: space-between;
     width: 90%;
-    margin-left: 8rem;
+    margin: auto;
     position: relative;
     bottom: 4rem;
 
     .ziCompanyDes {
-      font-size: 0.99vw;
+      word-break: keep-all;
+      font-size: 1.9rem;
       color: $basic-white;
       text-align: left;
       line-height: 1.5;
@@ -97,16 +99,125 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media (min-width: 745px) and (max-width: 1100px) {
   .ziWrap .ziContentBox {
     flex-direction: column;
 
     .ziCompanyDes {
-      margin-left: 60px;
+      width: 600px;
+      margin: auto;
     }
 
     .ziLinkBox {
+      margin: 30px auto 0;
+    }
+  }
+}
+
+@media (min-width: 475px) and (max-width: 744px) {
+  .ziWrap .ziContentBox {
+    flex-direction: column;
+    margin: auto;
+
+    .ziCompanyDes {
+      width: 400px;
+      margin: auto;
+    }
+
+    .ziLinkBox {
+      margin: auto;
       margin-top: 30px;
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 474px) {
+  .ziWrap {
+    .ziTitleCon {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 50rem;
+      margin-left: 8rem;
+      text-transform: uppercase;
+      position: relative;
+      bottom: 5rem;
+
+      .ziTitleBlue {
+        font: {
+          size: 3.5rem;
+          family: Montserrat;
+        }
+        color: #1527a0;
+      }
+      .ziTitleBlack {
+        font: {
+          size: 3.5rem;
+          weight: bold;
+          family: Montserrat;
+        }
+      }
+    }
+    .ziContentBox {
+      flex-direction: column;
+      margin: auto;
+
+      .ziCompanyDes {
+        width: 300px;
+        margin: 0 auto;
+      }
+
+      .ziLinkBox {
+        width: 300px;
+        display: flex;
+        color: $basic-white;
+        position: relative;
+        flex-wrap: nowrap;
+        margin: 15px auto 0;
+
+        .ziCompanyLink a {
+          display: block;
+          border: 1px solid $basic-white;
+          width: 20rem;
+          height: 6.3rem;
+          display: flex;
+          align-items: center;
+          padding-left: 5rem;
+          margin-right: 6rem;
+          font-size: 1.8rem;
+
+          &:after {
+            content: '';
+            background: url(./../../img/zetaplan_splite.png) no-repeat -512px -234px;
+            width: 57px;
+            height: 15px;
+            position: absolute;
+            top: 2rem;
+            left: 50rem;
+          }
+        }
+
+        .ziEstablishmentLink a {
+          display: block;
+          border: 1px solid $basic-white;
+          width: 20rem;
+          height: 6.3rem;
+          display: flex;
+          align-items: center;
+          padding-left: 5rem;
+          font-size: 1.8rem;
+
+          &:after {
+            content: '';
+            background: url(./../../img/zetaplan_splite.png) no-repeat -512px -234px;
+            width: 57px;
+            height: 15px;
+            position: absolute;
+            top: 2rem;
+            left: 17rem;
+          }
+        }
+      }
     }
   }
 }

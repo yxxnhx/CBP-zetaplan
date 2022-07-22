@@ -55,17 +55,20 @@
   }
 
   .gbPerformanceDes {
-    font-size: 1.094vw;
-    margin: 4.688vw auto 7.813vw;
-    padding-left: 31vw;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 10.417vw;
   }
 
   .gbMaterialTitle {
     font: {
-      size: 2.3rem;
+      size: 2.1rem;
       weight: bold;
     }
-    margin-top: 1.563vw;
+    margin-top: 4vw;
     margin-bottom: 1.563vw;
   }
 
@@ -73,6 +76,7 @@
     font-size: 2.1rem;
     margin-bottom: 1.042vw;
     line-height: 1.8;
+    word-break: keep-all;
   }
 
   .gbContentBoxWrap {
@@ -91,18 +95,21 @@
           weight: bold;
         }
         line-height: 1.5;
-        width: 17.188vw;
+        width: 20%;
         margin-left: 2.279vw;
         margin-right: 5.273vw;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        word-break: keep-all;
       }
 
       .gbContentBoxC {
         font-size: 2.1rem;
         line-height: 2;
         margin-right: 2.604vw;
+        word-break: keep-all;
+        width: 80%;
       }
     }
   }
@@ -160,9 +167,10 @@
 
         .gbProcessItemC {
           font: {
-            size: 1.198vw;
+            size: 1vw;
             weight: bold;
           }
+          word-break: keep-all;
           text-align: center;
           line-height: 1.5;
         }
@@ -195,7 +203,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .gbInner .gbProcessList {
     display: block;
 

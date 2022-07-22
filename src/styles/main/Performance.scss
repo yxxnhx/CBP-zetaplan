@@ -6,9 +6,10 @@
   height: auto;
   background: url(./../../img/main/performance/performance_bg.png) no-repeat;
   margin: auto;
+  overflow: hidden;
 
   .pfCon {
-    width: 150rem;
+    width: 90%;
     margin: auto;
     padding-top: 7rem;
     padding-bottom: 30rem;
@@ -24,19 +25,25 @@
     }
 
     .pfListCon {
-      width: 150rem;
+      width: 90%;
       display: flex;
       justify-content: space-between;
       position: relative;
       bottom: 0.8rem;
 
+      .pfMQImgBox {
+        display: none;
+      }
+
       .pfList {
+        margin-right: 1.5rem;
+        width: 35rem;
         height: auto;
         background-color: $basic-gray1;
 
         .pfImgBox {
           img {
-            width: 36rem;
+            width: 35rem;
           }
         }
 
@@ -89,10 +96,14 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .pfWrap .pfCon .pfListCon {
-    width: 90vw;
+    width: 85vw;
     height: auto;
     flex-wrap: wrap;
     margin-left: 2.604vw;
+
+    .pfMQImgBox {
+      display: none;
+    }
 
     .pfList {
       flex: 3 1 0%;
@@ -128,43 +139,249 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media (min-width: 680px) and (max-width: 767px) {
   .pfWrap .pfCon .pfListCon {
-    width: 65vw;
-    height: auto;
+    margin: auto;
+    height: 70vw;
+    width: 80vw;
+    background-color: $basic-gray1;
     flex-wrap: wrap;
-    margin-left: 15vw;
 
+    .pfMQImgBox {
+      display: block;
+      img {
+        width: 80vw;
+      }
+    }
     .pfList {
-      flex: 3 1 0%;
-      margin-bottom: 2rem;
-      margin-right: 2rem;
+      width: 250px;
+      border-radius: 10px;
+      background-color: $basic-white;
+      margin-bottom: 30px;
+      margin-right: 0;
 
       .pfImgBox {
-        display: flex;
-        img {
-          flex: 3 1 0%;
-        }
+        display: none;
       }
-
       .pfConBox {
+        margin-top: 32px;
         .pfIconBox {
           display: none;
         }
-        .pfTitle {
-          font-size: 3.5rem;
-          margin-top: 3.5rem;
-        }
-        .pfCount {
-          font-size: 3.3rem;
-        }
 
+        .pfMQConBox {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .pfTitle {
+            font-size: 20px;
+          }
+
+          .pfCount {
+            font-size: 38px;
+            padding-bottom: 15px;
+          }
+        }
         .pfDes {
-          font-size: 1.8rem;
-          margin-top: 2rem;
-          width: 35rem;
+          display: none;
         }
       }
+    }
+
+    .ipoList,
+    .globalList {
+      margin-right: 20px;
+    }
+
+    .maList,
+    .irList {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (min-width: 560px) and (max-width: 679px) {
+  .pfWrap .pfCon .pfListCon {
+    margin: auto;
+    height: 70vw;
+    width: 80vw;
+    background-color: $basic-gray1;
+    flex-wrap: wrap;
+
+    .pfMQImgBox {
+      display: block;
+      img {
+        width: 80vw;
+      }
+    }
+    .pfList {
+      width: 200px;
+      border-radius: 10px;
+      background-color: $basic-white;
+      margin-bottom: 30px;
+      margin-right: 0;
+
+      .pfImgBox {
+        display: none;
+      }
+      .pfConBox {
+        margin-top: 20px;
+        .pfIconBox {
+          display: none;
+        }
+
+        .pfMQConBox {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .pfTitle {
+            font-size: 18px;
+          }
+
+          .pfCount {
+            font-size: 30px;
+            padding-bottom: 15px;
+          }
+        }
+        .pfDes {
+          display: none;
+        }
+      }
+    }
+
+    .ipoList,
+    .globalList {
+      margin-right: 20px;
+    }
+
+    .maList,
+    .irList {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (min-width: 450px) and (max-width: 559px) {
+  .pfWrap .pfCon .pfListCon {
+    margin: auto;
+    height: 70vw;
+    width: 80vw;
+    background-color: $basic-gray1;
+    flex-wrap: wrap;
+
+    .pfMQImgBox {
+      display: block;
+      img {
+        width: 80vw;
+      }
+    }
+    .pfList {
+      width: 150px;
+      border-radius: 10px;
+      background-color: $basic-white;
+      margin-bottom: 20px;
+      margin-right: 0;
+
+      .pfImgBox {
+        display: none;
+      }
+      .pfConBox {
+        margin-top: 20px;
+        .pfIconBox {
+          display: none;
+        }
+
+        .pfMQConBox {
+          display: flex;
+          justify-content: space-around;
+
+          .pfTitle {
+            font-size: 18px;
+          }
+
+          .pfCount {
+            font-size: 25px;
+            padding-bottom: 15px;
+          }
+        }
+        .pfDes {
+          display: none;
+        }
+      }
+    }
+
+    .ipoList,
+    .globalList {
+      margin-right: 20px;
+    }
+
+    .maList,
+    .irList {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 449px) {
+  .pfWrap .pfCon .pfListCon {
+    margin: auto;
+    height: 80vw;
+    width: 80vw;
+    background-color: $basic-gray1;
+    flex-wrap: wrap;
+
+    .pfMQImgBox {
+      display: block;
+      img {
+        width: 80vw;
+      }
+    }
+    .pfList {
+      width: 120px;
+      border-radius: 10px;
+      background-color: $basic-white;
+      margin-bottom: 15px;
+      margin-right: 0;
+
+      .pfImgBox {
+        display: none;
+      }
+      .pfConBox {
+        margin-top: 20px;
+        .pfIconBox {
+          display: none;
+        }
+
+        .pfMQConBox {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .pfTitle {
+            font-size: 13px;
+          }
+
+          .pfCount {
+            font-size: 24px;
+            padding-bottom: 15px;
+          }
+        }
+        .pfDes {
+          display: none;
+        }
+      }
+    }
+
+    .ipoList,
+    .globalList {
+      margin-right: 20px;
+    }
+
+    .maList,
+    .irList {
+      margin-left: 20px;
     }
   }
 }

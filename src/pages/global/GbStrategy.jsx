@@ -10,8 +10,8 @@ const GbStrategy = ({ setHdSubStyle }) => {
 
   /* header 배경색 변경 */
   useEffect(() => {
-    setHdSubStyle('hdMain hdSub')
-  }, [setHdSubStyle])
+    setHdSubStyle('hdMain hdSub');
+  }, [setHdSubStyle]);
 
   return (
     <div>
@@ -30,9 +30,7 @@ const GbStrategy = ({ setHdSubStyle }) => {
         <p className="gbMaterialTitle">✔︎ 기술거래·기술이전컨설팅</p>
         <p className="gbMaterialContent">
           • 해외기술이전사업 진출이후 베이징기술교역촉진중심, Transpacific IP, IPA VIETNAM, 주한영국상공회의소(BCCK),
-          <br />
-          &nbsp;&nbsp;이스라엘 ABG 등과 기술이전 업무협약을 체결하였고, 그 외 해외 정부기관들을 통한 기술이전 네트워크
-          구축
+          이스라엘 ABG 등과 기술이전 업무협약을 체결하였고, 그 외 해외 정부기관들을 통한 기술이전 네트워크 구축
         </p>
         <p className="gbMaterialContent">
           • 국내에는 한국발명진흥회, 농업기술실용화재단, 중소기업청 해외민간네트워크 등을 통해 한국과 해외간의 공식적인
@@ -56,9 +54,8 @@ const GbStrategy = ({ setHdSubStyle }) => {
               해외 정부의 무역기관 지정
             </p>
             <p className="gbContentBoxC">
-              2018년 Being B&R International Co-incubation(ICI)와 MOU
-              <br /> 2017년 인도네시아 Sucofindo 업무 협력
-              <br /> 2016년 중국 강소성 하이먼 정부의 한국대표처 지정 <br />
+              2018년 Being B&R International Co-incubation(ICI)와 MOU 2017년 인도네시아 Sucofindo 업무 협력 2016년 중국
+              강소성 하이먼 정부의 한국대표처 지정 <br />
               2015년 베트남 IPA VIETNAM과 해외 수출 및 업무제휴 파트너 협약(MOU)
             </p>
           </div>
@@ -66,7 +63,7 @@ const GbStrategy = ({ setHdSubStyle }) => {
             <p className="gbContentBoxT">
               02
               <br />
-              해외 수출지원실적 및<br /> 진출 성공의 노하우 보유
+              해외 수출지원실적 및 진출 성공의 노하우 보유
             </p>
             <p className="gbContentBoxC">
               • 수요기업과 공급기업 무역을 위한 공식 매칭 가능
@@ -97,18 +94,16 @@ const GbStrategy = ({ setHdSubStyle }) => {
         </div>
         <p className="gbContentSubTitle">GCC란?</p>
         <p className="gbMaterialContent">
-          - “기술기반” 국내업체의 성공적인 해외시장 진출을 위해, 해외 현지 경험과 컨설팅 능력을 갖춘
-          <br />
-          &nbsp;&nbsp; 글로벌기술 사업화 센터(GCC)를 통해 종합적인 글로벌 기술 사업화 컨설팅 서비스를 제공합니다.
+          - “기술기반” 국내업체의 성공적인 해외시장 진출을 위해, 해외 현지 경험과 컨설팅 능력을 갖춘 글로벌기술 사업화
+          센터(GCC)를 통해 종합적인 글로벌 기술 사업화 컨설팅 서비스를 제공합니다.
         </p>
         <p className="gbMaterialContent">
           - 정의 : 기술기반 국내 기업의 해외진출 관련 종합적 기술사업화 컨설팅 서비스 제공
         </p>
         <p className="gbMaterialContent">
           - 제공 서비스 범위:순 상품판매나 거래 알선이 아닌 기술관련 또는 기술기반 국내기업의 현지 진출을 위한 시장조사,
-          고객평가, <br />
-          &nbsp;&nbsp;&nbsp;잠재수요처 발굴, 잠재수요처 컨택 및 거래, 알선, 법률, 계약, 회계, 세무 등의 종합 컨설팅
-          원스탑 서비스 제공
+          고객평가, 잠재수요처 발굴, 잠재수요처 컨택 및 거래, 알선, 법률, 계약, 회계, 세무 등의 종합 컨설팅 원스탑
+          서비스 제공
         </p>
         <p className="gbMaterialContent">
           - 지원대상:우수기술 및 기술기반 제품의 해외기술 사업화를 추진하고자 하는 국내기업,연구소,대학등
@@ -120,51 +115,31 @@ const GbStrategy = ({ setHdSubStyle }) => {
           <div className="gbProcessItem">
             <div className="gbProcessItemBox">
               <p className="gbProcessItemT">STEP 01</p>
-              <p className="gbProcessItemC">
-                기술사업화
-                <br />
-                대상기업 선정
-              </p>
+              <p className="gbProcessItemC">기술사업화 대상기업 선정</p>
             </div>
           </div>
           <div className="gbProcessItem">
             <div className="gbProcessItemBox">
               <p className="gbProcessItemT">STEP 02</p>
-              <p className="gbProcessItemC">
-                기술사업화
-                <br />
-                시장성 분석
-              </p>
+              <p className="gbProcessItemC">기술사업화 시장성 분석</p>
             </div>
           </div>
           <div className="gbProcessItem">
             <div className="gbProcessItemBox">
               <p className="gbProcessItemT">STEP 03</p>
-              <p className="gbProcessItemC">
-                현지사업화
-                <br />
-                전략의 수립
-              </p>
+              <p className="gbProcessItemC">현지사업화 전략의 수립</p>
             </div>
           </div>
           <div className="gbProcessItem">
             <div className="gbProcessItemBox">
               <p className="gbProcessItemT">STEP 04</p>
-              <p className="gbProcessItemC">
-                기술사업화
-                <br />
-                전략의 수립
-              </p>
+              <p className="gbProcessItemC">기술사업화 전략의 수립</p>
             </div>
           </div>
           <div className="gbProcessItem">
             <div className="gbProcessItemBox">
               <p className="gbProcessItemT">STEP 05</p>
-              <p className="gbProcessItemC">
-                사업화 종료
-                <br />
-                사후적 관리
-              </p>
+              <p className="gbProcessItemC">사업화 종료 사후적 관리</p>
             </div>
           </div>
         </div>
@@ -183,14 +158,9 @@ const GbStrategy = ({ setHdSubStyle }) => {
             <br />
             기술성 검토
           </p>
+          <p className="gbProcessListDes">현지 수요기술 관련 시장조사, 기업발굴, 분석</p>
           <p className="gbProcessListDes">
-            현지 수요기술
-            <br /> 관련 시장조사, 기업발굴, 분석
-          </p>
-          <p className="gbProcessListDes">
-            기술소개,
-            <br /> 상담회 개최,
-            <br /> 계약체결 <br />
+            기술소개, 상담회 개최, 계약체결 <br />
             협상 지원
           </p>
           <p className="gbProcessListDes">
