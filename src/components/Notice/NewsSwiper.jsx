@@ -41,6 +41,34 @@ const NewsSwiper = ({items, selectedIndex}) => {
         loop={true}
         spaceBetween={0}
         slidesPerView={1}
+        breakpoints={{
+          1500:{
+            slidesPerView: 1
+          },
+          1300:{
+            slidesPerView: 1
+          },
+          1200: {
+            slidesPerView: 1
+          },
+          950: {
+            slidesPerView: 1
+          },
+
+          
+          900: {
+            slidesPerView: 1
+          },
+          600: {
+            slidesPerView: 1
+          },
+          400: {
+            slidesPerView: 1
+          },
+          100: {
+            slidesPerView: 1
+          },
+        }}
       >
         {
           items.map((item)=> {
@@ -53,7 +81,7 @@ const NewsSwiper = ({items, selectedIndex}) => {
                     <p className='newsCreated'>{item.createdAt}</p>
                   </div>
                   {
-                    item.img.length === 0 ? <img className='thumbnail' src={thumbnail} alt="뉴스 칼럼 대표 이미지" style={{width: '900px', height: 'auto', maxHeight: '570px'}} /> : <img className='thumbnail' src={item.img} alt="" style={{width: '900px', height: 'auto', maxHeight: '570px'}} />
+                    item.img.length === 0 ? <div className="slideImgThumb"><img className='thumbnail' src={thumbnail} alt="뉴스 칼럼 대표 이미지" /></div> : <div className="slideImgThumb"><img className='thumbnail' src={item.img} alt="" /></div>
                   }
 
                 </div> 

@@ -35,16 +35,20 @@
       img {
         width: auto;
         margin: 0 auto 30px;
-
       }
 
       .content {
 
-        p, li, div {
+        p, li, div, strong, h3, ul {
           font-family: 'Noto Sans KR',sans-serif;
           font-size: $size-sm;
           font-weight: normal;
           line-height: 1.7;
+        }
+        
+        img {
+          width: auto;
+          margin: 0 auto 30px;
         }
       }
 

@@ -53,17 +53,26 @@
   .newsContainer {
     display: flex;
     justify-content: space-between;
-    margin-top: 178px; 
+    margin-top: 178px;
+
+    .slideImgThumb {
+      flex: 1 1 60%;
+
+      img {
+        width:100%;
+        max-height: 570px;
+      }
+
+    }
     
     .newsContentBox {
-      flex: 30%;
-      width: 400px;
-      height: 570px;
+      flex: 1 1 40%;
+      // height: 570px;
 
       .newsTitle {
         font-size: 3.04rem;
         width: 70%;
-        height: 166px;
+        // height: 166px;
         font-weight: bold;
         line-height: 1.7;
         word-break: keep-all;
@@ -71,8 +80,9 @@
       }
 
       .newsSummary {
+        font-family: 'Noto Sans KR',sans-serif;
         font-size: 2.4rem;
-        width: 398px;
+        width: 39.8rem;
         overflow: hidden;
         text-overflow: ellipsis;
         word-break: break-word;    
@@ -96,16 +106,10 @@
         margin: 57px 0 40px;
       }
       
-      img {
-        width: auto;
-      }
+      
+      
 
     }
-
-    .newsThumbnail {
-      width: 904px;
-      height: 550px;
-    } 
   }
 
   .newsListContainer {
@@ -119,6 +123,7 @@
       width: 30rem;
       padding: 1rem 0;
       border-bottom: 1px solid #707070;
+      background-color: $basic-white;
 
       .newsInput {
         width: 28rem;
@@ -150,7 +155,7 @@
     .newsListBox {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
     }
   }
   
