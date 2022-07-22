@@ -5,43 +5,41 @@ import Search from './Search';
 import Sitemap from './Sitemap';
 
 const Util = () => {
-  let [block, setBlock] = useState(false);
+  let [srhOpen, setSrhOpen] = useState(false);
 
-  function blockEvent() {
-    if (block === false) {
-      setBlock(true)
-    } else {
-      setBlock(false)
-    }
+  const openSrh = () => {
+    setSrhOpen(true);
+    document.body.style.overflow = 'hidden';
+  };
+  const closeSrh = () => {
+    setSrhOpen(false);
+    document.body.style.overflow = 'unset'
   }
 
-  const [modalOpen, setModalOpen] = useState(false);
+  const [smOpen, setSmOpen] = useState(false);
 
-  const openModal = () => {
-    setModalOpen(true);
+  const openSm = () => {
+    setSmOpen(true);
+    document.body.style.overflow = 'hidden';
   };
-  const closeModal = () => {
-    setModalOpen(false);
+  const closeSm = () => {
+    setSmOpen(false);
+    document.body.style.overflow = 'unset'
   }
 
   return (
     <div className='hdUtil'>
-      <div className='hdLang'>
-        <Link to={''}>KOR</Link>
-        <ul className='hdLangLi'>
-          <li><Link to={''}>ENG</Link></li>
-          <li><Link to={''}>CHN</Link></li>
-        </ul>
-      </div>
+      <select className='hdLang'>
+        <option><Link to={''}>KOR</Link></option>
+        <option><Link to={''}>ENG</Link></option>
+        <option><Link to={''}>CHN</Link></option>
+      </select>
 
-      <button onClick={() => { blockEvent() }} className='hdSearchBtn'></button>
-      {
-        block !== false ? <Search /> : null
-      }
+      <button className='hdSearchBtn' onClick={openSrh}></button>
+      <Search open={srhOpen} close={closeSrh} />
 
-      <button className='hdSitemapBtn' onClick={openModal}>sitemap</button>
-
-      <Sitemap open={modalOpen} close={closeModal} />
+      <button className='hdSitemapBtn' onClick={openSm}>sitemap</button>
+      <Sitemap open={smOpen} close={closeSm} />
 
 
     </div>

@@ -19,7 +19,7 @@ const Gnb = () => {
       <li className='hdDep1'>
         <Link to={'/maipo'} className='hdSub'>M&A / IPO</Link>
         <ul className='hdDep2'>
-          <li><Link to={'/maipo'}>개요</Link></li>
+          <li><Link to={'/maipo-info'}>개요</Link></li>
           <li><Link to={'/maipo-process'}>Process</Link></li>
           <li><Link to={'/maipo-performance'}>성과</Link></li>
         </ul>
@@ -44,7 +44,7 @@ const Gnb = () => {
       <li className='hdDep1'>
         <Link to={'/mng'} className='hdSub'>경영・평가</Link>
         <ul className='hdDep2'>
-          <li><Link to={'/mng'}>경영컨설팅</Link></li>
+          <li><Link to={'/mng-consulting'}>경영컨설팅</Link></li>
           <li><Link to={'/mng-trade'}>기술거래</Link></li>
           <li>
             <Link to={'/mng-value'}>가치평가</Link>

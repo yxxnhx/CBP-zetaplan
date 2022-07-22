@@ -5,20 +5,20 @@ const Sitemap = ({ open, close }) => {
 
 
   return (
-    <div className={open ? 'hdOpenModal hdModal' : 'hdModal'}>
+    <div className={open ? 'hdSmOpenModal hdSmModal' : 'hdSmModal'}>
       {
         open ?
           (<div className='hdSitemap'>
             <div className='hdSmLeft'>
-              <h2>
+              <h2 className='hdSmLeftTop'>
                 logo
               </h2>
-              <p>
+              <p className='hdSmLeftMid'>
                 반갑습니다
                 <br />
                 ZETA PLAN 입니다
               </p>
-              <p>
+              <p className='hdSmLeftBt'>
                 다양한 방법으로
                 <br />
                 기업에 대한
@@ -43,7 +43,7 @@ const Sitemap = ({ open, close }) => {
                 <li className='hdSmList'>
                   <Link to={''}><span>M&A / IPO</span></Link>
                   <ul className='hdSmList2'>
-                    <li><Link to={''}>개요</Link></li>
+                    <li><Link to={'maipo-info'}>개요</Link></li>
                     <li><Link to={''}>Process</Link></li>
                     <li><Link to={''}>성과</Link></li>
                   </ul>
@@ -51,7 +51,7 @@ const Sitemap = ({ open, close }) => {
                 <li className='hdSmList'>
                   <Link to={''}><span>투자 IR</span></Link>
                   <ul className='hdSmList2'>
-                    <li><Link to={''}>개요</Link></li>
+                    <li><Link to={'ir'} onClick={close} >개요</Link></li>
                     <li><Link to={''}>사업계획서</Link></li>
                     <li><Link to={''}>Process</Link></li>
                     <li><Link to={''}>성과</Link></li>

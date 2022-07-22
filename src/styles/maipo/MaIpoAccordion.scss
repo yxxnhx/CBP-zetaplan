@@ -42,17 +42,15 @@
     }
 
     .maUnderBtn {
-      background: url('../../img/zetaplan_splite.png') no-repeat -137px -194px;
-      background-size: 599px 280px;
-      width: 22px;
-      height: 14px;
+      background: url('../../img/icon/bottom_arrow@2x.png') no-repeat center / cover;
+      width: 1.406vw;
+      height: 0.938vw;
     }
 
     .maTopBtn {
-      background: url('../../img/zetaplan_splite.png') no-repeat -137px -235px;
-      background-size: 599px 280px;
-      width: 22px;
-      height: 14px;
+      background: url('../../img/icon/top_arrow@2x.png') no-repeat center / cover;
+      width: 1.406vw;
+      height: 0.938vw;
     }
   }
 }
