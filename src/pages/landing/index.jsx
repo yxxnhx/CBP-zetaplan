@@ -59,6 +59,7 @@ const Landing = () => {
         <button><Link to='/main'>자세히 보기</Link></button>
         <button><Link to='/consulting'>컨설팅 신청</Link></button>
         <p>test</p>
+        <p>test2</p>
       </div>
     </div>
   );
