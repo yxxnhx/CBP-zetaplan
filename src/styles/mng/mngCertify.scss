@@ -8,7 +8,8 @@
 }
 
 .mngCertifyTxt{
-  width: 132.7rem;
+  width: 90%;
+  height: 100%;
   margin-left: 8.3rem;
   margin-top: 3rem;
   margin-bottom: 5rem;
@@ -26,34 +27,51 @@
 }
 
 .Boldgradient{
-  width: 130rem;
-  margin-top: 7.4rem;
-  margin-left: 6.8rem;
-  position: relative;
+  width: 100%;
+  margin-top: 7.4rem; 
 }
 
 .mngGrow{
-  width: 120rem;
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  bottom: -147rem;
-  left: 12rem;
-  span{
-    color: #fff;
-    font-size: $size-xl;
-  }
+  width: 100%; 
+  position: relative;
+  margin-left: 5rem;
 }
 
+.mngGrowLeft{
+  position: absolute;
+  top: 11.5rem;
+  left: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+.mngGrowMiddle{
+  position: absolute;
+  top: 11.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.mngGrowRight{
+  position: absolute;
+  top: 11.5rem;
+  right: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
 .mngGrowTxt{
   display:flex;
   justify-content: space-around;
-  width: 130rem;
+  width: 100%;
   height: 70rem;
   border: 1px solid #000;
   padding: 4.8rem 0 7rem;
-  margin-left: 6.8rem;
   margin-top: -1rem;
+  margin-left: 5rem;
   li{
     line-height: 1.5;
     font-family:'Noto Sans KR';
@@ -82,4 +100,135 @@
 
 .mngInner{
   @include Inner;
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .mngSmTitle{
+    font-size: 2rem;
+  }
+  .mngCertifyTxt{
+    width: 90%;
+    p{
+      font-size: 1.5rem;
+    }
+  }
+  .mngCertifyCt{
+    font-size: 2rem;
+  }
+  
+  .Boldgradient{
+    width: 90%;
+    margin-top: 2rem; 
+  }
+  
+  .mngGrow{
+    width: 100%; 
+  }
+  
+  .mngGrowLeft{
+    top:50%;
+    left: 3rem;
+    font-size: 1.5rem;
+  }
+  .mngGrowMiddle{
+    top: 50%;
+    left: 45%;
+    font-size: 1.5rem;
+  }
+  
+  .mngGrowRight{
+    top: 50%;
+    right: 15rem;
+    font-size: 1.5rem;
+  }
+  .mngGrowTxt{
+    width: 90%;
+    height: 50%;
+    padding: 2rem;
+    margin-top: -1rem;
+  } 
+  .mngGrowTxt li:first-child{
+    font-size:1.5rem; 
+  }
+  
+  .mngGrowTxt li{
+    font-size: 1.3rem;
+  }
+  .mngGrowF{
+    margin-left: 1rem;
+  }
+  .mngGrowM{
+    margin-left: 5rem;
+  }
+  .mngGrowL{
+    margin-left: 8rem;
+  }
+
+}
+
+@media (min-width: 360px) and (max-width: 767px){
+  .mngSmTitle.mngCertifyTitle{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 2rem;
+  }
+  .mngCertifyTxt{
+    width: 90%;
+    margin-left: 2rem;
+    p{
+      font-size: 1.3rem;
+    }
+  }
+  .mngCertifyCt{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+  }
+  .Boldgradient{
+    margin-top: 2rem; 
+  }
+  .mngGrow{
+    width: 95%; 
+    margin-left: 2rem;
+  }
+  .mngGrowLeft{
+    top: 50%;
+    left: 3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .mngGrowMiddle{
+    top: 50%;
+    left: 50%;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .mngGrowRight{
+    top: 50%;
+    right: 5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .mngGrowTxt{
+    width: 95%;
+    height: 60%;
+    padding: 1rem;
+    margin-left: 2rem;
+  } 
+  .mngGrowTxt li:first-child{
+    font-size:1.3rem; 
+  }
+  
+  .mngGrowTxt li{
+    font-size: 0.5rem;
+  }
+  .mngGrowF{
+    margin-left: -.5rem;
+  }
+  .mngGrowM{
+    margin-left: 4rem;
+  }
+  .mngGrowL{
+    margin-left: 4rem;
+  }
 }

@@ -1,27 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
 
 @import '../GlobalStyle.scss';
+@import '../mng/mngConsulting.scss';
 
 $mngSize : 90rem;
 $mngCircleSize : 20rem;
 
-.mngFourCircle {
-  @include Circle(120rem, 20rem); 
-  li{
-    font-size: 1.8rem;
-    line-height: 1.3;
+.mngCompanyValueAssess{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  li {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 1px solid $main-color;
+    margin-right: 4rem;
+    position: relative;
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+    
+    &:hover {
+      background-color: $main-color;
+      color: $basic-white;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 4rem;
+      height: 1px;
+      border-bottom: 1px dashed black;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -4rem;
+    }
+
+    &:first-child::before {
+      display: none;
+    }
   }
 }
-.mngMentTabEdge{
+
+.mngValueCompanyAssess{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  li {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 1px solid $main-color;
+    margin-right: 4rem;
+    position: relative;
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+    
+    &:hover {
+      background-color: $main-color;
+      color: $basic-white;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 4rem;
+      height: 1px;
+      border-bottom: 1px dashed black;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -4rem;
+    }
+
+    &:first-child::before {
+      display: none;
+    }
+  }
+}
+
+.mngCompanyValueAssess li:nth-child(3n)::before {
+     display: none;
+    }
+
+
+.mngMenuTabEdge{
   display: flex;
   justify-content: flex-end;
 }
 .mngMenuTab{
-  transform: translate(-10rem, -10rem);
+  transform: translate(-5rem, -5rem);
+  cursor: pointer;
   li{
     font-size: 2rem;
     font-weight: bold;
-    margin-left: 7rem;
+    margin-left: 6rem;
     position: relative;
   }
 }
@@ -32,16 +118,17 @@ $mngCircleSize : 20rem;
     content: '';
     display: block;
     height: 0.3rem;
-    width: 11rem;
+    width: 17rem;
     background-color: $main-color;
     position: absolute;
     bottom: -3.2rem;
+    left: -2rem;
    }
   }
  
 
 .mngValueTitle{
-  margin-top: -3rem;
+  margin-top: 3rem;
 }
 
 .mngValueTxt{
@@ -64,71 +151,83 @@ $mngCircleSize : 20rem;
 
 
 .mngNeedTxt{
-      width: 132.7rem;
+      width: 90%;
       margin-left: 9rem;
       margin-top: 3rem;
+      margin-bottom: 10rem;
       p{
         font-size: $size-lg;
         font-family:'Noto Sans KR';
         line-height: 1.7;
+        span{
+          font-size: $size-lg;
+          font-family:'Noto Sans KR';
+          line-height: 1.7;
+        }
     }
 }
-
-.thinGradient{
-  width: 130rem;
-  margin-top: 7.4rem;
-  margin-left: 6.8rem;
+.thinGradient {
+  position: relative;
+  height: 58px;
+  margin: 5rem auto;
+}
+.thinGradient img{
+  width: 100%;
+  height: 100%;
 }
 
-.mngValueGradientTitle{
-  width: 120rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 11rem;
-  margin-top: -4rem;
-  
-  span{
-    color: #fff;
-    font-size: $size-xl;
-  }
+.mngValueGradientLeft{
+  position: absolute;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  top: 2rem;
+  left: 3rem;
 }
+
+.mngValueGradientRight{
+  position: absolute;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  top: 2rem;
+  right: 3rem;
+}
+
 
 .mngFourCircle{
   position: relative;
 }
 
 .mngValueAssess{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: -10rem;
+  width: 100%;
+  margin-top: 3rem;
   p{
-    padding-left: 8rem;
-    font-size: $size-sm;
+    font-size: 2rem;
     font-family:'Noto Sans KR';
     line-height: 1.5;
-    text-align: center;
   }
 }
 
+.mngValueAssess p:first-child{
+  margin-bottom: 3rem;
+}
+
 .mngCompanyAssess{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: -2rem;
+  width: 100%;
+  margin-top: 3rem;
   p{
-    padding-left: 8rem;
-    font-size: $size-sm;
+    font-size: 2rem;
     font-family:'Noto Sans KR';
     line-height: 1.5;
-    text-align: center;
   }
 }
 
 .mngValueTxt.mngValueCompany{
-  top:5rem;
+ margin : 5rem 7rem;
 }
+
+
 
 
 //skillVallue
@@ -176,8 +275,8 @@ $mngCircleSize : 20rem;
 
 .mngValueProcess{
   height: 50rem;
-  margin-right: 15rem;
   margin-top: 10rem;
+  margin-left: 3rem;
   div{
     font-size: 2.2rem;
     font-weight: 600;
@@ -200,7 +299,7 @@ $mngCircleSize : 20rem;
 .mngCircle {
   position:absolute;
   top:20rem;
-  left:20rem;
+  left:12rem;
   width:100%; 
   height:100%;
   animation:rotate linear infinite 40s forwards;
@@ -256,7 +355,7 @@ $mngCircleSize : 20rem;
 	height: 110%;
   position: absolute;
   bottom: -20rem;
-  left: 20rem;
+  left: 12rem;
   border: 0.8rem solid #e0e0e0;
   background-size: 60% 60%;
   border-radius: 50%;
@@ -264,7 +363,172 @@ $mngCircleSize : 20rem;
 }
 
 
-
 .mngInner{
   @include Inner;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .mngNeedTxt{
+    width: 90%;
+    margin-left: 3rem;
+  }
+  
+  .thinGradient{
+   width: 100%;
+   img{
+     width: 100%;
+     height: 80%;
+   }
+  }
+  .mngValueGradientLeft .mngValueGradientRight{
+    top: 30%;
+    font-size: 1.7rem;
+  }
+
+
+
+// mngValueskill
+.mngValueList{
+  width: 10%;
+  line-height: 11.8;
+  margin-top: 2rem;
+  li{
+    margin-left: 2rem;
+    }
+  }
+
+  .mngCompanyValue{
+    line-height: 1.5;
+    margin-left: 10rem;
+    margin-top: 6rem;
+    div{
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    p{
+      font-size: 1.6rem;
+      font-family:'Noto Sans KR';
+    }
+    span{
+      font-size: 1.8rem;
+    }
+  }
+  .mngCompanyValue div{
+    margin-top:4rem;
+  }
+
+.mngValueProcess{
+  width: 50%;
+  margin-top: 8rem;
+  margin-left: 40%;
+  div{
+    font-size: 2rem;
+    margin-top: 2rem;
+    line-height: 1.5;
+  }
+ p{
+   font-size: 1.7rem;
+   font-family:'Noto Sans KR';
+   line-height: 2;
+  } 
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px){
+
+  .mngMenuTab li{
+      font-size: 1.5rem;
+      margin-left: 2rem;
+  }
+  .mngValueTitle{
+    margin-left: 3rem;
+  }
+
+  .mngValueTxt{
+    margin-left: 10rem;
+  }
+  .mngNeedTxt{
+    margin-left: 3rem;
+  }
+
+  .isActive{
+    &::after{
+     height: 0.3rem;
+     width: 10rem;
+     background-color: $main-color;
+     position: absolute;
+     bottom: -3.3rem;
+     left: 3%;
+    }
+   }
+  
+   
+.mngCompanyValueAssess li:nth-child(2n)::before{
+  display: none;
+}
+
+.thinGradient{
+  width: 100%;
+  margin-bottom: 1rem;
+  img{
+    width: 100%;
+    height: 60%;
+  }
+ }
+ .mngValueGradientLeft .mngValueGradientRight{
+  top: 30%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.mngValueCompany{
+  margin-bottom: -2rem;
+}
+.mngValueCompanyAssess{
+  flex-wrap: wrap;
+  width: 90vw;
+    li{
+      width: 10rem;
+      height: 10rem;
+      border-radius: 0;
+      margin-top: 3rem;
+      flex: 100%;
+     &::before{
+       display: none;
+     }
+  }
+}
+.mngCompanyValueAssess{
+  flex-wrap: wrap;
+  width: 90vw;
+    li{
+      width: 10rem;
+      height: 10rem;
+      border-radius: 1%;
+      margin-top: 3rem;
+      flex: 100%;
+     &::before{
+       display: none;
+     }
+  }
+}
+
+//mngValueskill
+.mngValueList{
+  font-size: 1rem;
+  margin-left: -1rem;
+  line-height: 16;
+  li{
+    min-width: 30px;
+  }
+}
+.mngCompanyValue{
+  margin-top: 6.5rem;
+  margin-left: 5rem;
+}
+
+.mngCompanyValue div{
+  margin-top:5rem;
+}
+
 }

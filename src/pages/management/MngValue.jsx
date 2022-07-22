@@ -1,93 +1,72 @@
 import React from 'react';
-import GradientImg from '../../img/me/me_gradient_box@2x.png';
+import GradientImg from '../../img/me/me_gradient_box@2x.png'; 
 import '../../styles/mng/mngValue.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/me/me_sub_bg@2x.png';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const MngValue = ({ setHdSubStyle }) => {
+const MngValue = () => {
+  const navigate = useNavigate();
+
   const title = '효율적인 자산관리와 적절한<br />투자관련 의사결정을 지원합니다.'
   const [activeIndex, setActiveIndex] = useState(0);
-  const tabClickHandler = (index) => {
+  const tabClickHandler=(index)=>{
     setActiveIndex(index)
   }
 
-  /* header 배경색 변경 */
-  useEffect(() => {
-    setHdSubStyle('hdMain hdSub')
-  }, [setHdSubStyle])
-
   const mngValueContents = [
     {
-      tabTitle: (
-        <li className={activeIndex === 0 ? 'isActive' : ''} onClick={() => tabClickHandler(0)} >기업가치평가</li>
+      tabTitle:(
+        <li className={activeIndex===0 ?'isActive' : ''} onClick={()=>{tabClickHandler(0) 
+          navigate('/mng-value/mngvaluecompany')}} >기업가치평가</li>
       ),
-      tabContent: (
+      tabContent:(
         <div className='mngValueBusiness'>
           <h2 className='mngSmTitle mngValueTitle'>기업가치평가</h2>
           <h4 className='mngValueTxt'>필요성</h4>
           <div className='mngNeedTxt'>
-            <p>금융기관의 효율적인 자산관리가 필요하고 적시・적절한 투자관련 의사 결정 필요성이 증가하여</p>
-            <p>기업가치평가가 필요하며, 진행하게 되면 기업가치 중 무형자산의 기여도가 증가한다.</p>
+            <p>금융기관의 효율적인 자산관리가 필요하고 적시・적절한 투자관련 의사 결정 필요성이 증가하여
+              <span>기업가치평가가 필요하며, 진행하게 되면 기업가치 중 무형자산의 기여도가 증가한다.</span>
+            </p>
           </div>
           <h4 className='mngValueTxt'>기업가치 평가요인</h4>
-          <img src={GradientImg} alt="그라데이션" className='thinGradient' />
-          <div className='mngValueGradientTitle'>
-            <span>기업내적요인</span>
-            <span>기업외적요인</span>
+          <div className='thinGradient'>
+            <img src={GradientImg} alt="그라데이션"/>
+            <span className='mngValueGradientLeft'>기업내적요인</span>
+            <span className='mngValueGradientRight'>기업외적요인</span>
           </div>
-          <ul className='mngFourCircle'>
+          <ul className='mngCompanyValueAssess'>
             <li>질적요인</li>
             <li>양적요인</li>
             <li>시장내적요인</li>
             <li>시장외적요인</li>
           </ul>
           <div className='mngValueAssess'>
-            <p>경영자의 자질, 주주현황,<br />연구개발투자,기술인력구성,<br />노사관계, Life Cycle 등</p>
-            <p>수익성, 재무구조,<br />배당성향, 재무제표에 관한 사항</p>
-            <p>시장규제, 부양조치,<br />투자자의 심리 및 동향 등</p>
-            <p>경기순환, 물가동향,<br />금리수준, 통화신용,<br />재정정책, 환율 등</p>
+            <p>기업내적요인에는 질적 요인과 양적 요인이 있는데 질적 요인에는 경영자의 자질, 주주현황, 연구개발투자, 기술인력구성, 노사관계, Life Cycle 등이 있고 양적요인에는 수익성, 재무구조, 배당성향, 재무제표에 관한 사항이 있습니다.</p>
+            <p>기업외적요인에는 시장내적요인과 시장외적요인이 있는데 시장내적요인에는 시장규제, 부양조치, 투자자의 심리 및 동향 등이 있고 시장외적요인에는 경기순환, 물가동향, 금리수준, 통화신용, 재정정책, 환율 등이 있습니다.</p>
           </div>
-          <h4 className='mngValueTxt mngValueCompany'>기업가치평가방법</h4>
           <div>
-            <ul className='mngFourCircle'>
-              <li>자산가치법<br />(Asset-Based<br />Approach)</li>
-              <li>수익가치법<br />(Income Approach)</li>
-              <li>시장가치법<br />(Market Comparable<br />Transactions Approach)</li>
-              <li>현금흐름할인모형</li>
-            </ul>
+            <h4 className='mngValueTxt mngValueCompany'>기업가치평가방법</h4>
           </div>
+          <ul className='mngFourCircle mngValueCompanyAssess'>
+            <li>자산가치법<br />(Asset-Based<br />Approach)</li>
+            <li>수익가치법<br />(Income Approach)</li>
+            <li>시장가치법<br />(Market Comparable<br />Transactions Approach)</li>
+            <li>현금흐름할인모형</li>
+          </ul>
           <div className='mngCompanyAssess'>
-            <div>
-              <p>장부가치에 의한 평가</p>
-              <p>시간에 의한 평가</p>
-              <p>청산가치</p>
-            </div>
-            <div>
-              <p>당기순이익 환원법</p>
-              <p>배당 환원법</p>
-            </div>
-            <div>
-              <p>PER(Price-Earning Ratio</p>
-              <p>EV/EBITDA</p>
-              <p>PBR(Priceon Book-value Ratio)</p>
-              <p>PSR(Price Selling Ratio)</p>
-            </div>
-            <div>
-              <p>잉여현금흐름</p>
-              <p>(FCF : Free Cash Flow)</p>
-              <p>미래현금흐름 할인모형</p>
-              <p>(DCF : Discount Cash Flow)</p>
-            </div>
+            <p>자산가치법에는 장부가치에 의한 평가, 시간에 의한 평가, 청산가치가 있고 수익가치법에는 당기순이익 환원법, 배당 환원법이 있으며 시장가치법에는 PER(Price-Earning Ratio, EV/EBITDA, PBR(Priceon Book-value Ratio), PSR(Price Selling Ratio)이 있고 현금흐름할인모형에는 잉여현금흐름, (FCF : Free Cash Flow), 미래현금흐름 할인모형, (DCF : Discount Cash Flow)이 있습니다.</p>
           </div>
         </div>
       )
     },
     {
-      tabTitle: (
-        <li className={activeIndex === 1 ? 'isActive' : ''} onClick={() => tabClickHandler(1)}>기술가치평가</li>
+      tabTitle:(
+        <li className={activeIndex===1 ? 'isActive': ''} onClick={()=>{tabClickHandler(1) 
+          navigate('/mng-value/mngvalueskill')}}>기술가치평가</li>
       ),
-      tabContent: (
+      tabContent:(
         <div className='mngSkillValue'>
           <h2 className='mngSmTitle mngValueTitle'>기술가치평가</h2>
           <h4 className='mngValueTxt'>필요성</h4>
@@ -134,18 +113,18 @@ const MngValue = ({ setHdSubStyle }) => {
               </div>
             </div>
             <div className='mngValueProcess'>
-              <div>기술적 위치 분석</div>
+              <div>기술적 위치 분석(Technical Position Analysis)</div>
               <p>- Patent map 작성,  기술개발 흐름, 타 기술과 관계, 기술경쟁력</p>
-              <div>산업 분석</div>
+              <div>산업 분석(industry analysis)</div>
               <p>- Value Chains 파악, Cost Drivers 분석, 경쟁환경, 하부구조 파악</p>
-              <div>기술가치 종합 분석</div>
+              <div>기술가치 종합 분석(Comprehensive analysis of technology value)</div>
               <p>- 시장분석, 투자비용 산출, 잠재적 경제수익, 기술가치 종합분석</p>
             </div>
           </div>
         </div>
       )
     }
-  ];
+  ] ;
 
 
   return (
@@ -154,10 +133,10 @@ const MngValue = ({ setHdSubStyle }) => {
         <SubBanner title={title} img={subBg} />
         <div className='mngInner'>
           <h2 className='mngSubTitle'>가치평가</h2>
-          <div className='mngMentTabEdge'>
+          <div className='mngMenuTabEdge'>
             {
-              mngValueContents.map((section, index) => {
-                return (
+              mngValueContents.map((section,index) => {
+                return(
                   <ul key={index} className='mngMenuTab'>
                     {section.tabTitle}
                   </ul>

@@ -21,18 +21,18 @@ const MngCertify = ({ setHdSubStyle }) => {
         <div>
           <h2 className='mngSubTitle'>기업인증</h2>
         </div>
-        <h3 className='mngSmTitle'>서비스진행 및 진행절차</h3>
+        <h3 className='mngSmTitle mngCertifyTitle'>서비스진행 및 진행절차</h3>
         <div className='mngCertifyTxt'>
-          <p>제타플랜은 2006년부터 현재까지 국내 2,500여 개사의 기업 인증을 지원하고 있으며,</p>
-          <p>인증기업의 성장을 위한 기업금융, 기술금융, 투자유치, 기술거래, M&A, 해외 진출 등의 업무를 체계적으로 지원하여</p>
-          <p>고객사의 글로벌 기업의 성장을 위한 노력을 기울이고 있습니다.</p>
+          <p>제타플랜은 2006년부터 현재까지 국내 2,500여 개사의 기업 인증을 지원하고 있으며,
+          인증기업의 성장을 위한 기업금융, 기술금융, 투자유치, 기술거래, M&A, 해외 진출 등의 업무를 체계적으로 지원하여
+          고객사의 글로벌 기업의 성장을 위한 노력을 기울이고 있습니다.</p>
         </div>
         <div className='mngCertifyTxt'>
-          <p>제타플랜은 이노비즈기업협회, 벤처기업협회, 경영혁신형중소기업협회 등의 3대 혁신형 기업을 지원하는 협회와 지원 업무를 공유하고 있으며,</p>
-          <p>녹색인증을 위한 녹색기술센터, 서울 산업진흥원, 경기테크노파크와도 협력하여 업무를 지원하고 있습니다.</p>
-          <p>그리고 한국발명진흥회, 신용보증기금, 한국산업은행, 한국 벤처캐피털협회, 중소기업진흥공단, 농업기술실용화 재단,</p>
-          <p>농수산식품유통공사, 한국 소재부품투자기관협의회, 국제기술교류재단, 한국산업기술진흥원 등과 협업하여</p>
-          <p>기업의 성공을 위한 지원 업무에 최선을 다하고 있습니다.</p>
+          <p>제타플랜은 이노비즈기업협회, 벤처기업협회, 경영혁신형중소기업협회 등의 3대 혁신형 기업을 지원하는 협회와 지원 업무를 공유하고 있으며,
+          녹색인증을 위한 녹색기술센터, 서울 산업진흥원, 경기테크노파크와도 협력하여 업무를 지원하고 있습니다.</p>
+          <p>그리고 한국발명진흥회, 신용보증기금, 한국산업은행, 한국 벤처캐피털협회, 중소기업진흥공단, 농업기술실용화 재단,
+          농수산식품유통공사, 한국 소재부품투자기관협의회, 국제기술교류재단, 한국산업기술진흥원 등과 협업하여
+          기업의 성공을 위한 지원 업무에 최선을 다하고 있습니다.</p>
         </div>
         <h4 className='mngCertifyCt'>지난 14년 동안 2,500개 이상의 기업이 왜 제타플랜을 선택했을까?</h4>
         <div className='mngCertifyTxt'>
@@ -57,13 +57,15 @@ const MngCertify = ({ setHdSubStyle }) => {
           <p>- 인증만료 안내 및 인증 변경관련 무료 상담 제공</p>
           <p>- 전분야 상담가능한 고급컨설턴트의 1:1 업체 전담 배정 및 지원</p>
         </div>
+        <h3 className='mngSmTitle mngCertifyTitle'>기업인증을 통한 성장</h3>
         <h3 className='mngSmTitle'>기업인증을 통한 성장</h3>
         <img src={BoldGradient} alt="두꺼운 그라데이션" className='Boldgradient' />
         <div className='mngGrowEdge'>
           <div className='mngGrow'>
-            <span>창업초기</span>
-            <span>성장기</span>
-            <span>성숙기</span>
+            <img src={BoldGradient} alt="두꺼운 그라데이션" className='Boldgradient'/>
+            <span className='mngGrowLeft'>창업초기</span>
+            <span className='mngGrowMiddle'>성장기</span>
+            <span className='mngGrowRight'>성숙기</span>
           </div>
           <div className='mngGrowTxt'>
             <div className='mngGrowF'>

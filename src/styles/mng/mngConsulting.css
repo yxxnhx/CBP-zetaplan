@@ -9,7 +9,7 @@
   font-weight: 900;
   padding-left: 3rem;
   position: relative;
-  margin: 7.8rem;
+  margin: 1rem 0 3rem;
 }
 .mngSubTitle::before {
   content: "";
@@ -22,29 +22,18 @@
   top: 0;
   left: 0;
 }
-.mngSubTitle::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #333;
-  position: absolute;
-  top: 6rem;
-  left: 0;
-}
 
 .mngSubTitleNb {
   font-size: 3.2rem;
   font-weight: 900;
   padding-left: 3rem;
-  margin-left: 7.8rem;
-  margin-top: 3rem;
   position: relative;
+  margin-top: 10rem;
 }
 .mngSubTitleNb::before {
   content: "";
   display: block;
-  background: url("../../img/title_box@2x.png") no-repeat;
+  background: url("./../../img/title_box@2x.png") no-repeat;
   background-size: contain;
   width: 1rem;
   height: 3rem;
@@ -56,16 +45,24 @@
 .mngSummary {
   width: 132.7rem;
   height: 26.6rem;
-  margin-left: 9rem;
+  padding-top: 3rem;
 }
 .mngSummary p {
-  font-size: 2.08rem;
+  font-size: 2rem;
   line-height: 1.7;
+}
+
+.mngConsultingProcess {
+  text-align: center;
 }
 
 .mngConsultingProcessImg {
   width: 90rem;
-  margin: 9.4rem 25rem;
+  margin: 9.4rem 0;
+}
+
+.mngFiveCircle > li:last-child {
+  margin-right: 0;
 }
 
 .mngFourCircle {
@@ -73,7 +70,7 @@
   width: 90rem;
   justify-content: center;
   align-items: center;
-  margin: 9rem 14rem 2rem;
+  margin: auto;
 }
 .mngFourCircle li {
   width: 35rem;
@@ -111,10 +108,9 @@
 
 .mngFiveCircle {
   display: flex;
-  width: 115rem;
   justify-content: center;
   align-items: center;
-  margin: 9rem 16rem 2rem;
+  margin: 6rem auto 2rem;
 }
 .mngFiveCircle li {
   width: 20rem;
@@ -150,27 +146,17 @@
   display: none;
 }
 
-.mngCircleTxt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.mngCircleTxt p {
-  padding-left: 3rem;
-  font-size: 1.6rem;
-  line-height: 1.5;
+.mngConsultingTxt p {
+  font-size: 2rem;
   font-family: "Noto Sans KR";
-  margin-bottom: 10rem;
-  margin-top: 2rem;
+  padding-left: 3rem;
+  padding-bottom: 5rem;
+  line-height: 1.5;
+  margin-top: 4rem;
 }
 
-.mngConsultingTxt p {
-  font-size: 1.6rem;
-  font-family: "Noto Sans KR";
-  padding-left: 3rem;
-  line-height: 1.5;
-  margin-left: 8rem;
-  margin-top: 4rem;
+.mngTxt p:last-child {
+  margin-top: -3rem;
 }
 
 .mngSmTitle {
@@ -180,26 +166,8 @@
   margin-top: 10rem;
 }
 
-.mngFiveTxt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.mngFiveTxt p {
-  font-size: 1.6rem;
-  font-family: "Noto Sans KR";
-  padding-left: 3rem;
-  text-align: center;
-  line-height: 1.5;
-  margin-bottom: 10rem;
-}
-
-.mngSubTitleNb.mngConsultingPro {
-  margin-top: 20rem;
-}
-
 .mngInner {
-  width: 1440px;
+  width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
 }/*# sourceMappingURL=mngConsulting.css.map */
