@@ -24,7 +24,7 @@ const IrPlan = ({ setHdSubStyle }) => {
           <li>재무계획<br /><span>(Financial Planning)</span></li>
           <li>인력/조직<br /><span>(Organization)</span></li>
           <li>마케팅능력<br /><span>(Marketing)</span></li>
-          <li>위험/기회<br /><span>(Risks & <br /> Opportunities)</span></li>
+          <li>위험/기회<br /><span>(Risks & Opportunities)</span></li>
           <li>실행일정<br /><span>(Action Plan)</span></li>
           <li>사업체제<br /><span>(Business System)</span></li>
         </ul>

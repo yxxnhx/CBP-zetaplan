@@ -8,7 +8,7 @@ import newsData from './../../db/newsList.json'
 import { useState, useEffect } from 'react';
 import './../../styles/main/NewsColumn.scss';
 import { useNavigate } from 'react-router-dom';
-
+import zetaLogo from './../../img/notice/thumbnail_zeta.png'
 const MainNews = () => {
   const navigate = useNavigate();
   const [newsDb, setNewsDb] = useState([]);
@@ -80,7 +80,10 @@ const MainNews = () => {
                     </div>
                     <div className="mainNCDimmed"></div>
                     <div className="mainNCBg">
-                      <img src={data.img} alt={data.category} />
+                      {
+                        data.img.length === 0 ? <img className='thumbnail' src={zetaLogo} alt="뉴스 칼럼 대표 이미지" /> : <img className='thumbnail' src={data.img} alt="칼럼"/>
+                      }
+                      {/* <img src={data.img} alt={data.category} /> */}
                     </div>
                   </div>
                 </SwiperSlide>

@@ -3,7 +3,6 @@
 
 .irInner {
   @include Inner;
-  background-color: #707070
 }
 
 .irSubtitle {
@@ -15,13 +14,9 @@
   justify-content: center;
 }
 
-.irSubImg   {
-  height: 94rem;
-  width: auto;
-  margin: 7rem 0 14rem;
-  img {
-    height: 100%;
-  }
+.irSubImg  {
+  height: 56vw;
+  margin: 6rem auto;
 }
 
 .irContent {
@@ -84,11 +79,10 @@
 .irListProcessImg {
   display: flex;
   justify-content: center;
+  height: 56vw;
+
 }
-.irListProcessImg img{
-  width: auto;
-  height: 90rem;
-}
+
 .irListDes {
   font-size: $list-md;
   line-height: 1.7;
@@ -100,28 +94,17 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
-  .irSubImg   {
-    height: 80rem;
-    width: auto;
-    margin: 7rem 0 14rem;
-    img {
-      height: auto;
-      width: 100%;
-    }
-  }
+
 
 }
 @media (min-width: 360px) and (max-width: 767px){
-  .irSubImg   {
-    height: 60rem;
-    width: auto;
-    margin: 7rem 0 14rem;
-    img {
-      height: auto;
-      width: 100%;
-    }
+  .irSubImg  {
+    height: 70vw;
   }
-
-
-
+  .irListProcessImg   {
+    height: 83vw;
+  }
 }
+
+
+

@@ -65,7 +65,7 @@ function App() {
           <Route path="/mng-credit" element={<MngCredit setHdSubStyle={setHdSubStyle} />} />
           <Route path="/zeta" element={<Zeta setHdSubStyle={setHdSubStyle} />} />
           <Route path="/gb" element={<Gbindex setHdSubStyle={setHdSubStyle} />} />
-          <Route path="/gb-trategy" element={<GbStrategy setHdSubStyle={setHdSubStyle} />} />
+          <Route path="/gb-strategy" element={<GbStrategy setHdSubStyle={setHdSubStyle} />} />
           <Route path="/gb-case" element={<GbCase setHdSubStyle={setHdSubStyle} />} />
           <Route path="/landing" element={<Landing />} />
           <Route path="/maipo" element={<MaIpoInfo setHdSubStyle={setHdSubStyle} />} />

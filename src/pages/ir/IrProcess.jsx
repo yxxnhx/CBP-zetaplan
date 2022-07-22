@@ -33,44 +33,12 @@ const IrProcess = ({ setHdSubStyle }) => {
             <ul className="irAccoCircleArea">
               <li className="irAccoProCircleContent">
                 <ul className="irAccoProCircleM">
-                  <li>
-                    STEP 01
-                    <br />
-                    예비진단
-                  </li>
-                  <li>
-                    STEP 02
-                    <br />
-                    현금 흐름
-                  </li>
-                  <li>
-                    STEP 03
-                    <br />
-                    성공요소
-                  </li>
-                  <li>
-                    STEP 04
-                    <br />
-                    내부환경
-                  </li>
-                  <li>
-                    STEP 05
-                    <br />
-                    사업전략
-                  </li>
-                  <li>
-                    STEP 06
-                    <br />
-                    자무재표
-                  </li>
-                </ul>
-                <ul className="irAccoProCircleDes">
-                  <li>사업경쟁력(핵심역량)</li>
-                  <li>미래현금흐름</li>
-                  <li>성공요소</li>
-                  <li>핵심역량</li>
-                  <li>사업전략</li>
-                  <li>미래수익구조</li>
+                  <li>STEP 01<span>예비진단</span></li>
+                  <li>STEP 02<span>현금 흐름</span></li>
+                  <li>STEP 03<span>성공요소</span></li>
+                  <li>STEP 04<span>내부환경</span></li>
+                  <li>STEP 05<span>사업전략</span></li>
+                  <li>STEP 06<span>자무재표</span></li>
                 </ul>
               </li>
               <p className="irProText">
@@ -82,41 +50,14 @@ const IrProcess = ({ setHdSubStyle }) => {
             <ul className="irAccoProCircleAreaS">
               <li className="irAccoProCircleBox">
                 <ul className="irAccoProCircleS">
-                  <li>
-                    STEP 01
-                    <br />
-                    예비진단
-                  </li>
-                  <li>
-                    STEP 02
-                    <br />
-                    재무분석
-                  </li>
-                  <li>
-                    STEP 03
-                    <br />
-                    투자유치준비
-                  </li>
-                  <li>
-                    STEP 04
-                    <br />
-                    투자유치실행/IPO
-                  </li>
-                </ul>
-                <ul className="irAccoProCircleSDes">
-                  <li>재무분석</li>
-                  <li>기준 및 역량분석</li>
-                  <li>실행전략</li>
-                </ul>
-                <ul className="irAccoProCircleSDetail">
-                  <li>사업경쟁력(핵심역량)</li>
-                  <li>미래현금흐름</li>
-                  <li>성공요소</li>
-                  <li>핵심역량</li>
+                  <li>STEP 01<span className='irCircleDesP'>예비진단</span></li>
+                  <li>STEP 02<span className='irCircleDesA'>재무분석</span></li>
+                  <li>STEP 03<span className='irCircleDesI'>투자유치준비</span></li>
+                  <li>STEP 04<span className='irCircleDes'>투자유치실행/IPO</span></li>
                 </ul>
               </li>
             </ul>
-            <p className="irProText">
+            <p className="irProText irCircleSText">
               재무분석에서 추정재무제표작성 및 기업가치 평가를 진행하며 기준 및 역량분석에서는 사전절차 확인 및
               주요사항을 준비합니다. <br /> 실행전략에서 추진전략 및 세부 실행 계획 수립을 하여 성공적인 진단을
               진행합니다.
@@ -158,33 +99,11 @@ const IrProcess = ({ setHdSubStyle }) => {
         <ul className="irProCircleArea">
           <li className="irProCircleBox">
             <ul className="irProCircle">
-              <li>
-                STEP 01
-                <br />
-                경영 및 사업현황조사
-              </li>
-              <li>
-                STEP 02
-                <br />
-                기업 진단
-              </li>
-              <li>
-                STEP 03
-                <br />
-                투자유치 및 성장전략 수립
-              </li>
-              <li>
-                STEP 04
-                <br />
-                IR자료 작성
-              </li>
-              <li>
-                STEP 05
-                <br />
-                사후관리
-                <br />
-                (국내 VC 투자유치 등)
-              </li>
+              <li>STEP 01<span>경영 및</span><span>사업현황조사</span></li>
+              <li>STEP 02<span>기업 진단</span></li>
+              <li>STEP 03<span>투자유치 및</span><span>성장전략 수립</span></li>
+              <li>STEP 04<span>IR자료 작성</span></li>
+              <li>STEP 05<span>사후관리</span><span>(국내 VC</span><span>투자유치 등)</span></li>
             </ul>
           </li>
         </ul>

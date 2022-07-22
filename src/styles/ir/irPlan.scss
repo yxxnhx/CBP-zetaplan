@@ -13,18 +13,18 @@
 .irCircle {
   display: flex;
   flex-wrap: wrap;
-  width: 82vw;
+  width: 90vw;
   justify-content: center;
   align-items: center;
   margin: 8.5rem auto;
   li {
-    width: 12.7vw;
-    height: 12.7vw;
+    width: 14vw;
+    height: 14vw;
     border-radius: 50%;
     border: 1px solid $main-color;
     margin-right: 4rem;
     position: relative;
-    font-size: 1.3vw;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     display: flex;
@@ -129,3 +129,53 @@
   }
 
 }
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+
+}
+@media (min-width: 360px) and (max-width: 767px){
+  .irCircle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 82vw;
+    justify-content: center;
+    align-items: center;
+    margin: 8.5rem auto;
+    li {
+      width: 70%;
+      height: 70%;
+      border-radius: 0;
+      border: 1px solid $main-color;
+      margin-right: 0;
+      position: relative;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 1.7;
+      flex-direction: column;
+      padding: 1.5rem;
+      box-sizing: border-box;
+      margin-bottom: 2rem;
+      
+      span {
+        font-size: 1.8rem;
+        line-height: 1.5;
+      }
+      &:hover {
+        background-color: $main-color;
+        color: $basic-white;
+  
+      }
+  
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
