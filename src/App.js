@@ -54,46 +54,6 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/main" element={<Index setHdSubStyle={setHdSubStyle} />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/zeta" element={<Zeta />} />
-          <Route path="/zeta-history" element={<ZetaHistory />} />
-          <Route path="/zeta-ci" element={<ZetaCi />} />
-          <Route path="/zeta-consul" element={<ZetaConsul />} />
-          <Route path="/zeta-people" element={<ZetaPeople />} />
-          <Route path="/zeta-map" element={<ZetaMap />} />
-          <Route path="/zeta-network" element={<ZetaNetwork />} />
-          <Route path="/zeta-network" element={<ZetaNetwork />} />
-          <Route path="/maipo" element={<MaIpoInfo />} />
-          <Route path="/maipo-process" element={<MaIpoPro />} />
-          <Route path="/maipo-performance" element={<MaIpoPerfo />} />
-          <Route path="/ir" element={<Ir />} />
-          <Route path="/ir-plan" element={<IrPlan />} />
-          <Route path="/ir-process" element={<IrProcess />} />
-          <Route path="/ir-perfo" element={<IrPerfo />} />
-          <Route path="/gb" element={<Gbindex />} />
-          <Route path="/gb-strategy" element={<GbStrategy />} />
-          <Route path="/gb-case" element={<GbCase />} />
-          <Route path="/mng" element={<MngConsulting />} />
-          <Route path="/mng-credit" element={<MngCredit />} />
-          <Route path="/mng-certify" element={<MngCertify />} />
-          <Route path="/mng-trade" element={<MngTrade />} />
-          <Route path="/mng-value/:category" element={<MngValue />} />
-          <Route
-            path="/maipo"
-            element={
-              <MaIpoInfo
-                onLoad={() => {
-                  console.log('꺼져');
-                }}
-              />
-            }
-          />
-          <Route path="/news" element={<News />} />
-          <Route path="/news/:category/:id" element={<NewsDetailItem />} />
-          <Route path="/dataInfo" element={<DataInfo />} />
-          <Route path="/datainfo/:category/:id" element={<DetailInfoItem />} />
-          <Route path="/qna" element={<Qna />} />
-          <Route path="/qna/:id" element={<QnaDetail />} />
-          <Route path="/consulting" element={<ConsultingPage />} />
           <Route path="/ir" element={<Ir setHdSubStyle={setHdSubStyle} />} />
           <Route path="/ir-perfo" element={<IrPerfo setHdSubStyle={setHdSubStyle} />} />
           <Route path="/ir-plan" element={<IrPlan setHdSubStyle={setHdSubStyle} />} />

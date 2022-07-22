@@ -41,7 +41,6 @@ const NewsColumn = () => {
           <div className='newsColumnTab'>
             {
               mainCLi.map(function(data, i) {
-                console.log(i)
                 return (
                   <button onClick={() => setMainCLView(i)} key={data.id} className={mainCLView===i?'mainNCTap mainNCTapOn':'mainNCTap mainNCTapOff'}>{mainCLi[i].title}</button>
                 )
@@ -50,8 +49,6 @@ const NewsColumn = () => {
           </div>
           {
             mainCLi.map(function(data, i) {
-              console.log(i)
-              console.log(data)
               return (
                 <div key={data.id}  className={mainCLView===i? 'mainSlide mainSlideOn':'mainSlide mainSlideOff'}>
                   <div>{i === 0 ? <MainAll /> :  null}</div>
