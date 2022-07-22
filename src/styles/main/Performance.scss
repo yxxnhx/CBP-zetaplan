@@ -140,63 +140,68 @@
 }
 
 @media (min-width: 680px) and (max-width: 767px) {
-  .pfWrap .pfCon .pfListCon {
-    margin: auto;
-    height: 70vw;
-    width: 80vw;
-    background-color: $basic-gray1;
-    flex-wrap: wrap;
-
-    .pfMQImgBox {
-      display: block;
-      img {
-        width: 80vw;
-      }
+  .pfWrap .pfCon {
+    .pfMaintitle {
+      margin-left: 5%;
     }
-    .pfList {
-      width: 250px;
-      border-radius: 10px;
-      background-color: $basic-white;
-      margin-bottom: 30px;
-      margin-right: 0;
+    .pfListCon {
+      margin: auto;
+      height: 70vw;
+      width: 80vw;
+      background-color: $basic-gray1;
+      flex-wrap: wrap;
 
-      .pfImgBox {
-        display: none;
+      .pfMQImgBox {
+        display: block;
+        img {
+          width: 80vw;
+        }
       }
-      .pfConBox {
-        margin-top: 32px;
-        .pfIconBox {
+      .pfList {
+        width: 250px;
+        border-radius: 10px;
+        background-color: $basic-white;
+        margin-bottom: 30px;
+        margin-right: 0;
+
+        .pfImgBox {
           display: none;
         }
-
-        .pfMQConBox {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-
-          .pfTitle {
-            font-size: 20px;
+        .pfConBox {
+          margin-top: 32px;
+          .pfIconBox {
+            display: none;
           }
 
-          .pfCount {
-            font-size: 38px;
-            padding-bottom: 15px;
+          .pfMQConBox {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .pfTitle {
+              font-size: 20px;
+            }
+
+            .pfCount {
+              font-size: 38px;
+              padding-bottom: 15px;
+            }
           }
-        }
-        .pfDes {
-          display: none;
+          .pfDes {
+            display: none;
+          }
         }
       }
-    }
 
-    .ipoList,
-    .globalList {
-      margin-right: 20px;
-    }
+      .ipoList,
+      .globalList {
+        margin-right: 20px;
+      }
 
-    .maList,
-    .irList {
-      margin-left: 20px;
+      .maList,
+      .irList {
+        margin-left: 20px;
+      }
     }
   }
 }
@@ -288,7 +293,7 @@
         display: none;
       }
       .pfConBox {
-        margin-top: 20px;
+        margin-top: 25px;
         .pfIconBox {
           display: none;
         }

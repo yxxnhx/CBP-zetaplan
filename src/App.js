@@ -39,6 +39,7 @@ import MaIpoPro from './pages/maipo/MaIpoPro';
 import MaIpoPerfo from './pages/maipo/MaIpoPerfo';
 import ScrollToTop from './components/common/ScrollTop';
 import TopBtn from './components/common/TopBtn';
+import LangEng from './pages/lang/LangEng';
 import { useState } from 'react';
 
 function App() {
@@ -86,6 +87,7 @@ function App() {
           <Route path="/news/:category/:id" element={<NewsDetailItem setHdSubStyle={setHdSubStyle} />} />
           <Route path="/qna/:id" element={<QnaDetail setHdSubStyle={setHdSubStyle} />} />
           <Route path="/datainfo/:category/:id" element={<DetailInfoItem setHdSubStyle={setHdSubStyle} />} />
+          <Route path="/eng" element={<LangEng />} />
         </Routes>
       </BrowserRouter>
       <Consulting />
