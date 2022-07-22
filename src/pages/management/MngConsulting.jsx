@@ -4,13 +4,16 @@ import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/me/me_sub_bg@2x.png';
 import { useEffect } from 'react';
 
-const MngConsulting = ({ setHdSubStyle }) => {
+const MngConsulting = ({setHdSubStyle}) => {
   const title = '전 세계를 무대로 더 큰 꿈을<br />키울 수 있도록 응원합니다.'
+
 
   /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
+
+
 
   return (
     <div>
@@ -25,7 +28,7 @@ const MngConsulting = ({ setHdSubStyle }) => {
           <p>외부자의 시선으로 기업을 바라보므로, 독립적이고 객관적 입장을 유지할 수 있습니다.</p>
           <p>또한, 경영관리에 관한 최신의 지식과 기법을 해결책에 적용시킬 수 있으며,</p>
           <p>다른 기업에서 성공한 경험을 제공함으로써 컨설팅의 대상이 되는 기업에 많은 경험적인 도움을 줄 수 있습니다.</p>
-        </div>
+        </div>  
         <div>
           <h2 className='mngSubTitleNb mngConsultingGoal'>목표</h2>
         </div>
@@ -72,9 +75,6 @@ const MngConsulting = ({ setHdSubStyle }) => {
           제품/서비스 완성 단계에서는자금 운영계획, 회계사・회계시스템 활용, 자금대출/상환계획이 이루어지고 초기시장진입단계에서는 재무제표 관리, 수입금 관리 계획, 전문가에 의한 자금 흐름/지출 분석을 진행합니다.</p>
           <p>대상시장/ 리더그룹 포지셔닝 단계에서는 자본증자 계획, 전략적 투자유치, 투자유치IR활동, 자금차입계획이 이루어지며
           해외진출/ 사업확장 단계에서는 국외투자유치 추진, 전략적 투자유치, 정부 정책자금, 벤처캐피털・사모펀드 투자유치가 진행됩니다.</p>
-            제품/서비스 완성 단계에서는자금 운영계획, 회계사・회계시스템 활용,<br /> 자금대출/상환계획이 이루어지고 초기시장진입단계에서는 재무제표 관리, 수입금 관리 계획, 전문가에 의한 자금 흐름/지출 분석을 진행합니다.<br />
-            대상시장/ 리더그룹 포지셔닝 단계에서는 자본증자 계획, 전략적 투자유치, 투자유치IR활동, 자금차입계획이 이루어지며
-            해외진출/ 사업확장 단계에서는 국외투자유치 추진, 전략적 투자유치,<br />정부 정책자금, 벤처캐피털・사모펀드 투자유치가 진행됩니다.</p>
         </div>
         <div>
           <h2 className='mngSubTitleNb'>Process</h2>
@@ -82,7 +82,6 @@ const MngConsulting = ({ setHdSubStyle }) => {
         <div className='mngConsultingProcess'>
           <img src={ProcessGraph} alt='graph' className='mngConsultingProcessImg'/>
         </div>
-        <img src={ProcessGraph} alt='graph' className='mngConsultingProcessImg' />
       </div>
     </div>
   );
