@@ -60,7 +60,7 @@ const ResetStyle = createGlobalStyle`
     }
 
   }
-  @media (min-width: 360px) and (max-width: 767px){
+  @media all and (max-width: 767px){
     * {
       font-size: 40%;
       box-sizing: border-box;

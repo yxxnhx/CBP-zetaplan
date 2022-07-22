@@ -17,21 +17,21 @@ const Landing = () => {
         </video>
       </div>
       <div className="LdIntro">
-        <div className="LdTitle"data-aos="fade-up"data-aos-duration="3000">
-          <p>제타플랜은 2,500개 사의 컨설팅을 진행한 <br />경영컨설팅 전문 기업입니다
+        <div className="LdTitle"data-aos="fade-up"data-aos-duration="2500">
+          <p>제타플랜은 2,500개 사의 컨설팅을 진행한 <span>경영컨설팅 전문 기업입니다</span> 
           </p> 
-          <img src={require('./../../img/landing/landing_smaill_bg@2x.png')} alt="word" />
+          <img src={require('./../../img/landing/landing_smaill_bg@2x.png')} alt="word" className='LdTitleBg'/>
+          <div className='LdDesSpe' data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+            <img src={require('./../../img/landing/landing_Specialty@2x.png')} alt="word" />
+          </div>
         </div>
-      </div>
-      <div className="LdDesWord">
-        <div className='LdDesBus' data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
-          <img src={require('./../../img/landing/landing_Business@2x.png')} alt="word" />
-        </div>
-        <div className='LdDesPro'  data-aos="fade-left" >
-          <img src={require('./../../img/landing/landing_Professional@2x.png')} alt="word" />
-        </div>
-        <div className='LdDesSpe' data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
-          <img src={require('./../../img/landing/landing_Specialty@2x.png')} alt="word" />
+        <div className="LdDesWord" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+          <div className='LdDesPro' >
+            <img src={require('./../../img/landing/landing_Professional@2x.png')} alt="word" />
+            <div className='LdDesBus' data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine" data-aos-duration="100">
+              <img src={require('./../../img/landing/landing_Business@2x.png')} alt="word" />
+            </div>
+          </div>
         </div>
       </div>
       <div className="LdStep">
@@ -58,8 +58,6 @@ const Landing = () => {
       <div className="btnArea">
         <button><Link to='/main'>자세히 보기</Link></button>
         <button><Link to='/consulting'>컨설팅 신청</Link></button>
-        <p>test</p>
-        <p>test2</p>
       </div>
     </div>
   );
