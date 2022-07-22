@@ -9,62 +9,108 @@ $zt-smFtSz:2.24rem;
 $zt-grayColor:#707070;
 
 @mixin ztNotoKr($zt-krWeight,$zt-krSize){
-    font-family: 'Noto Sans KR';
-    font-weight:$zt-krWeight;
-    font-size:$zt-krSize;
+  font-family: 'Noto Sans KR';
+  font-weight:$zt-krWeight;
+  font-size:$zt-krSize;
 }
 
 .ztCsBox .ztTitle{
-    color: $basic-black;
-    margin-bottom: 12rem;
+  color: $basic-black;
+  margin-bottom: 12rem;
 }
 
 .ztCsTitle{
-    .ztCsTitleBig{
-       @include ztNotoKr($zt-ftBold,$zt-BigFtSz);
-       margin-bottom: 2.2rem;
-    }
-    .ztCsTitleSub{
-        @include ztNotoKr($zt-ftBold,$zt-smFtSz);
-        color:$zt-grayColor;
-    }
+  .ztCsTitleBig{
+    @include ztNotoKr($zt-ftBold,$zt-BigFtSz);
+    margin-bottom: 2.2rem;
+  }
+  .ztCsTitleSub{
+    @include ztNotoKr($zt-ftBold,$zt-smFtSz);
+    color:$zt-grayColor;
+  }
 }
 
 .ztCsDataBox{
-    padding-top: 18rem;
-    .ztCsData{
-        display: flex;
-        justify-content: space-between;
-        .ztCsDataTitle{
-            flex: 40%;
-            .ztCsDataNum{
-                @include ztNotoKr($zt-ftBold,$zt-smFtSz);
-                &::after{
-                  content: '';
-                  display: inline-block;
-                  width: 9.4rem;
-                  height:0.5rem;
-                  background:$sub-purple;
-                  vertical-align: middle;
-                  margin-left: 2rem;
-                }
-            }
-            .ztCsDataSub{
-                @include ztNotoKr($zt-ftBold,$zt-MidFtSz);
-                margin-top: 2rem;
-                margin-bottom: 24rem;
-                text-indent: 4.5rem;
-            }
+  padding-top: 18rem;
+  .ztCsData{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .ztCsDataTitle{
+      flex: 40%;
+      .ztCsDataNum{
+        @include ztNotoKr($zt-ftBold,$zt-smFtSz);
+        &::after{
+          content: '';
+          display: inline-block;
+          width: 9.4rem;
+          height:0.5rem;
+          background:$sub-purple;
+          vertical-align: middle;
+          margin-left: 2rem;
         }
-        .ztCsDataCont{
-            flex: 60%;
-            ul{
-                line-height:2.5;
-                li{
-                    @include ztNotoKr($zt-ftBold,$size-xl);
-                }
-            }
-        }
+      }
+      .ztCsDataSub{
+        @include ztNotoKr($zt-ftBold,$zt-MidFtSz);
+        margin-top: 2rem;
+        margin-bottom: 17rem;
+        text-indent: 4.5rem;
+      }
     }
+    .ztCsDataCont{
+      flex: 60%;
+      ul{
+        line-height:2.3;
+        li{
+          @include ztNotoKr($zt-ftBold,$size-lg);
+          span{
+            @include ztNotoKr($zt-ftBold,$size-lg);
+            display: block;
+            padding-left: 2.5rem;
+          }
+        }
+      }
+    }
+  }
 }
 
+@mixin ztCsMedia{
+  .ztCsDataBox .ztCsData .ztCsDataTitle{
+    flex: 100%;
+  }
+  .ztCsDataBox .ztCsData .ztCsDataTitle .ztCsDataSub{
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+  .ztCsDataBox .ztCsData .ztCsDataCont{
+    flex: 100%;
+    margin-bottom:10rem;
+  }
+  .ztCsTitle .ztCsTitleSub{
+    line-height: 1.4;
+    word-break: keep-all;
+  }
+}
+
+@media all and (min-width:401px) and (max-width:800px){
+  @include ztCsMedia;
+}
+
+@media all and (min-width:381px) and (max-width:400px){
+  @include ztCsMedia;
+  .ztCsDataBox .ztCsData .ztCsDataCont ul li span{
+  padding-left: 0.7rem;
+  display: inline;
+  }
+}
+
+@media all and (max-width:380px){
+  @include ztCsMedia;
+  .ztCsTitle .ztCsTitleBig{
+    word-break: keep-all;
+  }
+  .ztCsDataBox .ztCsData .ztCsDataCont ul li span{
+    padding-left: 0.7rem;
+    display: inline;
+  }
+}

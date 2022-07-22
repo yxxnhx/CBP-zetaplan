@@ -24,9 +24,15 @@ $zt-grayColor:#707070;
 
 .ztCiContain{
   color:$basic-white;
-  height: 100vh;
-  background: url('./../../img/main/main_galexy_bg@2x.png')no-repeat top;
-  background-size: cover;
+  min-height: 100vh;
+  background: url('./../../img/main/main_galexy_bg@2x.png')no-repeat center;
+  background-size: 100%;
+  &:hover{
+    background-size: 150%;
+    transition:background-size 3.3s ease;
+    -moz-transition: background-size 3.3s ease;    
+    -webkit-transition: background-size 3.3s ease;
+  }
 }
 
 .ztInner{
@@ -71,6 +77,7 @@ $zt-grayColor:#707070;
     padding: 0 13.2rem 24.5rem 13.2rem;
     .ztCiStImg{
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       .ztCiStImgfull{
         .ztCiStImgfTitle{
@@ -172,6 +179,7 @@ $zt-grayColor:#707070;
             background: $sub-red;
             text-indent: -9999px;
             font-size: 0;
+            z-index: 1;
           }
           .ztColStInRTxt{
             line-height:4.8rem;
@@ -194,6 +202,7 @@ $zt-grayColor:#707070;
             background: $main-color;
             text-indent: -9999px;
             font-size: 0;
+            z-index: 1;
           }
           .ztColStInBTxt{
             line-height:4.8rem;
@@ -218,6 +227,7 @@ $zt-grayColor:#707070;
           margin: 0 auto;
           position: relative;
           background-color: $sub-purple;
+          z-index: 1;
           &::after{
            content: "#461D93";
            display: block;
@@ -248,3 +258,122 @@ $zt-grayColor:#707070;
     }
   }
 }
+
+@media all and (min-width:1370px) and (max-width:1650px) {
+  .ztCiSt .ztCiStBox {
+    padding: 0 0 20rem 0;
+  }
+} 
+
+@media all and (min-width:768px) and (max-width:1369px) {
+  .ztCiContent .ztCiInfoTxt span{
+    font-size: 1.9rem;
+  }
+  .ztCiSt .ztCiStBox{
+   padding: 0 0 20rem 0;
+  }
+  .ztCiStImgfull{
+    flex: 40%;
+  }
+  .ztCiSt .ztCiStBox .ztCiStImg .ztCiStImgfull .ztCiStImgfLogo{
+    width: 100%;
+  }
+  .ztCiStImgSim{
+    flex: 40%;
+    margin-left: 2rem;
+  }
+  .ztCiSt .ztCiStBox .ztCiStImg .ztCiStImgSim .ztCiStImgLogo{
+    width: 100%;
+  }
+  .ztCiSt .ztCiStBox .ztCiStTxt p span{
+    display: inline;
+    margin-right: 0.8rem;
+    word-break: keep-all;
+  }
+  
+  .ztColSt .ztColStBox .ztColStIn{
+    padding:0;
+  }
+} 
+
+@media all and (max-width:767px){
+  .ztCiContent{
+    margin-top:20vh;
+  }
+  .ztCiContent .ztCiInfoImg{
+    background: url('./../../img/zetaplan_splite.png') no-repeat -6px -5px;
+    background-size: 599px 280px;
+    width: 209px;
+    height: 47px;
+  }
+  .ztCiContent .ztCiInfoTxt{
+    line-height: 1.6;
+  }
+  .ztCiContent .ztCiInfoTxt span{
+    display: inline;
+    margin-right: 0.8rem;
+    font-size: 2.2rem;
+  }
+  
+  .ztCiBox .ztColTitle{
+    margin-bottom: 6rem;
+  }
+  .ztCiSt .ztCiStBox{
+    padding: 0 0 12rem 0;
+  }
+  .ztCiSt .ztCiStBox .ztCiStImg{
+    flex: 100%;
+  }
+  .ztCiSt .ztCiStBox .ztCiStImg .ztCiStImgfull{
+    flex: 100%;
+    margin-bottom: 8rem;
+  }
+  .ztCiSt .ztCiStBox .ztCiStImg .ztCiStImgfull .ztCiStImgfLogo{
+    width: 100%;
+  }
+  .ztCiSt .ztCiStBox .ztCiStImg .ztCiStImgfull .ztCiStImgfTitle{
+    font-size: 2.2rem;
+  }
+  .ztCiSt .ztCiStBox .ztCiStImg .ztCiStImgSim{
+    flex: 100%;
+  }
+  .ztCiSt .ztCiStBox .ztCiStImg .ztCiStImgSim .ztCiStImgLogo{
+    width: 100%;
+  }
+  .ztCiSt .ztCiStBox .ztCiStImg .ztCiStImgSim .ztCiStImgsTitle{
+    font-size: 2.2rem;
+  }
+  .ztCiSt .ztCiStBox .ztCiStTxt{
+    margin-top: 4rem;
+  }
+  .ztCiSt .ztCiStBox .ztCiStTxt p{
+    word-break: keep-all;
+  }
+  .ztCiSt .ztCiStBox .ztCiStTxt p span{
+    display: inline;
+    margin-right: 0.8rem;
+  }
+  
+  .ztColSt .ztColStBox .ztColStIn{
+    padding: 0;
+  }
+  .ztColSt .ztColStBox .ztColStIn .ztColStTitle{
+    margin-right: 2.2rem;
+  }
+  .ztColSt .ztColStBox .ztColStIn .ztColStTxt{
+    margin-left: 0;
+  }
+  .ztColSt .ztColStBox .ztColStIn .ztColStInBox .ztColStInRed .ztColStInRTxt{
+    line-height: 1.5;
+  }
+  .ztColSt .ztColStBox .ztColStIn .ztColStInBox .ztColStInBlue .ztColStInBTxt{
+   line-height: 1.5;
+  }
+  .ztColSt .ztColStBox .ztColStIn .ztColStInBox .ztNewTxt span{
+    display: inline;
+  }
+  .ztColSt .ztColStBox .ztColStIn .ztColStInBox .ztColLastTxt{
+    margin-top:0;
+    padding-top: 5rem;
+  }
+} 

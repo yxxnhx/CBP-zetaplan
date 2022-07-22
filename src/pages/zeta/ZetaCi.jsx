@@ -16,7 +16,7 @@ const ZetaCi = ({ setHdSubStyle }) => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
 
-  const title = 'ZETA PLAN의 비전을 담은 CI';
+  const title = 'ZETA PLAN의<br />가치와 비전을 담은 CI';
 
   return (
     <div className='ztCiBox'>

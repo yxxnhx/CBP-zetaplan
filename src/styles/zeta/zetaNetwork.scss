@@ -22,7 +22,7 @@
 .ztNetWorkBox .ztRedTabTwo{
   margin-bottom: 6.3rem;
 }
-.ztNetWorkBox .ztRedTabThr{
+.ztNetWorkBox .ztRedTabBlock p{
   color: $zt-grayColor;
   font-size: $zt-midTitle;
   margin-left: 10rem;
@@ -44,3 +44,83 @@
     opacity: 0.7;
   }
 }
+
+@media all and (min-width:1024px) and (max-width:1590px) {
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTab{
+    flex: 50%;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock p{
+    margin-left: 6rem;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock p.active{
+    margin-left: 0;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock p.active::before{
+    margin-right: 2rem;
+    width: 4rem;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTabTitle{
+    flex: 44%;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTabTitle .ztRedTabTitleTxt{
+    font-size: 1.8rem;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTabContent{
+    flex: 50%;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTabContent .ztRedTabList{
+    padding-left: 0;
+  }
+} 
+
+@media all and (max-width:1023px) {
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTab{
+    flex: 100%;
+    position: relative;
+    top: 0;
+    height: auto;
+    margin-bottom: 3rem;
+    display: block;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock{
+      flex: 100%;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock p {
+      background: #707070;
+      margin-left: 0;
+      text-align: center;
+      padding: 3rem 0;
+      color:$basic-white;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      font-size: 2.8rem;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock p.active{
+      background:$sub-red;
+      color:$basic-white;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTabTitle{
+    flex: 100%;
+    margin-top: 8rem;
+    height: auto;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTabContent{
+      flex: 100%;
+      border: 3px solid #9f9a9a38;
+      box-shadow: 3px 3px 2px #f9f8f8;
+      border-radius: 8px;
+      padding: 6rem 0;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTabContent .ztRedTabList{
+      margin-bottom: 0;
+      padding-left: 0;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock p.active::before{
+    display: none;
+  }
+  .ztNetWorkBox .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock p{
+    &:hover{
+      color:$basic-black;
+    }
+  }
+} 

@@ -25,11 +25,13 @@ $zt-grayColor:#707070;
     height: 50rem;
     left: 0;
     top:8rem; 
- 
-    .ztHisTitleOr{
-      @include ztNotoKr($zt-ftBold,$sub-title);
-      line-height: 1.4;
+    .ztHisTitleOrBox{
       margin-bottom: 2rem;
+      line-height: 1.4;
+      .ztHisTitleOr{
+        @include ztNotoKr($zt-ftBold,$sub-title);
+        display: block;
+      }
     }
     .ztHisTitleLi{
       @include ztNotoKr($zt-ftBold,$sub-title);
@@ -97,3 +99,88 @@ $zt-grayColor:#707070;
     }
   }
 }
+
+@mixin ztHisMedia {
+  .ztHisContent{
+    margin-top:6rem;
+  }
+  .ztHisContent .ztHisTitle{
+    flex: 20%;
+  }
+  .ztHisContent .ztHisTitle .ztHisTitleOrBox .ztHisTitleOr{
+    font-size: 2rem;
+  }
+  .ztHisContent .ztHisTitle .ztHisTitleLiOn{
+    font-size: 2.2rem;
+    margin-bottom: 3.5rem;
+  }
+  .ztHisContent .ztHisTitle .ztHisTitleLi{
+    font-size: 2rem;
+    margin-bottom: 3.5rem;
+  }
+  
+  .ztHisTxtsBoxs .ztHisTxtCotain .ztHisTxtsTotal{
+    margin-top: 4rem;
+  }
+  .ztHisTexts .ztHisTxtYear{
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  .ztHisTexts .ztHisListsTxt .ztHisListTxt{
+    font-size: 1.65rem;
+    line-height: 2.4;
+  }
+}
+
+@media all and (min-width:1024px) and (max-width:1400px) {
+  @include ztHisMedia;
+  .ztHisTexts .ztHisTxtYear{
+    font-size: 2rem;
+    flex: 12%;
+    margin-top: 0.7rem;
+  }
+} 
+
+@media all and (min-width:768px) and (max-width:1023px) {
+  @include ztHisMedia;
+} 
+
+@media all and (max-width:767px){
+  .ztHisContent{
+    display: block;
+    margin-top: 6rem;
+  }
+  .ztHisContent .ztHisTitle{
+    z-index: 999;
+    background: #fff;
+    height: 15rem;
+    padding-top: 2rem;
+    top: 0;
+  }
+  .ztHisContent .ztHisTitle .ztHisTitleOrBox .ztHisTitleOr{
+    font-size: 2rem;
+    display: inline-block;
+    margin-right: 0.6rem;
+  }
+  .ztHisContent .ztHisTitle .ztHisTitleLiOn{
+    font-size: 4rem;
+  }
+  .ztHisContent .ztHisTitle .ztHisTitleLi{
+    display: none;
+  }
+  .ztHisTexts .ztHisTxtYear{
+    margin-right: 0rem;
+    font-size: 2rem;
+    flex: 18%;
+    margin-top: 1.5rem;
+  }
+  .ztHisTexts .ztHisListsTxt{
+    flex: 88%;
+  }
+  .ztHisTexts .ztHisListsTxt .ztHisListTxt{
+    font-size: 2.2rem;
+    letter-spacing: -0.1rem;
+    line-height: 2.3;
+  }
+} 

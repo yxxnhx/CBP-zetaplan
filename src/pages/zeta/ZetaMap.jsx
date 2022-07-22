@@ -70,12 +70,12 @@ const ZetaMap = ({ setHdSubStyle }) => {
                     <li className={ztMapDtLi[i].address === '' ? 'ztMapNon' : 'ztMapAddr'}>
                       <span className='ztMapIcon'>아이콘</span>
                       <span className='ztMapStitle'>Address</span>
-                      <span>{ztMapDtLi[i].address}</span>
+                      <span className='ztMapTxtDt'>{ztMapDtLi[i].address}</span>
                     </li>
                     <li className={ztMapDtLi[i].tel === '' ? 'ztMapNon' : 'ztMapTel'}>
                       <span className='ztMapIcon'>아이콘</span>
                       <span className='ztMapStitle'>Tel</span>
-                      <span>{ztMapDtLi[i].tel}</span>
+                      <span className='ztMapTxtDt'>{ztMapDtLi[i].tel}</span>
                     </li>
                     <li className={ztMapDtLi[i].fax === '' ? 'ztMapNon' : 'ztMapFax'}>
                       <span className='ztMapIcon'>아이콘</span>

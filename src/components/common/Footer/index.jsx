@@ -33,6 +33,10 @@ const Footer = () => {
   const goToTelGj = () => {
     window.open('tel:062-233-4142');
   }
+  const goToMain = () => {
+    window.open('/main');
+  }
+
 
   const [ftModal, setFtModal] = useState(false);
   const [ftsModal, setFtsModal] = useState(false);
@@ -89,7 +93,7 @@ const Footer = () => {
     <div className="ftBox">
       <div className='ftInner'>
         <div className='ftContent'>
-          <p className='ftLogo' alt="logo" />
+          <p className='ftLogo' alt="logo" onClick={goToMain}></p>
           <ul className='ftInfoBox'>
             <li className='ftInfoList' onClick={goToZeta}>
               회사소개
@@ -117,7 +121,7 @@ const Footer = () => {
             <p className='ftAddrText'>서울본사 (08589) 서울 금천구 디지털로 130, 1210 | <span className='ftGoto' onClick={goToTelSeoul}>Tel 02-538-4801</span> | Fax 02-6008-4779 | <span className='ftGoto' onClick={goToMail}>E-mail zetabiz@zetaplan.com</span></p>
             <p className='ftAddrText'>호남본부 (61947) 광주광역시 서구 상무중앙로 114, 1307호 | <span className='ftGoto' onClick={goToTelGj}>Tel 062-233-4142</span></p>
           </div>
-          <div className='ftAddr ftAddrStyle'>
+          <div className='ftAddr ftAddrStyle ftGlobalTxt'>
             <p className='ftAddrText'>China Office 6F, Beiguang Building, No.23, Huangsi Street, Xicheng District, Beijing, China</p>
             <p className='ftAddrText'>Vietnam Office No 241, Tang Thiet Giap Apt, 110 Hoang Quoc Viet Street, Cau Giay District, Hanoi, VietNam</p>
             <p className='ftAddrText'>Ini Office 2 Jl Jenderal Gatot Subroto Kav.58, Kuningan Timur setiabudi Jakarta Selatan, Indonesia</p>

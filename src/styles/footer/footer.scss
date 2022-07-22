@@ -6,6 +6,7 @@ $ft-Msize:1.55rem;
 $ft-SmSize:1.12rem;
 $zt-ftBold:700;
 $zt-ftNormal:400;
+$ft-hvColor:#007ACC;
 
 @mixin ztNotoKr($zt-krWeight,$zt-krSize){
   font-family: 'Noto Sans KR';
@@ -52,7 +53,7 @@ $zt-ftNormal:400;
     cursor: pointer;
     &:hover {
       cursor: pointer;
-      color:$main-color;
+      color:$ft-hvColor;
     };
     &::after {
       content:'';
@@ -76,7 +77,7 @@ $zt-ftNormal:400;
       @include ztNotoKr($zt-ftNormal,$ft-Msize);
       cursor: pointer;
       &:hover{
-        color:$main-color;
+        color:$ft-hvColor;
       };
     };
   };
@@ -156,6 +157,9 @@ $zt-ftNormal:400;
 .ftModal .ftModalTextBox .ftsModalTxt{
   @include ztNotoKr($zt-ftNormal,$size-lg);
 };
+.ftModal .ftModalTextBox .ftsModalTxtLast{
+  font-weight: $zt-ftBold;
+};
 .ftModal .ftModalTextBox .ftsModalTxt span{
   @include ztNotoKr($zt-ftNormal,$size-lg);
 };
@@ -171,4 +175,13 @@ $zt-ftNormal:400;
 }
 .ftsModalTxtLast{
   color:$main-color;
+}
+
+
+header,.YlRed{display: none !important;}
+
+@media all and (max-width:767px) {
+  .ftGlobalTxt{
+    display: none;
+  }
 }

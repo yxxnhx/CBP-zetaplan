@@ -87,3 +87,58 @@ $zt-grayColor:#707070;
     display: none;
   }
 }
+
+@mixin ztMapMedia {
+  .ztMapBox .ztMapTitle{
+    margin-bottom: 8rem;
+  }
+  .ztMapBox .ztMapBtn{
+    margin-bottom: 2rem;
+  }
+  .ztMapBox .ztMapLook{
+    margin-top: 4rem;
+  }
+}
+@mixin ztMapTxtMedia {
+  .ztMapBox .ztMapGuide .ztMapAddr{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    height: auto;
+    line-height: 2;
+  }
+  .ztMapBox .ztMapGuide .ztMapAddr .ztMapTxtDt{
+    flex: 60%;	
+  }
+  .ztMapBox .ztMapGuide .ztMapAddr .ztMapIcon{
+    width: 2.9rem;
+  }
+  .ztMapBox .ztMapGuide .ztMapAddr .ztMapStitle{
+    flex-basis: 15rem;
+    margin-left: 5.1rem;
+  }
+}
+
+@media all and (min-width:1553px) and (max-width:1650px) {
+  @include ztMapMedia;
+  .ztMapBox .ztMapGuide li span{
+    font-size: 2rem;
+  }
+}
+
+@media all and (min-width:401px) and (max-width:1552px) {
+  @include ztMapMedia;
+  @include ztMapTxtMedia;
+}
+
+@media all and (max-width:400px) {
+  @include ztMapMedia;
+  .ztMapBox .ztMapBtn{
+    width: 100%;
+    margin-right: 0;
+  }
+  @include ztMapTxtMedia;
+  .ztMapBox .ztMapGuide .ztMapAddr .ztMapTxtDt {
+    flex: 50% 1;
+  }
+}

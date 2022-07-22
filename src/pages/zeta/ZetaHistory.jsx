@@ -1,61 +1,53 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import {useState, useEffect,useRef} from 'react';
 import ztHistoryDt from './../../db/historyList.json';
 import './../../styles/zeta/zetaHistory.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SubBanner from '../../components/common/SubBanner/index';
+import subBg from '../../img/zeta/zeta_sub_bg@2x.png';
 
-const ZetaHistory = ({ setHdSubStyle }) => {
-  const [ztHisDt, setZtHisDt] = useState([]);
-  const refs = React.useRef([]);
-  const titleRefs0 = React.useRef([]);
-  const titleRefs1 = React.useRef([]);
-  const titleRefs2 = React.useRef([]);
-  const titleRefs3 = React.useRef([]);
-  useEffect(() => {
+const ZetaHistory = () => {
+  const [ztHisDt,setZtHisDt]=useState([]);
+  const refs = useRef([]);
+  const titleRefs= useRef([]);
+  useEffect(()=>{
     setZtHisDt(ztHistoryDt);
     AOS.init();
-  }, [])
+  },[]);
 
-  /* header 배경색 변경 */
-  useEffect(() => {
-    setHdSubStyle('hdMain hdSub')
-  }, [setHdSubStyle])
+  const title = '지속적인 도전으로 미래를 만들어낸<br /> ZETA PLAN HISTORY';
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-    refs.current.forEach((ele, idx) => {
-      let valueTop = parseInt(window.pageYOffset + ele.getBoundingClientRect().top);
-      let valueBottom = parseInt(window.pageYOffset + ele.getBoundingClientRect().bottom);
-      setScrollValue(valueTop, valueBottom, ele, idx)
-    })
+    refs.current.forEach((ele,idx)=> {
+      let valueTop =  parseInt(window.pageYOffset + ele.getBoundingClientRect().top ) ; 
+      let valueBottom = parseInt( window.pageYOffset + ele.getBoundingClientRect().bottom); 
+      let titleRefName = titleRefs.current[idx]
+      if(idx===0){
+        titleRefName.className=0<=scrollPosition&&scrollPosition<valueBottom-100 ? 'ztHisTitleLiOn':'ztHisTitleLi' ;
+      }else{
+        titleRefName.className=valueTop<scrollPosition+100&&scrollPosition<valueBottom-100 ? 'ztHisTitleLiOn':'ztHisTitleLi' ;
+      };
+    });
+  };
 
-  }
-  const setScrollValue = (valueTop, valueBottom, ele, idx) => {
-    console.log(valueTop, valueBottom, scrollPosition)
-    titleRefs0.className = valueTop <= scrollPosition && scrollPosition <= valueBottom ? 'ztHisTitleLiOn' : 'ztHisTitleLi';
-    titleRefs1.className = valueTop <= scrollPosition && scrollPosition <= valueBottom ? 'ztHisTitleLiOn' : 'ztHisTitleLi';
-    titleRefs2.className = valueTop <= scrollPosition && scrollPosition <= valueBottom ? 'ztHisTitleLiOn' : 'ztHisTitleLi';
-    titleRefs3.className = valueTop <= scrollPosition && scrollPosition <= valueBottom ? 'ztHisTitleLiOn' : 'ztHisTitleLi';
-  }
-  useEffect(() => {
+  useEffect(()=>{
     window.addEventListener('scroll', updateScroll);
     return () => {
       window.removeEventListener('scroll', updateScroll);
     };
   }, [scrollPosition]);
 
-
-
   const handleClick = (i) => {
-    refs.current[i].scrollIntoView({ behavior: 'smooth' });
+    refs.current[i].scrollIntoView({ behavior: 'smooth'});
   };
-
-  const ztHisLists = [
+    
+  const ztHisLists=[
     {
-      'title': 'first-tab',
-      'subTitle': '2018 - 현재'
+      'title':'first-tab', 
+      'subTitle':'2018 - 현재'
     },
     {
       'title': 'second-tab',
@@ -71,27 +63,23 @@ const ZetaHistory = ({ setHdSubStyle }) => {
     }
   ];
 
-
-
   return (
     <div className='ztHisBox'>
+      <SubBanner title={title} img={subBg} />
       <div className="ztInner" >
         <h2 className='ztTitle'>
           연혁
         </h2>
         <div className='ztHisContent'>
-          <ul className="ztHisTitle" data-aos="fade-up" data-aos-duration="2500">
-            <li className='ztHisTitleOr' data-aos="fade-up" data-aos-duration="2000">제타플랜의 시작으로<br /> 한국 기업 컨설팅의</li>
-            <li className='ztHisTitleOr' data-aos="fade-up" data-aos-duration="2000">제타플랜의 시작으로<br /> 한국 기업 컨설팅의</li>
-            <li onClick={() => handleClick(0)} ref={titleRefs0} className={titleRefs0.className}>미래를 시작하다.</li>
-            <li onClick={() => handleClick(1)} ref={titleRefs1} className={titleRefs0.className}>뿌리를 통해 성장하다.</li>
-            <li onClick={() => handleClick(2)} ref={titleRefs2} className={titleRefs0.className}>무한발전을 하다</li>
-            <li onClick={() => handleClick(3)} ref={titleRefs3} className={titleRefs0.className}>기반을 다지다</li>
-            {/*  <li onClick={() => handleClick(0)}  className={0<=scrollPosition&&scrollPosition<=valueBottom ? 'ztHisTitleLiOn':'ztHisTitleLi'}>미래를 시작하다.</li>
-            <li onClick={() => handleClick(1)}
-              className={valueTop<scrollPosition&&scrollPosition<=valueBottom ?  'ztHisTitleLiOn':'ztHisTitleLi'}>뿌리를 통해 성장하다.</li>
-            <li onClick={() => handleClick(2)}  className={valueTop<scrollPosition&&scrollPosition<=valueBottom ?  'ztHisTitleLiOn':'ztHisTitleLi'}>무한발전을 하다.</li>
-            <li onClick={() => handleClick(3)}  className={valueBottom<scrollPosition&&scrollPosition?  'ztHisTitleLiOn':'ztHisTitleLi'}>기반을 다지다.</li> */}
+          <ul className="ztHisTitle" >
+            <li className='ztHisTitleOrBox'>
+              <span className='ztHisTitleOr'>제타플랜의 시작으로</span>
+              <span className='ztHisTitleOr'> 한국 기업 컨설팅의</span>
+            </li>
+            <li onClick={() => handleClick(0)} ref={(ref)=>(titleRefs.current[0] = ref)} className='ztHisTitleLiOn'>미래를 시작하다.</li>
+            <li onClick={() => handleClick(1)} ref={(ref)=>(titleRefs.current[1] = ref)} className='ztHisTitleLi'>뿌리를 통해 성장하다.</li>
+            <li onClick={() => handleClick(2)} ref={(ref)=>(titleRefs.current[2] = ref)} className='ztHisTitleLi'>무한발전을 하다</li>
+            <li onClick={() => handleClick(3)} ref={(ref)=>(titleRefs.current[3] = ref)}  className='ztHisTitleLi'>기반을 다지다</li>
           </ul>
           <div className="ztHisTxtBox" data-aos="fade-up" data-aos-duration="3000">
             <div className='ztHisTxt'>
