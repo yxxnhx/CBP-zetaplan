@@ -82,3 +82,16 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .zetaPeoList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+@media all and (max-width: 767px){
+  .zetaPeoList {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}

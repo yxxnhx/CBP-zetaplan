@@ -291,6 +291,58 @@
 	z-index: 999;
 }
 
+@media (min-width: 768px) and (max-width: 1023px){
+  .consulBox .consulBg {
+    display: none;
+  }
+
+}
+@media all and (max-width: 767px){
+  .consulBox .consulBg {
+    display: none;
+  }
+  .consulBox {
+    width: 100%;
+  }
+  .consulBox .consulForm .consultingAppForm {
+    width: 100%;
+    margin: 0;
+
+  }
+  .consulBox .consulForm {
+    width: 100%;
+  }
+  .fieldset {
+    width: 100%;
+  }
+	
+	.consulLongCategory {
+		width: 100%;
+		.consulLongItem {
+			width: 100%;
+		}
+	}
+
+	.consulLongCategory .consulLongItem .webSiteInput, .consulLongCategory .consulLongItem .addressInput {
+		width: 85%;
+	}
+
+	.selectFieldset {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+	}
+	.consulFieldset .consultingCategory .consultingItem .consultingInput {
+    width: 100%;
+	}
+}
+
+@media all and (max-width: 444px){
+	.consulLongCategory .consulLongItem .webSiteInput, .consulLongCategory .consulLongItem .addressInput {
+		width: 80%;
+	}
+}
 
 
 
