@@ -95,3 +95,12 @@
   }
 
 }
+@media all and (max-width: 410px){
+  .zetaPeoList {
+    grid-template-columns: 1fr;
+  }
+  .zetaPeoList {
+    place-items: center;
+  }
+
+}

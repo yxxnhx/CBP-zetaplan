@@ -13,7 +13,7 @@
 
 		.consulPageInner {
 			background-color: #fff;
-			padding: 10rem;
+			padding: 10%;
 			margin: auto;
 			display: flex;
 			justify-content: center;
@@ -37,10 +37,10 @@
   flex-wrap: wrap;
 }
 .pageFieldset {
-  width: 120rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10%;
   margin-bottom: 6.4rem;
   
   .pageConsulCategory {
@@ -48,20 +48,20 @@
     flex-direction: column;
 
     .pageConsulItem {
-      width: 48rem;
+      width: 100%;
       display: flex;
       justify-content: space-between;
   
       label {
         font-size: 1.6rem;
         line-height: 2.7;
-        width: 7rem;
+        width: 20%;
       }
       
       input {
         border: none;
         border-bottom: 1px solid #000;
-        width: 40rem;
+        width: 84%;
         font-size: 1.6rem;
         margin-left: 3rem;
         font-weight: lighter;
@@ -76,14 +76,27 @@
   }
 }
 
+option {
+  font-size: 1.6rem;
+}
+
 .pageConsulLongCategory {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 	flex-direction: column;
+  grid-column: span 2;
 
   .pageConsulLongItem {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+    .long {
+      width: 13%;
+    }
+    .address.long {
+      width: 10%;
+    }
 		.website, .address {
 			font-size: 1.6rem;
 			line-height: 2.7;
@@ -113,7 +126,8 @@
   margin-top: 6.4rem;
 
   .pageConsultingCategory {
-    width: 123rem;
+    grid-column: span 2;
+    width: 100%;
 
     .pageConsultingItem {
     .consultingInput {
@@ -126,17 +140,43 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
-  * {
-    font-size: 50%;
-    box-sizing: border-box;
+@media (min-width: 1024px) and (max-width: 1453px){
+  .pageFieldset .pageConsulCategory .pageConsulItem input {
+
+    width: 30rem;
+  }
+  .pageConsulLongCategory .pageConsulLongItem .long {
+    width: 10%;
+  }
+  .pageConsulLongCategory .pageConsulLongItem .address.long {
+    width: 6%;
   }
 
 }
+@media (min-width: 768px) and (max-width: 1137px){
+  .pageFieldset .pageConsulCategory .pageConsulItem label {
+    width: 21%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .pageFieldset .pageConsulCategory .pageConsulItem label {
+    width: 21%;
+  }
+  .consulInner .consultingAppForm .consulPageInner {
+    background-color: #fff;
+    padding: 5%;
+  }
+}
 @media all and (max-width: 767px){
-  * {
-    font-size: 40%;
-    box-sizing: border-box;
+  .pageFieldset {
+    grid-template-columns: auto;
+  }
+  .pageConsulLongCategory {
+    grid-column: auto;
+  }
+  .pageConsulLongCategory .pageConsulLongItem .long {
+    width: 20%;
   }
 
 }

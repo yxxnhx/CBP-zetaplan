@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap');
+@import '../GlobalStyle.scss';
+
+.langAbout {
+    height: 90rem;
+    background: url('./../../img/main/main_galexy_bg@2x.png')no-repeat center;
+    background-size: 100%;
+    &:hover{
+      background-size: 150%;
+      transition:background-size 3.3s ease;
+      -moz-transition: background-size 3.3s ease;    
+      -webkit-transition: background-size 3.3s ease;
+    }
+  
+
+  .langAboutCon {
+    width: 85%;
+    margin: auto;
+
+    .langAboutT {
+      font: {
+        weight: bold;
+        size: $main-title;
+        family: Montserrat;
+      }
+      color: $basic-white;
+      padding-top: 10rem;
+    }
+
+    .langAboutC {
+      padding: 5rem 0 30rem;
+      p {
+        font-size: 2.5rem;
+        color: $basic-white;
+        margin-bottom: 4rem;
+        line-height: 1.5;
+        font-family: 'Roboto';
+        font-weight: 100;
+
+      }
+    }
+  }
+}
+
+.langTec {
+  .langTecBox {
+    width: 85%;
+    margin: 10rem auto;
+
+    .langTecTitle {
+      font: {
+        weight: bold;
+        size: $main-title;
+        family: Montserrat;
+      }
+    }
+
+    .langTecContent {
+      .langTecImgBox {
+        display: flex;
+        justify-content: center;
+        margin-top: 7rem;
+        img {
+          width: 100%;
+        }
+      }
+
+      .langTecContentC {
+        margin: 2.5rem 0;
+        font-size: 2.5rem;
+        line-height: 1.5;
+      }
+
+      .langTecContentT {
+        font: {
+          weight: bold;
+          size: 2.6rem;
+        }
+        margin-top: 7rem;
+      }
+
+      .langTecChBox {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 40%;
+        }
+
+        .langTecContentC {
+          font-size: 2.2rem;
+          width: 60%;
+          margin-left: 5rem;
+          line-height: 1.5;
+        }
+      }
+
+      .langTecMap {
+        width: 100%;
+        margin-top: 5rem;
+      }
+    }
+  }
+}
+
+.langTecGlobalImgBox {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  span {
+    font: {
+      size: 3rem;
+      weight: $main-title;
+      family: Montserrat;
+    }
+    color: $basic-white;
+    position: absolute;
+    bottom: 4rem;
+    right: 5rem;
+  }
+}
+
+.langTecOC {
+  .langTecOCBox.clientArea {
+    width: 85%;
+    margin: 3.3rem auto 6rem;
+    }
+
+    .langTecContent {
+      margin: 3.3rem 0 8rem;
+      .langTecContentTitle {
+        @include Subtitle(3rem, transparent);
+        margin-bottom: 3.7rem;
+      }
+      .langTecContentImg {
+        img {
+          width: 100%;
+          margin: auto;
+        }
+      }
+    
+  }
+}
+  .langTecOCtitle {
+    margin: 5rem 0;
+    font-size: $main-title;
+    font-family: Montserrat;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      background-image: url(./../../img//eng_cn/eng_cn_thin_gradient.png);
+      width: 60%;
+      height: 1.5rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      }
+  }
+
+//lang business area 
+
+  .langBA {
+    width: 85%;
+    margin: auto;
+    padding-top: 3%;
+  }
+
+
+  .langAccoContentT {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+
+  .langContentText {
+    p {
+      font-size: 2rem;
+      line-height: 1.5;
+      margin: 2rem 0;
+    }
+    ul {
+      font-size: 2rem;
+      line-height: 1.5;
+      li {
+        font-size: 2rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+
+  .langContentImg {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    img {
+      width: 80%;
+    }
+  }
+
+  .langContentTable {
+    width: 100%;
+    padding: 1%;
+    box-sizing: border-box;
+    thead {
+      background-color: $main-color;
+      text-align: center;
+      tr {
+        .tableTitle {
+          font-size: 2rem;
+          font-weight: 700;
+          color: #fff;
+          border: 1px solid #fff;
+        }
+        height: 5rem;
+      }
+    }
+    tbody {
+      td {
+        font-size: 1.8rem;
+        padding: 1%;
+        box-sizing: border-box;
+        line-height: 1.3;
+        border: 1px solid #000;
+
+        .langContentList {
+          li {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+    
+  }
+
+  .langAccordion {
+    width: 100%;
+  }
+  .langBusinessItem{
+    margin-bottom: 2rem;
+    width: 100%;  
+  
+    .langBtn{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      border: 1px solid $main-color;
+      padding: 3rem;
+      box-sizing: border-box;
+      font-size: $size-xl;
+      letter-spacing: 1.2px;
+      color: #000;
+
+      .langTitle {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  
+  .langContent{
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+  .langContent.show{
+    height: auto;
+    max-height: 999rem;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+    border: 1px solid $main-color;
+  }
+  
+  .langBtn.on{
+    background-color: $main-color;
+    color: #fff;
+  }
+  
+  .langUnderBtn{
+    background: url('../../img/zetaplan_splite.png') no-repeat -137px -194px;
+    background-size: 599px 280px;
+    width: 22px;
+    height: 14px;
+  }
+  .langTopBtn{
+    background: url('../../img/zetaplan_splite.png') no-repeat -137px -235px;
+    background-size: 599px 280px;
+    width: 22px;
+    height: 14px;
+  }
+  
+  .langContentBox {
+    width: 100%;
+    padding: 3rem;
+  }
+
+  //langIntro
+.langIntro {
+  background: linear-gradient(to right, $main-color 60%, $sub-purple);
+  margin: 20rem 0 12rem;
+
+  .langIntroTitleCon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 83.4rem;
+    margin-left: 8rem;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 7rem;
+
+    .langTitleBlue {
+      font: {
+        size: $main-title;
+        family: Montserrat;
+      }
+      color: #1527a0;
+    }
+    .langTitleBlack {
+      font: {
+        size: $main-title;
+        weight: bold;
+        family: Montserrat;
+      }
+    }
+  }
+
+  .langIntroContentBox {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    bottom: 4rem;
+
+    .langIntroCompanyDes {
+      word-break: keep-all;
+      font-size: 1.9rem;
+      color: $basic-white;
+      text-align: left;
+      line-height: 1.5;
+    }
+
+    .langIntroLinkBox {
+      margin-left: 10%;
+      display: flex;
+      color: $basic-white;
+      flex-wrap: nowrap;
+
+      .langIntroCompanyLink a {
+        display: block;
+        border: 1px solid $basic-white;
+        width: 26.8rem;
+        height: 6.3rem;
+        display: flex;
+        align-items: center;
+        padding-left: 5rem;
+        margin-right: 6rem;
+        font-size: 1.8rem;
+        position: relative;
+
+
+        &:after {
+          content: '';
+          background: url(./../../img/icon/thin_arrow.png) no-repeat;
+          width: 57px;
+          height: 15px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+        }
+      }
+
+      .langIntroEstablishmentLink a {
+        display: block;
+        border: 1px solid $basic-white;
+        width: 26.8rem;
+        height: 6.3rem;
+        display: flex;
+        align-items: center;
+        padding-left: 5rem;
+        font-size: 1.8rem;
+        position: relative;
+
+        &:after {
+          content: '';
+          background: url(./../../img/icon/thin_arrow.png) no-repeat;
+          width: 57px;
+          height: 15px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+// lang Major
+
+.langMajorArea {
+  width: 85%;
+  margin: auto;
+  .langMajorTitle {
+    margin: 5rem 0;
+    font-size: $main-title;
+    font-family: Montserrat;
+    position: relative;
+    line-height: 1.2;
+
+    &::after {
+      content: '';
+      display: block;
+      background-image: url(./../../img//eng_cn/eng_cn_thin_gradient.png);
+      width: 40%;
+      height: 1.5rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      }
+  }
+
+  .langMajorSubTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .langMajorTable {
+    width: 100%;
+    margin: 2rem auto 13rem;
+
+    thead {
+      .langMajoTablerTitle {
+        th {
+          font-size: 2rem;
+          background-color: $main-color;
+          color: #fff;
+          padding: 1% 0.5%;
+          border: 1px solid #fff;
+        }
+      }
+    }
+    .langMajorContent {
+      td {
+        font-size: 1.8rem;
+        padding: 0.5%;
+        border: 1px solid #000;
+      }
+    }
+  }
+}
+
+
+//lang location
+
+.langLocationArea {
+  width: 85vw;
+  margin: auto;
+
+  .langLocationTitle {
+    @include Subtitle(3rem, transparent);
+    margin-bottom: 3.7rem;
+  }
+
+  .langLocationContent {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 5rem auto 8rem;
+    grid-gap: 2rem;
+    font-size: 3rem;
+
+    .langLocationH {
+      &:first-child {
+        grid-column: span 2;
+      }
+      .langLocationHeadT {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin: 1.5rem 0;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          font-size: 2.8rem;
+        }
+
+        
+      }
+      .langLocationText {
+        font-size: 2.2rem;
+        margin: 0.5rem 0;
+        line-height: 1.5;
+        span {
+          font-size: 2.2rem;
+          font-weight: 700;
+          margin-right: 2rem;
+        }
+
+      }
+    }
+  }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+  * {
+    font-size: 50%;
+    box-sizing: border-box;
+  }
+
+}
+@media all and (max-width: 790px){
+
+  .langLocationArea .langLocationContent {
+      grid-template-columns: auto;
+
+  }
+
+  .langLocationArea .langLocationContent .langLocationH:first-child {
+    grid-column: auto;
+}
+
+.langMajorArea .langMajorTitle::after {
+  width: 20%;
+  bottom: 0;
+  top: 100%;
+
+}
+.langTecOCtitle::after {
+  width: 20%;
+  bottom: 0;
+  top: 100%;
+
+}
+
+.langTec .langTecBox .langTecContent .langTecChBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.langTec .langTecBox .langTecContent .langTecChBox img {
+  width: 100%;
+  margin-top: 5rem;
+  }
+
+.langIntro .langIntroContentBox .langIntroLinkBox {
+    flex-direction: column;
+    .langIntroCompanyLink {
+      margin-bottom: 3rem;
+    }
+}
+}
+@media all and (max-width: 474px) {
+
+.langTec .langTecBox .langTecContent .langTecChBox .langTecContentC {
+  width: 100%;
+  margin-left: 0;
+}
+
+.langIntro .langIntroContentBox .langIntroLinkBox .langIntroCompanyLink {
+  margin-bottom: 2rem;
+}
+.langIntro .langIntroContentBox {
+  flex-direction: column;
+}
+
+.langIntro .langIntroContentBox .langIntroLinkBox {
+  width: 100%;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-left: 0;
+  flex-direction: row;
+}
+
+.langIntro .langIntroContentBox .langIntroLinkBox .langIntroCompanyLink a {
+  display: block;
+  border: 1px solid $basic-white;
+  width: 20rem;
+  height: 6.3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+  margin-right: 3rem;
+  font-size: 1.8rem;
+
+  &::after {
+    display: none;
+
+    }
+  }
+
+.langIntro .langIntroContentBox .langIntroLinkBox .langIntroEstablishmentLink a {
+  display: block;
+  border: 1px solid $basic-white;
+  width: 20rem;
+  height: 6.3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+  font-size: 1.8rem;
+
+  &::after {
+    display: none;
+    }
+  }
+}

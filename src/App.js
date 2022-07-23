@@ -40,6 +40,7 @@ import MaIpoPerfo from './pages/maipo/MaIpoPerfo';
 import ScrollToTop from './components/common/ScrollTop';
 import TopBtn from './components/common/TopBtn';
 import LangEng from './pages/lang/LangEng';
+import LangCn from './pages/lang/LangCn';
 import { useState } from 'react';
 
 function App() {
@@ -88,6 +89,7 @@ function App() {
           <Route path="/qna/:id" element={<QnaDetail setHdSubStyle={setHdSubStyle} />} />
           <Route path="/datainfo/:category/:id" element={<DetailInfoItem setHdSubStyle={setHdSubStyle} />} />
           <Route path="/eng" element={<LangEng />} />
+          <Route path="/cn" element={<LangCn />} />
         </Routes>
       </BrowserRouter>
       <Consulting />

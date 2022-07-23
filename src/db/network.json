@@ -1,244 +1,308 @@
 [   
   {
     "id": 1,
-    "img" : "logo1_ipa.png"
-   
+    "img" : "logo1_ipa.png",
+    "link" : "https://investvietnam.vn/"
   },
   {
     "id": 2,
-    "img" : "logo2_vietnam.png"
+    "img" : "logo2_vietnam.png",
+    "link" : "https://www.hanoi-sme.vn"
   },
   {
     "id": 3,
-    "img" : "logo3_gdmc.png"
+    "img" : "logo3_gdmc.png",
+    "link" : "https://gdmc.jp/"
   },
   {
     "id": 4,
-    "img" : "logo4_seoul.png"
+    "img" : "logo4_seoul.png",
+    "link" : "https://www.seoul.go.kr/main/index.jsp"
   },
   {
     "id": 5,
-    "img" : "logo5_beijing.jpg"
+    "img" : "logo5_beijing.jpg",
+    "link" : "http://www.bbef.com/"
   },
   {
     "id": 6,
-    "img" : "logo6_761.png"
+    "img" : "logo6_761.png",
+    "link" : "http://www.761cspace.com/sites/761/index.html"
   },
   {
     "id": 7,
-    "img" : "logo7_chunbio.png"
+    "img" : "logo7_chunbio.png",
+    "link" : "http://www.cbf.or.kr/"
   },
   {
     "id": 8,
-    "img" : "logo8_ggd.png"
+    "img" : "logo8_ggd.png",
+    "link" : "https://www.gg.go.kr/"
   },
   {
     "id": 9,
-    "img" : "logo9_hiseoul.png"
+    "img" : "logo9_hiseoul.png",
+    "link" : "https://hiseoulbiz.com/"
   },
   {
     "id": 10,
-    "img" : "logo10_ir.jpg"
+    "img" : "logo10_ir.jpg",
+    "link" : "http://seoulir.co.kr/"
   },
   {
     "id": 11,
-    "img" : "logo11_incheon.png"
+    "img" : "logo11_incheon.png",
+    "link" : "https://www.itp.or.kr/"
   },
   {
     "id": 12,
-    "img" : "logo12_ggdjtech.png"
+    "img" : "logo12_ggdtechpark.jpg",
+    "link" : "https://www.gdtp.or.kr/"
   },
   {
     "id": 13,
-    "img" : "logo13_ggdtech.gif"
+    "img" : "logo13_ggdtech.jpg",
+    "link" : "https://www.gtp.or.kr/antp/index/default.jsp"
   },
   {
     "id": 14,
-    "img" : "logo14_gist.jpg"
+    "img" : "logo14_gist.png",
+    "link" : "https://www.gist.ac.kr/kr/main.html"
   },
   {
     "id": 15,
-    "img" : "logo15_imc.jpg"
+    "img" : "logo15_imc.png",
+    "link" : "http://www.imckorea.or.kr/sub/sub01_01.php"
   },
   {
     "id": 16,
-    "img" : "logo16_ffitn.jpg"
+    "img" : "logo16_ffitn.png",
+    "link" : "http://www.fitn.or.kr/main.asp"
   },
   {
     "id": 17,
-    "img" : "logo17_kmanage.png"
+    "img" : "logo17_koreaman.png",
+    "link" : "https://www.kmtca.or.kr/"
   },
   {
     "id": 18,
-    "img" : "logo18_kdia.png"
+    "img" : "logo18_kdia.png",
+    "link" : "https://www.kdia.or.kr/kdia/main/index.do"
   },
   {
     "id": 19,
-    "img" : "logo19_ksme.png"
+    "img" : "logo19_ksme.png",
+    "link" : "https://www.kosmes.or.kr/intro/kosme_intro.html"
   },
   {
     "id": 20,
-    "img" : "logo20_kash.png"
+    "img" : "logo20_kash.png",
+    "link" : "https://www.kashi.or.kr/html/index.html"
   },
   {
     "id": 21,
-    "img" : "logo21_keia.png"
+    "img" : "logo21_keia.png",
+    "link" : "http://www.keia.kr/"
   },
   {
     "id": 22,
-    "img" : "logo22_msbusiness.png"
+    "img" : "logo22_msbusiness.png",
+    "link" : "https://www.smes.go.kr/exportcenter/#"
   },
   {
     "id": 23,
-    "img" : "logo23_seoultech.jpg"
+    "img" : "logo23_seoultech.jpg",
+    "link" : "https://www.seoultp.or.kr/home/homeIndex.do"
   },
   {
     "id": 24,
-    "img" : "logo24_gbtech.png"
+    "img" : "logo24_gbtech.png",
+    "link" : "https://www.gbtp.or.kr/"
   },
   {
     "id": 25,
-    "img" : "logo25_jbtp.png"
+    "img" : "logo25_jbtp.png",
+    "link" : "https://www.jbtp.or.kr/index.jbtp"
   },
   {
     "id": 26,
-    "img" : "logo26_kvca.jpg"
+    "img" : "logo26_kvca.jpg",
+    "link" : "http://www.kvca.or.kr/"
   },
   {
     "id": 27,
-    "img" : "logo27_kodit.png"
+    "img" : "logo27_kodit.png",
+    "link" : "https://www.kodit.co.kr/index.do"
   },
   {
     "id": 28,
-    "img" : "logo28_ntb1.png"
+    "img" : "logo28_ntb1.png",
+    "link" : "https://www.ntb.kr/main/mainPortal.do;jsessionid=09A83266DB3C767A675488B62E99A4D9"
   },
   {
     "id": 29,
-    "img" : "logo29_kaips.jpg"
+    "img" : "logo29_kaips.jpg",
+    "link" : "http://www.kaips.or.kr/front.do?method=main"
   },
   {
     "id": 30,
-    "img" : "logo30_mt1.png"
+    "img" : "logo30_mt1.png",
+    "link" : "https://www.mt.co.kr/"
   },
   {
     "id": 31,
-    "img" : "logo31_sida.png"
+    "img" : "logo31_sida.png",
+    "link" : "https://www.seoultp.or.kr/home/homeIndex.do"
   },
   {
     "id": 32,
-    "img" : "logo32_etri.png"
+    "img" : "logo32_etri.png",
+    "link" : "https://www.sida.kr/"
   },
   {
     "id": 33,
-    "img" : "logo33_nicedun.jpg"
+    "img" : "logo32_siheoung.png",
+    "link" : "https://www.etri.re.kr/intro.html"
   },
   {
     "id": 34,
-    "img" : "logo34_nicep.jpg"
+    "img" : "logo34_niced.jpg",
+    "link" : "https://www.nicednb.com/index_new.do"
   },
   {
     "id": 35,
-    "img" : "logo35_mkbiz.png"
+    "img" : "logo35_nicep.png",
+    "link" : "https://www.niceinfo.co.kr/main.nice"
   },
   {
     "id": 36,
-    "img" : "logo36_jntech.png"
+    "img" : "logo36_mkbiz.png",
+    "link" : "http://biz.mk.co.kr/v2/"
   },
   {
     "id": 37,
-    "img" : "logo37_keri.png"
+    "img" : "logo37_tp.png",
+    "link" : "http://www.jntp.or.kr/home/main.do"
   },
   {
     "id": 38,
-    "img" : "logo38_jbth.png"
+    "img" : "logo38_jb.png",
+    "link" : "https://www.keri.re.kr/html/kr/index.html"
   },
   {
     "id": 39,
-    "img" : "logo39_apfs.png"
+    "img" : "logo39_jbth.png",
+    "link" : "http://www.jbth.co.kr/2017/inner.php?sMenu=main&pre_url=https%3A%2F%2Fwww.google.com%2F"
   },
   {
     "id": 40,
-    "img" : "logo40_snip.png"
+    "img" : "logo40_nh.png",
+    "link" : "https://www.apfs.kr/front/user/main.do"
   },
   {
     "id": 41,
-    "img" : "logo41_busantech.png"
+    "img" : "logo41_snip.png",
+    "link" : "https://www.snip.or.kr/"
   },
   {
     "id": 42,
-    "img" : "logo42_fact.png"
+    "img" : "logo42_busan.jpg",
+    "link" : "https://www.btp.or.kr/"
   },
   {
     "id": 43,
-    "img" : "logo43_kdb1.png"
+    "img" : "logo43_kdb1.png",
+    "link" : "https://fact2021.bzpp.co.kr/"
   },
   {
     "id": 44,
-    "img" : "logo44_gsbc.jpg"
+    "img" : "logo44_gsbc.jpg",
+    "link" : "https://ipmart.kdb.co.kr/index.jsp"
   },
   {
     "id": 45,
-    "img" : "logo45_kocc.png"
+    "img" : "logo45_gsbc.png",
+    "link" : "http://file.gsbc.or.kr/"
   },
   {
     "id": 46,
-    "img" : "logo46_innobiz.jpg"
+    "img" : "logo46_koreaj.png",
+    "link" : "https://www.cros.or.kr/page.do?w2xPath=/ui/main/main.xml"
   },
   {
     "id": 47,
-    "img" : "logo47_bcck.png"
+    "img" : "logo47_innobiz.png",
+    "link" : "https://www.innobiz.net/"
   },
   {
     "id": 48,
-    "img" : "logo48_keiti.png"
+    "img" : "logo48_gyegt.jpg",
+    "link" : "https://bcck.or.kr/bcck/"
   },
   {
     "id": 49,
-    "img" : "logo49_at.png"
+    "img" : "logo49_keiti.png",
+    "link" : "https://www.keiti.re.kr/site/keiti/main.do"
   },
   {
     "id": 50,
-    "img" : "logo50_sba.png"
+    "img" : "logo50_at.png",
+    "link" : "https://www.at.or.kr/home/acko000000/index.action"
   },
   {
     "id": 51,
-    "img" : "logo51_ma.png"
+    "img" : "logo51_sba.jpg",
+    "link" : "https://www.sba.seoul.kr/"
   },
   {
     "id": 52,
-    "img" : "logo52_koita.png"
+    "img" : "logo52_ma.png",
+    "link" : "https://www.smes.go.kr/mna/index.do"
   },
   {
     "id": 53,
-    "img" : "logo53_koms.png"
+    "img" : "logo53_koita.jpg",
+    "link" : "https://www.koita.or.kr/main/main.aspx"
   },
   {
     "id": 54,
-    "img" : "logo54_koinvent.jpg"
+    "img" : "logo54_jons.jpg",
+    "link" : "https://www.mss.go.kr/site/smba/main.do"
   },
   {
     "id": 55,
-    "img" : "logo55_koes.png"
+    "img" : "logo55_koreab.png",
+    "link" : "https://www.kipa.org/kipa/"
   },
   {
     "id": 56,
-    "img" : "logo56_kef.png"
+    "img" : "logo56_nara.png",
+    "link" : "https://www.g2b.go.kr/index.jsp"
   },
   {
     "id": 57,
-    "img" : "logo57_kiat.png"
+    "img" : "logo57_koreama.png",
+    "link" : "https://www.kefplaza.com/web/index.do"
   },
   {
     "id": 58,
-    "img" : "logo58_kova.jpg"
+    "img" : "logo58_kiat.png",
+    "link" : "https://www.kiat.or.kr/front/user/main.do"
   },
   {
     "id": 59,
-    "img" : "logo59_gtc.png"
+    "img" : "logo59_kova.png",
+    "link" : "https://venture.or.kr/#/home/home-main"
   },
   {
     "id": 60,
-    "img" : "logo60_kita.png"
+    "img" : "logo60_gtc.png",
+    "link" : "https://www.gtck.re.kr/gtck/index.do"
+  },
+  {
+    "id": 61,
+    "img" : "logo61_kita.png",
+    "link" : "https://www.kita.net/"
   }
 ]
 

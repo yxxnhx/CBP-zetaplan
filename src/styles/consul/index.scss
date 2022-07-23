@@ -61,7 +61,7 @@
 .consulBox {
 	display: flex;
 	position: fixed;
-	top: 11%;
+	top: 5%;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 1000;
@@ -291,7 +291,54 @@
 	z-index: 999;
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 1025px) and (max-width: 1285px){
+  .consulBox .consulBg {
+		width: 357px;
+		height: 90vh;
+  }
+	.consulBox .consulForm {
+		width: 80rem;
+		height: 90vh;
+	}
+	
+	.consulBox {
+    width: 90%;
+  }
+  .consulBox .consulForm .consultingAppForm {
+    width: 100%;
+    margin: 0;
+
+  }
+  .consulBox .consulForm {
+    width: 100%;
+  }
+  .fieldset {
+    width: 100%;
+  }
+	
+	.consulLongCategory {
+		width: 100%;
+		.consulLongItem {
+			width: 100%;
+		}
+	}
+	.consulLongCategory .consulLongItem .webSiteInput, .consulLongCategory .consulLongItem .addressInput, .webSiteInput {
+    width: 83%;
+	}
+
+	.selectFieldset {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+	}
+
+	.consulFieldset .consultingCategory .consultingItem .consultingInput {
+    width: 100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
   .consulBox .consulBg {
     display: none;
   }

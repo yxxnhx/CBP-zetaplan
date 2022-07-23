@@ -659,5 +659,10 @@
   .irCircleSText {
     padding-top: 2rem;
   }
-
+  .irAccoProCircleS li:nth-child(1)::after {
+    width: 24vw;
+    bottom: 50%;
+    transform: translateY(47%);
+    left: 54%;
+}
 }

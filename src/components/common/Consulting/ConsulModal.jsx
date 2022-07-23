@@ -86,7 +86,7 @@ const ConsulModal = ({open, close}) => {
         {
           open ? (
             <div className="consulModalArea">
-              <div className="consulOverlay"></div>
+              <div className="consulOverlay" onClick={close} ></div>
               <div className="consulBox">
                 <div className="consulBg">
                   <h1>반갑습니다<br />ZETA PLAN 입니다</h1>

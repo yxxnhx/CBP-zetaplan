@@ -69,7 +69,11 @@ const Partners = () => {
               netData.map((data, i) => {
                 return (
                   <SwiperSlide key={data.id} >
-                    <img src={require('./../../img/main/logo/'+netData[i].img)} alt='network' className="netLogo"/>
+                    <button>
+                      <a href={data.link} target="_blank" rel="noreferrer">
+                        <img src={require('./../../img/main/logo/'+netData[i].img)} alt='network' className="netLogo"/>
+                      </a>
+                    </button>
                   </SwiperSlide>
                 )
               })
@@ -119,7 +123,11 @@ const Partners = () => {
               netData.map((data, i) => {
                 return (
                   <SwiperSlide key={data.id} className='netLogos'>
-                    <img src={require('./../../img/main/logo/'+netData[i].img)} alt='network' className="netLogo"/>
+                    <button>
+                      <a href={data.link} target="_blank" rel="noreferrer">
+                        <img src={require('./../../img/main/logo/'+netData[i].img)} alt='network' className="netLogo"/>
+                      </a>
+                    </button>
                   </SwiperSlide>
                 )
               })
