@@ -122,8 +122,8 @@ const MngCredit = ({setHdSubStyle}) => {
         <SubBanner title={title} img={subBg} />
         <div className='mngInner'>
           <h2 className='mngSubTitle'>신용평가</h2>
-          <h2 className='mngSmTitle'>서비스진행 및 진행절차</h2>
-          <ul className='mngFiveCircle'>
+          <h2 className='mngSmTitle mngCreditSmTitle'>서비스진행 및 진행절차</h2>
+          <ul className='mngFiveCircle mngCreditCircle'>
             <li>홈페이지<br />가입/평가신청</li>
             <li>평가수수료<br />납부</li>
             <li>필요서류<br />제출</li>

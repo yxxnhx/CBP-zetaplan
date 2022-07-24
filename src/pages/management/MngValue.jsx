@@ -57,9 +57,9 @@ const MngValue = ({setHdSubStyle}) => {
             <h4 className='mngValueTxt mngValueCompany'>기업가치평가방법</h4>
           </div>
           <ul className='mngFourCircle mngValueCompanyAssess'>
-            <li>자산가치법<br />(Asset-Based<br />Approach)</li>
-            <li>수익가치법<br />(Income Approach)</li>
-            <li>시장가치법<br />(Market Comparable<br />Transactions Approach)</li>
+            <li>자산가치법 <span>(Asset-Based</span><span>Approach)</span></li>
+            <li>수익가치법<span>(Income</span><span>Approach)</span></li>
+            <li>시장가치법<span>(Market Comparable</span><span>Transactions Approach)</span></li>
             <li>현금흐름할인모형</li>
           </ul>
           <div className='mngCompanyAssess'>
@@ -114,17 +114,23 @@ const MngValue = ({setHdSubStyle}) => {
             <div className="mngCircleWrap">
               <div className="mngCircleBg"></div>
               <div className="mngCircle">
-                <div className="mngCircleItem mngCircleItemObject"><span className="mngCircleText">기술적 위치 분석</span></div>
-                <div className="mngCircleItem mngCircleItemConnection"><span className="mngCircleText">산업분석</span></div>
-                <div className="mngCircleItem mngCircleItemSpace"><span className="mngCircleText">기술가치 종합분석</span></div>
+                <div className="mngCircleItem mngCircleItemLocation">
+                  <span className="mngCircleText">기술적 위치 분석</span>
+                </div>
+                <div className="mngCircleItem mngCircleItemIndustry">
+                  <span className="mngCircleText">산업분석</span>
+                </div>
+                <div className="mngCircleItem mngCircleItemTogether">
+                  <span className="mngCircleText">기술가치 종합분석</span>
+                </div>
               </div>
             </div>
             <div className='mngValueProcess'>
-              <div>기술적 위치 분석(Technical Position Analysis)</div>
+              <div>기술적 위치 분석<span>(Technical Position Analysis)</span></div>
               <p>- Patent map 작성,  기술개발 흐름, 타 기술과 관계, 기술경쟁력</p>
-              <div>산업 분석(industry analysis)</div>
+              <div>산업 분석<span>(industry analysis)</span></div>
               <p>- Value Chains 파악, Cost Drivers 분석, 경쟁환경, 하부구조 파악</p>
-              <div>기술가치 종합 분석(Comprehensive analysis of technology value)</div>
+              <div>기술가치 종합 분석<span>(Comprehensive analysis of technology value)</span></div>
               <p>- 시장분석, 투자비용 산출, 잠재적 경제수익, 기술가치 종합분석</p>
             </div>
           </div>

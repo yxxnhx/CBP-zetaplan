@@ -14,10 +14,10 @@ import GbStrategy from './pages/global/GbStrategy';
 import GbCase from './pages/global/GbCase';
 import Landing from './pages/landing/index';
 import MngConsulting from './pages/management/MngConsulting';
-import MngCertify from './pages/management/MngCertify';
 import MngTrade from './pages/management/Mngtrade';
 import MngValue from './pages/management/MngValue';
 import MngCredit from './pages/management/MngCredit';
+import MngCertify from './pages/management/MngCertify';
 import MaIpoInfo from './pages/maipo/MaIpoInfo';
 import Qna from './pages/notice/Qna';
 import Footer from './components/common/Footer/index';
@@ -60,11 +60,11 @@ function App() {
           <Route path="/ir-perfo" element={<IrPerfo setHdSubStyle={setHdSubStyle} />} />
           <Route path="/ir-plan" element={<IrPlan setHdSubStyle={setHdSubStyle} />} />
           <Route path="/ir-process" element={<IrProcess setHdSubStyle={setHdSubStyle} />} />
-          <Route path="/mng-consulting" element={<MngConsulting setHdSubStyle={setHdSubStyle} />} />
-          <Route path="/mng-certify" element={<MngCertify setHdSubStyle={setHdSubStyle} />} />
+          <Route path="/mng" element={<MngConsulting setHdSubStyle={setHdSubStyle} />} />
           <Route path="/mng-trade" element={<MngTrade setHdSubStyle={setHdSubStyle} />} />
-          <Route path="/mng-value" element={<MngValue setHdSubStyle={setHdSubStyle} />} />
+          <Route path="/mng-value/:category" element={<MngValue setHdSubStyle={setHdSubStyle} />} />
           <Route path="/mng-credit" element={<MngCredit setHdSubStyle={setHdSubStyle} />} />
+          <Route path="/mng-certify" element={<MngCertify setHdSubStyle={setHdSubStyle} />} />
           <Route path="/zeta" element={<Zeta setHdSubStyle={setHdSubStyle} />} />
           <Route path="/gb" element={<Gbindex setHdSubStyle={setHdSubStyle} />} />
           <Route path="/gb-strategy" element={<GbStrategy setHdSubStyle={setHdSubStyle} />} />
