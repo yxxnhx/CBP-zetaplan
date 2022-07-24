@@ -16,7 +16,7 @@
     justify-content: space-between;
   
     .infoSwipBox {
-      width: calc(50% - 28px);
+      width: calc(50% - 20px);
       background-color: $basic-white;
       // height: 31.4rem;
       margin-bottom: 40px;
@@ -99,7 +99,7 @@
     justify-content: center;
 
     .infoSwipBox {
-      width: 80%;
+      width: 100%;
 
       .infoConTitle {
         margin: 49px 0 3rem;

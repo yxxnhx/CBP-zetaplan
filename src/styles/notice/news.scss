@@ -22,7 +22,6 @@
       li {
         width: 13rem;
         display: block;
-        margin-left: 50px;
         font-family: 'Noto Sans KR',sans-serif;
         font-weight: bold;
         font-size: 2.24rem;
@@ -50,67 +49,83 @@
     }
   }
 
-  .newsContainer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 178px;
+  
 
-    .slideImgThumb {
-      flex: 1 1 60%;
-
-      img {
-        width:100%;
-        max-height: 570px;
-      }
-
-    }
+  .newsSwiperContainer {
+    margin-top: 80px;
     
-    .newsContentBox {
-      flex: 1 1 40%;
-      // height: 570px;
-
-      .newsTitle {
-        font-size: 3.04rem;
-        width: 70%;
-        // height: 166px;
-        font-weight: bold;
-        line-height: 1.7;
-        word-break: keep-all;
+    .newsSwiper {
+      .swiper-wrapper {
+        height: 900px;
+      }
+    }
+  
+    .newsContainer {
+      display: flex;
+      justify-content: space-between;
+  
+      .slideImgThumb {
+        flex: 1 1 60%;
+        margin-bottom: 8px;
+  
+        img {
+          width:100%;
+          max-height: 570px;
+        }
   
       }
-
-      .newsSummary {
-        font-family: 'Noto Sans KR',sans-serif;
-        font-size: 2.4rem;
-        width: 39.8rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        word-break: break-word;    
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-        font-weight: normal;
-
-        p, ul li {
-          font-family: 'Noto Sans KR',sans-serif;
-          font-size: $size-xl;
+      
+      .newsContentBox {
+        flex: 1 1 40%;
+        // height: 570px;
+  
+        .newsTitle {
+          font-size: 3.04rem;
+          // width: 70%;
+          width: 100%;
+          // height: 166px;
+          font-weight: bold;
           line-height: 1.7;
-
+          word-break: keep-all;
+          margin-bottom: 16px;
+    
         }
+  
+        .newsSummary {
+          font-family: 'Noto Sans KR',sans-serif;
+          font-size: 2.4rem;
+          // width: 39.8rem;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-break: break-word;    
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          font-weight: normal;
+  
+          p, ul li {
+            font-family: 'Noto Sans KR',sans-serif;
+            font-size: $size-xl;
+            line-height: 1.7;
+  
+          }
+        }
+  
+        .newsCreated {
+          font-family: 'Noto Sans KR',sans-serif;
+          font-size: 1.6rem;
+          font-weight: 600;
+          margin: 57px 0 40px;
+        }
+        
+        
+        
+  
       }
-
-      .newsCreated {
-        font-family: 'Noto Sans KR',sans-serif;
-        font-size: 1.6rem;
-        font-weight: 600;
-        margin: 57px 0 40px;
-      }
-      
-      
-      
-
     }
   }
+
 
   .newsListContainer {
     position: relative;
@@ -119,7 +134,8 @@
     .newsSearchBox {
       position: absolute;
       right: 0;
-      top: 0;
+      // top: 0;
+      top: -24px;
       width: 30rem;
       padding: 1rem 0;
       border-bottom: 1px solid #707070;
@@ -241,9 +257,9 @@
       
       a {
         display: block;
-        width: 58px;
-        height: 58px;
-        padding: 21px;
+        width: 5.8rem;
+        height: 5.8rem;
+        padding: 2.1rem;
         text-align: center;
         font-family: 'Noto Sans KR',sans-serif;
         font-size: $size-sm;
@@ -261,4 +277,40 @@
     }
 
   }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .newsInner .pagination {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 360px) and (max-width: 767px){
+  .newsInner .pagination {
+    width: 100%;
+  }
+  .newsInner .newsContainer {
+    flex-wrap: wrap-reverse;
+  }
+
+  .newsInner .newsSwiperContainer .newsContainer .slideImgThumb {
+    flex: 1 1 100%;
+  }
+
+  .newsInner .newsSwiperContainer .newsSwiper .swiper-wrapper {
+    height: 700px;
+  }
+
+  .newsInner .newsSwiperContainer .newsContainer .slideImgThumb img {
+    max-height: 320px;
+    object-fit: contain;
+  }
+
+  .newsInner .swiperBtnBox {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 }

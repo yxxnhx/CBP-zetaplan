@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactPaginate from 'react-paginate';
 
-const PaginatedItems = ({ handlePageClick, currentItems, pageCount }) => {
+const PaginatedItems = ({ handlePageClick, pageRangeCount, pageCount }) => {
+
+  console.log(pageRangeCount);
   return (
     <>
       <ReactPaginate
         nextLabel=">"
         onPageChange={handlePageClick}
-        pageRangeDisplayed={10}
+        // pageRangeDisplayed={10}
+        pageRangeDisplayed={pageRangeCount}
         marginPagesDisplayed={2}
         pageCount={pageCount}
         previousLabel="<"

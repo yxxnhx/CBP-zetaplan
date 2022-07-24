@@ -59,7 +59,10 @@ const DetailInfoItem = ({ setHdSubStyle }) => {
           <p>자료</p>
         </div>
         <div className='detailContentInner'>
-          <p className='detailTitle'>{detailData.title}</p>
+          <div className='detailTitleSec'>
+            <p className='detailTitle'>{detailData.title}</p>
+            <p className="detailDate">{detailData.createdAt}</p>
+          </div>
           <img src="../../img/notice/data_info/investImg_1.png" alt="" />
           <div className="content" dangerouslySetInnerHTML={{ __html: detailData.content }}>
           </div>

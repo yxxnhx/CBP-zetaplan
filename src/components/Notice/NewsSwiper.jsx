@@ -34,41 +34,13 @@ const NewsSwiper = ({items, selectedIndex}) => {
   };
 
   return (
-    <div>
+    <div className="newsSwiperContainer">
       <Swiper className='newsSwiper'
         modules={[Navigation, Autoplay]}
         navigation={navigationBtn}
         loop={true}
         spaceBetween={0}
         slidesPerView={1}
-        breakpoints={{
-          1500:{
-            slidesPerView: 1
-          },
-          1300:{
-            slidesPerView: 1
-          },
-          1200: {
-            slidesPerView: 1
-          },
-          950: {
-            slidesPerView: 1
-          },
-
-          
-          900: {
-            slidesPerView: 1
-          },
-          600: {
-            slidesPerView: 1
-          },
-          400: {
-            slidesPerView: 1
-          },
-          100: {
-            slidesPerView: 1
-          },
-        }}
       >
         {
           items.map((item)=> {

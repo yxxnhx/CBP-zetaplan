@@ -20,27 +20,30 @@
 
     .qnaSelectBox {
       width: 14rem;
-      height: 70px;
       position: relative;
       background-color: $basic-white;
 
       label {
         position: absolute;
         right: 8px;
-        top: 50%;
+        top: 59%;
         transform: translateY(-50%);
         font-size: 0;
         display: block;
-        width: 25px;
-        height: 25px;
+        // width: 25px;
+        // height: 25px;
+        width: 2.5rem;
+        height: 2.5rem;
         z-index: 100;
         background: url('../../img/icon/bottom_arrow@2x.png') no-repeat;
         background-size: 80%;
       }
 
       .qnaSelect {
-        width: 139px;
-        height: 70px;
+        // width: 139px;
+        width: 13.9rem;
+        // height: 70px;
+        height: 7rem;
         font-family: 'Noto Sans KR',sans-serif;
         font-size: 2rem;
         text-align: center;
@@ -64,7 +67,7 @@
       position: relative;
 
       .qnaSearch {
-        width: 54.2rem;
+        width: 54rem;
         height: 50px;
         outline: none;
         border: none;
@@ -91,16 +94,16 @@
   }
   .pagination {
     display: flex;
-    width: 890px;
+    width: 100%;
     margin: 70px auto 88px;
     justify-content: center;
     .page-item {
       
       a {
         display: block;
-        width: 58px;
-        height: 58px;
-        padding: 21px;
+        width: 5.8rem;
+        height: 5.8rem;
+        padding: 2.1rem;
         font-family: 'Noto Sans KR',sans-serif;
         text-align: center;
         font-size: $size-sm;
@@ -125,5 +128,9 @@
 
 }
 @media (min-width: 360px) and (max-width: 767px){
+  .qnaInner .qnaSearchInput .qnaSearchBox .qnaSearch {
+    width: 30rem;
+    margin-left: 20px;
+  }
 
 }

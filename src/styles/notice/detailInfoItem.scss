@@ -15,16 +15,28 @@
 
   .detailContentInner {
     border-bottom: 1px solid $basic-gray2;
-    .detailTitle {
+
+    .detailTitleSec {
       padding: 35px;
       text-align: center;
-      font-family: 'Noto Sans KR',sans-serif;
-      font-size: $size-xl;
-      font-weight: 700;
       border-bottom: 1px solid $basic-gray2;
 
+      .detailTitle {
+        font-family: 'Noto Sans KR',sans-serif;
+        font-size: $size-xl;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+
+      .detailDate {
+        font-family: 'Noto Sans KR',sans-serif;
+        font-size: $list-md;
+      }
+
     }
+
     img {
+      width: 100%;
 
     }
 
@@ -59,7 +71,7 @@
         }
       }
 
-      li, p, tr, td, a, pre {
+      li, p, tr, td, a, pre, u, b {
         font-size: $size-sm;
         font-weight: normal;
         line-height: 1.7;
@@ -70,10 +82,11 @@
         border: 1px solid #707070;
       }
 
-      strong {
+      strong, b {
         font-family: 'Noto Sans KR',sans-serif;
         font-size: $size-sm;
         line-height: 1.7;
+        font-weight: bold;
 
       }
     }

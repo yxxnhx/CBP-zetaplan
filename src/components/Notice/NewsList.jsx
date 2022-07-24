@@ -3,8 +3,7 @@ import '../../styles/notice/newsItem.scss'
 import thumbnail from '../../img/notice/notice_thumbnail.png';
 import { useNavigate } from 'react-router-dom';
 
-const NewsList = ({items, selectedIndex, currentItems, id}) => {
-
+const NewsList = ({items, selectedIndex}) => {
   const navigate = useNavigate();
 
   const getSelectedIndex = () => {

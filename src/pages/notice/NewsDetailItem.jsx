@@ -5,6 +5,7 @@ import subBg from '../../img/notice/notice_sub_bg@2x.png';
 import newsData from '../../db/newsList.json';
 import columnData from '../../db/column.json';
 import '../../styles/notice/newsDetail.scss';
+import contentImg from '../../img/notice/thumbnail_zeta.png';
 
 const NewsDetailItem = ({ setHdSubStyle }) => {
   const { category, id } = useParams();
@@ -51,7 +52,9 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
         <div className="detailItemBox">
           <p className="detailItemTitle">{detailData.title}</p>
           <div className="contentBox">
-            <img src={detailData.img} alt={detailData.alt} />
+            {
+              detailData.img.length === 0 ? <img className="zetaLogoThumb" src={contentImg} alt="zeta 대표 이미지" /> : <img src={detailData.img} alt={detailData.alt} />
+            }
             <div className="content" dangerouslySetInnerHTML={{ __html: detailData.content }}></div>
           </div>
         </div>

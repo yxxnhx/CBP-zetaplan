@@ -27,10 +27,15 @@ export default SubBanner;
 
 const SubBannerContainer = styled.div`
   width: 100%;
-  height: 480px;
+  /* height: 480px; */
+  height: 48rem;
   background: url(${props => props.img}) no-repeat;
   background-size: cover;
   position: relative;
+  @media (min-width: 360px) and (max-width: 700px) {
+    height: 200px;
+  }
+
 `
 
 const SubBannerTextContainer = styled.div`
@@ -38,10 +43,14 @@ const SubBannerTextContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  width: 100rem;
+  width: 100%;
+  max-width: 100rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media (min-width: 360px) and (max-width: 700px) {
+    justify-content: center;
+  }
 
   .leftBracket {
     background: url(${splite}) no-repeat -5px -190px;
@@ -50,6 +59,9 @@ const SubBannerTextContainer = styled.div`
     min-width: 20px;
     height: 72px;
     margin-right: 50px;
+    @media (min-width: 360px) and (max-width: 700px) {
+      display: none;
+    }
   }
 
   p {
@@ -60,6 +72,10 @@ const SubBannerTextContainer = styled.div`
     color: #fff;
     font-family: 'Noto Sans KR', sans-serif;
     text-align: center;
+
+    @media (min-width: 360px) and (max-width: 700px) {
+      font-size: 3rem;
+    }
   }
 
   .rightBracket {
@@ -69,5 +85,10 @@ const SubBannerTextContainer = styled.div`
     min-width: 20px;
 	  height: 72px;
     margin-left: 50px;
+
+    @media (min-width: 360px) and (max-width: 700px) {
+      display: none;
+    }
   }
+
 `

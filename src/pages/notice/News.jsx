@@ -21,6 +21,8 @@ const News = ({ setHdSubStyle }) => {
   const [pageCount, setPageCount] = useState(0);
 
   const [itemOffset, setItemOffset] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+  const [pageRangeCount, setPageRangeCount] = useState(10);
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
@@ -42,7 +44,26 @@ const News = ({ setHdSubStyle }) => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
 
-  
+
+  const handleResize = () => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener('resize', handleResize);
+  }, [])
+
+  useEffect(() => {
+    if (isMobile) {
+      setPageRangeCount(1);
+    }
+  }, [isMobile]);
+
   const getSelectedData = () => {
     switch (selectedIndex) {
     case 0:
@@ -86,14 +107,13 @@ const News = ({ setHdSubStyle }) => {
           </div>
           <div className='newsListBox'>
             {
-              currentItems.map((datalist) => {
-                return <NewsList key={datalist.id} items={datalist} selectedIndex={selectedIndex} currentItems={currentItems} />
-
+              currentItems.map((data) => {
+                return <NewsList key={data.id} items={data} selectedIndex={selectedIndex} />
               })
             }
           </div>
         </div>
-        <PaginatedItems itemsPerPage={itemsPerPage} handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount} />
+        <PaginatedItems pageRangeCount={pageRangeCount} itemsPerPage={itemsPerPage} handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount} />
       </div>
     </div>
   );

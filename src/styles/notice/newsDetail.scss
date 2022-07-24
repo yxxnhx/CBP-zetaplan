@@ -37,6 +37,11 @@
         margin: 0 auto 30px;
       }
 
+      .zetaLogoThumb {
+        max-height: 500px;
+        object-fit: contain;
+      }
+
       .content {
 
         p, li, div, strong, h3, ul {
@@ -68,4 +73,20 @@
     text-align: center;
     line-height: 1.5;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .newsDetailInner .detailItemBox .contentBox img {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  
+  .newsDetailInner .detailItemBox .contentBox img {
+    width: 100%;
+  }
+
+
 }
