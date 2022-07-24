@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 import { useState } from 'react';
 import Search from './Search';
 import Sitemap from './Sitemap';
@@ -27,13 +27,19 @@ const Util = () => {
     document.body.style.overflow = 'unset'
   }
 
+
   return (
     <div className='hdUtil'>
-      <select className='hdLang'>
-        <option><Link to={''}>KOR</Link></option>
-        <option><Link to={''}>ENG</Link></option>
-        <option><Link to={''}>CHN</Link></option>
+      <select className='hdLang'onChange="window.open(value,'_self');">
+        <option><Link to={'/'}>KOR</Link></option>
+        <option value='www.naver.com'>{/* <Link to={'/'}> */}ENG{/* </Link> */}</option>
+        <option><Link to={'/'}>CHN</Link></option>
       </select>
+      {/* <ul className='hdLang'>
+        <li><Link to={'/'}>KOR</Link></li>
+        <li><Link to={'/eng'}>ENG</Link></li>
+        <li><Link to={'/'}>CHN</Link></li>
+      </ul> */}
 
       <button className='hdSearchBtn' onClick={openSrh}></button>
       <Search open={srhOpen} close={closeSrh} />

@@ -212,7 +212,7 @@ const LangEng = () => {
       </div>
       <div className="langLocationArea">
         <div className="langLocationTitle">Location</div>
-        <ZetaKrMap />
+        {/* <ZetaKrMap /> */}
         <div className="langLocationContent">
           <div className="langLocationH">
             <div className="langLocationHeadT">Head Quarter <span>www.zetaplan.com</span></div>
