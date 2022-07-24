@@ -156,19 +156,6 @@
   }
 }
 
-<<<<<<< Updated upstream
-@media (min-width: 680px) and (max-width: 767px) {
-  .pfWrap .pfCon {
-    .pfMaintitle {
-      margin-left: 5%;
-    }
-    .pfListCon {
-      margin: auto;
-      height: 70vw;
-      width: 80vw;
-      background-color: $basic-gray1;
-      flex-wrap: wrap;
-=======
 @media (min-width: 450px) and (max-width: 559px) {
   .pfWrap .pfCon .pfListCon {
     margin: auto;
@@ -189,54 +176,16 @@
       background-color: $basic-white;
       margin-bottom: 20px;
       margin-right: 0;
->>>>>>> Stashed changes
 
-      .pfMQImgBox {
-        display: block;
-        img {
-          width: 80vw;
-        }
+      .pfImgBox {
+        display: none;
       }
-<<<<<<< Updated upstream
-      .pfList {
-        width: 250px;
-        border-radius: 10px;
-        background-color: $basic-white;
-        margin-bottom: 30px;
-        margin-right: 0;
-
-        .pfImgBox {
-=======
       .pfConBox {
         margin-top: 20px;
         .pfIconBox {
->>>>>>> Stashed changes
           display: none;
         }
-        .pfConBox {
-          margin-top: 32px;
-          .pfIconBox {
-            display: none;
-          }
 
-<<<<<<< Updated upstream
-          .pfMQConBox {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-
-            .pfTitle {
-              font-size: 20px;
-            }
-
-            .pfCount {
-              font-size: 38px;
-              padding-bottom: 15px;
-            }
-          }
-          .pfDes {
-            display: none;
-=======
         .pfMQConBox {
           display: flex;
           justify-content: space-around;
@@ -248,20 +197,22 @@
           .pfCount {
             font-size: 25px;
             padding-bottom: 15px;
->>>>>>> Stashed changes
           }
         }
+        .pfDes {
+          display: none;
+        }
       }
+    }
 
-      .ipoList,
-      .globalList {
-        margin-right: 20px;
-      }
+    .ipoList,
+    .globalList {
+      margin-right: 20px;
+    }
 
-      .maList,
-      .irList {
-        margin-left: 20px;
-      }
+    .maList,
+    .irList {
+      margin-left: 20px;
     }
   }
 }
@@ -353,11 +304,7 @@
         display: none;
       }
       .pfConBox {
-<<<<<<< Updated upstream
         margin-top: 25px;
-=======
-        margin-top: 32px;
->>>>>>> Stashed changes
         .pfIconBox {
           display: none;
         }
