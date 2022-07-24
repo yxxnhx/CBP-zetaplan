@@ -92,6 +92,16 @@ $mngCircleSize : 20rem;
   }
 }
 
+.mngFourCircle.mngValueCompanyAssess{
+  display: flex;
+  li{ flex-direction: column;
+    font-size: 2.1rem;
+  } span{
+    font-size: 1.8rem;
+  }
+}
+
+
 .mngCompanyValueAssess li:nth-child(3n)::before {
      display: none;
     }
@@ -240,14 +250,14 @@ $mngCircleSize : 20rem;
 .mngValueList{
   font-size: 3rem;
   font-weight: bold;
-  line-height: 8.3;
+  line-height: 10;
   margin-left: 10rem;
 }
 
 .mngCompanyValue{
   line-height: 2;
   margin-left: 10rem;
-  margin-top: 4.5rem;
+  margin-top: 5rem;
   div{
     font-size: 1.8rem;
     font-weight: bold;
@@ -260,12 +270,21 @@ $mngCircleSize : 20rem;
     font-size: 1.8rem;
   }
 }
-.mngCompanyValue>div{
-  margin: 2rem 0;
+.mngCompanyValue div{
+  margin: 3rem 0;
 }
 
+.mngCompanyValue div:nth-of-type(2){
+  margin-top: 5rem;
+}
+
+.mngCompanyValue div:nth-of-type(4){
+  margin-top: 6rem;
+}
+
+
 .mngValueTxt.mngValueStep{
- top:2rem; 
+  top:5rem; 
 }
 
 .mngValueCompanyProcess{
@@ -282,19 +301,55 @@ $mngCircleSize : 20rem;
     font-weight: 600;
     margin-top: 5rem;
   }
+  span{
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
  p{
    font-size: 1.8rem;
    font-family:'Noto Sans KR';
    line-height: 3;
  } 
 }
+.mngValueProcess {
+  div:first-child{
+    color: #583cf2;
+  }
+}
+.mngValueProcess {
+  div:nth-of-type(2){
+    color:#1e3a8b;
+  }
+}
+.mngValueProcess {
+  div:nth-of-type(3){
+    color: #070f76;
+  }
+}
+
+.mngValueProcess span{
+    color: #000;
+}
 
 .mngCircleWrap {
   position:relative; 
   width:32.8125rem;
   height:32.8125rem; 
-  
 }
+
+.mngCircleBg {
+  background: url('../../img/main/zetaplanLogo.svg') no-repeat 50% 50%;
+	width: 100%;
+	height: 100%;
+  position: absolute;
+  bottom: -18rem;
+  left: 12rem;
+  border: 0.8rem solid #e0e0e0;
+  border-radius: 50%;
+  box-shadow:0 .625rem 1.25rem rgba(18, 27, 116, .18);
+}
+
+
 
 .mngCircle {
   position:absolute;
@@ -316,27 +371,28 @@ $mngCircleSize : 20rem;
   box-shadow:0 .625rem 1.25rem rgba(18, 27, 116, .18);
 }
 
-.mngCircleItemObject {
+
+.mngCircleItemLocation {
   width: 17rem;
   height: 17rem;
   top:-1.875rem;
-  left:50%; background-color : $main-color;
+  left:50%; background-color : #583cf2;
   transform: translate(-22rem, -6rem);
   }
 
-.mngCircleItemConnection {
+.mngCircleItemIndustry {
   width: 17rem;
   height: 17rem;
   bottom:.625rem;
-  right:0; background-color:$main-color ; 
+  right:0; background-color:#1e3a8b ; 
   transform:translate(12rem, -8rem)
 }
 
-.mngCircleItemSpace {
+.mngCircleItemTogether {
   width: 17rem;
   height: 17rem;
   bottom:.625rem;
-  left:0; background-color:$main-color;
+  left:0; background-color:#070f76;
   transform:translateY(11rem);
   }
 
@@ -349,26 +405,39 @@ $mngCircleSize : 20rem;
 @keyframes rotate {0%{}100%{transform:rotate(360deg);}}
 @keyframes rotate2 {0%{}100%{transform:rotate(-360deg);}}
 
-.mngCircleBg {
-  background: url('../../img/main/zetaplanLogo.svg') no-repeat 7rem;
-	width: 110%;
-	height: 110%;
-  position: absolute;
-  bottom: -20rem;
-  left: 12rem;
-  border: 0.8rem solid #e0e0e0;
-  background-size: 60% 60%;
-  border-radius: 50%;
-  box-shadow:0 .625rem 1.25rem rgba(18, 27, 116, .18);
-}
 
 
 .mngInner{
   @include Inner;
 }
 
-
 @media (min-width: 768px) and (max-width: 1023px){
+  .mngFourCircle.mngValueCompanyAssess, .mngCompanyValueAssess{
+    flex-wrap: wrap;
+    width: 90vw;
+      li{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 0;
+        margin-top: 2rem;
+        flex: 100%;
+       &::before{
+         display: none;
+       }
+    }
+  }
+  .mngFourCircle.mngValueCompanyAssess li{
+    display: flex;
+    flex-direction: row;
+  }
+  .mngFourCircle.mngValueCompanyAssess li:nth-child(3){
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
   .mngNeedTxt{
     width: 90%;
     margin-left: 3rem;
@@ -386,22 +455,30 @@ $mngCircleSize : 20rem;
     font-size: 1.7rem;
   }
 
-
+  
 
 // mngValueskill
+
+.mngSmTitle.mngValueTitle{
+  margin-left: 3rem;
+}
+
+.mngValueTxt{
+  margin-left: 7rem;
+}
 .mngValueList{
   width: 10%;
-  line-height: 11.8;
-  margin-top: 2rem;
+  line-height: 11;
+  margin-top: 2%;
   li{
-    margin-left: 2rem;
+    min-width: 30px;
     }
   }
 
   .mngCompanyValue{
     line-height: 1.5;
     margin-left: 10rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
     div{
       font-size: 1.8rem;
       font-weight: bold;
@@ -415,25 +492,59 @@ $mngCircleSize : 20rem;
     }
   }
   .mngCompanyValue div{
-    margin-top:4rem;
+    margin-top:7rem;
   }
+
+  .mngCompanyValue div:nth-of-type(4){
+    margin-top: 9rem;
+  }
+.mngValueTxt.mngValueStep{
+  margin-top: 10rem;
+}
+
+.mngCircleBg{
+  background: url('../../img/main/zetaplanLogo.svg') no-repeat 4rem;
+  background-size: 70% 70%;
+  width: 150%;
+}
+.mngCircle{
+  top: 21vw;
+  left: 15vw;
+  width: 100%;
+  height: 85%;
+}
+.mngCircleItemLocation{
+  top: -1vw;
+  left: 8vw;
+}
+.mngCircleItemIndustry{
+  top: 6vw;
+  left: 10vw;
+}
+.mngCircleItemTogether{
+  top: 15vw;
+} 
 
 .mngValueProcess{
   width: 50%;
   margin-top: 8rem;
   margin-left: 40%;
   div{
+    display: flex;
+    flex-direction: column;
     font-size: 2rem;
     margin-top: 2rem;
     line-height: 1.5;
   }
  p{
    font-size: 1.7rem;
-   font-family:'Noto Sans KR';
    line-height: 2;
   } 
   }
 }
+
+
+
 
 @media (min-width: 360px) and (max-width: 767px){
 
@@ -441,12 +552,12 @@ $mngCircleSize : 20rem;
       font-size: 1.5rem;
       margin-left: 2rem;
   }
-  .mngValueTitle{
+  .mngSmTitle.mngValueTitle{
     margin-left: 3rem;
   }
 
   .mngValueTxt{
-    margin-left: 10rem;
+    margin-left: 7rem;
   }
   .mngNeedTxt{
     margin-left: 3rem;
@@ -481,8 +592,11 @@ $mngCircleSize : 20rem;
   font-size: 1.5rem;
   font-weight: 500;
 }
-.mngValueCompany{
-  margin-bottom: -2rem;
+
+
+.mngValueTxt.mngValueCompany{
+  margin-top: 10rem;
+  margin-bottom: 3rem;
 }
 .mngValueCompanyAssess{
   flex-wrap: wrap;
@@ -491,7 +605,7 @@ $mngCircleSize : 20rem;
       width: 10rem;
       height: 10rem;
       border-radius: 0;
-      margin-top: 3rem;
+      margin-top: 2rem;
       flex: 100%;
      &::before{
        display: none;
@@ -505,30 +619,109 @@ $mngCircleSize : 20rem;
       width: 10rem;
       height: 10rem;
       border-radius: 1%;
-      margin-top: 3rem;
+      margin-top: 2rem;
       flex: 100%;
      &::before{
        display: none;
      }
   }
 }
+.mngFourCircle.mngValueCompanyAssess li{
+  display: flex;
+  flex-direction: row;
+}
+.mngFourCircle.mngValueCompanyAssess li:nth-child(3){
+  flex-wrap: wrap;
+}
 
 //mngValueskill
 .mngValueList{
+  width: 30%;
   font-size: 1rem;
-  margin-left: -1rem;
+  margin-left: 3rem;
   line-height: 16;
   li{
     min-width: 30px;
   }
 }
+
 .mngCompanyValue{
-  margin-top: 6.5rem;
+  margin-top: 6rem;
   margin-left: 5rem;
 }
 
 .mngCompanyValue div{
-  margin-top:5rem;
+  margin-top:5.2rem;
 }
 
+.mngCompanyValue div:nth-of-type(3){
+  margin-top: 3rem;
 }
+
+.mngCompanyValue div:nth-of-type(4){
+  margin-top: 8rem;
+}
+
+.mngValueCompanyProcess{
+  display: block;
+}
+
+.mngCircleWrap {
+  top: -2vw;
+  width: 40vw;
+  height: 40vw;
+  background-size: 70%;
+}
+.mngCircleBg{
+  background: url('../../img/main/zetaplanLogo.svg') no-repeat 4rem;
+  background-size: 70% 70%;
+}
+
+.mngCircle{
+  top: 37vw;
+  left: 28vw;
+  width: 80%;
+  height: 70%;
+}
+.mngCircleItem {
+  width: 25vw;
+  height: 25vw;
+}
+  &.mngCircleItemLocation {
+    top: -13vw;
+    left: 27vw;
+  }
+
+  &.mngCircleItemIndustry {
+    top: 15vw;
+    left: 11vw;
+  }
+
+  &.mngCircleItemTogether {
+   top: 5vw;
+   left: -12vw;
+  }
+
+  .mngCircleText {
+    font-size: 2vw;
+  }
+
+.mngValueProcess{
+  width: 100%;
+  height: 30%;
+  margin-top: 30rem;
+  margin-bottom: 0;
+  
+  div{
+    font-size: 2rem;
+    margin-top: 2rem;
+    line-height: 1.5;
+  }
+ p{
+   font-size: 1.7rem;
+   line-height: 1.2;
+  } 
+  }
+}
+
+

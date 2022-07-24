@@ -35,7 +35,7 @@ $size-ft : 1.6rem;
   font-weight: 900;
   padding-left: 3rem;
   position: relative;
-  margin-top: 10rem;
+  margin-top: 5rem;
   &::before {
     content: "";
     display: block;
@@ -49,13 +49,10 @@ $size-ft : 1.6rem;
   }
 }
 
- .mngConsultingGoal{
-   margin-top: 0;
- }
 
 .mngSummary{
-  width: 132.7rem;
-  height: 26.6rem;
+  width: 100%;
+  height: 100%;
   padding-top: 3rem;
   p{
     font-size: 2rem;
@@ -107,7 +104,7 @@ $size-ft : 1.6rem;
 
 
 .mngFourCircleBox .mngFiveCircleBox{
-  width: 10vw;
+  width: 100vw;
 }
 .mngFiveCircle{
   display: flex;
@@ -226,15 +223,19 @@ $size-ft : 1.6rem;
   }
 }
 @media (min-width: 360px) and (max-width: 1300px){
+
+.mngConsultingGoal{
+  margin-top: 10rem;
+}
+
   .mngSummary.mngConsultingSummary{
     width: 95%;
-    margin-left: 2rem;
     p{
       line-height: 1.3;
     }
   }
   .mngFourCircle.mngConsultingFour{
-    
+   
     flex-wrap: wrap;
     li{
       width: 10rem;
@@ -249,7 +250,7 @@ $size-ft : 1.6rem;
 }
   .mngFiveCircle{
     flex-wrap: wrap;
-    width: 85vw;
+    margin-top: 0;
     li{
       width: 10rem;
       height: 10rem;
@@ -261,11 +262,20 @@ $size-ft : 1.6rem;
     }
   }
 }
+
+
 .mngConsultingTxt{
-  width: 90%;
+ margin-left: -3rem;
 }
+
+
+.mnConsultingSmTitle{
+  margin-top: 5rem;
+  margin-left: 0;
+}
+
   .mngConsultingProcessImg{
-    width: 90%;
+    width: 95%;
    margin-top: 6rem;
   }
 

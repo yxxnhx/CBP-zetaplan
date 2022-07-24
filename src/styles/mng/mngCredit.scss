@@ -2,9 +2,7 @@
 
 @import '../GlobalStyle.scss';
 
- .mngCreditReportTitle{
-   margin-top: 2rem;
-}
+
 
 .mngCreditWrapper{
   margin: 15rem 0;
@@ -118,11 +116,13 @@
     font-family:'Noto Sans KR';
   }
 }
-
+.mngSmTitle.mngCreditReportTitle{
+  margin-left: 10rem;
+}
 .mngCreditReport{
   height: 80rem;
-  margin-left: 5rem;
-  padding: 4rem;
+  margin-left: 4rem;
+  padding: 2rem 4rem;
   div{
     font-size: 2.2rem;
     font-weight: 600;
@@ -154,13 +154,10 @@
 
 @media (min-width: 768px) and (max-width: 1023px){
   
-  .mngCompanyValueAssess{
-    li{
-      width: 18rem;
-      height: 18rem;
-    }
-}
-  
+  .mngFiveCircle.mngCreditCircle{
+    width: 85vw;
+    margin-left: 2rem;
+  }
   .mngCreditReport{
     height: 100%;
     div{
@@ -173,6 +170,11 @@
 }
 
 @media (min-width: 360px) and (max-width: 767px){
+
+  .mngFiveCircle.mngCreditCircle{
+    width: 85vw;
+    margin-left: 2rem;
+  }
   .mngFiveCircle li{
     border-radius: 0;
   }
@@ -182,10 +184,52 @@
 }
 
 @media (min-width : 360px) and (max-width: 470px){
+
+  .mngSmTitle.mngCreditSmTitle{
+    margin-left: 5rem;
+  }
+
+  .mngFiveCircle.mngCreditCircle{
+    width: 85vw;
+    margin-left: 2rem;
+  }
+
+
+  .mngUnderBtn{
+    background: url('../../img/icon/bottom_arrow.png') no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 7px;
+  }
+  .mngTopBtn{
+    background: url('../../img/icon/top_arrow.png') no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 7px;
+  }
+  .mngCreditImg{
+    width: 98%;
+    transform: translateX(1%);
+  }
+
    .mngCreditReport{
     margin-left: 0;
   }
+   .mngCreditReport p{
+    line-height: 1.5;
+   }
+   .mngCreditReport div{
+    margin-bottom: 1rem;
+   }
+
   .mngCreditApply{
-    margin-top: 30rem;
+    margin-top: 10rem;
   }
+
+.mngSmTitle.mngCreditReportTitle{
+  margin-left: 5rem;
+  margin-top: -5rem;
+  margin-bottom: 0;
+}
+
 }
