@@ -62,6 +62,7 @@ function App() {
           <Route path="/ir-process" element={<IrProcess setHdSubStyle={setHdSubStyle} />} />
           <Route path="/mng" element={<MngConsulting setHdSubStyle={setHdSubStyle} />} />
           <Route path="/mng-trade" element={<MngTrade setHdSubStyle={setHdSubStyle} />} />
+          <Route path="/mng-value" element={<MngValue setHdSubStyle={setHdSubStyle} />} />
           <Route path="/mng-value/:category" element={<MngValue setHdSubStyle={setHdSubStyle} />} />
           <Route path="/mng-credit" element={<MngCredit setHdSubStyle={setHdSubStyle} />} />
           <Route path="/mng-certify" element={<MngCertify setHdSubStyle={setHdSubStyle} />} />

@@ -44,13 +44,13 @@ const Gnb = () => {
       <li className='hdDep1'>
         <Link to={'/mng'} className='hdSub'>경영・평가</Link>
         <ul className='hdDep2'>
-          <li><Link to={'/mng-consulting'}>경영컨설팅</Link></li>
+          <li><Link to={'/mng'}>경영컨설팅</Link></li>
           <li><Link to={'/mng-trade'}>기술거래</Link></li>
           <li>
-            <Link to={'/mng-value'}>가치평가</Link>
+            <Link to={'/mng-value/mngvaluecompany'}>가치평가</Link>
             <ul className='hdDep3'>
-              <li><Link to={''}>기업가치평가</Link></li>
-              <li><Link to={''}>기술가치평가</Link></li>
+              <li><Link to={'mng-value/mngvaluecompany'}>기업가치평가</Link></li>
+              <li><Link to={'mng-value/mngvalueskill'}>기술가치평가</Link></li>
             </ul>
           </li>
           <li><Link to={'/mng-credit'}>신용평가</Link></li>

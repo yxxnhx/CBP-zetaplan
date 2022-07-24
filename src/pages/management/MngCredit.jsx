@@ -10,6 +10,11 @@ import { useEffect } from 'react';
 
 const MngCredit = ({setHdSubStyle}) => {
   const title = '신용거래에 따른 위험도를 최소화하고,<br />합리적인 거래처 결정을 지원합니다.'
+  const oneDepth='경영 · 평가';
+  const oneDepthLink='/mng';
+  const twoDepth='신용평가';
+  const twoDepthLink='/mng-credit';
+  const linkActive='twoDepth';
 
 
   /* header 배경색 변경 */
@@ -119,7 +124,7 @@ const MngCredit = ({setHdSubStyle}) => {
   return (
     <div>
       <div>
-        <SubBanner title={title} img={subBg} />
+        <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive} />
         <div className='mngInner'>
           <h2 className='mngSubTitle'>신용평가</h2>
           <h2 className='mngSmTitle mngCreditSmTitle'>서비스진행 및 진행절차</h2>

@@ -7,6 +7,11 @@ import { useEffect } from 'react';
 
 const MngTrade = ({setHdSubStyle}) => {
   const title = '국내는 물론, 해외로 나아갈<br />기술이전 컨설팅을 지원합니다.'
+  const oneDepth='경영 · 평가';
+  const oneDepthLink='/mng';
+  const twoDepth='기술거래';
+  const twoDepthLink='/mng-trade';
+  const linkActive='twoDepth';
   
   /* header 배경색 변경 */
   useEffect(() => {
@@ -15,7 +20,7 @@ const MngTrade = ({setHdSubStyle}) => {
   
   return (
     <div>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive}/>
       <div className='mngInner'>
         <div>
           <h2 className='mngSubTitle'>기술거래</h2>

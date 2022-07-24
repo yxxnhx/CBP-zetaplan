@@ -1,20 +1,41 @@
 import React from 'react';
-import GradientImg from '../../img/me/me_gradient_box@2x.png'; 
 import '../../styles/mng/mngValue.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/me/me_sub_bg@2x.png';
+import GradientImg from '../../img/me/me_gradient_box@2x.png'; 
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 
+
+
 const MngValue = ({setHdSubStyle}) => {
+  const {category} = useParams();
   const navigate = useNavigate();
+  const [selectedIndex, setSelectedIndex]= useState(0); 
+  const oneDepth='경영 · 평가';
+  const oneDepthLink='/mng';
+  const twoDepth='가치평가';
+  const twoDepthLink='/mng-value/mngvaluecompany'; //주소 맨앞에 '/' 안붙이면 주소가 추가됨(아마 문자로 인식하는 듯)
+  const threeDepth= setBreadThreeDepth();
+  const threeDepthLink=`/mng-value/${category}`;
+  const linkActive='threeDepth';
 
   /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
+  
+  const [data, setData] = useState([]);
 
+  useEffect(()=> {
+    setData(getSelectedData()); 
+  }, [selectedIndex]);
+  
+
+  useEffect(() => {
+    setData(getCategoryData());
+  }, [category])
 
   const title = '효율적인 자산관리와 적절한<br />투자관련 의사결정을 지원합니다.'
   const [activeIndex, setActiveIndex] = useState(0);
@@ -22,13 +43,48 @@ const MngValue = ({setHdSubStyle}) => {
     setActiveIndex(index)
   }
 
+  const getCategoryData = () => {
+    switch (category) {
+    case 'mngvaluecompany':
+    default:
+      return mngValueContents[0];
+    case 'mngvalueskill':
+      return mngValueContents[1];
+    }
+  }
+
+  const getActiveClassName = (cate) => {
+    if (cate === category) {
+      return 'isActive';
+    }
+    return '';
+  }
+
+  const getSelectedData = () => {
+    switch (selectedIndex) {
+    case 0:
+    default:
+      return mngValueContents[0];
+    case 1:
+      return mngValueContents[1];
+    }
+  }
+
+  function setBreadThreeDepth() {
+    if (category === undefined) {
+      return '기업가치평가';
+    } else if (category === 'mngvaluecompany') {
+      return '기업가치평가';
+    } else if (category === 'mngvalueskill') {
+      return '기술가치평가';
+    }
+  }
+
+
   const mngValueContents = [
     {
-      tabTitle:(
-        <li className={activeIndex===0 ?'isActive' : ''} onClick={()=>{tabClickHandler(0) 
-          navigate('/mng-value/mngvaluecompany')}} >기업가치평가</li>
-      ),
-      tabContent:(
+      tabSubTitle: (<SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} threeDepth={threeDepth} threeDepthLink={threeDepthLink} linkActive={linkActive}  />),
+      tabContent: (
         <div className='mngValueBusiness'>
           <h2 className='mngSmTitle mngValueTitle'>기업가치평가</h2>
           <h4 className='mngValueTxt'>필요성</h4>
@@ -50,8 +106,8 @@ const MngValue = ({setHdSubStyle}) => {
             <li>시장외적요인</li>
           </ul>
           <div className='mngValueAssess'>
-            <p>기업내적요인에는 질적 요인과 양적 요인이 있는데 질적 요인에는 경영자의 자질, 주주현황, 연구개발투자, 기술인력구성, 노사관계, Life Cycle 등이 있고 양적요인에는 수익성, 재무구조, 배당성향, 재무제표에 관한 사항이 있습니다.</p>
-            <p>기업외적요인에는 시장내적요인과 시장외적요인이 있는데 시장내적요인에는 시장규제, 부양조치, 투자자의 심리 및 동향 등이 있고 시장외적요인에는 경기순환, 물가동향, 금리수준, 통화신용, 재정정책, 환율 등이 있습니다.</p>
+            <p>기업내적요인에는 질적 요인과 양적 요인이 있는데 질적 요인에는 경영자의 자질, 주주현황, 연구개발투자, 기술인력구성,     노사관계, Life Cycle 등이 있고 양적요인에는 수익성, 재무구조, 배당성향, 재무제표에 관한 사항이 있습니다.</p>
+            <p>기업외적요인에는 시장내적요인과 시장외적요인이 있는데 시장내적요인에는 시장규제, 부양조치, 투자자의 심리 및 동향 등이    있고 시장외적요인에는 경기순환, 물가동향, 금리수준, 통화신용, 재정정책, 환율 등이 있습니다.</p>
           </div>
           <div>
             <h4 className='mngValueTxt mngValueCompany'>기업가치평가방법</h4>
@@ -63,17 +119,13 @@ const MngValue = ({setHdSubStyle}) => {
             <li>현금흐름할인모형</li>
           </ul>
           <div className='mngCompanyAssess'>
-            <p>자산가치법에는 장부가치에 의한 평가, 시간에 의한 평가, 청산가치가 있고 수익가치법에는 당기순이익 환원법, 배당 환원법이 있으며 시장가치법에는 PER(Price-Earning Ratio, EV/EBITDA, PBR(Priceon Book-value Ratio), PSR(Price Selling Ratio)이 있고 현금흐름할인모형에는 잉여현금흐름, (FCF : Free Cash Flow), 미래현금흐름 할인모형, (DCF : Discount Cash Flow)이 있습니다.</p>
+            <p>자산가치법에는 장부가치에 의한 평가, 시간에 의한 평가, 청산가치가 있고 수익가치법에는 당기순이익 환원법, 배당    환원법이 있으며 시장가치법에는 PER(Price-Earning Ratio, EV/EBITDA, PBR(Priceon Book-value Ratio), PSR(Price Selling   Ratio)이 있고 현금흐름할인모형에는 잉여현금흐름, (FCF : Free Cash Flow), 미래현금흐름 할인모형, (DCF : Discount Cash     Flow)이 있습니다.</p>
           </div>
-        </div>
-      )
+        </div>)
     },
     {
-      tabTitle:(
-        <li className={activeIndex===1 ? 'isActive': ''} onClick={()=>{tabClickHandler(1) 
-          navigate('/mng-value/mngvalueskill')}}>기술가치평가</li>
-      ),
-      tabContent:(
+      tabSubTitle: (<SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} threeDepth={threeDepth} threeDepthLink={threeDepthLink} linkActive={linkActive} />),
+      tabContent: (
         <div className='mngSkillValue'>
           <h2 className='mngSmTitle mngValueTitle'>기술가치평가</h2>
           <h4 className='mngValueTxt'>필요성</h4>
@@ -92,7 +144,7 @@ const MngValue = ({setHdSubStyle}) => {
             </div>
             <div className='mngCompanyValue'>
               <div className='mngCompanyValueTitle'>비용접근법</div>
-              <p>- 기업이 유사기술을 내부에서 개발하거나 외부로부터 도입하는데 드는 모든 비용을 계 산함으로써 기술가치를 평가하는 방법</p>
+              <p>- 기업이 유사기술을 내부에서 개발하거나 외부로부터 도입하는데 드는 모든 비용을 계 산함으로써 기술가치를 평가하는     방법</p>
               <p>- 적정시장가치 = 개발투하 총 비용 – 가치하락요소</p>
               <div>시장접근법</div>
               <p>- 평가대상기술과 유사 또는 동일한 기술의 시장거래가격을 기준으로 신청기술의 우열 등을 고려하여 산출</p>
@@ -105,7 +157,7 @@ const MngValue = ({setHdSubStyle}) => {
               <p>평가대상기술을 사용함에 따라 발생한 추가적인 현금흐름의 현재가치 중 기술자체가 기여한 범위를 의미</p>
               <p>기술요소 = 산업요소지수(industrial factor) × 개별기술지수(Technology rating)</p>
               <p>산업요소지수 : 기술자산이 어떤 산업 내에서 상업적 기업가치에 공헌할 수 있는 최대 비율</p>
-              <p>개별기술지수 : 특정기술이 사업에 활용되어 상업적 우월성에 대한 공헌과 관련하여 기술의 상대적인 강도를 측정하여 비율로 나타낸 것.</p>
+              <p>개별기술지수 : 특정기술이 사업에 활용되어 상업적 우월성에 대한 공헌과 관련하여 기술의 상대적인 강도를 측정하여     비율로 나타낸 것.</p>
               <span>- 특허권 등 대부분의 지적재산권을 평가하는데 유용하게 사용</span>
             </div>
           </div>
@@ -134,8 +186,7 @@ const MngValue = ({setHdSubStyle}) => {
               <p>- 시장분석, 투자비용 산출, 잠재적 경제수익, 기술가치 종합분석</p>
             </div>
           </div>
-        </div>
-      )
+        </div>)
     }
   ] ;
 
@@ -143,22 +194,25 @@ const MngValue = ({setHdSubStyle}) => {
   return (
     <div>
       <div>
-        <SubBanner title={title} img={subBg} />
+        {/* {mngValueContents[activeIndex].tabSubTitle} */}
+        {data.tabSubTitle}
         <div className='mngInner'>
           <h2 className='mngSubTitle'>가치평가</h2>
           <div className='mngMenuTabEdge'>
-            {
-              mngValueContents.map((section,index) => {
-                return(
-                  <ul key={index} className='mngMenuTab'>
-                    {section.tabTitle}
-                  </ul>
-                )
-              })
-            }
+            <ul className='mngMenuTab'>
+              <li className={getActiveClassName('mngvaluecompany')} onClick={()=>{
+                tabClickHandler(0) 
+                navigate('/mng-value/mngvaluecompany') 
+                setSelectedIndex(0)}} >기업가치평가</li>
+              <li className={getActiveClassName('mngvalueskill')} onClick={()=>{
+                tabClickHandler(1) 
+                navigate('/mng-value/mngvalueskill')
+                setSelectedIndex(1)}}>기술가치평가
+              </li>
+            </ul> 
           </div>
           <div>
-            {mngValueContents[activeIndex].tabContent}
+            {data.tabContent}
           </div>
         </div>
       </div>

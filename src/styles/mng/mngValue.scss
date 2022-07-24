@@ -111,7 +111,11 @@ $mngCircleSize : 20rem;
   display: flex;
   justify-content: flex-end;
 }
+
+
+
 .mngMenuTab{
+  display: flex;
   transform: translate(-5rem, -5rem);
   cursor: pointer;
   li{

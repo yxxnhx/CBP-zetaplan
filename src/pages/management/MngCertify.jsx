@@ -9,6 +9,11 @@ import { useEffect } from 'react';
 
 const MngCertify = ({setHdSubStyle}) => {
   const title = '인증기업의 성장을 위해<br />체계적인 업무를 지원합니다.'
+  const oneDepth='경영 · 평가';
+  const oneDepthLink='/mng';
+  const twoDepth='기업인증';
+  const twoDepthLink='/mng-certify';
+  const linkActive='twoDepth';
 
   /* header 배경색 변경 */
   useEffect(() => {
@@ -17,7 +22,7 @@ const MngCertify = ({setHdSubStyle}) => {
 
   return (
     <div>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive} />
       <div className='mngInner'>
         <div>
           <h2 className='mngSubTitle'>기업인증</h2>
