@@ -23,6 +23,7 @@
   position: fixed;
   bottom: 10rem;
   right: 4rem;
+  z-index: 15;
 }
 .consulBtn img {
   width: 4rem;
@@ -41,6 +42,7 @@
   opacity: 0;
   display: flex;
   align-items: center;
+  z-index: 15;
 }
 .consulDimmed img {
   width: 4rem;
@@ -56,7 +58,7 @@
 .consulBox {
   display: flex;
   position: fixed;
-  top: 11%;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -257,4 +259,92 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 999;
+}
+
+@media (min-width: 1025px) and (max-width: 1285px) {
+  .consulBox .consulBg {
+    width: 357px;
+    height: 90vh;
+  }
+  .consulBox .consulForm {
+    width: 80rem;
+    height: 90vh;
+  }
+  .consulBox {
+    width: 90%;
+  }
+  .consulBox .consulForm .consultingAppForm {
+    width: 100%;
+    margin: 0;
+  }
+  .consulBox .consulForm {
+    width: 100%;
+  }
+  .fieldset {
+    width: 100%;
+  }
+  .consulLongCategory {
+    width: 100%;
+  }
+  .consulLongCategory .consulLongItem {
+    width: 100%;
+  }
+  .consulLongCategory .consulLongItem .webSiteInput, .consulLongCategory .consulLongItem .addressInput, .webSiteInput {
+    width: 83%;
+  }
+  .selectFieldset {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .consulFieldset .consultingCategory .consultingItem .consultingInput {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .consulBox .consulBg {
+    display: none;
+  }
+}
+@media all and (max-width: 767px) {
+  .consulBox .consulBg {
+    display: none;
+  }
+  .consulBox {
+    width: 100%;
+  }
+  .consulBox .consulForm .consultingAppForm {
+    width: 100%;
+    margin: 0;
+  }
+  .consulBox .consulForm {
+    width: 100%;
+  }
+  .fieldset {
+    width: 100%;
+  }
+  .consulLongCategory {
+    width: 100%;
+  }
+  .consulLongCategory .consulLongItem {
+    width: 100%;
+  }
+  .consulLongCategory .consulLongItem .webSiteInput, .consulLongCategory .consulLongItem .addressInput {
+    width: 85%;
+  }
+  .selectFieldset {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .consulFieldset .consultingCategory .consultingItem .consultingInput {
+    width: 100%;
+  }
+}
+@media all and (max-width: 444px) {
+  .consulLongCategory .consulLongItem .webSiteInput, .consulLongCategory .consulLongItem .addressInput {
+    width: 80%;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -24,23 +24,44 @@ video {
   align-items: center;
 }
 
+.LdTitle {
+  width: 73%;
+  margin: auto;
+}
 .LdTitle p {
-  font-family: NotoSansKR;
   color: #fff;
-  font-size: 7.4rem;
+  font-size: 7rem;
   font-weight: bold;
   text-align: center;
   line-height: 1.7;
   z-index: 10;
   position: absolute;
 }
+.LdTitle p span {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.7;
+}
 
-.LdTitle img {
+.LdTitleBg {
   width: 35rem;
   height: 65rem;
   align-self: flex-end;
-  margin-right: 35rem;
+  margin-right: 10%;
   z-index: -10;
+}
+
+.LdTitle .LdDesSpe {
+  margin-right: 30rem;
+  padding-bottom: 10rem;
+  position: absolute;
+  bottom: -10%;
+  left: 20%;
+}
+.LdTitle .LdDesSpe img {
+  height: 13rem;
 }
 
 .LdDesWord img {
@@ -55,31 +76,35 @@ video {
 }
 .LdDesWord .LdDesBus {
   align-self: flex-start;
-  margin-left: 30rem;
+  margin-top: -10%;
+  align-self: flex-start;
+  margin-left: -20%;
 }
 .LdDesWord .LdDesPro {
+  margin-top: 25%;
   align-self: flex-end;
-  margin-right: 10rem;
+  margin-right: 10%;
   position: absolute;
   z-index: 10;
 }
-.LdDesWord .LdDesSpe {
-  margin-right: 30rem;
-  padding-bottom: 10rem;
+.LdDesWord .LdDesPro img {
+  height: 13rem;
 }
 
 .LdStep {
+  width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 26rem;
+  margin: 13rem auto;
 }
 .LdStep .LdStepTitle {
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: bolder;
   color: #fff;
-  margin: 46rem 0 19rem;
+  margin: 46rem 0 10rem;
   text-align: center;
+  line-height: 1.5;
 }
 
 .LdStepList {
@@ -97,6 +122,7 @@ video {
 .LdStepList li {
   color: #fff;
   font-size: 3rem;
+  line-height: 1.5;
   z-index: 10;
 }
 .LdStepList li:first-child {
@@ -116,12 +142,14 @@ video {
   width: 9rem;
   height: 9rem;
   position: absolute;
-  top: -4rem;
-  left: -4rem;
+  top: -3rem;
+  left: -3rem;
   z-index: -10;
 }
 
 .btnArea {
+  margin: auto;
+  width: 75%;
   display: flex;
   justify-content: center;
   padding-bottom: 11rem;
@@ -135,4 +163,43 @@ video {
   text-align: center;
   font-size: 2.4rem;
   margin: 0 3.8rem;
+}
+.btnArea button a {
+  font-size: 2.4rem;
+}
+
+@media all and (max-width: 767px) {
+  .LdTitle p {
+    font-size: 5rem;
+  }
+  .LdTitle p span {
+    font-size: 5rem;
+  }
+  .LdTitleBg {
+    width: 25rem;
+    height: auto;
+  }
+  .LdTitle .LdDesSpe img {
+    height: 6rem;
+  }
+  .LdDesWord .LdDesPro img {
+    height: 6rem;
+  }
+  .LdStep .LdStepTitle {
+    font-size: 4.5rem;
+  }
+  .LdStepList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .btnArea {
+    flex-direction: column;
+  }
+  .btnArea button {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
 }/*# sourceMappingURL=index.css.map */

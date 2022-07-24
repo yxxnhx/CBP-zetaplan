@@ -5,7 +5,7 @@
 }
 
 .inner {
-  width: 1440px;
+  width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
 }
@@ -41,25 +41,30 @@
 .irCircle {
   display: flex;
   flex-wrap: wrap;
-  width: 150rem;
+  width: 90vw;
   justify-content: center;
   align-items: center;
   margin: 8.5rem auto;
 }
 .irCircle li {
-  width: 24rem;
-  height: 24rem;
+  width: 14vw;
+  height: 14vw;
   border-radius: 50%;
   border: 1px solid #1527a0;
   margin-right: 4rem;
   position: relative;
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 1.7;
+  flex-direction: column;
+}
+.irCircle li span {
+  font-size: 1.2vw;
+  line-height: 1.5;
 }
 .irCircle li:hover {
   background-color: #1527a0;
@@ -135,4 +140,76 @@
   font-weight: bold;
   color: #1527a0;
   text-align: center;
+  line-height: 1.5;
+}
+
+.irPlanBg {
+  background: url("./../../img/ir/ir_plan_decoBg.png");
+  background-position: top;
+  width: 100%;
+  height: 50rem;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.irPlanBg .irBnTotal {
+  padding-bottom: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.irPlanBg .irBnTotal h2 {
+  font-size: 5rem;
+  color: #FFF;
+  font-family: "Montserrat";
+  margin-bottom: 2rem;
+}
+.irPlanBg .irBnTotal p {
+  font-size: 2.08rem;
+  font-weight: bold;
+  color: #FFF;
+  line-height: 1.5;
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .irCircle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 82vw;
+    justify-content: center;
+    align-items: center;
+    margin: 8.5rem auto;
+  }
+  .irCircle li {
+    width: 70%;
+    height: 70%;
+    border-radius: 0;
+    border: 1px solid #1527a0;
+    margin-right: 0;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+  }
+  .irCircle li span {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  .irCircle li:hover {
+    background-color: #1527a0;
+    color: #fff;
+  }
+  .irCircle li::before {
+    display: none;
+  }
 }/*# sourceMappingURL=irPlan.css.map */

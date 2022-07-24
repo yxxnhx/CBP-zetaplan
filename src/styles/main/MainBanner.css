@@ -11,7 +11,7 @@
   width: 100%;
   height: 90rem;
 }
-.mainBanner .mainTitle h1 {
+.mainBanner .mainTitleArea .mainTitle {
   font-family: "Montserrat", sans-serif;
   font-size: 10rem;
   font-weight: bolder;
@@ -20,7 +20,7 @@
   top: 24%;
   left: 6%;
 }
-.mainBanner .mainTitle h2 {
+.mainBanner .mainTitleArea .mainDes {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 3.7rem;
   line-height: 1.7;
@@ -62,4 +62,60 @@
 
 .myMainSlider {
   background-color: #000;
+}
+
+.stop {
+  font-size: 10rem;
+  color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mainBanner img {
+    height: 60rem;
+  }
+  .mainBanner .mainTitleArea .mainTitle {
+    font-size: 7rem;
+  }
+  .mainBanner .mainTitleArea .mainDes {
+    font-size: 3.5rem;
+  }
+  .swiperBtnBox .prev {
+    background: url("../../../src/img/zetaplan_splite.png") no-repeat -195px -221px;
+    background-size: 599px 280px;
+    width: 8px;
+    height: 13px;
+    font-size: 0;
+  }
+  .swiperBtnBox .next {
+    background: url("../../../src/img/zetaplan_splite.png") -236px -221px;
+    background-size: 599px 280px;
+    width: 8px;
+    height: 13px;
+    font-size: 0;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .mainBanner img {
+    height: 50rem;
+  }
+  .mainBanner .mainTitleArea .mainTitle {
+    font-size: 6rem;
+  }
+  .mainBanner .mainTitleArea .mainDes {
+    font-size: 3rem;
+  }
+  .swiperBtnBox .prev {
+    background: url("../../../src/img/zetaplan_splite.png") no-repeat -195px -221px;
+    background-size: 599px 280px;
+    width: 8px;
+    height: 13px;
+    font-size: 0;
+  }
+  .swiperBtnBox .next {
+    background: url("../../../src/img/zetaplan_splite.png") -236px -221px;
+    background-size: 599px 280px;
+    width: 8px;
+    height: 13px;
+    font-size: 0;
+  }
 }/*# sourceMappingURL=MainBanner.css.map */

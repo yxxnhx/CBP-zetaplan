@@ -111,7 +111,7 @@ const LangEng = () => {
               <Link to={'/zeta'}>Company</Link>
             </div>
             <div className="langIntroEstablishmentLink">
-              <Link to={''}>Location</Link>
+              <Link to={'/zeta-map'}>Location</Link>
             </div>
           </div>
         </div>
@@ -212,7 +212,7 @@ const LangEng = () => {
       </div>
       <div className="langLocationArea">
         <div className="langLocationTitle">Location</div>
-        {/* <ZetaKrMap /> */}
+        <div className="langLocationView"></div>
         <div className="langLocationContent">
           <div className="langLocationH">
             <div className="langLocationHeadT">Head Quarter <span>www.zetaplan.com</span></div>

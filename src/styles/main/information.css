@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.mainInformation {
+  width: 85vw;
+  padding: 8rem 0;
+  margin: 0 auto;
+}
+.mainInformation h2.mainInfoTitle {
+  font-size: 4rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 39px;
+}
+.mainInformation .infoSwiperBoxList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mainInformation .infoSwiperBoxList .infoSwipBox {
+  width: calc(50% - 20px);
+  background-color: #fff;
+  margin-bottom: 40px;
+  border-radius: 29px;
+  padding: 53px 30px 41px 50px;
+  position: relative;
+}
+.mainInformation .infoSwiperBoxList .infoSwipBox .infoSwiperTitle {
+  font-size: 2.4rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  position: absolute;
+}
+.mainInformation .infoSwiperBoxList .infoSwipBox:hover {
+  background-color: #1527a0;
+  color: #fff;
+}
+.mainInformation .infoSwiperBoxList .infoSwipBox .infoConTitle {
+  width: 80%;
+  font-size: 1.84rem;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.5;
+  height: 68px;
+  margin: 49px 0;
+  word-break: keep-all;
+}
+.mainInformation .infoSwiperBoxList .infoSwipBox .infoConDate {
+  font-size: 1.84rem;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.mainInformation .infoSwiperBoxList .infoSwipBox .infoSwiperHorizontal {
+  position: absolute;
+  top: 0;
+  left: unset;
+  right: 0;
+  transform: translateX(0);
+}
+.mainInformation .mainInfoMoreBtn {
+  border: 1px solid #fff;
+  width: 30rem;
+  height: 8rem;
+  border-radius: 50px;
+  display: block;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto 4rem;
+  padding: 3rem 0;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mainInformation .infoSwiperBoxList .infoSwipBox .infoConTitle {
+    margin: 49px 0 2rem;
+    word-break: keep-all;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .mainInformation .infoSwiperBoxList {
+    justify-content: center;
+  }
+  .mainInformation .infoSwiperBoxList .infoSwipBox {
+    width: 100%;
+  }
+  .mainInformation .infoSwiperBoxList .infoSwipBox .infoConTitle {
+    margin: 49px 0 3rem;
+  }
+}/*# sourceMappingURL=information.css.map */

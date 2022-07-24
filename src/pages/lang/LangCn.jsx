@@ -100,14 +100,14 @@ const LangEng = () => {
               <Link to={'/zeta'}>公司名称</Link>
             </div>
             <div className="langIntroEstablishmentLink">
-              <Link to={''}>公司地址</Link>
+              <Link to={'/zeta-map'}>公司地址</Link>
             </div>
           </div>
         </div>
       </div>
       <div className="langLocationArea">
         <div className="langLocationTitle">公司地址</div>
-        <ZetaKrMap />
+        <div className="langLocationView"></div>
         <div className="langLocationContent">
           <div className="langLocationH">
             <div className="langLocationHeadT">总部<span>www.zetaplan.com</span></div>

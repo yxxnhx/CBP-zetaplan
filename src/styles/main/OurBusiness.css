@@ -13,19 +13,21 @@
   justify-content: center;
 }
 .obWrapper .obCon {
-  width: 178rem;
+  width: 90%;
   height: 90rem;
   margin: 62px auto;
 }
 .obWrapper .obCon .obTitle {
   font-size: 4.5rem;
   font-weight: bold;
+  font-family: Montserrat;
   color: #fff;
   margin-bottom: 5rem;
 }
 .obWrapper .obCon .obInner {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 .obWrapper .obCon .obInner .obList {
   height: 69rem;
@@ -45,7 +47,7 @@
 .obWrapper .obCon .obInner .obList .videoCon video {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 85.2rem;
+  width: 69rem;
   height: 69rem;
   border-radius: 1rem;
   position: relative;
@@ -83,4 +85,41 @@
 }
 .obWrapper .obCon .obInner .customized {
   background: url(./../../img/main/business/ourBusiness_04_trust.png);
+}
+
+@media (max-width: 400px) {
+  .obWrapper {
+    height: 1700px;
+  }
+  .obWrapper .obCon {
+    height: auto;
+    margin: auto;
+  }
+  .obWrapper .obCon .obInner {
+    height: 1600px;
+    width: 54rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .obWrapper .obCon .obInner .obList {
+    flex: 50rem;
+    height: 50rem;
+    margin-bottom: 10px;
+  }
+  .obWrapper .obCon .obInner .obList .videoCon {
+    display: flex;
+    border-radius: 1rem;
+    height: 50rem;
+    width: 53rem;
+  }
+  .obWrapper .obCon .obInner .obList .videoCon video {
+    height: 50rem;
+    width: 53rem;
+    position: relative;
+  }
+  .obWrapper .obCon .obInner .obList .videoCon .obVideoDes {
+    z-index: 900;
+    top: 52rem;
+    left: 1rem;
+  }
 }/*# sourceMappingURL=OurBusiness.css.map */

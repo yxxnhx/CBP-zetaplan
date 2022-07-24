@@ -32,7 +32,11 @@
   left: 0;
 }
 
-.mngSummary > p {
+.mngSummary.mngTradeTxt {
+  width: 100%;
+  height: 100%;
+}
+.mngSummary.mngTradeTxt p {
   font-family: "Noto Sans KR";
 }
 
@@ -63,7 +67,7 @@
 }
 
 .mngTradeProcessImg {
-  width: 90rem;
+  width: 100%;
   margin-bottom: 10rem;
 }
 
@@ -71,4 +75,28 @@
   width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mngSummary.mngTradeTxt p {
+    font-size: 1.5rem;
+  }
+  .mngTradeProcessImg {
+    width: 80%;
+    margin-bottom: 6rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .mngSummary.mngTradeTxt {
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem;
+  }
+  .mngSubTitleNb.mngTradePro {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+  }
+  .mngTradeProcessImg {
+    margin: 0rem auto 5rem;
+  }
 }/*# sourceMappingURL=mngTrade.css.map */

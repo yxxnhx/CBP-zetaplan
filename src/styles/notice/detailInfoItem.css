@@ -4,7 +4,7 @@
 }
 
 .detailInfoInner {
-  width: 1440px;
+  width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
 }
@@ -13,26 +13,44 @@
   border-bottom: 1px solid #333;
 }
 .detailInfoInner .detailInfoTitleBox p {
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 3.2rem;
   font-weight: bold;
 }
 .detailInfoInner .detailContentInner {
   border-bottom: 1px solid #e0e0e0;
 }
-.detailInfoInner .detailContentInner .detailTitle {
+.detailInfoInner .detailContentInner .detailTitleSec {
   padding: 35px;
   text-align: center;
-  font-size: 2.4rem;
-  font-weight: 700;
   border-bottom: 1px solid #e0e0e0;
 }
+.detailInfoInner .detailContentInner .detailTitleSec .detailTitle {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.detailInfoInner .detailContentInner .detailTitleSec .detailDate {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.92rem;
+}
+.detailInfoInner .detailContentInner img {
+  width: 100%;
+}
 .detailInfoInner .detailContentInner .content {
-  width: 1000px;
+  width: 80%;
   margin: 60px auto;
+}
+.detailInfoInner .detailContentInner .content div {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .detailInfoInner .detailContentInner .content .content-view {
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.7;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .detailInfoInner .detailContentInner .content table {
   width: 100%;
@@ -45,14 +63,20 @@
 .detailInfoInner .detailContentInner .content table td {
   height: 32px;
 }
-.detailInfoInner .detailContentInner .content li, .detailInfoInner .detailContentInner .content p, .detailInfoInner .detailContentInner .content tr, .detailInfoInner .detailContentInner .content td, .detailInfoInner .detailContentInner .content a {
+.detailInfoInner .detailContentInner .content li, .detailInfoInner .detailContentInner .content p, .detailInfoInner .detailContentInner .content tr, .detailInfoInner .detailContentInner .content td, .detailInfoInner .detailContentInner .content a, .detailInfoInner .detailContentInner .content pre, .detailInfoInner .detailContentInner .content u, .detailInfoInner .detailContentInner .content b {
   font-size: 1.6rem;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.7;
+  font-family: "Noto Sans KR", sans-serif;
 }
-.detailInfoInner .detailContentInner .content strong {
+.detailInfoInner .detailContentInner .content tr, .detailInfoInner .detailContentInner .content td {
+  border: 1px solid #707070;
+}
+.detailInfoInner .detailContentInner .content strong, .detailInfoInner .detailContentInner .content b {
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.7;
+  font-weight: bold;
 }
 .detailInfoInner .infoListBtn {
   display: block;
@@ -60,6 +84,7 @@
   height: 40px;
   background-color: #1527a0;
   color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.6rem;
   padding: 10px 40px;
   margin: 70px auto 0;

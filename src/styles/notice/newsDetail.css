@@ -4,7 +4,7 @@
 }
 
 .newsDetailInner {
-  width: 1440px;
+  width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
 }
@@ -13,6 +13,7 @@
   border-bottom: 1px solid #333;
 }
 .newsDetailInner .detailTitle p {
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 3.2rem;
   font-weight: bold;
 }
@@ -22,22 +23,36 @@
 .newsDetailInner .detailItemBox .detailItemTitle {
   padding: 35px;
   text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 2.4rem;
   font-weight: 700;
   border-bottom: 1px solid #e0e0e0;
 }
 .newsDetailInner .detailItemBox .contentBox {
-  width: 1000px;
+  width: 80%;
   margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .newsDetailInner .detailItemBox .contentBox img {
   width: auto;
   margin: 0 auto 30px;
 }
-.newsDetailInner .detailItemBox .contentBox .content p, .newsDetailInner .detailItemBox .contentBox .content li, .newsDetailInner .detailItemBox .contentBox .content div {
+.newsDetailInner .detailItemBox .contentBox .zetaLogoThumb {
+  max-height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.newsDetailInner .detailItemBox .contentBox .content p, .newsDetailInner .detailItemBox .contentBox .content li, .newsDetailInner .detailItemBox .contentBox .content div, .newsDetailInner .detailItemBox .contentBox .content strong, .newsDetailInner .detailItemBox .contentBox .content h3, .newsDetailInner .detailItemBox .contentBox .content ul {
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.6rem;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.7;
+}
+.newsDetailInner .detailItemBox .contentBox .content img {
+  width: auto;
+  margin: 0 auto 30px;
 }
 .newsDetailInner .newsListBtn {
   display: block;
@@ -45,8 +60,21 @@
   height: 40px;
   background-color: #1527a0;
   color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.6rem;
   padding: 10px 40px;
   margin: 70px auto 0;
   text-align: center;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .newsDetailInner .detailItemBox .contentBox img {
+    width: 100%;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .newsDetailInner .detailItemBox .contentBox img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=newsDetail.css.map */

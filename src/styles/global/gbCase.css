@@ -4,26 +4,41 @@
 }
 
 .gbInner {
-  width: 1440px;
+  width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
 }
-.gbInner .gbTabTitleBox {
-  width: 144rem;
-  border-bottom: 0.1rem solid #333;
-  padding-bottom: 2rem;
-}
 .gbInner .gbTabTitleBox .gbTabTitle {
-  background-image: url(../../img/title_box.png);
-  background-repeat: no-repeat;
   font-size: 3.2rem;
-  font-weight: bold;
-  padding-left: 2.6rem;
+  font-weight: 900;
+  padding-left: 3rem;
+  position: relative;
+}
+.gbInner .gbTabTitleBox .gbTabTitle::before {
+  content: "";
+  display: block;
+  background: url("./../../img/title_box@2x.png") no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.gbInner .gbTabTitleBox .gbTabTitle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  position: absolute;
+  top: 6rem;
+  left: 0;
 }
 .gbInner .gbContentSubTitle {
   position: relative;
   text-indent: 8.5rem;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-top: 8rem;
   margin-bottom: 8rem;
@@ -38,34 +53,99 @@
   left: 0;
 }
 .gbInner .gbMapImg {
-  margin: 10rem;
-  width: 155rem;
-  margin-top: 15rem;
-  width: 130rem;
+  margin: 3.646vw;
+  width: 90%;
+}
+.gbInner .gbAccordion {
+  width: 100%;
+}
+.gbInner .gbAccordion .gbProcessItem {
+  margin-bottom: 0.5rem;
+  padding: 2rem;
+  width: 140rem;
+  box-sizing: border-box;
+}
+.gbInner .gbAccordion .gbProcessItem .gbProcessBtn {
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #1527a0;
+  padding: 3rem 2rem;
+  font-size: 3rem;
+  letter-spacing: 1.2px;
+  color: #000;
+}
+.gbInner .gbAccordion .gbProcessItem .gbProcessBtn .gbUnderBtn {
+  background: url("../../img/zetaplan_splite.png") no-repeat -137px -194px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+}
+.gbInner .gbAccordion .gbProcessItem .gbProcessBtn .gbTopBtn {
+  background: url("../../img/zetaplan_splite.png") no-repeat -137px -235px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+}
+.gbInner .gbAccordion .gbProcessItem .gbProcessBtn.on {
+  background-color: #1527a0;
+  color: #fff;
+}
+.gbInner .gbAccordion .gbProcessItem .gbProcessContent {
+  max-height: 0;
+  overflow: hidden;
+  width: 85vw;
+}
+.gbInner .gbAccordion .gbProcessItem .gbProcessContent.show {
+  height: auto;
+  max-height: 999rem;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  border: 1px solid #1527a0;
+}
+.gbInner .gbAccoContentBox {
+  padding: 3rem;
+}
+.gbInner .gbAccoContentBox .gbAccoContentArea {
+  display: flex;
+  margin-left: 4.167vw;
+  margin-bottom: 1.563vw;
+}
+.gbInner .gbAccoContentBox .gbAccoContentArea .gbAccoContentT {
+  display: flex;
+  margin-top: 1rem;
+}
+.gbInner .gbAccoContentBox .gbAccoContentArea .gbAccoContentT h1 {
+  font-size: 2rem;
+  color: #1527a0;
+  width: 30rem;
+}
+.gbInner .gbAccoContentBox .gbAccoContentArea .gbAccoContentC ul li {
+  font-size: 2rem;
+  line-height: 1.5;
+  word-break: keep-all;
 }
 
-.accoBox {
-  display: flex;
-  margin-top: 2rem;
-}
-.accoBox .titleBox {
-  display: flex;
-  align-items: center;
-  padding: 5rem;
-  width: 50rem;
-}
-.accoBox .titleBox .title {
-  font-size: 2.1rem;
-  color: #1527a0;
-  margin-left: 2rem;
-}
-.accoBox .txt {
-  width: 100rem;
-}
-.accoBox .txt ul {
-  margin-bottom: 3rem;
-}
-.accoBox .txt ul li {
-  font-size: 2.1rem;
-  line-height: 2;
+@media (min-width: 360px) and (max-width: 767px) {
+  .gbInner .gbAccoContentBox {
+    padding: 2rem;
+  }
+  .gbInner .gbAccordion .gbProcessItem .gbProcessBtn .gbUnderBtn {
+    background: url("../../img/icon/bottom_arrow.png") no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 7px;
+  }
+  .gbInner .gbAccordion .gbProcessItem .gbProcessBtn .gTopBtn {
+    background: url("../../img/icon/top_arrow.png") no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 7px;
+  }
+  .gbInner .gbAccoContentBox .gbAccoContentArea .gbAccoContentT h1 {
+    width: 10rem;
+    margin-right: 4rem;
+    line-height: 1.5;
+  }
 }/*# sourceMappingURL=gbCase.css.map */

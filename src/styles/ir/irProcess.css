@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
 * {
@@ -5,7 +6,7 @@
 }
 
 .inner {
-  width: 1440px;
+  width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
 }
@@ -45,14 +46,14 @@
 .irProCircle {
   display: flex;
   flex-wrap: wrap;
-  width: 175rem;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  margin: 8.5rem 0;
+  margin: 8.5rem auto 6rem;
 }
 .irProCircle li {
-  width: 25rem;
-  height: 25rem;
+  width: 13vw;
+  height: 13vw;
   border-radius: 50%;
   border: 1px solid #1527a0;
   margin-right: 4rem;
@@ -83,6 +84,18 @@
 .irProCircle li:first-child::before {
   display: none;
 }
+.irProCircle li {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.7;
+}
+.irProCircle li:last-child {
+  margin-right: 0;
+}
+.irProCircle li span {
+  font-size: 1.8rem;
+}
 
 .irProContents {
   margin-bottom: 4rem;
@@ -108,19 +121,19 @@
   flex-direction: column;
 }
 .irAccordion .irAccoProCircleContent {
-  width: 130rem;
+  width: 100%;
+  margin: auto;
 }
 .irAccordion .irAccoProCircleContent .irAccoProCircleM {
   display: flex;
   flex-wrap: wrap;
-  width: 130rem;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2.8rem;
 }
 .irAccordion .irAccoProCircleContent .irAccoProCircleM li {
-  width: 18rem;
-  height: 18rem;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
   border: 1px solid #1527a0;
   margin-right: 4rem;
@@ -153,28 +166,94 @@
 }
 .irAccordion .irAccoProCircleContent .irAccoProCircleM li {
   font-size: 1.6rem;
+  position: relative;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.irAccordion .irAccoProCircleContent .irAccoProCircleM li:hover {
+  background-color: #1527a0;
+  color: #fff;
+}
+.irAccordion .irAccoProCircleContent .irAccoProCircleM li span {
+  font-size: 1.6rem;
 }
 .irAccordion .irAccoProCircleContent .irAccoProCircleM li:last-child {
   margin-right: 0;
 }
-.irAccordion .irAccoProCircleContent .irAccoProCircleDes {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 130rem;
-  margin: auto;
+.irAccordion .irAccoProCircleContent .irAccoProCircleM li:nth-child(1)::after {
+  content: "사업경쟁력(핵심역량)";
+  display: block;
+  position: absolute;
+  width: 13vw;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.4rem;
+  color: #333;
 }
-.irAccordion .irAccoProCircleContent .irAccoProCircleDes li {
-  font-size: 1.6rem;
-  width: 20rem;
-  text-align: center;
-  margin-bottom: 3rem;
+.irAccordion .irAccoProCircleContent .irAccoProCircleM li:nth-child(2)::after {
+  content: "미래현금흐름";
+  display: block;
+  position: absolute;
+  width: 13vw;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333;
+  font-size: 1.4rem;
+}
+.irAccordion .irAccoProCircleContent .irAccoProCircleM li:nth-child(3)::after {
+  content: "성공요소";
+  display: block;
+  position: absolute;
+  width: 13vw;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333;
+  font-size: 1.4rem;
+}
+.irAccordion .irAccoProCircleContent .irAccoProCircleM li:nth-child(4)::after {
+  content: "핵심역량";
+  display: block;
+  position: absolute;
+  width: 13vw;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333;
+  font-size: 1.4rem;
+}
+.irAccordion .irAccoProCircleContent .irAccoProCircleM li:nth-child(5)::after {
+  content: "사업전략";
+  display: block;
+  position: absolute;
+  width: 13vw;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333;
+  font-size: 1.4rem;
+}
+.irAccordion .irAccoProCircleContent .irAccoProCircleM li:nth-child(6)::after {
+  content: "미래수익구조";
+  display: block;
+  position: absolute;
+  width: 13vw;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333;
+  font-size: 1.4rem;
 }
 .irAccordion .irProText {
   font-size: 1.6rem;
   line-height: 1.7;
   text-align: center;
-  margin: 2rem 0 6rem;
+  margin: 3rem 0 6rem;
   color: #1527a0;
   font-weight: bold;
 }
@@ -185,7 +264,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 87rem;
+  width: 80vw;
   margin: auto;
   position: absolute;
   right: 35rem;
@@ -199,26 +278,30 @@
 .irAccoProCircleS {
   display: flex;
   flex-wrap: wrap;
-  width: 130rem;
+  width: 100%;
   justify-content: center;
   align-items: center;
   margin: 8.5rem 0;
   margin: auto;
 }
 .irAccoProCircleS li {
-  width: 20rem;
-  height: 20rem;
+  width: 12vw;
+  height: 12vw;
   border-radius: 50%;
   border: 1px solid #1527a0;
-  margin-right: 15rem;
+  margin-right: 8vw;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
   line-height: 1.7;
+  justify-content: center;
+  flex-direction: column;
+}
+.irAccoProCircleS li span {
+  font-size: 1.6rem;
+  position: relative;
 }
 .irAccoProCircleS li:hover {
   background-color: #1527a0;
@@ -227,13 +310,13 @@
 .irAccoProCircleS li::before {
   content: "";
   display: block;
-  width: 15rem;
+  width: 8vw;
   height: 1px;
   border-bottom: 1px dashed black;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -15rem;
+  left: -8vw;
 }
 .irAccoProCircleS li:first-child::before {
   display: none;
@@ -241,60 +324,67 @@
 .irAccoProCircleS li:last-child {
   margin-right: 0;
 }
-
-.irAccoProCircleAreaS .irAccoProCircleBox {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.irAccoProCircleAreaS .irAccoProCircleBox .irAccoProCircleSDes {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85rem;
-  margin: auto;
+.irAccoProCircleS li:nth-child(1)::after {
+  content: "사업경쟁력(핵심역량)";
+  display: block;
   position: absolute;
-  bottom: 13rem;
-  left: 22rem;
-}
-.irAccoProCircleAreaS .irAccoProCircleBox .irAccoProCircleSDes li {
-  font-size: 1.6rem;
-  color: #999;
-  width: 13rem;
-  text-align: center;
-}
-.irAccoProCircleAreaS .irAccoProCircleBox .irAccoProCircleSDetail {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 130rem;
-  margin: auto;
-  padding: 2rem;
-}
-.irAccoProCircleAreaS .irAccoProCircleBox .irAccoProCircleSDetail li {
+  width: 24vw;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
   color: #333;
-  font-size: 1.6rem;
-  width: 22rem;
-  text-align: center;
+  font-size: 1.4rem;
+}
+.irAccoProCircleS li:nth-child(2)::after {
+  content: "미래현금흐름";
+  display: block;
+  position: absolute;
+  width: 24vw;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333;
+  font-size: 1.4rem;
+}
+.irAccoProCircleS li:nth-child(3)::after {
+  content: "성공요소";
+  display: block;
+  position: absolute;
+  width: 24vw;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333;
+  font-size: 1.4rem;
+}
+.irAccoProCircleS li:nth-child(4)::after {
+  content: "핵심역량";
+  display: block;
+  position: absolute;
+  width: 24vw;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333;
+  font-size: 1.4rem;
 }
 
 .irProcessStation {
-  width: 78%;
+  width: 90%;
   height: auto;
 }
 
 .irProcessStep {
-  width: auto;
-  height: 90rem;
+  width: 100%;
+  height: auto;
 }
 
 .irProcessWrapper {
   display: flex;
-  width: 100vh;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .irAccordion {
@@ -304,7 +394,7 @@
 .irProcessItem {
   margin-bottom: 0.5rem;
   padding: 2rem;
-  width: 140rem;
+  width: 100%;
   box-sizing: border-box;
 }
 .irProcessItem .irProcessBtn {
@@ -353,6 +443,7 @@
 }
 
 .irAccoContentArea {
+  width: 100%;
   padding: 3rem;
 }
 .irAccoContentArea .irAccoContentT {
@@ -364,4 +455,269 @@
 .irAccoCenter {
   display: flex;
   justify-content: center;
+}
+
+.irCircleDesP::after {
+  content: "재무분석";
+  position: absolute;
+  display: block;
+  width: 13vw;
+  bottom: 141%;
+  left: 133%;
+  transform: translateX(-50%);
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.irCircleDesA::after {
+  content: "기준 및 역량분석";
+  position: absolute;
+  display: block;
+  width: 13vw;
+  bottom: 141%;
+  left: 133%;
+  transform: translateX(-50%);
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.irCircleDesI::after {
+  content: "실행전략";
+  position: absolute;
+  display: block;
+  width: 13vw;
+  bottom: 141%;
+  left: 133%;
+  transform: translateX(-50%);
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.irCircleSText {
+  padding-top: 7rem;
+}
+
+@media (min-width: 1204px) and (max-width: 1500px) {
+  .irCircleDesA::after {
+    width: 4.8vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .irAccordion .irAccoProCircleContent .irAccoProCircleM {
+    display: flex;
+    flex-wrap: wrap;
+    width: 63vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .irAccordion .irAccoProCircleContent .irAccoProCircleM li {
+    width: 12vw;
+    height: 12vw;
+  }
+  .irCircleDesA::after {
+    width: 4.8vw;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .irProCircle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 82vw;
+    justify-content: center;
+    align-items: center;
+    margin: 8.5rem auto;
+  }
+  .irProCircle li {
+    width: 70%;
+    height: 70%;
+    border-radius: 0;
+    border: 1px solid #1527a0;
+    margin-right: 0;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+  }
+  .irProCircle li span {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  .irProCircle li:hover {
+    background-color: #1527a0;
+    color: #fff;
+  }
+  .irProCircle li::before {
+    display: none;
+  }
+  .irAccoProCircleContent .irAccoProCircleM {
+    width: 80vw;
+  }
+  .irAccoProCircleContent .irAccoProCircleM li {
+    border-radius: 0;
+  }
+  .irAccoProCircleContent .irAccoProCircleM li:hover {
+    background-color: #1527a0;
+    color: #fff;
+  }
+  .irAccoProCircleContent .irAccoProCircleM li:nth-child(1)::after {
+    width: 20vw;
+  }
+  .irAccordion .irAccoProCircleContent .irAccoProCircleM li {
+    border-radius: 0;
+    width: 80%;
+    flex-direction: row;
+    height: 6vw;
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+  .irAccordion .irAccoProCircleContent .irAccoProCircleM li span {
+    margin: 0 17rem 0 1rem;
+  }
+  .irAccordion .irAccoProCircleContent .irAccoProCircleM li::before {
+    display: none;
+  }
+  .irAccordion .irAccoProCircleContent .irAccoProCircleM li:hover::after {
+    color: #fff;
+  }
+  .irAccordion .irAccoProCircleContent .irAccoProCircleM li:nth-child(1)::after {
+    width: 24vw;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  .irAccordion .irAccoProCircleContent .irAccoProCircleM li:nth-child(2)::after {
+    width: 24vw;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  .irAccordion .irAccoProCircleContent .irAccoProCircleM li:nth-child(3)::after {
+    width: 24vw;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  .irAccordion .irAccoProCircleContent .irAccoProCircleM li:nth-child(4)::after {
+    width: 24vw;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  .irAccordion .irAccoProCircleContent .irAccoProCircleM li:nth-child(5)::after {
+    width: 24vw;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  .irAccordion .irAccoProCircleContent .irAccoProCircleM li:nth-child(6)::after {
+    width: 24vw;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  .irAccoProCircleS li {
+    font-size: 1.6rem;
+    width: 80%;
+    height: 7vw;
+    border-radius: 0;
+    margin-right: 0;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 5vw;
+  }
+  .irAccoProCircleS li span {
+    margin: 0 12rem 0 1rem;
+    line-height: 1.5;
+  }
+  .irAccoProCircleS li:last-child {
+    margin-bottom: 0;
+  }
+  .irAccoProCircleS li:hover::after {
+    color: #fff;
+  }
+  .irAccoProCircleS li::before {
+    content: "";
+    display: block;
+    width: 1vw;
+    height: 5vw;
+    border-bottom: none;
+    border-left: 1px dashed black;
+    top: -39%;
+    left: 50%;
+  }
+  .irAccoProCircleS li:nth-child(1)::after {
+    width: 24vw;
+    bottom: 50%;
+    transform: translateY(47%);
+  }
+  .irAccoProCircleS li:nth-child(2)::after {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(47%);
+  }
+  .irAccoProCircleS li:nth-child(3)::after {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(47%);
+  }
+  .irAccoProCircleS li:nth-child(4)::after {
+    bottom: 50%;
+    transform: translateY(47%);
+  }
+  .irCircleDesP::after {
+    bottom: 50%;
+    transform: translateY(350%);
+  }
+  .irCircleDesA::after {
+    width: 19vw;
+    bottom: 50%;
+    transform: translateY(350%);
+  }
+  .irCircleDesI::after {
+    bottom: 50%;
+    transform: translateY(350%);
+  }
+  .irCircleSText {
+    padding-top: 2rem;
+  }
+  .irUnderBtn {
+    background: url("../../img/icon/bottom_arrow.png") no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 7px;
+  }
+  .irTopBtn {
+    background: url("../../img/icon/top_arrow.png") no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 7px;
+  }
+}
+@media (min-width: 360px) and (max-width: 400px) {
+  .irCircleDesP::after {
+    bottom: 50%;
+    transform: translateY(191%);
+  }
+  .irCircleDesA::after {
+    width: 19vw;
+    bottom: 50%;
+    transform: translateY(191%);
+  }
+  .irCircleDesI::after {
+    bottom: 50%;
+    transform: translateY(191%);
+  }
+  .irCircleSText {
+    padding-top: 2rem;
+  }
+  .irAccoProCircleS li:nth-child(1)::after {
+    width: 24vw;
+    bottom: 50%;
+    transform: translateY(47%);
+    left: 54%;
+  }
 }/*# sourceMappingURL=irProcess.css.map */

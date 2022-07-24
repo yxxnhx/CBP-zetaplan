@@ -28,7 +28,7 @@
   font-weight: 900;
   padding-left: 3rem;
   position: relative;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 .mngSubTitleNb::before {
   content: "";
@@ -43,8 +43,8 @@
 }
 
 .mngSummary {
-  width: 132.7rem;
-  height: 26.6rem;
+  width: 100%;
+  height: 100%;
   padding-top: 3rem;
 }
 .mngSummary p {
@@ -52,65 +52,16 @@
   line-height: 1.7;
 }
 
-.mngConsultingProcess {
-  text-align: center;
-}
-
-.mngConsultingProcessImg {
-  width: 90rem;
-  margin: 9.4rem 0;
-}
-
-.mngFiveCircle > li:last-child {
-  margin-right: 0;
-}
-
-.mngFourCircle {
-  display: flex;
-  width: 90rem;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-.mngFourCircle li {
-  width: 35rem;
-  height: 35rem;
-  border-radius: 50%;
-  border: 1px solid #1527a0;
-  margin-right: 4rem;
-  position: relative;
-  font-size: 2.1rem;
-  font-weight: bold;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.7;
-}
-.mngFourCircle li:hover {
-  background-color: #1527a0;
-  color: #fff;
-}
-.mngFourCircle li::before {
-  content: "";
-  display: block;
-  width: 4rem;
-  height: 1px;
-  border-bottom: 1px dashed black;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -4rem;
-}
-.mngFourCircle li:first-child::before {
-  display: none;
+.mngFourCircleBox .mngFiveCircleBox {
+  width: 100vw;
 }
 
 .mngFiveCircle {
   display: flex;
+  width: 90vw;
   justify-content: center;
   align-items: center;
-  margin: 6rem auto 2rem;
+  margin-top: 5rem;
 }
 .mngFiveCircle li {
   width: 20rem;
@@ -119,7 +70,7 @@
   border: 1px solid #1527a0;
   margin-right: 4rem;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   font-weight: bold;
   text-align: center;
   display: flex;
@@ -146,6 +97,46 @@
   display: none;
 }
 
+.mngFourCircle.mngConsultingFour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+}
+.mngFourCircle.mngConsultingFour li {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 1px solid #1527a0;
+  margin-right: 4rem;
+  position: relative;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+}
+.mngFourCircle.mngConsultingFour li:hover {
+  background-color: #1527a0;
+  color: #fff;
+}
+.mngFourCircle.mngConsultingFour li::before {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 1px;
+  border-bottom: 1px dashed black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -4rem;
+}
+.mngFourCircle.mngConsultingFour li:first-child::before {
+  display: none;
+}
+
 .mngConsultingTxt p {
   font-size: 2rem;
   font-family: "Noto Sans KR";
@@ -166,8 +157,93 @@
   margin-top: 10rem;
 }
 
+.mngConsultingProcess {
+  text-align: center;
+}
+
+.mngConsultingProcessImg {
+  width: 90rem;
+  margin: 9.4rem 0;
+}
+
 .mngInner {
   width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .mngSummary.mngConsultingSummary {
+    margin-left: 3rem;
+    width: 95%;
+  }
+  .mngFourCircle.mngConsultingFour {
+    flex-wrap: wrap;
+  }
+  .mngFourCircle.mngConsultingFour li {
+    width: 16rem;
+    height: 16rem;
+  }
+  .mngFourCircle.mngConsultingFour .mngFiveCircle.mngConsultingFive {
+    width: 100vw;
+    height: 20vw;
+    flex-wrap: wrap;
+  }
+  .mngFourCircle.mngConsultingFour .mngFiveCircle.mngConsultingFive li {
+    border-radius: 1%;
+    width: 10rem;
+    height: 10rem;
+  }
+  .mngConsultingProcessImg {
+    width: 90%;
+  }
+}
+@media (min-width: 360px) and (max-width: 1300px) {
+  .mngConsultingGoal {
+    margin-top: 10rem;
+  }
+  .mngSummary.mngConsultingSummary {
+    width: 95%;
+  }
+  .mngSummary.mngConsultingSummary p {
+    line-height: 1.3;
+  }
+  .mngFourCircle.mngConsultingFour {
+    flex-wrap: wrap;
+  }
+  .mngFourCircle.mngConsultingFour li {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1%;
+    margin-top: 3rem;
+    flex: 100%;
+  }
+  .mngFourCircle.mngConsultingFour li::before {
+    display: none;
+  }
+  .mngFiveCircle {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .mngFiveCircle li {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0;
+    margin-top: 3rem;
+    flex: 100%;
+  }
+  .mngFiveCircle li::before {
+    display: none;
+  }
+  .mngConsultingTxt {
+    margin-left: -3rem;
+  }
+  .mnConsultingSmTitle {
+    margin-top: 5rem;
+    margin-left: 0;
+  }
+  .mngConsultingProcessImg {
+    width: 95%;
+    margin-top: 6rem;
+  }
 }/*# sourceMappingURL=mngConsulting.css.map */

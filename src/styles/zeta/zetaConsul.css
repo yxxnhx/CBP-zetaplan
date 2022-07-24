@@ -27,6 +27,7 @@
 }
 .ztCsDataBox .ztCsData {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .ztCsDataBox .ztCsData .ztCsDataTitle {
@@ -51,17 +52,87 @@
   font-weight: 700;
   font-size: 2.8rem;
   margin-top: 2rem;
-  margin-bottom: 24rem;
+  margin-bottom: 17rem;
   text-indent: 4.5rem;
 }
 .ztCsDataBox .ztCsData .ztCsDataCont {
   flex: 60%;
 }
 .ztCsDataBox .ztCsData .ztCsDataCont ul {
-  line-height: 2.5;
+  line-height: 2.3;
 }
 .ztCsDataBox .ztCsData .ztCsDataCont ul li {
   font-family: "Noto Sans KR";
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 2.08rem;
+}
+.ztCsDataBox .ztCsData .ztCsDataCont ul li span {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 2.08rem;
+  display: block;
+  padding-left: 2.5rem;
+}
+
+@media all and (min-width: 401px) and (max-width: 800px) {
+  .ztCsDataBox .ztCsData .ztCsDataTitle {
+    flex: 100%;
+  }
+  .ztCsDataBox .ztCsData .ztCsDataTitle .ztCsDataSub {
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+  .ztCsDataBox .ztCsData .ztCsDataCont {
+    flex: 100%;
+    margin-bottom: 10rem;
+  }
+  .ztCsTitle .ztCsTitleSub {
+    line-height: 1.4;
+    word-break: keep-all;
+  }
+}
+@media all and (min-width: 381px) and (max-width: 400px) {
+  .ztCsDataBox .ztCsData .ztCsDataTitle {
+    flex: 100%;
+  }
+  .ztCsDataBox .ztCsData .ztCsDataTitle .ztCsDataSub {
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+  .ztCsDataBox .ztCsData .ztCsDataCont {
+    flex: 100%;
+    margin-bottom: 10rem;
+  }
+  .ztCsTitle .ztCsTitleSub {
+    line-height: 1.4;
+    word-break: keep-all;
+  }
+  .ztCsDataBox .ztCsData .ztCsDataCont ul li span {
+    padding-left: 0.7rem;
+    display: inline;
+  }
+}
+@media all and (max-width: 380px) {
+  .ztCsDataBox .ztCsData .ztCsDataTitle {
+    flex: 100%;
+  }
+  .ztCsDataBox .ztCsData .ztCsDataTitle .ztCsDataSub {
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+  .ztCsDataBox .ztCsData .ztCsDataCont {
+    flex: 100%;
+    margin-bottom: 10rem;
+  }
+  .ztCsTitle .ztCsTitleSub {
+    line-height: 1.4;
+    word-break: keep-all;
+  }
+  .ztCsTitle .ztCsTitleBig {
+    word-break: keep-all;
+  }
+  .ztCsDataBox .ztCsData .ztCsDataCont ul li span {
+    padding-left: 0.7rem;
+    display: inline;
+  }
 }/*# sourceMappingURL=zetaConsul.css.map */

@@ -6,68 +6,459 @@
 
 .pfWrap {
   width: 100vw;
-  height: 90rem;
-  display: flex;
-  justify-content: center;
+  height: auto;
+  background: url(./../../img/main/performance/performance_bg.png) no-repeat;
+  margin: auto;
+  overflow: hidden;
 }
 .pfWrap .pfCon {
-  background: url(./../../img/main/performance/performance_bg.png) no-repeat;
-  width: 100vw;
+  width: 90%;
+  margin: auto;
+  padding-top: 7rem;
+  padding-bottom: 30rem;
 }
 .pfWrap .pfCon .pfMaintitle {
-  margin: 4rem;
-  display: flex;
-  justify-content: flex-start;
-}
-.pfWrap .pfCon .pfMaintitle h1 {
   color: #fff;
   font-size: 4.5rem;
   font-weight: bold;
+  font-family: Montserrat;
+  margin-bottom: 5rem;
 }
 .pfWrap .pfCon .pfListCon {
-  margin: 3rem auto;
+  width: 90%;
   display: flex;
-  width: 177rem;
-  height: 6.17rem;
   justify-content: space-between;
   position: relative;
   bottom: 0.8rem;
 }
+.pfWrap .pfCon .pfListCon .pfMQImgBox {
+  display: none;
+}
 .pfWrap .pfCon .pfListCon .pfList {
-  height: 61.7rem;
+  margin-right: 1.5rem;
+  width: 35rem;
+  height: auto;
   background-color: #f0f0f0;
 }
-.pfWrap .pfCon .pfListCon .pfList .pfConBox {
-  margin-left: 18rem;
-  width: 4.3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.pfWrap .pfCon .pfListCon .pfList .pfImgBox img {
+  width: 35rem;
 }
 .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfIconBox {
-  margin-top: 6rem;
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  height: 10rem;
+}
+.pfWrap .pfCon .pfListCon .pfList .pfConBox .pfIconBox img {
+  margin: auto;
 }
 .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfTitle {
-  margin-top: 2.5rem;
-  font-size: 3.6rem;
+  margin-top: 1rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #1527a0;
   margin-bottom: 2rem;
-  width: 13.5rem;
   text-align: center;
 }
 .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfCount {
-  font-size: 7.6rem;
+  font-size: 6rem;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfDes {
-  font-size: 2.08rem;
+  font-size: 1.7rem;
   line-height: 1.5;
-  border-top: 1px solid #000;
+  border-top: 0.1rem solid #000;
   width: 34rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
-  margin-top: 2rem;
+  margin: 1.5rem auto 0;
+}
+
+@media (min-width: 375px) and (max-width: 449px) {
+  .pfWrap .pfCon .pfListCon {
+    margin: auto;
+    height: 80vw;
+    width: 80vw;
+    background-color: #f0f0f0;
+    flex-wrap: wrap;
+  }
+  .pfWrap .pfCon .pfListCon .pfMQImgBox {
+    display: block;
+  }
+  .pfWrap .pfCon .pfListCon .pfMQImgBox img {
+    width: 80vw;
+  }
+  .pfWrap .pfCon .pfListCon .pfList {
+    width: 120px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfImgBox {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox {
+    margin-top: 20px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfIconBox {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfTitle {
+    font-size: 13px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfCount {
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfDes {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .ipoList,
+.pfWrap .pfCon .pfListCon .globalList {
+    margin-right: 20px;
+  }
+  .pfWrap .pfCon .pfListCon .maList,
+.pfWrap .pfCon .pfListCon .irList {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 450px) and (max-width: 559px) {
+  .pfWrap .pfCon .pfListCon {
+    margin: auto;
+    height: 70vw;
+    width: 80vw;
+    background-color: #f0f0f0;
+    flex-wrap: wrap;
+  }
+  .pfWrap .pfCon .pfListCon .pfMQImgBox {
+    display: block;
+  }
+  .pfWrap .pfCon .pfListCon .pfMQImgBox img {
+    width: 80vw;
+  }
+  .pfWrap .pfCon .pfListCon .pfList {
+    width: 150px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfImgBox {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox {
+    margin-top: 20px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfIconBox {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfConBox {
+    margin-top: 32px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfConBox .pfIconBox {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfConBox .pfMQConBox {
+    display: flex;
+    justify-content: space-around;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfConBox .pfMQConBox .pfTitle {
+    font-size: 18px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfConBox .pfMQConBox .pfCount {
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfConBox .pfDes {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .ipoList,
+.pfWrap .pfCon .pfListCon .pfList .globalList {
+    margin-right: 20px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .maList,
+.pfWrap .pfCon .pfListCon .pfList .irList {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 450px) and (max-width: 559px) and (min-width: 560px) and (max-width: 679px) {
+  .pfWrap .pfCon .pfListCon {
+    margin: auto;
+    height: 70vw;
+    width: 80vw;
+    background-color: #f0f0f0;
+    flex-wrap: wrap;
+  }
+  .pfWrap .pfCon .pfListCon .pfMQImgBox {
+    display: block;
+  }
+  .pfWrap .pfCon .pfListCon .pfMQImgBox img {
+    width: 80vw;
+  }
+  .pfWrap .pfCon .pfListCon .pfList {
+    width: 200px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfImgBox {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox {
+    margin-top: 20px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfIconBox {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfTitle {
+    font-size: 18px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfCount {
+    font-size: 30.5px;
+    padding-bottom: 15px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfDes {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .ipoList,
+.pfWrap .pfCon .pfListCon .globalList {
+    margin-right: 20px;
+  }
+  .pfWrap .pfCon .pfListCon .maList,
+.pfWrap .pfCon .pfListCon .irList {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 450px) and (max-width: 559px) and (min-width: 680px) and (max-width: 767px) {
+  .pfWrap .pfCon .pfListCon {
+    margin: auto;
+    height: 70vw;
+    width: 80vw;
+    background-color: #f0f0f0;
+    flex-wrap: wrap;
+  }
+  .pfWrap .pfCon .pfListCon .pfMQImgBox {
+    display: block;
+  }
+  .pfWrap .pfCon .pfListCon .pfMQImgBox img {
+    width: 80vw;
+  }
+  .pfWrap .pfCon .pfListCon .pfList {
+    width: 250px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfImgBox {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox {
+    margin-top: 32px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfIconBox {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfTitle {
+    font-size: 20px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfCount {
+    font-size: 38px;
+    padding-bottom: 15px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfDes {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .ipoList,
+.pfWrap .pfCon .pfListCon .globalList {
+    margin-right: 20px;
+  }
+  .pfWrap .pfCon .pfListCon .maList,
+.pfWrap .pfCon .pfListCon .irList {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 450px) and (max-width: 559px) and (min-width: 768px) and (max-width: 1100px) {
+  .pfWrap .pfCon .pfListCon {
+    width: 90vw;
+    height: auto;
+    flex-wrap: wrap;
+    margin-left: 2.604vw;
+  }
+  .pfWrap .pfCon .pfListCon .pfMQImgBox {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .pfList {
+    flex: 3 1 0%;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfImgBox {
+    display: flex;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfImgBox img {
+    flex: 3 1 0%;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfIconBox {
+    display: none;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfTitle {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfCount {
+    font-size: 3.8rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfDes {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    width: 35rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 559px) and (min-width: 1101px) and (max-width: 1200px) {
+  .pfWrap .pfCon .pfListCon .pfList {
+    width: 250px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfImgBox img {
+    width: 250px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfTitle {
+    margin-right: 2rem;
+    font-size: 3rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfCount {
+    font-size: 3rem;
+    padding-top: 1rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfDes {
+    font-size: 1rem;
+    line-height: 1.5;
+    border-top: 0.1rem solid #000;
+    width: 19rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin: 1.5rem auto 0;
+  }
+}
+@media (min-width: 450px) and (max-width: 559px) and (min-width: 1201px) and (max-width: 1340px) {
+  .pfWrap .pfCon .pfListCon .pfList {
+    width: 280px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfImgBox img {
+    width: 280px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfTitle {
+    margin-right: 2rem;
+    font-size: 3.3rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfCount {
+    font-size: 3.3rem;
+    padding-top: 1rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfDes {
+    word-break: keep-all;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    border-top: 0.1rem solid #000;
+    width: 22rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin: 1.5rem auto 0;
+  }
+}
+@media (min-width: 450px) and (max-width: 559px) and (min-width: 1341px) and (max-width: 1400px) {
+  .pfWrap .pfCon .pfListCon .pfList {
+    width: 300px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfImgBox img {
+    width: 300px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfTitle {
+    margin-right: 2rem;
+    font-size: 3.3rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfCount {
+    font-size: 3.3rem;
+    padding-top: 1rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfDes {
+    word-break: keep-all;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    border-top: 0.1rem solid #000;
+    width: 24rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin: 1.5rem auto 0;
+  }
+}
+@media (min-width: 450px) and (max-width: 559px) and (min-width: 1401px) and (max-width: 1500px) {
+  .pfWrap .pfCon .pfListCon .pfList {
+    width: 320px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfImgBox img {
+    width: 320px;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfTitle {
+    margin-right: 2rem;
+    font-size: 3.3rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfMQConBox .pfCount {
+    font-size: 3.3rem;
+    padding-top: 1rem;
+  }
+  .pfWrap .pfCon .pfListCon .pfList .pfConBox .pfDes {
+    word-break: keep-all;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    border-top: 0.1rem solid #000;
+    width: 26rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin: 1.5rem auto 0;
+  }
 }/*# sourceMappingURL=Performance.css.map */

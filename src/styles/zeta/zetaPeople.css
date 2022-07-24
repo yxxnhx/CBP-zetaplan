@@ -5,7 +5,7 @@
 }
 
 .inner {
-  width: 1440px;
+  width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
 }
@@ -51,21 +51,21 @@
 }
 
 .zetaPeoImgBOX img {
-  width: 35rem;
-  height: 55rem;
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
 }
 
 .zetaDimmed {
-  width: 35rem;
-  height: 55rem;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 40rem;
+  top: 74%;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 6% 4% 6% 4%;
   box-sizing: border-box;
 }
 .zetaDimmed .zetaPeoName {
@@ -77,10 +77,9 @@
   color: #1527a0;
   font-weight: bold;
   margin-bottom: 3rem;
-  margin-bottom: 1rem;
 }
 .zetaDimmed .zetaPeoDetail {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.7;
 }
 .zetaDimmed .zetaPeoHPos {
@@ -102,4 +101,58 @@
 .zetaPeoBox:hover .zetaDimmed .zetaPeoPos {
   font-size: 1.6rem;
   color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .zetaPeoList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media all and (max-width: 767px) {
+  .zetaPeoList {
+    grid-template-columns: 1fr 1fr;
+  }
+  .zetaDimmed {
+    top: 79%;
+  }
+}
+@media all and (max-width: 428px) {
+  .zetaPeoList {
+    grid-template-columns: 1fr;
+  }
+  .zetaPeoList {
+    place-items: center;
+  }
+  .zetaPeoBox {
+    overflow: visible;
+  }
+  .zetaDimmed {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem 2rem 2rem 2rem;
+    box-sizing: border-box;
+  }
+  .zetaPeoBox {
+    pointer-events: none;
+  }
+  .zetaDimmed .zetaPeoDetail {
+    font-size: 1.7rem;
+  }
+  .zetaDimmed .zetaPeoName {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+  .zetaDimmed .zetaPeoHPos {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+  .zetaDimmed .zetaPeoPos {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=zetaPeople.css.map */

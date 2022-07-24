@@ -5,9 +5,9 @@
 }
 
 .mainNewsInner {
-  width: 85vw;
-  padding: 8rem 0;
-  margin: 0 auto;
+  width: 90%;
+  margin: auto;
+  padding-top: 27rem;
 }
 .mainNewsInner .mainNewsTop {
   display: flex;
@@ -22,12 +22,12 @@
   color: #fff;
 }
 .mainNewsInner .mainNewsTop .newsColumnMore {
-  width: 19rem;
+  width: 15rem;
   height: 5rem;
   border: 1px solid #fff;
   border-radius: 3rem;
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   position: relative;
   text-align: center;
   line-height: 5rem;
@@ -40,84 +40,239 @@
   width: 8px;
   height: 13px;
   position: absolute;
-  bottom: 1.6rem;
-  left: 13rem;
+  bottom: 33%;
+  right: 13%;
 }
 .mainNewsInner .mainNewsColumn {
   width: 100%;
-  height: 73.5rem;
+  height: 60rem;
   background-color: #1527a0;
-  padding: 9rem 0rem 9rem 8rem;
+  padding: 2rem 0 5rem 5vw;
   box-sizing: border-box;
 }
 
 .newsColumBox {
-  width: 130rem;
-  height: 50rem;
-  margin-left: 7rem;
+  width: 100vw;
+  height: 26vw;
+  position: relative;
 }
 
 .newsColumnTab {
   display: flex;
-  margin-bottom: 5rem;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  z-index: 10;
 }
-.newsColumnTab button {
+.newsColumnTab .mainNCTap {
   border: 1px solid #fff;
   border-radius: 1rem;
-  padding: 2.3rem 2.6rem;
+  padding: 1.198vw 1.354vw;
   margin-left: 1rem;
-  color: #fff;
   font-size: 1.5rem;
   font-family: "Montserrat";
 }
+.newsColumnTab .mainNCTap:first-child {
+  margin-left: 0;
+}
 
 .newsColumnBtn {
-  width: 8rem;
+  width: 7.2rem;
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 1rem;
-  right: 3rem;
-  z-index: 999;
+  top: 7%;
+  left: 73%;
+  z-index: 9;
 }
-
-.prev {
+.newsColumnBtn .prev {
   background: url("../../../src/img/zetaplan_splite.png") no-repeat -390px -442px;
   width: 16px;
   height: 25px;
   font-size: 0;
 }
-
-.next {
+.newsColumnBtn .next {
   background: url("../../../src/img/zetaplan_splite.png") no-repeat -472px -443px;
   width: 16px;
   height: 25px;
   font-size: 0;
 }
 
-.NewsColumnContent {
-  width: 100vw;
-}
-.NewsColumnContent img {
-  width: 20rem;
-  height: 20rem;
-  margin-top: 8rem;
+.mainNewsColumn {
+  width: 88vw;
+  height: 73.5rem;
+  overflow: hidden;
 }
 
-.mainNCBox {
-  width: 43.5rem;
-  height: 44rem;
-  padding: 24rem 28rem;
+.mainNCSlide {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8vw;
+}
+
+.mainNClListBox {
+  width: 38rem;
+  height: 40rem;
+  cursor: pointer;
+}
+.mainNClListBox .mainNCTxt {
+  width: 38rem;
+  height: 40rem;
+  padding: 2.4rem 2.8rem;
   box-sizing: border-box;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.mainNCBox .mainNCCategory {
+.mainNClListBox .mainNCTxt .mainNCCategory {
   font-size: 2rem;
+  font-family: "Montserrat";
+  margin-bottom: 1.6rem;
+  justify-self: center;
 }
-.mainNCBox .mainNCTitle {
+.mainNClListBox .mainNCTxt .mainNCTitle {
   font-size: 2.6rem;
   line-height: 1.5;
   font-weight: bold;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.mainNCBox .mainNCDate {
+.mainNClListBox .mainNCTxt .mainNCDate {
   font-size: 1.8rem;
+  font-family: "Noto Sans KR";
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mainNClListBox .mainNCDimmed {
+  position: absolute;
+  width: 38rem;
+  height: 40rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
+.mainNClListBox .mainNCBg {
+  width: 38rem;
+  height: 40rem;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.mainNClListBox .mainNCBg img {
+  width: 38rem;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.mainSlideOn {
+  display: block;
+}
+
+.mainSlideOff {
+  display: none;
+}
+
+.mainNCTapOn {
+  background-color: #fff;
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  color: #1527a0;
+}
+
+.mainNCTapOff {
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mySlider.mainNCSlide .newsColumnBtn {
+    width: 5rem;
+  }
+  .mySlider.mainNCSlide .newsColumnBtn .prev {
+    background: url("../../../src/img/zetaplan_splite.png") no-repeat -195px -221px;
+    background-size: 599px 280px;
+    width: 8px;
+    height: 13px;
+    font-size: 0;
+  }
+  .mySlider.mainNCSlide .newsColumnBtn .next {
+    background: url("../../../src/img/zetaplan_splite.png") -236px -221px;
+    background-size: 599px 280px;
+    width: 8px;
+    height: 13px;
+    font-size: 0;
+  }
+  .newsColumnTab {
+    display: flex;
+    position: absolute;
+    top: 11px;
+    left: 0;
+    z-index: 10;
+  }
+  .mainNewsInner .mainNewsColumn {
+    height: 58rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .mySlider.mainNCSlide .newsColumnBtn {
+    width: 5rem;
+  }
+  .mySlider.mainNCSlide .newsColumnBtn .prev {
+    background: url("../../../src/img/zetaplan_splite.png") no-repeat -195px -221px;
+    background-size: 599px 280px;
+    width: 8px;
+    height: 13px;
+    font-size: 0;
+  }
+  .mySlider.mainNCSlide .newsColumnBtn .next {
+    background: url("../../../src/img/zetaplan_splite.png") -236px -221px;
+    background-size: 599px 280px;
+    width: 8px;
+    height: 13px;
+    font-size: 0;
+  }
+  .newsColumnMore::after {
+    display: none;
+  }
+  .mainNewsInner .mainNewsTop .newsColumnMore {
+    padding-right: 0;
+  }
+  .newsColumnTab {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 10;
+  }
+  .mainNCSlide {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vw;
+  }
+  .mainNewsInner .mainNewsColumn {
+    padding: 4rem 0 5rem 5vw;
+    height: 56rem;
+  }
+  .mySlider.mainNCSlide .newsColumnBtn {
+    top: 0%;
+    left: 73%;
+  }
 }/*# sourceMappingURL=NewsColumn.css.map */

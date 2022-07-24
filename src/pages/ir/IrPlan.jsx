@@ -6,7 +6,12 @@ import { useEffect } from 'react';
 
 const IrPlan = ({ setHdSubStyle }) => {
   const title = 'ZETA PLAN은 지속적인 투자유치 멘토링으로 <br /> 성공적인 투자을 지원합니다'
-
+  // breadCrumbs
+  const oneDepth='투자 IR';
+  const oneDepthLink='/ir';
+  const twoDepth='사업계획서';
+  const twoDepthLink='/ir-plan';
+  const linkActive='twoDepth';
   /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
@@ -14,7 +19,7 @@ const IrPlan = ({ setHdSubStyle }) => {
 
   return (
     <div>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive}/>
       <div className='inner'>
         <div className="irSubtitle">사업계획서</div>
         <ul className='irCircle'>
@@ -76,10 +81,15 @@ const IrPlan = ({ setHdSubStyle }) => {
               </ul>
             </li>
           </ul>
-          <div className='irBnTotal'>회사의 사업특성 및 경영진의 비전을 상세한 설명으로 성공적인 투자가 될 수 있도록 지원합니다</div>
         </div>
-
       </div>
+      <div className="irPlanBg">
+        <div className='irBnTotal'>
+          <h2>ZETA PLAN</h2>
+          <p>회사의 사업특성 및 경영진의 비전을 상세한 설명으로 성공적인 투자가 될 수 있도록 지원합니다</p>
+        </div>
+      </div>
+
     </div>
   );
 };

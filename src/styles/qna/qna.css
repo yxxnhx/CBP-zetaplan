@@ -4,7 +4,7 @@
 }
 
 .qnaInner {
-  width: 1440px;
+  width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
 }
@@ -23,23 +23,52 @@
   justify-content: flex-end;
   align-items: center;
 }
-.qnaInner .qnaSearchInput .qnaSelect {
-  width: 139px;
-  height: 70px;
-  font-size: 1.6rem;
+.qnaInner .qnaSearchInput .qnaSelectBox {
+  width: 14rem;
+  position: relative;
+  background-color: #fff;
+}
+.qnaInner .qnaSearchInput .qnaSelectBox label {
+  position: absolute;
+  right: 8px;
+  top: 59%;
+  transform: translateY(-50%);
+  font-size: 0;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 100;
+  background: url("../../img/icon/bottom_arrow@2x.png") no-repeat;
+  background-size: 80%;
+}
+.qnaInner .qnaSearchInput .qnaSelectBox .qnaSelect {
+  width: 13.9rem;
+  height: 7rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2rem;
   text-align: center;
   outline: none;
-  font-weight: 500;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+.qnaInner .qnaSearchInput .qnaSelectBox .qnaSelect option {
+  font-size: 1.92rem;
+  font-family: "Noto Sans KR", sans-serif;
+  width: 140px;
+  height: 70px;
 }
 .qnaInner .qnaSearchInput .qnaSearchBox {
   position: relative;
 }
 .qnaInner .qnaSearchInput .qnaSearchBox .qnaSearch {
-  width: 542px;
+  width: 54rem;
   height: 50px;
   outline: none;
   border: none;
   border-bottom: 1px solid #707070;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 2rem;
   margin-left: 62px;
 }
@@ -55,15 +84,16 @@
 }
 .qnaInner .pagination {
   display: flex;
-  width: 890px;
+  width: 100%;
   margin: 70px auto 88px;
   justify-content: center;
 }
 .qnaInner .pagination .page-item a {
   display: block;
-  width: 58px;
-  height: 58px;
-  padding: 21px;
+  width: 5.8rem;
+  height: 5.8rem;
+  padding: 2.1rem;
+  font-family: "Noto Sans KR", sans-serif;
   text-align: center;
   font-size: 1.6rem;
   cursor: pointer;
@@ -74,4 +104,11 @@
 }
 .qnaInner .pagination .page-item.disabled {
   display: none;
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .qnaInner .qnaSearchInput .qnaSearchBox .qnaSearch {
+    width: 30rem;
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=qna.css.map */

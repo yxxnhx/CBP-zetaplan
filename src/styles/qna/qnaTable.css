@@ -22,6 +22,7 @@
 .qnaTable .qnaTbody .qnaTbTr {
   border-bottom: 1px solid #f0f0f0;
   height: 113px;
+  cursor: pointer;
 }
 .qnaTable .qnaTbody .qnaTbTr:last-child {
   border-bottom: none;
@@ -34,19 +35,34 @@
   font-family: "Noto Sans KR", sans-serif;
   text-align: center;
 }
+.qnaTable .qnaTbody .qnaTbTr td.qnaTbodyId {
+  width: 100px;
+}
 .qnaTable .qnaTbody .qnaTbTr td.qnaTbodyTitle {
+  width: 550px;
+  font-family: "Noto Sans KR", sans-serif;
   font-weight: bold;
   text-align: start;
+  line-height: 1.7;
 }
-.qnaTable .qnaTbody .qnaTbTr td button {
-  width: 190px;
-  height: 50px;
+.qnaTable .qnaTbody .qnaTbTr td.qnaTbodyWriter {
+  width: 100px;
+}
+.qnaTable .qnaTbody .qnaTbTr td.qnaTbodyDate {
+  width: 200px;
+}
+.qnaTable .qnaTbody .qnaTbTr td.qnaTbodyHit {
+  width: 100px;
+}
+.qnaTable .qnaTbody .qnaTbTr td.isAnswerBtn > button {
+  width: 12rem;
+  height: 5rem;
   font-size: 1.92rem;
   font-family: "Noto Sans KR", sans-serif;
   border: 1px solid #e0e0e0;
   background-color: #f0f0f0;
 }
-.qnaTable .qnaTbody .qnaTbTr td button.active {
+.qnaTable .qnaTbody .qnaTbTr td.isAnswerBtn > button.active {
   border: 1px solid #707070;
   background-color: #1527a0;
   color: #fff;

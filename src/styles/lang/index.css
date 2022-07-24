@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+.langAbout {
+  height: 90rem;
+  background: url("./../../img/main/main_galexy_bg@2x.png") no-repeat center;
+  background-size: 100%;
+}
+.langAbout:hover {
+  background-size: 150%;
+  transition: background-size 3.3s ease;
+  -moz-transition: background-size 3.3s ease;
+  -webkit-transition: background-size 3.3s ease;
+}
+.langAbout .langAboutCon {
+  width: 85%;
+  margin: auto;
+}
+.langAbout .langAboutCon .langAboutT {
+  font-weight: bold;
+  font-size: 4.5rem;
+  font-family: Montserrat;
+  color: #fff;
+  padding-top: 10rem;
+}
+.langAbout .langAboutCon .langAboutC {
+  padding: 5rem 0 30rem;
+}
+.langAbout .langAboutCon .langAboutC p {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 4rem;
+  line-height: 1.5;
+  font-family: "Roboto";
+  font-weight: 100;
+}
+
+.langTec .langTecBox {
+  width: 85%;
+  margin: 10rem auto;
+}
+.langTec .langTecBox .langTecTitle {
+  font-weight: bold;
+  font-size: 4.5rem;
+  font-family: Montserrat;
+}
+.langTec .langTecBox .langTecContent .langTecImgBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
+.langTec .langTecBox .langTecContent .langTecImgBox img {
+  width: 100%;
+}
+.langTec .langTecBox .langTecContent .langTecContentC {
+  margin: 2.5rem 0;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+.langTec .langTecBox .langTecContent .langTecContentT {
+  font-weight: bold;
+  font-size: 2.6rem;
+  margin-top: 7rem;
+}
+.langTec .langTecBox .langTecContent .langTecChBox {
+  display: flex;
+  align-items: center;
+}
+.langTec .langTecBox .langTecContent .langTecChBox img {
+  width: 40%;
+}
+.langTec .langTecBox .langTecContent .langTecChBox .langTecContentC {
+  font-size: 2.2rem;
+  width: 60%;
+  margin-left: 5rem;
+  line-height: 1.5;
+}
+.langTec .langTecBox .langTecContent .langTecMap {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.langTecGlobalImgBox {
+  position: relative;
+}
+.langTecGlobalImgBox img {
+  width: 100%;
+}
+.langTecGlobalImgBox span {
+  font-size: 3rem;
+  font-weight: 4.5rem;
+  font-family: Montserrat;
+  color: #fff;
+  position: absolute;
+  bottom: 4rem;
+  right: 5rem;
+}
+
+.langTecOC .langTecOCBox.clientArea {
+  width: 85%;
+  margin: 3.3rem auto 6rem;
+}
+.langTecOC .langTecContent {
+  margin: 3.3rem 0 8rem;
+}
+.langTecOC .langTecContent .langTecContentTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  padding-left: 3rem;
+  position: relative;
+  margin-bottom: 3.7rem;
+}
+.langTecOC .langTecContent .langTecContentTitle::before {
+  content: "";
+  display: block;
+  background: url("./../../img/title_box@2x.png") no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.langTecOC .langTecContent .langTecContentTitle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+.langTecOC .langTecContent .langTecContentImg img {
+  width: 100%;
+  margin: auto;
+}
+
+.langTecOCtitle {
+  margin: 5rem 0;
+  font-size: 4.5rem;
+  font-family: Montserrat;
+  position: relative;
+}
+.langTecOCtitle::after {
+  content: "";
+  display: block;
+  background-image: url(./../../img//eng_cn/eng_cn_thin_gradient.png);
+  width: 60%;
+  height: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.langBA {
+  width: 85%;
+  margin: auto;
+  padding-top: 3%;
+}
+
+.langAccoContentT {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.langContentText p {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+.langContentText ul {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.langContentText ul li {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.langContentImg {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.langContentImg img {
+  width: 80%;
+}
+
+.langContentTable {
+  width: 100%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+.langContentTable thead {
+  background-color: #1527a0;
+  text-align: center;
+}
+.langContentTable thead tr {
+  height: 5rem;
+}
+.langContentTable thead tr .tableTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.langContentTable tbody td {
+  font-size: 1.8rem;
+  padding: 1%;
+  box-sizing: border-box;
+  line-height: 1.3;
+  border: 1px solid #000;
+}
+.langContentTable tbody td .langContentList li {
+  font-size: 1.6rem;
+}
+
+.langAccordion {
+  width: 100%;
+}
+
+.langBusinessItem {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.langBusinessItem .langBtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #1527a0;
+  padding: 3rem;
+  box-sizing: border-box;
+  font-size: 2.4rem;
+  letter-spacing: 1.2px;
+  color: #000;
+}
+.langBusinessItem .langBtn .langTitle {
+  font-size: 2.5rem;
+}
+
+.langContent {
+  max-height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.langContent.show {
+  height: auto;
+  max-height: 999rem;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  border: 1px solid #1527a0;
+}
+
+.langBtn.on {
+  background-color: #1527a0;
+  color: #fff;
+}
+
+.langUnderBtn {
+  background: url("../../img/zetaplan_splite.png") no-repeat -137px -194px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+}
+
+.langTopBtn {
+  background: url("../../img/zetaplan_splite.png") no-repeat -137px -235px;
+  background-size: 599px 280px;
+  width: 22px;
+  height: 14px;
+}
+
+.langContentBox {
+  width: 100%;
+  padding: 3rem;
+}
+
+.langIntro {
+  background: linear-gradient(to right, #1527a0 60%, #461d93);
+  margin: 20rem 0 12rem;
+}
+.langIntro .langIntroTitleCon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 83.4rem;
+  margin-left: 8rem;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 7rem;
+}
+.langIntro .langIntroTitleCon .langTitleBlue {
+  font-size: 4.5rem;
+  font-family: Montserrat;
+  color: #1527a0;
+}
+.langIntro .langIntroTitleCon .langTitleBlack {
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-family: Montserrat;
+}
+.langIntro .langIntroContentBox {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  bottom: 4rem;
+}
+.langIntro .langIntroContentBox .langIntroCompanyDes {
+  word-break: keep-all;
+  font-size: 1.9rem;
+  color: #fff;
+  text-align: left;
+  line-height: 1.5;
+}
+.langIntro .langIntroContentBox .langIntroLinkBox {
+  margin-left: 10%;
+  display: flex;
+  color: #fff;
+  flex-wrap: nowrap;
+}
+.langIntro .langIntroContentBox .langIntroLinkBox .langIntroCompanyLink a {
+  display: block;
+  border: 1px solid #fff;
+  width: 26.8rem;
+  height: 6.3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+  margin-right: 6rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+.langIntro .langIntroContentBox .langIntroLinkBox .langIntroCompanyLink a:after {
+  content: "";
+  background: url(./../../img/icon/thin_arrow.png) no-repeat;
+  width: 57px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.langIntro .langIntroContentBox .langIntroLinkBox .langIntroEstablishmentLink a {
+  display: block;
+  border: 1px solid #fff;
+  width: 26.8rem;
+  height: 6.3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+.langIntro .langIntroContentBox .langIntroLinkBox .langIntroEstablishmentLink a:after {
+  content: "";
+  background: url(./../../img/icon/thin_arrow.png) no-repeat;
+  width: 57px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.langMajorArea {
+  width: 85%;
+  margin: auto;
+}
+.langMajorArea .langMajorTitle {
+  margin: 5rem 0;
+  font-size: 4.5rem;
+  font-family: Montserrat;
+  position: relative;
+  line-height: 1.2;
+}
+.langMajorArea .langMajorTitle::after {
+  content: "";
+  display: block;
+  background-image: url(./../../img//eng_cn/eng_cn_thin_gradient.png);
+  width: 40%;
+  height: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.langMajorArea .langMajorSubTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.langMajorArea .langMajorTable {
+  width: 100%;
+  margin: 2rem auto 13rem;
+}
+.langMajorArea .langMajorTable thead .langMajoTablerTitle th {
+  font-size: 2rem;
+  background-color: #1527a0;
+  color: #fff;
+  padding: 1% 0.5%;
+  border: 1px solid #fff;
+}
+.langMajorArea .langMajorTable .langMajorContent td {
+  font-size: 1.8rem;
+  padding: 0.5%;
+  border: 1px solid #000;
+}
+
+.langLocationArea .langLocationTitle {
+  width: 85vw;
+  margin: auto;
+  font-size: 3rem;
+  font-weight: 900;
+  padding-left: 3rem;
+  position: relative;
+  margin-bottom: 3.7rem;
+}
+.langLocationArea .langLocationTitle::before {
+  content: "";
+  display: block;
+  background: url("./../../img/title_box@2x.png") no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.langLocationArea .langLocationTitle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+.langLocationArea .langLocationContent {
+  width: 85vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 5rem auto 8rem;
+  grid-gap: 2rem;
+  font-size: 3rem;
+}
+.langLocationArea .langLocationContent .langLocationH:first-child {
+  grid-column: span 2;
+}
+.langLocationArea .langLocationContent .langLocationH .langLocationHeadT {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.langLocationArea .langLocationContent .langLocationH .langLocationHeadT span {
+  font-size: 2.8rem;
+}
+.langLocationArea .langLocationContent .langLocationH .langLocationText {
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+.langLocationArea .langLocationContent .langLocationH .langLocationText span {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-right: 2rem;
+}
+
+.langLocationView {
+  background: url("./../../img/eng_cn/view.jpeg");
+  background-position: top left;
+  width: 100%;
+  height: 50rem;
+  background-attachment: fixed;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  * {
+    font-size: 50%;
+    box-sizing: border-box;
+  }
+}
+@media all and (max-width: 790px) {
+  .langLocationArea .langLocationContent {
+    grid-template-columns: auto;
+  }
+  .langLocationArea .langLocationContent .langLocationH:first-child {
+    grid-column: auto;
+  }
+  .langMajorArea .langMajorTitle::after {
+    width: 20%;
+    bottom: 0;
+    top: 100%;
+  }
+  .langTecOCtitle::after {
+    width: 20%;
+    bottom: 0;
+    top: 100%;
+  }
+  .langTec .langTecBox .langTecContent .langTecChBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .langTec .langTecBox .langTecContent .langTecChBox img {
+    width: 100%;
+    margin-top: 5rem;
+  }
+  .langIntro .langIntroContentBox .langIntroLinkBox {
+    flex-direction: column;
+  }
+  .langIntro .langIntroContentBox .langIntroLinkBox .langIntroCompanyLink {
+    margin-bottom: 3rem;
+  }
+}
+@media all and (max-width: 474px) {
+  .langTec .langTecBox .langTecContent .langTecChBox .langTecContentC {
+    width: 100%;
+    margin-left: 0;
+  }
+  .langIntro .langIntroContentBox .langIntroLinkBox .langIntroCompanyLink {
+    margin-bottom: 2rem;
+  }
+  .langIntro .langIntroContentBox {
+    flex-direction: column;
+  }
+  .langIntro .langIntroContentBox .langIntroLinkBox {
+    width: 100%;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 0;
+    flex-direction: row;
+  }
+  .langIntro .langIntroContentBox .langIntroLinkBox .langIntroCompanyLink a {
+    display: block;
+    border: 1px solid #fff;
+    width: 20rem;
+    height: 6.3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+    margin-right: 3rem;
+    font-size: 1.8rem;
+  }
+  .langIntro .langIntroContentBox .langIntroLinkBox .langIntroCompanyLink a::after {
+    display: none;
+  }
+  .langIntro .langIntroContentBox .langIntroLinkBox .langIntroEstablishmentLink a {
+    display: block;
+    border: 1px solid #fff;
+    width: 20rem;
+    height: 6.3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+    font-size: 1.8rem;
+  }
+  .langIntro .langIntroContentBox .langIntroLinkBox .langIntroEstablishmentLink a::after {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */

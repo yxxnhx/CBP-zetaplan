@@ -1,366 +1,291 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap");
 * {
   font-family: "Roboto", "Noto Sans KR", sans-serif;
 }
 
-/* 일반적 절차 */
-.maContainer {
+.maPro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maPro .maProAcco {
   width: 100%;
-  max-width: 170rem;
-  margin: auto;
 }
 
-.maAcco {
+.maProItem {
+  margin-bottom: 0.26vw;
+  padding: 1.042vw;
   width: 100%;
-  max-width: 170rem;
-  margin: 18px auto;
+  box-sizing: border-box;
 }
-.maAcco .maAccoHeading {
+.maProItem .maProBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
   border: 1px solid #1527a0;
-  padding: 10px 0;
-  background-color: #fff;
+  padding: 0.521vw 1.042vw;
+  font-size: 1.25vw;
+  letter-spacing: 1.2px;
   color: #000;
 }
-.maAcco .maAccoHeading:hover {
+.maProItem .maProBtn.on {
   background-color: #1527a0;
   color: #fff;
 }
-.maAcco .maAccoHeading .maContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.maAcco .maAccoHeading .maContainer p {
-  font-size: 2.08rem;
-  letter-spacing: 1.2px;
-  font-weight: bold;
-  margin: 1.7rem 5.4rem;
-}
-.maAcco .onmaAccoHeading {
-  background-color: #1527a0;
-  color: #fff;
-  letter-spacing: 1.2px;
-  padding: 10px 0;
-}
-.maAcco .onmaAccoHeading p {
+.maProItem .maProBtn .maProTitle {
   font-size: 2.08rem;
   font-weight: bold;
-  margin: 1.7rem 5.4rem;
+  margin: 1.042vw 1.563vw;
 }
-.maAcco .onmaAccoHeading span {
-  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -235px;
-  background-size: 599px 280px;
-  width: 22px;
-  height: 14px;
-  cursor: pointer;
-  margin-right: 4rem;
-  font-size: 0;
+.maProItem .maProBtn .maUnderBtn {
+  background: url("../../img/icon/bottom_arrow@2x.png") no-repeat center/cover;
+  width: 1.406vw;
+  height: 0.938vw;
 }
-.maAcco .maAccoContent {
-  border: 1px solid #333;
-  height: 0;
-  opacity: 0;
-  display: flex;
+.maProItem .maProBtn .maTopBtn {
+  background: url("../../img/icon/top_arrow@2x.png") no-repeat center/cover;
+  width: 1.406vw;
+  height: 0.938vw;
+}
+
+.maProContents {
+  max-height: 0;
   overflow: hidden;
-  transform: all 600ms ease-in-out;
   width: 100%;
-  max-width: 170rem;
 }
-.maAcco .maAccoContent .maContainer p {
-  font-size: 1.6rem;
-  line-height: 1.6;
+.maProContents.show {
+  height: auto;
+  max-height: 520.313vw;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  border: 1px solid #1527a0;
 }
 
-.maAccoContents .show {
-  height: 18rem;
-  opacity: 1;
-  font-size: 1.6rem;
-  width: 100%;
-  max-width: 170rem;
-  margin: 8rem auto;
-}
-
-.maAccoTxt {
-  font-size: 1.6rem;
-  border: 1px solid #707070;
-  border-top: 1px solid transparent;
-  width: 100%;
-  max-width: 170rem;
-}
-.maAccoTxt > div > div {
-  background-image: url(../../img/m&a_ipo/m&a_ipo_process.png);
-  background-size: 90rem 135rem;
-  background-repeat: no-repeat;
-  background-position: top left;
-  margin: 7.3rem auto;
-  width: 85%;
-  height: 135.3rem;
+.maProContWrap {
+  background: url(../../img/m&a_ipo/m&a_ipo_process.png) no-repeat top left/100%;
+  margin-top: 3vw;
+  margin-left: 3vw;
+  width: 60%;
+  height: 83.333vw;
   position: relative;
 }
-.maAccoTxt > div > div > div:nth-child(1) {
+.maProContWrap .maProCont {
+  width: 70vw;
+  height: 10.417vw;
+  display: flex;
+  position: absolute;
+}
+.maProContWrap .maProCont:hover .maProCircle {
+  opacity: 1;
+  transition: 0.3s;
+}
+.maProContWrap .maProCont .maProCircle {
+  width: 5.104vw;
+  height: 5.104vw;
+  border-radius: 100%;
+  background-color: #1527a0;
+  opacity: 0;
+}
+.maProContWrap .maProCont .maProCircle p {
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 5.104vw;
+  font-size: 1.146vw;
+  font-family: "Noto Sans Kr";
+}
+.maProContWrap .maProCont .maProTxt {
+  width: 60vw;
+  padding-top: 1.771vw;
+  padding-left: 1.563vw;
+}
+.maProContWrap .maProCont .maProTxt p {
+  display: flex;
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 2vw;
+}
+.maProContWrap .maProCont .maProTxt p .maProIcon {
+  display: block;
+  margin-left: 1.5rem;
+}
+.maProContWrap .maProCont .maProTxt li {
+  font-size: 1.8rem;
+  line-height: 1.823vw;
+}
+
+.maProCont:nth-child(1) {
   top: 0;
   left: 0;
 }
-.maAccoTxt > div > div > div:nth-child(1) > ul > p > span {
-  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat 0px 0px;
-  background-size: 300px 35px;
-  width: 35px;
-  height: 35px;
+.maProCont:nth-child(1) .maProIcon {
+  background: url(../../img/m&a_ipo/m&a@2x.png) no-repeat center/cover;
+  width: 1.823vw;
+  height: 1.823vw;
 }
-.maAccoTxt > div > div > div:nth-child(2) {
-  top: 11.6rem;
-  left: 80.9rem;
+
+.maProCont:nth-child(2) {
+  top: 6.563vw;
+  left: 44.479vw;
 }
-.maAccoTxt > div > div > div:nth-child(2) > ul > p > span {
-  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -43px 0px;
-  background-size: 360px 40px;
-  width: 35px;
-  height: 35px;
+.maProCont:nth-child(2) .maProIcon {
+  background: url(../../img/m&a_ipo/m&a2@2x.png) no-repeat center/cover;
+  width: 1.823vw;
+  height: 1.823vw;
 }
-.maAccoTxt > div > div > div:nth-child(3) {
-  top: 27.1rem;
+
+.maProCont:nth-child(3) {
+  top: 15.417vw;
   left: 0;
 }
-.maAccoTxt > div > div > div:nth-child(3) > ul > p > span {
-  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -66px 0px;
-  background-size: 300px 35px;
-  width: 37px;
-  height: 35px;
+.maProCont:nth-child(3) .maProIcon {
+  background: url(../../img/m&a_ipo/m&a3@2x.png) no-repeat center/cover;
+  width: 2vw;
+  height: 1.823vw;
 }
-.maAccoTxt > div > div > div:nth-child(4) {
-  top: 45.5rem;
-  left: 80.9rem;
+
+.maProCont:nth-child(4) {
+  top: 25.625vw;
+  left: 44.479vw;
 }
-.maAccoTxt > div > div > div:nth-child(4) > ul > p > span {
-  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -125px 0px;
-  background-size: 355px 45px;
-  width: 35px;
-  height: 35px;
+.maProCont:nth-child(4) .maProIcon {
+  background: url(../../img/m&a_ipo/m&a4@2x.png) no-repeat center/cover;
+  width: 1.823vw;
+  height: 2vw;
 }
-.maAccoTxt > div > div > div:nth-child(5) {
-  top: 62.6rem;
+
+.maProCont:nth-child(5) {
+  top: 35.417vw;
   left: 0;
 }
-.maAccoTxt > div > div > div:nth-child(5) > ul > p > span {
-  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -163px 0px;
-  background-size: 355px 43px;
-  width: 35px;
-  height: 35px;
+.maProCont:nth-child(5) .maProIcon {
+  background: url(../../img/m&a_ipo/m&a6@2x.png) no-repeat center/cover;
+  width: 2vw;
+  height: 1.823vw;
 }
-.maAccoTxt > div > div > div:nth-child(6) {
-  top: 81rem;
-  left: 80.9rem;
+
+.maProCont:nth-child(6) {
+  top: 45.677vw;
+  left: 44.479vw;
 }
-.maAccoTxt > div > div > div:nth-child(6) > ul > p > span {
-  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -200px 0px;
-  background-size: 355px 40px;
-  width: 35px;
-  height: 35px;
+.maProCont:nth-child(6) .maProIcon {
+  background: url(../../img/m&a_ipo/m&a7@2x.png) no-repeat center/cover;
+  width: 2vw;
+  height: 1.823vw;
 }
-.maAccoTxt > div > div > div:nth-child(7) {
-  top: 98rem;
+
+.maProCont:nth-child(7) {
+  top: 55.313vw;
   left: 0;
 }
-.maAccoTxt > div > div > div:nth-child(7) > ul > p > span {
-  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -242px 0px;
-  background-size: 355px 40px;
-  width: 35px;
-  height: 35px;
+.maProCont:nth-child(7) .maProIcon {
+  background: url(../../img/m&a_ipo/m&a8@2x.png) no-repeat center/cover;
+  width: 2vw;
+  height: 1.823vw;
 }
-.maAccoTxt > div > div > div:nth-child(8) {
-  top: 109rem;
-  left: 80.9rem;
+
+.maProCont:nth-child(8) {
+  top: 61.354vw;
+  left: 44.479vw;
 }
-.maAccoTxt > div > div > div:nth-child(8) > ul > p > span {
-  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -280px 0px;
-  background-size: 355px 40px;
-  width: 35px;
-  height: 35px;
+.maProCont:nth-child(8) .maProIcon {
+  background: url(../../img/m&a_ipo/m&a9@2x.png) no-repeat center/cover;
+  width: 1.7vw;
+  height: 1.8vw;
 }
-.maAccoTxt > div > div > div:nth-child(9) {
-  top: 126rem;
+
+.maProCont:nth-child(9) {
+  top: 71.042vw;
   left: 0;
 }
-.maAccoTxt > div > div > div:nth-child(9) > ul > p > span {
-  background: url("../../img/m&a_ipo/m&a_splite.png") no-repeat -320px 0px;
-  background-size: 355px 40px;
-  width: 35px;
-  height: 35px;
+.maProCont:nth-child(9) .maProIcon {
+  background: url(../../img/m&a_ipo/m&a10@2x.png) no-repeat center/cover;
+  width: 1.823vw;
+  height: 1.823vw;
 }
-.maAccoTxt > div > div > div {
-  width: 45%;
-  position: absolute;
-  display: flex;
+
+@media (min-width: 1160px) and (max-width: 1400px) {
+  .maProContWrap .maProCont .maProTxt li {
+    font-size: 1.5rem;
+  }
 }
-.maAccoTxt > div > div > div:hover > div > p {
-  opacity: 1;
-  transition: 0.5s;
+@media (min-width: 769px) and (max-width: 1159px) {
+  .maProContWrap .maProCont .maProTxt p {
+    font-size: 1.8rem;
+  }
+  .maProContWrap .maProCont .maProTxt li {
+    font-size: 1.3rem;
+  }
 }
-.maAccoTxt > div > div > div > div {
-  display: flex;
-  width: 16.5%;
+@media (min-width: 769px) and (max-width: 1660px) {
+  .maProContWrap .maProCont .maProTxt {
+    width: 50vw;
+  }
+  .maProContWrap .maProCont .maProTxt p {
+    margin-bottom: 1rem;
+  }
+  .maProContWrap .maProCont .maProTxt li {
+    margin-bottom: 1rem;
+  }
 }
-.maAccoTxt > div > div > div > div > p {
+@media (max-width: 768px) {
+  .maProContWrap {
+    background: none;
+    position: -webkit-sticky;
+    position: sticky;
+    height: 110vw;
+  }
+  .maProContWrap .maProCont .maProCircle {
+    opacity: 1;
+  }
+  .maProCont:nth-child(2) {
+    top: 12vw;
+    left: 0;
+  }
+  .maProCont:nth-child(3) {
+    top: 24vw;
+    left: 0;
+  }
+  .maProCont:nth-child(4) {
+    top: 36vw;
+    left: 0;
+  }
+  .maProCont:nth-child(5) {
+    top: 48vw;
+    left: 0;
+  }
+  .maProCont:nth-child(6) {
+    top: 60vw;
+    left: 0;
+  }
+  .maProCont:nth-child(7) {
+    top: 72vw;
+    left: 0;
+  }
+  .maProCont:nth-child(8) {
+    top: 84vw;
+    left: 0;
+  }
+  .maProCont:nth-child(9) {
+    top: 96vw;
+    left: 0;
+  }
+  .maProContWrap .maProCont .maProTxt p {
+    margin-bottom: 2vw;
+    font-size: 2.1rem;
+  }
+  .maProContWrap .maProCont .maProTxt li {
+    margin-bottom: 1vw;
+    font-size: 1.8rem;
+  }
+}
+.maProImgWrap {
   width: 100%;
-  height: 9rem;
-  border-radius: 100%;
-  text-align: center;
-  padding-top: 3.4rem;
-  padding-left: 0.5rem;
-  background-color: #1527a0;
-  opacity: 0;
+  height: 109.375vw;
 }
-.maAccoTxt > div > div > div > div > p > span {
-  font-family: "Noto Sans Kr";
-  font-size: 1.9rem;
-  font-weight: 700;
-  color: #fff;
-}
-.maAccoTxt > div > div > div > ul {
-  width: 60%;
-  padding-top: 2.2rem;
-  padding-left: 2rem;
-}
-.maAccoTxt > div > div > div > ul > p {
-  font-family: "Noto Sans Kr";
-  font-size: 1.9rem;
-  font-weight: 700;
-  line-height: 4rem;
-  display: flex;
-}
-.maAccoTxt > div > div > div > ul > p > span {
-  margin-left: 1rem;
-}
-.maAccoTxt > div > div > div > ul > li {
-  font-family: "Noto Sans Kr";
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-}
-
-.maAccoBtn {
-  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -194px;
-  background-size: 599px 280px;
-  width: 22px;
-  height: 14px;
-  cursor: pointer;
-  margin-right: 4rem;
-}
-
-.upmaAccoBtn {
-  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -235px;
-  background-size: 599px 280px;
-  width: 22px;
-  height: 14px;
-  cursor: pointer;
-  margin-right: 4rem;
-}
-
-/* 중개기관을 통한 절차 */
-.ipoContainer {
-  width: 100%;
-  max-width: 170rem;
-  margin: auto;
-}
-
-.ipoAcco {
-  width: 100%;
-  max-width: 170rem;
-  margin: 18px auto;
-}
-.ipoAcco .ipoAccoHeading {
-  border: 1px solid #1527a0;
-  padding: 10px 0;
-  background-color: #fff;
-  color: #000;
-}
-.ipoAcco .ipoAccoHeading:hover {
-  background-color: #1527a0;
-  color: #fff;
-}
-.ipoAcco .ipoAccoHeading .ipoContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.ipoAcco .ipoAccoHeading .ipoContainer p {
-  font-size: 2.08rem;
-  letter-spacing: 1.2px;
-  font-weight: bold;
-  margin: 1.7rem 5.4rem;
-}
-.ipoAcco .onipoAccoHeading {
-  background-color: #1527a0;
-  color: #fff;
-  letter-spacing: 1.2px;
-  padding: 10px 0;
-}
-.ipoAcco .onipoAccoHeading p {
-  font-size: 2.08rem;
-  font-weight: bold;
-  margin: 1.7rem 5.4rem;
-}
-.ipoAcco .onipoAccoHeading span {
-  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -235px;
-  background-size: 599px 280px;
-  width: 22px;
-  height: 14px;
-  cursor: pointer;
-  margin-right: 4rem;
-  font-size: 0;
-}
-.ipoAcco .ipoAccoContent {
-  border: 1px solid #333;
-  height: 0;
-  opacity: 0;
-  display: flex;
-  overflow: hidden;
-  transform: all 600ms ease-in-out;
-  width: 100%;
-  max-width: 170rem;
-}
-.ipoAcco .ipoAccoContent .ipoContainer p {
-  font-size: 1.6rem;
-  line-height: 1.6;
-}
-
-.ipoAccoContent .show {
-  height: 18rem;
-  opacity: 1;
-  font-size: 1.6rem;
-  width: 100%;
-  max-width: 170rem;
-  margin: 8rem auto;
-}
-
-.ipoAccoTxt {
-  font-size: 1.6rem;
-  border: 1px solid #707070;
-  border-top: 1px solid transparent;
-  width: 100%;
-  max-width: 170rem;
-}
-.ipoAccoTxt > div {
-  background: url(../../img/m&a_ipo/m&a_process@2x.png) no-repeat center/cover;
-  width: 80%;
-  height: 155rem;
-  margin: 7.3rem auto;
-}
-
-.ipoAccoBtn {
-  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -194px;
-  background-size: 599px 280px;
-  width: 22px;
-  height: 14px;
-  cursor: pointer;
-  margin-right: 4rem;
-}
-
-.upipoAccoBtn {
-  background: url("./../../img/zetaplan_splite.png") no-repeat -137px -235px;
-  background-size: 599px 280px;
-  width: 22px;
-  height: 14px;
-  cursor: pointer;
-  margin-right: 4rem;
+.maProImgWrap .maProImg {
+  background: url(../../img//m&a_ipo/m&a_process.png) no-repeat top left/100%;
+  width: 90%;
+  height: 98.958vw;
+  margin: 5.208vw auto;
 }/*# sourceMappingURL=MaIpoAccordion.css.map */

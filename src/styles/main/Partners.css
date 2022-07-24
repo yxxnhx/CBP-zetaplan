@@ -5,8 +5,6 @@
 }
 
 .partner {
-  background: url("./../../img/main/main_galexy_bg@2x.png");
-  background-size: cover;
   height: 100%;
   padding: 11rem 0;
 }
@@ -28,4 +26,26 @@
 .mySlider.top {
   margin-left: 5rem;
   padding-bottom: 4rem;
+}
+
+.netLogo {
+  width: auto;
+  height: 5vw;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .netLogo {
+    background-color: #fff;
+    padding: 0 0.5rem;
+    border-radius: 10px;
+    height: 8vw;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .netLogo {
+    background-color: #fff;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+    height: 8vw;
+  }
 }/*# sourceMappingURL=Partners.css.map */

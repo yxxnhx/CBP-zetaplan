@@ -43,14 +43,16 @@
   font-family: "Roboto", "Noto Sans KR", sans-serif;
 }
 .ztInfoBox .ztInner {
-  width: 1440px;
+  width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
 }
 
 .ztIntro {
-  background-color: #000;
+  background: url("./../../img/zeta/zt_bg.jpg") no-repeat top;
+  background-size: cover;
   font-weight: 700;
+  margin-bottom: -3px;
 }
 .ztIntro .ztTitle:after {
   display: none;
@@ -61,21 +63,23 @@
   line-height: 2;
 }
 .ztIntro .ztInfoText .ztTextTitle {
-  font-size: 3.84rem;
   color: #fff;
 }
+.ztIntro .ztInfoText .ztTextTitle span {
+  font-size: 3.84rem;
+}
 .ztIntro .ztInfoText .ztTextWh {
-  font-size: 1.92rem;
+  font-size: 2.08rem;
   color: #fff;
   margin: 7.5rem 0;
 }
 .ztIntro .ztInfoText .ztTextGr {
-  font-size: 1.92rem;
-  color: #707070;
+  font-size: 2.08rem;
+  color: rgba(206, 199, 199, 0.831372549);
 }
 
 .ztMessage {
-  padding-top: 38.2rem;
+  padding-top: 25rem;
   background-color: #000;
   color: #fff;
   line-height: 1.4;
@@ -120,13 +124,9 @@
 .ztMessage .ztMessageInner .ztCeoImg img {
   width: 50rem;
 }
-.ztMessage .ztMessageInner .ztCeoImg img:hover {
-  opacity: 0.6;
-  transition: all 1.2s;
-}
 
 .ztRedTabBox .ztRedTabInner {
-  width: 1440px;
+  width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
   display: flex;
@@ -134,20 +134,27 @@
   justify-content: space-between;
 }
 .ztRedTabBox .ztRedTabInner .ztRedTab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 40%;
   font-weight: 700;
 }
-.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabFirst {
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock {
+  flex: 40%;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock .ztRedTabFirst {
   color: #707070;
   font-size: 2.24rem;
   margin-bottom: 6.3rem;
   margin-left: 10rem;
   cursor: pointer;
 }
-.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabFirst.active {
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock .ztRedTabFirst.active {
   color: #94151C;
   margin-left: 0rem;
 }
-.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabFirst.active::before {
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock .ztRedTabFirst.active::before {
   content: "";
   display: inline-block;
   background: #94151C;
@@ -156,20 +163,20 @@
   vertical-align: middle;
   margin-right: 2rem;
 }
-.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabFirst:hover {
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock .ztRedTabFirst:hover {
   color: #94151C;
 }
-.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabTwo {
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock .ztRedTabTwo {
   color: #707070;
   font-size: 2.24rem;
   margin-left: 10rem;
   cursor: pointer;
 }
-.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabTwo.active {
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock .ztRedTabTwo.active {
   color: #94151C;
   margin-left: 0rem;
 }
-.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabTwo.active::before {
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock .ztRedTabTwo.active::before {
   content: "";
   display: inline-block;
   background: #94151C;
@@ -178,8 +185,11 @@
   vertical-align: middle;
   margin-right: 2rem;
 }
-.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabTwo:hover {
+.ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock .ztRedTabTwo:hover {
   color: #94151C;
+}
+.ztRedTabBox .ztRedTabInner .ztRedTabTitle {
+  flex: 60%;
 }
 .ztRedTabBox .ztRedTabInner .ztRedTabTitle .ztRedTabTitleTop {
   font-family: "Montserrat";
@@ -246,4 +256,142 @@
   left: 0;
   top: 8rem;
   height: 20rem;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1380px) {
+  .ztMessage {
+    padding-top: 0;
+  }
+  .ztMessage .ztMessageInner {
+    width: 85vw;
+    padding: 8rem 0 0 0;
+  }
+  .ztMessage .ztMessageInner .ztMessageBox .ztCircle {
+    width: 14rem;
+    top: -4rem;
+    left: -3rem;
+  }
+  .ztMessage .ztMessageInner .ztMessageBox .ztCeoTexts {
+    width: 45vw;
+    padding-top: 3rem;
+  }
+  .ztMessage .ztMessageInner .ztMessageBox .ztCeoTexts .ztCeoText {
+    margin: 3rem 0 3.4rem 0;
+  }
+  .ztMessage .ztMessageInner .ztCeoImg {
+    padding-top: 2rem;
+  }
+  .ztMessage .ztMessageInner .ztCeoImg img {
+    width: 35vw;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTabContent {
+    display: block;
+    flex-basis: 33%;
+    padding-left: 0;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .ztMessage {
+    padding-top: 0;
+  }
+  .ztMessage .ztMessageInner {
+    width: 85vw;
+    padding: 8rem 0 0 0;
+  }
+  .ztMessage .ztMessageInner .ztMessageBox .ztCircle {
+    width: 14rem;
+    top: -4rem;
+    left: -3rem;
+  }
+  .ztMessage .ztMessageInner .ztMessageBox .ztCeoTexts {
+    width: 45vw;
+    padding-top: 3rem;
+  }
+  .ztMessage .ztMessageInner .ztMessageBox .ztCeoTexts .ztCeoText {
+    margin: 3rem 0 3.4rem 0;
+  }
+  .ztMessage .ztMessageInner .ztCeoImg {
+    padding-top: 2rem;
+  }
+  .ztMessage .ztMessageInner .ztCeoImg img {
+    width: 35vw;
+  }
+  .ztMessage .ztMessageInner {
+    padding: 10rem 0 0 0;
+  }
+  .ztMessage .ztMessageInner .ztMessageBox {
+    margin-top: 0;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTabContent {
+    display: block;
+    flex-basis: 35%;
+    padding-left: 0;
+  }
+}
+@media all and (max-width: 767px) {
+  .ztMessage {
+    padding-top: 0;
+  }
+  .ztMessage .ztMessageInner {
+    width: 85vw;
+    padding: 8rem 0 0 0;
+  }
+  .ztMessage .ztMessageInner .ztMessageBox .ztCircle {
+    width: 14rem;
+    top: -4rem;
+    left: -3rem;
+  }
+  .ztMessage .ztMessageInner .ztMessageBox .ztCeoTexts {
+    width: 45vw;
+    padding-top: 3rem;
+  }
+  .ztMessage .ztMessageInner .ztMessageBox .ztCeoTexts .ztCeoText {
+    margin: 3rem 0 3.4rem 0;
+  }
+  .ztMessage .ztMessageInner .ztCeoImg {
+    padding-top: 2rem;
+  }
+  .ztMessage .ztMessageInner .ztCeoImg img {
+    width: 35vw;
+  }
+  .ztMessage .ztMessageInner {
+    height: 65rem;
+  }
+  .ztMessage .ztMessageInner .ztMessageBox {
+    margin-top: 0;
+  }
+  .ztMessage .ztMessageInner .ztMessageBox .ztCeoTexts {
+    width: 86vw;
+  }
+  .ztMessage .ztMessageInner .ztMessageBox .ztCeoTexts .ztCeoText {
+    margin: 8rem 0 3.4rem 0;
+  }
+  .ztMessage .ztMessageInner .ztCeoImg {
+    display: none;
+  }
+  .ztIntro .ztInfoText .ztTextTitle span {
+    display: block;
+    line-height: 1.5;
+  }
+  .ztRedTabBox .ztRedTabInner {
+    display: flex;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTabContent {
+    display: block;
+    flex: 60%;
+    padding-left: 0;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTab {
+    flex: 40%;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock {
+    flex: 100%;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTabTitle {
+    flex: 100%;
+    margin-top: 8rem;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTabTitle .ztRedTabTitleTxt {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=index.css.map */

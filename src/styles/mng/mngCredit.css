@@ -4,14 +4,10 @@
   font-family: "Roboto", "Noto Sans KR", sans-serif;
 }
 
-.mngCreditReportTitle {
-  margin-top: 2rem;
-}
-
 .mngCreditWrapper {
   margin: 15rem 0;
   display: flex;
-  width: 100vh;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -23,7 +19,7 @@
 .mngCreditItem {
   margin-bottom: 0.5rem;
   padding: 1rem 2rem;
-  width: 140rem;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -78,6 +74,7 @@
 }
 
 .mngCreditTxt {
+  width: 90%;
   padding: 2rem;
   line-height: 1.5;
 }
@@ -87,9 +84,9 @@
 }
 
 .mngCreditImg {
-  width: 90%;
-  height: 70%;
-  transform: translateX(8rem);
+  width: 80%;
+  height: 80%;
+  transform: translateX(15%);
   padding: 2rem 0;
 }
 
@@ -130,10 +127,14 @@
   font-family: "Noto Sans KR";
 }
 
+.mngSmTitle.mngCreditReportTitle {
+  margin-left: 10rem;
+}
+
 .mngCreditReport {
   height: 80rem;
-  margin-left: 5rem;
-  padding: 4rem;
+  margin-left: 4rem;
+  padding: 2rem 4rem;
 }
 .mngCreditReport div {
   font-size: 2.2rem;
@@ -147,16 +148,87 @@
 }
 
 .mngCreditApply {
-  position: relative;
-  left: 55rem;
+  display: block;
+  width: 20rem;
   background-color: #1527a0;
   font-size: 1.92rem;
   color: #fff;
   padding: 3rem;
+  margin: 8rem auto;
 }
 
 .mngInner {
   width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mngFiveCircle.mngCreditCircle {
+    width: 85vw;
+    margin-left: 2rem;
+  }
+  .mngCreditReport {
+    height: 100%;
+  }
+  .mngCreditReport div {
+    margin-top: 3rem;
+  }
+  .mngCreditReport p {
+    line-height: 2.5;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .mngFiveCircle.mngCreditCircle {
+    width: 85vw;
+    margin-left: 2rem;
+  }
+  .mngFiveCircle li {
+    border-radius: 0;
+  }
+  .mngCreditApply {
+    margin-top: 14rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 470px) {
+  .mngSmTitle.mngCreditSmTitle {
+    margin-left: 5rem;
+  }
+  .mngFiveCircle.mngCreditCircle {
+    width: 85vw;
+    margin-left: 2rem;
+  }
+  .mngUnderBtn {
+    background: url("../../img/icon/bottom_arrow.png") no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 7px;
+  }
+  .mngTopBtn {
+    background: url("../../img/icon/top_arrow.png") no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 7px;
+  }
+  .mngCreditImg {
+    width: 98%;
+    transform: translateX(1%);
+  }
+  .mngCreditReport {
+    margin-left: 0;
+  }
+  .mngCreditReport p {
+    line-height: 1.5;
+  }
+  .mngCreditReport div {
+    margin-bottom: 1rem;
+  }
+  .mngCreditApply {
+    margin-top: 10rem;
+  }
+  .mngSmTitle.mngCreditReportTitle {
+    margin-left: 5rem;
+    margin-top: -5rem;
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=mngCredit.css.map */

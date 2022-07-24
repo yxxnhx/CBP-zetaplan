@@ -4,7 +4,7 @@
 }
 
 .newsInner {
-  width: 1440px;
+  width: 85vw;
   padding: 8rem 0;
   margin: 0 auto;
 }
@@ -24,16 +24,21 @@
   font-weight: bold;
 }
 .newsInner .newsTitleBox .newsTabList li {
-  margin-left: 50px;
+  width: 13rem;
+  display: block;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
   font-size: 2.24rem;
+  text-align: center;
   position: relative;
+  cursor: pointer;
 }
 .newsInner .newsTitleBox .newsTabList li.active {
   color: #1527a0;
 }
 .newsInner .newsTitleBox .newsTabList li.active::after {
   content: "";
-  width: 94px;
+  width: 100%;
   height: 2px;
   display: block;
   background-color: #1527a0;
@@ -43,25 +48,39 @@
   bottom: -16px;
   opacity: 1;
 }
-.newsInner .newsContainer {
+.newsInner .newsSwiperContainer {
+  margin-top: 80px;
+}
+.newsInner .newsSwiperContainer .newsSwiper .swiper-wrapper {
+  height: 900px;
+}
+.newsInner .newsSwiperContainer .newsContainer {
   display: flex;
   justify-content: space-between;
-  margin-top: 178px;
 }
-.newsInner .newsContainer .newsContentBox {
-  flex: 30%;
-  width: 400px;
-  height: 570px;
+.newsInner .newsSwiperContainer .newsContainer .slideImgThumb {
+  flex: 1 1 60%;
+  margin-bottom: 8px;
 }
-.newsInner .newsContainer .newsContentBox .newsTitle {
+.newsInner .newsSwiperContainer .newsContainer .slideImgThumb img {
+  width: 100%;
+  max-height: 570px;
+}
+.newsInner .newsSwiperContainer .newsContainer .newsContentBox {
+  flex: 1 1 40%;
+}
+.newsInner .newsSwiperContainer .newsContainer .newsContentBox .newsTitle {
   font-size: 3.04rem;
-  width: 329px;
-  height: 166px;
+  width: 100%;
   font-weight: bold;
+  line-height: 1.7;
+  word-break: keep-all;
+  margin-bottom: 16px;
 }
-.newsInner .newsContainer .newsContentBox .newsSummary {
+.newsInner .newsSwiperContainer .newsContainer .newsContentBox .newsSummary {
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 2.4rem;
-  width: 398px;
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
@@ -70,45 +89,47 @@
   -webkit-box-orient: vertical;
   font-weight: normal;
 }
-.newsInner .newsContainer .newsContentBox .newsSummary p, .newsInner .newsContainer .newsContentBox .newsSummary ul li {
+.newsInner .newsSwiperContainer .newsContainer .newsContentBox .newsSummary p, .newsInner .newsSwiperContainer .newsContainer .newsContentBox .newsSummary ul li {
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 2.4rem;
-  line-height: 1.5;
+  line-height: 1.7;
 }
-.newsInner .newsContainer .newsContentBox .newsCreated {
+.newsInner .newsSwiperContainer .newsContainer .newsContentBox .newsCreated {
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
   margin: 57px 0 40px;
 }
-.newsInner .newsContainer .newsContentBox img {
-  width: auto;
-}
-.newsInner .newsContainer .newsThumbnail {
-  width: 904px;
-  height: 550px;
-}
-.newsInner .newsSearchBox {
+.newsInner .newsListContainer {
   position: relative;
-  width: 470px;
-  margin: 328px 0 57px 970px;
+  margin-top: 250px;
 }
-.newsInner .newsSearchBox .newsInput {
-  width: 470px;
-  border: none;
+.newsInner .newsListContainer .newsSearchBox {
+  position: absolute;
+  right: 0;
+  top: -24px;
+  width: 30rem;
+  padding: 1rem 0;
   border-bottom: 1px solid #707070;
+  background-color: #fff;
+}
+.newsInner .newsListContainer .newsSearchBox .newsInput {
+  width: 28rem;
+  border: none;
   font-size: 2rem;
   display: block;
   outline: none;
 }
-s .newsInner .newsSearchBox .newsInput::-moz-placeholder {
+.newsInner .newsListContainer .newsSearchBox .newsInput::-moz-placeholder {
   color: #000;
 }
-s .newsInner .newsSearchBox .newsInput:-ms-input-placeholder {
+.newsInner .newsListContainer .newsSearchBox .newsInput:-ms-input-placeholder {
   color: #000;
 }
-s .newsInner .newsSearchBox .newsInput::placeholder {
+.newsInner .newsListContainer .newsSearchBox .newsInput::placeholder {
   color: #000;
 }
-.newsInner .newsSearchBox .newsmagnifier {
+.newsInner .newsListContainer .newsSearchBox .newsmagnifier {
   display: block;
   background: url("../../img/zetaplan_splite.png") no-repeat -419px -151px;
   background-size: 599px 280px;
@@ -116,9 +137,10 @@ s .newsInner .newsSearchBox .newsInput::placeholder {
   height: 18px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.newsInner .newsListContainer {
+.newsInner .newsListContainer .newsListBox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -194,10 +216,11 @@ s .newsInner .newsSearchBox .newsInput::placeholder {
 }
 .newsInner .pagination .page-item a {
   display: block;
-  width: 58px;
-  height: 58px;
-  padding: 21px;
+  width: 5.8rem;
+  height: 5.8rem;
+  padding: 2.1rem;
   text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.6rem;
   cursor: pointer;
 }
@@ -207,4 +230,33 @@ s .newsInner .newsSearchBox .newsInput::placeholder {
 }
 .newsInner .pagination .page-item.disabled {
   display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .newsInner .pagination {
+    width: 100%;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .newsInner .pagination {
+    width: 100%;
+  }
+  .newsInner .newsContainer {
+    flex-wrap: wrap-reverse;
+  }
+  .newsInner .newsSwiperContainer .newsContainer .slideImgThumb {
+    flex: 1 1 100%;
+  }
+  .newsInner .newsSwiperContainer .newsSwiper .swiper-wrapper {
+    height: 700px;
+  }
+  .newsInner .newsSwiperContainer .newsContainer .slideImgThumb img {
+    max-height: 320px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .newsInner .swiperBtnBox {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }/*# sourceMappingURL=news.css.map */

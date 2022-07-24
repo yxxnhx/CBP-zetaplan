@@ -6,15 +6,22 @@ import { useEffect } from 'react';
 
 const Ir = ({ setHdSubStyle }) => {
   const title = '지원기관 네트워크를 통해 <br />기업의 맞춤 컨설팅을 지원합니다.'
+  // breadCrumbs
+  const oneDepth='투자 IR';
+  const oneDepthLink='/ir';
+  const twoDepth='개요';
+  const twoDepthLink='/ir';
+  const linkActive='twoDepth';
 
   /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle]);
 
+
   return (
     <div>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive}/>
       <div className='irInner'>
         <div className="irSubtitle">개요</div>
         <div className="irSubImg">
@@ -58,6 +65,11 @@ const Ir = ({ setHdSubStyle }) => {
           </div>
 
         </div>
+      </div>
+      <div className="irDecoBg">
+        <p>ZETA PLAN</p>
+      </div>
+      <div className='irInner'>
         <div className="irContent">
           <div className="irListTitle">Process</div>
           <div className="irListProcessImg">

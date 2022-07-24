@@ -8,6 +8,12 @@ import irProcessStep from './../../img/ir/ir_process02@2x.png';
 
 const IrProcess = ({ setHdSubStyle }) => {
   const title = '국내벤처캐피탈, 기술금융 투융자를 통한 <br /> 성공적인 투자유치를 지원합니다.';
+  // breadCrumbs
+  const oneDepth='투자 IR';
+  const oneDepthLink='/ir';
+  const twoDepth='Process';
+  const twoDepthLink='/ir-process';
+  const linkActive='twoDepth';
 
   const [selected, setSelected] = useState(null);
   const toggle = (i) => {
@@ -92,7 +98,7 @@ const IrProcess = ({ setHdSubStyle }) => {
 
   return (
     <div>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive}/>
 
       <div className="inner">
         <div className="irSubtitle">Process</div>
