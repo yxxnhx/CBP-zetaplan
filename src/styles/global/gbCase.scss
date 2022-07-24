@@ -4,17 +4,8 @@
   @include Inner;
 
   .gbTabTitleBox {
-    width: 85vw;
-    border-bottom: 0.1rem solid $basic-gray3;
-    padding-bottom: 2rem;
     .gbTabTitle {
-      background-image: url(../../img/title_box.png);
-      background-repeat: no-repeat;
-      font: {
-        size: $sub-title;
-        weight: bold;
-      }
-      padding-left: 2.6rem;
+      @include Subtitle($sub-title, $basic-gray3);
     }
   }
 
@@ -124,5 +115,27 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .gbInner .gbAccordion .gbProcessItem .gbProcessBtn .gbUnderBtn {
+    background: url('../../img/icon/bottom_arrow.png') no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 7px;
+  }
+
+  .gbInner .gbAccordion .gbProcessItem .gbProcessBtn .gTopBtn {
+    background: url('../../img/icon/top_arrow.png') no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 7px;
+  }
+
+  .gbInner .gbAccoContentBox .gbAccoContentArea .gbAccoContentT h1 {
+    width: 10rem;
+    margin-right: 4rem;
+    line-height: 1.5;
   }
 }

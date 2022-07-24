@@ -4,17 +4,8 @@
   @include Inner;
 
   .gbTabTitleBox {
-    width: 85vw;
-    border-bottom: 0.1rem solid $basic-gray3;
-    padding-bottom: 2rem;
     .gbTabTitle {
-      background-image: url(../../img/title_box.png);
-      background-repeat: no-repeat;
-      font: {
-        size: $sub-title;
-        weight: bold;
-      }
-      padding-left: 2.6rem;
+      @include Subtitle($sub-title, $basic-gray3);
     }
   }
 
@@ -59,8 +50,9 @@
   }
 
   .gbProcessImg {
-    margin: 5rem 10rem 10rem;
-    width: 85%;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
   }
 
   .gbProcessChartImg {
@@ -79,7 +71,7 @@
         padding: 2rem 0;
         .gbChartYear {
           margin-left: 1.042vw;
-          width: 4.167vw;
+          width: 6vw;
           line-height: 1.5;
         }
         .gbChartName {
@@ -109,7 +101,7 @@
         text-align: left;
         .gbChartYear {
           margin-left: 1.042vw;
-          width: 4.167vw;
+          width: 6vw;
           line-height: 1.5;
         }
         .gbChartName {

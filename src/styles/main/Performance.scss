@@ -94,51 +94,69 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 375px) and (max-width: 449px) {
   .pfWrap .pfCon .pfListCon {
-    width: 85vw;
-    height: auto;
+    margin: auto;
+    height: 80vw;
+    width: 80vw;
+    background-color: $basic-gray1;
     flex-wrap: wrap;
-    margin-left: 2.604vw;
 
     .pfMQImgBox {
-      display: none;
+      display: block;
+      img {
+        width: 80vw;
+      }
     }
-
     .pfList {
-      flex: 3 1 0%;
-      margin-bottom: 2rem;
-      margin-right: 2rem;
+      width: 120px;
+      border-radius: 10px;
+      background-color: $basic-white;
+      margin-bottom: 15px;
+      margin-right: 0;
 
       .pfImgBox {
-        display: flex;
-        img {
-          flex: 3 1 0%;
-        }
+        display: none;
       }
-
       .pfConBox {
+        margin-top: 20px;
         .pfIconBox {
           display: none;
         }
-        .pfTitle {
-          font-size: 4rem;
-          margin-top: 3rem;
-        }
-        .pfCount {
-          font-size: 3.8rem;
-        }
 
+        .pfMQConBox {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .pfTitle {
+            font-size: 13px;
+          }
+
+          .pfCount {
+            font-size: 24px;
+            padding-bottom: 15px;
+          }
+        }
         .pfDes {
-          font-size: 1.8rem;
-          margin-top: 2rem;
-          width: 35rem;
+          display: none;
         }
       }
+    }
+
+    .ipoList,
+    .globalList {
+      margin-right: 20px;
+    }
+
+    .maList,
+    .irList {
+      margin-left: 20px;
     }
   }
 }
 
+<<<<<<< Updated upstream
 @media (min-width: 680px) and (max-width: 767px) {
   .pfWrap .pfCon {
     .pfMaintitle {
@@ -150,6 +168,28 @@
       width: 80vw;
       background-color: $basic-gray1;
       flex-wrap: wrap;
+=======
+@media (min-width: 450px) and (max-width: 559px) {
+  .pfWrap .pfCon .pfListCon {
+    margin: auto;
+    height: 70vw;
+    width: 80vw;
+    background-color: $basic-gray1;
+    flex-wrap: wrap;
+
+    .pfMQImgBox {
+      display: block;
+      img {
+        width: 80vw;
+      }
+    }
+    .pfList {
+      width: 150px;
+      border-radius: 10px;
+      background-color: $basic-white;
+      margin-bottom: 20px;
+      margin-right: 0;
+>>>>>>> Stashed changes
 
       .pfMQImgBox {
         display: block;
@@ -157,6 +197,7 @@
           width: 80vw;
         }
       }
+<<<<<<< Updated upstream
       .pfList {
         width: 250px;
         border-radius: 10px;
@@ -165,6 +206,11 @@
         margin-right: 0;
 
         .pfImgBox {
+=======
+      .pfConBox {
+        margin-top: 20px;
+        .pfIconBox {
+>>>>>>> Stashed changes
           display: none;
         }
         .pfConBox {
@@ -173,6 +219,7 @@
             display: none;
           }
 
+<<<<<<< Updated upstream
           .pfMQConBox {
             display: flex;
             justify-content: space-around;
@@ -189,6 +236,19 @@
           }
           .pfDes {
             display: none;
+=======
+        .pfMQConBox {
+          display: flex;
+          justify-content: space-around;
+
+          .pfTitle {
+            font-size: 18px;
+          }
+
+          .pfCount {
+            font-size: 25px;
+            padding-bottom: 15px;
+>>>>>>> Stashed changes
           }
         }
       }
@@ -268,7 +328,7 @@
   }
 }
 
-@media (min-width: 450px) and (max-width: 559px) {
+@media (min-width: 680px) and (max-width: 767px) {
   .pfWrap .pfCon .pfListCon {
     margin: auto;
     height: 70vw;
@@ -283,17 +343,21 @@
       }
     }
     .pfList {
-      width: 150px;
+      width: 250px;
       border-radius: 10px;
       background-color: $basic-white;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       margin-right: 0;
 
       .pfImgBox {
         display: none;
       }
       .pfConBox {
+<<<<<<< Updated upstream
         margin-top: 25px;
+=======
+        margin-top: 32px;
+>>>>>>> Stashed changes
         .pfIconBox {
           display: none;
         }
@@ -301,13 +365,14 @@
         .pfMQConBox {
           display: flex;
           justify-content: space-around;
+          align-items: center;
 
           .pfTitle {
-            font-size: 18px;
+            font-size: 20px;
           }
 
           .pfCount {
-            font-size: 25px;
+            font-size: 38px;
             padding-bottom: 15px;
           }
         }
@@ -329,64 +394,214 @@
   }
 }
 
-@media (min-width: 375px) and (max-width: 449px) {
+@media (min-width: 768px) and (max-width: 1100px) {
   .pfWrap .pfCon .pfListCon {
-    margin: auto;
-    height: 80vw;
-    width: 80vw;
-    background-color: $basic-gray1;
+    width: 90vw;
+    height: auto;
     flex-wrap: wrap;
+    margin-left: 2.604vw;
 
     .pfMQImgBox {
-      display: block;
-      img {
-        width: 80vw;
-      }
+      display: none;
     }
+
     .pfList {
-      width: 120px;
-      border-radius: 10px;
-      background-color: $basic-white;
-      margin-bottom: 15px;
-      margin-right: 0;
+      flex: 3 1 0%;
+      margin-bottom: 2rem;
+      margin-right: 2rem;
 
       .pfImgBox {
-        display: none;
+        display: flex;
+        img {
+          flex: 3 1 0%;
+        }
       }
+
       .pfConBox {
-        margin-top: 20px;
         .pfIconBox {
           display: none;
         }
-
-        .pfMQConBox {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-
-          .pfTitle {
-            font-size: 13px;
-          }
-
-          .pfCount {
-            font-size: 24px;
-            padding-bottom: 15px;
-          }
+        .pfTitle {
+          font-size: 4rem;
+          margin-top: 3rem;
         }
+        .pfCount {
+          font-size: 3.8rem;
+        }
+
         .pfDes {
-          display: none;
+          font-size: 1.8rem;
+          margin-top: 2rem;
+          width: 35rem;
         }
       }
     }
+  }
+}
 
-    .ipoList,
-    .globalList {
-      margin-right: 20px;
+@media (min-width: 1101px) and (max-width: 1200px) {
+  .pfWrap .pfCon .pfListCon {
+    .pfList {
+      width: 250px;
+
+      .pfImgBox {
+        img {
+          width: 250px;
+        }
+      }
+      .pfConBox {
+        .pfMQConBox {
+          display: flex;
+          justify-content: center;
+          margin-top: 1rem;
+
+          .pfTitle {
+            margin-right: 2rem;
+            font-size: 3rem;
+          }
+
+          .pfCount {
+            font-size: 3rem;
+            padding-top: 1rem;
+          }
+        }
+        .pfDes {
+          font-size: 1rem;
+          line-height: 1.5;
+          border-top: 0.1rem solid $basic-black;
+          width: 19rem;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          text-align: center;
+          margin: 1.5rem auto 0;
+        }
+      }
     }
+  }
+}
 
-    .maList,
-    .irList {
-      margin-left: 20px;
+@media (min-width: 1201px) and (max-width: 1340px) {
+  .pfWrap .pfCon .pfListCon {
+    .pfList {
+      width: 280px;
+
+      .pfImgBox {
+        img {
+          width: 280px;
+        }
+      }
+      .pfConBox {
+        .pfMQConBox {
+          display: flex;
+          justify-content: center;
+          margin-top: 1rem;
+
+          .pfTitle {
+            margin-right: 2rem;
+            font-size: 3.3rem;
+          }
+
+          .pfCount {
+            font-size: 3.3rem;
+            padding-top: 1rem;
+          }
+        }
+        .pfDes {
+          word-break: keep-all;
+          font-size: 1.6rem;
+          line-height: 1.5;
+          border-top: 0.1rem solid $basic-black;
+          width: 22rem;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          text-align: center;
+          margin: 1.5rem auto 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1341px) and (max-width: 1400px) {
+  .pfWrap .pfCon .pfListCon {
+    .pfList {
+      width: 300px;
+
+      .pfImgBox {
+        img {
+          width: 300px;
+        }
+      }
+      .pfConBox {
+        .pfMQConBox {
+          display: flex;
+          justify-content: center;
+          margin-top: 1rem;
+
+          .pfTitle {
+            margin-right: 2rem;
+            font-size: 3.3rem;
+          }
+
+          .pfCount {
+            font-size: 3.3rem;
+            padding-top: 1rem;
+          }
+        }
+        .pfDes {
+          word-break: keep-all;
+          font-size: 1.6rem;
+          line-height: 1.5;
+          border-top: 0.1rem solid $basic-black;
+          width: 24rem;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          text-align: center;
+          margin: 1.5rem auto 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1500px) {
+  .pfWrap .pfCon .pfListCon {
+    .pfList {
+      width: 320px;
+
+      .pfImgBox {
+        img {
+          width: 320px;
+        }
+      }
+      .pfConBox {
+        .pfMQConBox {
+          display: flex;
+          justify-content: center;
+          margin-top: 1rem;
+
+          .pfTitle {
+            margin-right: 2rem;
+            font-size: 3.3rem;
+          }
+
+          .pfCount {
+            font-size: 3.3rem;
+            padding-top: 1rem;
+          }
+        }
+        .pfDes {
+          word-break: keep-all;
+          font-size: 1.6rem;
+          line-height: 1.5;
+          border-top: 0.1rem solid $basic-black;
+          width: 26rem;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          text-align: center;
+          margin: 1.5rem auto 0;
+        }
+      }
     }
   }
 }

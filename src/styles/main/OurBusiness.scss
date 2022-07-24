@@ -102,11 +102,13 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .obWrapper {
     height: 1700px;
+
     .obCon {
       height: auto;
+      margin: auto;
       .obInner {
         height: 1600px;
         width: 54rem;

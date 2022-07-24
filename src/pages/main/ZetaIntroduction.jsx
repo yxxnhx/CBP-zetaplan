@@ -19,7 +19,7 @@ const ZetaIntroduction = () => {
             <Link to={'/zeta'}>회사 소개</Link>
           </div>
           <div className="ziEstablishmentLink">
-            <Link to={''}>사업장 소개</Link>
+            <Link to={'/zeta-map'}>사업장 소개</Link>
           </div>
         </div>
       </div>

@@ -4,17 +4,8 @@
   @include Inner;
 
   .gbTabTitleBox {
-    width: 85vw;
-    border-bottom: 0.1rem solid $basic-gray3;
-    padding-bottom: 2rem;
     .gbTabTitle {
-      background-image: url(../../img/title_box.png);
-      background-repeat: no-repeat;
-      font: {
-        size: $sub-title;
-        weight: bold;
-      }
-      padding-left: 2.6rem;
+      @include Subtitle($sub-title, $basic-gray3);
     }
   }
 
@@ -26,6 +17,7 @@
     }
     text-align: center;
     line-height: 1.8;
+    word-break: keep-all;
   }
 
   .gbContentSubTitle {
@@ -60,7 +52,8 @@
     margin-bottom: 10rem;
     display: flex;
     justify-content: center;
-    margin-left: 10.417vw;
+    margin-left: 7.417vw;
+    color: $basic-gray3;
   }
 
   .gbMaterialTitle {
@@ -97,7 +90,7 @@
         line-height: 1.5;
         width: 20%;
         margin-left: 2.279vw;
-        margin-right: 5.273vw;
+        margin-right: 8.273vw;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -160,14 +153,14 @@
           margin-bottom: 1.25vw;
           text-align: center;
           font: {
-            size: 1.198vw;
+            size: 2.1rem;
             weight: bold;
           }
         }
 
         .gbProcessItemC {
           font: {
-            size: 1vw;
+            size: 1.9rem;
             weight: bold;
           }
           word-break: keep-all;
@@ -203,9 +196,24 @@
   }
 }
 
+@media (min-width: 375px) and (max-width: 559px) {
+  .gbInner .gbPerformanceDes {
+    margin-left: 8.417vw;
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 850px) {
+  .gbInner .gbPerformanceDes {
+    margin-left: 6.417vw;
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .gbInner .gbProcessList {
     display: block;
+    margin-left: 0;
 
     .gbProcessItem {
       width: 80vw;
@@ -229,5 +237,16 @@
 
   .gbInner .gbProcessListDesBox {
     display: none;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1410px) {
+  .gbInner .gbProcessList .gbProcessItem .gbProcessItemBox {
+    .gbProcessItemT {
+      font-size: 1.5rem;
+    }
+    .gbProcessItemC {
+      font-size: 1.3rem;
+    }
   }
 }
