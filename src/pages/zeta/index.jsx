@@ -20,7 +20,6 @@ const Zeta = ({ setHdSubStyle }) => {
     AOS.init();
   }, [])
 
-  /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
@@ -32,10 +31,16 @@ const Zeta = ({ setHdSubStyle }) => {
   };
 
   const title = 'ZETA PLAN은 모든 기업들의<br /> 시작을 함께 합니다.';
+ 
+  const oneDepth='ZETA';
+  const oneDepthLink='/zeta';
+  const twoDepth='회사소개';
+  const twoDepthLink='/zeta';
+  const linkActive='twoDepth';
 
   return (
     <div className='ztInfoBox'>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive}/>
       <div className='ztIntro'>
         <div className='ztInner'>
           <h2 className='ztTitle'>

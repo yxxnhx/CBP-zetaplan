@@ -29,7 +29,8 @@ $ft-hvColor:#007ACC;
   color:#fff;
   font-size:1.8rem;
   .ftInner{
-    padding: 8rem 7.8rem;
+    width: 85vw;
+    padding: 8rem 0;
     margin: 0 auto;
     display:flex;
     justify-content:space-between;
@@ -114,6 +115,7 @@ $ft-hvColor:#007ACC;
   padding:3rem 8rem;
   overflow:auto;
   z-index: 999;
+  border-radius: 16px;
   .ftModalClose{
     font-size: 4rem;
     cursor: pointer;
@@ -177,9 +179,96 @@ $ft-hvColor:#007ACC;
   color:$main-color;
 }
 
+.ftModalContain{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999999;
+}
+.ftDim{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity:80%;
+  background-color:#1a1818;
+  z-index: 100;
+}
+
+@media all and (min-width:768px) and (max-width:1230px){
+  .ftModal{
+    width: 60%;
+    height: 50%;
+    padding: 3.5rem 3.5rem;
+  }
+  .ftModal .ftModalClose{
+    right:3rem;
+    }
+}
 
 @media all and (max-width:767px) {
+  .ftBox .ftInner{
+    flex-direction: column-reverse;
+    padding: 6rem 0;
+  }
   .ftGlobalTxt{
     display: none;
+  }
+  .ftLogo{
+    background: url('./../../img/zetaplan_splite.png') no-repeat -0.91rem -0.65rem;
+    background-size: 77.87rem 36.4rem;
+    width: 27.17rem;
+    height: 6.11rem;
+    margin-top: 2rem;
+  }
+  .ftSnsBox{
+    justify-content: end;
+  }
+  .ftSnsBox .ftSnsFb{
+    background: url('./../../img/zetaplan_splite.png') no-repeat -0.78rem -13rem;
+    background-size: 77.87rem 36.4rem;
+    width: 5.33rem;
+    height: 5.33rem;
+    margin-right: 1.7rem;
+  }
+  .ftSnsBox .ftSnsYou{
+    background: url('./../../img/zetaplan_splite.png') no-repeat -6.89rem -13rem;
+    background-size: 77.87rem 36.4rem;
+    width: 5.33rem;
+    height: 5.33rem;
+    margin-right: 1.7rem;
+  }
+  .ftSnsBox .ftSnsBl{
+   background: url('./../../img/zetaplan_splite.png') no-repeat -13rem -13rem;
+    background-size: 77.87rem 36.4rem;
+    width: 5.33rem;
+    height: 5.33rem;
+  }
+  .ftInfoBox{
+    flex-wrap: wrap;
+    line-height: 2.4;
+    margin: 3rem 0;
+  }
+  .ftInfoBox .ftInfoList{
+    flex:50%;
+    font-size: 2.3rem;
+  }
+  .ftInfoBox .ftInfoList::after{
+    height: 1.8rem;
+  }
+  .ftInfoBox .ftInfoList:last-child::after{
+    display: inline-block;
+  }
+
+  .ftModal{
+    width: 90%;
+    height:60%;
   }
 }

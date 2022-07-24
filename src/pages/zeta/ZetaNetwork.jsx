@@ -17,16 +17,21 @@ const ZetaNetwork = ({ setHdSubStyle }) => {
     AOS.init();
   }, []);
 
-  /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
 
   const title = '아시아를 넘어 세계로 나아가는<br /> ZETA PLAN 네트워크';
+  
+  const oneDepth='ZETA';
+  const oneDepthLink='/zeta';
+  const twoDepth='제휴 네트워크';
+  const twoDepthLink='/zeta-network';
+  const linkActive='twoDepth';
 
   return (
     <div className='ztNetWorkBox'>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive} />
       <div className='ztNtInner'>
         <h2 className='ztTitle'>
             제휴 네트워크

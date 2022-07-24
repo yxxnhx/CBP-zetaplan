@@ -4,14 +4,16 @@ import splite from '../../../img/zetaplan_splite.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import BreadCrumb from './BreadCrumb';
 
-const SubBanner = ({ title, img }) => {
+const SubBanner = ({ title,img,oneDepth,twoDepth,threeDepth,oneDepthLink,twoDepthLink,threeDepthLink,linkActive }) => {
   useEffect(() => {
     AOS.init();
   })
 
   return (
     <SubBannerContainer img={`${img}`}>
+      <BreadCrumb oneDepth={oneDepth} twoDepth={twoDepth} threeDepth={threeDepth} oneDepthLink={oneDepthLink} twoDepthLink={twoDepthLink} threeDepthLink={threeDepthLink} linkActive={linkActive}/>
       <SubBannerTextContainer>
         <div className='leftBracket'></div>
         <p data-aos="zoom-in" data-aos-duration="2150" dangerouslySetInnerHTML={{ __html: title }}></p>

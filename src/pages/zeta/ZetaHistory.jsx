@@ -18,6 +18,12 @@ const ZetaHistory = () => {
 
   const title = '지속적인 도전으로 미래를 만들어낸<br /> ZETA PLAN HISTORY';
 
+  const oneDepth='ZETA';
+  const oneDepthLink='/zeta';
+  const twoDepth='연혁';
+  const twoDepthLink='/zeta-history';
+  const linkActive='twoDepth';
+
   const [scrollPosition, setScrollPosition] = useState(0);
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
@@ -65,7 +71,7 @@ const ZetaHistory = () => {
 
   return (
     <div className='ztHisBox'>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive}/>
       <div className="ztInner" >
         <h2 className='ztTitle'>
           연혁

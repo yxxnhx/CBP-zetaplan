@@ -9,19 +9,24 @@ import './../../styles/zeta/zetaPeople.scss'
 const ZetaPeople = ({ setHdSubStyle }) => {
   const title = '제타 플랜의 전문가들이 돕겠습니다.'
 
+  const oneDepth='ZETA';
+  const oneDepthLink='/zeta';
+  const twoDepth='PEOPLE';
+  const twoDepthLink='/zeta-people';
+  const linkActive='twoDepth';
+
   const [peopleDb, setPeopleDb] = useState([]);
   useEffect(() => {
     setPeopleDb(peopleData);
   }, [])
 
-  /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
 
   return (
     <div>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive} />
       <div className="inner">
         <div className="zetaPeoSubtitle">PEOPLE</div>
         <ul className='zetaPeoList'>

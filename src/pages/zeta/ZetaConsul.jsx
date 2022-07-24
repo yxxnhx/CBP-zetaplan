@@ -15,16 +15,21 @@ const ZetaConsul = ({ setHdSubStyle }) => {
     AOS.init();
   }, []);
 
-  /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
 
   const title = 'ZETA PLAN\'S  CONSULTING';
 
+  const oneDepth='ZETA';
+  const oneDepthLink='/zeta';
+  const twoDepth='컨설팅 부문';
+  const twoDepthLink='/zeta-consul';
+  const linkActive='twoDepth';
+
   return (
     <div className='ztCsBox'>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive} />
       <div className="ztInner">
         <h2 className='ztTitle'>
           컨설팅 부문

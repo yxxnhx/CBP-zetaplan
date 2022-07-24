@@ -11,16 +11,21 @@ const ZetaCi = ({ setHdSubStyle }) => {
     AOS.init();
   }, []);
 
-  /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
 
   const title = 'ZETA PLAN의<br />가치와 비전을 담은 CI';
 
+  const oneDepth='ZETA';
+  const oneDepthLink='/zeta';
+  const twoDepth='CI';
+  const twoDepthLink='/zeta-ci';
+  const linkActive='twoDepth';
+
   return (
     <div className='ztCiBox'>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive} />
       <div className="ztCiContain">
         <div className="ztInner">
           <h2 className='ztTitle'>

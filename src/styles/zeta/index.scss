@@ -49,8 +49,10 @@ $zt-ftExtra:900;
 }
 
 .ztIntro{
-    background-color: $basic-black;
+    background:url('./../../img/zeta/zt_bg.jpg') no-repeat top;
+    background-size: cover;
     font-weight: $zt-ftBold;
+    margin-bottom: -3px;
     .ztTitle{
         &:after{
             display: none;
@@ -73,13 +75,13 @@ $zt-ftExtra:900;
         }
         .ztTextGr{
             font-size:$size-lg;
-            color:$zt-grayColor;
+            color:#cec7c7d4;
         }
     }
 }
 
 .ztMessage{
-  padding-top: 38.2rem;
+  padding-top: 25rem;
   background-color: $basic-black;
   color:$basic-white;
   line-height:1.4;

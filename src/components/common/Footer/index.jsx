@@ -1,6 +1,6 @@
 import React from 'react';
 import './../../../styles/footer/footer.scss';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 const Footer = () => {
   const goToSnsFb = () => {
@@ -42,48 +42,82 @@ const Footer = () => {
   const [ftsModal, setFtsModal] = useState(false);
 
   function FtModal(){
+    useEffect(() => {
+      const scroll = window.scrollY;
+      document.body.style.cssText = `
+        position: fixed;
+        top: -${scroll}px;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+      `;
+      return () => {
+        document.body.style.cssText = '';
+        window.scrollTo(0, scroll);
+      }
+    },[]);
     return(
-      <div className='ftModal'>
-        <p className='ftModalClose' onClick={()=>{setFtModal(!ftModal)}}></p>
-        <div className='ftModalTextBox'>
-          <h4 className='ftModalTitle'>ZETA PLAN의 개인정보처리방침</h4>
-          <p className='ftModalTxt'>제타플랜의 개인정보처리방침에 대해 안내드립니다.</p>
-          <p className='ftModalTxt'>이용자 개인정보 보호를 여러 경영요소 가운데 최우선의 가치로 두고 있습니다.<br/>(주)제타플랜은 서비스 기획부터 종료까지 개인정보보호법 등 국내의 개인정보 보호 법령을 철저히 준수합니다. 또한 OECD의 개인정보 보호 가이드라인 등 국제 기준을 준수하여 서비스를 제공합니다.<br/>본 개인정보처리방침의 목차는 아래와 같습니다.
-          관계법령이 요구하는 개인정보처리방침의 필수 사항과 자체적으로 이용자 개인정보 보호에 있어 중요하게 판단하는 내용을 포함하였습니다.</p>
-          <ul className='ftModalTxt'>
-            <li className='ftModalTxts'>1.개인정보처리방침의 의의</li>
-            <li className='ftModalTxts'>2.수집하는 개인정보 </li>
-            <li className='ftModalTxts'>3.수집한 개인정보의 이용</li>
-            <li className='ftModalTxts'>4.개인정보의 제공 및 위탁</li>
-            <li className='ftModalTxts'>5.개인정보의 파기</li>
-            <li className='ftModalTxts'>6.이용자 및 법정대리인의 권리와 행사 방법</li>
-          </ul>
-          <p className='ftModalTxt ftModalTxtLast'>
-            제타플랜은 이용자의 개인정보를 안전하게 관리하기 위하여 최선을 다하며, 개인정보보호법에서 요구하는 수준 이상으로 개인정보를 보호하고 있습니다.
-          </p>
+      <div className='ftModalContain'>
+        <div className='ftDim' onClick={()=>{setFtModal(!ftModal)}}></div>
+        <div className='ftModal'>
+          <p className='ftModalClose' onClick={()=>{setFtModal(!ftModal)}}></p>
+          <div className='ftModalTextBox'>
+            <h4 className='ftModalTitle'>ZETA PLAN의 개인정보처리방침</h4>
+            <p className='ftModalTxt'>제타플랜의 개인정보처리방침에 대해 안내드립니다.</p>
+            <p className='ftModalTxt'>이용자 개인정보 보호를 여러 경영요소 가운데 최우선의 가치로 두고 있습니다.<br/>(주)제타플랜은 서비스 기획부터 종료까지 개인정보보호법 등 국내의 개인정보 보호 법령을 철저히 준수합니다. 또한 OECD의 개인정보 보호 가이드라인 등 국제 기준을 준수하여 서비스를 제공합니다.<br/>본 개인정보처리방침의 목차는 아래와 같습니다.
+            관계법령이 요구하는 개인정보처리방침의 필수 사항과 자체적으로 이용자 개인정보 보호에 있어 중요하게 판단하는 내용을 포함하였습니다.</p>
+            <ul className='ftModalTxt'>
+              <li className='ftModalTxts'>1.개인정보처리방침의 의의</li>
+              <li className='ftModalTxts'>2.수집하는 개인정보 </li>
+              <li className='ftModalTxts'>3.수집한 개인정보의 이용</li>
+              <li className='ftModalTxts'>4.개인정보의 제공 및 위탁</li>
+              <li className='ftModalTxts'>5.개인정보의 파기</li>
+              <li className='ftModalTxts'>6.이용자 및 법정대리인의 권리와 행사 방법</li>
+            </ul>
+            <p className='ftModalTxt ftModalTxtLast'>
+              제타플랜은 이용자의 개인정보를 안전하게 관리하기 위하여 최선을 다하며, 개인정보보호법에서 요구하는 수준 이상으로 개인정보를 보호하고 있습니다.
+            </p>
+          </div>
         </div>
       </div>
     )
   }
 
   function FtcusModal(){
+    useEffect(() => {
+      const scroll = window.scrollY;
+      document.body.style.cssText = `
+        position: fixed;
+        top: -${scroll}px;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+      `;
+      return () => {
+        document.body.style.cssText = '';
+        window.scrollTo(0, scroll);
+      }
+    },[]);
     return(
-      <div className='ftModal ftsModal'>
-        <p className='ftModalClose' onClick={()=>{setFtsModal(!ftsModal)}}></p>
-        <div className='ftModalTextBox ftsModalTextBox'>
-          <h4 className='ftModalTitle'>ZETA PLAN의 고객센터</h4>
-          <p className='ftsModalTxt'>궁금한 점이 있으시면 편하게 문의해주세요.</p>
-          <ul className='ftsModalTxt'>
-            <li className='ftsModalTxt'>
-              전화번호 : 
-              <span className='ftModalHv' onClick={goToTelSeoul}> 02) 538-4801</span>
-            </li>
-            <li className='ftModalTxts ftsModalTxt'>부가 문의 전화번호 : <span className='ftModalHv' onClick={goToTelPlus}> 02)561-6698</span>, <span className='ftModalHv' onClick={goToTelsPlus}>070)8129-5884</span></li>
-            <li className='ftsModalTxt ftModalHv' onClick={goToMail}>zetabiz@zetaplan.com</li>
-          </ul>
-          <p className='ftsModalTxt ftsModalTxtLast'>
-            제타플랜은 고객님을 위해 항상 준비되어 있습니다.
-          </p>
+      <div className='ftModalContain'>
+        <div className='ftDim' onClick={()=>{setFtsModal(!ftsModal)}}></div>
+        <div className='ftModal ftsModal'>
+          <p className='ftModalClose' onClick={()=>{setFtsModal(!ftsModal)}}></p>
+          <div className='ftModalTextBox ftsModalTextBox'>
+            <h4 className='ftModalTitle'>ZETA PLAN의 고객센터</h4>
+            <p className='ftsModalTxt'>궁금한 점이 있으시면 편하게 문의해주세요.</p>
+            <ul className='ftsModalTxt'>
+              <li className='ftsModalTxt'>
+                전화번호 : 
+                <span className='ftModalHv' onClick={goToTelSeoul}> 02) 538-4801</span>
+              </li>
+              <li className='ftModalTxts ftsModalTxt'>부가 문의 전화번호 : <span className='ftModalHv' onClick={goToTelPlus}> 02)561-6698</span>, <span className='ftModalHv' onClick={goToTelsPlus}>070)8129-5884</span></li>
+              <li className='ftsModalTxt ftModalHv' onClick={goToMail}>zetabiz@zetaplan.com</li>
+            </ul>
+            <p className='ftsModalTxt ftsModalTxtLast'>
+              제타플랜은 고객님을 위해 항상 준비되어 있습니다.
+            </p>
+          </div>
         </div>
       </div>
     )

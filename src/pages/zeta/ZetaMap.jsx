@@ -20,7 +20,6 @@ const ZetaMap = ({ setHdSubStyle }) => {
     AOS.init();
   }, [])
 
-  /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
@@ -29,9 +28,15 @@ const ZetaMap = ({ setHdSubStyle }) => {
 
   const title = 'ZETAPLAN INVEST<br /> 오신 걸 환영합니다.';
 
+  const oneDepth='ZETA';
+  const oneDepthLink='/zeta';
+  const twoDepth='오시는 길';
+  const twoDepthLink='/zeta-map';
+  const linkActive='twoDepth';
+
   return (
     <div className='ztMapBox'>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive} />
       <div className="ztInner">
         <h2 className='ztTitle ztMapTitle' data-aos="fade-up" data-aos-duration="2000">
           오시는 길
