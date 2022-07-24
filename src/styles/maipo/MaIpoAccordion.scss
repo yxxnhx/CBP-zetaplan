@@ -43,14 +43,14 @@
 
     .maUnderBtn {
       background: url('../../img/icon/bottom_arrow@2x.png') no-repeat center / cover;
-      width: 1.406vw;
-      height: 0.938vw;
+      width: 2.5rem;
+      height: 1.5rem;
     }
 
     .maTopBtn {
       background: url('../../img/icon/top_arrow@2x.png') no-repeat center / cover;
-      width: 1.406vw;
-      height: 0.938vw;
+      width: 2.5rem;
+      height: 1.5rem;
     }
   }
 }
@@ -281,51 +281,63 @@
   .maProContWrap {
     background: none;
     position: sticky;
-    height: 110vw;
+    height: 135rem;
 
     .maProCont .maProCircle {
       opacity: 1;
+      width: 6rem;
+      height: 6rem;
+
+      p {
+        font-size: 2rem;
+        line-height: 6rem;
+      }
+    }
+
+    .maProCont .maProTxt {
+      padding-left: 2rem;
+      padding-top: 2rem;
     }
   }
 
   .maProCont {
     &:nth-child(2) {
-      top: 12vw;
+      top: 15rem;
       left: 0;
     }
 
     &:nth-child(3) {
-      top: 24vw;
+      top: 30rem;
       left: 0;
     }
 
     &:nth-child(4) {
-      top: 36vw;
+      top: 45rem;
       left: 0;
     }
 
     &:nth-child(5) {
-      top: 48vw;
+      top: 60rem;
       left: 0;
     }
 
     &:nth-child(6) {
-      top: 60vw;
+      top: 75rem;
       left: 0;
     }
 
     &:nth-child(7) {
-      top: 72vw;
+      top: 90rem;
       left: 0;
     }
 
     &:nth-child(8) {
-      top: 84vw;
+      top: 105rem;
       left: 0;
     }
 
     &:nth-child(9) {
-      top: 96vw;
+      top: 120rem;
       left: 0;
     }
   }
@@ -339,6 +351,23 @@
     margin-bottom: 1vw;
     font-size: 1.8rem;
   }
+
+  .maProContWrap .maProCont .maProTxt p .maProIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width:500px) {
+
+  .maProContWrap .maProCont .maProTxt li {
+    line-height: 2.5rem;
+  }
+
+  .maProContWrap .maProCont .maProTxt p .maProIcon {
+    margin-top: -0.5rem;
+  }
+
 }
 
 

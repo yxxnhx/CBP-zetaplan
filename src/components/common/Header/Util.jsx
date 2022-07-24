@@ -6,15 +6,19 @@ import Sitemap from './Sitemap';
 
 const Util = () => {
   let [srhOpen, setSrhOpen] = useState(false);
+  let [srhBtnX, setsrhBtnX] = useState('hdSearchBtn');
 
   const openSrh = () => {
     setSrhOpen(true);
     document.body.style.overflow = 'hidden';
+    setsrhBtnX('hdSearchBtn hdSearchBtnX')
   };
   const closeSrh = () => {
     setSrhOpen(false);
     document.body.style.overflow = 'unset'
+    setsrhBtnX('hdSearchBtn')
   }
+
 
   const [smOpen, setSmOpen] = useState(false);
 
@@ -24,7 +28,8 @@ const Util = () => {
   };
   const closeSm = () => {
     setSmOpen(false);
-    document.body.style.overflow = 'unset'
+    document.body.style.overflowX = 'hidden';
+    document.body.style.overflowY = 'scroll';
   }
 
 
@@ -41,13 +46,11 @@ const Util = () => {
         <li><Link to={'/'}>CHN</Link></li>
       </ul> */}
 
-      <button className='hdSearchBtn' onClick={openSrh}></button>
+      <button className={srhBtnX} onClick={openSrh}></button>
       <Search open={srhOpen} close={closeSrh} />
 
       <button className='hdSitemapBtn' onClick={openSm}>sitemap</button>
       <Sitemap open={smOpen} close={closeSm} />
-
-
     </div>
   );
 };

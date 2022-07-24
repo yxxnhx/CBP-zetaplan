@@ -239,12 +239,105 @@
 
 @media (max-width:768px) {
   .ipoProWrap .ipoProStap .ipoProTxt li {
-    font-size: 0.8rem;
+    font-size: 0.5vw;
   }
 }
 
 @media (max-width:600px) {
   .ipoProWrap {
     margin-left: 0;
+  }
+
+  .ipoProWrap .ipoProStap .ipoProTxt p {
+    font-size: 2.5vw;
+  }
+
+}
+
+@media (max-width:500px) {
+
+  .ipoProWrap {
+    background: none;
+    position: sticky;
+    height: 135rem;
+
+    .ipoProStap .ipoProCircle {
+      opacity: 1;
+      width: 6rem;
+      height: 6rem;
+
+      p {
+        font-size: 2rem;
+        line-height: 6rem;
+      }
+    }
+
+    .ipoProStap .ipoProTxt {
+      padding-left: 2rem;
+      padding-top: 2rem;
+    }
+  }
+
+  .ipoProStap {
+    &:nth-child(2) {
+      top: 15rem;
+      left: 0;
+    }
+
+    &:nth-child(3) {
+      top: 30rem;
+      left: 0;
+    }
+
+    &:nth-child(4) {
+      top: 45rem;
+      left: 0;
+    }
+
+    &:nth-child(5) {
+      top: 60rem;
+      left: 0;
+    }
+
+    &:nth-child(6) {
+      top: 75rem;
+      left: 0;
+    }
+
+    &:nth-child(7) {
+      top: 90rem;
+      left: 0;
+    }
+
+    &:nth-child(8) {
+      top: 105rem;
+      left: 0;
+    }
+
+    &:nth-child(9) {
+      top: 120rem;
+      left: 0;
+    }
+  }
+
+  .ipoProWrap .ipoProStap .ipoProTxt p {
+    margin-bottom: 2vw;
+    font-size: 2.1rem;
+  }
+
+  .ipoProWrap .ipoProStap .ipoProTxt li {
+    margin-bottom: 1vw;
+    font-size: 1.8rem;
+  }
+
+  .ipoProWrap .ipoProStap .ipoProTxt p .ipoProIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width:375px) {
+  .ipoProWrap .ipoProStap .ipoProTxt p {
+    line-height: 3rem;
   }
 }

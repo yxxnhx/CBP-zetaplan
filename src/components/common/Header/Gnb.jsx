@@ -5,7 +5,7 @@ const Gnb = () => {
   return (
     <ul className='hdGnbArea'>
       <li className='hdDep1'>
-        <Link to={'/zeta'} className='hdSub'>Zeta</Link>
+        <Link to={'/zeta'} className='hdSub'>ZETA</Link>
         <ul className='hdDep2'>
           <li><Link to={'/zeta'}>회사소개</Link></li>
           <li><Link to={'/zeta-history'}>연혁</Link></li>
@@ -17,7 +17,7 @@ const Gnb = () => {
         </ul>
       </li>
       <li className='hdDep1'>
-        <Link to={'/maipo'} className='hdSub'>M&A / IPO</Link>
+        <Link to={'/maipo-info'} className='hdSub'>M&A / IPO</Link>
         <ul className='hdDep2'>
           <li><Link to={'/maipo-info'}>개요</Link></li>
           <li><Link to={'/maipo-process'}>Process</Link></li>
@@ -73,6 +73,7 @@ const Gnb = () => {
               <li><Link to={''}>M&A・ 투자정보</Link></li>
               <li><Link to={''}>정부지원사업</Link></li>
               <li><Link to={''}>정책자금 / 기업지원</Link></li>
+              <li><Link to={''}>기술거래리스트</Link></li>
               <li><Link to={''}>컨설팅 실적</Link></li>
             </ul>
           </li>

@@ -4,7 +4,7 @@ import maInfoMainImg from '../../../img/m&a_ipo/m&a_summery@2x.png'
 const MaInfo = () => {
   return (
     <div className='miInfoContent'>
-      <img className='miInfoMainImg' src={maInfoMainImg} alt="M&A 개요 메인 이미지" />
+      <img className='miInfoMainImg maInfoMainImg' src={maInfoMainImg} alt="M&A 개요 메인 이미지" />
 
       <div className='miInfoTxt'>
         <p>Mergers And Acquisitions</p>

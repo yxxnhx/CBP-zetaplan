@@ -23,7 +23,6 @@ const Search = ({ open, close }) => {
                 </ul>
               </div>
             </div>
-            <button onClick={close} className='hdSerarchClose'>X</button>
           </div >)
           : null
       }

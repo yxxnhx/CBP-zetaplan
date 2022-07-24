@@ -2,7 +2,7 @@
 
 @import '../GlobalStyle.scss';
 
-$header-height: 7.344vw;
+$header-height: 12.1rem;
 
 
 /* header 전체 */
@@ -24,7 +24,7 @@ header.hdMain {
 
     .hdLogo {
       display: block;
-      margin-top: 2.135vw;
+      margin-top: 4rem;
       margin-left: 4.063vw;
       font-size: 0;
       background: url('../../img/icon/zetaplan_logo_w@2x.png') no-repeat center / cover;
@@ -40,9 +40,7 @@ header.hdMain {
     transition: 0.5s;
 
     .hdLogo {
-      background: url('../../img/icon/zetaplan_logo@2x.png') no-repeat center / cover;
-      width: 19rem;
-      height: 5rem;
+      background: url(../../img/icon/zetaplan_logo@2x.png) no-repeat center / cover;
     }
 
     .hdUtil .hdLang {
@@ -50,17 +48,17 @@ header.hdMain {
     }
 
     .hdUtil .hdSearchBtn {
-      background: url('../../img/zetaplan_splite.png') no-repeat -419px -151px;
-      background-size: 599px 280px;
-      width: 18px;
-      height: 18px;
+      background: url('../../img/icon/search_black@2x.png') no-repeat center / cover;
+
+      &.hdSearchBtnX {
+        background: url(../../img/icon/close_btn@2x.png) no-repeat center / cover;
+      }
     }
 
     .hdUtil .hdSitemapBtn {
-      background: url('../../img/zetaplan_splite.png') no-repeat -487px -153px;
-      background-size: 599px 280px;
-      width: 21px;
-      height: 13px;
+      background: url('../../img/icon/menu_black@2x.png') no-repeat center / cover;
+      width: 1.198vw;
+      height: 0.885vw;
     }
   }
 }
@@ -71,9 +69,9 @@ header.hdSub {
   background-color: $basic-white;
 
   .hd .hdLogo {
-    background: url('../../img/icon/zetaplan_logo_w@2x.png') no-repeat center / cover;
-    width: 10.885vw;
-    height: 2.865vw;
+    background: url('../../img/icon/zetaplan_logo@2x.png') no-repeat center / cover;
+    width: 20.9rem;
+    height: 5.5rem;
   }
 
   .hdGnbArea {
@@ -86,17 +84,15 @@ header.hdSub {
     }
 
     .hdSearchBtn {
-      background: url('../../img/zetaplan_splite.png') no-repeat -419px -151px;
-      background-size: 599px 280px;
-      width: 18px;
-      height: 18px;
+      background: url('../../img/icon/search_black@2x.png') no-repeat center / cover;
+      width: 1.042vw;
+      height: 1.042vw;
     }
 
     .hdSitemapBtn {
-      background: url('../../img/zetaplan_splite.png') no-repeat -487px -153px;
-      background-size: 599px 280px;
-      width: 21px;
-      height: 13px;
+      background: url('../../img/icon/menu_black@2x.png') no-repeat center / cover;
+      width: 1.198vw;
+      height: 0.885vw;
     }
   }
 }
@@ -190,16 +186,16 @@ header.hdSub {
 .hdUtil {
   width: 9.375vw;
   height: $header-height;
-  padding-top: 2.604vw;
+  padding-top: 4.8rem;
   display: flex;
   justify-content: space-between;
-  margin-right: 4.167vw;
+  margin-right: 5rem;
 
   .hdLang {
     color: $basic-white;
     text-align: center;
     width: 3.646vw;
-    height: 2.083vw;
+    margin-top: -4.5rem;
     font-size: 2rem;
     font-family: 'Montserrat';
     outline: 0 none;
@@ -219,7 +215,7 @@ header.hdSub {
     width: 1.042vw;
     height: 1.042vw;
     font-size: 0;
-    margin-top: 0.521vw;
+    margin-top: 0.5rem;
   }
 
   .hdSitemapBtn {
@@ -227,7 +223,7 @@ header.hdSub {
     width: 1.198vw;
     height: 0.885vw;
     font-size: 0;
-    margin-top: 0.521vw;
+    margin-top: 0.5rem;
     margin-left: 0.521vw;
   }
 }
@@ -252,26 +248,24 @@ header.hdSub {
 
   .hdSearchWrap {
     width: 100%;
-    height: 50%;
+    height: 45rem;
     background-color: $basic-gray1;
 
     .hdSearchContent {
-      width: 36.458vw;
+      width: 40%;
       margin: auto;
-      padding-top: 6.250vw;
+      padding-top: 10rem;
 
       .hdSearchInput {
         position: relative;
 
         input {
           width: 100%;
-          height: 0.521vw;
           border-radius: 5rem;
           border: 1px solid $basic-gray2;
           background-color: $basic-white;
-          padding: 1.823vw;
+          padding: 1.5vw;
           font-size: 1.8rem;
-          font-family: 'Noto Sans KR';
           font-weight: 700;
           color: #707070;
           outline: none;
@@ -279,11 +273,11 @@ header.hdSub {
 
         button {
           background: url('../../img/icon/search_b@2x.png') no-repeat center / cover;
-          width: 1.563vw;
-          height: 1.563vw;
+          width: 3rem;
+          height: 3rem;
           position: absolute;
-          top: 1.198vw;
-          right: 1.458vw;
+          top: 1.5vw;
+          right: 2.5rem;
           font-size: 0;
         }
       }
@@ -304,7 +298,8 @@ header.hdSub {
           button {
             border: 1px solid $basic-gray2;
             border-radius: 1rem;
-            padding: 0.677vw 1.146vw;
+            width: 10rem;
+            height: 5rem;
             margin-right: 1.042vw;
             font-weight: 400;
             font-size: 2.3rem;
@@ -335,7 +330,6 @@ header.hdSub {
   background-color: $basic-white;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
   visibility: hidden;
 }
 
@@ -347,22 +341,23 @@ header.hdSub {
 
 .hdSitemap {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 100%;
 
   .hdSmLeft {
     background: url(../../img/bg/consul_bg@2x.png) no-repeat center / cover;
+    position: fixed;
     width: 55rem;
     height: 100vh;
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7rem;
 
     .hdSmLeftTop {
       background: url('../../img/icon/zetaplan_logo_w@2x.png') no-repeat center / cover;
       width: 20.9rem;
       height: 5.5rem;
-      position: relative;
-      top: 7rem;
-      left: 7rem;
       font-size: 0;
     }
 
@@ -372,9 +367,6 @@ header.hdSub {
       font-family: 'Noto Sans KR';
       font-weight: 900;
       line-height: 7rem;
-      position: relative;
-      top: 24rem;
-      left: 7rem;
     }
 
     .hdSmLeftBt {
@@ -383,21 +375,24 @@ header.hdSub {
       font-family: 'Noto Sans KR';
       font-weight: 400;
       line-height: 5rem;
-      position: relative;
-      top: 48rem;
-      left: 7rem;
     }
   }
 
   .hdSmRight {
+    width: 100%;
     height: 100%;
-    color: $basic-black;
     position: relative;
     left: 55rem;
+    color: $basic-black;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding-left: 8rem;
+
 
     .hdSmArea {
-      margin-left: 15rem;
-      margin-top: 13rem;
+      width: 100%;
+      height: 90%;
+      padding: 8rem 0;
 
       .hdSmList {
         display: flex;
@@ -475,19 +470,20 @@ header.hdSub {
         }
       }
     }
+  }
 
-    button {
-      position: fixed;
-      top: 8.7rem;
-      right: 10rem;
-      background: url('../../img/icon/close_btn@2x.png') no-repeat center / cover;
-      width: 1.7rem;
-      height: 1.7rem;
-      font-size: 0;
-    }
-
+  button {
+    position: absolute;
+    top: 7rem;
+    right: 7rem;
+    background: url('../../img/icon/close_btn@2x.png') no-repeat center / cover;
+    width: 1.7rem;
+    height: 1.7rem;
+    font-size: 0;
   }
 }
+
+
 
 
 
@@ -495,11 +491,6 @@ header.hdSub {
 // 미디어 쿼리
 
 @media (max-width:1822px) {
-
-  .hdSitemap .hdSmRight .hdSmArea {
-    margin-top: 7rem;
-    margin-left: 7rem;
-  }
 
   .hdSitemap .hdSmRight .hdSmArea .hdSmList {
     display: block;
@@ -526,15 +517,12 @@ header.hdSub {
   .hdGnbArea .hdDep1 .hdSub {
     font-size: 2rem;
   }
-
-  .hdSearch .hdSearchWrap {
-    height: 40%;
-  }
 }
 
 @media (max-width:1500px) {
-  .hdSitemap .hdSmRight .hdSmArea {
-    width: 80%;
+
+  .hdSitemap .hdSmRight .hdSmArea .hdSmList {
+    width: 47vw;
   }
 
   .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 {
@@ -559,6 +547,7 @@ header.hdSub {
 
   .hdUtil .hdLang {
     font-size: 1.6rem;
+    margin-top: -5.1rem;
   }
 
   .hdGnbArea .hdDep1:hover>.hdDep2>li {
@@ -574,10 +563,6 @@ header.hdSub {
   .hdSearch .hdSearchWrap .hdSearchContent .hdButtonsArea .hdButtons button {
     font-size: 2rem;
   }
-
-  .hdSitemap .hdSmRight .hdSmArea {
-    width: 70%;
-  }
 }
 
 @media (max-width:1250px) {
@@ -586,24 +571,16 @@ header.hdSub {
     width: 10rem;
   }
 
-  .hdUtil {
-    width: 12vw;
+  .hdGnbArea .hdDep1:hover>.hdDep2>li>a {
+    font-size: 1.5rem;
   }
 
-  .hdSearch .hdSearchWrap {
-    height: 33%;
+  .hdUtil {
+    width: 12rem;
   }
 
   .hdSearch .hdSearchWrap .hdSearchContent .hdButtonsArea .hdButtons button {
     font-size: 1.7rem;
-  }
-
-  .hdSearch.hdOpenSearch {
-    top: 7vw;
-  }
-
-  .hdSitemap .hdSmLeft {
-    width: 50rem;
   }
 
   .hdSitemap .hdSmRight {
@@ -638,6 +615,7 @@ header.hdSub {
 
   .hdSitemap .hdSmRight .hdSmArea .hdSmList {
     display: flex;
+    width: 80vw;
   }
 
   .hdSitemap .hdSmRight button {
@@ -647,18 +625,16 @@ header.hdSub {
 }
 
 @media (max-width:1023px) {
-  header.hdMain .hd {
-    height: 11.1rem;
-  }
 
   header.hdMain .hd .hdLogo {
     width: 23rem;
     height: 6rem;
+    margin-top: 3rem;
   }
 
   header.hdMain:hover>.hd .hdLogo {
-    width: 25rem;
-    height: 5.8rem;
+    width: 23rem;
+    height: 6rem;
   }
 
   .hdGnbArea {
@@ -666,18 +642,26 @@ header.hdSub {
   }
 
   .hdUtil {
-    width: 16vw;
-    margin-right: 7rem;
+    width: 18rem;
   }
 
   .hdUtil .hdLang {
     font-size: 2.5rem;
     width: 6rem;
-    height: 3.5rem;
-    line-height: 3.5rem;
+    margin-top: -4.2rem;
   }
 
   .hdUtil .hdSearchBtn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  header.hdMain:hover>.hd .hdUtil .hdSearchBtn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  header.hdSub .hdUtil .hdSearchBtn {
     width: 2.5rem;
     height: 2.5rem;
   }
@@ -687,16 +671,19 @@ header.hdSub {
     height: 2.1rem;
   }
 
-  .hdSearch .hdSearchWrap {
-    height: 30%;
+
+  header.hdMain:hover>.hd .hdUtil .hdSitemapBtn {
+    width: 2.5rem;
+    height: 2.1rem;
   }
 
-  .hdSearch.hdOpenSearch {
-    top: 9vw;
+  header.hdSub .hdUtil .hdSitemapBtn {
+    width: 2.5rem;
+    height: 2.1rem;
   }
 
   .hdSearch .hdSearchWrap .hdSearchContent {
-    width: 40vw;
+    width: 50vw;
   }
 
   .hdSearch .hdSearchWrap .hdSearchContent .hdButtonsArea .hdButtons button {
@@ -734,35 +721,25 @@ header.hdSub {
 }
 
 @media (max-width:670px) {
-  .hdUtil {
-    width: 20vw;
-    margin-right: 9rem;
-  }
 
-  .hdSearch .hdSearchWrap {
-    height: 25%;
-  }
 
   .hdSearch .hdSearchWrap .hdSearchContent {
-    width: 55vw;
+    width: 65vw;
   }
 }
 
 @media (max-width:625px) {
-  .hdSearch.hdOpenSearch {
-    top: 11vw;
-  }
 
   .hdSearch .hdSearchWrap .hdSearchContent .hdSearchInput input {
-    height: 6vw;
+    height: 5rem;
   }
 
   .hdSearch .hdSearchWrap .hdSearchContent .hdSearchInput button {
     position: absolute;
-    top: 1.4vw;
-    right: 2vw;
-    height: 3vw;
-    width: 3vw;
+    top: 1.5rem;
+    right: 1.8rem;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 
   .hdSitemap .hdSmRight .hdSmArea {
@@ -772,7 +749,7 @@ header.hdSub {
   }
 
   .hdSitemap .hdSmRight .hdSmArea .hdSmList {
-    width: 40%;
+    width: 50%;
     border: none;
     margin-bottom: 0;
   }
@@ -823,17 +800,38 @@ header.hdSub {
     height: 10rem;
   }
 
+  header.hdMain .hd .hdLogo {
+    width: 21rem;
+    height: 5rem;
+    margin-top: 3rem;
+  }
+
+  header.hdMain:hover>.hd .hdLogo {
+    width: 21rem;
+    height: 5rem;
+    margin-top: 3rem;
+  }
+
   .hdUtil {
-    width: 24vw;
-    margin-right: 7rem;
-    margin-top: 1rem;
+    margin-top: -1rem;
   }
 
   .hdSearch.hdOpenSearch {
-    top: 12vw;
+    top: 10rem;
   }
 
   .hdSearch .hdSearchWrap .hdSearchContent {
-    width: 70vw;
+    width: 75vw;
   }
+}
+
+@media (max-width:380px) {
+  .hdSearch .hdSearchWrap .hdSearchContent .hdButtonsArea .hdButtons {
+    flex-wrap: wrap;
+  }
+
+  .hdSitemap .hdSmRight .hdSmArea .hdSmList {
+    width: 100%;
+  }
+
 }

@@ -120,6 +120,11 @@
 }
 
 @media (max-width:768px) {
+  .miInfoMainImg {
+    width: 125%;
+    margin-left: -15vw;
+  }
+
   .miInfoTxt p:nth-child(1) {
     font-size: 2rem;
   }
@@ -130,5 +135,17 @@
 
   .miInfoTxt p:nth-child(3) {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width:400px) {
+  .miInfoMainImg {
+    width: 130%;
+    margin-left: -18vw;
+  }
+
+  .miInfoMainImg.maInfoMainImg {
+    width: 150%;
+    margin-left: -25vw;
   }
 }
