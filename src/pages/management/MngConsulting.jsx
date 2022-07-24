@@ -61,7 +61,7 @@ const MngConsulting = ({setHdSubStyle}) => {
           <p>사업모델정립 단계에서는 사업타당성 검토, 사업계획/전략수립이 이루어지며 제품/서비스 완성 단계에서는 사업계획 upgrade가 진행되고 초기시장 진입 단계에서는 초기사업목표 재확인, 사업선점 전략 수립이 이루어지며 대상시장 리더그룹  포지셔닝 단계에서는 신제품개발 Needs, 시장지배 강화전략이 진행되며 해외진출/사업확장 단계에서는 해외기업과의 전략적 제휴를 추진한다.</p>
         </div>
         <h3 className='mngSmTitle mnConsultingSmTitle'>자금투자유치</h3>
-        <div className='mngFinveCircleBox'>
+        <div className='mngFiveCircleBox'>
           <ul className='mngFiveCircle'>
             <li>STEP 01<br />사업모델정립</li>
             <li>STEP 02<br />제품/서비스 완성</li>

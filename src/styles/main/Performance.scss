@@ -185,6 +185,11 @@
         .pfIconBox {
           display: none;
         }
+        .pfConBox {
+          margin-top: 32px;
+          .pfIconBox {
+            display: none;
+          }
 
         .pfMQConBox {
           display: flex;
@@ -304,7 +309,7 @@
         display: none;
       }
       .pfConBox {
-        margin-top: 25px;
+        margin-top: 32px;
         .pfIconBox {
           display: none;
         }
@@ -551,4 +556,5 @@
       }
     }
   }
+}
 }
