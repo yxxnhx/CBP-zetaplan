@@ -119,6 +119,9 @@
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
+  .gbInner .gbAccoContentBox {
+    padding: 2rem;
+  }
   .gbInner .gbAccordion .gbProcessItem .gbProcessBtn .gbUnderBtn {
     background: url('../../img/icon/bottom_arrow.png') no-repeat;
     background-size: contain;
