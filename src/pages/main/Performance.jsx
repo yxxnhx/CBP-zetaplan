@@ -32,10 +32,7 @@ const Performance = () => {
                 <p className="pfTitle">M&A</p>
                 <CountUp className="pfCount" end={6965} duration={2} enableScrollSpy={true} />
               </div>
-              <div className="pfDes">
-                기업 성장과 발전 가치를 극대화할 수 <br />
-                있도록 컨설팅하고 있습니다.
-              </div>
+              <div className="pfDes">기업 성장과 발전 가치를 극대화할 수 있도록 컨설팅하고 있습니다.</div>
             </div>
           </div>
           <div className="pfList ipoList">
@@ -50,10 +47,7 @@ const Performance = () => {
                 <p className="pfTitle">IPO</p>
                 <CountUp className="pfCount" end={978} duration={2} enableScrollSpy={true} />
               </div>
-              <p className="pfDes">
-                다양한 방법으로 투자기업에 대한
-                <br /> 적극적인 성장을 지원합니다
-              </p>
+              <p className="pfDes">다양한 방법으로 투자기업에 대한 적극적인 성장을 지원합니다</p>
             </div>
           </div>
           <div className="pfList irList">
@@ -68,10 +62,7 @@ const Performance = () => {
                 <p className="pfTitle">투자유치</p>
                 <CountUp className="pfCount" end={6965} duration={2} enableScrollSpy={true} />
               </div>
-              <p className="pfDes">
-                해외 21개국의 글로벌 네트워크를
-                <br /> 구축하고 서비스를 지원하고 있습니다
-              </p>
+              <p className="pfDes">해외 21개국의 글로벌 네트워크를 구축하고 서비스를 지원하고 있습니다</p>
             </div>
           </div>
           <div className="pfList globalList">
@@ -87,8 +78,7 @@ const Performance = () => {
                 <CountUp className="pfCount" end={1051} duration={2} enableScrollSpy={true} />
               </div>
               <p className="pfDes">
-                ZETA PLAN의 노하우로 <br />
-                기업 성장과 발전 가치를 극대화할 수<br /> 있도록 컨설팅하고 있습니다.
+                ZETA PLAN의 노하우로 기업 성장과 발전 가치를 극대화할 수 있도록 컨설팅하고 있습니다.
               </p>
             </div>
           </div>
