@@ -32,6 +32,7 @@ const SubBannerContainer = styled.div`
   background: url(${props => props.img}) no-repeat;
   background-size: cover;
   position: relative;
+
   @media (min-width: 360px) and (max-width: 700px) {
     height: 200px;
   }
@@ -48,6 +49,11 @@ const SubBannerTextContainer = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: 768px) and (max-width: 870px) {
+    justify-content: center;
+    
+    }
   @media (min-width: 360px) and (max-width: 700px) {
     justify-content: center;
   }
@@ -59,6 +65,9 @@ const SubBannerTextContainer = styled.div`
     min-width: 20px;
     height: 72px;
     margin-right: 50px;
+    @media (min-width: 768px) and (max-width: 870px) {
+      display: none;
+    }
     @media (min-width: 360px) and (max-width: 700px) {
       display: none;
     }
@@ -85,6 +94,10 @@ const SubBannerTextContainer = styled.div`
     min-width: 20px;
 	  height: 72px;
     margin-left: 50px;
+
+    @media (min-width: 768px) and (max-width: 870px) {
+      display: none;
+    }
 
     @media (min-width: 360px) and (max-width: 700px) {
       display: none;

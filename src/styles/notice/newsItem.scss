@@ -5,9 +5,10 @@
   margin: 70px 0;
 
   .thumbnail {
-    width: 80%;
+    width: 100%;
     height: auto;
-    min-height: 370px;
+    object-fit: contain;
+    // min-height: 370px;
     margin-bottom: 30px;
   }
   .newsTitle {

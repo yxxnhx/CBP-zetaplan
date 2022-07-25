@@ -8,26 +8,32 @@ import fundSupportData from '../../db/fund-supportList.json';
 import techData from '../../db/technologyList.json';
 import consultData from '../../db/consultingList.json';
 import InfoItem from '../../components/Notice/InfoItem';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const DataInfo = ({ setHdSubStyle }) => {
-  const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
+
+  const {category} = useParams();
+  const navigate = useNavigate();
 
   const [filteredList, setFilteredList] = useState([]);
   const [showNum, setShowNum] = useState(6);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [dataList, setDataList] = useState([]);
 
-  const navigate = useNavigate();
 
   useEffect(() => {
     setShowNum(6);
     setDataList(getSelectedData());
-  }, [selectedIndex])
+  }, [selectedIndex]);
+
+  useEffect(()=> {
+    setShowNum(6);
+    setDataList(getCategoryData());
+  }, [category]);
 
   useEffect(() => {
     setFilteredList(dataList.slice(0, showNum));
-  }, [dataList])
+  }, [dataList]);
 
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
@@ -57,34 +63,77 @@ const DataInfo = ({ setHdSubStyle }) => {
     }
   }
 
-  const getActiveClassName = (index) => {
-    return index === selectedIndex ? 'active' : undefined;
+  const getActiveClassName = (cate) => {
+    if (cate === category) {
+      return 'active';
+    }
+    return undefined;
   }
+  
+  const getCategoryData = () => {
+    switch (category) {
+    case 'm&a-invest':
+    default:
+      return mnaInvestmentData;
+    case 'government-support':
+      return govSupportData;
+    case 'fund-support':
+      return fundSupportData;
+    case 'technology-trade':
+      return techData
+    case 'consulting-list':
+      return consultData;
+    }
+  }
+
+  const setBreadThreeDepth = () => {
+    switch (category) {
+    case 'm&a-invest':
+    default:
+      return 'M&A・투자정보'
+    case 'government-support':
+      return '정부지원사업 참여모집'
+    case 'fund-support':
+      return '정책자금/기업지원정보'
+    case 'technology-trade':
+      return '기술거래리스트'
+    case 'consulting-list':
+      return '컨설팅실적'
+    }
+  }
+
+  const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
+  const oneDepth='소식 · 자료';
+  const oneDepthLink='/news/news';
+  const twoDepth='자료';
+  const twoDepthLink='/datainfo/m&a-invest';
+  const linkActive='threeDepth';
+
 
   return (
     <div>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} threeDepth={setBreadThreeDepth()} threeDepthLink={category === undefined ? '/datainfo/m&a-invest' : `/datainfo/${category}`} linkActive={linkActive} />
       <div className='dataInfoInner'>
         <div className='infoTitleBox'>
           <h2 className='infoTitle'>자료</h2>
           <ul className='infoTabList'>
-            <li className={getActiveClassName(0)} onClick={() => {
+            <li className={getActiveClassName('m&a-invest')} onClick={() => {
               navigate('/datainfo/m&a-invest')
               setSelectedIndex(0)
             }}>M&A・투자정보</li>
-            <li className={getActiveClassName(1)} onClick={() => {
+            <li className={getActiveClassName('government-support')} onClick={() => {
               navigate('/datainfo/government-support')
               setSelectedIndex(1)
             }}>정부지원사업 참여 모집</li>
-            <li className={getActiveClassName(2)} onClick={() => {
+            <li className={getActiveClassName('fund-support')} onClick={() => {
               navigate('/datainfo/fund-support')
               setSelectedIndex(2)
             }}>정책자금 / 기업지원정보</li>
-            <li className={getActiveClassName(3)} onClick={() => {
+            <li className={getActiveClassName('technology-trade')} onClick={() => {
               navigate('/datainfo/technology-trade')
               setSelectedIndex(3)
             }}>기술거래리스트</li>
-            <li className={getActiveClassName(4)} onClick={() => {
+            <li className={getActiveClassName('consulting-list')} onClick={() => {
               navigate('/datainfo/consulting-list')
               setSelectedIndex(4)
             }}>컨설팅 실적</li>

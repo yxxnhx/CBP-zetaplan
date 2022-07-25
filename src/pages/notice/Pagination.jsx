@@ -2,8 +2,7 @@ import React from 'react';
 import ReactPaginate from 'react-paginate';
 
 const PaginatedItems = ({ handlePageClick, pageRangeCount, pageCount }) => {
-
-  console.log(pageRangeCount);
+  
   return (
     <>
       <ReactPaginate

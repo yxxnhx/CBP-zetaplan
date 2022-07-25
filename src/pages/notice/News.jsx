@@ -7,12 +7,13 @@ import newsData from '../../db/newsList.json';
 import columnData from '../../db/column.json';
 import NewsSwiper from '../../components/Notice/NewsSwiper';
 import PaginatedItems from './Pagination';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const News = ({ setHdSubStyle }) => {
   const itemsPerPage = 6;
 
   const navigate = useNavigate();
+  const {category} = useParams();
 
   const [data, setData] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -39,6 +40,10 @@ const News = ({ setHdSubStyle }) => {
     setData(getSelectedData());
   }, [selectedIndex]);
 
+  useEffect(() => {
+    setData(getCategoryData());
+  }, [category]);
+
 
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
@@ -64,6 +69,16 @@ const News = ({ setHdSubStyle }) => {
     }
   }, [isMobile]);
 
+  const getCategoryData = () => {
+    switch (category) {
+    case 'news':
+    default:
+      return newsData;
+    case 'column':
+      return columnData;
+    }
+  }
+
   const getSelectedData = () => {
     switch (selectedIndex) {
     case 0:
@@ -74,11 +89,29 @@ const News = ({ setHdSubStyle }) => {
     }
   }
 
-  const getActiveClassName = (index) => {
-    return index === selectedIndex ? 'active' : undefined;
+  const getActiveClassName = (cate) => {
+    if (cate === category) {
+      return 'active';
+    }
+    return undefined;
+  }
+  
+  const setBreadThreeDepth = () => {
+    if (category === undefined) {
+      return 'NEWS';
+    } else if (category === 'news') {
+      return 'NEWS';
+    } else if (category === 'column') {
+      return 'COLUMN';
+    }
   }
 
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다';
+  const oneDepth='소식 · 자료';
+  const oneDepthLink='/news/news';
+  const twoDepth='소식';
+  const twoDepthLink = '/news/news';
+  const linkActive='threeDepth';
 
   if (currentItems === null) {
     return <div></div>;
@@ -86,15 +119,15 @@ const News = ({ setHdSubStyle }) => {
 
   return (
     <div>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink= {twoDepthLink} threeDepth={setBreadThreeDepth()} threeDepthLink={category === undefined ? '/news/news' : `/news/${category}`} linkActive={linkActive} />
       <div className='newsInner'>
         <div className='newsTitleBox'>
           <h2 className='newsTabTitle'>소식</h2>
           <ul className='newsTabList'>
-            <li className={getActiveClassName(0)} onClick={() => {
+            <li className={getActiveClassName('news')} onClick={() => {
               navigate('/news/news')
               setSelectedIndex(0)}}>News</li>
-            <li className={getActiveClassName(1)} onClick={() => {
+            <li className={getActiveClassName('column')} onClick={() => {
               navigate('/news/column')
               setSelectedIndex(1)}}>Column</li>
           </ul>

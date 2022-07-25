@@ -37,6 +37,11 @@ const Qna = ({ setHdSubStyle }) => {
   }, [])
 
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
+  const oneDepth='소식 · 자료';
+  const oneDepthLink='/news';
+  const twoDepth='Q&A';
+  const twoDepthLink='/qna';
+  const linkActive='twoDepth';
 
   if (currentItems === null) {
     return <div></div>;
@@ -44,7 +49,7 @@ const Qna = ({ setHdSubStyle }) => {
 
   return (
     <div>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive} />
       <div className='qnaInner'>
         <div className='qnaTitleBox'>
           <h2 className='qnaTitle'>Q&A</h2>

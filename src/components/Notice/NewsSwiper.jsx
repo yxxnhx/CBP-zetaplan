@@ -6,11 +6,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import thumbnail from '../../img/notice/notice_thumbnail.png';
 import { useNavigate } from 'react-router-dom';
+import newsImg from '../../img/notice/news/news1.jpeg';
 
 const NewsSwiper = ({items, selectedIndex}) => {
   
   const navigate = useNavigate();
- 
+
   const [selectNum, setSelectNum] = useState(0);
 
   const getClassName = (selectedNum) => {
@@ -33,6 +34,7 @@ const NewsSwiper = ({items, selectedIndex}) => {
     prevEl: '.prev',
   };
 
+
   return (
     <div className="newsSwiperContainer">
       <Swiper className='newsSwiper'
@@ -45,7 +47,7 @@ const NewsSwiper = ({items, selectedIndex}) => {
         {
           items.map((item)=> {
             return (
-              <SwiperSlide key={item.id}>
+              <SwiperSlide key={item.id} >
                 <div className='newsContainer' onClick={()=> navigate(`/news/${getSelectedIndex()}/${item.id}`)}>
                   <div className='newsContentBox'>
                     <p className='newsTitle'>{item.title}</p>
@@ -54,8 +56,7 @@ const NewsSwiper = ({items, selectedIndex}) => {
                   </div>
                   {
                     item.img.length === 0 ? <div className="slideImgThumb"><img className='thumbnail' src={thumbnail} alt="뉴스 칼럼 대표 이미지" /></div> : <div className="slideImgThumb"><img className='thumbnail' src={item.img} alt="" /></div>
-                  }
-
+                  } 
                 </div> 
               </SwiperSlide>
             )})

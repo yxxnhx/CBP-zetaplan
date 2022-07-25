@@ -74,14 +74,14 @@ const InfoSwiper = ({data}) => {
         className="informationSlide"
       >
         {
-          state.map((item)=> {
+          state.map((item, i)=> {
             return (
-              <SwiperSlide key={item.id} onClick={() => {
+              <SwiperSlide key={i} onClick={() => {
                 const url= getUrlByCate();
                 navigate(`${url}/${item.id}`)
 
               }}>
-                <InfoSwiperItem item={item} />
+                <InfoSwiperItem item={item} key={item.id} />
               </SwiperSlide>
             )
           })
