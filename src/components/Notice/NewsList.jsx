@@ -21,9 +21,11 @@ const NewsList = ({items, selectedIndex}) => {
       {
         items.img.length === 0 ? <img className='thumbnail' src={thumbnail} alt="뉴스 칼럼 대표 이미지" /> : <img className='thumbnail' src={items.img} alt="" />
       }
-      <p className='newsTitle'>{items.title}</p>
-      <p className='newsContent' dangerouslySetInnerHTML={{__html: items.content}}></p>
-      <p className='createdAt'>{items.createdAt}</p>
+      <div className='newsItemContent'>
+        <p className='newsTitle'>{items.title}</p>
+        <p className='newsContent' dangerouslySetInnerHTML={{__html: items.content}}></p>
+        <p className='createdAt'>{items.createdAt}</p>
+      </div>
     </div>
   );
 };

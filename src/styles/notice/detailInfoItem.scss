@@ -51,9 +51,30 @@
       }
 
       .content-view {
-        font-size: $size-sm;
+        font-size: 1.8rem;
         line-height: 1.7;
         font-family: 'Noto Sans KR',sans-serif;
+
+        li, p, tr, td, a, pre, u, b {
+          font-size: 1.8rem;
+          font-weight: normal;
+          line-height: 1.7;
+          font-family: 'Noto Sans KR',sans-serif;
+        }
+        
+        tr, td {
+          border: 1px solid #707070;
+          font-size: 1.8rem;
+        }
+  
+        strong, b {
+          font-family: 'Noto Sans KR',sans-serif;
+          font-size: 1.8rem;
+          line-height: 1.7;
+          font-weight: bold;
+  
+        }
+
 
       }
 
@@ -72,7 +93,7 @@
       }
 
       li, p, tr, td, a, pre, u, b {
-        font-size: $size-sm;
+        font-size: 1.8rem;
         font-weight: normal;
         line-height: 1.7;
         font-family: 'Noto Sans KR',sans-serif;
@@ -80,11 +101,12 @@
       
       tr, td {
         border: 1px solid #707070;
+        font-size: 1.8rem;
       }
 
       strong, b {
         font-family: 'Noto Sans KR',sans-serif;
-        font-size: $size-sm;
+        font-size: 1.8rem;
         line-height: 1.7;
         font-weight: bold;
 
@@ -94,14 +116,15 @@
 
   .infoListBtn {
     display: block;
-    width: 120px;
-    height: 40px;
+    width: 12rem;
+    height: 5rem;
     background-color: $main-color;
     color: $basic-white;
     font-family: 'Noto Sans KR',sans-serif;
-    font-size: $size-sm;
-    padding: 10px 40px;
+    font-size: 1.8rem;
+    padding: 1rem 4rem;
     margin: 70px auto 0;
     text-align: center;
+    line-height: 1.5;
   }
 }

@@ -36,9 +36,9 @@ const News = ({ setHdSubStyle }) => {
     setItemOffset(newOffset);
   };
 
-  useEffect(() => {
-    setData(getSelectedData());
-  }, [selectedIndex]);
+  // useEffect(() => {
+  //   setData(getSelectedData());
+  // }, [selectedIndex]);
 
   useEffect(() => {
     setData(getCategoryData());
@@ -79,15 +79,15 @@ const News = ({ setHdSubStyle }) => {
     }
   }
 
-  const getSelectedData = () => {
-    switch (selectedIndex) {
-    case 0:
-      return newsData;
-    case 1:
-    default:
-      return columnData;
-    }
-  }
+  // const getSelectedData = () => {
+  //   switch (selectedIndex) {
+  //   case 0:
+  //     return newsData;
+  //   case 1:
+  //   default:
+  //     return columnData;
+  //   }
+  // }
 
   const getActiveClassName = (cate) => {
     if (cate === category) {

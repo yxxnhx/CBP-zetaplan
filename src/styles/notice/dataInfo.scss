@@ -6,6 +6,7 @@
   .infoTitleBox {
     border-bottom: 1px solid $basic-gray3;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
@@ -17,31 +18,29 @@
 
     .infoTabList {
       display: flex;
+      margin-bottom: 24px;
       font-weight: bold;
+      justify-content: center;
+      flex-wrap: wrap;
       
       li {
-        margin-left: 50px; // 122px인데 임시 수정(문의)
+        // margin-left: 50px; // 122px인데 임시 수정(문의)
+        background-color: $basic-gray1;
         font-family: 'Noto Sans KR',sans-serif;
         font-size: 2.24rem;
         position: relative;
+        margin: 8px 6px;
+        margin-bottom: 8px;
+        padding: 1.6rem;
+        border-radius: 15px;
+        border: 1px solid $basic-gray2;
         cursor: pointer;
         
         &.active {
-          color : $main-color
+          background-color : $main-color;
+          color: $basic-white;
         }
 
-        &.active::after {
-          content: "";
-          width: 100%;
-          height: 2px;
-          display: block;
-          background-color: $main-color;
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: -18px;
-          opacity: 1;
-        }
       }
     }
   }
@@ -60,7 +59,8 @@
     
     .infoSearchBox {
       position: relative;
-      width: 450px;
+      // width: 450px;
+      width: 40rem;
       padding: 16px 0;
       border-bottom: 1px solid #707070;
 
@@ -107,6 +107,7 @@
       display: flex;
       flex-direction: column;
       font-family: 'Noto Sans KR',sans-serif;
+      cursor: pointer;
 
       &:hover {
         background-color: $main-color;
@@ -190,7 +191,7 @@
 
 @media (min-width: 360px) and (max-width: 767px){
   .dataInfoInner .dataInfoLiBox .dataInfoItem {
-    width: calc(50% - 20px);
+    width: 100%;
     padding: 3rem 4rem;
   }
 

@@ -12,13 +12,25 @@ const QnaDetail = ({ setHdSubStyle }) => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    const detailData = qnaDataList.find(element => element.id === parseInt(id));
-    setData(detailData);
-  }, [])
+    const qnaLocalStorage = JSON.parse(window.localStorage.getItem('newQnaList'));
+    const qnaList = qnaDataList.concat(qnaLocalStorage).map((item, index) => {
+      return { ...item, id: index + 1, hit: Math.floor(Math.random() * index) };
+    })
+    const detailPageData = qnaList.find(element => element.id === parseInt(id));
+    setData(detailPageData);
+  
+  }, []);
+
+  // useEffect(() => {
+  //   const detailData = qnaDataList.find(element => element.id === parseInt(id));
+  //   setData(detailData);
+  // }, [])
 
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
+
+  const hasComments = data?.comments?.length;
 
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
 
@@ -35,7 +47,7 @@ const QnaDetail = ({ setHdSubStyle }) => {
         </div>
         <p className='qnaSubTitle'>{data.title}</p>
         <ul className='qnaDetailInfo'>
-          <li>작성자: {data.writerName}</li>
+          <li>작성자: {data.author}</li>
           <li>조회수: {data.hit}</li>
           <li>{data.createdAt}</li>
         </ul>
@@ -43,15 +55,17 @@ const QnaDetail = ({ setHdSubStyle }) => {
           <p className='content' dangerouslySetInnerHTML={{ __html: data.content }}>
           </p>
         </div>
-        {!!data.comments.length && (<>
-          <div className='answerInfo'>
-            <p className='answerInfoText'>답변</p>
-            <p className='answerDate'>{data.comments[0].createdAt}</p>
-          </div>
-          <div className='answerContent'>
-            <div className='content' dangerouslySetInnerHTML={{ __html: data.comments[0].content }}></div>
-          </div>
-        </>)}
+        {
+          hasComments && (<>
+            <div className='answerInfo'>
+              <p className='answerInfoText'>답변</p>
+              <p className='answerDate'>{data.comments[0].createdAt}</p>
+            </div>
+            <div className='answerContent'>
+              <div className='content' dangerouslySetInnerHTML={{ __html: data.comments[0].content }}></div>
+            </div>
+          </>)
+        }
         <Link to="/qna" className='qnaListBtn'>목록</Link>
 
       </div>

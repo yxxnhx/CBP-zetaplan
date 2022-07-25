@@ -6,10 +6,8 @@ import '../../styles/qna/qna.scss'
 import qnaJsonList from '../../db/qna.json';
 import PaginatedItems from './Pagination';
 import { Link } from 'react-router-dom';
-import QnaList from './QnaList';
 
 const Qna = ({ setHdSubStyle }) => {
-
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
@@ -34,8 +32,13 @@ const Qna = ({ setHdSubStyle }) => {
   };
 
   useEffect(() => {
-    const reverseData = [...qnaJsonList].reverse();
-    setData(reverseData);
+    const qnaLocalStorage = JSON.parse(window.localStorage.getItem('newQnaList'));
+    const qnaList = qnaJsonList.concat(qnaLocalStorage).map((item, index) => {
+      return { ...item, id: index + 1, hit: Math.floor(Math.random() * index) };
+    });
+    
+    const reverseQnaList = qnaList.reverse();
+    setData(reverseQnaList);
   }, [])
 
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
@@ -75,7 +78,6 @@ const Qna = ({ setHdSubStyle }) => {
         </div>
         <PaginatedItems handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount} />
         <button><Link to='/qna-write'>글쓰기</Link></button>
-        <QnaList />
       </div>
     </div>
   );

@@ -62,12 +62,12 @@ const NewsSwiper = ({items, selectedIndex}) => {
             )})
         }
         
-        <div className="swiperBtnBox">
+        <div className="newsSwiperBtnBox">
           <div className={selectNum === 0 ? 'prevBtnBox active' : 'prevBtnBox'} onClick={()=> getClassName(0)}>
-            <button type='button' className='prev'>Prev</button>
+            <button type='button' className='prev'><span>Prev</span></button>
           </div>
           <div className={selectNum === 1 ? 'nextBtnBox active' : 'nextBtnBox'} onClick={()=> getClassName(1)}>
-            <button type='button' className='next'>Next</button>
+            <button type='button' className='next'><span>Next</span></button>
           </div>
         </div> 
       </Swiper>

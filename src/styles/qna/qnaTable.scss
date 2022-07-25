@@ -52,6 +52,12 @@
           font-weight: bold;
           text-align: start;
           line-height: 1.7;
+          // overflow: hidden;
+          // text-overflow: ellipsis;
+          // word-break: break-word;    
+          // display: -webkit-box;
+          // -webkit-line-clamp: 1;
+          // -webkit-box-orient: vertical;
         }
 
         &.qnaTbodyWriter {

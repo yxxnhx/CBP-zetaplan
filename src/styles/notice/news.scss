@@ -49,20 +49,19 @@
     }
   }
 
-  
-
   .newsSwiperContainer {
     margin-top: 80px;
     
     .newsSwiper {
       .swiper-wrapper {
-        height: 900px;
+        // height: 900px;
       }
     }
   
     .newsContainer {
       display: flex;
       justify-content: space-between;
+      cursor: pointer;
   
       .slideImgThumb {
         flex: 1 1 60%;
@@ -176,8 +175,9 @@
     }
   }
   
-  .swiperBtnBox {
+  .newsSwiperBtnBox {
     width: 138px;
+    display: flex;
     justify-content: space-between;
     bottom: 0;
     left: 0;
@@ -190,29 +190,41 @@
       border-radius: 50%;
       background-color: $basic-gray1;
       position: relative;
+      cursor: pointer;
+
+      .prev {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        font-size: 0;
+        height: 100%;
+        border-radius: 50%;
+
+        span {
+          display: block;
+          background: url('../../img/zetaplan_splite.png') no-repeat -278px -201px;
+          background-size: 599px 280px;
+          width: 8px;
+          height: 13px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
 
       &.active {
         background-color: $main-color;
 
         .prev {
-          background: url('../../img/zetaplan_splite.png') no-repeat -195px -221px;
-          background-size: 599px 280px;
-          width: 8px;
-          height: 13px;
+          span {
+            background: url('../../img/zetaplan_splite.png') no-repeat -195px -221px;
+	          background-size: 599px 280px;
+	          width: 8px;
+	          height: 13px;
+          }
         }
       }
-
-      .prev {
-        background: url('../../img/zetaplan_splite.png') no-repeat -278px -201px;
-        background-size: 599px 280px;
-        width: 8px;
-        height: 13px;
-        position: absolute;
-        left: 45%;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-      
     }
 
     .nextBtnBox {
@@ -224,26 +236,40 @@
       background-color: $basic-gray1;
       position: relative;
       padding: 14px 10px;
+      cursor: pointer;
 
       .next {
-        background: url('../../img/zetaplan_splite.png') no-repeat -298px -201px;
-        background-size: 599px 280px;
-        width: 8px;
-        height: 13px;
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateY(-50%);
+        font-size: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        right: 0;
+        top: 0;
+
+        span {
+          display: block;
+          background: url('../../img/zetaplan_splite.png') no-repeat -298px -201px;
+          background-size: 599px 280px;
+          width: 8px;
+          height: 13px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
 
       &.active {
         background-color: $main-color;
 
         .next {
-          background: url('../../img/zetaplan_splite.png') no-repeat -236px -221px;
-          background-size: 599px 280px;
-          width: 8px;
-          height: 13px;
+          span {
+            background: url('../../img/zetaplan_splite.png') no-repeat -236px -221px;
+            background-size: 599px 280px;
+            width: 8px;
+            height: 13px;
+          }
         }
       }
 
@@ -301,7 +327,7 @@
   }
 
   .newsInner .newsSwiperContainer .newsSwiper .swiper-wrapper {
-    height: 700px;
+    // height: 700px;
   }
 
   .newsInner .newsSwiperContainer .newsContainer .slideImgThumb img {
@@ -309,9 +335,8 @@
     object-fit: contain;
   }
 
-  .newsInner .swiperBtnBox {
-    left: 50%;
-    transform: translateX(-50%);
+  .newsInner .newsSwiperBtnBox {
+    margin: 0 auto;
   }
 
 }

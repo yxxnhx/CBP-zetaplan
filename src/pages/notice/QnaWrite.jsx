@@ -27,6 +27,7 @@ const QnaWrite = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log('cccc')
     setErrors(validation(state));
     if(state.title.length < 1 ) {
       titleInput.current.focus();
@@ -42,7 +43,16 @@ const QnaWrite = () => {
       contentInput.current.focus();
       return ;
     }
-    console.log(state)
+    
+    const qnaList = JSON.parse(window.localStorage.getItem('newQnaList'));
+
+    if (qnaList) {
+      window.localStorage.setItem('newQnaList', JSON.stringify([...qnaList, { ...state, createdAt: new Date().toISOString().split('T')[0] }]));
+    } else {
+      window.localStorage.setItem('newQnaList', JSON.stringify([{ ...state, createdAt: new Date().toISOString().split('T')[0] }]));
+    }
+
+    
     alert('질문 등록 완료되었습니다')
   }
 
