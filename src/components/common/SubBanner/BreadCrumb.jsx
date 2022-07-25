@@ -40,7 +40,7 @@ export default BreadCrumb;
 const SubBreadcrumb= styled.div`
     position: absolute;
     top:2rem;
-    right:5rem;
+    right:10rem;
     color: #fff;
     font-size:2.5rem;
     font-weight:700;
@@ -75,22 +75,14 @@ const SubBreadcrumb= styled.div`
     };
     @media all and (min-width: 501px)  and (max-width: 767px){
       &{
-        right: 3rem;
+        right:6rem;
         top: 1rem;
         font-size: 5.5rem;
       };
     };
       @media all and (max-width: 500px){
         &{
-          right: 2rem;
-          top: 0rem;
-          font-size: 5.5rem;
-          p{
-            margin-left:1.5rem;
-            &::before{
-              margin-right:1.5rem;
-            };
-          };
+          display:none;
         };
   };
 `

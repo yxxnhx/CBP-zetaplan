@@ -51,6 +51,7 @@ $zt-ftExtra:900;
 .ztIntro{
     background:url('./../../img/zeta/zt_bg.jpg') no-repeat top;
     background-size: cover;
+    background-attachment: fixed;
     font-weight: $zt-ftBold;
     margin-bottom: -3px;
     .ztTitle{

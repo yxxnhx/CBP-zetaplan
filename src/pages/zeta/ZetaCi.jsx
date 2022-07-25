@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect,useState,useRef } from 'react';
 import './../../styles/zeta/zetaCi.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -7,13 +7,31 @@ import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/zeta/zeta_sub_bg@2x.png';
 
 const ZetaCi = ({ setHdSubStyle }) => {
+  const ztColRef=useRef();
   useEffect(() => {
     AOS.init();
   }, []);
 
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
-  }, [setHdSubStyle])
+  }, [setHdSubStyle]);
+
+  const updateScroll = () => {
+    const valueTop=ztColRef.current.getBoundingClientRect().top;
+    const viewHeight=window.innerHeight;
+    if(viewHeight>valueTop){
+      ztColRef.current.className='ztColStGr ztColStGrOn';
+    }else{
+      ztColRef.current.className='ztColStGr';
+    };
+  };
+
+  useEffect(()=>{
+    window.addEventListener('scroll', updateScroll);
+    return () => {
+      window.removeEventListener('scroll', updateScroll);
+    };
+  });
 
   const title = 'ZETA PLAN의<br />가치와 비전을 담은 CI';
 
@@ -86,7 +104,7 @@ const ZetaCi = ({ setHdSubStyle }) => {
               <h3 className='ztColStTitle'>ZETA Color</h3>
               <p className='ztColStTxt'>Zeta의 Color는 성장과 안정을 추구합니다.</p>
               <div className="ztColStInBox">
-                <p className='ztColStGr'></p>
+                <p className='ztColStGr' ref={ztColRef}></p>
                 <div className='ztColStInRed'>
                   <p className='ztColStInRImg'>SQ</p>
                   <p className='ztColStInRTxt' data-aos="fade-left"
