@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
+@import '../GlobalStyle.scss';
+
+.qnaWriteInner {
+  @include Inner;
+}
+
+.qnaWriteArea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  legend {
+    font-size: 4rem;
+    font-family: 'Montserrat';
+    margin-bottom: 3rem;
+  }
+  .qnaCategory {
+    display: flex;
+    margin: 1rem 0;
+
+    label {
+      font-size: 2.3rem;
+      margin: 1rem 0;
+      width: 20%;
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid #000;
+      font-size: 2rem;
+      font-weight: lighter;
+      height: 6rem;
+      width: 100%;
+    }
+  }
+
+  .qnaContentBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 2.3rem;
+      margin: 1rem 0;
+      width: 20%;
+    }
+
+    textarea {
+      border: 1px solid #000;
+      font-size: 2rem;
+      font-weight: lighter;
+      height: 30rem;
+      width: 100%;
+      margin-bottom: 5rem;
+      margin-top: 2rem;
+    }
+
+  }
+
+  .qnaBtnArea {
+    margin: auto;
+    .createBtn {
+      width: 20rem;
+      height: 8rem;
+      background-color: $main-color;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.errorBox {
+  font-size: 1.4rem;
+  color: $sub-red;
+  align-self: flex-end;
+  margin: 1rem 0 0 3rem;
+  
+}
+
+
+.qnaBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

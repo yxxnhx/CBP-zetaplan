@@ -5,6 +5,8 @@ import QnaTable from '../../components/Notice/QnaTable';
 import '../../styles/qna/qna.scss'
 import qnaJsonList from '../../db/qna.json';
 import PaginatedItems from './Pagination';
+import { Link } from 'react-router-dom';
+import QnaList from './QnaList';
 
 const Qna = ({ setHdSubStyle }) => {
 
@@ -72,6 +74,8 @@ const Qna = ({ setHdSubStyle }) => {
           <QnaTable qnaJsonList={currentItems} />
         </div>
         <PaginatedItems handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount} />
+        <button><Link to='/qna-write'>글쓰기</Link></button>
+        <QnaList />
       </div>
     </div>
   );

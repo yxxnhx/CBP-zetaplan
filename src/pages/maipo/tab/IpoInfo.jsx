@@ -1,5 +1,5 @@
 import React from 'react';
-import ipoInfoMainImg from '../../../img/m&a_ipo/ipo_summery@2x.png'
+import ipoInfoMainImg from '../../../img/m&a_ipo/ipo_summery.png'
 
 
 const IpoInfo = () => {

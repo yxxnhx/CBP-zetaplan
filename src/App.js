@@ -42,6 +42,7 @@ import TopBtn from './components/common/TopBtn';
 import LangEng from './pages/lang/LangEng';
 import LangCn from './pages/lang/LangCn';
 import { useState } from 'react';
+import QnaWrite from './pages/notice/QnaWrite';
 
 function App() {
   const [hdSubStyle, setHdSubStyle] = useState('hdMain');
@@ -91,6 +92,7 @@ function App() {
           <Route path="/datainfo/:category/:id" element={<DetailInfoItem setHdSubStyle={setHdSubStyle} />} />
           <Route path="/eng" element={<LangEng />} />
           <Route path="/cn" element={<LangCn />} />
+          <Route path="/qna-write" element={<QnaWrite />} />
         </Routes>
       </BrowserRouter>
       <Consulting />

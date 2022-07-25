@@ -69,7 +69,7 @@ const ConsulModal = ({open, close}) => {
       errors.position = '직책을 입력해주세요';
     }
     if (!values.tell) {
-      errors.tell = '연락처 입력해주세요';
+      errors.tell = '연락처를 입력해주세요';
     }
     if (!values.companyName) {
       errors.companyName = '회사명을 입력해주세요';
