@@ -25,7 +25,6 @@
     }
 
     .pfListCon {
-      width: 90%;
       display: flex;
       justify-content: space-between;
       position: relative;
@@ -37,13 +36,13 @@
 
       .pfList {
         margin-right: 1.5rem;
-        width: 35rem;
+        width: 100%;
         height: auto;
         background-color: $basic-gray1;
 
         .pfImgBox {
           img {
-            width: 35rem;
+            width: 100%;
           }
         }
 
@@ -131,12 +130,13 @@
           align-items: center;
 
           .pfTitle {
-            font-size: 13px;
+            font-size: 15px;
           }
 
           .pfCount {
             font-size: 24px;
             padding-bottom: 15px;
+            padding-top: 5px;
           }
         }
         .pfDes {
@@ -190,7 +190,7 @@
         .pfMQConBox {
           display: flex;
           justify-content: space-around;
-          padding-top: 10px;
+          padding-top: 1.2rem;
 
           .pfTitle {
             font-size: 18px;
@@ -253,10 +253,10 @@
           display: flex;
           justify-content: space-around;
           align-items: center;
-          padding-top: 10px;
+          padding-top: 1.2rem;
 
           .pfTitle {
-            font-size: 24px;
+            font-size: 20px;
           }
 
           .pfCount {
@@ -316,7 +316,7 @@
           display: flex;
           justify-content: space-around;
           align-items: center;
-          padding-top: 10px;
+          padding-top: 1rem;
 
           .pfTitle {
             font-size: 30px;
@@ -345,7 +345,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 985px) {
   .pfWrap .pfCon .pfListCon {
     width: 90vw;
     height: auto;
@@ -357,14 +357,104 @@
     }
 
     .pfList {
-      flex: 3 1 0%;
+      flex: 1 1 0%;
       margin-bottom: 2rem;
       margin-right: 2rem;
 
       .pfImgBox {
         display: flex;
         img {
-          flex: 3 1 0%;
+          flex: 1 1 0%;
+        }
+      }
+
+      .pfConBox {
+        .pfIconBox {
+          display: none;
+        }
+        .pfTitle {
+          font-size: 4rem;
+          margin-top: 3rem;
+        }
+        .pfCount {
+          font-size: 3.8rem;
+        }
+
+        .pfDes {
+          font-size: 1.8rem;
+          margin-top: 2rem;
+          width: 35rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 986px) and (max-width: 1023px) {
+  .pfWrap .pfCon .pfListCon {
+    width: 85vw;
+    height: auto;
+    flex-wrap: wrap;
+    margin-left: 2.604vw;
+
+    .pfMQImgBox {
+      display: none;
+    }
+
+    .pfList {
+      flex: 1 1 0%;
+      margin-bottom: 2rem;
+      margin-right: 2rem;
+
+      .pfImgBox {
+        display: flex;
+        img {
+          flex: 1 1 0%;
+        }
+      }
+
+      .pfConBox {
+        .pfIconBox {
+          display: none;
+        }
+        .pfTitle {
+          font-size: 4rem;
+          margin-top: 3rem;
+        }
+        .pfCount {
+          font-size: 3.8rem;
+        }
+
+        .pfDes {
+          font-size: 1.8rem;
+          margin-top: 2rem;
+          width: 35rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1100px) {
+  .pfWrap .pfCon .pfListCon {
+    width: 90vw;
+    height: auto;
+    flex-wrap: wrap;
+    margin-left: 2.604vw;
+
+    .pfMQImgBox {
+      display: none;
+    }
+
+    .pfList {
+      flex: 1 1 0%;
+      margin-bottom: 2rem;
+      margin-right: 2rem;
+
+      .pfImgBox {
+        display: flex;
+        img {
+          flex: 1 1 0%;
         }
       }
 
@@ -420,7 +510,7 @@
           font-size: 1rem;
           line-height: 1.5;
           border-top: 0.1rem solid $basic-black;
-          width: 19rem;
+          width: 21rem;
           padding-top: 2rem;
           padding-bottom: 2rem;
           text-align: center;
@@ -462,7 +552,7 @@
           font-size: 1.6rem;
           line-height: 1.5;
           border-top: 0.1rem solid $basic-black;
-          width: 22rem;
+          width: 23rem;
           padding-top: 2rem;
           padding-bottom: 2rem;
           text-align: center;
@@ -476,11 +566,11 @@
 @media (min-width: 1341px) and (max-width: 1400px) {
   .pfWrap .pfCon .pfListCon {
     .pfList {
-      width: 300px;
+      width: 310px;
 
       .pfImgBox {
         img {
-          width: 300px;
+          width: 310px;
         }
       }
       .pfConBox {
@@ -504,7 +594,7 @@
           font-size: 1.6rem;
           line-height: 1.5;
           border-top: 0.1rem solid $basic-black;
-          width: 24rem;
+          width: 28rem;
           padding-top: 2rem;
           padding-bottom: 2rem;
           text-align: center;
@@ -515,7 +605,7 @@
   }
 }
 
-@media (min-width: 1401px) and (max-width: 1500px) {
+/* @media (min-width: 1401px) and (max-width: 1500px) {
   .pfWrap .pfCon .pfListCon {
     .pfList {
       width: 320px;
@@ -555,4 +645,4 @@
       }
     }
   }
-}
+} */
