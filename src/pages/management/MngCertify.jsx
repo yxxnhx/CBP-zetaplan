@@ -3,7 +3,7 @@ import BoldGradient from '../../img/me/me_company_box@2x.png';
 import '../../styles/mng/mngCertify.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/me/me_sub_bg@2x.png';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 
 
@@ -15,10 +15,47 @@ const MngCertify = ({setHdSubStyle}) => {
   const twoDepthLink='/mng-certify';
   const linkActive='twoDepth';
 
-  /* header 배경색 변경 */
+ 
+  const txt = '지난 14년 동안 2,500개 이상의 기업이 왜 제타플랜을 선택했을까?';
+  const [text, setText] = useState('');
+  const [count, setCount] = useState(0);
+    
+  const certifyTxt = '제타플랜 인증컨설팅 어떻게 다른가?';
+  const [certifyText, certifySetText] = useState('');
+  const [certifyCount, certifySetCount] = useState(0);
+  
+  
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
+
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setText(text + txt[count]); 
+      setCount(count + 1); 
+    }, 50);
+    if( count === txt.length)  {  
+      clearInterval(interval);
+    }
+    return () => clearInterval(interval); 
+  })
+
+
+  useEffect(() => {
+   
+    const interval = setInterval(() => {
+      certifySetText(certifyText + certifyTxt[certifyCount]);
+      certifySetCount(certifyCount + 1); 
+    }, 100);
+    if(certifyCount === certifyTxt.length)  {  
+      clearInterval(interval); 
+    }
+    return () => clearInterval(interval); 
+  })
+
+  
+
 
   return (
     <div>
@@ -40,7 +77,7 @@ const MngCertify = ({setHdSubStyle}) => {
           농수산식품유통공사, 한국 소재부품투자기관협의회, 국제기술교류재단, 한국산업기술진흥원 등과 협업하여
           기업의 성공을 위한 지원 업무에 최선을 다하고 있습니다.</p>
         </div>
-        <h4 className='mngCertifyCt'>지난 14년 동안 2,500개 이상의 기업이 왜 제타플랜을 선택했을까?</h4>
+        <h4 className='mngCertifyCt'>{text}</h4>
         <div className='mngCertifyTxt'>
           <p>작은 컨설팅이라도 제타플랜과 인연을 맺었다면, 당신은 자문조직을 얻으신겁니다.</p>
           <p>인증기업의 성장을 위한 컨설팅 체계적인 컨설팅 지원</p>
@@ -53,7 +90,7 @@ const MngCertify = ({setHdSubStyle}) => {
           <p>- 산업통상자원부 지정 기술거래기관으로서 기술이전 및 기술사업화 · 투자연계 R&D 컨설팅 지원 / KDB 산업은행 기술거래 연계지원 </p>
           <p>- 한국벤처캐피탈협회 M&A 지원사업, 신용보증기금 연계 보증연계투자· IPO · M&A 컨설팅</p>
         </div>
-        <h4 className='mngCertifyCt'>제타플랜 인증컨설팅 어떻게 다른가?</h4>
+        <h4 className='mngCertifyCt'>{certifyText}</h4>
         <div className='mngCertifyTxt'>
           <p>- 인증 취득성공를 위한 사전 검토서비스 제공</p>
           <p>- 2017년 해당 컨설팅 진행사 99% 인증 취득</p>

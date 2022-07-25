@@ -21,7 +21,7 @@ const MngValue = ({setHdSubStyle}) => {
   const threeDepthLink=`/mng-value/${category}`;
   const linkActive='threeDepth';
 
-  /* header 배경색 변경 */
+
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])

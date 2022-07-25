@@ -13,7 +13,7 @@ const MngTrade = ({setHdSubStyle}) => {
   const twoDepthLink='/mng-trade';
   const linkActive='twoDepth';
   
-  /* header 배경색 변경 */
+
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
@@ -33,6 +33,11 @@ const MngTrade = ({setHdSubStyle}) => {
           <p>이러한 상황을 감안하여 본 제타플랜은 기술공급 기업의 현지 인큐베이팅은 물론
           기술투자, 기술 M&A 등 기술거래 관련 다양한 컨설팅 업무를 수행하고 있습니다.</p>
         </div>
+      </div>
+      <div className="mngTradeDecoBg">
+        <p>ZETA PLAN</p>
+      </div>
+      <div className='mngInner'>
         <h2 className='mngSubTitleNb mngTradePro'>Process</h2>
         <div className='mngTradeEdge'>
           <img src={ProcessImg} alt='process' className='mngTradeProcessImg'/>

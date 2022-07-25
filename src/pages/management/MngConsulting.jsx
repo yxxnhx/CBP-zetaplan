@@ -13,7 +13,7 @@ const MngConsulting = ({setHdSubStyle}) => {
   const linkActive='twoDepth';
 
 
-  /* header 배경색 변경 */
+
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
@@ -49,6 +49,11 @@ const MngConsulting = ({setHdSubStyle}) => {
           <p>경영정보에는 Application, Data Base, EIS/DSS, OA가 있고, 경영자원에는 사람, 자금, 자재, 설비, 정보인프라, 문화가 있으며 경영 process에는 업무절차, 통제지침, 보고절차, Report(산출물)이 있고 경영전략에는 Vision, Mission, Objective (목표), CSF (주요성공요소), Issue (현안긴급과제), C.A(주요가정)이 있습니다.
           </p>
         </div>
+      </div>
+      <div className="mngConsultingDecoBg">
+        <p>ZETA PLAN</p>
+      </div>
+      <div className='mngInner'>
         <div>
           <h2 className='mngSubTitleNb'>Matrix</h2>
         </div>

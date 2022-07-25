@@ -17,7 +17,7 @@ const MngCredit = ({setHdSubStyle}) => {
   const linkActive='twoDepth';
 
 
-  /* header 배경색 변경 */
+
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
@@ -148,6 +148,11 @@ const MngCredit = ({setHdSubStyle}) => {
               ))}
             </div>
           </div>
+        </div>  
+        <div className="mngCreditDecoBg">
+          <p>ZETA PLAN</p>
+        </div>
+        <div className='mngInner'>
           <h2 className='mngSmTitle mngCreditReportTitle'>보고서 종류</h2>
           <div className='mngCreditReport'>
             <div>CLIP보고서 (신용평가보고서)</div>
