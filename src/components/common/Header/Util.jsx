@@ -35,11 +35,20 @@ const Util = () => {
 
   return (
     <div className='hdUtil'>
-      <select className='hdLang'onChange="window.open(value,'_self');">
+      <div className='hdLang'>
+        <Link to={''}>KOR</Link>
+        {/* 아이콘으로 할거임 */}
+        <ul className='hdLangLi'>
+          <li><Link to={''}>KOR</Link></li>
+          <li><Link to={''}>ENG</Link></li>
+          <li><Link to={''}>CHN</Link></li>
+        </ul>
+      </div>
+      {/* <select className='hdLang'onChange="window.open(value,'_self');">
         <option><Link to={'/'}>KOR</Link></option>
-        <option value='www.naver.com'>{/* <Link to={'/'}> */}ENG{/* </Link> */}</option>
+        <option value='www.naver.com'><Link to={'/'}>ENG</Link></option>
         <option><Link to={'/'}>CHN</Link></option>
-      </select>
+      </select> */}
       {/* <ul className='hdLang'>
         <li><Link to={'/'}>KOR</Link></li>
         <li><Link to={'/eng'}>ENG</Link></li>

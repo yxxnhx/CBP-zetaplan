@@ -41,11 +41,11 @@ const Sitemap = ({ open, close }) => {
                   </ul>
                 </li>
                 <li className='hdSmList'>
-                  <Link to={'/maipo-info'} onClick={close}><span>M&A / IPO</span></Link>
+                  <Link to={'/maipo-info/m&a'} onClick={close}><span>M&A / IPO</span></Link>
                   <ul className='hdSmList2'>
-                    <li><Link to={'maipo-info'} onClick={close}>개요</Link></li>
-                    <li><Link to={'/maipo-process'} onClick={close}>Process</Link></li>
-                    <li><Link to={'/maipo-performance'} onClick={close}>성과</Link></li>
+                    <li><Link to={'/maipo-info/m&a'} onClick={close}>개요</Link></li>
+                    <li><Link to={'/maipo-process/m&a'} onClick={close}>Process</Link></li>
+                    <li><Link to={'/maipo-performance/m&a'} onClick={close}>성과</Link></li>
                   </ul>
                 </li>
                 <li className='hdSmList'>
@@ -73,8 +73,8 @@ const Sitemap = ({ open, close }) => {
                     <li>
                       <Link to={'/mng-value'} onClick={close}>가치평가</Link>
                       <ul className='hdSmList3'>
-                        <li><Link to={''} onClick={close}>기업가치평가</Link></li>
-                        <li><Link to={''} onClick={close}>기술가치평가</Link></li>
+                        <li><Link to={'/mng-value/mngvaluecompany'} onClick={close}>기업가치평가</Link></li>
+                        <li><Link to={'/mng-value/mngvalueskill'} onClick={close}>기술가치평가</Link></li>
                       </ul>
                     </li>
                     <li className='hdMargin2'><Link to={'/mng-credit'} onClick={close}>신용평가</Link></li>
@@ -82,23 +82,23 @@ const Sitemap = ({ open, close }) => {
                   </ul>
                 </li>
                 <li className='hdSmList'>
-                  <Link to={'/news'} onClick={close}><span>소식・자료</span></Link>
+                  <Link to={'/news/news'} onClick={close}><span>소식・자료</span></Link>
                   <ul className='hdSmList2'>
                     <li>
-                      <Link to={'/news'} onClick={close}>소식</Link>
+                      <Link to={'/news/news'} onClick={close}>소식</Link>
                       <ul className='hdSmList3'>
-                        <li><Link to={''} onClick={close}>NEWS</Link></li>
-                        <li><Link to={''} onClick={close}>COLUMN</Link></li>
+                        <li><Link to={'/news/news'} onClick={close}>NEWS</Link></li>
+                        <li><Link to={'/news/column'} onClick={close}>COLUMN</Link></li>
                       </ul>
                     </li>
                     <li className='hdSmMargin'>
-                      <Link to={'/dataInfo'} onClick={close}>자료</Link>
+                      <Link to={'/dataInfo/m&a-invest'} onClick={close}>자료</Link>
                       <ul className='hdSmList3'>
-                        <li><Link to={''} onClick={close}>M&A・ 투자정보</Link></li>
-                        <li><Link to={''} onClick={close}>정부지원사업</Link></li>
-                        <li><Link to={''} onClick={close}>정책자금 / 기업지원</Link></li>
-                        <li><Link to={''} onClick={close}>기술거래리스트</Link></li>
-                        <li><Link to={''} onClick={close}>컨설팅 실적</Link></li>
+                        <li><Link to={'/datainfo/m&a-invest'} onClick={close}>M&A・ 투자정보</Link></li>
+                        <li><Link to={'/datainfo/government-support'} onClick={close}>정부지원사업</Link></li>
+                        <li><Link to={'/datainfo/fund-support'} onClick={close}>정책자금 / 기업지원</Link></li>
+                        <li><Link to={'/datainfo/technology-trade'} onClick={close}>기술거래리스트</Link></li>
+                        <li><Link to={'/datainfo/consulting-list'} onClick={close}>컨설팅 실적</Link></li>
                       </ul>
                     </li>
                     <li><Link to={'/qna'} onClick={close}>Q&A</Link></li>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 const Gnb = () => {
+
   return (
     <ul className='hdGnbArea'>
       <li className='hdDep1'>
@@ -17,11 +18,11 @@ const Gnb = () => {
         </ul>
       </li>
       <li className='hdDep1'>
-        <Link to={'/maipo-info'} className='hdSub'>M&A / IPO</Link>
+        <Link to={'/maipo-info/m&a'} className='hdSub'>M&A / IPO</Link>
         <ul className='hdDep2'>
-          <li><Link to={'/maipo-info'}>개요</Link></li>
-          <li><Link to={'/maipo-process'}>Process</Link></li>
-          <li><Link to={'/maipo-performance'}>성과</Link></li>
+          <li><Link to={'/maipo-info/m&a'}>개요</Link></li>
+          <li><Link to={'/maipo-process/m&a'}>Process</Link></li>
+          <li><Link to={'/maipo-performance/m&a'}>성과</Link></li>
         </ul>
       </li>
       <li className='hdDep1'>
@@ -56,31 +57,31 @@ const Gnb = () => {
           <li><Link to={'/mng-credit'}>신용평가</Link></li>
           <li><Link to={'/mng-certify'}>기업인증</Link></li>
         </ul>
-      </li>
+      </li >
       <li className='hdDep1'>
-        <Link to={'/news'} className='hdSub'>소식・자료</Link>
+        <Link to={'/news/news'} className='hdSub'>소식・자료</Link>
         <ul className='hdDep2'>
           <li>
-            <Link to={'/news'}>소식</Link>
+            <Link to={'/news/news'}>소식</Link>
             <ul className='hdDep3'>
-              <li><Link to={''}>NEWS</Link></li>
-              <li><Link to={''}>COLUMN</Link></li>
+              <li><Link to={'/news/news'}>NEWS</Link></li>
+              <li><Link to={'/news/column'}>COLUMN</Link></li>
             </ul>
           </li>
           <li>
-            <Link to={'/dataInfo'}>자료</Link>
+            <Link to={'/dataInfo/m&a-invest'}>자료</Link>
             <ul className='hdDep3'>
-              <li><Link to={''}>M&A・ 투자정보</Link></li>
-              <li><Link to={''}>정부지원사업</Link></li>
-              <li><Link to={''}>정책자금 / 기업지원</Link></li>
-              <li><Link to={''}>기술거래리스트</Link></li>
-              <li><Link to={''}>컨설팅 실적</Link></li>
+              <li><Link to={'/datainfo/m&a-invest'}>M&A・ 투자정보</Link></li>
+              <li><Link to={'/datainfo/government-support'}>정부지원사업</Link></li>
+              <li><Link to={'/datainfo/fund-support'}>정책자금 / 기업지원</Link></li>
+              <li><Link to={'/datainfo/technology-trade'}>기술거래리스트</Link></li>
+              <li><Link to={'/datainfo/consulting-list'}>컨설팅 실적</Link></li>
             </ul>
           </li>
           <li><Link to={'/qna'}>Q&A</Link></li>
         </ul>
       </li>
-    </ul>
+    </ul >
   );
 };
 

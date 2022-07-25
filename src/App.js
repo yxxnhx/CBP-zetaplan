@@ -71,9 +71,9 @@ function App() {
           <Route path="/gb-strategy" element={<GbStrategy setHdSubStyle={setHdSubStyle} />} />
           <Route path="/gb-case" element={<GbCase setHdSubStyle={setHdSubStyle} />} />
           <Route path="/landing" element={<Landing />} />
-          <Route path="/maipo-info" element={<MaIpoInfo setHdSubStyle={setHdSubStyle} />} />
-          <Route path="/maipo-process" element={<MaIpoPro setHdSubStyle={setHdSubStyle} />} />
-          <Route path="/maipo-performance" element={<MaIpoPerfo setHdSubStyle={setHdSubStyle} />} />
+          <Route path="/maipo-info/:category" element={<MaIpoInfo setHdSubStyle={setHdSubStyle} />} />
+          <Route path="/maipo-process/:category" element={<MaIpoPro setHdSubStyle={setHdSubStyle} />} />
+          <Route path="/maipo-performance/:category" element={<MaIpoPerfo setHdSubStyle={setHdSubStyle} />} />
           <Route path="/zeta-history" element={<ZetaHistory setHdSubStyle={setHdSubStyle} />} />
           <Route path="/zeta-ci" element={<ZetaCi setHdSubStyle={setHdSubStyle} />} />
           <Route path="/zeta-consul" element={<ZetaConsul setHdSubStyle={setHdSubStyle} />} />
