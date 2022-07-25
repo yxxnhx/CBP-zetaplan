@@ -8,6 +8,12 @@ import { useState, useEffect } from 'react';
 const GbCase = ({ setHdSubStyle }) => {
   const title = 'ZETA PLAN은 전 세계적으로<br/> 우수한 해외 네트워크를 보유하고 있습니다.';
 
+  const oneDepth = '해외진출';
+  const oneDepthLink = '/gb';
+  const twoDepth = '해외진출사례';
+  const twoDepthLink = '/gb-case';
+  const linkActive = 'twoDepth';
+
   /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub');
@@ -376,7 +382,15 @@ const GbCase = ({ setHdSubStyle }) => {
 
   return (
     <div>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner
+        title={title}
+        img={subBg}
+        oneDepth={oneDepth}
+        oneDepthLink={oneDepthLink}
+        twoDepth={twoDepth}
+        twoDepthLink={twoDepthLink}
+        linkActive={linkActive}
+      />
       <div className="gbInner">
         <div className="gbTabTitleBox">
           <p className="gbTabTitle">해외진출사례</p>

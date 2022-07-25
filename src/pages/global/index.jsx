@@ -9,6 +9,12 @@ import { useEffect } from 'react';
 const index = ({ setHdSubStyle }) => {
   const title = 'ZETA PLAN은 전 세계적으로<br/> 우수한 해외 네트워크를 보유하고 있습니다.';
 
+  const oneDepth = '해외진출';
+  const oneDepthLink = '/gb';
+  const twoDepth = '개요';
+  const twoDepthLink = '/gb';
+  const linkActive = 'twoDepth';
+
   /* header 배경색 변경 */
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
@@ -17,7 +23,16 @@ const index = ({ setHdSubStyle }) => {
 
   return (
     <div>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner
+        title={title}
+        img={subBg}
+        oneDepth={oneDepth}
+        oneDepthLink={oneDepthLink}
+        twoDepth={twoDepth}
+        twoDepthLink={twoDepthLink}
+        linkActive={linkActive}
+      />
+
       <div className="gbInner">
         <div className="gbTabTitleBox">
           <p className="gbTabTitle">개요</p>

@@ -120,7 +120,11 @@
 
 @media (min-width: 360px) and (max-width: 767px) {
   .gbInner .gbAccoContentBox {
-    padding: 2rem;
+    padding: 1rem;
+  }
+
+  .gbInner .gbAccoContentBox .gbAccoContentArea {
+    margin-left: 2.167vw;
   }
   .gbInner .gbAccordion .gbProcessItem .gbProcessBtn .gbUnderBtn {
     background: url('../../img/icon/bottom_arrow.png') no-repeat;
@@ -129,7 +133,7 @@
     height: 7px;
   }
 
-  .gbInner .gbAccordion .gbProcessItem .gbProcessBtn .gTopBtn {
+  .gbInner .gbAccordion .gbProcessItem .gbProcessBtn .gbTopBtn {
     background: url('../../img/icon/top_arrow.png') no-repeat;
     background-size: contain;
     width: 11px;

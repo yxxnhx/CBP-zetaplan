@@ -120,6 +120,7 @@
       }
       .pfConBox {
         margin-top: 20px;
+        padding-top: 5px;
         .pfIconBox {
           display: none;
         }
@@ -189,6 +190,7 @@
         .pfMQConBox {
           display: flex;
           justify-content: space-around;
+          padding-top: 10px;
 
           .pfTitle {
             font-size: 18px;
@@ -251,9 +253,10 @@
           display: flex;
           justify-content: space-around;
           align-items: center;
+          padding-top: 10px;
 
           .pfTitle {
-            font-size: 18px;
+            font-size: 24px;
           }
 
           .pfCount {
@@ -313,13 +316,14 @@
           display: flex;
           justify-content: space-around;
           align-items: center;
+          padding-top: 10px;
 
           .pfTitle {
-            font-size: 20px;
+            font-size: 30px;
           }
 
           .pfCount {
-            font-size: 38px;
+            font-size: 40px;
             padding-bottom: 15px;
           }
         }
