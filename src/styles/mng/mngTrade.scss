@@ -2,6 +2,8 @@
 
 @import '../GlobalStyle.scss';
 
+
+
 .mngSubTitle{
   @include Subtitle($sub-title, $basic-gray3);
 }
@@ -13,6 +15,7 @@
     font-family:'Noto Sans KR';
   }
 }
+
 
 .mngSubTitleNb{
   font-size: $sub-title;
@@ -36,15 +39,6 @@
   margin-bottom: 10rem;
 }
 
-.mngTradeEdge{
-  text-align: center;
-}
-
-.mngTradeProcessImg{
-  width: 80%;
-  margin-bottom: 10rem;
-}
-
 
 .mngTradeDecoBg {
   background: url('./../../img/me/mngTradeBg.jpg') no-repeat 30% ;
@@ -64,11 +58,19 @@
   }
 }
 
-
+.mngTradeProcessImg{
+  background: url(./../../img/me/me_process@2x.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vw;
+  font-size: 0;
+}
 
 .mngInner{
   @include Inner
 }
+
+
 
 @media (min-width: 768px) and (max-width: 1023px){
   .mngSummary.mngTradeTxt p{
@@ -78,7 +80,13 @@
     width: 80%;
     margin-bottom: 6rem;
   }
+
+  .mngTradeDecoBg{
+    width: 100%;
+    height: 30rem;
+  }
 }
+
 
 @media (min-width: 360px) and (max-width: 767px){
   .mngSummary.mngTradeTxt{
