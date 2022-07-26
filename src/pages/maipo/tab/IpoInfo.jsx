@@ -1,8 +1,25 @@
 import React from 'react';
 import ipoInfoMainImg from '../../../img/m&a_ipo/ipo_summery.png'
+import { useState, useEffect } from 'react';
 
 
 const IpoInfo = () => {
+
+  const txt = '일정한 기준에 따라 심사하여 기업의 자금조달과 투자자의 보호를 도모하고 있습니다.';
+  const [text, setText] = useState('');
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setText(text + txt[count]); 
+      setCount(count + 1); 
+    }, 50);
+    if( count === txt.length)  {  
+      clearInterval(interval);
+    }
+    return () => clearInterval(interval); 
+  })
+
   return (
     <div className='miInfoContent'>
       <img className='miInfoMainImg' src={ipoInfoMainImg} alt="M&A 개요 메인 이미지" />
@@ -18,7 +35,7 @@ const IpoInfo = () => {
           <br />
           여기서 주식을 공개한다는 것은 기업의 주식을 증권시장에 공식적으로 등록하는 것을 말합니다.
         </p>
-        <p>일정한 기준에 따라 심사하여 기업의 자금조달과 투자자의 보호를 도모하고 있습니다.</p>
+        <p>{text}</p>
       </div>
     </div>
   );

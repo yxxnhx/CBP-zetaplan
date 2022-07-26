@@ -63,14 +63,14 @@ header.hdMain {
   
       .hdSearchBtn {
         background: url('../../img/icon/search_black@2x.png') no-repeat center / cover;
-        width: 1.302vw;
-    height: 1.302vw;
+        width: 1.042vw;
+        height: 1.042vw;
       }
   
       .hdSitemapBtn {
         background: url('../../img/icon/menu_black@2x.png') no-repeat center / cover;
-        width: 1.302vw;
-        height: 0.990vw;
+        width: 1.198vw;
+        height: 0.885vw;
       }
     } 
   }
@@ -99,14 +99,14 @@ header.hdMain.on{
 
     .hdSearchBtn {
       background: url('../../img/icon/search_black@2x.png') no-repeat center / cover;
-      width: 1.302vw;
-    height: 1.302vw;
+      width: 1.042vw;
+      height: 1.042vw;
     }
 
     .hdSitemapBtn {
       background: url('../../img/icon/menu_black@2x.png') no-repeat center / cover;
-      width: 1.302vw;
-      height: 0.990vw;
+      width: 1.198vw;
+      height: 0.885vw;
     }
   }
 }
@@ -136,14 +136,14 @@ header.hdSub {
 
     .hdSearchBtn {
       background: url('../../img/icon/search_black@2x.png') no-repeat center / cover;
-      width: 1.302vw;
-    height: 1.302vw;
+      width: 1.042vw;
+      height: 1.042vw;
     }
 
     .hdSitemapBtn {
       background: url('../../img/icon/menu_black@2x.png') no-repeat center / cover;
-      width: 1.302vw;
-      height: 0.990vw;
+      width: 1.198vw;
+      height: 0.885vw;
     }
   }
 }
@@ -157,7 +157,7 @@ header.hdSub {
   .hdDep1 {
     &:hover>.hdDep2 {
       visibility: visible;
-      height: 23rem;
+      height: 26rem;
       transition: 1s;
     }
 
@@ -237,7 +237,7 @@ header.hdSub {
 .hdUtil {
   width: 9.375vw;
   height: $header-height;
-  padding-top: 4.8rem;
+  padding-top: 4.9rem;
   display: flex;
   justify-content: space-between;
   margin-right: 5rem;
@@ -246,8 +246,8 @@ header.hdSub {
     width: 2.2vw;
     
     svg{
-      width: 2vw;
-      height: 2vw;
+      width: 1.5vw;
+      height: 1.5vw;
       fill: $basic-white;
       cursor: pointer;
     }
@@ -256,7 +256,7 @@ header.hdSub {
       z-index: 100;
       position: relative;
       top: 0;
-      left: -1rem;
+      left: -1.5rem;
       width: 3.5vw;
       margin-top: 0.5rem;
       padding-bottom: 0.5rem;
@@ -274,25 +274,25 @@ header.hdSub {
 
   .hdSearchBtn {
     background: url('../../img/icon/search@2x.png') no-repeat center / cover;
-    width: 1.302vw;
-    height: 1.302vw;
+    width: 1.042vw;
+    height: 1.042vw;
     font-size: 0;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
   }
   
   .hdSearchBtnX {
     background: url(../../img/icon/close_btn@2x.png) no-repeat center / cover;
-    width: 1.302vw;
-    height: 1.302vw;
-    margin-top: 0.5rem;
+    width: 1.042vw;
+    height: 1.042vw;
+    margin-top: 0.2rem;
   }
 
   .hdSitemapBtn {
     background: url('../../img/icon/menu@2x.png') no-repeat center / cover;
-    width: 1.302vw;
-    height: 0.990vw;
+    width: 1.198vw;
+    height: 0.885vw;
     font-size: 0;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     margin-left: 0.521vw;
   }
 }
@@ -589,11 +589,11 @@ header.hdSub {
 @media (max-width:1500px) {
   header.hdMain:hover > .hd .hdUtil .hdLang .hdLangLi{
     width: 6.5rem;
-    left: -1.5rem;
+    left: -2rem;
   }
   .hdUtil .hdLang .hdLangLi{
     width: 6.5rem;
-    left: -1.5rem;
+    left: -2rem;
   }
 
   .hdSitemap .hdSmRight .hdSmArea .hdSmList {
@@ -620,9 +620,8 @@ header.hdSub {
     font-size: 1.8rem;
   }
 
-  .hdUtil .hdLang {
-    font-size: 1.6rem;
-    margin-right: 1rem;
+  .hdUtil .hdLang .hdLangLi li{
+    font-size: 2.5rem;
   }
 
   .hdGnbArea .hdDep1:hover>.hdDep2>li {
@@ -651,7 +650,7 @@ header.hdSub {
   }
 
   .hdUtil {
-    width: 12rem;
+    width: 11rem;
   }
 
   .hdSearch .hdSearchWrap .hdSearchContent .hdButtonsArea .hdButtons button {
@@ -719,13 +718,26 @@ header.hdSub {
   .hdUtil {
     width: 18rem;
   }
-
+  .hdUtil .hdLang{
+    margin-right: 1.5rem;
+  }
+  header.hdMain.on .hdUtil .hdLang{
+    margin-right: 1.5rem;
+  }
+  
   .hdUtil .hdLang svg {
     width: 3rem;
     height: 3rem;
   }
+  .hdUtil .hdLang .hdLangLi li{
+    font-size: 4rem;
+  }
 
   .hdUtil .hdSearchBtn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .hdUtil .hdSearchBtnX{
     width: 2.5rem;
     height: 2.5rem;
   }
@@ -738,6 +750,10 @@ header.hdSub {
   header.hdSub .hdUtil .hdSearchBtn {
     width: 2.5rem;
     height: 2.5rem;
+  }
+  header.hdMain.on .hdUtil .hdSitemapBtn{
+    width: 2.5rem;
+    height: 2.1rem;
   }
 
   .hdUtil .hdSitemapBtn {

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-const Gnb = () => {
+const Gnb = ({srhOpen}) => {
 
   return (
     <ul className='hdGnbArea'>
       <li className='hdDep1'>
-        <Link to={'/zeta'} className='hdSub'>ZETA</Link>
+        <Link to={'/zeta'} className='hdSub' onClick={srhOpen} >ZETA</Link>
         <ul className='hdDep2'>
           <li><Link to={'/zeta'}>회사소개</Link></li>
           <li><Link to={'/zeta-history'}>연혁</Link></li>
@@ -18,7 +18,7 @@ const Gnb = () => {
         </ul>
       </li>
       <li className='hdDep1'>
-        <Link to={'/maipo-info/m&a'} className='hdSub'>M&A / IPO</Link>
+        <Link to={'/maipo-info/m&a'} className='hdSub' onClick={srhOpen} >M&A / IPO</Link>
         <ul className='hdDep2'>
           <li><Link to={'/maipo-info/m&a'}>개요</Link></li>
           <li><Link to={'/maipo-process/m&a'}>Process</Link></li>
@@ -26,7 +26,7 @@ const Gnb = () => {
         </ul>
       </li>
       <li className='hdDep1'>
-        <Link to={'/ir'} className='hdSub'>투자 IR</Link>
+        <Link to={'/ir'} className='hdSub' onClick={srhOpen} >투자 IR</Link>
         <ul className='hdDep2'>
           <li><Link to={'/ir'}>개요</Link></li>
           <li><Link to={'/ir-plan'}>사업계획서</Link></li>
@@ -35,7 +35,7 @@ const Gnb = () => {
         </ul>
       </li>
       <li className='hdDep1'>
-        <Link to={'/gb'} className='hdSub'>해외진출</Link>
+        <Link to={'/gb'} className='hdSub' onClick={srhOpen} >해외진출</Link>
         <ul className='hdDep2'>
           <li><Link to={'/gb'}>개요</Link></li>
           <li><Link to={'/gb-strategy'}>전략수립</Link></li>
@@ -43,7 +43,7 @@ const Gnb = () => {
         </ul>
       </li>
       <li className='hdDep1'>
-        <Link to={'/mng'} className='hdSub'>경영・평가</Link>
+        <Link to={'/mng'} className='hdSub' onClick={srhOpen} >경영・평가</Link>
         <ul className='hdDep2'>
           <li><Link to={'/mng'}>경영컨설팅</Link></li>
           <li><Link to={'/mng-trade'}>기술거래</Link></li>
@@ -59,7 +59,7 @@ const Gnb = () => {
         </ul>
       </li >
       <li className='hdDep1'>
-        <Link to={'/news/news'} className='hdSub'>소식・자료</Link>
+        <Link to={'/news/news'} className='hdSub' onClick={srhOpen} >소식・자료</Link>
         <ul className='hdDep2'>
           <li>
             <Link to={'/news/news'}>소식</Link>

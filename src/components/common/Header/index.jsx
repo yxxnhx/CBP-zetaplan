@@ -16,7 +16,7 @@ const Header = ({ hdSubStyle }) => {
           <Link to={'/main'} className='hdLogo'>zeta plan</Link>
         </h1>
 
-        <Gnb />
+        <Gnb srhOpen={srhOpen} />
 
         <Util srhOpen={srhOpen} setSrhOpen={setSrhOpen} />
       </div>
