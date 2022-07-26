@@ -1,13 +1,17 @@
 import React from 'react';
 import '../../styles/login/login.scss'
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
-const Login = () => {
+const Login = ({ setHdSubStyle }) => {
   const adminIdRef = useRef();
   const passwordRef = useRef();
 
   const [inputs, setInputs] = useState({})
   const [errors, setErrors] = useState({});
+
+  useEffect(() => {
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle])
 
   const onChange = (e) => {
     setInputs({
@@ -19,7 +23,7 @@ const Login = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     setErrors(validation(inputs));
-    if(inputs['admin-id'].length < 1) {
+    if(inputs['admin-id']?.length === false) {
       adminIdRef.current.focus();
       return;
     }
@@ -43,24 +47,20 @@ const Login = () => {
     }
     if (!inputs['admin-pwd']) {
       errors.pwd = '비밀번호를 입력해주세요';
-    }
-
+    } 
     return errors;
   }
 
   return (
     <div className="loginBackGround">
       <div className='loginContainer'>
-        <div className='logLeftContainer'>
-          <div className='logText'>
-            <p className='logTextFirst'>반갑습니다</p>
-            <p className='logTextSecond'>ZETAPLAN입니다</p>
+        <div className="loginFormContainer">
+          <div className='leftContainer'>
+            <div className='leftText'>
+              <p>반갑습니다</p>
+              <p>ZETAPLAN입니다</p>
+            </div>
           </div>
-          <div className='loginLogoBox'>
-            <a className="loginLogo" href="/">ZETAPLAN 홈페이지로</a>
-          </div>
-        </div>
-        <div className='logRightContainer'>
           <form className='loginForm'>
             <div className="loginIdBox">
               <label htmlFor="admin-id">
@@ -74,9 +74,9 @@ const Login = () => {
                 />
               </label>
               <div className='errorBox'>
-                <div>
+                <span>
                   {errors.id || <p className='error'>{errors.id}</p>}
-                </div>
+                </span>
               </div>
             </div>
             <div className='pwdBox'>
@@ -91,16 +91,16 @@ const Login = () => {
                 />
               </label>
               <div className="errorBox">
-                <div> 
+                <span> 
                   {errors.pwd || <p className='error'>{errors.pwd}</p>}
-                </div>
+                </span>
               </div>
             </div>
             <button className="loginBtn"type="button" onClick={onSubmit}>로그인</button>
           </form>
+
         </div>
       </div>
-
     </div>
   );
 };

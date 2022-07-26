@@ -56,7 +56,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/main" element={<Index setHdSubStyle={setHdSubStyle} />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login setHdSubStyle={setHdSubStyle} />} />
           <Route path="/ir" element={<Ir setHdSubStyle={setHdSubStyle} />} />
           <Route path="/ir-perfo" element={<IrPerfo setHdSubStyle={setHdSubStyle} />} />
           <Route path="/ir-plan" element={<IrPlan setHdSubStyle={setHdSubStyle} />} />
