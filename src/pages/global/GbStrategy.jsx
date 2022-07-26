@@ -39,7 +39,7 @@ const GbStrategy = ({ setHdSubStyle }) => {
           있습니다.
         </div>
         <p className="gbContentSubTitle">사업분야</p>
-        <div className="gbContentBox">
+        <div className="gbContentImgBox">
           <img className="gbGraphImg" src={globalPerformance} alt="해외 진출 단계" />
           <p className="gbPerformanceDes">해외진출지원 단계별 Key Module에 대한 최적해법을 제공합니다</p>
         </div>
