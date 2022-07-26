@@ -43,6 +43,7 @@ import LangEng from './pages/lang/LangEng';
 import LangCn from './pages/lang/LangCn';
 import { useState } from 'react';
 import QnaWrite from './pages/notice/QnaWrite';
+import { CKEditor } from '@ckeditor/ckeditor5-react';
 
 function App() {
   const [hdSubStyle, setHdSubStyle] = useState('hdMain');

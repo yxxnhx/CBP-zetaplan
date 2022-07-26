@@ -83,7 +83,6 @@ const MainNews = () => {
                       {
                         data.img.length === 0 ? <img className='thumbnail' src={zetaLogo} alt="뉴스 칼럼 대표 이미지" /> : <img className='thumbnail' src={data.img} alt="칼럼"/>
                       }
-                      {/* <img src={data.img} alt={data.category} /> */}
                     </div>
                   </div>
                 </SwiperSlide>
