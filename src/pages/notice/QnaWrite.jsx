@@ -53,7 +53,8 @@ const QnaWrite = () => {
     }
 
     
-    alert('질문 등록 완료되었습니다')
+    alert('질문 등록 완료되었습니다');
+    window.location('/qna')
   }
 
   const validation = (state) => {
@@ -116,7 +117,7 @@ const QnaWrite = () => {
                   {errors.author || <p className='error'>{errors.author}</p>}
                 </div>
               </div>
-              <div className="qnaBox">
+              <div className="qnaBox content">
                 <div className="qnaContentBox">
                   <label htmlFor="content" className='qnaContent'>내용</label>
                   <textarea 
@@ -124,7 +125,7 @@ const QnaWrite = () => {
                     type="text" 
                     className='qnaContent' 
                     id='qnaContent'
-                    placeholder='질문을 입력헤주세요'  
+                    placeholder='질문을 입력해주세요'  
                     value={state.content} 
                     ref={contentInput}
                     onChange={handleChangeState}/>
@@ -135,7 +136,7 @@ const QnaWrite = () => {
               </div>
 
               <div className="qnaBtnArea">
-                <button type='button' className="createBtn" onClick={handleSubmit}>등록하기</button>
+                <button type='button' className="createBtn" onClick={handleSubmit}>등록하기 </button>
               </div>
             </fieldset>
           </form>

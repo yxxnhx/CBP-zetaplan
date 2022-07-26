@@ -642,7 +642,7 @@
 
 }
 
-@media (min-width: 360px) and (max-width: 400px){
+@media all and (max-width: 400px){
   .irCircleDesP::after {
     bottom: 50%;
     transform: translateY(191%);

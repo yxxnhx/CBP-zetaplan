@@ -33,9 +33,9 @@ const ZetaPeople = ({ setHdSubStyle }) => {
           {
             peopleData.map((zetaPerson, i) => {
               return (
-                <li className='zetaPeoBox'>
+                <li className='zetaPeoBox' key={zetaPerson.id} >
                   <div className="zetaPeoImgBOX">
-                    <img src={require('./../../img/zeta/people/' + peopleData[i].img)} alt="zetaPerson" key={zetaPerson.id} />
+                    <img src={require('./../../img/zeta/people/' + peopleData[i].img)} alt="zetaPerson"/>
                     <div className="zetaPeoTBox">
                     </div>
                   </div>

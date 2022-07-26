@@ -5,6 +5,7 @@
     height: 90rem;
     background: url('./../../img/main/main_galexy_bg@2x.png')no-repeat center;
     background-size: 100%;
+    overflow: hidden;
     &:hover{
       background-size: 150%;
       transition:background-size 3.3s ease;
@@ -16,6 +17,8 @@
   .langAboutCon {
     width: 85%;
     margin: auto;
+    height: 100%;
+    
 
     .langAboutT {
       font: {
@@ -520,15 +523,6 @@
 }
 
 
-
-
-@media (min-width: 768px) and (max-width: 1023px){
-  * {
-    font-size: 50%;
-    box-sizing: border-box;
-  }
-
-}
 @media all and (max-width: 790px){
 
   .langLocationArea .langLocationContent {
@@ -570,9 +564,31 @@
       margin-bottom: 3rem;
     }
 }
+.langUnderBtn{
+  background: url('../../img/icon/bottom_arrow.png') no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 7px;
 }
-@media all and (max-width: 474px) {
+.langTopBtn{
+  background: url('../../img/icon/top_arrow.png') no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 7px;
+}
+}
 
+
+@media all and (max-width: 474px) {
+  // .langAbout {
+  //   pointer-events: none;
+  //   background-size: 150%;
+
+  // }
+
+  // .langAboutCon {
+  //   padding-top: 0;
+  // }
 .langTec .langTecBox .langTecContent .langTecChBox .langTecContentC {
   width: 100%;
   margin-left: 0;
@@ -623,5 +639,18 @@
   &::after {
     display: none;
     }
+  }
+
+  .langUnderBtn{
+    background: url('../../img/icon/bottom_arrow.png') no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 7px;
+  }
+  .langTopBtn{
+    background: url('../../img/icon/top_arrow.png') no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 7px;
   }
 }

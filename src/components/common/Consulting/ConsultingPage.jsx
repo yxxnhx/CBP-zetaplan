@@ -58,6 +58,8 @@ const ConsultingPage = ({ open, close, setHdSubStyle }) => {
       alert('필수 입력을 확인하세요.')
     } else {
       alert('상담 신청이 완료되었습니다')
+      window.location = '/main'
+
     }
   };
 
