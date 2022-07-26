@@ -21,6 +21,15 @@ const MngValue = ({setHdSubStyle}) => {
   const threeDepthLink=`/mng-value/${category}`;
   const linkActive='threeDepth';
 
+  const [theme, setTheme] = useState(true);
+  const [themeCss, setThemCss] = useState(true);
+  const handleTheme = () => {
+    const value = theme;
+    setTheme(!value);
+    const cssValue = value ? 'dark' : 'light';
+    setThemCss(cssValue);
+  }
+
 
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
@@ -197,6 +206,11 @@ const MngValue = ({setHdSubStyle}) => {
         {/* {mngValueContents[activeIndex].tabSubTitle} */}
         {data.tabSubTitle}
         <div className='mngInner'>
+          <div className="themeBtnArea">
+            <button className='themeBtn' onClick={()=>{handleTheme()}}>
+              mode change
+            </button>
+          </div>
           <h2 className='mngSubTitle'>가치평가</h2>
           <div className='mngMenuTabEdge'>
             <ul className='mngMenuTab'>
