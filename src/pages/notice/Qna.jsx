@@ -33,12 +33,16 @@ const Qna = ({ setHdSubStyle }) => {
 
   useEffect(() => {
     const qnaLocalStorage = JSON.parse(window.localStorage.getItem('newQnaList'));
-    const qnaList = qnaJsonList.concat(qnaLocalStorage).map((item, index) => {
-      return { ...item, id: index + 1, hit: Math.floor(Math.random() * index) };
-    });
-    
-    const reverseQnaList = qnaList.reverse();
-    setData(reverseQnaList);
+    if (qnaLocalStorage !== null) {
+      const qnaList = qnaJsonList.concat(qnaLocalStorage).map((item, index) => {
+        return { ...item, id: index + 1, hit: 7 };
+      });
+      const reverseQnaList = qnaList.reverse();
+      setData(reverseQnaList);
+    } else {
+      const reverseJsonList = [...qnaJsonList].reverse();
+      setData(reverseJsonList);
+    }
   }, [])
 
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'

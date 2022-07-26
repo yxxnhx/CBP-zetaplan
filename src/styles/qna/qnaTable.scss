@@ -2,16 +2,16 @@
 
 .qnaTable {
   border-top: 5px solid #707070;
-  // border-bottom: 1px solid #707070;
   width: 100%;
-  // border-collapse: separate;
-  // border-spacing: 0 10px;
+  padding: 1%;
+  box-sizing: border-box;
+  table-layout: fixed;
 
   .qnaThead {
 
     .qnaThTr {
       border-bottom: 1px solid #707070;
-      height: 113px;
+      height: 10rem;
       th {
         font-size: 1.92rem;
         font-family: 'Noto Sans KR',sans-serif;
@@ -22,11 +22,11 @@
   }
   .qnaTbody {
     border-bottom: 1px solid #707070;
+
     .qnaTbTr {
       border-bottom: 1px solid $basic-gray1;
-      height: 113px;
+      height: 10rem;
       cursor: pointer;
-      // border-spacing: 0 100px;
       &:last-child {
         border-bottom: none;
       }
@@ -39,40 +39,39 @@
         text-align: center;
 
         &.qnaTbodyId {
-          width: 100px;
+          // width: 100px;
+          width: 5%;
 
         }
 
         // padding: 0 8px;
         &.qnaTbodyTitle {
-          // width: 60%;
-          // padding-right: 1rem;
+          // width: 50%;
+          box-sizing: border-box;
+          padding-right: 1rem;
           width: 550px;
           font-family: 'Noto Sans KR',sans-serif;
           font-weight: bold;
           text-align: start;
           line-height: 1.7;
-          // overflow: hidden;
-          // text-overflow: ellipsis;
-          // word-break: break-word;    
-          // display: -webkit-box;
-          // -webkit-line-clamp: 1;
-          // -webkit-box-orient: vertical;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
         }
 
         &.qnaTbodyWriter {
-          width: 100px;
-          
-
+          // width: 100px;
+          width: 10%;
         }
 
         &.qnaTbodyDate {
-          width: 200px;
+          // width: 200px;
+          width: 20%;
         }
 
         &.qnaTbodyHit {
-          width: 100px;
-
+          // width: 100px;
+          width: 5%;
         }
 
         &.isAnswerBtn > button {
@@ -102,6 +101,22 @@
 
 
 }
-@media (min-width: 360px) and (max-width: 767px){
+@media (min-width: 360px) and (max-width: 601px){
+  .qnaTable .qnaTbody .qnaTbTr td.qnaTbodyDate {
+    display: none;
+  }
+  .qnaTable .qnaTbody .qnaTbTr td.qnaTbodyHit {
+    display: none;
+  }
+  .qnaTable .qnaThead .qnaThTr th:nth-of-type(4) {
+    display: none;
+  }
+  .qnaTable .qnaThead .qnaThTr th:nth-of-type(5) {
+    display: none;
+  }
+  .qnaTable .qnaTbody .qnaTbTr td.isAnswerBtn > button {
+    width: 10rem;
+  }
+
 
 }

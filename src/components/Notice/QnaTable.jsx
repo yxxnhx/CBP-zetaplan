@@ -9,7 +9,7 @@ const QnaTable = ({qnaJsonList}) => {
         <thead className='qnaThead'>
           <tr className='qnaThTr'>
             <th>번호</th>
-            <th>제목</th>
+            <th colspan="2">제목</th>
             <th>작성자</th>
             <th>등록일</th>
             <th>조회수</th>
