@@ -23,7 +23,8 @@ const Login = ({ setHdSubStyle }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     setErrors(validation(inputs));
-    if(inputs['admin-id']?.length === false) {
+    const idLength = inputs['admin-id']?.length
+    if(!idLength) {
       adminIdRef.current.focus();
       return;
     }
