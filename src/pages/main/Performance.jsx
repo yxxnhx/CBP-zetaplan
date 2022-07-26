@@ -17,9 +17,6 @@ const Performance = () => {
       <div className="pfCon">
         <p className="pfMaintitle">PERFORMANCE</p>
         <div className="pfListCon">
-          <div className="pfMQImgBox">
-            <img src={mobileBg} alt="배경 이미지" />
-          </div>
           <div className="pfList maList">
             <div className="pfImgBox">
               <img src={globalBg} alt="배경 이미지" />
