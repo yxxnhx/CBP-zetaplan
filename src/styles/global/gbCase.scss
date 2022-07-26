@@ -40,11 +40,11 @@
     .gbProcessItem {
       margin-bottom: 0.5rem;
       padding: 2rem;
-      width: 140rem;
+      width: 100%;
       box-sizing: border-box;
 
       .gbProcessBtn {
-        width: 85vw;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -77,7 +77,7 @@
       .gbProcessContent {
         max-height: 0;
         overflow: hidden;
-        width: 85vw;
+        width: 100%;
       }
       .gbProcessContent.show {
         height: auto;

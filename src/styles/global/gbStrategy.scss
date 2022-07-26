@@ -40,20 +40,23 @@
     }
   }
 
-  .gbGraphImg {
-    margin-top: 2.604vw;
-    margin-left: 10.417vw;
-    width: 85%;
-  }
-
-  .gbPerformanceDes {
-    font-size: 1.8rem;
-    margin-top: 4rem;
-    margin-bottom: 10rem;
+  .gbContentBox {
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-left: 7.417vw;
-    color: $basic-gray3;
+    flex-direction: column;
+
+    .gbGraphImg {
+      width: 100%;
+    }
+    .gbPerformanceDes {
+      font-size: 1.8rem;
+      margin-top: 4rem;
+      margin-bottom: 10rem;
+      display: flex;
+      justify-content: center;
+      color: $basic-gray3;
+    }
   }
 
   .gbMaterialTitle {

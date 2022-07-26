@@ -39,8 +39,10 @@ const GbStrategy = ({ setHdSubStyle }) => {
           있습니다.
         </div>
         <p className="gbContentSubTitle">사업분야</p>
-        <img className="gbGraphImg" src={globalPerformance} alt="해외 진출 단계" />
-        <p className="gbPerformanceDes">해외진출지원 단계별 Key Module에 대한 최적해법을 제공합니다</p>
+        <div className="gbContentBox">
+          <img className="gbGraphImg" src={globalPerformance} alt="해외 진출 단계" />
+          <p className="gbPerformanceDes">해외진출지원 단계별 Key Module에 대한 최적해법을 제공합니다</p>
+        </div>
         <p className="gbMaterialTitle">✔︎ 기술거래·기술이전컨설팅</p>
         <p className="gbMaterialContent">
           • 해외기술이전사업 진출이후 베이징기술교역촉진중심, Transpacific IP, IPA VIETNAM, 주한영국상공회의소(BCCK),
