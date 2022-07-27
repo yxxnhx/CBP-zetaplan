@@ -1,5 +1,23 @@
 @import '../GlobalStyle.scss';
 
+.dark {
+  @include Dark;
+  .gbInner .gbMapImgBox {
+    background-image: url();
+  }
+  .gbInner .gbAccordion .gbProcessItem .gbProcessBtn {
+    background-color: #ccc;
+    border: none;
+  }
+  .gbInner .gbAccordion .gbProcessItem .gbProcessContent {
+    background-color: #ccc;
+  }
+
+  .gbInner .gbAccoContentBox .gbAccoContentArea .gbAccoContentT h1 {
+    color: #359aff;
+  }
+}
+
 .gbInner {
   @include Inner;
 
@@ -29,9 +47,12 @@
     }
   }
 
-  .gbMapImg {
-    margin: 3.646vw;
-    width: 90%;
+  .gbMapImgBox {
+    background: url(./../../img/global/global_map.png) no-repeat center/contain;
+    width: 100%;
+    height: 45vw;
+    font-size: 0;
+    text-indent: 999;
   }
 
   .gbAccordion {
@@ -92,7 +113,7 @@
     padding: 3rem;
     .gbAccoContentArea {
       display: flex;
-      margin-left: 4.167vw;
+      margin-left: 2.167vw;
       margin-bottom: 1.563vw;
       .gbAccoContentT {
         display: flex;
