@@ -4,6 +4,7 @@
 $zt-ftBold:700;
 $zt-OnFtSz:4rem;
 $zt-grayColor:#707070;
+$zt-darkBlueCol:#359aff;
 
 @mixin ztNotoKr($zt-krWeight,$zt-krSize){
   font-family: 'Noto Sans KR';
@@ -100,6 +101,30 @@ $zt-grayColor:#707070;
   }
 }
 
+.dark{
+  @include Dark;
+ 
+  .ztHisContent .ztHisTxtsTitle{
+    color:$zt-darkBlueCol;
+  }
+  .ztHisContent .ztHisTitleLi{
+    color:rgb(163, 158, 158);
+    &:hover{
+      color:#fff;
+    }
+  }
+  .ztHisContent .ztHisTitle .ztHisTitleLiOn{
+    color:$zt-darkBlueCol;
+  }
+  .ztHisTexts .ztHisTxtYear{
+    color:$zt-darkBlueCol;
+  }
+  .ztHisTexts .ztHisTxtYear::after{
+    border: 2px solid $zt-darkBlueCol;
+  }
+  
+}
+
 @mixin ztHisMedia {
   .ztHisContent{
     margin-top:6rem;
@@ -182,5 +207,11 @@ $zt-grayColor:#707070;
     font-size: 2.2rem;
     letter-spacing: -0.1rem;
     line-height: 2.3;
+  }
+
+  .dark{
+    .ztHisContent .ztHisTitle{
+    background-color: #1e1d1d;
+    }
   }
 } 

@@ -74,6 +74,18 @@ $zt-grayColor:#707070;
   }
 }
 
+.dark{
+  .ztInner .ztTitle{
+    color:$basic-white;
+  }
+  .ztCsTitle .ztCsTitleSub{
+    color:$basic-gray2;
+  }
+  .ztCsDataBox .ztCsData .ztCsDataTitle .ztCsDataNum::after{
+    background-color: #359aff;
+  }
+}
+
 @mixin ztCsMedia{
   .ztCsDataBox .ztCsData .ztCsDataTitle{
     flex: 100%;
