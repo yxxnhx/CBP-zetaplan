@@ -1,6 +1,5 @@
 import React from 'react';
 import './../../styles/lang/index.scss';
-import MainBanner from '../main/MainBanner';
 import langTecImg from '../../img/eng_cn/eng_cn_focus.png';
 import langTecChinaMap from '../../img/eng_cn/eng_cn_china.png';
 import langTecMap from '../../img/eng_cn/eng_cn_map.png';
@@ -10,12 +9,12 @@ import ComlCli from '../../img/eng_cn/eng_cn_company@2x.png';
 import UniCli from '../../img/eng_cn/eng_cn_univercity@2x.png';
 import LangEngAcco from './LangEngAcco';
 import { Link } from 'react-router-dom';
-import ZetaKrMap from '../zeta/zetaMap/ZetaKrMap';
+import MainBannerEng from '../main/MainBannerEng';
 
 const LangEng = () => {
   return (
     <div>
-      <MainBanner />
+      <MainBannerEng />
       <div className="langAbout">
         <div className="langAboutCon">
           <h2 className="langAboutT">About</h2>

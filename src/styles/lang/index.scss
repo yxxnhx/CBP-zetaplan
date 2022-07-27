@@ -2,7 +2,6 @@
 @import '../GlobalStyle.scss';
 
 .langAbout {
-    height: 90rem;
     background: url('./../../img/main/main_galexy_bg@2x.png')no-repeat center;
     background-size: 100%;
     overflow: hidden;
@@ -580,11 +579,12 @@
 
 
 @media all and (max-width: 474px) {
-  // .langAbout {
-  //   pointer-events: none;
-  //   background-size: 150%;
+  .langAbout {
+    pointer-events: none;
+    height: 90vh;
+    background-size: 150%;
 
-  // }
+  }
 
   // .langAboutCon {
   //   padding-top: 0;

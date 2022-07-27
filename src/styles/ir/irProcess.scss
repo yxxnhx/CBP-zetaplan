@@ -642,6 +642,32 @@
 
 }
 
+.dark {
+  .irProCircle li {
+    background-color: #ccc;
+    border: none;
+    &:hover{
+      background-color: $main-color;
+    }
+
+  }
+
+  .irProcessBtn {
+    background-color: #ccc;
+    border: none;
+
+  }
+
+  .irProcessContent{
+    background-color: #ccc;
+  }
+
+  .irProcessBtn.on{
+    background-color: $main-color;
+    color: #fff;
+  }
+}
+
 @media all and (max-width: 400px){
   .irCircleDesP::after {
     bottom: 50%;

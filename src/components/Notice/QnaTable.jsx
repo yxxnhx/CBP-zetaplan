@@ -3,13 +3,14 @@ import '../../styles/qna/qnaTable.scss';
 import QnaTableList from './QnaTableList';
 
 const QnaTable = ({qnaJsonList}) => {
+  console.log(qnaJsonList)
   return (
     <>
       <table className='qnaTable'>
         <thead className='qnaThead'>
           <tr className='qnaThTr'>
             <th>번호</th>
-            <th colspan="2">제목</th>
+            <th colSpan="2">제목</th>
             <th>작성자</th>
             <th>등록일</th>
             <th>조회수</th>
@@ -19,7 +20,7 @@ const QnaTable = ({qnaJsonList}) => {
         <tbody className='qnaTbody'>
           {qnaJsonList.map((data) => {
             return (
-              <QnaTableList key={`qnaList_${data.id}`} {...data} />
+              <QnaTableList key={data.id}  {...data} />
             )
           })}
         </tbody>

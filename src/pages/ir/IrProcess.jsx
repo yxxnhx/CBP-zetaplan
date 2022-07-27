@@ -28,6 +28,15 @@ const IrProcess = ({ setHdSubStyle }) => {
     setHdSubStyle('hdMain hdSub');
   }, [setHdSubStyle]);
 
+  const [theme, setTheme] = useState('');
+  const [themeCss, setThemCss] = useState('');
+  const handleTheme = () => {
+    const value = theme;
+    setTheme(!value);
+    const cssValue = value ? 'dark' : 'light';
+    setThemCss(cssValue);
+  }
+
   const data = [
     {
       id: 1,
@@ -99,45 +108,55 @@ const IrProcess = ({ setHdSubStyle }) => {
   return (
     <div>
       <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive}/>
+      <div className={themeCss}>
+        <div className='darkBackground'>
 
-      <div className="inner">
-        <div className="irSubtitle">Process</div>
-        <ul className="irProCircleArea">
-          <li className="irProCircleBox">
-            <ul className="irProCircle">
-              <li>STEP 01<span>경영 및</span><span>사업현황조사</span></li>
-              <li>STEP 02<span>기업 진단</span></li>
-              <li>STEP 03<span>투자유치 및</span><span>성장전략 수립</span></li>
-              <li>STEP 04<span>IR자료 작성</span></li>
-              <li>STEP 05<span>사후관리</span><span>(국내 VC</span><span>투자유치 등)</span></li>
+          <div className="inner">
+            <div className="themeBtnArea">
+              <button className='themeBtn' onClick={()=>{handleTheme()}}>
+                mode change
+              </button>
+            </div>
+
+            <div className="darkText irSubtitle">Process</div>
+            <ul className="irProCircleArea">
+              <li className="irProCircleBox">
+                <ul className="irProCircle">
+                  <li>STEP 01<span>경영 및</span><span>사업현황조사</span></li>
+                  <li>STEP 02<span>기업 진단</span></li>
+                  <li>STEP 03<span>투자유치 및</span><span>성장전략 수립</span></li>
+                  <li>STEP 04<span>IR자료 작성</span></li>
+                  <li>STEP 05<span>사후관리</span><span>(국내 VC</span><span>투자유치 등)</span></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
-        <ul className="irProContents">
-          <li className="irProContent">
+            <ul className="irProContents">
+              <li className="darkText irProContent">
             경영 및 사업현황조사에서는 기업현황 기본조사 (사업영역, 연혁 등)가 진행됩니다. 그 이후 기업 진단에서는
             기업현황 및 Need 파악, 내∙외부 환경분석 및 기업경영전략 타당성 검토합니다. 세 번째 단계에서는 투자유치 및
             성장전략 수립이 진행됩니다. 자금조달 및 재무전략 자문과 적정자본금 규모 및 지분구조 전략 컨설팅, 투자유치
             단계별 추진전략 컨설팅 그리고 성공적인 IPO및 해외진출 전략컨설팅이 진행됩니다.{' '}
-          </li>
-          <li className="irProContent">
+              </li>
+              <li className="darkText irProContent">
             네 번째 단계에서는 IR자료 작성이 되며 IR용 사업계획서(TM, PT자료) 작성 컨설팅과 추정재무제표작성 및
             기업가치평가를 합니다. 마지막으로 총평 및 제언이 진행됩니다. 프로젝트 완료 검토, 보고 및 사후관리
             계획수립됩니다. 사후관리 (국내 VC 투자유치 등)에서는 국내 VC 참여 투자유치 IR 행사지원, 개별VC 대상 기업
             IR지원 및 투자유치 성사지원 및 투자유치 컨설팅 이후 지속적인 투자유치 성사지원이 진행됩니다
-          </li>
-        </ul>
-        <div className="irProcessWrapper">
-          <div className="irAccordion">
-            {data.map((item, i) => (
-              <div className="irProcessItem" key={i}>
-                <div className={selected === i ? 'irProcessBtn on' : 'irProcessBtn'} onClick={() => toggle(i)}>
-                  <h2 className="irProcessTitle">{item.title}</h2>
-                  <div>{selected === i ? <div className="irTopBtn"></div> : <div className="irUnderBtn"></div>}</div>
-                </div>
-                <div className={selected === i ? 'irProcessContent show' : 'irProcessContent'}>{item.content}</div>
+              </li>
+            </ul>
+            <div className="irProcessWrapper">
+              <div className="irAccordion">
+                {data.map((item, i) => (
+                  <div className="irProcessItem" key={i}>
+                    <div className={selected === i ? 'irProcessBtn on' : 'irProcessBtn'} onClick={() => toggle(i)}>
+                      <h2 className="irProcessTitle">{item.title}</h2>
+                      <div>{selected === i ? <div className="irTopBtn"></div> : <div className="irUnderBtn"></div>}</div>
+                    </div>
+                    <div className={selected === i ? 'irProcessContent show' : 'irProcessContent'}>{item.content}</div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>
