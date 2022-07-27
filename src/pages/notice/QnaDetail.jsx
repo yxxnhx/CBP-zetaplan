@@ -3,8 +3,6 @@ import { useParams, Link, useNavigate,useSearchParams} from 'react-router-dom';
 import SubBanner from '../../components/common/SubBanner';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
 import '../../styles/qna/qnaDetail.scss'
-import qnaDataList from '../../db/qna.json';
-
 
 const QnaDetail = ({ setHdSubStyle }) => {
   let { id } = useParams();
@@ -21,21 +19,12 @@ const QnaDetail = ({ setHdSubStyle }) => {
   console.log('test', qnaList)
 
   useEffect(() => {
-    const detailPageData = qnaList.filter((element,index) => {
-      return index === parseInt(id)
-    });
-    console.log('DATA',detailPageData);
+    const qnaList = JSON.parse(window.localStorage.getItem('newQnaList'));
+    const detailPageData = qnaList.find(element => element.id === parseInt(id));
     setData(detailPageData);
-    console.log('stateData',data)
-  
   }, []);
 
-  // useEffect(() => {
-  //   const detailData = qnaDataList.find(element => element.id === parseInt(id));
-  //   setData(detailData);
-  // }, [])
-
-
+  
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
@@ -80,7 +69,7 @@ const QnaDetail = ({ setHdSubStyle }) => {
         <div className="qnaContentBtnArea">
           <button className='qnaContentUpdateBtn'>수정하기</button>
           <button className='qnaContentDeleteBtn' 
-            onClick={() =>  onDelete(id) }
+            onClick={() =>  window.localStorage.removeItem}
           >삭제하기</button>
         </div>
         {
@@ -92,10 +81,10 @@ const QnaDetail = ({ setHdSubStyle }) => {
             <div className='answerContent'>
               <div className='content' dangerouslySetInnerHTML={{ __html: data.comments[0].content }}></div>
             </div>
-          </>)
+          </>
+          )
         }
-        <button type="button" className='qnaListBtn' onClick={()=> {updateId(id)}}>목록</button>
-
+        <Link to="/qna" className='qnaListBtn'>목록</Link>
       </div>
     </div>
   );
