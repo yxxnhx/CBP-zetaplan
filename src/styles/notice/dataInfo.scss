@@ -83,17 +83,17 @@
         position: absolute;
         right: 0;
         bottom: 16px;
+        cursor: pointer;
       }
     }
   }
 
   .dataInfoLiBox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
 
     .dataInfoItem {
-      width: calc(33.33% - 18px);
       height: 30rem;
       margin-bottom: 50px;
       padding: 56px 54px;
@@ -166,12 +166,10 @@
 @media (min-width: 768px) and (max-width: 1023px){
 
   .dataInfoInner .dataInfoLiBox {
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
   }
 
   .dataInfoInner .dataInfoLiBox .dataInfoItem {
-    width: calc(50% - 10px);
-
     dt {
       -webkit-line-clamp: 1;
     }
@@ -179,6 +177,9 @@
 };
 
 @media (min-width: 360px) and (max-width: 767px){
+  .dataInfoInner .dataInfoLiBox {
+    grid-template-columns: 1fr;
+  }
   .dataInfoInner .dataInfoLiBox .dataInfoItem {
     width: 100%;
     padding: 3rem 4rem;

@@ -26,11 +26,13 @@ const DataInfo = ({ setHdSubStyle }) => {
 
   useEffect(() => {
     setShowNum(6);
+    setOriginData(getSelectedData());
     setDataList(getSelectedData());
   }, [selectedIndex]);
 
   useEffect(()=> {
     setShowNum(6);
+    setOriginData(getCategoryData());
     setDataList(getCategoryData());
   }, [category]);
 
@@ -77,10 +79,10 @@ const DataInfo = ({ setHdSubStyle }) => {
   }
 
   const onSearch = () => {
-    const searchedData = dataList.filter((item) => {
+    const searchedData = originData.filter((item) => {
       return item.title.includes(input);
     })
-    setFilteredList(searchedData);
+    setDataList(searchedData);
   }
 
   const getActiveClassName = (cate) => {
@@ -160,7 +162,7 @@ const DataInfo = ({ setHdSubStyle }) => {
           </ul>
         </div>
         <div className='infoSearchCon'>
-          <span>총{/* {filteredList ? filteredList.length  : dataList.length}  */}</span>
+          <span>총{dataList ? dataList.length  : originData.length}  개</span>
           <div className='infoSearchBox'>
             <input className="infoInput" type="text" placeholder='검색어를 입력하세요' onKeyDown={onKeyDown} onChange={searchByData}/>
             <span className='infomagnifier' onClick={onSearch}></span>

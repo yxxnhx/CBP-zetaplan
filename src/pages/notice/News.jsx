@@ -15,6 +15,7 @@ const News = ({ setHdSubStyle }) => {
   const navigate = useNavigate();
   const {category} = useParams();
 
+  const [originData, setOriginData] = useState([]);
   const [data, setData] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -24,6 +25,12 @@ const News = ({ setHdSubStyle }) => {
   const [itemOffset, setItemOffset] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const [pageRangeCount, setPageRangeCount] = useState(10);
+
+  const [input, setInput] = useState('');
+
+  useEffect(() => {    
+    setHdSubStyle('hdMain hdSub')
+  }, [setHdSubStyle])
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
@@ -41,15 +48,10 @@ const News = ({ setHdSubStyle }) => {
   // }, [selectedIndex]);
 
   useEffect(() => {
+    setOriginData(getCategoryData());
     setData(getCategoryData());
   }, [category]);
-
-
-  useEffect(() => {
-    setHdSubStyle('hdMain hdSub')
-  }, [setHdSubStyle])
-
-
+  
   const handleResize = () => {
     if (window.innerWidth < 768) {
       setIsMobile(true);
@@ -78,22 +80,23 @@ const News = ({ setHdSubStyle }) => {
       return columnData;
     }
   }
-  
-  // const [input, setInput] = useState('');
 
-  // // const [swiperData, setSwiperData] = useState([...data]);
-  // const [searchedData, setSearchedData] = useState([]);
+  const onChangeInput = (e) => {
+    setInput(e.target.value);
+  }
 
-  // const onChangeInput = (e) => {
-  //   setInput(e.target.value);
-  // }
+  const onSearch = () => {
+    const searchedData = originData.filter((item) => {
+      return item['title'].includes(input);
+    })
+    setData(searchedData);
+  }
 
-  // const onSearch = () => {
-  //   const filteredData = data.filter((item) => {
-  //     item.title.includes(input);
-  //   })
-  //   setSearchedData(filteredData);    
-  // }
+  const onKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      onSearch();
+    }
+  }
 
   const getActiveClassName = (cate) => {
     if (cate === category) {
@@ -138,11 +141,11 @@ const News = ({ setHdSubStyle }) => {
               setSelectedIndex(1)}}>Column</li>
           </ul>
         </div>
-        <NewsSwiper items={data} selectedIndex={selectedIndex} />
+        <NewsSwiper items={originData.slice(0, 6)} selectedIndex={selectedIndex} />
         <div className='newsListContainer'>
           <div className='newsSearchBox'>
-            <input className="newsInput" type="text" placeholder='검색어를 입력하세요' /* onChange={onChangeInput} *//>
-            <span className='newsmagnifier' /* onClick={onSearch} */></span>
+            <input className="newsInput" type="text" placeholder='검색어를 입력하세요' onChange={onChangeInput} onKeyDown={onKeyDown} />
+            <span className='newsmagnifier' onClick={onSearch}></span>
           </div>
           <div className='newsListBox'>
             {

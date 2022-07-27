@@ -149,9 +149,12 @@
     }
 
     .newsListBox {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 24px;
+      // display: flex;
+      // flex-wrap: wrap;
+      // justify-content: space-between;
     }
   }
   
@@ -292,6 +295,11 @@
     width: 100%;
   }
 
+  .newsInner .newsListContainer .newsListBox {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
+
 }
 
 @media (min-width: 360px) and (max-width: 767px){
@@ -313,5 +321,8 @@
 
   .newsInner .newsSwiperBtnBox {
     margin: 0 auto;
+  }
+  .newsInner .newsListContainer .newsListBox {
+    grid-template-columns: 1fr;
   }
 }
