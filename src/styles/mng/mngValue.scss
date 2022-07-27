@@ -335,6 +335,12 @@ $mngCircleSize : 20rem;
   }
 }
 
+.dark{
+  .mngValueProcess div:nth-of-type(3){
+    color: #0808c8;
+  }
+}
+
 .mngValueProcess span{
     color: #000;
 }
@@ -412,7 +418,6 @@ $mngCircleSize : 20rem;
 }
 @keyframes rotate {0%{}100%{transform:rotate(360deg);}}
 @keyframes rotate2 {0%{}100%{transform:rotate(-360deg);}}
-
 
 
 .mngInner{
@@ -554,6 +559,14 @@ $mngCircleSize : 20rem;
    font-size: 1.7rem;
    line-height: 2;
   } 
+  }
+  .dark{
+    .mngCircleBg{
+      background: url('../../img/icon/zetaplan_logo_w@2x.png') no-repeat 50%;
+      background-size: 70%;
+      width: 30rem;
+      height: 30rem;
+    }
   }
 }
 

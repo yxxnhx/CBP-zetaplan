@@ -1,4 +1,3 @@
-import ProcessGraph from '../../img/me/me_process_graph@2x.png';
 import '../../styles/mng/mngConsulting.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/me/me_sub_bg@2x.png';
@@ -33,9 +32,11 @@ const MngConsulting = ({setHdSubStyle}) => {
       <div className={themeCss}>
         <div className='darkBackground'>
           <div className='mngInner'>
-            <button className='themeBtn' onClick={()=>{handleTheme()}}>
-              mode change
-            </button>
+            <div className="themeBtnArea">
+              <button className='themeBtn' onClick={()=>{handleTheme()}}>
+                mode change
+              </button>
+            </div>
             <div>
               <h2 className='darkText mngSubTitle'>개요</h2>
             </div>
@@ -106,7 +107,7 @@ const MngConsulting = ({setHdSubStyle}) => {
               <h2 className='darkText mngSubTitleNb'>Process</h2>
             </div>
             <div className='mngConsultingProcess'>
-              <img src={ProcessGraph} alt='graph' className='mngConsultingProcessImg'/>
+              <div className='mngConsultingProcessImg'>img</div>
             </div>
           </div>
         </div>

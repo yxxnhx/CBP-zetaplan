@@ -204,8 +204,11 @@ $size-ft : 1.6rem;
 }
 
 .mngConsultingProcessImg{
-  width: 90rem;
-  margin: 9.4rem 0;
+  background: url(./../../img/me/me_process_graph@2x.png) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 50vw;
+  font-size: 0;
 }
 
 
@@ -223,6 +226,13 @@ $size-ft : 1.6rem;
     height: 100%;
     background-color: #fff;
   }
+  .mngConsultingProcessImg{
+    background: url(./../../img/me/me_process_graph@2x.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 50vw;
+    font-size: 0;
+  }
   .mngTradeProcessImg{
     background: url(./../../img/me/me_process@2x.png) no-repeat;
     background-size: cover;
@@ -233,9 +243,15 @@ $size-ft : 1.6rem;
 }
 
 .dark{
-
+  .mngConsultingProcessImg{
+    background: url(./../../img/me/me_process_graph_w.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 50vw;
+    font-size: 0;
+  }
   .mngTradeProcessImg{
-    background: url(./../../img/me/mngimg2.jpg) no-repeat;
+    background: url(./../../img/me/me_process_w.png) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vw;
@@ -253,7 +269,22 @@ $size-ft : 1.6rem;
     border: none;
   &:hover{
     background-color: $main-color;
+    }
   }
+  .mngCompanyValueAssess li{
+    background-color: #ccc;
+    border: none;
+    &:hover{
+      background-color: $main-color;
+    }
+  }
+  .mngCircleBg{
+    background: url('../../img/icon/zetaplan_logo_w@2x.png') no-repeat 50%;
+    background-size: 70%;
+    width: 100%;
+  }
+  .mngValueProcess span{
+    color: #fff;
   }
   .mngCreditBtn{
     background-color: #ccc;
@@ -267,6 +298,9 @@ $size-ft : 1.6rem;
   }
   .mngCreditReport{
     color: #fff;
+  }
+  .mngGrowTxt{
+    border: .5px solid #fff;
   }
 }
 

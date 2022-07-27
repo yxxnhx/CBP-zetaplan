@@ -34,9 +34,11 @@ const MngTrade = ({setHdSubStyle}) => {
       <div className={themeCss}>
         <div className='darkBackground'>
           <div className='mngInner'>
-            <button className='themeBtn' onClick={()=>{handleTheme()}}>
-              mode change
-            </button>
+            <div className="themeBtnArea">
+              <button className='themeBtn' onClick={()=>{handleTheme()}}>
+                mode change
+              </button>
+            </div>
             <div>
               <h2 className='darkText mngSubTitle'>기술거래</h2>
             </div>

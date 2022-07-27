@@ -99,20 +99,20 @@ $size-xs: 1.44rem;
 
 
 // dark & light mode
-.light{
+@mixin Light{
   .darkText{
-    color: #000;
+    color: $basic-black;
   }
   .darkBackground{
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: $basic-white;
   }
 }
 
-.dark{
+@mixin Dark {
   .darkText{
-    color : #fff;
+    color : $basic-white;
   }
   .darkBackground{
     width: 100%;
@@ -122,9 +122,7 @@ $size-xs: 1.44rem;
   .themeBtn{
     background-color: #1527a0;
     padding: 2% 3% 2% 6%;
-
-
-    color: #fff;
+    color: $basic-white;
     &::after {
       display: none;
     }
@@ -143,34 +141,37 @@ $size-xs: 1.44rem;
   }
 }
 
-.themeBtn{
-  background-color: transparent;
-  border: 1px solid $main-color;
-  padding: 2% 6% 2% 3%;
-  border-radius: 30px;
-  color: $main-color;
-  font-family: 'Montserrat';
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
-  box-shadow:0 .625rem 1.25rem rgba(18, 27, 116, .18);
-  position: relative;
-  &::after {
-    content: '';
-    background: url('./../img/icon/baseline_light_mode_black_24dp.png') no-repeat;
-    background-size: contain;
-    width: 15%;
-    height: 50%;
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    transform: translateY(-50%);
+
+@mixin ThemeBtnArea {
+  display: flex;
+  justify-content: flex-end;
+  
+  .themeBtn{
+    background-color: transparent;
+    border: 1px solid $main-color;
+    padding: 2% 6% 2% 3%;
+    border-radius: 30px;
+    color: $main-color;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    box-shadow:0 .625rem 1.25rem rgba(18, 27, 116, .18);
+    position: relative;
+    &::after {
+      content: '';
+      background: url('./../img/icon/baseline_light_mode_black_24dp.png') no-repeat;
+      background-size: contain;
+      width: 15%;
+      height: 50%;
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
-.themeBtnArea {
-  display: flex;
-  justify-content: flex-end;
-}
+
 
 @media all and (max-width: 767px){
 

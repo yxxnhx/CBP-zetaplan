@@ -41,28 +41,28 @@ const MngCertify = ({setHdSubStyle}) => {
 
   useEffect(() => {
     const intervalMain= setInterval(() => {
-      setText(text + txt[count]);  // 이전 set한 문자 + 다음 문자
-      setCount(count + 1); // 개수 만큼 체크 
+      setText(text + txt[count]);  
+      setCount(count + 1); 
     }, 50);
     
-    let interval; //const로 지정해주면 에러남.
-    if( count === txt.length)  {  // Count를 따로 두지 않고 Text.length 체크도 가능
-      clearInterval(intervalMain);  // 문자열 체크를 통해 setInterval을 해제
+    let interval; 
+    if( count === txt.length)  {  
+      clearInterval(intervalMain);  
       setCount(count);
       interval = setInterval(() => {
         certifySetText(certifyText + certifyTxt[certifyCount]);
         certifySetCount(certifyCount + 1); 
       }, 50);
       if( certifyCount === certifyTxt.length){
-        clearInterval(interval);  // 문자열 체크를 통해 setInterval을 해제
+        clearInterval(interval);   
         certifySetCount(certifyCount);
       }
       
-    }// Main
+    }
     return () => {
       clearInterval(intervalMain)
       clearInterval(interval)
-    };  // 언마운트시 setInterval을 해제
+    };  
 
   },[certifyCount, certifyText, count, text])
 
@@ -74,7 +74,6 @@ const MngCertify = ({setHdSubStyle}) => {
         <div className='darkBackground'>
           <div className='mngInner'>
             <div className="themeBtnArea">
-
               <button className='themeBtn' onClick={()=>{handleTheme()}}>
                 mode change
               </button>

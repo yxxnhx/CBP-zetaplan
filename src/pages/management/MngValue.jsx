@@ -95,14 +95,14 @@ const MngValue = ({setHdSubStyle}) => {
       tabSubTitle: (<SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} threeDepth={threeDepth} threeDepthLink={threeDepthLink} linkActive={linkActive}  />),
       tabContent: (
         <div className='mngValueBusiness'>
-          <h2 className='mngSmTitle mngValueTitle'>기업가치평가</h2>
-          <h4 className='mngValueTxt'>필요성</h4>
-          <div className='mngNeedTxt'>
+          <h2 className='darkText mngSmTitle mngValueTitle'>기업가치평가</h2>
+          <h4 className='darkText mngValueTxt'>필요성</h4>
+          <div className='darkText mngNeedTxt'>
             <p>금융기관의 효율적인 자산관리가 필요하고 적시・적절한 투자관련 의사 결정 필요성이 증가하여
               <span>기업가치평가가 필요하며, 진행하게 되면 기업가치 중 무형자산의 기여도가 증가한다.</span>
             </p>
           </div>
-          <h4 className='mngValueTxt'>기업가치 평가요인</h4>
+          <h4 className='darkText mngValueTxt'>기업가치 평가요인</h4>
           <div className='thinGradient'>
             <img src={GradientImg} alt="그라데이션"/>
             <span className='mngValueGradientLeft'>기업내적요인</span>
@@ -114,12 +114,12 @@ const MngValue = ({setHdSubStyle}) => {
             <li>시장내적요인</li>
             <li>시장외적요인</li>
           </ul>
-          <div className='mngValueAssess'>
+          <div className='darkText mngValueAssess'>
             <p>기업내적요인에는 질적 요인과 양적 요인이 있는데 질적 요인에는 경영자의 자질, 주주현황, 연구개발투자, 기술인력구성,     노사관계, Life Cycle 등이 있고 양적요인에는 수익성, 재무구조, 배당성향, 재무제표에 관한 사항이 있습니다.</p>
             <p>기업외적요인에는 시장내적요인과 시장외적요인이 있는데 시장내적요인에는 시장규제, 부양조치, 투자자의 심리 및 동향 등이    있고 시장외적요인에는 경기순환, 물가동향, 금리수준, 통화신용, 재정정책, 환율 등이 있습니다.</p>
           </div>
           <div>
-            <h4 className='mngValueTxt mngValueCompany'>기업가치평가방법</h4>
+            <h4 className='darkText mngValueTxt mngValueCompany'>기업가치평가방법</h4>
           </div>
           <ul className='mngFourCircle mngValueCompanyAssess'>
             <li>자산가치법 <span>(Asset-Based</span><span>Approach)</span></li>
@@ -127,7 +127,7 @@ const MngValue = ({setHdSubStyle}) => {
             <li>시장가치법<span>(Market Comparable</span><span>Transactions Approach)</span></li>
             <li>현금흐름할인모형</li>
           </ul>
-          <div className='mngCompanyAssess'>
+          <div className='darkText mngCompanyAssess'>
             <p>자산가치법에는 장부가치에 의한 평가, 시간에 의한 평가, 청산가치가 있고 수익가치법에는 당기순이익 환원법, 배당    환원법이 있으며 시장가치법에는 PER(Price-Earning Ratio, EV/EBITDA, PBR(Priceon Book-value Ratio), PSR(Price Selling   Ratio)이 있고 현금흐름할인모형에는 잉여현금흐름, (FCF : Free Cash Flow), 미래현금흐름 할인모형, (DCF : Discount Cash     Flow)이 있습니다.</p>
           </div>
         </div>)
@@ -136,22 +136,22 @@ const MngValue = ({setHdSubStyle}) => {
       tabSubTitle: (<SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} threeDepth={threeDepth} threeDepthLink={threeDepthLink} linkActive={linkActive} />),
       tabContent: (
         <div className='mngSkillValue'>
-          <h2 className='mngSmTitle mngValueTitle'>기술가치평가</h2>
-          <h4 className='mngValueTxt'>필요성</h4>
-          <div className='mngNeedTxt'>
+          <h2 className='darkText mngSmTitle mngValueTitle'>기술가치평가</h2>
+          <h4 className='darkText mngValueTxt'>필요성</h4>
+          <div className='darkText mngNeedTxt'>
             <p>
               R&D 흐름 및 관리범위를 확인하고,  기술가치를 근거로 경제적 접근이 필요하다.
             </p>
           </div>
-          <h2 className='mngValueTxt'>기업가치평가 방법</h2>
+          <h2 className='darkText mngValueTxt'>기업가치평가 방법</h2>
           <div className='mngValueTxtBox'>
-            <div className='mngValueList'>
+            <div className='darkText mngValueList'>
               <h4>Step 1</h4>
               <h4>Step 2</h4>
               <h4>Step 3</h4>
               <h4>Step 4</h4>
             </div>
-            <div className='mngCompanyValue'>
+            <div className='darkText mngCompanyValue'>
               <div className='mngCompanyValueTitle'>비용접근법</div>
               <p>- 기업이 유사기술을 내부에서 개발하거나 외부로부터 도입하는데 드는 모든 비용을 계 산함으로써 기술가치를 평가하는     방법</p>
               <p>- 적정시장가치 = 개발투하 총 비용 – 가치하락요소</p>
@@ -170,7 +170,7 @@ const MngValue = ({setHdSubStyle}) => {
               <span>- 특허권 등 대부분의 지적재산권을 평가하는데 유용하게 사용</span>
             </div>
           </div>
-          <h2 className='mngValueTxt mngValueStep'>기업가치평가 절차</h2>
+          <h2 className='darkText mngValueTxt mngValueStep'>기업가치평가 절차</h2>
           <div className='mngValueCompanyProcess'>
             <div className="mngCircleWrap">
               <div className="mngCircleBg"></div>
@@ -186,7 +186,7 @@ const MngValue = ({setHdSubStyle}) => {
                 </div>
               </div>
             </div>
-            <div className='mngValueProcess'>
+            <div className='darkText mngValueProcess'>
               <div>기술적 위치 분석<span>(Technical Position Analysis)</span></div>
               <p>- Patent map 작성,  기술개발 흐름, 타 기술과 관계, 기술경쟁력</p>
               <div>산업 분석<span>(industry analysis)</span></div>
@@ -203,30 +203,33 @@ const MngValue = ({setHdSubStyle}) => {
   return (
     <div>
       <div>
-        {/* {mngValueContents[activeIndex].tabSubTitle} */}
-        {data.tabSubTitle}
-        <div className='mngInner'>
-          <div className="themeBtnArea">
-            <button className='themeBtn' onClick={()=>{handleTheme()}}>
-              mode change
-            </button>
-          </div>
-          <h2 className='mngSubTitle'>가치평가</h2>
-          <div className='mngMenuTabEdge'>
-            <ul className='mngMenuTab'>
-              <li className={getActiveClassName('mngvaluecompany')} onClick={()=>{
-                tabClickHandler(0) 
-                navigate('/mng-value/mngvaluecompany') 
-                setSelectedIndex(0)}} >기업가치평가</li>
-              <li className={getActiveClassName('mngvalueskill')} onClick={()=>{
-                tabClickHandler(1) 
-                navigate('/mng-value/mngvalueskill')
-                setSelectedIndex(1)}}>기술가치평가
-              </li>
-            </ul> 
-          </div>
-          <div>
-            {data.tabContent}
+        <div className={themeCss}>
+          {data.tabSubTitle}
+          <div className='darkBackground'>
+            <div className='mngInner'>
+              <div className="themeBtnArea">
+                <button className='themeBtn' onClick={()=>{handleTheme()}}>
+                  mode change
+                </button>
+              </div>
+              <h2 className='darkText mngSubTitle'>가치평가</h2>
+              <div className='mngMenuTabEdge'>
+                <ul className='darkText mngMenuTab'>
+                  <li className={getActiveClassName('mngvaluecompany')} onClick={()=>{
+                    tabClickHandler(0) 
+                    navigate('/mng-value/mngvaluecompany') 
+                    setSelectedIndex(0)}} >기업가치평가</li>
+                  <li className={getActiveClassName('mngvalueskill')} onClick={()=>{
+                    tabClickHandler(1) 
+                    navigate('/mng-value/mngvalueskill')
+                    setSelectedIndex(1)}}>기술가치평가
+                  </li>
+                </ul> 
+              </div>
+              <div>
+                {data.tabContent}
+              </div>
+            </div>
           </div>
         </div>
       </div>

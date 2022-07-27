@@ -136,9 +136,11 @@ const MngCredit = ({setHdSubStyle}) => {
         <div className={themeCss}>
           <div className='darkBackground'>
             <div className='mngInner'>
-              <button className='themeBtn' onClick={()=>{handleTheme()}}>
-                mode change
-              </button>
+              <div className="themeBtnArea">
+                <button className='themeBtn' onClick={()=>{handleTheme()}}>
+                  mode change
+                </button>
+              </div>
               <h2 className='darkText mngSubTitle'>신용평가</h2>
               <h2 className='darkText mngSmTitle mngCreditSmTitle'>서비스진행 및 진행절차</h2>
               <ul className='mngFiveCircle mngCreditCircle'>
