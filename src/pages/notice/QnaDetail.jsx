@@ -3,8 +3,6 @@ import { useParams, Link } from 'react-router-dom';
 import SubBanner from '../../components/common/SubBanner';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
 import '../../styles/qna/qnaDetail.scss'
-import qnaDataList from '../../db/qna.json';
-
 
 const QnaDetail = ({ setHdSubStyle }) => {
   const { id } = useParams();
@@ -12,19 +10,11 @@ const QnaDetail = ({ setHdSubStyle }) => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    const qnaLocalStorage = JSON.parse(window.localStorage.getItem('newQnaList'));
-    const qnaList = qnaDataList.concat(qnaLocalStorage).map((item, index) => {
-      return { ...item, id: index + 1, hit: Math.floor(Math.random() * index) };
-    })
+    const qnaList = JSON.parse(window.localStorage.getItem('newQnaList'));
     const detailPageData = qnaList.find(element => element.id === parseInt(id));
     setData(detailPageData);
   
   }, []);
-
-  // useEffect(() => {
-  //   const detailData = qnaDataList.find(element => element.id === parseInt(id));
-  //   setData(detailData);
-  // }, [])
 
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
