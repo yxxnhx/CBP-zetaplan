@@ -99,7 +99,7 @@ const MaIpoPro = ({ setHdSubStyle }) => {
 
       {data.tabSubTitle}
 
-      <div className='inner'>
+      <div className='miProinner'>
         <div className='miProHead'>
           Process
           <div className='miProTab'>

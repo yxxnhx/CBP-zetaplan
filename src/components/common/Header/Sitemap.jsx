@@ -34,7 +34,7 @@ const Sitemap = ({ open, close }) => {
                     <li><Link to={'/zeta'} onClick={close}>회사소개</Link></li>
                     <li><Link to={'/zeta-history'} onClick={close}>연혁</Link></li>
                     <li><Link to={'/zeta-ci'} onClick={close}>CI</Link></li>
-                    <li><Link to={'/zeta-people'} onClick={close}>컨설팅 부문</Link></li>
+                    <li><Link to={'/zeta-consul'} onClick={close}>컨설팅 부문</Link></li>
                     <li><Link to={'/zeta-people'} onClick={close}>PEOPLE</Link></li>
                     <li><Link to={'/zeta-map'} onClick={close}>오시는 길</Link ></li>
                     <li><Link to={'/zeta-network'} onClick={close}>제휴 네트워크</Link></li>

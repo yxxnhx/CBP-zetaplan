@@ -92,34 +92,50 @@ const MaIpoInfo = ({ setHdSubStyle }) => {
     }
   ];
 
-
+  const [theme, setTheme] = useState('');
+  const [themeCss, setThemCss] = useState('');
+  const handleTheme = () => {
+    const value = theme;
+    setTheme(!value);
+    const cssValue = value ? 'dark' : 'light';
+    setThemCss(cssValue);
+  }
 
   return (
     <div className='miInfo'>
 
       {data.tabSubTitle}
 
-      <div className='inner'>
-        <div className='miInfoHead'>
-          개요
-          <div className='miInfoTab'>
-            <button key={0} className={getActiveClassName('m&a')} onClick={() => {
-              tabClick(0)
-              navigate('/maipo-info/m&a')
-              setSelectedIndex(0)
-            }} > M & A 
-            </button >
-            <button key={1} className={getActiveClassName('ipo')} onClick={() => {
-              tabClick(1)
-              navigate('/maipo-info/ipo')
-              setSelectedIndex(1)
-            }}> IPO 
-            </button>
+      <div className={themeCss}>
+        <div className='darkBackground'>
+          <div className='miInfoInner'>
+            <div className="themeBtnArea">
+              <button className='themeBtn' onClick={()=>{handleTheme()}}>
+                mode change
+              </button>
+            </div>
+            <div className='darkText miInfoHead'>
+               개요
+              <ul className='darkText miInfoTab'>
+                <li key={0} className={getActiveClassName('m&a')} onClick={() => {
+                  tabClick(0)
+                  navigate('/maipo-info/m&a')
+                  setSelectedIndex(0)
+                }} > M & A 
+                </li >
+                <li key={1} className={getActiveClassName('ipo')} onClick={() => {
+                  tabClick(1)
+                  navigate('/maipo-info/ipo')
+                  setSelectedIndex(1)
+                }}> IPO 
+                </li>
+              </ul>
+            </div>
+
+            {data.tabContent}
+
           </div>
         </div>
-
-        {data.tabContent}
-
       </div>
     </div >
   );

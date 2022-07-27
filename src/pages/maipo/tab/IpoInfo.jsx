@@ -1,5 +1,4 @@
 import React from 'react';
-import ipoInfoMainImg from '../../../img/m&a_ipo/ipo_summery.png'
 import { useState, useEffect } from 'react';
 
 
@@ -22,11 +21,10 @@ const IpoInfo = () => {
 
   return (
     <div className='miInfoContent'>
-      <img className='miInfoMainImg' src={ipoInfoMainImg} alt="M&A 개요 메인 이미지" />
-
+      <div className='ipoInfoMainImg'>IPO 개요 메인 이미지</div>
       <div className='miInfoTxt'>
-        <p>Initial Public Offering</p>
-        <p>
+        <p className='darkText'>Initial Public Offering</p>
+        <p className='darkText'>
           어떤 기업의 주식이 증권시장에서 공식적으로 거래되기 위해서는 우선 상장이라는 과정을 거쳐야 합니다.
           <br />
           기업이 주식을 상장하는 방법 중 가장 많이 사용하는 방법은 IPO로, `Initial Public Offering`의 약자이며 기업공개를 뜻합니다.

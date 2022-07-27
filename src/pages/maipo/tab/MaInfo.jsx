@@ -1,5 +1,4 @@
 import React from 'react';
-import maInfoMainImg from '../../../img/m&a_ipo/m&a_summery@2x.png'
 import { useState, useEffect } from 'react';
 
 
@@ -22,11 +21,10 @@ const MaInfo = () => {
 
   return (
     <div className='miInfoContent'>
-      <img className='miInfoMainImg maInfoMainImg' src={maInfoMainImg} alt="M&A 개요 메인 이미지" />
-
+      <div className='maInfoMainImg'>M&A 개요 메인 이미지</div>
       <div className='miInfoTxt'>
-        <p>Mergers And Acquisitions</p>
-        <p>
+        <p className='darkText'>Mergers And Acquisitions</p>
+        <p className='darkText'>
           M&A는 둘 이상의 회사가 합쳐져 하나의 회사가 되는 합병(Merger)과
           <br />
           대상회사의 주식 또는 자산을 취득해 대상회사의 경영권을 확보하는 인수(Acquisition)가 합쳐진 개념으로

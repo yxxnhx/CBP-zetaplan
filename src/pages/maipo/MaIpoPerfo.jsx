@@ -80,6 +80,15 @@ const MaIpoPerfo = ({ setHdSubStyle }) => {
     return '';
   }
 
+  const [theme, setTheme] = useState('true');
+  const [themeCss, setThemCss] = useState('true');
+  const handleTheme = () => {
+    const value = theme;
+    setTheme(!value);
+    const cssValue = value ? 'dark' : 'light';
+    setThemCss(cssValue);
+  }
+
 
   const tabContentents = [
     {
@@ -99,29 +108,40 @@ const MaIpoPerfo = ({ setHdSubStyle }) => {
 
       {data.tabSubTitle}
 
-      <div className='inner'>
-        <div className='miPerfoHead'>
-          성과
-          <div className='miPerfoTab'>
-            <button key={0} className={getActiveClassName('m&a')} onClick={() => {
-              tabClick(0)
-              navigate('/maipo-performance/m&a')
-              setSelectedIndex(0)
-            }} > M & A 
-            </button >
-            <button key={1} className={getActiveClassName('ipo')} onClick={() => {
-              tabClick(1)
-              navigate('/maipo-performance/ipo')
-              setSelectedIndex(1)
-            }}> IPO 
-            </button>
+      <div className={themeCss}>
+        <div className='darkBackground'>
+          <div className='miPerfoInner'>
+            <div className="themeBtnArea">
+              <button className='themeBtn' onClick={()=>{handleTheme()}}>
+                mode change
+              </button>
+            </div>
+            <div className='darkText miPerfoHead'>
+              성과
+              <ul className='darkText miPerfoTab'>
+                <li key={0} className={getActiveClassName('m&a')} onClick={() => {
+                  tabClick(0)
+                  navigate('/maipo-performance/m&a')
+                  setSelectedIndex(0)
+                }} > M & A 
+                </li >
+                <li key={1} className={getActiveClassName('ipo')} onClick={() => {
+                  tabClick(1)
+                  navigate('/maipo-performance/ipo')
+                  setSelectedIndex(1)
+                }}> IPO 
+                </li>
+              </ul>
+            </div>
+
+            {data.tabContent}
+
           </div>
-        </div>
-
-        {data.tabContent}
-
+        </div >
       </div>
-    </div >
+
+    </div>
+      
   );
 };
 
