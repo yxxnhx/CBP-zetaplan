@@ -1,30 +1,31 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate,useSearchParams} from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import SubBanner from '../../components/common/SubBanner';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
 import '../../styles/qna/qnaDetail.scss'
+import qnaDataList from '../../db/qna.json';
+
 
 const QnaDetail = ({ setHdSubStyle }) => {
-  let { id } = useParams();
-  id=parseInt(id);
-
-  const navigate = useNavigate();
+  const { id } = useParams();
 
   const [data, setData] = useState(null);
-  
-  const qnaLocalStorage = JSON.parse(window.localStorage.getItem('newQnaList'));
-  const qnaList = qnaDataList.concat(qnaLocalStorage).map((item, index) => {
-    return { ...item, id: index, hit: 77 };
-  })
-  console.log('test', qnaList)
 
   useEffect(() => {
-    const qnaList = JSON.parse(window.localStorage.getItem('newQnaList'));
+    const qnaLocalStorage = JSON.parse(window.localStorage.getItem('newQnaList'));
+    const qnaList = qnaDataList.concat(qnaLocalStorage).map((item, index) => {
+      return { ...item, id: index + 1, hit: Math.floor(Math.random() * index) };
+    })
     const detailPageData = qnaList.find(element => element.id === parseInt(id));
     setData(detailPageData);
+  
   }, []);
 
-  
+  // useEffect(() => {
+  //   const detailData = qnaDataList.find(element => element.id === parseInt(id));
+  //   setData(detailData);
+  // }, [])
+
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
@@ -36,18 +37,6 @@ const QnaDetail = ({ setHdSubStyle }) => {
   if (!data) {
     return <div></div>;
   }
-
-  const onDelete = (id) => {
-    console.log(`${id}가 삭제되었습니다`);
-    const newQnaList = [...qnaList].splice(id, 1);
-    setData(newQnaList)
-    navigate(`/qna?detailId=${id}`);
-  }
-
-  const updateId = (id) => {
-    navigate('/qna');
-  }
-
 
   return (
     <div>
@@ -66,12 +55,6 @@ const QnaDetail = ({ setHdSubStyle }) => {
           <p className='content' dangerouslySetInnerHTML={{ __html: data.content }}>
           </p>
         </div>
-        <div className="qnaContentBtnArea">
-          <button className='qnaContentUpdateBtn'>수정하기</button>
-          <button className='qnaContentDeleteBtn' 
-            onClick={() =>  window.localStorage.removeItem}
-          >삭제하기</button>
-        </div>
         {
           hasComments && (<>
             <div className='answerInfo'>
@@ -81,10 +64,11 @@ const QnaDetail = ({ setHdSubStyle }) => {
             <div className='answerContent'>
               <div className='content' dangerouslySetInnerHTML={{ __html: data.comments[0].content }}></div>
             </div>
-          </>
-          )
+          </>)
         }
         <Link to="/qna" className='qnaListBtn'>목록</Link>
+        <button type="button">삭제</button>
+
       </div>
     </div>
   );

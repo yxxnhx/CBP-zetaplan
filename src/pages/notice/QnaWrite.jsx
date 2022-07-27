@@ -7,6 +7,9 @@ import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { Link ,useNavigate} from 'react-router-dom';
 
+
+
+
 const QnaWrite = () => {
   const navigate= useNavigate();
   const ckContent = document.querySelector('.ck-content');
@@ -35,7 +38,7 @@ const QnaWrite = () => {
     setErrors(validation(state));
     if(state.title.length < 1 ) {
       titleInput.current.focus();
-      return;
+      return ;
     }
 
     if(state.author.length < 1 ) {
@@ -48,8 +51,7 @@ const QnaWrite = () => {
       return ;
     } 
     
-    
-    const qnaList = JSON.parse(window.localStorage.getItem('newQnaList'));
+    const qnaList = JSON.parse(window.localStorage.getItem('newQnaList')) || [];
     const newQnaForm = {...state, id: qnaList.length + 1, createdAt: new Date().toISOString().split('T')[0], hit: Math.floor(Math.random() * qnaList.length) };
     
     window.localStorage.setItem('newQnaList', JSON.stringify([...qnaList, newQnaForm]));

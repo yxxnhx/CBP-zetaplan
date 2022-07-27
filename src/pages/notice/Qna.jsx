@@ -5,14 +5,14 @@ import QnaTable from '../../components/Notice/QnaTable';
 import '../../styles/qna/qna.scss'
 import qnaJsonList from '../../db/qna.json';
 import PaginatedItems from './Pagination';
-import { Link, useSearchParams } from 'react-router-dom';
-import QnaDetailB from './QnaDetailB';
+import { Link } from 'react-router-dom';
 
 const Qna = ({ setHdSubStyle }) => {
 
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
+
   
   const [originData, setOriginData] = useState([]);
   const [data, setData] = useState([]);
@@ -24,10 +24,11 @@ const Qna = ({ setHdSubStyle }) => {
 
   const [input, setInput] = useState('');
 
+
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
-    setCurrentItems(sliceData.slice(itemOffset, endOffset));
-    setPageCount(Math.ceil(sliceData.length / itemsPerPage));
+    setCurrentItems(data.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(data.length / itemsPerPage));
   }, [data, itemOffset, itemsPerPage]);
 
   const handlePageClick = (event) => {
@@ -43,9 +44,34 @@ const Qna = ({ setHdSubStyle }) => {
     }
   
     const reversedQnaList = JSON.parse(window.localStorage.getItem('newQnaList')).reverse();
+
     setData(reversedQnaList);
     setOriginData(reversedQnaList);
   }, [])
+
+  const getSearchByData = (e) => {
+    setInput(e.target.value);
+  }
+
+  const onSearch = () => {
+    const dataTitleList = originData.filter((item) => {
+      return item['title'].includes(input);
+    })
+
+    setData(dataTitleList);
+  };
+
+  const onKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      onSearch();
+    }
+  };
+
+  const [optionValues, setOptionValues] = useState([]);
+
+  const getOptionValue = (e) => {
+    setOptionValues(e.target.value);
+  }
 
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
   const oneDepth='소식 · 자료';
@@ -68,23 +94,22 @@ const Qna = ({ setHdSubStyle }) => {
         <div className='qnaSearchInput'>
           <div className="qnaSelectBox">
             <label htmlFor="qnaCategory">qnaCategory</label>
-            {/* <select className='qnaSelect' name="qanCategory" id="qnaCategory" onChange={getOptionValue}>
+            <select className='qnaSelect' name="qanCategory" id="qnaCategory" onChange={getOptionValue}>
               <option value="all">전체</option>
               <option value="author">작성자</option>
-            </select> */}
+            </select>
           </div>
           <div className='qnaSearchBox'>
-            {/* <input className="qnaSearch" type="text" placeholder="검색어를 입력하세요." onKeyDown={onKeyDown} onChange={getSearchByData} />
-            <span className='qnamagnifier' onClick={onSearch}></span> */}
+            <input className="qnaSearch" type="text" placeholder="검색어를 입력하세요." onKeyDown={onKeyDown} onChange={getSearchByData} />
+            <span className='qnamagnifier' onClick={onSearch}></span>
           </div>
         </div>
         <div>
-          <QnaTable qnaJsonList={sliceData} />
+          <QnaTable qnaJsonList={currentItems} />
         </div>
         <PaginatedItems handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount} />
         <button><Link to='/qna-write'>글쓰기</Link></button>
       </div>
-      {/* <QnaDetailB data={data}/> */}
     </div>
   );
 };
