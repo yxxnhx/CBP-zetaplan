@@ -36,6 +36,7 @@ $size-ft : 1.6rem;
   padding-left: 3rem;
   position: relative;
   margin-top: 5rem;
+  margin-bottom: 10rem;
   &::before {
     content: "";
     display: block;
@@ -106,49 +107,32 @@ $size-ft : 1.6rem;
 .mngFourCircleBox .mngFiveCircleBox{
   width: 100vw;
 }
-.mngFiveCircle{
+
+
+.mngCircleArea {
   display: flex;
-  width: 90vw;
   justify-content: center;
-  align-items: center;
-  margin-top: 5rem;
+}
+
+.mngFiveCircle {
+  @include Circle(100%, 13vw);
+  margin: 8.5rem auto 6rem;
   li {
-    width: $mngCircleSize;
-    height: $mngCircleSize;
-    border-radius: 50%;
-    border: 1px solid $main-color;
-    margin-right: 4rem;
-    position: relative;
-    font-size: 2.1rem;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     line-height: 1.7;
-
-    &:hover {
-      background-color: $main-color;
-      color: $basic-white;
+    &:last-child {
+      margin-right: 0;
     }
-
-    &::before {
-      content: '';
-      display: block;
-      width: 4rem;
-      height: 1px;
-      border-bottom: 1px dashed black;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: -4rem;
-    }
-
-    &:first-child::before {
-      display: none;
+    
+    span {
+      font-size: 1.8rem;
     }
   }
 }
+
+
 
 
 .mngFourCircle.mngConsultingFour{
@@ -280,7 +264,6 @@ $size-ft : 1.6rem;
   &:hover{
     background-color: $main-color;
     }
-
   }
   .mngCompanyValueAssess li{
     background-color: #ccc;
@@ -314,13 +297,16 @@ $size-ft : 1.6rem;
   .mngGrowTxt{
     border: .5px solid $basic-white;
   }
+  .mngCertifyCt{
+    color: #359aff;
+  }
 
 }
 
 
 
 
-@media (min-width: 768px) and (max-width: 1200px){
+@media (min-width: 769px) and (max-width: 1024px){
   .mngSummary.mngConsultingSummary{
     margin-left: 3rem;
     width: 95%;
@@ -333,22 +319,21 @@ $size-ft : 1.6rem;
     }
 
     .mngFiveCircle.mngConsultingFive{
-        width: 100vw;
-        height: 20vw;
-        flex-wrap: wrap;
-        li{
-          border-radius: 1%;
-          width: 10rem;
-          height: 10rem;
-        }
-    }
+      width: 100vw;
+      // height: 20vw;
+      flex-wrap: wrap;
+      li{
+        width: 16rem;
+        height: 16rem;
+      }
   }
+}
 
   .mngConsultingProcessImg{
     width: 90%;
   }
 }
-@media (min-width: 360px) and (max-width: 1300px){
+@media (min-width: 360px) and (max-width: 768px){
 
 .mngConsultingGoal{
   margin-top: 10rem;
@@ -395,9 +380,12 @@ $size-ft : 1.6rem;
   }
 }
 
+.mngFiveCircle.mngConsultingFive li{
+  margin-right: 0;
+}
 
 .mngConsultingTxt{
- margin-left: -3rem;
+ margin-left: -5rem;
 }
 
 

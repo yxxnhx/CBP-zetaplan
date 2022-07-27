@@ -16,8 +16,8 @@ const MngCredit = ({setHdSubStyle}) => {
   const twoDepthLink='/mng-credit';
   const linkActive='twoDepth';
 
-  const [theme, setTheme] = useState(true);
-  const [themeCss, setThemCss] = useState(true);
+  const [theme, setTheme] = useState('');
+  const [themeCss, setThemCss] = useState('');
   const handleTheme = () => {
     const value = theme;
     setTheme(!value);
@@ -143,12 +143,16 @@ const MngCredit = ({setHdSubStyle}) => {
               </div>
               <h2 className='darkText mngSubTitle'>신용평가</h2>
               <h2 className='darkText mngSmTitle mngCreditSmTitle'>서비스진행 및 진행절차</h2>
-              <ul className='mngFiveCircle mngCreditCircle'>
-                <li>홈페이지<br />가입/평가신청</li>
-                <li>평가수수료<br />납부</li>
-                <li>필요서류<br />제출</li>
-                <li>실태조사<br />인터뷰 및 분석</li>
-                <li>평가완료<br />입찰기관에 결과통지</li>
+              <ul className='mngCircleArea'>
+                <li className='mngFiveCircleBox'>
+                  <ul className='mngFiveCircle mngCreditCircle'>
+                    <li>홈페이지<span>가입/평가신청</span></li>
+                    <li>평가수수료<span>납부</span></li>
+                    <li>필요서류<span>제출</span></li>
+                    <li>실태조사<span>인터뷰 및 분석</span></li>
+                    <li>평가완료<span>입찰기관에 결과통지</span></li>
+                  </ul>
+                </li>
               </ul>
               <div className='mngCreditWrapper'>
                 <div className='mngAccordion'>

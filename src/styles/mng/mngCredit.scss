@@ -3,7 +3,9 @@
 @import '../GlobalStyle.scss';
 
 
-
+.mngCreditSmTitle{
+  margin-left: 3rem;
+}
 .mngCreditWrapper{
   margin: 10rem 0 0;
   display: flex;
@@ -136,7 +138,6 @@
 }
 
 .mngSmTitle.mngCreditReportTitle{
-  margin-left: 10rem;
   margin-top: 5rem;
 }
 .mngCreditReport{
@@ -172,11 +173,14 @@
 
 
 
-@media (min-width: 768px) and (max-width: 1023px){
-  
+@media (min-width: 768px) and (max-width: 1024px){
+  .mngSmTitle.mngCreditSmTitle{
+    margin-left: 2rem;
+  }
   .mngFiveCircle.mngCreditCircle{
     width: 85vw;
     margin-left: 2rem;
+    
   }
   .mngCreditReport{
     height: 100%;
@@ -194,7 +198,7 @@
 }
 
 @media (min-width: 360px) and (max-width: 767px){
-
+   
   .mngFiveCircle.mngCreditCircle{
     width: 85vw;
     margin-left: 2rem;
@@ -202,6 +206,16 @@
   .mngFiveCircle li{
     border-radius: 0;
   }
+
+  .mngFiveCircle.mngCreditCircle li{
+    margin-right: 0;
+  }
+
+.mngCreditWrapper{
+  width: 90vw;
+  margin: 3rem 0 0;
+}
+
   .mngCreditApply{
     margin-top: 14rem;
   }
@@ -214,7 +228,7 @@
 @media (min-width : 360px) and (max-width: 470px){
 
   .mngSmTitle.mngCreditSmTitle{
-    margin-left: 5rem;
+    margin-left: 2rem;
   }
 
   .mngFiveCircle.mngCreditCircle{
@@ -255,9 +269,9 @@
   }
 
 .mngSmTitle.mngCreditReportTitle{
-  margin-left: 5rem;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-left: 4rem;
+  margin-top: 3rem;
+  margin-bottom: -2rem;
 }
 
 }

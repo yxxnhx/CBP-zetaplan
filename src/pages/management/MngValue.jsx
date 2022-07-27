@@ -21,8 +21,8 @@ const MngValue = ({setHdSubStyle}) => {
   const threeDepthLink=`/mng-value/${category}`;
   const linkActive='threeDepth';
 
-  const [theme, setTheme] = useState(true);
-  const [themeCss, setThemCss] = useState(true);
+  const [theme, setTheme] = useState('');
+  const [themeCss, setThemCss] = useState('');
   const handleTheme = () => {
     const value = theme;
     setTheme(!value);

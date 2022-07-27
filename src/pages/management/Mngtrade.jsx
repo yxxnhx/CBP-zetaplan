@@ -13,8 +13,8 @@ const MngTrade = ({setHdSubStyle}) => {
   const twoDepthLink='/mng-trade';
   const linkActive='twoDepth';
   
-  const [theme, setTheme] = useState(true);
-  const [themeCss, setThemCss] = useState(true);
+  const [theme, setTheme] = useState('');
+  const [themeCss, setThemCss] = useState('');
   const handleTheme = () => {
     const value = theme;
     setTheme(!value);

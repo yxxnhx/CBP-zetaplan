@@ -140,7 +140,20 @@ $mngCircleSize : 20rem;
     left: -1rem;
    }
   }
- 
+  
+  .mngMenuTab li:hover{
+    color: $main-color;
+    &::after{
+      content: '';
+    display: block;
+    height: 0.3rem;
+    width: 13rem;
+    background-color: $main-color;
+    position: absolute;
+    bottom: -3.2rem;
+    left: -1rem;
+  } 
+   }
 
 .mngValueTitle{
   margin-top: 3rem;
@@ -303,7 +316,7 @@ $mngCircleSize : 20rem;
 .mngValueProcess{
   height: 50rem;
   margin-top: 10rem;
-  margin-left: 3rem;
+  margin-right: -3rem;
   div{
     font-size: 2.2rem;
     font-weight: 600;
@@ -335,11 +348,6 @@ $mngCircleSize : 20rem;
   }
 }
 
-.dark{
-  .mngValueProcess div:nth-of-type(3){
-    color: #0808c8;
-  }
-}
 
 .mngValueProcess span{
     color: #000;
@@ -389,7 +397,7 @@ $mngCircleSize : 20rem;
 .mngCircleItemLocation {
   width: 17rem;
   height: 17rem;
-  top:-1.875rem;
+  top:-3rem;
   left:50%; background-color : #583cf2;
   transform: translate(-22rem, -6rem);
   }
@@ -397,15 +405,16 @@ $mngCircleSize : 20rem;
 .mngCircleItemIndustry {
   width: 17rem;
   height: 17rem;
-  bottom:.625rem;
-  right:0; background-color:#1e3a8b ; 
+  bottom: 6rem;
+  right:-1rem; 
+  background-color:#1e3a8b ; 
   transform:translate(12rem, -8rem)
 }
 
 .mngCircleItemTogether {
   width: 17rem;
   height: 17rem;
-  bottom:.625rem;
+  bottom:0rem;
   left:0; background-color:#070f76;
   transform:translateY(11rem);
   }
@@ -418,6 +427,41 @@ $mngCircleSize : 20rem;
 }
 @keyframes rotate {0%{}100%{transform:rotate(360deg);}}
 @keyframes rotate2 {0%{}100%{transform:rotate(-360deg);}}
+
+
+.dark{
+  .mngMenuTab li:hover{
+    color: #359aff;
+    &::after{
+      content: '';
+    display: block;
+    height: 0.3rem;
+    width: 13rem;
+    background-color: #359aff;
+    position: absolute;
+    bottom: -3.2rem;
+    left: -1rem;
+  } 
+   }
+  .isActive{
+    color: #359aff;
+    &::after{
+      background-color: #359aff;
+    }
+  }
+  .mngValueTxt::after{
+    background-color: #359aff;
+  }
+ 
+  .mngValueProcess div:nth-of-type(2){
+    color: #356dfff5;
+  }
+  .mngValueProcess div:nth-of-type(3){
+   color: #3549ff;
+ }
+}
+
+
 
 
 .mngInner{
@@ -528,7 +572,7 @@ $mngCircleSize : 20rem;
 }
 .mngCircle{
   top: 21vw;
-  left: 15vw;
+  left: 17vw;
   width: 100%;
   height: 85%;
 }
@@ -547,7 +591,7 @@ $mngCircleSize : 20rem;
 .mngValueProcess{
   width: 50%;
   margin-top: 8rem;
-  margin-left: 40%;
+  margin-left: 45%;
   div{
     display: flex;
     flex-direction: column;
@@ -709,7 +753,7 @@ $mngCircleSize : 20rem;
 
 .mngCircle{
   top: 37vw;
-  left: 28vw;
+  left: 24vw;
   width: 80%;
   height: 70%;
 }

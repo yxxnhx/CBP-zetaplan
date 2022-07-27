@@ -11,8 +11,8 @@ const MngConsulting = ({setHdSubStyle}) => {
   const twoDepthLink='/mng';
   const linkActive='twoDepth';
 
-  const [theme, setTheme] = useState(true);
-  const [themeCss, setThemCss] = useState(true);
+  const [theme, setTheme] = useState('');
+  const [themeCss, setThemCss] = useState('');
   const handleTheme = () => {
     const value = theme;
     setTheme(!value);
@@ -75,28 +75,32 @@ const MngConsulting = ({setHdSubStyle}) => {
               <h2 className='darkText mngSubTitleNb'>Matrix</h2>
             </div>
             <h3 className='darkText mngSmTitle mnConsultingSmTitle'>사업개발전략</h3>
-            <div className='mngFiveCircleBox'>
-              <ul className='mngFiveCircle mngConsultingFive'>
-                <li>STEP 01<br />사업모델정립</li>
-                <li>STEP 02<br />제품/서비스 완성</li>
-                <li>STEP 03<br />초기시장진입</li>
-                <li>STEP 04<br />대상시장<br />리더그룹 포지셔닝</li>
-                <li>STEP 05<br />해외진출/사업확장</li>
-              </ul>
-            </div>
+            <ul className='mngCircleArea'>
+              <li className='mngFiveCircleBox'>
+                <ul className='mngFiveCircle mngConsultingFive'>
+                  <li>STEP 01<span>사업모델정립</span></li>
+                  <li>STEP 02<span>제품/서비스 완성</span></li>
+                  <li>STEP 03<span>초기시장진입</span></li>
+                  <li>STEP 04<span>대상시장</span><span>리더그룹 포지셔닝</span></li>
+                  <li>STEP 05<span>해외진출/사업확장</span></li>
+                </ul>
+              </li>
+            </ul>
             <div className='darkText mngConsultingTxt'>
               <p>사업모델정립 단계에서는 사업타당성 검토, 사업계획/전략수립이 이루어지며 제품/서비스 완성 단계에서는 사업계획   upgrade가 진행되고 초기시장 진입 단계에서는 초기사업목표 재확인, 사업선점 전략 수립이 이루어지며 대상시장 리더그룹    포지셔닝 단계에서는 신제품개발 Needs, 시장지배 강화전략이 진행되며 해외진출/사업확장 단계에서는 해외기업과의 전략적   제휴를 추진한다.</p>
             </div>
             <h3 className='darkText mngSmTitle mnConsultingSmTitle'>자금투자유치</h3>
-            <div className='mngFiveCircleBox'>
-              <ul className='mngFiveCircle'>
-                <li>STEP 01<br />사업모델정립</li>
-                <li>STEP 02<br />제품/서비스 완성</li>
-                <li>STEP 03<br />초기시장진입</li>
-                <li>STEP 04<br />대상시장<br />리더그룹 포지셔닝</li>
-                <li>STEP 05<br />해외진출/사업확장</li>
-              </ul>
-            </div>
+            <ul className='mngCircleArea'>
+              <li className='mngFiveCircleBox'>
+                <ul className='mngFiveCircle mngConsultingFive'>
+                  <li>STEP 01<span>사업모델정립</span></li>
+                  <li>STEP 02<span>제품/서비스 완성</span></li>
+                  <li>STEP 03<span>초기시장진입</span></li>
+                  <li>STEP 04<span>대상시장</span><span>리더그룹 포지셔닝</span></li>
+                  <li>STEP 05<span>해외진출/사업확장</span></li>
+                </ul>
+              </li>
+            </ul>
             <div className='darkText mngConsultingTxt mngTxt'>
               <p>사업모델정립 단계에서는 원가추정, 추정 재무제표,  현금흐름・순익추정, 자금유치시기 분석, 창업자금 조달 등이 진행되며
               제품/서비스 완성 단계에서는자금 운영계획, 회계사・회계시스템 활용, 자금대출/상환계획이 이루어지고   초기시장진입단계에서는 재무제표 관리, 수입금 관리 계획, 전문가에 의한 자금 흐름/지출 분석을 진행합니다.</p>

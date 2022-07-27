@@ -24,8 +24,8 @@ const MngCertify = ({setHdSubStyle}) => {
   const [certifyCount, certifySetCount] = useState(0);
   
 
-  const [theme, setTheme] = useState(true);
-  const [themeCss, setThemCss] = useState(true);
+  const [theme, setTheme] = useState('');
+  const [themeCss, setThemCss] = useState('');
   const handleTheme = () => {
     const value = theme;
     setTheme(!value);
