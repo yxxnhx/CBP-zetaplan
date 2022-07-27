@@ -30,8 +30,6 @@
         transform: translateY(-50%);
         font-size: 0;
         display: block;
-        // width: 25px;
-        // height: 25px;
         width: 2.5rem;
         height: 2.5rem;
         z-index: 100;
@@ -40,10 +38,9 @@
       }
 
       .qnaSelect {
-        // width: 139px;
         width: 13.9rem;
-        // height: 70px;
         height: 7rem;
+        padding-right: 1rem;
         font-family: 'Noto Sans KR',sans-serif;
         font-size: 2rem;
         text-align: center;

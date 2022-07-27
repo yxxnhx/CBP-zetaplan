@@ -3,7 +3,8 @@
 .mainInformation {
   @include Inner;
 
-  h2.mainInfoTitle {    font-size: 4rem;
+  h2.mainInfoTitle {
+    font-size: 4rem;
     font-family: 'Montserrat';
     font-weight: bold;
     color: $basic-white;
@@ -18,7 +19,6 @@
     .infoSwipBox {
       width: calc(50% - 20px);
       background-color: $basic-white;
-      // height: 31.4rem;
       margin-bottom: 40px;
       border-radius: 29px;
       padding: 53px 30px 41px 50px;
@@ -59,15 +59,11 @@
         right: 0;
         transform: translateX(0);
       }
-
     }
-  
   }
   
   .mainInfoMoreBtn {
     border: 1px solid $basic-white;
-    // width: 295px;
-    // height: 78px;
     width: 30rem;
     height: 8rem;
     border-radius: 50px;
@@ -79,19 +75,14 @@
     margin: 0 auto 4rem;
     padding: 3rem 0;
   }
-
 }
-
-
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
   .mainInformation .infoSwiperBoxList .infoSwipBox .infoConTitle {
-
     margin: 49px 0 2rem;
     word-break: keep-all;
   }
-
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
@@ -104,9 +95,7 @@
 
       .infoConTitle {
         margin: 49px 0 3rem;
-
       }
     }
   }
-
 }

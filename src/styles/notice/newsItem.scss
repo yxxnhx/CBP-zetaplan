@@ -47,10 +47,9 @@
         font-size: $list-md;
         font-weight: normal;
         list-style: none;
-  
       }
-  
     }
+
     .createdAt {
       font-family: 'Noto Sans KR',sans-serif;
       font-size: $size-sm;
@@ -58,10 +57,6 @@
   }
 
   }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-}
 
 @media (min-width: 550px) and (max-width: 767px) {
 
@@ -78,5 +73,4 @@
     align-items: center;
     justify-content: center;
   }
-  
 }

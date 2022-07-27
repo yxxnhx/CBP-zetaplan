@@ -51,12 +51,6 @@
 
   .newsSwiperContainer {
     margin-top: 80px;
-    
-    .newsSwiper {
-      .swiper-wrapper {
-        // height: 900px;
-      }
-    }
   
     .newsContainer {
       display: flex;
@@ -70,31 +64,25 @@
         img {
           width: 100%;
           object-fit: contain;
-          // max-height: 570px;
           max-height: 400px;
         }
       }
       
       .newsContentBox {
         flex: 1 1 40%;
-        // height: 570px;
   
         .newsTitle {
           font-size: 3.04rem;
-          // width: 70%;
           width: 95%;
-          // height: 166px;
           font-weight: bold;
           line-height: 1.7;
           word-break: keep-all;
           margin-bottom: 16px;
-    
         }
   
         .newsSummary {
           font-family: 'Noto Sans KR',sans-serif;
           font-size: 2.4rem;
-          // width: 39.8rem;
           width: 95%;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -108,7 +96,6 @@
             font-family: 'Noto Sans KR',sans-serif;
             font-size: $size-xl;
             line-height: 1.7;
-  
           }
         }
   
@@ -118,10 +105,6 @@
           font-weight: 600;
           margin: 57px 0 40px;
         }
-        
-        
-        
-  
       }
     }
   }
@@ -134,7 +117,6 @@
     .newsSearchBox {
       position: absolute;
       right: 0;
-      // top: 0;
       top: -24px;
       width: 30rem;
       padding: 1rem 0;
@@ -148,10 +130,8 @@
         display: block;
         outline: none;
 
-  
         &::placeholder {
           color: $basic-black;
-  
         }
       }
   
@@ -280,8 +260,8 @@
     width: 890px;
     margin: 70px auto 88px;
     justify-content: center;
-    .page-item {
-      
+
+    .page-item {  
       a {
         display: block;
         width: 5.8rem;
@@ -326,10 +306,6 @@
     flex: 1 1 100%;
   }
 
-  .newsInner .newsSwiperContainer .newsSwiper .swiper-wrapper {
-    // height: 700px;
-  }
-
   .newsInner .newsSwiperContainer .newsContainer .slideImgThumb img {
     max-height: 320px;
     object-fit: contain;
@@ -338,5 +314,4 @@
   .newsInner .newsSwiperBtnBox {
     margin: 0 auto;
   }
-
 }

@@ -67,6 +67,7 @@ const QnaDetail = ({ setHdSubStyle }) => {
           </>)
         }
         <Link to="/qna" className='qnaListBtn'>목록</Link>
+        <button type="button">삭제</button>
 
       </div>
     </div>

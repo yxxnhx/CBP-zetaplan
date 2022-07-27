@@ -1,7 +1,7 @@
 @import '../GlobalStyle.scss';
 
 .qnaTable {
-  border-top: 5px solid #707070;
+  border-top: 3px solid #707070;
   width: 100%;
   padding: 1%;
   box-sizing: border-box;
@@ -39,14 +39,11 @@
         text-align: center;
 
         &.qnaTbodyId {
-          // width: 100px;
           width: 5%;
 
         }
 
-        // padding: 0 8px;
         &.qnaTbodyTitle {
-          // width: 50%;
           box-sizing: border-box;
           padding-right: 1rem;
           width: 550px;
@@ -60,23 +57,19 @@
         }
 
         &.qnaTbodyWriter {
-          // width: 100px;
           width: 10%;
         }
 
         &.qnaTbodyDate {
-          // width: 200px;
           width: 20%;
         }
 
         &.qnaTbodyHit {
-          // width: 100px;
           width: 5%;
         }
 
         &.isAnswerBtn > button {
           width: 12rem;
-          // height: 50px;
           height: 5rem;
           font-size: 1.92rem;
           font-family: 'Noto Sans KR',sans-serif;
@@ -101,7 +94,11 @@
 
 
 }
-@media (min-width: 360px) and (max-width: 601px){
+@media all and (max-width: 601px){
+  .qnaTable {
+    border-top: 2px solid #707070;
+  }
+  
   .qnaTable .qnaTbody .qnaTbTr td.qnaTbodyDate {
     display: none;
   }
@@ -118,5 +115,7 @@
     width: 10rem;
   }
 
-
+  .qnaInner .qnaSearchInput .qnaSelectBox .qnaSelect {
+    padding-right: 3rem;
+  }
 }

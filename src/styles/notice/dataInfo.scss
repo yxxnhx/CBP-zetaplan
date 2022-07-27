@@ -24,7 +24,6 @@
       flex-wrap: wrap;
       
       li {
-        // margin-left: 50px; // 122px인데 임시 수정(문의)
         background-color: $basic-gray1;
         font-family: 'Noto Sans KR',sans-serif;
         font-size: 2.24rem;
@@ -40,7 +39,6 @@
           background-color : $main-color;
           color: $basic-white;
         }
-
       }
     }
   }
@@ -59,7 +57,6 @@
     
     .infoSearchBox {
       position: relative;
-      // width: 450px;
       width: 40rem;
       padding: 16px 0;
       border-bottom: 1px solid #707070;
@@ -67,7 +64,6 @@
       .infoInput {
         width: 450px;
         border: none;
-        // border-bottom: 1px solid #707070;
         font-size: 2rem;
         display: block;
         outline: none;s
@@ -98,7 +94,6 @@
 
     .dataInfoItem {
       width: calc(33.33% - 18px);
-      // height: 316px;
       height: 30rem;
       margin-bottom: 50px;
       padding: 56px 54px;
@@ -134,7 +129,6 @@
       }
       dt {
         margin: 42px 0 28px;
-        // width: 292px;
         overflow: hidden;
         text-overflow: ellipsis;
         word-break: break-word;
@@ -151,7 +145,6 @@
         font-weight: bold;
       }
     }
-
   }
 
   .infoMoreBtn {
@@ -173,8 +166,6 @@
 @media (min-width: 768px) and (max-width: 1023px){
 
   .dataInfoInner .dataInfoLiBox {
-
-    // justify-content: space-around;
     justify-content: space-between;
   }
 
@@ -183,10 +174,8 @@
 
     dt {
       -webkit-line-clamp: 1;
-
     }
   }
-
 };
 
 @media (min-width: 360px) and (max-width: 767px){
@@ -194,6 +183,4 @@
     width: 100%;
     padding: 3rem 4rem;
   }
-
-
 }

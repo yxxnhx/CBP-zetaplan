@@ -78,15 +78,21 @@ const News = ({ setHdSubStyle }) => {
       return columnData;
     }
   }
+  
+  // const [input, setInput] = useState('');
 
-  // const getSelectedData = () => {
-  //   switch (selectedIndex) {
-  //   case 0:
-  //     return newsData;
-  //   case 1:
-  //   default:
-  //     return columnData;
-  //   }
+  // // const [swiperData, setSwiperData] = useState([...data]);
+  // const [searchedData, setSearchedData] = useState([]);
+
+  // const onChangeInput = (e) => {
+  //   setInput(e.target.value);
+  // }
+
+  // const onSearch = () => {
+  //   const filteredData = data.filter((item) => {
+  //     item.title.includes(input);
+  //   })
+  //   setSearchedData(filteredData);    
   // }
 
   const getActiveClassName = (cate) => {
@@ -135,8 +141,8 @@ const News = ({ setHdSubStyle }) => {
         <NewsSwiper items={data} selectedIndex={selectedIndex} />
         <div className='newsListContainer'>
           <div className='newsSearchBox'>
-            <input className="newsInput" type="text" placeholder='검색어를 입력하세요' />
-            <span className='newsmagnifier'></span>
+            <input className="newsInput" type="text" placeholder='검색어를 입력하세요' /* onChange={onChangeInput} *//>
+            <span className='newsmagnifier' /* onClick={onSearch} */></span>
           </div>
           <div className='newsListBox'>
             {
