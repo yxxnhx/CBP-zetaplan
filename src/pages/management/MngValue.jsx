@@ -16,7 +16,7 @@ const MngValue = ({setHdSubStyle}) => {
   const oneDepth='경영 · 평가';
   const oneDepthLink='/mng';
   const twoDepth='가치평가';
-  const twoDepthLink='/mng-value/mngvaluecompany'; //주소 맨앞에 '/' 안붙이면 주소가 추가됨(아마 문자로 인식하는 듯)
+  const twoDepthLink='/mng-value/mngvaluecompany';
   const threeDepth= setBreadThreeDepth();
   const threeDepthLink=`/mng-value/${category}`;
   const linkActive='threeDepth';

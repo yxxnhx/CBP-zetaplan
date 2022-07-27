@@ -217,14 +217,20 @@ $size-ft : 1.6rem;
 }
 
 // dark & light mode
+
+.themeBtnArea{
+  @include ThemeBtnArea;
+}
+
 .light{
-  .darkText{
-    color: #000;
-  }
-  .darkBackground{
+  @include Light;
+  
+  .mngConsultingProcessImg{
+    background: url(./../../img/me/me_process_graph@2x.png) no-repeat;
+    background-size: contain;
     width: 100%;
-    height: 100%;
-    background-color: #fff;
+    height: 50vw;
+    font-size: 0;
   }
   .mngConsultingProcessImg{
     background: url(./../../img/me/me_process_graph@2x.png) no-repeat;
@@ -240,9 +246,13 @@ $size-ft : 1.6rem;
     height: 100vw;
     font-size: 0;
   }
+
 }
 
+
 .dark{
+  @include Dark;
+
   .mngConsultingProcessImg{
     background: url(./../../img/me/me_process_graph_w.png) no-repeat;
     background-size: contain;
@@ -270,6 +280,7 @@ $size-ft : 1.6rem;
   &:hover{
     background-color: $main-color;
     }
+
   }
   .mngCompanyValueAssess li{
     background-color: #ccc;
@@ -284,7 +295,8 @@ $size-ft : 1.6rem;
     width: 100%;
   }
   .mngValueProcess span{
-    color: #fff;
+    color: $basic-white;
+
   }
   .mngCreditBtn{
     background-color: #ccc;
@@ -294,14 +306,15 @@ $size-ft : 1.6rem;
     background-color: #ccc;
   }
   .mngCreditReportTitle{
-    color: #fff;
+    color: $basic-white;
   }
   .mngCreditReport{
-    color: #fff;
+    color: $basic-white;
   }
   .mngGrowTxt{
-    border: .5px solid #fff;
+    border: .5px solid $basic-white;
   }
+
 }
 
 
