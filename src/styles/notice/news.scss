@@ -357,6 +357,6 @@
     margin: 0 auto;
   }
   .newsInner .newsListContainer .newsListBox {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }

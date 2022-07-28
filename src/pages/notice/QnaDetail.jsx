@@ -32,6 +32,12 @@ const QnaDetail = ({ setHdSubStyle }) => {
 
   const hasComments = data?.comments?.length;
 
+  const oneDepth='소식 · 자료';
+  const oneDepthLink='/news';
+  const twoDepth='Q&A';
+  const twoDepthLink='/qna';
+  const linkActive='twoDepth';
+
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
 
   if (!data) {
@@ -40,7 +46,7 @@ const QnaDetail = ({ setHdSubStyle }) => {
 
   return (
     <>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive} />
       <div className={themeCss}>
         <div className='darkBackground'>
           <div className='qnaDetailInner'>
