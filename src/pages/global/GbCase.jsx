@@ -437,4 +437,4 @@ const GbCase = ({ setHdSubStyle }) => {
   );
 };
 
-export default GbCase;
+export default React.memo(GbCase);
