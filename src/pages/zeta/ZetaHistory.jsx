@@ -155,4 +155,4 @@ const ZetaHistory = ({setHdSubStyle}) => {
   );
 };
 
-export default ZetaHistory;
+export default React.memo(ZetaHistory);

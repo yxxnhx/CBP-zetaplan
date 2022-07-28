@@ -98,4 +98,4 @@ const ZetaMap = ({ setHdSubStyle }) => {
   );
 };
 
-export default ZetaMap;
+export default React.memo(ZetaMap);

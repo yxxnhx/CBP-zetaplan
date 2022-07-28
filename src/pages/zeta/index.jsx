@@ -114,4 +114,4 @@ const Zeta = ({ setHdSubStyle }) => {
   );
 };
 
-export default Zeta;
+export default React.memo(Zeta);

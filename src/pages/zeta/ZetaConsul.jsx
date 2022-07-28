@@ -88,4 +88,4 @@ const ZetaConsul = ({ setHdSubStyle }) => {
   );
 };
 
-export default ZetaConsul;
+export default React.memo(ZetaConsul);
