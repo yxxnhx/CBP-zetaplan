@@ -194,4 +194,4 @@ const MngCredit = ({setHdSubStyle}) => {
   );
 };
 
-export default MngCredit;
+export default React.memo(MngCredit);

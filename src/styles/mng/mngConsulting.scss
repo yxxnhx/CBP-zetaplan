@@ -36,7 +36,7 @@ $size-ft : 1.6rem;
   padding-left: 3rem;
   position: relative;
   margin-top: 5rem;
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
   &::before {
     content: "";
     display: block;
@@ -172,7 +172,7 @@ $size-ft : 1.6rem;
 
 .mngTxt{
   p:last-child{
-    margin-top: -3rem;
+    margin-top: 0rem;
   }
 }
 
@@ -388,6 +388,9 @@ $size-ft : 1.6rem;
  margin-left: -5rem;
 }
 
+.mngTxt{
+  margin-top: -3rem;
+}
 
 .mnConsultingSmTitle{
   margin-top: 5rem;

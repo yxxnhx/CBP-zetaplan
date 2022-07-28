@@ -60,9 +60,10 @@
 
 .mngTradeProcessImg{
   background: url(./../../img/me/me_process@2x.png) no-repeat;
-  background-size: cover;
-  width: 100%;
+  background-size: contain;
+  width: 80%;
   height: 100vw;
+  margin: auto;
   font-size: 0;
 }
 
