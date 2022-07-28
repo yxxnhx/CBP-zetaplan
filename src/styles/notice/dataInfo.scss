@@ -162,17 +162,11 @@
     font-weight: bold;
     &:hover {
       background-color: $main-color;
+      color: $basic-white;
     }
   }
 
 }
-
-// .dark {
-//   .infoTabList li {
-//     color: #359aff;
-//   }
-
-// }
 
 .dark {
   .dataInfoInner .infoSearchCon .infoSearchBox{

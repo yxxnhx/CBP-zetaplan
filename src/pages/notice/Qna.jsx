@@ -64,10 +64,7 @@ const Qna = ({ setHdSubStyle }) => {
   const getSearchedByOption = () => {
     if (optionValue === 'all') {
       return originData.filter((item) => {
-        return item['title'].includes(input)
-      })
-      || originData.filter((item) => {
-        return item['author'].includes(input)
+        return item['title'].includes(input) || item['author'].includes(input);
       })
     } else {
       return originData.filter((item) => {
@@ -92,14 +89,6 @@ const Qna = ({ setHdSubStyle }) => {
     const cssValue = value ? 'dark' : 'light';
     setThemCss(cssValue);
   }
-
-  // const onDelete = (id ) => {
-    
-  //   console.log(id)
- 
-  // }
-
-
 
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
   const oneDepth='소식 · 자료';
@@ -142,16 +131,11 @@ const Qna = ({ setHdSubStyle }) => {
             <div>
               <QnaTable qnaJsonList={currentItems} />
             </div>
-            <PaginatedItems handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount} />
-            <button><Link to='/qna-write'>글쓰기</Link></button>
+            <div className="qnaBottom">
+              <PaginatedItems handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount}/>
+              <button className='writeBtn'><Link to='/qna-write'>글쓰기</Link></button>
+            </div>
           </div>
-        </div>
-        <div>
-          <QnaTable qnaJsonList={currentItems} />
-        </div>
-        <div className="qnaBottom">
-          <PaginatedItems handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount}/>
-          <button className='writeBtn'><Link to='/qna-write'>글쓰기</Link></button>
         </div>
       </div>
       
