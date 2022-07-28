@@ -58,15 +58,16 @@
     .infoSearchBox {
       position: relative;
       width: 40rem;
-      padding: 16px 0;
       border-bottom: 1px solid #707070;
 
       .infoInput {
-        width: 450px;
+        width: 100%;
         border: none;
         font-size: 2rem;
         display: block;
-        outline: none;s
+        outline: none;
+        padding: 16px 0;
+        background: transparent;
 
         &::placeholder {
           color: $basic-black;
@@ -159,8 +160,36 @@
     font-family: 'Noto Sans KR',sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
+    &:hover {
+      background-color: $main-color;
+    }
   }
 
+}
+
+// .dark {
+//   .infoTabList li {
+//     color: #359aff;
+//   }
+
+// }
+
+.dark {
+  .dataInfoInner .infoSearchCon .infoSearchBox{
+    border-color: $basic-white;
+    .infoInput {
+    color: $basic-white;
+    &::placeholder {
+      color: $basic-white;
+    }
+    }
+    .infomagnifier {
+      background:  url('../../img/zetaplan_splite.png') -403px -114px;
+      background-size: 599px 280px;
+      width: 18px;
+      height: 18px;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px){

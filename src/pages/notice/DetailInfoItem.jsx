@@ -16,6 +16,9 @@ const DetailInfoItem = ({ setHdSubStyle }) => {
 
   const [detailData, setDetailData] = useState(null);
 
+  const [theme, setTheme] = useState('');
+  const [themeCss, setThemCss] = useState('');
+
   const getDataByCategory = () => {
     switch (category) {
     case 'm&a-invest':
@@ -45,6 +48,13 @@ const DetailInfoItem = ({ setHdSubStyle }) => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
 
+  function handleTheme () {
+    const value = theme;
+    setTheme(!value);
+    const cssValue = value ? 'dark' : 'light';
+    setThemCss(cssValue);
+  }
+
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다';
 
   if (!detailData) {
@@ -54,20 +64,29 @@ const DetailInfoItem = ({ setHdSubStyle }) => {
   return (
     <div>
       <SubBanner title={title} img={subBg} />
-      <div className='detailInfoInner'>
-        <div className='detailInfoTitleBox'>
-          <p>자료</p>
-        </div>
-        <div className='detailContentInner'>
-          <div className='detailTitleSec'>
-            <p className='detailTitle'>{detailData.title}</p>
-            <p className="detailDate">{detailData.createdAt}</p>
+      <div className={themeCss}>
+        <div className='darkBackground'>
+          <div className='detailInfoInner'>
+            <div className="themeBtnArea">
+              <button className='themeBtn' onClick={()=>{handleTheme()}}>
+                mode change
+              </button>
+            </div>
+            <div className='detailInfoTitleBox darkText'>
+              <p>자료</p>
+            </div>
+            <div className='detailContentInner'>
+              <div className='detailTitleSec'>
+                <p className='darkText detailTitle'>{detailData.title}</p>
+                <p className="darkText detailDate">{detailData.createdAt}</p>
+              </div>
+              <img src="../../img/notice/data_info/investImg_1.png" alt="" />
+              <div className="darkText content" dangerouslySetInnerHTML={{ __html: detailData.content }}>
+              </div>
+            </div>
+            <Link to='/datainfo' className='darkText infoListBtn'>목록</Link>
           </div>
-          <img src="../../img/notice/data_info/investImg_1.png" alt="" />
-          <div className="content" dangerouslySetInnerHTML={{ __html: detailData.content }}>
-          </div>
         </div>
-        <Link to='/datainfo' className='infoListBtn'>목록</Link>
       </div>
     </div>
   );

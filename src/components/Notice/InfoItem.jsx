@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const InfoList = ({item, selectedIndex}) => {
-  // console.log(item);
   const navigate = useNavigate();
   
   const hasCategory = !!item.category;
@@ -26,7 +25,7 @@ const InfoList = ({item, selectedIndex}) => {
 
   return (
     <>
-      <dl className='dataInfoItem' onClick={()=> navigate(`/datainfo/${getSelectedIndex()}/${item.id}`)}>
+      <dl className='dataInfoItem darkText' onClick={()=> navigate(`/datainfo/${getSelectedIndex()}/${item.id}`)}>
         <div className='infoItemTop'>
           <dd className='ddnotice'>공지</dd>
           {hasCategory && <dd className='ddCate'>{item.category}</dd>}

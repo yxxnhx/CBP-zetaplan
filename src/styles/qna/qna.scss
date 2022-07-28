@@ -72,6 +72,7 @@
         font-family: 'Noto Sans KR',sans-serif;
         font-size: 2rem;
         margin-left: 62px;
+        background: transparent;
       }
       
       .qnamagnifier {
@@ -85,10 +86,9 @@
         bottom: 15px;
         cursor: pointer;
       }
-
     }
-
   }
+
   .pagination {
     display: flex;
     width: 100%;
@@ -120,14 +120,33 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
-
-
+.dark {
+  .qnaInner .qnaSearchInput .qnaSearchBox{
+    .qnaSearch {
+      border-color: $basic-white;
+      color: $basic-white;
+      &::placeholder {
+        color: $basic-white;
+      }
+    }
+    .qnamagnifier {
+      background:  url('../../img/zetaplan_splite.png') -403px -114px;
+      background-size: 599px 280px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+   
+  .pagination {
+    a {
+      color: $basic-white;
+    }
+  }
 }
+
 @media (min-width: 360px) and (max-width: 767px){
   .qnaInner .qnaSearchInput .qnaSearchBox .qnaSearch {
     width: 30rem;
     margin-left: 20px;
   }
-
 }

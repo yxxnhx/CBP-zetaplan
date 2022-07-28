@@ -13,6 +13,9 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
 
   const [detailData, setDetailData] = useState(null);
 
+  const [theme, setTheme] = useState('');
+  const [themeCss, setThemCss] = useState('');
+
   const getDataByCategory = () => {
     switch (category) {
     case 'news':
@@ -36,6 +39,13 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
 
+  function handleTheme () {
+    const value = theme;
+    setTheme(!value);
+    const cssValue = value ? 'dark' : 'light';
+    setThemCss(cssValue);
+  }
+
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다';
 
   if (!detailData) {
@@ -45,20 +55,30 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
   return (
     <div>
       <SubBanner title={title} img={subBg} />
-      <div className="newsDetailInner">
-        <div className="detailTitle">
-          <p>소식</p>
-        </div>
-        <div className="detailItemBox">
-          <p className="detailItemTitle">{detailData.title}</p>
-          <div className="contentBox">
-            {
-              detailData.img.length === 0 ? <img className="zetaLogoThumb" src={contentImg} alt="zeta 대표 이미지" /> : <img src={detailData.img} alt={detailData.alt} />
-            }
-            <div className="content" dangerouslySetInnerHTML={{ __html: detailData.content }}></div>
+      <div className={themeCss}>
+        <div className='darkBackground'>
+          <div className="newsDetailInner">
+            <div className="themeBtnArea">
+              <button className='themeBtn' onClick={()=>{handleTheme()}}>
+                mode change
+              </button>
+            </div>
+            <div className="detailTitle darkText">
+              <p>소식</p>
+            </div>
+            <div className="detailItemBox">
+              <p className="detailItemTitle darkText">{detailData.title}</p>
+              <div className="contentBox darkText">
+                {
+                  detailData.img.length === 0 ? <img className="zetaLogoThumb" src={contentImg} alt="zeta 대표 이미지" /> : <img src={detailData.img} alt={detailData.alt} />
+                }
+                <div className="content" dangerouslySetInnerHTML={{ __html: detailData.content }}></div>
+              </div>
+            </div>
+            <Link to='/news' className="newsListBtn">목록</Link>
           </div>
+
         </div>
-        <Link to='/news' className="newsListBtn">목록</Link>
       </div>
 
     </div>

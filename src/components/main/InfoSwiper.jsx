@@ -91,4 +91,4 @@ const InfoSwiper = ({data}) => {
   );
 };
 
-export default InfoSwiper;
+export default React.memo(InfoSwiper);

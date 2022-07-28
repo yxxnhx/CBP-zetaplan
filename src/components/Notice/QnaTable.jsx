@@ -3,10 +3,9 @@ import '../../styles/qna/qnaTable.scss';
 import QnaTableList from './QnaTableList';
 
 const QnaTable = ({qnaJsonList}) => {
-  console.log(qnaJsonList)
   return (
     <>
-      <table className='qnaTable'>
+      <table className='qnaTable darkText'>
         <thead className='qnaThead'>
           <tr className='qnaThTr'>
             <th>번호</th>
@@ -29,4 +28,4 @@ const QnaTable = ({qnaJsonList}) => {
   );
 };
 
-export default QnaTable;
+export default React.memo(QnaTable);

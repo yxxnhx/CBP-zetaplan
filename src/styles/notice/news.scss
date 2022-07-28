@@ -1,5 +1,13 @@
 @import '../GlobalStyle.scss';
 
+.dark {
+  @include Dark;
+  .newsTabTitle, .newsTitle .newsContentBox {
+    color: $basic-white; 
+  }
+
+}
+
 .newsInner {
   @include Inner;
 
@@ -121,7 +129,7 @@
       width: 30rem;
       padding: 1rem 0;
       border-bottom: 1px solid #707070;
-      background-color: $basic-white;
+      background: transparent;
 
       .newsInput {
         width: 28rem;
@@ -129,6 +137,7 @@
         font-size: 2rem;
         display: block;
         outline: none;
+        background: transparent;
 
         &::placeholder {
           color: $basic-black;
@@ -150,11 +159,8 @@
 
     .newsListBox {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       column-gap: 24px;
-      // display: flex;
-      // flex-wrap: wrap;
-      // justify-content: space-between;
     }
   }
   
@@ -289,6 +295,34 @@
   }
 }
 
+.dark {
+  .newsInner .newsTitleBox .newsTabList li {
+    color: $basic-white;
+    &.active {
+      color: #359aff;
+      &::after {
+        background-color: #359aff;
+      }
+    }
+
+  }
+  .newsInner .newsListContainer .newsSearchBox {
+    border-color: $basic-white;
+    .newsInput {
+      &::placeholder {
+        color: $basic-white;
+      }
+    }
+    .newsmagnifier {
+      background:  url('../../img/zetaplan_splite.png') -403px -114px;
+	    background-size: 599px 280px;
+	    width: 18px;
+	    height: 18px;
+    }
+
+  }
+}
+
 
 @media (min-width: 768px) and (max-width: 1023px){
   .newsInner .pagination {
@@ -296,7 +330,7 @@
   }
 
   .newsInner .newsListContainer .newsListBox {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 24px;
   }
 

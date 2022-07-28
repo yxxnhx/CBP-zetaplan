@@ -23,7 +23,10 @@ const Qna = ({ setHdSubStyle }) => {
   const [itemOffset, setItemOffset] = useState(0);
 
   const [input, setInput] = useState('');
+  const [optionValue, setOptionValue] = useState('');
 
+  const [theme, setTheme] = useState('');
+  const [themeCss, setThemCss] = useState('');
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
@@ -53,13 +56,35 @@ const Qna = ({ setHdSubStyle }) => {
     setInput(e.target.value);
   }
 
-  const onSearch = () => {
-    const dataTitleList = originData.filter((item) => {
-      return item['title'].includes(input);
-    })
+  const getOptionValue = (e) => {
+    setOptionValue(e.target.value);
+  }
 
-    setData(dataTitleList);
-  };
+  const getSearchedByOption = () => {
+    if (optionValue === 'all') {
+      return originData.filter((item) => {
+        return item['title'].includes(input)
+      })
+      || originData.filter((item) => {
+        return item['author'].includes(input)
+      })
+    } else {
+      return originData.filter((item) => {
+        return item['author'].includes(input)
+      })
+
+    }
+  }
+
+  const onSearch = () => {
+    // const dataTitleList = originData.filter((item) => {
+    //   return item['title'].includes(input);
+    // })
+    // setData(dataTitleList);
+    setData(getSearchedByOption());
+
+
+  }
 
   const onKeyDown = (e) => {
     if (e.key === 'Enter') {
@@ -67,10 +92,11 @@ const Qna = ({ setHdSubStyle }) => {
     }
   };
 
-  const [optionValues, setOptionValues] = useState([]);
-
-  const getOptionValue = (e) => {
-    setOptionValues(e.target.value);
+  const handleTheme = () => {
+    const value = theme;
+    setTheme(!value);
+    const cssValue = value ? 'dark' : 'light';
+    setThemCss(cssValue);
   }
 
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
@@ -85,32 +111,42 @@ const Qna = ({ setHdSubStyle }) => {
   }
 
   return (
-    <div>
+    <>
       <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive} />
-      <div className='qnaInner'>
-        <div className='qnaTitleBox'>
-          <h2 className='qnaTitle'>Q&A</h2>
-        </div>
-        <div className='qnaSearchInput'>
-          <div className="qnaSelectBox">
-            <label htmlFor="qnaCategory">qnaCategory</label>
-            <select className='qnaSelect' name="qanCategory" id="qnaCategory" onChange={getOptionValue}>
-              <option value="all">전체</option>
-              <option value="author">작성자</option>
-            </select>
+      <div className={themeCss}>
+        <div className='darkBackground'>
+          <div className='qnaInner'>
+            <div className="themeBtnArea">
+              <button className='themeBtn' onClick={()=>{handleTheme()}}>
+                  mode change
+              </button>
+            </div>
+            <div className='qnaTitleBox'>
+              <h2 className='qnaTitle darkText'>Q&A</h2>
+            </div>
+            <div className='qnaSearchInput'>
+              <div className="qnaSelectBox">
+                <label htmlFor="qnaCategory">qnaCategory</label>
+                <select className='qnaSelect' name="qanCategory" id="qnaCategory" onChange={getOptionValue}>
+                  <option value="all">전체</option>
+                  <option value="author">작성자</option>
+                </select>
+              </div>
+              <div className='qnaSearchBox'>
+                <input className="qnaSearch" type="text" placeholder="검색어를 입력하세요." onKeyDown={onKeyDown} onChange={getSearchByData} />
+                <span className='qnamagnifier' onClick={onSearch}></span>
+              </div>
+            </div>
+            <div>
+              <QnaTable qnaJsonList={currentItems} />
+            </div>
+            <PaginatedItems handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount} />
+            <button><Link to='/qna-write'>글쓰기</Link></button>
           </div>
-          <div className='qnaSearchBox'>
-            <input className="qnaSearch" type="text" placeholder="검색어를 입력하세요." onKeyDown={onKeyDown} onChange={getSearchByData} />
-            <span className='qnamagnifier' onClick={onSearch}></span>
-          </div>
         </div>
-        <div>
-          <QnaTable qnaJsonList={currentItems} />
-        </div>
-        <PaginatedItems handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount} />
-        <button><Link to='/qna-write'>글쓰기</Link></button>
       </div>
-    </div>
+      
+    </>
   );
 };
 

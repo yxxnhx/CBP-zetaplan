@@ -9,16 +9,26 @@ const QnaDetail = ({ setHdSubStyle }) => {
 
   const [data, setData] = useState(null);
 
+  const [theme, setTheme] = useState('');
+  const [themeCss, setThemCss] = useState('');
+  
   useEffect(() => {
     const qnaList = JSON.parse(window.localStorage.getItem('newQnaList'));
     const detailPageData = qnaList.find(element => element.id === parseInt(id));
     setData(detailPageData);
-  
+
   }, []);
 
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
+
+  function handleTheme () {
+    const value = theme;
+    setTheme(!value);
+    const cssValue = value ? 'dark' : 'light';
+    setThemCss(cssValue);
+  }
 
   const hasComments = data?.comments?.length;
 
@@ -29,38 +39,46 @@ const QnaDetail = ({ setHdSubStyle }) => {
   }
 
   return (
-    <div>
+    <>
       <SubBanner title={title} img={subBg} />
-      <div className='qnaDetailInner'>
-        <div className='qnaTitleBox'>
-          <h2 className='qnaTitle'>Q&A</h2>
-        </div>
-        <p className='qnaSubTitle'>{data.title}</p>
-        <ul className='qnaDetailInfo'>
-          <li>작성자: {data.author}</li>
-          <li>조회수: {data.hit}</li>
-          <li>{data.createdAt}</li>
-        </ul>
-        <div className='qnaContent'>
-          <p className='content' dangerouslySetInnerHTML={{ __html: data.content }}>
-          </p>
-        </div>
-        {
-          hasComments && (<>
-            <div className='answerInfo'>
-              <p className='answerInfoText'>답변</p>
-              <p className='answerDate'>{data.comments[0].createdAt}</p>
+      <div className={themeCss}>
+        <div className='darkBackground'>
+          <div className='qnaDetailInner'>
+            <div className="themeBtnArea">
+              <button className='themeBtn' onClick={()=>{handleTheme()}}>
+                mode change
+              </button>
             </div>
-            <div className='answerContent'>
-              <div className='content' dangerouslySetInnerHTML={{ __html: data.comments[0].content }}></div>
+            <div className='qnaTitleBox'>
+              <h2 className='qnaTitle darkText'>Q&A</h2>
             </div>
-          </>)
-        }
-        <Link to="/qna" className='qnaListBtn'>목록</Link>
-        <button type="button">삭제</button>
-
+            <p className='qnaSubTitle darkText'>{data.title}</p>
+            <ul className='qnaDetailInfo darkText'>
+              <li className='darkText'>작성자: {data.author}</li>
+              <li className='darkText'>조회수: {data.hit}</li>
+              <li className='darkText'>{data.createdAt}</li>
+            </ul>
+            <div className='darkText qnaContent'>
+              <p className='content darkText' dangerouslySetInnerHTML={{ __html: data.content }}>
+              </p>
+            </div>
+            {
+              hasComments && (<>
+                <div className='answerInfo'>
+                  <p className='answerInfoText darkText'>답변</p>
+                  <p className='answerDate darkText'>{data.comments[0].createdAt}</p>
+                </div>
+                <div className='answerContent'>
+                  <div className='content' dangerouslySetInnerHTML={{ __html: data.comments[0].content }}></div>
+                </div>
+              </>)
+            }
+            <Link to="/qna" className='qnaListBtn'>목록</Link>
+            <button type="button">삭제</button>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
