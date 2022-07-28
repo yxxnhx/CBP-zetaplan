@@ -100,4 +100,4 @@ const MainAll = () => {
   );
 };
 
-export default MainAll;
+export default React.memo(MainAll);

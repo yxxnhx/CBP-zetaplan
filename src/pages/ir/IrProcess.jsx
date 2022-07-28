@@ -164,4 +164,4 @@ const IrProcess = ({ setHdSubStyle }) => {
   );
 };
 
-export default IrProcess;
+export default React.memo(IrProcess);

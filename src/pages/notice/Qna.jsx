@@ -52,6 +52,7 @@ const Qna = ({ setHdSubStyle }) => {
     setOriginData(reversedQnaList);
   }, [])
 
+
   const getSearchByData = (e) => {
     setInput(e.target.value);
   }
@@ -91,6 +92,14 @@ const Qna = ({ setHdSubStyle }) => {
     const cssValue = value ? 'dark' : 'light';
     setThemCss(cssValue);
   }
+
+  // const onDelete = (id ) => {
+    
+  //   console.log(id)
+ 
+  // }
+
+
 
   const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
   const oneDepth='소식 · 자료';
@@ -136,6 +145,13 @@ const Qna = ({ setHdSubStyle }) => {
             <PaginatedItems handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount} />
             <button><Link to='/qna-write'>글쓰기</Link></button>
           </div>
+        </div>
+        <div>
+          <QnaTable qnaJsonList={currentItems} />
+        </div>
+        <div className="qnaBottom">
+          <PaginatedItems handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount}/>
+          <button className='writeBtn'><Link to='/qna-write'>글쓰기</Link></button>
         </div>
       </div>
       

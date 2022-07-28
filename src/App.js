@@ -90,6 +90,7 @@ function App() {
           <Route path="/news/:category" element={<News setHdSubStyle={setHdSubStyle} />} />
           <Route path="/news/:category/:id" element={<NewsDetailItem setHdSubStyle={setHdSubStyle} />} />
           <Route path="/qna/:id" element={<QnaDetail setHdSubStyle={setHdSubStyle} />} />
+          <Route path="/qna-write/:id" element={<QnaWrite setHdSubStyle={setHdSubStyle} />} />
           <Route path="/datainfo/:category/:id" element={<DetailInfoItem setHdSubStyle={setHdSubStyle} />} />
           <Route path="/eng" element={<LangEng />} />
           <Route path="/cn" element={<LangCn />} />

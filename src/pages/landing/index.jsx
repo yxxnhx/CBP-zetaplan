@@ -13,7 +13,7 @@ const Landing = () => {
   return (
     <div className='Ld'>
       <div className="LdVideo">
-        <video muted autoPlay loop src={require('./../../img/video/zetaplan_landing.mp4')} type="video/mp4">
+        <video /* muted autoPlay loop */ src={require('./../../img/video/zetaplan_landing.mp4')} type="video/mp4">
         </video>
       </div>
       <div className="LdIntro">

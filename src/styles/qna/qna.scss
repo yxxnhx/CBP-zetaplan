@@ -91,9 +91,10 @@
 
   .pagination {
     display: flex;
+    width: 50%;
     width: 100%;
-    margin: 70px auto 88px;
     justify-content: center;
+    align-self: center;
     .page-item {
       
       a {
@@ -142,6 +143,30 @@
       color: $basic-white;
     }
   }
+}
+.qnaBottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: 7rem auto;
+}
+
+.writeBtn {
+  width: 15rem;
+  height: 5.8rem;
+  background-color: $main-color;
+  align-self: flex-end;
+  margin-right: 3%;
+  a{
+    color: $basic-white;
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+
 }
 
 @media (min-width: 360px) and (max-width: 767px){

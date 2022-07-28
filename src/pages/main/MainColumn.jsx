@@ -104,4 +104,4 @@ const MainColumn = () => {
   );
 };
 
-export default MainColumn;
+export default React.memo(MainColumn);

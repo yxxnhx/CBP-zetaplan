@@ -58,4 +58,4 @@ const ZetaPeople = ({ setHdSubStyle }) => {
   );
 };
 
-export default ZetaPeople;
+export default React.memo(ZetaPeople);

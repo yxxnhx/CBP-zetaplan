@@ -65,4 +65,4 @@ const NewsColumn = () => {
   );
 };
 
-export default NewsColumn;
+export default React.memo(NewsColumn);

@@ -100,4 +100,4 @@ const MainNews = () => {
   );
 };
 
-export default MainNews;
+export default React.memo(MainNews);
