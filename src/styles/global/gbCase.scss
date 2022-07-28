@@ -3,7 +3,7 @@
 .dark {
   @include Dark;
   .gbInner .gbMapImgBox {
-    background-image: url();
+    background-image: url(./../../img/global/global_map_w.png);
   }
   .gbInner .gbAccordion .gbProcessItem .gbProcessBtn {
     background-color: #ccc;
