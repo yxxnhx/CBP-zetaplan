@@ -23,7 +23,7 @@ const Qna = ({ setHdSubStyle }) => {
   const [itemOffset, setItemOffset] = useState(0);
 
   const [input, setInput] = useState('');
-  const [optionValue, setOptionValue] = useState('');
+  const [optionValue, setOptionValue] = useState('all');
 
   const [theme, setTheme] = useState('');
   const [themeCss, setThemCss] = useState('');
@@ -72,18 +72,11 @@ const Qna = ({ setHdSubStyle }) => {
       return originData.filter((item) => {
         return item['author'].includes(input)
       })
-
     }
   }
 
   const onSearch = () => {
-    // const dataTitleList = originData.filter((item) => {
-    //   return item['title'].includes(input);
-    // })
-    // setData(dataTitleList);
     setData(getSearchedByOption());
-
-
   }
 
   const onKeyDown = (e) => {
