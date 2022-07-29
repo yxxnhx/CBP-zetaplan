@@ -65,10 +65,10 @@ const IrProcess = ({ setHdSubStyle }) => {
             <ul className="irAccoProCircleAreaS">
               <li className="irAccoProCircleBox">
                 <ul className="irAccoProCircleS">
-                  <li>STEP 01<span className='irCircleDesP'>예비진단</span></li>
-                  <li>STEP 02<span className='irCircleDesA'>재무분석</span></li>
-                  <li>STEP 03<span className='irCircleDesI'>투자유치준비</span></li>
-                  <li>STEP 04<span className='irCircleDes'>투자유치실행/IPO</span></li>
+                  <li className='irCircleDes'>STEP 01<span>예비진단</span></li>
+                  <li className='irCircleDesP'>STEP 02<span>재무분석</span></li>
+                  <li className='irCircleDesA'>STEP 03<span>투자유치준비</span></li>
+                  <li className='irCircleDesI'>STEP 04<span >투자유치실행/IPO</span></li>
                 </ul>
               </li>
             </ul>

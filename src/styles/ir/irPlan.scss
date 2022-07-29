@@ -80,6 +80,8 @@
       font-size: $size-lg;
       font-weight: bold;
       margin-bottom: 2rem;
+      display: flex;
+      
     }
 
     .irBnTxt {
@@ -115,7 +117,7 @@
         li {
           font-size: 2rem;
           font-weight: 500;
-          line-height: 1.5;
+          line-height: 1.7;
         }
       }
     }
@@ -170,7 +172,7 @@
 
 
 }
-@media (min-width: 360px) and (max-width: 767px){
+@media all and (max-width: 767px){
   .irCircle {
     display: flex;
     flex-wrap: wrap;
@@ -212,5 +214,22 @@
       }
     }
   }
+
+  .irBusinessContent ul .irBusTitle {
+    font-size: 2.5rem;
+  }
+
+  .irBusinessContent ul .irBusTxt {
+    font-size: 2.3rem;
+  }
+
+  .irBusinessContent .irBnIndex .irBnStep ul .irBnStepT {
+    font-size: 2.4rem;
+  }
+
+  .irBusinessContent .irBnIndex .irBnStep {
+    font-size: 2.4rem;
+  }
+  
 }
 

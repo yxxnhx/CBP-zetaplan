@@ -225,18 +225,6 @@
       color: $basic-white;
     }
 
-    &::before {
-      content: "";
-      display: block;
-      width: 8vw;
-      height: 1px;
-      border-bottom: 1px dashed black;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: -8vw;
-    }
-
     &:first-child::before {
       display: none;
     }
@@ -291,6 +279,42 @@
   }
 }
 
+.irCircleDesP::before {
+  content: "재무분석";
+  display: block;
+  width: 8vw;
+  height: 1px;
+  border-bottom: 1px dashed black;
+  position: absolute;
+  font-size: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -8vw;
+}
+.irCircleDesA::before {
+  content: "기준 및 역량분석";
+  display: block;
+  width: 8vw;
+  height: 1px;
+  border-bottom: 1px dashed black;
+  position: absolute;
+  font-size: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -8vw;
+}
+.irCircleDesI::before {
+  content: "실행전략";
+  display: block;
+  width: 8vw;
+  height: 1px;
+  border-bottom: 1px dashed black;
+  position: absolute;
+  font-size: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -8vw;
+}
 
 .irProcessStation {
   width: 90%;
@@ -380,39 +404,6 @@
   justify-content: center;
 }
 
-.irCircleDesP::after {
-  content: '재무분석';
-  position: absolute;
-  display: block;
-  width: 13vw;
-  bottom: 141%;
-  left: 133%;
-  transform: translateX(-50%);
-  color: $basic-gray3;
-  font-size: 1.4rem;
-}
-.irCircleDesA::after {
-  content: '기준 및 역량분석';
-  position: absolute;
-  display: block;
-  width: 13vw;
-  bottom: 141%;
-  left: 133%;
-  transform: translateX(-50%);
-  color: $basic-gray3;
-  font-size: 1.4rem;
-}
-.irCircleDesI::after {
-  content: '실행전략';
-  position: absolute;
-  display: block;
-  width: 13vw;
-  bottom: 141%;
-  left: 133%;
-  transform: translateX(-50%);
-  color: $basic-gray3;
-  font-size: 1.4rem;
-}
 
 .irCircleSText {
   padding-top: 7rem;
@@ -444,14 +435,18 @@
 }
 
 
-@media (min-width: 360px) and (max-width: 767px){
+@media all and (max-width: 767px){
+  .irProContents .irProContent {
+    font-size: 2.3rem;
+    }
+
   .irProCircle {
     display: flex;
     flex-wrap: wrap;
     width: 82vw;
     justify-content: center;
     align-items: center;
-    margin: 8.5rem auto;
+    margin: 8.5rem auto 3.5rem;
     li {
       width: 70%;
       height: 70%;
@@ -610,19 +605,6 @@
       }
     }
   }
-  .irCircleDesP::after {
-    bottom: 50%;
-    transform: translateY(350%);
-  }
-  .irCircleDesA::after {
-    width: 19vw;
-    bottom: 50%;
-    transform: translateY(350%);
-  }
-  .irCircleDesI::after {
-    bottom: 50%;
-    transform: translateY(350%);
-  }
   .irCircleSText {
     padding-top: 2rem;
   }
@@ -666,29 +648,13 @@
     background-color: $main-color;
     color: #fff;
   }
+
+
 }
 
 @media all and (max-width: 400px){
-  .irCircleDesP::after {
-    bottom: 50%;
-    transform: translateY(191%);
+
+.irProContents .irProContent {
+  font-size: 2.3rem;
   }
-  .irCircleDesA::after {
-    width: 19vw;
-    bottom: 50%;
-    transform: translateY(191%);
-  }
-  .irCircleDesI::after {
-    bottom: 50%;
-    transform: translateY(191%);
-  }
-  .irCircleSText {
-    padding-top: 2rem;
-  }
-  .irAccoProCircleS li:nth-child(1)::after {
-    width: 24vw;
-    bottom: 50%;
-    transform: translateY(47%);
-    left: 54%;
-}
 }
