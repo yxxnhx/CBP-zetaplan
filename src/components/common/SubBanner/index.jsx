@@ -16,7 +16,7 @@ const SubBanner = ({ title,img,oneDepth,twoDepth,threeDepth,oneDepthLink,twoDept
       <BreadCrumb oneDepth={oneDepth} twoDepth={twoDepth} threeDepth={threeDepth} oneDepthLink={oneDepthLink} twoDepthLink={twoDepthLink} threeDepthLink={threeDepthLink} linkActive={linkActive}/>
       <SubBannerTextContainer>
         <div className='leftBracket'></div>
-        <p data-aos="zoom-in" data-aos-duration="2150" dangerouslySetInnerHTML={{ __html: title }}></p>
+        <p data-aos="zoom-in" data-aos-duration="2150">{title}</p>
         <div className='rightBracket'></div>
       </SubBannerTextContainer>
     </SubBannerContainer>
@@ -33,7 +33,7 @@ const SubBannerContainer = styled.div`
   background-size: cover;
   position: relative;
 
-  @media (min-width: 360px) and (max-width: 700px) {
+  @media all and (max-width: 700px) {
     height: 200px;
   }
 
@@ -55,7 +55,7 @@ const SubBannerTextContainer = styled.div`
     justify-content: center;
     
     }
-  @media (min-width: 360px) and (max-width: 700px) {
+  @media all and (max-width: 700px) {
     justify-content: center;
   }
 
@@ -70,7 +70,7 @@ const SubBannerTextContainer = styled.div`
     @media (min-width: 768px) and (max-width: 870px) {
       display: none;
     }
-    @media (min-width: 360px) and (max-width: 700px) {
+    @media all and (max-width: 700px) {
       display: none;
     }
   }
@@ -81,12 +81,13 @@ const SubBannerTextContainer = styled.div`
     font-weight: bold;
     line-height: 1.5;
     color: #fff;
-    font-family: 'Noto Sans KR', sans-serif;
+    white-space: pre-wrap;
+    font-family: 'Noto Sans KR';
     text-align: center;
 
-    @media (min-width: 360px) and (max-width: 700px) {
+    @media all and (max-width: 700px) {
       font-size: 3rem;
-    }
+    } 
   }
 
   .rightBracket {
@@ -101,7 +102,7 @@ const SubBannerTextContainer = styled.div`
       display: none;
     }
 
-    @media (min-width: 360px) and (max-width: 700px) {
+    @media all and (max-width: 700px) {
       display: none;
     }
   }
