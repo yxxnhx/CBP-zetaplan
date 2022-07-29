@@ -98,7 +98,7 @@ const QnaDetail = ({ setHdSubStyle }) => {
             <div className='qnaContent'>
               <p className='content' dangerouslySetInnerHTML={{ __html: data.content }}></p>
             </div>
-            {
+            {/* {
               hasComments && (<>
                 <div className='answerInfo'>
                   <p className='answerInfoText'>답변</p>
@@ -108,6 +108,18 @@ const QnaDetail = ({ setHdSubStyle }) => {
                   <div className='content' dangerouslySetInnerHTML={{ __html: data.comments[0].content }}></div>
                 </div>
               </>)
+            } */}
+            {
+              hasComments ? (<>
+                <div className='answerInfo'>
+                  <p className='answerInfoText'>답변</p>
+                  <p className='answerDate'>{data.comments[0].createdAt}</p>
+                </div>
+                <div className='answerContent'>
+                  <div className='content' dangerouslySetInnerHTML={{ __html: data.comments[0].content }}></div>
+                </div>
+              </>)
+                : null
             }
             <div className="qnaContentBtnArea">
               <button type="button" 

@@ -55,7 +55,28 @@ const DetailInfoItem = ({ setHdSubStyle }) => {
     setThemCss(cssValue);
   }
 
-  const title = 'ZETA PLAN만의\n다양하고 전문적인 정보를 제공해드립니다';
+  const setBreadThreeDepth = () => {
+    switch (category) {
+    case 'm&a-invest':
+    default:
+      return 'M&A・투자정보'
+    case 'government-support':
+      return '정부지원사업 참여모집'
+    case 'fund-support':
+      return '정책자금/기업지원정보'
+    case 'technology-trade':
+      return '기술거래리스트'
+    case 'consulting-list':
+      return '컨설팅실적'
+    }
+  }
+
+  const title = 'ZETA PLAN만의 \n다양하고 전문적인 정보를 제공해드립니다'
+  const oneDepth='소식 · 자료';
+  const oneDepthLink='/news/news';
+  const twoDepth='자료';
+  const twoDepthLink='/datainfo/m&a-invest';
+  const linkActive='threeDepth';
 
   if (!detailData) {
     return <div></div>;
@@ -63,7 +84,7 @@ const DetailInfoItem = ({ setHdSubStyle }) => {
 
   return (
     <div>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} threeDepth={setBreadThreeDepth()} threeDepthLink={category === undefined ? '/datainfo/m&a-invest' : `/datainfo/${category}`} linkActive={linkActive}/>
       <div className={themeCss}>
         <div className='darkBackground'>
           <div className='detailInfoInner'>
@@ -84,7 +105,7 @@ const DetailInfoItem = ({ setHdSubStyle }) => {
               <div className="darkText content" dangerouslySetInnerHTML={{ __html: detailData.content }}>
               </div>
             </div>
-            <Link to='/datainfo' className='darkText infoListBtn'>목록</Link>
+            <Link to={`/datainfo/${category}`} className='darkText infoListBtn'>목록</Link>
           </div>
         </div>
       </div>

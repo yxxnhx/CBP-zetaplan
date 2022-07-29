@@ -5,11 +5,12 @@ import { Navigation, Autoplay} from 'swiper';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import thumbnail from '../../img/notice/notice_thumbnail.png';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const NewsSwiper = ({items, selectedIndex}) => {
   
   const navigate = useNavigate();
+  const { category } = useParams();
 
   const [selectNum, setSelectNum] = useState(0);
 
@@ -17,22 +18,10 @@ const NewsSwiper = ({items, selectedIndex}) => {
     setSelectNum(selectedNum);
   }
 
-  const getSelectedIndex = () => {
-    switch (selectedIndex) {
-    case 0:
-      return 'news';
-    case 1:
-    default:
-      return 'column';
-    }
-  };
-
-
   const navigationBtn = {
     nextEl: '.next',
     prevEl: '.prev',
   };
-
 
   return (
     <div className="newsSwiperContainer">
@@ -47,7 +36,7 @@ const NewsSwiper = ({items, selectedIndex}) => {
           items.map((item)=> {
             return (
               <SwiperSlide key={item.id} >
-                <div className='newsContainer' onClick={()=> navigate(`/news/${getSelectedIndex()}/${item.id}`)}>
+                <div className='newsContainer' onClick={()=> navigate(`/news/${category}/${item.id}`)}>
                   <div className='newsContentBox'>
                     <p className='newsTitle darkText'>{item.title}</p>
                     <div className='newsSummary darkText' dangerouslySetInnerHTML={{__html: item.content}}></div>

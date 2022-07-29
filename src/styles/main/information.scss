@@ -85,7 +85,11 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media all and (max-width: 767px) {
+
+  .mainInformation .infoSwiperBoxList .infoSwipBox .infoConTitle {
+    font-size: 2.2rem;
+  }
 
   .mainInformation .infoSwiperBoxList {
     justify-content: center;

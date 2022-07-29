@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useSearchParams } from 'react-router-dom';
 import SubBanner from '../../components/common/SubBanner';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
 import newsData from '../../db/newsList.json';
@@ -46,7 +46,22 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
     setThemCss(cssValue);
   }
 
+  const setBreadThreeDepth = () => {
+    if (category === undefined) {
+      return 'NEWS';
+    } else if (category === 'news') {
+      return 'NEWS';
+    } else if (category === 'column') {
+      return 'COLUMN';
+    }
+  }
+
   const title = 'ZETA PLAN만의\n다양하고 전문적인 정보를 제공해드립니다';
+  const oneDepth='소식 · 자료';
+  const oneDepthLink='/news/news';
+  const twoDepth='소식';
+  const twoDepthLink = '/news/news';
+  const linkActive='threeDepth';
 
   if (!detailData) {
     return <div></div>
@@ -54,7 +69,7 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
 
   return (
     <div>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink= {twoDepthLink} threeDepth={setBreadThreeDepth()} threeDepthLink={category === undefined ? '/news/news' : `/news/${category}`} linkActive={linkActive} />
       <div className={themeCss}>
         <div className='darkBackground'>
           <div className="newsDetailInner">
@@ -75,7 +90,7 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
                 <div className="content" dangerouslySetInnerHTML={{ __html: detailData.content }}></div>
               </div>
             </div>
-            <Link to='/news' className="newsListBtn">목록</Link>
+            <Link to={`/news/${category}`} className="newsListBtn">목록</Link>
           </div>
 
         </div>
