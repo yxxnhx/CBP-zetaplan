@@ -16,7 +16,8 @@ const SubBanner = ({ title,img,oneDepth,twoDepth,threeDepth,oneDepthLink,twoDept
       <BreadCrumb oneDepth={oneDepth} twoDepth={twoDepth} threeDepth={threeDepth} oneDepthLink={oneDepthLink} twoDepthLink={twoDepthLink} threeDepthLink={threeDepthLink} linkActive={linkActive}/>
       <SubBannerTextContainer>
         <div className='leftBracket'></div>
-        <p data-aos="zoom-in" data-aos-duration="2150">{title}</p>
+        <SubBannerText>{title}</SubBannerText>
+        {/* <SubBannerText data-aos="zoom-in" data-aos-duration="2150">{title}</SubBannerText> */}
         <div className='rightBracket'></div>
       </SubBannerTextContainer>
     </SubBannerContainer>
@@ -106,5 +107,20 @@ const SubBannerTextContainer = styled.div`
       display: none;
     }
   }
+
+`
+const SubBannerText = styled.p `
+      @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap';
+    font-size: 4.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #fff;
+    white-space: pre-wrap;
+    font-family: 'Noto Sans KR';
+    text-align: center;
+
+    @media all and (max-width: 700px) {
+      font-size: 3rem;
+    } 
 
 `
