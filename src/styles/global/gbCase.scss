@@ -72,7 +72,7 @@
         cursor: pointer;
         border: 1px solid $main-color;
         padding: 3rem 2rem;
-        font-size: 3rem;
+        font-size: 4rem;
         letter-spacing: 1.2px;
         color: #000;
 
@@ -139,7 +139,7 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media all and (max-width: 767px) {
   .gbInner .gbAccoContentBox {
     padding: 1rem;
   }
@@ -165,5 +165,10 @@
     width: 10rem;
     margin-right: 4rem;
     line-height: 1.5;
+    word-break: keep-all;
+  }
+
+  .gbInner .gbAccoContentBox .gbAccoContentArea .gbAccoContentC ul {
+    margin-right: 1rem;
   }
 }

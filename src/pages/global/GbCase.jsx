@@ -59,7 +59,7 @@ const GbCase = ({ setHdSubStyle }) => {
           </div>
           <div className="gbAccoContentArea">
             <div className="gbAccoContentT">
-              <h1>中國 ‘베이징기술교역촉진중심</h1>
+              <h1>中國 ‘베이징 기술 교역 촉진 중심</h1>
             </div>
             <div className="gbAccoContentC">
               <ul>
@@ -73,7 +73,7 @@ const GbCase = ({ setHdSubStyle }) => {
           </div>
           <div className="gbAccoContentArea">
             <div className="gbAccoContentT">
-              <h1>中國 ‘상하이기술교역소</h1>
+              <h1>中國 ‘상하이 기술 교역소</h1>
             </div>
             <div className="gbAccoContentC">
               <ul>
@@ -87,7 +87,7 @@ const GbCase = ({ setHdSubStyle }) => {
           </div>
           <div className="gbAccoContentArea">
             <div className="gbAccoContentT">
-              <h1>절강성과학기술교류중심</h1>
+              <h1>절강성 과학 기술 교류 중심</h1>
             </div>
             <div className="gbAccoContentC">
               <ul>
@@ -101,7 +101,7 @@ const GbCase = ({ setHdSubStyle }) => {
           </div>
           <div className="gbAccoContentArea">
             <div className="gbAccoContentT">
-              <h1>中國 ‘북방기술교역시장(NTEM)’</h1>
+              <h1>中國 ‘북방 기술 교역 시장 (NTEM)’</h1>
             </div>
             <div className="gbAccoContentC">
               <ul>
@@ -115,7 +115,7 @@ const GbCase = ({ setHdSubStyle }) => {
           </div>
           <div className="gbAccoContentArea">
             <div className="gbAccoContentT">
-              <h1>中國 ‘온주시 과기합작교류중심’</h1>
+              <h1>中國 ‘온주시 과기 합작 교류 중심’</h1>
             </div>
             <div className="gbAccoContentC">
               <ul>
@@ -146,7 +146,7 @@ const GbCase = ({ setHdSubStyle }) => {
           </div>
           <div className="gbAccoContentArea">
             <div className="gbAccoContentT">
-              <h1>中國 ‘산업과기창신위원회</h1>
+              <h1>中國 ‘산업 과기 창신 위원회</h1>
             </div>
             <div className="gbAccoContentC">
               <ul>
@@ -275,7 +275,7 @@ const GbCase = ({ setHdSubStyle }) => {
           </div>
           <div className="gbAccoContentArea">
             <div className="gbAccoContentT">
-              <h1>태국 과학기술위원회(NSTDA)</h1>
+              <h1>태국 과학기술 위원회(NSTDA)</h1>
             </div>
             <div className="gbAccoContentC">
               <ul>
@@ -309,7 +309,7 @@ const GbCase = ({ setHdSubStyle }) => {
         <div className="gbAccoContentBox">
           <div className="gbAccoContentArea">
             <div className="gbAccoContentT">
-              <h1>美 대학기술관리자협회(AUTM)</h1>
+              <h1>美 대학기술 관리자협회(AUTM)</h1>
             </div>
             <div className="gbAccoContentC">
               <ul>
@@ -320,7 +320,7 @@ const GbCase = ({ setHdSubStyle }) => {
           </div>
           <div className="gbAccoContentArea">
             <div className="gbAccoContentT">
-              <h1>주한영국상공회의소(BCCK)</h1>
+              <h1>주한 영국 상공 회의소(BCCK)</h1>
             </div>
             <div className="gbAccoContentC">
               <ul>
@@ -348,7 +348,7 @@ const GbCase = ({ setHdSubStyle }) => {
           </div>
           <div className="gbAccoContentArea">
             <div className="gbAccoContentT">
-              <h1>GLE TUVRheinland</h1>
+              <h1>GLE TUVR heinland</h1>
             </div>
             <div className="gbAccoContentC">
               <ul>
@@ -359,7 +359,7 @@ const GbCase = ({ setHdSubStyle }) => {
           </div>
           <div className="gbAccoContentArea">
             <div className="gbAccoContentT">
-              <h1>핀란드 상공회의소(FINNCHAM)</h1>
+              <h1>핀란드 상공 회의소</h1>
             </div>
             <div className="gbAccoContentC">
               <ul>

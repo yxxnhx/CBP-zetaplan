@@ -35,7 +35,6 @@
         border-radius: 1rem;
         display: flex;
         flex: 1 1 0%;
-        background: white;
         position: relative;
 
         .videoCon {
@@ -84,19 +83,27 @@
       }
 
       .professional {
-        background: url(./../../img/main/business/ourBusiness_01_profession.png);
+        background-image: url(./../../img/main/business/ourBusiness_01_profession.png);
+        background-repeat: no-repeat;
+        background-size: 90vw 90vw;
       }
 
       .global {
-        background: url(./../../img/main/business/ourBusiness_02_global.png);
+        background-image: url(./../../img/main/business/ourBusiness_02_global.png);
+        background-repeat: no-repeat;
+        background-size: 90vw 90vw;
       }
 
       .trust {
-        background: url(./../../img/main/business/ourBusiness_03_custumize.png);
+        background-image: url(./../../img/main/business/ourBusiness_03_custumize.png);
+        background-repeat: no-repeat;
+        background-size: 90vw 90vw;
       }
 
       .customized {
-        background: url(./../../img/main/business/ourBusiness_04_trust.png);
+        background-image: url(./../../img/main/business/ourBusiness_04_trust.png);
+        background-repeat: no-repeat;
+        background-size: 90vw 90vw;
       }
     }
   }
