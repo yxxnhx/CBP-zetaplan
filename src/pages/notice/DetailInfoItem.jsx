@@ -55,7 +55,7 @@ const DetailInfoItem = ({ setHdSubStyle }) => {
     setThemCss(cssValue);
   }
 
-  const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다';
+  const title = 'ZETA PLAN만의\n다양하고 전문적인 정보를 제공해드립니다';
 
   if (!detailData) {
     return <div></div>;

@@ -21,7 +21,7 @@ const ZetaNetwork = ({ setHdSubStyle }) => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
 
-  const title = '아시아를 넘어 세계로 나아가는<br /> ZETA PLAN 네트워크';
+  const title = '아시아를 넘어 세계로 나아가는\nZETA PLAN 네트워크';
   
   const oneDepth='ZETA';
   const oneDepthLink='/zeta';

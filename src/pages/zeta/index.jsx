@@ -30,7 +30,7 @@ const Zeta = ({ setHdSubStyle }) => {
     refs.current.scrollIntoView({ behavior: 'smooth'});
   };
 
-  const title = 'ZETA PLAN은 모든 기업들의<br /> 시작을 함께 합니다.';
+  const title = 'ZETA PLAN은 모든 기업들의\n시작을 함께 합니다.';
  
   const oneDepth='ZETA';
   const oneDepthLink='/zeta';

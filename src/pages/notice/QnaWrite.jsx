@@ -14,7 +14,7 @@ const QnaWrite = () => {
   const { id } = useParams();
   const navigate= useNavigate();
   const ckContent = document.querySelector('.ck-content');
-  const subTitle = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
+  const subTitle = 'ZETA PLAN만의\n다양하고 전문적인 정보를 제공해드립니다'
   const [state, setState] = useState({
     title: '',
     author: '',

@@ -46,7 +46,7 @@ const MngValue = ({setHdSubStyle}) => {
     setData(getCategoryData());
   }, [category])
 
-  const title = '효율적인 자산관리와 적절한<br />투자관련 의사결정을 지원합니다.'
+  const title = '효율적인 자산관리와 적절한\n투자관련 의사결정을 지원합니다.'
   const [activeIndex, setActiveIndex] = useState(0);
   const tabClickHandler=(index)=>{
     setActiveIndex(index)

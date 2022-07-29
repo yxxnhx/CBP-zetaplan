@@ -4,7 +4,7 @@ import subBg from '../../img/me/me_sub_bg@2x.png';
 import { useEffect, useState } from 'react';
 
 const MngConsulting = ({setHdSubStyle}) => {
-  const title = '전 세계를 무대로 더 큰 꿈을<br />키울 수 있도록 응원합니다.'
+  const title = '전 세계를 무대로 더 큰 꿈을\n키울 수 있도록 응원합니다.'
   const oneDepth='경영 · 평가';
   const oneDepthLink='/mng';
   const twoDepth='경영컨설팅';

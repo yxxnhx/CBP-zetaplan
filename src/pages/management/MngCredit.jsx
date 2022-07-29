@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 
 
 const MngCredit = ({setHdSubStyle}) => {
-  const title = '신용거래에 따른 위험도를 최소화하고,<br />합리적인 거래처 결정을 지원합니다.'
+  const title = '신용거래에 따른 위험도를 최소화하고,\n합리적인 거래처 결정을 지원합니다.'
   const oneDepth='경영 · 평가';
   const oneDepthLink='/mng';
   const twoDepth='신용평가';

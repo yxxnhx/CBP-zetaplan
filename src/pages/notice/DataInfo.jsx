@@ -133,7 +133,7 @@ const DataInfo = ({ setHdSubStyle }) => {
     setThemCss(cssValue);
   }
 
-  const title = 'ZETA PLAN만의 <br />다양하고 전문적인 정보를 제공해드립니다'
+  const title = 'ZETA PLAN만의 \n다양하고 전문적인 정보를 제공해드립니다'
   const oneDepth='소식 · 자료';
   const oneDepthLink='/news/news';
   const twoDepth='자료';

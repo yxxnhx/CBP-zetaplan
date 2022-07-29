@@ -26,7 +26,7 @@ const ZetaMap = ({ setHdSubStyle }) => {
 
   const [ztMapView, setZtMapView] = useState(0);
 
-  const title = 'ZETAPLAN INVEST<br /> 오신 걸 환영합니다.';
+  const title = 'ZETAPLAN INVEST\n오신 걸 환영합니다.';
 
   const oneDepth='ZETA';
   const oneDepthLink='/zeta';

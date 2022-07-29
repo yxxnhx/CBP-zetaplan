@@ -7,7 +7,7 @@ import irProcessStation from './../../img/ir/ir_process01@2x.png';
 import irProcessStep from './../../img/ir/ir_process02@2x.png';
 
 const IrProcess = ({ setHdSubStyle }) => {
-  const title = '국내벤처캐피탈, 기술금융 투융자를 통한 <br /> 성공적인 투자유치를 지원합니다.';
+  const title = '국내벤처캐피탈, 기술금융 투융자를 통한\n성공적인 투자유치를 지원합니다.';
   // breadCrumbs
   const oneDepth='투자 IR';
   const oneDepthLink='/ir';

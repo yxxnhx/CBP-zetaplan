@@ -7,7 +7,7 @@ import subBg from './../../../img/bg/consulPage_bg@2x.png'
 
 
 const ConsultingPage = ({ open, close, setHdSubStyle }) => {
-  const title = '기업맞춤형 컨설팅으로 <br /> 진심을 다해 상담하겠습니다'
+  const title = '기업맞춤형 컨설팅으로\n진심을 다해 상담하겠습니다'
 
   /* header 배경색 변경 */
   useEffect(() => {

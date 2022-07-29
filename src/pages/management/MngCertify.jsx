@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 
 
 const MngCertify = ({setHdSubStyle}) => {
-  const title = '인증기업의 성장을 위해<br />체계적인 업무를 지원합니다.'
+  const title = '인증기업의 성장을 위해\n체계적인 업무를 지원합니다.'
   const oneDepth='경영 · 평가';
   const oneDepthLink='/mng';
   const twoDepth='기업인증';

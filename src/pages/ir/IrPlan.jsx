@@ -5,7 +5,7 @@ import subBg from '../../img/ir/ir_sub_bg@2x.png'
 import { useState, useEffect } from 'react';
 
 const IrPlan = ({ setHdSubStyle }) => {
-  const title = 'ZETA PLAN은 지속적인 투자유치 멘토링으로 <br /> 성공적인 투자을 지원합니다'
+  const title = 'ZETA PLAN은 지속적인 투자유치 멘토링으로\n성공적인 투자을 지원합니다'
   // breadCrumbs
   const oneDepth='투자 IR';
   const oneDepthLink='/ir';

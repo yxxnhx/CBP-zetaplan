@@ -5,7 +5,7 @@ import subBg from '../../img/ir/ir_sub_bg@2x.png'
 import { useState, useEffect } from 'react';
 
 const Ir = ({ setHdSubStyle }) => {
-  const title = '지원기관 네트워크를 통해 <br />기업의 맞춤 컨설팅을 지원합니다.'
+  const title = '지원기관 네트워크를 통해\n기업의 맞춤 컨설팅을 지원합니다.'
   // breadCrumbs
   const oneDepth='투자 IR';
   const oneDepthLink='/ir';
