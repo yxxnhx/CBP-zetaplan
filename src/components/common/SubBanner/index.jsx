@@ -75,7 +75,7 @@ const SubBannerTextContainer = styled.div`
     }
   }
 
-  p.aos-animate {
+  p {
     @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap';
     font-size: 4.5rem;
     font-weight: bold;
