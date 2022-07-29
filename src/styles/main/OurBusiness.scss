@@ -102,7 +102,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media all and (max-width: 475px) {
   .obWrapper {
     height: 1700px;
 
@@ -111,7 +111,7 @@
       margin: auto;
       .obInner {
         height: 1600px;
-        width: 54rem;
+        width: 90vw;
         flex-wrap: wrap;
         justify-content: flex-start;
 
@@ -119,24 +119,24 @@
           flex: 50rem;
           height: 50rem;
           margin-bottom: 10px;
+          pointer-events: none;
 
           .videoCon {
             display: flex;
             border-radius: 1rem;
             height: 50rem;
-            width: 53rem;
+            width: 90vw;
 
             video {
               height: 50rem;
-              width: 53rem;
+              width: 90vw;
               position: relative;
             }
+          }
 
-            .obVideoDes {
-              z-index: 900;
-              top: 52rem;
-              left: 1rem;
-            }
+          .obVideoDes {
+            top: 52rem;
+            left: 1rem;
           }
         }
       }

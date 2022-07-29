@@ -33,7 +33,7 @@
   }
 
   .gbContentTitle {
-    margin: 6.771vw auto 3.906vw;
+    margin: 10rem auto 0;
     font: {
       size: 3.2rem;
       weight: bold;
@@ -226,7 +226,7 @@
   }
 }
 
-@media (min-width: 375px) and (max-width: 559px) {
+/* @media (min-width: 375px) and (max-width: 559px) {
   .gbInner .gbPerformanceDes {
     margin-left: 8.417vw;
     font-size: 1.3rem;
@@ -238,7 +238,7 @@
     margin-left: 6.417vw;
     font-size: 1.3rem;
   }
-}
+} */
 
 @media (max-width: 1000px) {
   .gbInner .gbProcessList {

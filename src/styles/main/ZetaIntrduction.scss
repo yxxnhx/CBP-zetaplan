@@ -157,7 +157,7 @@
   }
 }
 
-@media (min-width: 475px) and (max-width: 744px) {
+@media (min-width: 476px) and (max-width: 744px) {
   .ziWrap .ziContentBox {
     flex-direction: column;
     margin: auto;
@@ -174,7 +174,7 @@
   }
 }
 
-@media (min-width: 375px) and (max-width: 474px) {
+@media all and (max-width: 475px) {
   .ziWrap {
     .ziTitleCon {
       display: flex;
