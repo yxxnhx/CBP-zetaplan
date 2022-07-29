@@ -45,6 +45,7 @@ const SubBannerTextContainer = styled.div`
   align-items: center;
   position: absolute;
   width: 100%;
+  color: #fff;
   max-width: 100rem;
   top: 50%;
   left: 50%;
@@ -65,6 +66,7 @@ const SubBannerTextContainer = styled.div`
     min-width: 20px;
     height: 72px;
     margin-right: 50px;
+
     @media (min-width: 768px) and (max-width: 870px) {
       display: none;
     }
@@ -73,7 +75,7 @@ const SubBannerTextContainer = styled.div`
     }
   }
 
-  p {
+  p.aos-animate {
     @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap';
     font-size: 4.5rem;
     font-weight: bold;
