@@ -201,11 +201,6 @@ $size-ft : 1.6rem;
 }
 
 // dark & light mode
-
-.themeBtnArea{
-  @include ThemeBtnArea;
-}
-
 .light{
   @include Light;
   

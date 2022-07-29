@@ -783,17 +783,17 @@ $mngCircleSize : 20rem;
   width: 25vw;
   height: 25vw;
 }
-  &.mngCircleItemLocation {
+  .mngCircleItemLocation {
     top: -13vw;
     left: 27vw;
   }
 
-  &.mngCircleItemIndustry {
+.mngCircleItemIndustry {
     top: 15vw;
     left: 11vw;
   }
 
-  &.mngCircleItemTogether {
+  .mngCircleItemTogether {
    top: 5vw;
    left: -12vw;
   }

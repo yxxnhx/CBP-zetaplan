@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState, useEffect,useRef} from 'react';
 import ztHistoryDt from './../../db/historyList.json';
-import './../../styles/zeta/zetaHistory.scss';
+import '../../styles/zeta/zetaHistory.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SubBanner from '../../components/common/SubBanner/index';
@@ -16,7 +16,7 @@ const ZetaHistory = ({setHdSubStyle}) => {
     AOS.init();
   },[]);
 
-  const title = '지속적인 도전으로 미래를 만들어낸<br /> ZETA PLAN HISTORY';
+  const title = '지속적인 도전으로 미래를 만들어낸\nZETA PLAN HISTORY';
 
   const oneDepth='ZETA';
   const oneDepthLink='/zeta';

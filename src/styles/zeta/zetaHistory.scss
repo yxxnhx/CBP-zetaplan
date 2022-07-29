@@ -12,6 +12,18 @@ $zt-darkBlueCol:#359aff;
   font-size:$zt-krSize;
 }
 
+.ztInner{
+  @include Inner;
+}
+
+.ztTitle{
+  @include Subtitle($sub-title, $basic-gray3);
+  color:$basic-white;
+  &::after{
+    display: none;
+  }
+}
+
 .ztHisBox .ztTitle{
   color: $basic-black;
 }

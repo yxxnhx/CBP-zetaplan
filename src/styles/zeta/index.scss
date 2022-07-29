@@ -332,11 +332,11 @@ $zt-ftExtra:900;
   }
   .ztRedTabBox .ztRedTabInner .ztRedTabContent{
     display: block;
-    flex: 60%;
+    flex: 70%;
     padding-left: 0;
   }
   .ztRedTabBox .ztRedTabInner .ztRedTab{
-    flex: 40%;
+    flex: 25%;
   }
   .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock{
     flex: 100%;
@@ -347,5 +347,39 @@ $zt-ftExtra:900;
   }
   .ztRedTabBox .ztRedTabInner .ztRedTabTitle .ztRedTabTitleTxt{
     font-size: 1.5rem;
+  }
+
+
+  .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock .ztRedTabFirst{
+    margin-left:5rem;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock .ztRedTabTwo{
+    margin-left:5rem;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock .ztRedTabFirst.active::before{
+    width: 3rem;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTab .ztRedTabBlock .ztRedTabTwo.active::before{
+    width: 3rem;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTabTitle .ztRedTabTitleTop{
+    font-size:3rem;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTabTitle .ztRedTabTitleTop::before{
+    width: 4px;
+    height: 4px;
+    left: 5.3px;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTabContent .ztRedTabList .ztRedTabContentTitle{
+    font-size:1.8rem;
+  };
+  .ztRedTabBox .ztRedTabInner .ztRedTabContent .ztRedTabList .ztRedTabContentTxt{
+    font-size:1.8rem;
+  };
+  .ztRedTabBox .ztRedTabInner .ztRedTabTitle .ztRedTabTitleTxt{
+    line-height: 1.4;
+  }
+  .ztRedTabBox .ztRedTabInner .ztRedTabContent .ztRedTabList .ztRedTabListTitle::after{
+    width:47px;
   }
 } 

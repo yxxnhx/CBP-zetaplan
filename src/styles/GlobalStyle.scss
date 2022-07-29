@@ -27,7 +27,7 @@ $size-xs: 1.44rem;
   &::before {
     content: '';
     display: block;
-    background: url('./../../img/title_box@2x.png') no-repeat;
+    background: url('/img/title_box@2x.png') no-repeat;
     background-size: contain;
     width: 1rem;
     height: 3rem;
@@ -171,7 +171,9 @@ $size-xs: 1.44rem;
   }
 }
 
-
+.themeBtnArea{
+  @include ThemeBtnArea;
+}
 
 @media all and (max-width: 767px){
 
