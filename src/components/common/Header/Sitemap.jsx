@@ -68,7 +68,7 @@ const Sitemap = ({ open, close }) => {
                 <li className='hdSmList'>
                   <Link to={'/mng'} onClick={close}><span>경영・평가</span></Link>
                   <ul className='hdSmList2'>
-                    <li><Link to={'/mng-consulting'} onClick={close}>경영컨설팅</Link></li>
+                    <li><Link to={'/mng'} onClick={close}>경영컨설팅</Link></li>
                     <li><Link to={'/mng-trade'} onClick={close}>기술거래</Link></li>
                     <li>
                       <Link to={'/mng-value'} onClick={close}>가치평가</Link>

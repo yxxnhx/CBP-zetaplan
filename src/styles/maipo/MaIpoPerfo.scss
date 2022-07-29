@@ -180,6 +180,7 @@
 }
 
 .ipoPerfoTxt {
+  width: 70%;
   padding-left: 11.979vw;
   margin-top: -5.208vw;
 
@@ -214,21 +215,6 @@
   }
 }
 
-@media (max-width:1550px) {
-
-  .ipoPerfoTxt .ipoPerfoTxtTop {
-    font-size: 2.8rem;
-  }
-
-  .ipoPerfoTxt .ipoPerfoTxtMid {
-    font-size: 3.3rem;
-  }
-
-  .ipoPerfoTxt .ipoPerfoTxtBt {
-    font-size: 1.4rem;
-  }
-}
-
 @media (max-width:1360px) {
   .ipoPerfo {
     display: block;
@@ -241,6 +227,10 @@
     width: 30vw;
     height: 30vw;
     background-size: 70%;
+  }
+  .dark .ipoPerfoCircleWrap{
+    background-size: 70%;
+
   }
 
   .ipoPerfoCircleItem {
@@ -270,6 +260,7 @@
   .ipoPerfoTxt {
     margin-top: 20vw;
     margin-left: 2.5vw;
+    width: 80%;
   }
 
   .ipoPerfoTxt .ipoPerfoTxtTop {
@@ -286,29 +277,97 @@
   }
 }
 
-@media (max-width:1120px) {
-
-  .ipoPerfoTxt .ipoPerfoTxtTop {
-    font-size: 2.5rem;
-  }
-
-  .ipoPerfoTxt .ipoPerfoTxtMid {
-    font-size: 2.8rem;
-  }
-
-  .ipoPerfoTxt .ipoPerfoTxtBt {
-    font-size: 1.8rem;
-  }
-}
-
 @media (max-width:810px) {
+  .maPerfoContent{
+    width: 120%;
+    height: 60vw;
+    margin-left: -5vw;
+  }
+  .dark .maPerfoContent{
+    width: 120%;
+    height: 60vw;
+    margin-left: -8vw;
+  }
   .ipoPerfoTxt {
     margin-left: -3vw;
+    width: 90%;
   }
 }
 
 @media (max-width:600px) {
+  .ipoPerfo{
+    margin-top: 20rem;
+  }
+  
+  .ipoPerfoCircleWrap{
+    width: 28rem;
+    height: 28rem;
+  }
+  .ipoPerfoCircleItem{
+    width: 14rem;
+    height: 14rem;
+  }
+  .ipoPerfoCircleItem.ipoPerfoCircleItemRestruc{
+    top: -6rem;
+    left: 8rem;
+    transform: translate(-12rem, -3rem);
+  }
+  .ipoPerfoCircleItem.ipoPerfoCircleItemFunds{
+    bottom: 2rem;
+    right: -6rem;
+    transform: translate(6rem, -3rem);
+
+  }
+  .ipoPerfoCircleItem.ipoPerfoCircleItemPub{
+    bottom: -4rem;
+    left: -1rem;
+    transform: translate(-1rem, 6rem);
+  }
   .ipoPerfoTxt {
     margin-left: -6vw;
+    width: 95%;
+    margin-top: 18rem;
   }
 }
+
+@media (max-width:480px) {
+  .ipoPerfoCircleWrap{
+    left: 20vw;
+  }
+}
+
+@media (max-width:380px) {
+  .miPerfoTab li{
+    font-size: 2rem;
+    width: 8rem;
+  }
+  .ipoPerfoCircleWrap{
+    width: 50vw;
+    height: 50vw;
+    left: 15vw;
+  }
+  .ipoPerfoCircleItem{
+    width: 25vw;
+    height: 25vw;
+  }
+  .ipoPerfoCircleItem.ipoPerfoCircleItemRestruc{
+    top: -8vw;
+    left: 12vw;
+    transform: translate(-18vw, -8vw);
+  }
+  .ipoPerfoCircleItem.ipoPerfoCircleItemFunds{
+    bottom: 4vw;
+    right: -9vw;
+    transform: translate(12vw, -5vw);
+
+  }
+  .ipoPerfoCircleItem.ipoPerfoCircleItemPub{
+    bottom: -5vw;
+    left: -3vw;
+    transform: translate(-2vw, 12vw);
+  }
+  .ipoPerfoCircleItem .ipoPerfoCircleTxt{
+    font-size: 3.4vw;
+  }
+}
+

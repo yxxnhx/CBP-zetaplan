@@ -338,6 +338,10 @@
 }
 
 @media (max-width:375px) {
+  .miProTab button{
+    font-size: 2rem;
+    width: 8rem;
+  }
   .ipoProWrap .ipoProStap .ipoProTxt p {
     line-height: 3rem;
   }
