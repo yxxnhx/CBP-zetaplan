@@ -5,7 +5,7 @@ import subBg from '../../img/global/global_sub_bg.png';
 import { useEffect, useState } from 'react';
 
 const index = ({ setHdSubStyle }) => {
-  const title = 'ZETA PLAN은 전 세계적으로<br/> 우수한 해외 네트워크를 보유하고 있습니다.';
+  const title = 'ZETA PLAN은 전 세계적으로\n우수한 해외 네트워크를 보유하고 있습니다.';
 
   const oneDepth = '해외진출';
   const oneDepthLink = '/gb';

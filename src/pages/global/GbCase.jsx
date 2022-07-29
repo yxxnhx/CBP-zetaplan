@@ -1,12 +1,11 @@
 import React from 'react';
-import gbMap from '../../img/global/global_map.png';
 import '../../styles/global/gbCase.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/global/global_sub_bg.png';
 import { useState, useEffect } from 'react';
 
 const GbCase = ({ setHdSubStyle }) => {
-  const title = 'ZETA PLAN은 전 세계적으로<br/> 우수한 해외 네트워크를 보유하고 있습니다.';
+  const title = 'ZETA PLAN은 전 세계적으로\n우수한 해외 네트워크를 보유하고 있습니다.';
 
   const oneDepth = '해외진출';
   const oneDepthLink = '/gb';
@@ -91,10 +90,10 @@ const GbCase = ({ setHdSubStyle }) => {
             </div>
             <div className="gbAccoContentC">
               <ul>
-                <li>절강대외과기교류중심(Zhejang Provincial and Technology Center with foreign conturies)</li>
+                <li>절강대외과기교류중심</li>
                 <li>
                   중국 절강성 기술교류 네트워크와 연계된 절강성 과학기술국 산하 직속 기관으로 중국 과학기술부와 절강성
-                  항주시 인민정부에 의해 2008년 12월 설립
+                  항주시 인민정부에 의해 2008년 설립
                 </li>
               </ul>
             </div>

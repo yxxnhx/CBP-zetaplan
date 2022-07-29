@@ -1,5 +1,4 @@
 import React from 'react';
-import globalPerformance from '../../img/global/global_performance.png';
 import '../../styles/global/gbStrategy.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/global/global_sub_bg.png';
