@@ -29,7 +29,8 @@ const ConsulModal = ({open, close}) => {
     policyFund:'',
     foundation:'',
     system:'',
-    consulting:'' 
+    consulting:'',
+    file:''
   })
 
   const handleChange = (e) => {
@@ -464,18 +465,30 @@ const ConsulModal = ({open, close}) => {
                       <div className="consultingCategory">
                         <div className="consultingItem">
                           <label htmlFor="consulting"  className='consulLabel'></label>
-                          <input 
+                          <textarea 
                             className="consultingInput" 
                             name="consulting" 
                             id="consulting" 
                             type="text" 
-                            onChange={handleChange }
-                            value={values.consulting} />                        
+                            onChange={handleChange}
+                            value={values.consulting} >
+
+                          </textarea>                   
                         </div>
+                      </div>
+                      <div className="consulCategory">
+                        <form method="post" enctype="multipart/form-data" name="fileForm" className='fileArea'>
+                          <label for="myfile" className='fileLabel'>파일 첨부</label>
+                          <input 
+                            type="file"
+                            name='file'
+                            id='file'
+                            onChange={handleChange}
+                            value={values.file}  />
+                        </form>
                       </div>
                     </fieldset>
                     <button className="consultingBtn" type="button" onClick={handleFormSubmit}>상담 신청하기</button>
-        
                   </form>
                 </div>
               </div>

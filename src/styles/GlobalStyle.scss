@@ -183,6 +183,23 @@ $size-xs: 1.44rem;
     left: 6%;
   }
 
+  .themeBtnArea .themeBtn::after {
+  right: 5%;
+  }
+
+  .themeBtnArea .themeBtn {
+    padding: 4% 12% 4% 6%;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+.dark   .themeBtnArea .themeBtn {
+  padding: 4% 6% 4% 12%;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+.dark .themeBtn::before {
+  left: 9%;
+}
 }
 
 

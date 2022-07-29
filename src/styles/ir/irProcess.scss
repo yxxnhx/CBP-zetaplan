@@ -317,7 +317,7 @@
 }
 
 .irProcessStation {
-  width: 90%;
+  width: 100%;
   height: auto; 
 }
 
@@ -397,6 +397,7 @@
     margin-bottom: 5rem;
     
   }
+
 }
 
 .irAccoCenter {
@@ -572,17 +573,6 @@
       &:hover::after {
         color: #fff;
       }
-  
-      &::before {
-        content: "";
-        display: block;
-        width: 1vw;
-        height: 5vw;
-        border-bottom: none;
-        border-left: 1px dashed black;
-        top: -39%;
-        left: 50%;
-      }
 
       &:nth-child(1)::after {
         width: 24vw;
@@ -604,6 +594,37 @@
         transform: translateY(47%);
       }
     }
+
+    .irCircleDesP::before {
+      content: "재무분석";
+      display: block;
+      width: 23vw;
+      height: 5vw;
+      border-bottom: none;
+      border-left: 1px dashed black;
+      top: -39%;
+      left: 50%;
+    }
+    .irCircleDesA::before {
+      content: "기준 및 역량분석";
+      display: block;
+      width: 23vw;
+      height: 5vw;
+      border-bottom: none;
+      border-left: 1px dashed black;
+      top: -39%;
+      left: 50%;
+    }
+    .irCircleDesI::before {
+      content: "실행전략";
+      display: block;
+      width: 23vw;
+      height: 5vw;
+      border-bottom: none;
+      border-left: 1px dashed black;
+      top: -39%;
+      left: 50%;
+    }
   }
   .irCircleSText {
     padding-top: 2rem;
@@ -621,7 +642,18 @@
     height: 7px;
   }
 
-
+  .irAccordion .irProcessTitle {
+    font-size: 2.4rem;
+  }
+  .irAccordion .irProText {
+    font-size: 2rem;
+  }
+.irProcessItem {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
 }
 
 .dark {
@@ -650,11 +682,4 @@
   }
 
 
-}
-
-@media all and (max-width: 400px){
-
-.irProContents .irProContent {
-  font-size: 2.3rem;
-  }
 }

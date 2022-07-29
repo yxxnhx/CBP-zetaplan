@@ -112,6 +112,7 @@
     img {
       width: 100%;
       height: auto;
+      margin-bottom: 2rem;
     }
   }
 
@@ -121,6 +122,19 @@
 
   .irPerfoDecoBg  {
     height: 30rem;
+  }
+  .irPerfoContentTxt {
+    font-size: 2.3rem;
+  }
+  .irPerfoContentTxt span {
+    font-size: 2.3rem;
+  }
+  .irPerfoContent .irPerfoContentBoxLeft .irPerfoContentTitle {
+    font-size: 2.5rem;
+  }
+
+  .irPerfoContentBoxRight .irPerfoContentTitle  {
+    font-size: 2.5rem;
   }
 }
 

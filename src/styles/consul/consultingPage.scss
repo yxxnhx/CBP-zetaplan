@@ -179,5 +179,25 @@ option {
   .pageConsulLongCategory .pageConsulLongItem .long {
     width: 20%;
   }
-
+  .pageFieldset.long .pageConsultingCategory .pageConsultingItem .consultingInput {
+    width: 85%;
+    font-size: 2.3rem;
+  }
+  .pageFieldset .pageConsulCategory .pageConsulItem label {
+    font-size: 2.3rem;
+    width: 27%;
+  }
+  .pageConsulLongCategory .pageConsulLongItem .website, .pageConsulLongCategory .pageConsulLongItem .address {
+    width: 31%;
+    font-size: 2.3rem;
+  }
+  .pageConsulLongCategory .pageConsulLongItem .address.long {
+    width: 17%;
+}
+.pageFieldset .pageConsulCategory .pageConsulItem input {
+  font-size: 2.3rem;
+}
+.pageFieldset .pageConsulLongCategory .pageConsulLongItem input {
+  font-size: 2.3rem;
+}
 }

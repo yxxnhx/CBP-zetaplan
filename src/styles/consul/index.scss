@@ -61,9 +61,10 @@
 .consulBox {
 	display: flex;
 	position: fixed;
-	top: 5%;
+	top: 50%;
 	left: 50%;
 	transform: translateX(-50%);
+	transform: translate(-50%, -50%);
 	z-index: 1000;
 
 	.consulBg {
@@ -256,14 +257,18 @@
 				width: 38rem;
 				border: none;
 				border-bottom: 1px solid #000;
-				font-size: 1.4rem;
+				font-size: 1.6rem;
 				font-family: 'Noto Sans KR';
+				background-color: #fff;
+				border-radius: 0;
 			}
 		}
 	}
 }
 
-
+.selectFieldset .selectCategory .selectItem {
+	width: 39rem;
+}
 
 .consulFieldset {
 	margin-top: 5rem;
@@ -271,9 +276,10 @@
 		.consultingItem {
 			.consultingInput {
 				border: 1px solid #000;
-				width: 78rem;
+				width: 100%;
 				height: 20rem;
 				margin: 0;
+				font-size: 1.6rem;
 			}
 		}
 	}
@@ -290,6 +296,21 @@
 	background-color: rgba(0, 0, 0, 0.6);
 	z-index: 999;
 }
+
+.fileArea {
+	display: flex;
+	flex-direction: column;
+	margin: 3rem 0;
+	.fileLabel {
+		font-size: 1.6rem;
+		font-weight: bold;
+		margin-bottom: 2rem;
+	}
+	#file {
+		font-size: 1.6rem;
+	}
+}
+
 
 @media (min-width: 1025px) and (max-width: 1285px){
   .consulBox .consulBg {
@@ -383,6 +404,59 @@
 	.consulFieldset .consultingCategory .consultingItem .consultingInput {
     width: 100%;
 	}
+
+	.consulCategory .consulItem label {
+		font-size: 2.3rem;
+		width: 10rem;
+	}
+	.formKey::after {
+    left: 7rem;
+}
+
+.consulLongCategory .consulLongItem .website, .consulLongCategory .consulLongItem .address{
+	font-size: 2.3rem;
+	width: 10rem;
+
+}
+
+.selectFieldset .selectCategory .selectItem .selectLabel {
+	font-size: 2.3rem;
+
+}
+
+.legend {
+	font-size: 2.5rem;
+}
+
+.selectFieldset .selectCategory .selectItem .select {
+	font-size: 2.3rem;
+	padding: 3%;
+}
+
+.fileArea {
+	.fileLabel {
+		font-size: 2.3rem;
+	}
+	#file {
+		font-size: 2.3rem;
+	}
+}
+.consultingBtn {
+	font-size: 2.5rem;
+	width: 25rem;
+	height: 9rem;
+}
+.consulFieldset .consultingCategory .consultingItem .consultingInput {
+	font-size: 2.3rem;
+	width: 90%;
+}
+.fieldset .consulCategory .consulItem input {
+  font-size: 2.3rem;
+}
+.fieldset .consulLongCategory .consulLongItem input {
+  font-size: 2.3rem;
+}
+
 }
 
 @media all and (max-width: 444px){

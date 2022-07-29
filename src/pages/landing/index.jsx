@@ -27,9 +27,9 @@ const Landing = () => {
         </div>
         <div className="LdDesWord" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
           <div className='LdDesPro' >
-            <img src={require('./../../img/landing/landing_Professional@2x.png')} alt="word" />
+            <img src={require('./../../img/landing/landing_Professional@2x.png')} alt="word" className='LdDesProImg'/>
             <div className='LdDesBus' data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine" data-aos-duration="100">
-              <img src={require('./../../img/landing/landing_Business@2x.png')} alt="word" />
+              <img src={require('./../../img/landing/landing_Business@2x.png')} alt="word" className='LdDesBusImg'/>
             </div>
           </div>
         </div>

@@ -578,17 +578,14 @@
 }
 
 
-@media all and (max-width: 474px) {
+@media all and (max-width: 500px) {
   .langAbout {
     pointer-events: none;
-    height: 90vh;
+    height: 100vh;
     background-size: 150%;
 
   }
 
-  // .langAboutCon {
-  //   padding-top: 0;
-  // }
 .langTec .langTecBox .langTecContent .langTecChBox .langTecContentC {
   width: 100%;
   margin-left: 0;
@@ -652,5 +649,10 @@
     background-size: contain;
     width: 11px;
     height: 7px;
+  }
+  .langLocationView {
+    background-position: bottom center;
+    height: 30rem;
+
   }
 }

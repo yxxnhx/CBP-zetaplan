@@ -10,7 +10,7 @@ import irPerfoImg04 from './../../img/ir/ir_perfo_img4@2x.png'
 import irPerfoImg05 from './../../img/ir/ir_perfo_img5@2.png'
 
 const IrPerfo = ({ setHdSubStyle }) => {
-  const title = 'IR지원, 해외투자유치, 성장 지원 컨설팅에 <br /> 최적화된 ZETA PLAN'
+  const title = 'IR지원, 해외투자유치, 성장 지원 컨설팅에\n최적화된 ZETA PLAN'
   // breadCrumbs
   const oneDepth='투자 IR';
   const oneDepthLink='/ir';

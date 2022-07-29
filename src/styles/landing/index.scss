@@ -63,7 +63,7 @@ video {
 }
 
 .LdDesWord img {
-  height: 15rem;
+  height: 14rem;
 }
 
 .LdDesWord {
@@ -86,8 +86,13 @@ video {
     margin-right: 10%;
     position: absolute;
     z-index: 10;
-    img {
+    .LdDesProImg {
       height: 13rem;
+      .LdDesBus {
+        .LdDesBusImg {
+          height: 6rem;
+        }
+      }
     }
   }
 
@@ -190,10 +195,14 @@ video {
     height: auto;
   }
   .LdTitle .LdDesSpe img {
-    height: 6rem;
+    height: 9rem;
   }
-  .LdDesWord .LdDesPro img {
-    height: 6rem;
+  .LdDesWord .LdDesPro .LdDesProImg {
+    height: 8rem;
+    .LdDesBus .LdDesBusImg {
+        height: 8rem;
+      }
+    
   }
   .LdStep .LdStepTitle {
     font-size: 4.5rem;
@@ -212,6 +221,18 @@ video {
         margin-bottom: 3rem;
       }
   }
-  
+  .LdStepList li:first-child {
+    font-size: 5.2rem;
+  }
+  .LdStepList li {
+    font-size: 2.8rem;
+}
+.LdDesWord img {
+  height: 5rem;
+}
+.LdDesWord .LdDesPro .LdDesProImg {
+  height: 6rem;
+}
+
 }
 

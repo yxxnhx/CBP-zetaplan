@@ -465,14 +465,27 @@ const ConsultingPage = ({ open, close, setHdSubStyle }) => {
                 <div className="pageConsultingCategory">
                   <div className="pageConsultingItem">
                     <label htmlFor="consulting" className='consulLabel'></label>
-                    <input
-                      className="consultingInput"
-                      name="consulting"
-                      id="consulting"
-                      type="text"
+                    <textarea 
+                      className="consultingInput" 
+                      name="consulting" 
+                      id="consulting" 
+                      type="text" 
                       onChange={handleChange}
-                      value={values.consulting} />
+                      value={values.consulting} >
+
+                    </textarea>     
                   </div>
+                </div>
+                <div className="consulCategory">
+                  <form method="post" enctype="multipart/form-data" name="fileForm" className='fileArea'>
+                    <label for="myfile" className='fileLabel'>파일 첨부</label>
+                    <input 
+                      type="file"
+                      name='file'
+                      id='file'
+                      onChange={handleChange}
+                      value={values.file}  />
+                  </form>
                 </div>
               </fieldset>
               <button className="consultingBtn" type="button" onClick={handleFormSubmit}>상담 신청하기</button>
