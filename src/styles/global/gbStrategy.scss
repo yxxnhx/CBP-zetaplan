@@ -1,27 +1,27 @@
 @import '../GlobalStyle.scss';
 
-.dark {
-  @include Dark;
-  .gbInner .gbContentImgBox {
-    .gbPerformanceDes {
-      color: $basic-white;
-    }
-    .gbGraphImgCon {
-      background-image: url(./../../img/global/global_performance_w.png);
-    }
-  }
-  .gbInner .gbProcessList .gbProcessItem {
-    background-color: #ccc;
-    border: none;
-    &:hover {
-      background-color: $main-color;
-    }
+// .dark {
+//   @include Dark;
+//   .gbInner .gbContentImgBox {
+//     .gbPerformanceDes {
+//       color: $basic-white;
+//     }
+//     .gbGraphImgCon {
+//       background-image: url(./../../img/global/global_performance_w.png);
+//     }
+//   }
+//   .gbInner .gbProcessList .gbProcessItem {
+//     background-color: #ccc;
+//     border: none;
+//     &:hover {
+//       background-color: $main-color;
+//     }
 
-    .gbProcessItemBox .gbProcessItemT {
-      color: #359aff;
-    }
-  }
-}
+//     .gbProcessItemBox .gbProcessItemT {
+//       color: #359aff;
+//     }
+//   }
+// }
 
 .gbInner {
   @include Inner;

@@ -6,6 +6,7 @@ import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/me/me_sub_bg@2x.png';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import PageBase from '../../components/common/Darkmode/PageBase';
 
 
 const MngCredit = ({setHdSubStyle}) => {
@@ -15,15 +16,6 @@ const MngCredit = ({setHdSubStyle}) => {
   const twoDepth='신용평가';
   const twoDepthLink='/mng-credit';
   const linkActive='twoDepth';
-
-  const [theme, setTheme] = useState('');
-  const [themeCss, setThemCss] = useState('');
-  const handleTheme = () => {
-    const value = theme;
-    setTheme(!value);
-    const cssValue = value ? 'dark' : 'light';
-    setThemCss(cssValue);
-  }
 
 
   useEffect(() => {
@@ -133,62 +125,55 @@ const MngCredit = ({setHdSubStyle}) => {
     <div>
       <div>
         <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive} />
-        <div className={themeCss}>
-          <div className='darkBackground'>
-            <div className='mngInner'>
-              <div className="themeBtnArea">
-                <button className='themeBtn' onClick={()=>{handleTheme()}}>
-                  mode change
-                </button>
-              </div>
-              <h2 className='darkText mngSubTitle'>신용평가</h2>
-              <h2 className='darkText mngSmTitle mngCreditSmTitle'>서비스진행 및 진행절차</h2>
-              <ul className='mngCircleArea'>
-                <li className='mngFiveCircleBox'>
-                  <ul className='mngFiveCircle mngCreditCircle'>
-                    <li>홈페이지<span>가입/평가신청</span></li>
-                    <li>평가수수료<span>납부</span></li>
-                    <li>필요서류<span>제출</span></li>
-                    <li>실태조사<span>인터뷰 및 분석</span></li>
-                    <li>평가완료<span>입찰기관에 결과통지</span></li>
-                  </ul>
-                </li>
-              </ul>
-              <div className='mngCreditWrapper'>
-                <div className='mngAccordion'>
-                  {data.map((item, i)=> (
-                    <div className='mngCreditItem' key={i}>
-                      <div className={selected === i ? 'mngCreditBtn on' : 'mngCreditBtn'} onClick={()=>toggle(i)}>
-                        <h2 className='mngCreditTitle'>{item.title}</h2>
-                        <div>{selected === i ? <div className='mngTopBtn'></div> : <div className='mngUnderBtn'></div>}</div>
-                      </div>
-                      <div className={selected === i ? 'mngCreditContent show' : 'mngCreditContent'}>{item.content}</div>
+        <PageBase>
+          <div className='mngInner'>
+            <h2 className='darkText mngSubTitle'>신용평가</h2>
+            <h2 className='darkText mngSmTitle mngCreditSmTitle'>서비스진행 및 진행절차</h2>
+            <ul className='mngCircleArea'>
+              <li className='mngFiveCircleBox'>
+                <ul className='mngFiveCircle mngCreditCircle'>
+                  <li>홈페이지<span>가입/평가신청</span></li>
+                  <li>평가수수료<span>납부</span></li>
+                  <li>필요서류<span>제출</span></li>
+                  <li>실태조사<span>인터뷰 및 분석</span></li>
+                  <li>평가완료<span>입찰기관에 결과통지</span></li>
+                </ul>
+              </li>
+            </ul>
+            <div className='mngCreditWrapper'>
+              <div className='mngAccordion'>
+                {data.map((item, i)=> (
+                  <div className='mngCreditItem' key={i}>
+                    <div className={selected === i ? 'mngCreditBtn on' : 'mngCreditBtn'} onClick={()=>toggle(i)}>
+                      <h2 className='mngCreditTitle'>{item.title}</h2>
+                      <div>{selected === i ? <div className='mngTopBtn'></div> : <div className='mngUnderBtn'></div>}</div>
                     </div>
-                  ))}
-                </div>
+                    <div className={selected === i ? 'mngCreditContent show' : 'mngCreditContent'}>{item.content}</div>
+                  </div>
+                ))}
               </div>
-            </div>  
-            <div className="mngCreditDecoBg">
-              <p>ZETA PLAN</p>
             </div>
-            <div className='mngInner'>
-              <h2 className='mngSmTitle mngCreditReportTitle'>보고서 종류</h2>
-              <div className='mngCreditReport'>
-                <div>CLIP보고서 (신용평가보고서)</div>
-                <p>협력회사가 제출한 서류와 평가연구원의 평가로 작성된 보고서로 기업개요, 대표자 정보, 영업현황 등 제공</p>
-                <div>거래처위험분석보고서</div>
-                <p>협력회사의 판매처 정보를 분석하여 거래위험 정도를 분석하여 제공하는 보고서, 거래금액, 거래비중 등의 정보제공</p>
-                <div>건설실적 보고서</div>
-                <p>건설업종 기업에 발급되는 보고서, 시공순위, 실적금액, 실적내역, ISO현황 등의 정보제공</p>
-                <div>SI실적 보고서</div>
-                <p>SI업종 기업에 발급되는 보고서, 기술자 현황, 프로젝트 수행실적, 부설시설 연구기관 등의 정보제공</p>
-                <div>심층분석 보고서</div>
-                <p>정밀심사와 분석을 필요로 하는 기업에 제공하는 보고서</p> 
-              </div>
-              <button className='mngCreditApply' onClick={goToCredit}>신용평가 신청</button> 
-            </div>
+          </div>  
+          <div className="mngCreditDecoBg">
+            <p>ZETA PLAN</p>
           </div>
-        </div>
+          <div className='mngInner'>
+            <h2 className='mngSmTitle mngCreditReportTitle'>보고서 종류</h2>
+            <div className='mngCreditReport'>
+              <div>CLIP보고서 (신용평가보고서)</div>
+              <p>협력회사가 제출한 서류와 평가연구원의 평가로 작성된 보고서로 기업개요, 대표자 정보, 영업현황 등 제공</p>
+              <div>거래처위험분석보고서</div>
+              <p>협력회사의 판매처 정보를 분석하여 거래위험 정도를 분석하여 제공하는 보고서, 거래금액, 거래비중 등의 정보제공</p>
+              <div>건설실적 보고서</div>
+              <p>건설업종 기업에 발급되는 보고서, 시공순위, 실적금액, 실적내역, ISO현황 등의 정보제공</p>
+              <div>SI실적 보고서</div>
+              <p>SI업종 기업에 발급되는 보고서, 기술자 현황, 프로젝트 수행실적, 부설시설 연구기관 등의 정보제공</p>
+              <div>심층분석 보고서</div>
+              <p>정밀심사와 분석을 필요로 하는 기업에 제공하는 보고서</p> 
+            </div>
+            <button className='mngCreditApply' onClick={goToCredit}>신용평가 신청</button> 
+          </div>
+        </PageBase>
       </div>
     </div>
   );

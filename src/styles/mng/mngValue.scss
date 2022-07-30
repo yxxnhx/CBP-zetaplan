@@ -7,6 +7,18 @@
 $mngSize : 90rem;
 $mngCircleSize : 20rem;
 
+.mngInner.mngValueInner{
+  margin-top: 8rem;
+}
+
+.mngSubTitle{
+  @include Subtitle($sub-title, $basic-gray3)
+};
+
+.mngSmTitle.mngValueTitle{
+  margin-left: 0;
+}
+
 .mngCompanyValueAssess{
   display: flex;
   justify-content: center;
@@ -117,55 +129,58 @@ $mngCircleSize : 20rem;
 
 .mngMenuTab{
   display: flex;
-  transform: translate(-5rem, -5rem);
   cursor: pointer;
-  li{
-    font-size: 2rem;
-    font-weight: bold;
-    margin-left: 6rem;
+
+  li {
+    width: 13rem;
     position: relative;
+    line-height: 4.1rem;
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+    font-size: 2.3rem;
+    text-align: center;
+    top: -3rem;
+    margin-left: 3rem;
+
+    &:hover {
+      color: $main-color;
+
+      &::after {
+        content: '';
+        height: 0.3rem;
+        width: 100%;
+        background-color: $main-color;
+        z-index: 1;
+        position: absolute;
+        top: 5.9rem;
+        left: 0;
+      }
+    }
   }
 }
- 
-.isActive{
-   color: $main-color;
-   &::after{
-    content: '';
-    display: block;
-    height: 0.3rem;
-    width: 13rem;
-    background-color: $main-color;
-    position: absolute;
-    bottom: -3.2rem;
-    left: -1rem;
-   }
-  }
+
   
-  .mngMenuTab li:hover{
+  .isActive{
     color: $main-color;
-    &::after{
+    &::after {
       content: '';
-    display: block;
-    height: 0.3rem;
-    width: 13rem;
-    background-color: $main-color;
-    position: absolute;
-    bottom: -3.2rem;
-    left: -1rem;
-  } 
-   }
+      height: 0.3rem;
+      width: 100%;
+      background-color: $main-color;
+      position: absolute;
+      top: 5.9rem;
+      left: 0;
+    }
+  }
 
-.mngValueTitle{
-  margin-top: 3rem;
-}
 
-.mngValueTxt{
+  .mngValueTxt{
   width: 20rem;
-  font-size: $size-lg;
-  margin-left: 12rem;
+  font-size: 2.5rem;
+  margin-left: 4.5rem;
   margin-top: 5rem;
   position: relative;
-  &::after{
+    &::after{
     content:'';
     display: block;
     height: 0.3rem;
@@ -174,31 +189,33 @@ $mngCircleSize : 20rem;
     position: absolute;
     top: 1rem;
     left: -4rem;
-  }
-}
-
+      }
+    }
+   
 
 .mngNeedTxt{
-      width: 90%;
-      margin-left: 9rem;
+      width: 100%;
+      margin-left: 0;
       margin-top: 3rem;
       margin-bottom: 10rem;
       p{
-        font-size: $size-lg;
+        font-size: 2.3rem;
         font-family:'Noto Sans KR';
         line-height: 1.7;
         span{
-          font-size: $size-lg;
+          font-size: 2.3rem;
           font-family:'Noto Sans KR';
           line-height: 1.7;
-        }
-    }
-}
+          }
+      }
+  }
+
 .thinGradient {
   position: relative;
   height: 58px;
   margin: 5rem auto;
 }
+
 .thinGradient img{
   width: 100%;
   height: 100%;
@@ -262,47 +279,43 @@ $mngCircleSize : 20rem;
 
 
 .mngValueTxtBox{
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -5rem;
+}
+
+.mngValueTxtBox{
   display: flex;
+  flex-direction: column;
+}
+.mngValueTxtBox ul{
+  padding-left: 10rem;
+  li{
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.7;
+    font-family: 'Noto Sans KR';
+  }
 }
 
-.mngValueList{
-  font-size: 3rem;
+.mngBnStep{
+  font-size: 2.3rem;
   font-weight: bold;
-  line-height: 10;
-  margin-left: 10rem;
-}
-
-.mngCompanyValue{
-  line-height: 2;
-  margin-left: 10rem;
-  margin-top: 5rem;
-  div{
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  p{
-    font-size: 1.6rem;
-    font-family:'Noto Sans KR';
-  }
-  span{
-    font-size: 1.8rem;
+  display: flex;
+  position: relative;
+  margin-left: 9rem;
+  margin-top: 10rem;
+  ul{
+    flex: 60%;
   }
 }
-.mngCompanyValue div{
-  margin: 3rem 0 1rem;
-}
 
-.mngCompanyValue div:nth-of-type(2){
-  margin-top: 7.5rem;
+.darkText.mngBnStepT{
+  margin-top: -1rem;
+  font-size: 2.3rem;
+  font-weight: 600;
 }
-.mngCompanyValue div:nth-of-type(3){
-  margin-top: 4.5rem;
-}
-
-.mngCompanyValue div:nth-of-type(4){
-  margin-top: 8rem;
-}
-
 
 .mngValueTxt.mngValueStep{
   top:5rem; 
@@ -311,12 +324,13 @@ $mngCircleSize : 20rem;
 .mngValueCompanyProcess{
   display: flex;
   justify-content: space-between;
+  margin-top: 15.625vw;
+  margin-bottom: 7.813vw;
+  margin-left: 10vw;
 }
 
 .mngValueProcess{
-  height: 50rem;
-  margin-top: 10rem;
-  margin-right: -3rem;
+  margin-top: -7rem;
   div{
     font-size: 2.2rem;
     font-weight: 600;
@@ -327,11 +341,12 @@ $mngCircleSize : 20rem;
     font-weight: 600;
   }
  p{
-   font-size: 1.8rem;
+   font-size: 2rem;
    font-family:'Noto Sans KR';
    line-height: 3;
- } 
+  } 
 }
+
 .mngValueProcess {
   div:first-child{
     color: #583cf2;
@@ -354,101 +369,105 @@ $mngCircleSize : 20rem;
 }
 
 .mngCircleWrap {
-  position:relative; 
-  width:32.8125rem;
-  height:32.8125rem; 
-}
-
-.mngCircleBg {
-  background: url('../../img/main/zetaplanLogo.svg') no-repeat 50% 50%;
-	width: 100%;
-	height: 100%;
-  position: absolute;
-  bottom: -18rem;
-  left: 12rem;
-  border: 0.8rem solid #e0e0e0;
+  width: 20.833vw;
+  height: 20.833vw;
+  background: url('../../img/icon/zetaplan_logo@2x.png') no-repeat center / 80% 24%;
+  border: 1rem solid #ccc;
   border-radius: 50%;
-  box-shadow:0 .625rem 1.25rem rgba(18, 27, 116, .18);
+  box-shadow: 0 .625rem 1.25rem rgba(18, 27, 116, .18);
+  position: relative;
 }
 
 
-
-.mngCircle {
-  position:absolute;
-  top:20rem;
-  left:12rem;
-  width:100%; 
-  height:100%;
-  animation:rotate linear infinite 40s forwards;
+.dark{
+  .mngCircleWrap{
+    width: 20.833vw;
+    height: 20.833vw;
+    background: url('../../img/icon/zetaplan_logo_w@2x.png') no-repeat center/ 80% 24%;
+    border: 1rem solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 .625rem 1.25rem rgba(18, 27, 116, .18);
+    position: relative;
+  }
 }
+
+  .mngCircle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: circle linear infinite 40s forwards;
+  }
+
+
+@keyframes circle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .mngCircleItem {
-  display:flex;
-  justify-content:center;
-  align-items:center; 
-  position:absolute; 
-  width:9.0625rem;
-  height:9.0625rem;
-  border:.5rem solid #fff;
-  border-radius:50%;
-  box-shadow:0 .625rem 1.25rem rgba(18, 27, 116, .18);
-}
+  width: 9.375vw;
+  height: 9.375vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: .5rem solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 .625rem 1.25rem rgba(18, 27, 116, .18);
 
-
-.mngCircleItemLocation {
-  width: 17rem;
-  height: 17rem;
-  top:-3rem;
-  left:50%; background-color : #583cf2;
-  transform: translate(-22rem, -6rem);
+  &.mngCircleItemLocation {
+    top: -1.042vw;
+    left: 9.896vw;
+    background-color: #070F76;
+    transform: translate(-11.979vw, -4.688vw);
+    line-height: 1.5;
+    text-align: center;
   }
 
-.mngCircleItemIndustry {
-  width: 17rem;
-  height: 17rem;
-  bottom: 6rem;
-  right:-1rem; 
-  background-color:#1e3a8b ; 
-  transform:translate(12rem, -8rem)
-}
-
-.mngCircleItemTogether {
-  width: 17rem;
-  height: 17rem;
-  bottom:0rem;
-  left:0; background-color:#070f76;
-  transform:translateY(11rem);
+  &.mngCircleItemIndustry {
+    bottom: 0.521vw;
+    right: -0.521vw;
+    background-color: #1E3A8B;
+    transform: translate(7.292vw, -5.208vw)
   }
 
-.mngCircleText {
-  font-size:1.7rem; 
-  font-weight:600; 
-  color:#fff; 
-  animation:rotate2 linear infinite 40s forwards;
-}
-@keyframes rotate {0%{}100%{transform:rotate(360deg);}}
-@keyframes rotate2 {0%{}100%{transform:rotate(-360deg);}}
+  &.mngCircleItemTogether {
+    bottom: 0.521vw;
+    left: 0;
+    background-color: #583CF2;
+    transform: translate(-1.042vw, 6.771vw);
+    line-height: 1.5;
+  }
 
+  .mngCircleText {
+    font-size: 1.042vw;
+    color: #fff;
+    animation: txt linear infinite 40s forwards;
+  }
+}
+
+@keyframes txt {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 
 .dark{
   .mngMenuTab li:hover{
     color: #359aff;
     &::after{
-      content: '';
-    display: block;
-    height: 0.3rem;
-    width: 13rem;
     background-color: #359aff;
-    position: absolute;
-    bottom: -3.2rem;
-    left: -1rem;
-  } 
+    } 
    }
+
   .isActive{
     color: #359aff;
     &::after{
       background-color: #359aff;
     }
   }
+
   .mngValueTxt::after{
     background-color: #359aff;
   }
@@ -456,45 +475,21 @@ $mngCircleSize : 20rem;
   .mngValueProcess div:nth-of-type(2){
     color: #356dfff5;
   }
+
   .mngValueProcess div:nth-of-type(3){
    color: #3549ff;
- }
+  }
+
 }
-
-
 
 
 .mngInner{
   @include Inner;
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
-  .mngFourCircle.mngValueCompanyAssess, .mngCompanyValueAssess{
-    flex-wrap: wrap;
-    width: 90vw;
-      li{
-        width: 10rem;
-        height: 10rem;
-        border-radius: 0;
-        margin-top: 2rem;
-        flex: 100%;
-       &::before{
-         display: none;
-       }
-    }
-  }
-  .mngFourCircle.mngValueCompanyAssess li{
-    display: flex;
-    flex-direction: row;
-  }
-  .mngFourCircle.mngValueCompanyAssess li:nth-child(3){
-    flex-wrap: wrap;
-  }
-
-}
-
 
 @media (min-width: 768px) and (max-width: 1024px){
+ 
   .mngNeedTxt{
     width: 90%;
     margin-left: 3rem;
@@ -507,30 +502,42 @@ $mngCircleSize : 20rem;
      height: 80%;
    }
   }
+  
   .mngValueGradientLeft .mngValueGradientRight{
     top: 30%;
     font-size: 1.7rem;
   }
 
+  .mngValueCompanyAssess,.mngCompanyValueAssess{
+    width: 90vw;
+  }
+
+  .mngFourCircle.mngValueCompanyAssess li>span{
+    display: flex;
+    flex-direction: row;
+  }
   
+  .mngFourCircle.mngValueCompanyAssess li:nth-child(3){
+    flex-wrap: wrap;
+  }
+
 
 // mngValueskill
 
-.mngSmTitle.mngValueTitle{
+  .mngSmTitle.mngValueTitle{
   margin-left: 3rem;
-}
-
-.mngValueTxt{
-  margin-left: 7rem;
-}
-.mngValueList{
-  width: 10%;
-  line-height: 11;
-  margin-top: 2%;
-  li{
-    min-width: 30px;
-    }
   }
+
+  .mngValueTxt{
+  margin-left: 7rem;
+  }
+
+  
+  .mngCircleWrap {
+    top: 0vw;
+    left: 0vw;
+  }
+
 
   .mngCompanyValue{
     line-height: 1.5;
@@ -548,50 +555,28 @@ $mngCircleSize : 20rem;
       font-size: 1.8rem;
     }
   }
-  .mngCompanyValue div{
-    margin-top: 15rem;
-  }
 
-  .mngCompanyValue div:nth-of-type(2){
+  .darkText.mngCompanyValue div:nth-of-type(2){
+    margin-top: 6rem;
+  }
+  
+  .darkText.mngCompanyValue div:nth-of-type(3){
+    margin-top: 5.6rem;
+  }
+  
+  .darkText.mngCompanyValue div:nth-of-type(4){
     margin-top: 9.5rem;
   }
-  .mngCompanyValue div:nth-of-type(3){
-    margin-top: 7.4rem;
-  }
-  .mngCompanyValue div:nth-of-type(4){
-    margin-top: 9rem;
-  }
+  
+
 .mngValueTxt.mngValueStep{
   margin-top: 10rem;
 }
 
-.mngCircleBg{
-  background: url('../../img/main/zetaplanLogo.svg') no-repeat 4rem;
-  background-size: 70% 70%;
-  width: 150%;
-}
-.mngCircle{
-  top: 21vw;
-  left: 17vw;
-  width: 100%;
-  height: 85%;
-}
-.mngCircleItemLocation{
-  top: -1vw;
-  left: 8vw;
-}
-.mngCircleItemIndustry{
-  top: 6vw;
-  left: 10vw;
-}
-.mngCircleItemTogether{
-  top: 15vw;
-} 
+
 
 .mngValueProcess{
-  width: 50%;
-  margin-top: 8rem;
-  margin-left: 45%;
+  margin-top: -5rem;
   div{
     display: flex;
     flex-direction: column;
@@ -599,25 +584,25 @@ $mngCircleSize : 20rem;
     margin-top: 2rem;
     line-height: 1.5;
   }
- p{
+   p{
    font-size: 1.7rem;
    line-height: 2;
-  } 
+    } 
   }
+
+
   .dark{
-    .mngCircleBg{
+    .mngCircleWrap{
       background: url('../../img/icon/zetaplan_logo_w@2x.png') no-repeat 50%;
       background-size: 70%;
-      width: 30rem;
-      height: 30rem;
     }
   }
+
 }
 
 
 
-
-@media (min-width: 360px) and (max-width: 767px){
+@media (min-width: 360px) and (max-width: 767px) {
 
   .mngMenuTab li{
       font-size: 1.5rem;
@@ -629,48 +614,43 @@ $mngCircleSize : 20rem;
 
   .mngValueTxt{
     margin-left: 7rem;
+    font-size: 2.3rem;
   }
   .mngNeedTxt{
+    width: 77vw;
     margin-left: 3rem;
+    p{
+      font-size: 2.3rem;
+    }
+  }
+  .mngNeedTxt p>span{
+    font-size: 2.3rem;
   }
 
-  .isActive{
-    &::after{
-     width: 10rem;
-     bottom: -3.3rem;
-     left:-0.5rem;
-    }
-   }
+.mngValueAssess p{
+  font-size: 2.3rem;
+}
   
-.mngMenuTab li:hover{
-  &::after{ 
-    width: 10rem;
-    bottom: -3.3rem;
-    left:-0.5rem;
-   }
-}
-
-.dark{
-  .isActive{
-    &::after{
-     width: 10rem;
-     bottom: -3.3rem;
-     left:-0.5rem;
-    }
-   }
-  
-.mngMenuTab li:hover{
-  &::after{ 
-    width: 10rem;
-    bottom: -3.3rem;
-    left:-0.5rem;
-   }
-}
-}
    
 .mngCompanyValueAssess li:nth-child(2n)::before{
   display: none;
 }
+
+
+.mngCompanyValueAssess{
+  flex-wrap: wrap;
+  li{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0;
+    margin-top: 3rem;
+    flex: 100%;
+    &::before{
+    display: none;
+    }
+  }
+}
+
 
 .thinGradient{
   width: 100%;
@@ -727,85 +707,76 @@ $mngCircleSize : 20rem;
   flex-wrap: wrap;
 }
 
-//mngValueskill
-.mngValueList{
-  width: 30%;
-  font-size: 1rem;
-  margin-left: 3rem;
-  line-height: 15;
-  li{
-    min-width: 30px;
+.mngCompanyAssess p{
+  font-size: 2.3rem;
   }
 }
 
-.mngCompanyValue{
-  margin-top: 2.6rem;
-  margin-left: 5rem;
+.mngValueTxtBox{
+  margin-left: -5rem;
+}
+.mngBnStep{
+  margin-top: 4rem;
 }
 
-.mngCompanyValue div{
-  margin-top:7.6rem;
-}
-.mngCompanyValue div:nth-of-type(2){
-  margin-top: 6rem;
-}
 
-.mngCompanyValue div:nth-of-type(3){
-  margin-top: 3rem;
-}
 
-.mngCompanyValue div:nth-of-type(4){
-  margin-top: 9rem;
-}
-
-.mngValueCompanyProcess{
-  display: block;
-}
-
-.mngCircleWrap {
-  top: 1vw;
-  width: 40vw;
-  height: 40vw;
-  background-size: 70%;
-}
-.mngCircleBg{
-  background: url('../../img/main/zetaplanLogo.svg') no-repeat 4rem;
-  background-size: 70% 70%;
-}
-
-.mngCircle{
-  top: 38vw;
-  left: 24vw;
-  width: 80%;
-  height: 70%;
-}
-.mngCircleItem {
-  width: 25vw;
-  height: 25vw;
-}
-  .mngCircleItemLocation {
-    top: -13vw;
-    left: 27vw;
+@media all and (max-width:768px) {
+  .mngValueCompanyProcess {
+    display: block;
+    margin-left: 0;
   }
 
-.mngCircleItemIndustry {
-    top: 15vw;
-    left: 11vw;
+  .mngCircleWrap {
+    top: 6vw;
+    left: 26vw;
+    width: 30vw;
+    height: 30vw;
+    background-size: 70%;
   }
 
-  .mngCircleItemTogether {
-   top: 5vw;
-   left: -12vw;
+  .dark{
+    .mngCircleWrap {
+      top: 6vw;
+      left: 26vw;
+      width: 30vw;
+      height: 30vw;
+      background-size: 70%;
+    }
+
   }
 
-  .mngCircleText {
-    font-size: 2vw;
+  .mngCircleItem {
+    width: 15vw;
+    height: 15vw;
+
+    &.mngCircleItemLocation {
+      top: -6vw;
+      left: 9.896vw;
+    }
+
+    &.mngCircleItemIndustry {
+      bottom: 0.521vw;
+      right: -5vw;
+    }
+
+    &.mngCircleItemTogether {
+      bottom: -4vw;
+      left: 0;
+    }
+
+    .mngCircleText {
+      font-size: 2vw;
+      text-align: center;
+      line-height: 1.3;
+    }
   }
+
 
 .mngValueProcess{
   width: 100%;
   height: 30%;
-  margin-top: 34rem;
+  margin-top: 12rem;
   margin-bottom: 0;
   
   div{
@@ -816,7 +787,7 @@ $mngCircleSize : 20rem;
  p{
    font-size: 1.7rem;
    line-height: 1.2;
-  } 
+    } 
   }
 }
 

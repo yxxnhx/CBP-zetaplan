@@ -1,22 +1,22 @@
 @import '../GlobalStyle.scss';
 
-.dark {
-  @include Dark;
-  .gbInner .gbMapImgBox {
-    background-image: url(./../../img/global/global_map_w.png);
-  }
-  .gbInner .gbAccordion .gbProcessItem .gbProcessBtn {
-    background-color: #ccc;
-    border: none;
-  }
-  .gbInner .gbAccordion .gbProcessItem .gbProcessContent {
-    background-color: #ccc;
-  }
+// .dark {
+//   @include Dark;
+//   .gbInner .gbMapImgBox {
+//     background-image: url(./../../img/global/global_map_w.png);
+//   }
+//   .gbInner .gbAccordion .gbProcessItem .gbProcessBtn {
+//     background-color: #ccc;
+//     border: none;
+//   }
+//   .gbInner .gbAccordion .gbProcessItem .gbProcessContent {
+//     background-color: #ccc;
+//   }
 
-  .gbInner .gbAccoContentBox .gbAccoContentArea .gbAccoContentT h1 {
-    color: #359aff;
-  }
-}
+//   .gbInner .gbAccoContentBox .gbAccoContentArea .gbAccoContentT h1 {
+//     color: #359aff;
+//   }
+// }
 
 .gbInner {
   @include Inner;

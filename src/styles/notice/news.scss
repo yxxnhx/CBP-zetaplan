@@ -1,12 +1,12 @@
 @import '../GlobalStyle.scss';
 
-.dark {
-  @include Dark;
-  .newsTabTitle, .newsTitle .newsContentBox {
-    color: $basic-white; 
-  }
+// .dark {
+//   @include Dark;
+//   .newsTabTitle, .newsTitle .newsContentBox {
+//     color: $basic-white; 
+//   }
 
-}
+// }
 
 .newsInner {
   @include Inner;

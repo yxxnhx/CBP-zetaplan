@@ -6,6 +6,7 @@ import GradientImg from '../../img/me/me_gradient_box@2x.png';
 import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
+import PageBase from '../../components/common/Darkmode/PageBase';
 
 
 
@@ -21,15 +22,7 @@ const MngValue = ({setHdSubStyle}) => {
   const threeDepthLink=`/mng-value/${category}`;
   const linkActive='threeDepth';
 
-  const [theme, setTheme] = useState('');
-  const [themeCss, setThemCss] = useState('');
-  const handleTheme = () => {
-    const value = theme;
-    setTheme(!value);
-    const cssValue = value ? 'dark' : 'light';
-    setThemCss(cssValue);
-  }
-
+ 
 
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
@@ -46,7 +39,7 @@ const MngValue = ({setHdSubStyle}) => {
     setData(getCategoryData());
   }, [category])
 
-  const title = '효율적인 자산관리와 적절한\n투자관련 의사결정을 지원합니다.'
+  const title = '효율적인 자산관리와 적절한<br />투자관련 의사결정을 지원합니다.'
   const [activeIndex, setActiveIndex] = useState(0);
   const tabClickHandler=(index)=>{
     setActiveIndex(index)
@@ -144,45 +137,52 @@ const MngValue = ({setHdSubStyle}) => {
             </p>
           </div>
           <h2 className='darkText mngValueTxt'>기업가치평가 방법</h2>
-          <div className='mngValueTxtBox'>
-            <div className='darkText mngValueList'>
-              <h4>Step 1</h4>
-              <h4>Step 2</h4>
-              <h4>Step 3</h4>
-              <h4>Step 4</h4>
-            </div>
-            <div className='darkText mngCompanyValue'>
-              <div className='mngCompanyValueTitle'>비용접근법</div>
-              <p>- 기업이 유사기술을 내부에서 개발하거나 외부로부터 도입하는데 드는 모든 비용을 계 산함으로써 기술가치를 평가하는     방법</p>
-              <p>- 적정시장가치 = 개발투하 총 비용 – 가치하락요소</p>
-              <div>시장접근법</div>
-              <p>- 평가대상기술과 유사 또는 동일한 기술의 시장거래가격을 기준으로 신청기술의 우열 등을 고려하여 산출</p>
-              <p>- 시장가치 = 매매사례가격 × 변동요인</p>
-              <p>- 평가대상 : 일반기계 및 설비류, 차량, 범용컴퓨터 S/W, H/W, 주류허가권, 프랜차이즈 등 </p>
-              <div>수익접근법</div>
-              <p>- 평가대상으로부터 발생되는 미래현금흐름의 현재가치의 합계에 기술기여도를 곱하여 기술가치를 산정</p>
-              <p>기술가치 = 현재가치의 합 × 기술기여도</p>
-              <div>기술기여도</div>
-              <p>평가대상기술을 사용함에 따라 발생한 추가적인 현금흐름의 현재가치 중 기술자체가 기여한 범위를 의미</p>
-              <p>기술요소 = 산업요소지수(industrial factor) × 개별기술지수(Technology rating)</p>
-              <p>산업요소지수 : 기술자산이 어떤 산업 내에서 상업적 기업가치에 공헌할 수 있는 최대 비율</p>
-              <p>개별기술지수 : 특정기술이 사업에 활용되어 상업적 우월성에 대한 공헌과 관련하여 기술의 상대적인 강도를 측정하여     비율로 나타낸 것.</p>
-              <span>- 특허권 등 대부분의 지적재산권을 평가하는데 유용하게 사용</span>
-            </div>
-          </div>
+          <ul className='mngValueTxtBox'>
+            <li className='darkText mngBnStep'>Step 1
+              <ul>
+                <li className='darkText mngBnStepT'>비용접근법</li>
+                <li>- 기업이 유사기술을 내부에서 개발하거나 외부로부터 도입하는데 드는 모든 비용을 계 산함으로써 기술가치를 평가하는 방법</li>
+                <li>- 적정시장가치 = 개발투하 총 비용 – 가치하락요소</li>
+              </ul>
+            </li>
+            <li className='darkText mngBnStep'>Step 2
+              <ul>
+                <li className='darkText mngBnStepT'>시장접근법</li>
+                <li>- 평가대상기술과 유사 또는 동일한 기술의 시장거래가격을 기준으로 신청기술의 우열 등을 고려하여 산출</li>
+                <li>- 시장가치 = 매매사례가격 × 변동요인</li>
+                <li>- 평가대상 : 일반기계 및 설비류, 차량, 범용컴퓨터 S/W, H/W, 주류허가권, 프랜차이즈 등 </li>
+              </ul>
+            </li>
+            <li className='darkText mngBnStep'>Step 3
+              <ul>
+                <li className='darkText mngBnStepT'>수익접근법</li>
+                <li>- 평가대상으로부터 발생되는 미래현금흐름의 현재가치의 합계에 기술기여도를 곱하여 기술가치를 산정</li>
+                <li>기술가치 = 현재가치의 합 × 기술기여도</li>
+              </ul>
+            </li>
+            <li className='darkText mngBnStep'>Step 4
+              <ul>
+                <li className='darkText mngBnStepT'>기술기여도</li>
+                <li>평가대상기술을 사용함에 따라 발생한 추가적인 현금흐름의 현재가치 중 기술자체가 기여한 범위를 의미</li>
+                <li>기술요소 = 산업요소지수(industrial factor) × 개별기술지수(Technology rating)</li>
+                <li>산업요소지수 : 기술자산이 어떤 산업 내에서 상업적 기업가치에 공헌할 수 있는 최대 비율</li>
+                <li>개별기술지수 : 특정기술이 사업에 활용되어 상업적 우월성에 대한 공헌과 관련하여 기술의 상대적인 강도를 측정하여     비율로 나타낸 것.</li>
+                <li>- 특허권 등 대부분의 지적재산권을 평가하는데 유용하게 사용</li>
+              </ul>
+            </li>
+          </ul>
           <h2 className='darkText mngValueTxt mngValueStep'>기업가치평가 절차</h2>
           <div className='mngValueCompanyProcess'>
             <div className="mngCircleWrap">
-              <div className="mngCircleBg"></div>
               <div className="mngCircle">
                 <div className="mngCircleItem mngCircleItemLocation">
-                  <span className="mngCircleText">기술적 위치 분석</span>
+                  <span className="mngCircleText">기술적<br />위치 분석</span>
                 </div>
                 <div className="mngCircleItem mngCircleItemIndustry">
                   <span className="mngCircleText">산업분석</span>
                 </div>
                 <div className="mngCircleItem mngCircleItemTogether">
-                  <span className="mngCircleText">기술가치 종합분석</span>
+                  <span className="mngCircleText">기술가치<br />종합분석</span>
                 </div>
               </div>
             </div>
@@ -203,35 +203,28 @@ const MngValue = ({setHdSubStyle}) => {
   return (
     <div>
       <div>
-        <div className={themeCss}>
-          {data.tabSubTitle}
-          <div className='darkBackground'>
-            <div className='mngInner'>
-              <div className="themeBtnArea">
-                <button className='themeBtn' onClick={()=>{handleTheme()}}>
-                  mode change
-                </button>
-              </div>
-              <h2 className='darkText mngSubTitle'>가치평가</h2>
-              <div className='mngMenuTabEdge'>
-                <ul className='darkText mngMenuTab'>
-                  <li className={getActiveClassName('mngvaluecompany')} onClick={()=>{
-                    tabClickHandler(0) 
-                    navigate('/mng-value/mngvaluecompany') 
-                    setSelectedIndex(0)}} >기업가치평가</li>
-                  <li className={getActiveClassName('mngvalueskill')} onClick={()=>{
-                    tabClickHandler(1) 
-                    navigate('/mng-value/mngvalueskill')
-                    setSelectedIndex(1)}}>기술가치평가
-                  </li>
-                </ul> 
-              </div>
-              <div>
-                {data.tabContent}
-              </div>
+        {data.tabSubTitle}
+        <PageBase>
+          <div className='mngInner mngValueInner'>
+            <h2 className='darkText mngSubTitle'>가치평가</h2>
+            <div className='mngMenuTabEdge'>
+              <ul className='darkText mngMenuTab'>
+                <li className={getActiveClassName('mngvaluecompany')} onClick={()=>{
+                  tabClickHandler(0) 
+                  navigate('/mng-value/mngvaluecompany') 
+                  setSelectedIndex(0)}} >기업가치평가</li>
+                <li className={getActiveClassName('mngvalueskill')} onClick={()=>{
+                  tabClickHandler(1) 
+                  navigate('/mng-value/mngvalueskill')
+                  setSelectedIndex(1)}}>기술가치평가
+                </li>
+              </ul> 
+            </div>
+            <div>
+              {data.tabContent}
             </div>
           </div>
-        </div>
+        </PageBase>
       </div>
     </div>
   );

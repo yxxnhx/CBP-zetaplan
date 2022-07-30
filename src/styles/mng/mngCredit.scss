@@ -1,11 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
 
 @import '../GlobalStyle.scss';
+@import './mngConsulting.scss';
 
+.mngSubTitle{
+  @include Subtitle($sub-title, $basic-gray3)
+};
 
 .mngCreditSmTitle{
   margin-left: 3rem;
 }
+
+.mngSmTitle{
+  width: 30rem;
+  font-size: $size-xl;
+  margin-left: 7.6rem;
+  margin-top: 10rem;
+}
+
+.mngFiveCircle{
+  @include Circle(100%, 13vw);
+  margin: 8.5rem auto 6rem;
+  li {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.7;
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    span {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+
 .mngCreditWrapper{
   margin: 10rem 0 0;
   display: flex;
@@ -225,7 +256,7 @@
   } 
 }
 
-@media (min-width : 360px) and (max-width: 470px){
+@media all and (max-width: 470px){
 
   .mngSmTitle.mngCreditSmTitle{
     margin-left: 2rem;
@@ -234,8 +265,13 @@
   .mngFiveCircle.mngCreditCircle{
     width: 85vw;
     margin-left: 2rem;
+    margin-top: 0;
   }
-
+.mngFiveCircle li{
+  &::before{
+    display: none;
+  }
+}
 
   .mngUnderBtn{
     background: url('../../img/icon/bottom_arrow.png') no-repeat;
@@ -249,6 +285,27 @@
     width: 11px;
     height: 7px;
   }
+  .mngCreditApart{
+    font-size: 2.3rem;
+  }
+  .mngCreditTxt{
+    width: 100%;
+    p{
+      font-size: 2rem;
+    }
+  }
+  .mngCreditApartTxt li{
+    font-size: 2rem;
+  }
+
+  .mngCreditCombine div{
+    font-size: 2.1rem;
+  }
+
+  .mngCreditCombine p{
+    font-size: 2rem;
+  }
+
   .mngCreditImg{
     width: 98%;
     transform: translateX(1%);
@@ -259,13 +316,16 @@
   }
    .mngCreditReport p{
     line-height: 1.5;
+    font-size: 2.2rem;
    }
    .mngCreditReport div{
     margin-bottom: 1rem;
+    font-size: 2.3rem;
    }
 
   .mngCreditApply{
-    margin-top: 10rem;
+    margin-top: 25rem;
+    margin-bottom: 0;
   }
 
 .mngSmTitle.mngCreditReportTitle{

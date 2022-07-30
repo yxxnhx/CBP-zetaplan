@@ -2,9 +2,19 @@
 
 @import '../GlobalStyle.scss';
 
+.mngSubTitle{
+  @include Subtitle($sub-title, $basic-gray3)
+};
 
 .mngSmTitle.mngCertifyTitle{
   margin-left: 0;
+}
+
+.mngSmTitle{
+  width: 30rem;
+  font-size: $size-xl;
+  margin-left: 7.6rem;
+  margin-top: 10rem;
 }
 
 .mngCertifyTxt{
@@ -84,9 +94,23 @@
   font-size: $list-md;
 }
 
+// .dark{
+//   @include Dark;
+//   .mngGrowTxt{
+//     border: .5px solid $basic-white;
+//   }
+//   .mngCertifyCt{
+//     color: #359aff;
+//   }
+
+// }
+
+
 .mngInner{
   @include Inner;
 }
+
+
 
 @media (min-width: 768px) and (max-width: 1023px){
   .mngSmTitle{
@@ -146,25 +170,34 @@
   .mngGrowM{
     margin-left: 5rem;
   }
+  .mngGrowTxt li>span{
+    font-size: 1.3rem;
+  }
+ 
   .mngGrowL{
     margin-left: 8rem;
   }
 
 }
 
-@media (min-width: 360px) and (max-width: 767px){
+
+
+
+@media all and (max-width: 767px){
   .mngSmTitle.mngCertifyTitle{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
   }
   .mngCertifyTxt{
-    width: 90%;
+    width: 100%;
     p{
-      font-size: 1.3rem;
+      font-size: 2.3rem;
     }
   }
   .mngCertifyCt{
-    font-size: 1.7rem;
+    width: 100%;
+    font-size: 2.4rem;
+    line-height: 1.5;
   }
   .Boldgradient{
     margin-top: 2rem; 
@@ -175,20 +208,20 @@
   .mngGrowLeft{
     top: 50%;
     left: 5%;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 500;
   }
   .mngGrowMiddle{
     top: 50%;
     left: 43%;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 500;
   }
   
   .mngGrowRight{
     top: 50%;
     right: 12%;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 500;
   }
   .mngGrowTxt{
@@ -206,11 +239,29 @@
     font-size: 0.5rem;
     line-height: 1.5;
   }
-  
+  .mngGrowF ul>li{
+    font-size: 2rem;
+  }
+  .mngGrowF ul>li:first-child{
+    font-size: 2rem;
+  }
   .mngGrowM{
     margin-left: 4rem;
   }
+  .mngGrowM ul>li{
+    font-size: 2rem;
+  }
+  .mngGrowM ul>li:first-child{
+    font-size: 2rem;
+  }
+  
   .mngGrowL{
     margin-left: 4rem;
+  }
+  .mngGrowL ul>li{
+    font-size: 2rem;
+  }
+  .mngGrowL ul>li:first-child{
+    font-size: 2rem;
   }
 }

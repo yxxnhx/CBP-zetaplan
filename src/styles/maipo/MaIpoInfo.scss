@@ -59,9 +59,10 @@
 }
 
 /* dark 모드 */
-.dark{
-  @include Dark;
+// .dark{
+//   @include Dark;
   
+<<<<<<< HEAD
   .maInfoMainImg{
     background: url(../../img/m&a_ipo/m&a_summery_w.png) no-repeat top left / contain;
     width: 75%;
@@ -83,16 +84,41 @@
   }
   .miInfoTab li.miInfoTabOn {
     color: #359aff;
-  
-    &::after {
-      background-color:#359aff;
-    }
-  }
+=======
+//   .maInfoMainImg{
+//     background: url(../../img/m&a_ipo/m&a_summery_w.png) no-repeat top left / contain;
+//     width: 75%;
+//     height: 36vw;
+//   }
 
-  .miInfoTxt p:nth-child(3){
-    color: #359aff;
-  }
-}
+//   .ipoInfoMainImg{
+//     background: url(../../img/m&a_ipo/test.png) no-repeat center / contain;
+//     width: 90%;
+//     height: 35vw;
+//     margin: auto;
+//     font-size: 0;
+//   }
+
+//   .miInfoTab li:hover {
+//     color: #359aff;
+  
+//     &::after {
+//           background-color: #359aff;
+//     }
+//   }
+//   .miInfoTab>li.on {
+//     color: #359aff;
+>>>>>>> 649376e (WIP)
+  
+//     &::after {
+//       background-color:#359aff;
+//     }
+//   }
+
+//   .miInfoTxt p:nth-child(3){
+//     color: #359aff;
+//   }
+// }
 
 /* content */
 .miInfoContent{

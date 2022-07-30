@@ -12,22 +12,7 @@ $size-ft : 1.6rem;
 
 
 .mngSubTitle{
-  font-size: $sub-title;
-  font-weight: 900;
-  padding-left: 3rem;
-  position: relative;
-  margin: 1rem 0 3rem;
-  &::before {
-    content: "";
-    display: block;
-    background: url('./../../img/title_box@2x.png') no-repeat;
-    background-size: contain;
-    width: 1rem;
-    height: 3rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+    @include Subtitle($sub-title, $basic-gray3);
 };
 
 .mngSubTitleNb{
@@ -55,6 +40,7 @@ $size-ft : 1.6rem;
   width: 100%;
   height: 100%;
   padding-top: 3rem;
+  margin-top: 3rem;
   p{
     font-size: 2rem;
     line-height: 1.7;
@@ -134,7 +120,6 @@ $size-ft : 1.6rem;
 
 
 
-
 .mngFourCircle.mngConsultingFour{
  @include mngCircle($mngFour, $mngCircleSize);
  }
@@ -193,6 +178,7 @@ $size-ft : 1.6rem;
   width: 100%;
   height: 50vw;
   font-size: 0;
+  margin-top: 10rem;
 }
 
 
@@ -201,9 +187,10 @@ $size-ft : 1.6rem;
 }
 
 // dark & light mode
-.light{
-  @include Light;
-  
+
+
+
+.light{  
   .mngConsultingProcessImg{
     background: url(./../../img/me/me_process_graph@2x.png) no-repeat;
     background-size: contain;
@@ -230,8 +217,6 @@ $size-ft : 1.6rem;
 
 
 .dark{
-  @include Dark;
-
   .mngConsultingProcessImg{
     background: url(./../../img/me/me_process_graph_w.png) no-repeat;
     background-size: contain;
@@ -239,13 +224,7 @@ $size-ft : 1.6rem;
     height: 50vw;
     font-size: 0;
   }
-  .mngTradeProcessImg{
-    background: url(./../../img/me/me_process_w.png) no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vw;
-    font-size: 0;
-  }
+
   .mngFourCircle li{
     background-color: #ccc;
     border: none;
@@ -267,11 +246,7 @@ $size-ft : 1.6rem;
       background-color: $main-color;
     }
   }
-  .mngCircleBg{
-    background: url('../../img/icon/zetaplan_logo_w@2x.png') no-repeat 50%;
-    background-size: 70%;
-    width: 100%;
-  }
+ 
   .mngValueProcess span{
     color: $basic-white;
 
@@ -288,12 +263,6 @@ $size-ft : 1.6rem;
   }
   .mngCreditReport{
     color: $basic-white;
-  }
-  .mngGrowTxt{
-    border: .5px solid $basic-white;
-  }
-  .mngCertifyCt{
-    color: #359aff;
   }
 
 }
@@ -328,16 +297,29 @@ $size-ft : 1.6rem;
     width: 90%;
   }
 }
-@media (min-width: 360px) and (max-width: 768px){
+@media all and (max-width: 768px){
 
 .mngConsultingGoal{
   margin-top: 10rem;
 }
 
+.mngSummary p{ 
+  font-size: 2.3rem;
+}
+
+.mngConsultingTxt{
+  margin-left: -5rem;
+  padding-left: 3rem;
+  p{
+    font-size: 2.3rem;
+  }
+ }
+
   .mngSummary.mngConsultingSummary{
     width: 95%;
     p{
       line-height: 1.3;
+      font-size: 2.3rem;
     }
   }
   .mngFourCircle.mngConsultingFour{
@@ -379,12 +361,14 @@ $size-ft : 1.6rem;
   margin-right: 0;
 }
 
-.mngConsultingTxt{
- margin-left: -5rem;
-}
+
 
 .mngTxt{
   margin-top: -3rem;
+  padding-left: 3rem;
+  p{
+    font-size: 2.3rem;
+  }
 }
 
 .mnConsultingSmTitle{
@@ -395,6 +379,8 @@ $size-ft : 1.6rem;
   .mngConsultingProcessImg{
     width: 95%;
    margin-top: 6rem;
+   background-size:cover;
+   height: 39vw; 
   }
 
 }

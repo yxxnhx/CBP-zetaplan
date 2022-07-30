@@ -121,8 +121,7 @@
 }
 
 .dark {
-  @include Dark;
-
+  
   .irSubImg {
     background: url('./../../img/ir/ir_summery_w.png') no-repeat;
     background-size: contain;

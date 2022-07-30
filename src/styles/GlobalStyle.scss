@@ -93,115 +93,18 @@ $size-xs: 1.44rem;
 
 @mixin Inner {
   width: 85vw;
-  padding: 6rem 0 8rem;
-  margin: 0 auto;
+  padding: 10rem 0 8rem;
+  margin: 0 auto ;
 }
 
 
-// dark & light mode
-@mixin Light{
-  .darkText{
-    color: $basic-black;
-  }
-  .darkBackground{
-    width: 100%;
-    height: 100%;
-    background-color: $basic-white;
-  }
-}
-
-@mixin Dark {
-  .darkText{
-    color : $basic-white;
-  }
-  .darkBackground{
-    width: 100%;
-    height: 100%;
-    background-color: #1e1d1d;
-  }
+@media all and (max-width:475px){
   .themeBtn{
-    background-color: #1527a0;
-    padding: 2% 3% 2% 6%;
-    color: $basic-white;
-    &::after {
-      display: none;
-    }
-
-    &::before {
-      content: '';
-      background: url('./../img/icon/baseline_dark_mode_white_24dp.png');
-      background-size: contain;
-      width: 15%;
-      height: 50%;
-      position: absolute;
-      left: 12%;
-      top: 50%;
-      transform: translateY(-50%);
+    img {
+      width: 10px;
+      height: 10px;
     }
   }
-}
-
-
-@mixin ThemeBtnArea {
-  display: flex;
-  justify-content: flex-end;
-  
-  .themeBtn{
-    background-color: transparent;
-    border: 1px solid $main-color;
-    padding: 2% 6% 2% 3%;
-    border-radius: 30px;
-    color: $main-color;
-    font-family: 'Montserrat';
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
-    box-shadow:0 .625rem 1.25rem rgba(18, 27, 116, .18);
-    position: relative;
-    &::after {
-      content: '';
-      background: url('./../img/icon/baseline_light_mode_black_24dp.png') no-repeat;
-      background-size: contain;
-      width: 15%;
-      height: 50%;
-      position: absolute;
-      right: 10%;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-}
-
-.themeBtnArea{
-  @include ThemeBtnArea;
-}
-
-@media all and (max-width: 767px){
-
-  .themeBtn::after {
-    right: 3%;
-  }
-  
-  .dark .themeBtn::before {
-    left: 6%;
-  }
-
-  .themeBtnArea .themeBtn::after {
-  right: 5%;
-  }
-
-  .themeBtnArea .themeBtn {
-    padding: 4% 12% 4% 6%;
-    margin-bottom: 3rem;
-    font-size: 2rem;
-}
-.dark   .themeBtnArea .themeBtn {
-  padding: 4% 6% 4% 12%;
-  margin-bottom: 3rem;
-  font-size: 2rem;
-}
-.dark .themeBtn::before {
-  left: 9%;
-}
 }
 
 
