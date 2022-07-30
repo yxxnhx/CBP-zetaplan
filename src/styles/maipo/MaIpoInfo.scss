@@ -59,15 +59,14 @@
 }
 
 /* dark 모드 */
-// .dark{
-//   @include Dark;
-  
-<<<<<<< HEAD
+ .dark{
+   @include Dark;
+
   .maInfoMainImg{
     background: url(../../img/m&a_ipo/m&a_summery_w.png) no-repeat top left / contain;
     width: 75%;
     height: 36vw;
-  }
+  }  
 
   .ipoInfoMainImg{
     background: url(../../img/m&a_ipo/ipo_summery_w.png) no-repeat center / contain;
@@ -84,41 +83,15 @@
   }
   .miInfoTab li.miInfoTabOn {
     color: #359aff;
-=======
-//   .maInfoMainImg{
-//     background: url(../../img/m&a_ipo/m&a_summery_w.png) no-repeat top left / contain;
-//     width: 75%;
-//     height: 36vw;
-//   }
+     &::after {
+       background-color:#359aff;
+     }
+   }
 
-//   .ipoInfoMainImg{
-//     background: url(../../img/m&a_ipo/test.png) no-repeat center / contain;
-//     width: 90%;
-//     height: 35vw;
-//     margin: auto;
-//     font-size: 0;
-//   }
-
-//   .miInfoTab li:hover {
-//     color: #359aff;
-  
-//     &::after {
-//           background-color: #359aff;
-//     }
-//   }
-//   .miInfoTab>li.on {
-//     color: #359aff;
->>>>>>> 649376e (WIP)
-  
-//     &::after {
-//       background-color:#359aff;
-//     }
-//   }
-
-//   .miInfoTxt p:nth-child(3){
-//     color: #359aff;
-//   }
-// }
+   .miInfoTxt p:nth-child(3){
+     color: #359aff;
+   }
+ }
 
 /* content */
 .miInfoContent{
@@ -128,7 +101,7 @@
 .maInfoMainImg{
   background: url(../../img/m&a_ipo/m&a_summery@2x.png) no-repeat top left / contain;
   width: 75%;
-  height: 36vw;
+  height: 36vw;  
   margin: auto;
   font-size: 0;
 }
