@@ -103,6 +103,7 @@
 
 @media all and (max-width: 475px) {
   .obWrapper {
+    padding-top: 8rem;
     .obCon {
       height: auto;
       margin: auto;
@@ -115,7 +116,7 @@
         .obList {
           flex: 50rem;
           height: 50rem;
-          margin-bottom: 10px;
+          margin-bottom: 8rem;
           pointer-events: none;
 
           .videoCon {
