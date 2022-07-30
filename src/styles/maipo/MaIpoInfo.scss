@@ -59,8 +59,7 @@
 }
 
 /* dark 모드 */
- .dark{
-   @include Dark;
+ .dark{ 
 
   .maInfoMainImg{
     background: url(../../img/m&a_ipo/m&a_summery_w.png) no-repeat top left / contain;
