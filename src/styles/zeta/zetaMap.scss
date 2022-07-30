@@ -21,6 +21,18 @@ $zt-grayColor:#707070;
   vertical-align: text-bottom;
 }
 
+.ztInner{
+  @include Inner;
+}
+
+.ztTitle{
+  @include Subtitle($sub-title, $basic-gray3);
+  color:$basic-white;
+  &::after{
+    display: none;
+  }
+}
+
 .ztMapOn{display: block;}
 .ztMapOff{display: none;}
 
@@ -140,5 +152,11 @@ $zt-grayColor:#707070;
   @include ztMapTxtMedia;
   .ztMapBox .ztMapGuide .ztMapAddr .ztMapTxtDt {
     flex: 50% 1;
+  }
+  .ztMapBox .ztMapGuide .ztMapAddr .ztMapStitle{
+    flex-basis: 13rem;
+  }
+  .ztMapGuide li .ztMapStitle{
+    width:12.5rem;
   }
 }

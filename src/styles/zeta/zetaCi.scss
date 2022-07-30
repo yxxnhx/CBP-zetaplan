@@ -38,6 +38,13 @@ $zt-grayColor:#707070;
 .ztInner{
   @include Inner;
 }
+.ztTitle{
+  @include Subtitle($sub-title, $basic-gray3);
+  color:$basic-white;
+  &::after{
+    display: none;
+  }
+}
 
 .ztCiBox .ztColTitle{
   color:$basic-black;
@@ -273,6 +280,7 @@ $zt-grayColor:#707070;
 @media all and (min-width:768px) and (max-width:1369px) {
   .ztCiContain{
     pointer-events: none;
+    background-size: cover;
    }
   .ztCiContent .ztCiInfoTxt span{
     font-size: 1.9rem;
@@ -307,6 +315,7 @@ $zt-grayColor:#707070;
 @media all and (max-width:767px){
   .ztCiContain{
     pointer-events: none;
+    background-size: cover;
   }
   .ztCiContent{
     margin-top:20vh;
@@ -356,6 +365,7 @@ $zt-grayColor:#707070;
   }
   .ztCiSt .ztCiStBox .ztCiStTxt{
     margin-top: 4rem;
+    padding-left: 0;
   }
   .ztCiSt .ztCiStBox .ztCiStTxt p{
     word-break: keep-all;

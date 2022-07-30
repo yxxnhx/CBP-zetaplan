@@ -14,6 +14,18 @@ $zt-grayColor:#707070;
   font-size:$zt-krSize;
 }
 
+.ztInner{
+  @include Inner;
+}
+
+.ztTitle{
+  @include Subtitle($sub-title, $basic-gray3);
+  color:$basic-white;
+  &::after{
+    display: none;
+  }
+}
+
 .ztCsBox .ztTitle{
   color: $basic-black;
   margin-bottom: 12rem;
