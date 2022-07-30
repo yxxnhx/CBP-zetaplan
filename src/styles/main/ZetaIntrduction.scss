@@ -174,7 +174,7 @@
   }
 }
 
-@media all and (max-width: 500px) {
+@media (min-width: 375px) and (max-width: 500px) {
   .ziWrap {
     .ziTitleCon {
       display: flex;
@@ -221,7 +221,7 @@
         .ziCompanyLink a {
           display: block;
           border: 1px solid $basic-white;
-          width: 20rem;
+          width: 130px;
           height: 6.3rem;
           display: flex;
           align-items: center;
@@ -237,11 +237,89 @@
         .ziEstablishmentLink a {
           display: block;
           border: 1px solid $basic-white;
-          width: 20rem;
+          width: 130px;
           height: 6.3rem;
           display: flex;
           align-items: center;
           padding-left: 6rem;
+          font-size: 1.8rem;
+
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 374px) {
+  .ziWrap {
+    .ziTitleCon {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 50rem;
+      margin-left: 8rem;
+      text-transform: uppercase;
+      position: relative;
+      bottom: 5rem;
+
+      .ziTitleBlue {
+        font: {
+          size: 3.5rem;
+          family: Montserrat;
+        }
+        color: #1527a0;
+      }
+      .ziTitleBlack {
+        font: {
+          size: 3.5rem;
+          weight: bold;
+          family: Montserrat;
+        }
+      }
+    }
+    .ziContentBox {
+      flex-direction: column;
+
+      .ziCompanyDes {
+        width: 300px;
+        margin: 0 auto;
+      }
+
+      .ziLinkBox {
+        width: 300px;
+        display: flex;
+        color: $basic-white;
+        position: relative;
+        flex-wrap: nowrap;
+        margin: 15px auto 0;
+
+        .ziCompanyLink a {
+          display: block;
+          border: 1px solid $basic-white;
+          width: 110px;
+          height: 6.3rem;
+          display: flex;
+          align-items: center;
+          padding-left: 4.5rem;
+          margin-right: 6rem;
+          font-size: 1.8rem;
+
+          &:after {
+            display: none;
+          }
+        }
+
+        .ziEstablishmentLink a {
+          display: block;
+          border: 1px solid $basic-white;
+          width: 110px;
+          height: 6.3rem;
+          display: flex;
+          align-items: center;
+          padding-left: 4rem;
           font-size: 1.8rem;
 
           &:after {
