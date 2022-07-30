@@ -75,7 +75,7 @@ const MaIpoInfo = ({ setHdSubStyle }) => {
 
   const getActiveClassName = (cate) => {
     if (cate === category) {
-      return 'on';
+      return 'miInfoTabOn';
     }
     return '';
   }

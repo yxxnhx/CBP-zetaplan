@@ -75,7 +75,7 @@ const MaIpoPro = ({ setHdSubStyle }) => {
 
   const getActiveClassName = (cate) => {
     if (cate === category) {
-      return 'on';
+      return 'miProTabOn';
     }
     return '';
   }
@@ -102,18 +102,20 @@ const MaIpoPro = ({ setHdSubStyle }) => {
       <div className='miProinner'>
         <div className='miProHead'>
           Process
-          <div className='miProTab'>
-            <button key={0} className={getActiveClassName('m&a')} onClick={() => {
+          <ul className='miProTab'>
+            <li key={0} className={getActiveClassName('m&a')} onClick={() => {
               tabClick(0)
               navigate('/maipo-process/m&a')
               setSelectedIndex(0)
-            }} > M & A </button >
-            <button key={1} className={getActiveClassName('ipo')} onClick={() => {
+            }} > M & A 
+            </li >
+            <li key={1} className={getActiveClassName('ipo')} onClick={() => {
               tabClick(1)
               navigate('/maipo-process/ipo')
               setSelectedIndex(1)
-            }}> IPO </button>
-          </div>
+            }}> IPO 
+            </li>
+          </ul>
         </div>
 
         {data.tabContent}
