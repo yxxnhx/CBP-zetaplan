@@ -19,7 +19,7 @@
     align-items: center;
 
     .qnaSelectBox {
-      width: 14rem;
+      // width: 14rem;
       position: relative;
       background-color: $basic-white;
 
@@ -38,26 +38,24 @@
       }
 
       .qnaSelect {
-        width: 13.9rem;
+        width: 12.3rem;
         height: 7rem;
+        padding-left: 1.6rem;
         background-color: $basic-white;
-        padding-right: 1rem;
         font-family: 'Noto Sans KR',sans-serif;
         font-size: 2rem;
-        text-align: center;
         outline: none;
         -webkit-appearance:none;
         -moz-appearance:none;
         -webkit-border-radius: 0;
-        text-align: -webkit-center;
         appearance: none;
         position: relative;
 
         option {
           font-size: $list-md;
           font-family: 'Noto Sans KR',sans-serif;
-          width: 140px;
-          height: 70px;
+          // width: 140px;
+          // height: 70px;
         }
 
       }
@@ -67,7 +65,8 @@
       position: relative;
 
       .qnaSearch {
-        width: 54rem;
+        // width: 54rem;
+        width: 48rem;
         height: 50px;
         outline: none;
         border: none;

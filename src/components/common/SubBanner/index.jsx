@@ -56,7 +56,7 @@ const SubBannerTextContainer = styled.div`
     justify-content: center;
     
     }
-  @media all and (max-width: 700px) {
+  @media all and (max-width: 767px) {
     justify-content: center;
   }
 
@@ -71,7 +71,7 @@ const SubBannerTextContainer = styled.div`
     @media (min-width: 768px) and (max-width: 870px) {
       display: none;
     }
-    @media all and (max-width: 700px) {
+    @media all and (max-width: 766px) {
       display: none;
     }
   }
@@ -103,7 +103,7 @@ const SubBannerTextContainer = styled.div`
       display: none;
     }
 
-    @media all and (max-width: 700px) {
+    @media all and (max-width: 768px) {
       display: none;
     }
   }
