@@ -24,6 +24,7 @@
       .detailTitle {
         font-family: 'Noto Sans KR',sans-serif;
         font-size: $size-xl;
+        line-height: 1.5;
         font-weight: 700;
         margin-bottom: 16px;
       }
@@ -39,7 +40,7 @@
     }
 
     .content {
-      width: 80%;
+      width: 90%;
       margin: 60px auto;
 
       div {

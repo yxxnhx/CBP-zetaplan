@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import thumbnail from '../../img/notice/notice_thumbnail.png';
 import { useNavigate, useParams } from 'react-router-dom';
 
-const NewsSwiper = ({items, selectedIndex}) => {
+const NewsSwiper = ({items}) => {
   
   const navigate = useNavigate();
   const { category } = useParams();

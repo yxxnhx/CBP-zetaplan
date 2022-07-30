@@ -87,7 +87,7 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
                 {
                   detailData.img.length === 0 ? <img className="zetaLogoThumb" src={contentImg} alt="zeta 대표 이미지" /> : <img src={detailData.img} alt={detailData.alt} />
                 }
-                <div className="content" dangerouslySetInnerHTML={{ __html: detailData.content }}></div>
+                <div className="content" style={{ overflow: 'hidden', textOverflow: 'ellipsis' }} dangerouslySetInnerHTML={{ __html: detailData.content }}></div>
               </div>
             </div>
             <Link to={`/news/${category}`} className="newsListBtn">목록</Link>

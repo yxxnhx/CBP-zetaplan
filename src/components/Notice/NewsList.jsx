@@ -14,7 +14,7 @@ const NewsList = ({items, selectedIndex}) => {
       }
       <div className='newsItemContent'>
         <p className='newsTitle'>{items.title}</p>
-        <p className='newsContent' dangerouslySetInnerHTML={{__html: items.content}}></p>
+        <div className='newsContent' dangerouslySetInnerHTML={{__html: items.content}}></div>
         <p className='createdAt'>{items.createdAt}</p>
       </div>
     </div>

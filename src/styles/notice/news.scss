@@ -92,13 +92,14 @@
           font-family: 'Noto Sans KR',sans-serif;
           font-size: 2.4rem;
           width: 95%;
+          height: 163px;
+          font-weight: normal;
           overflow: hidden;
           text-overflow: ellipsis;
           word-break: break-word;    
           display: -webkit-box;
           -webkit-line-clamp: 4;
           -webkit-box-orient: vertical;
-          font-weight: normal;
   
           p, ul li {
             font-family: 'Noto Sans KR',sans-serif;
@@ -337,7 +338,7 @@
 
 }
 
-@media (min-width: 360px) and (max-width: 767px){
+@media all and (max-width: 767px){
   .newsInner .pagination {
     width: 100%;
   }

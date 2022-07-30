@@ -83,7 +83,7 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media all and (max-width: 767px) {
   .newsDetailInner .detailItemBox .detailItemTitle {
     font-size: 18px;
   }

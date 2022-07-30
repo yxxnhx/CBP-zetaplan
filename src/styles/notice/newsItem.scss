@@ -34,6 +34,18 @@
       font-size: $list-md;
       line-height: 1.7;
       margin: 25px 0 52px;
+
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      // word-break: break-word;    
+      // display: -webkit-box;
+      // flex-direction: column;
+      // display: -ms-flexbox;
+      // display: -moz-box;
+      // -webkit-line-clamp: 5;
+      // -webkit-box-orient: vertical;
+
+      height: 163px;
       overflow: hidden;
       text-overflow: ellipsis;
       word-break: break-word;    

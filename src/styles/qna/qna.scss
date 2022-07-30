@@ -40,6 +40,7 @@
       .qnaSelect {
         width: 13.9rem;
         height: 7rem;
+        background-color: $basic-white;
         padding-right: 1rem;
         font-family: 'Noto Sans KR',sans-serif;
         font-size: 2rem;
@@ -47,6 +48,8 @@
         outline: none;
         -webkit-appearance:none;
         -moz-appearance:none;
+        -webkit-border-radius: 0;
+        text-align: -webkit-center;
         appearance: none;
         position: relative;
 
@@ -169,7 +172,7 @@
 
 }
 
-@media (min-width: 360px) and (max-width: 767px){
+@media all and (max-width: 767px){
   .qnaInner .qnaSearchInput .qnaSearchBox .qnaSearch {
     width: 30rem;
     margin-left: 20px;
