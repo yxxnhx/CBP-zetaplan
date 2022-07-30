@@ -458,7 +458,8 @@ header.hdSub {
 
     .hdSmArea {
       width: 100%;
-      padding: 7rem 0;
+      padding-top: 7rem;
+      padding-bottom: 10rem;
 
       .hdSmList {
         display: flex;
@@ -820,24 +821,17 @@ header.hdSub {
   }
 }
 
+@media (max-width:778px) {
+  .hdSitemap .hdSmRight .hdSmArea .hdSmList:hover > a > span::after{
+    top: 11px;
+  }
+}
+
 @media (max-width:770px) {
  
   .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 .hdMargin2 {
     margin-left: -4rem;
   }
-  /* .hdSearch .hdSearchWrap .hdSearchContent .hdButtonsArea .hdButtons{
-    width: 85vw;
-  }
-  .hdSearch .hdSearchWrap .hdSearchContent .hdButtonsArea .hdButtons button{
-    width: 12rem;
-  }
-  .hdSitemap .hdSmRight button {
-    top: 7rem;
-    right: 7rem;
-  }
-  .hdSearch .hdSearchWrap .hdSearchContent .hdButtonsArea .hdButtons button a{
-    font-size: 2rem;
-  } */
 }
 
 @media (max-width:670px) {
@@ -916,6 +910,9 @@ header.hdSub {
   }
   .hdSitemap .hdSmRight .hdSmArea .hdSmList > a span::after{
     top: 2.3rem;
+  }
+  .hdSitemap .hdSmRight .hdSmArea .hdSmList:hover > a > span::after{
+    top: 15px;
   }
 }
 
