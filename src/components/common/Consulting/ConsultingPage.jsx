@@ -100,7 +100,7 @@ const ConsultingPage = ({ open, close, setHdSubStyle }) => {
       <SubBanner title={title} img={subBg}  oneDepth={oneDepth} oneDepthLink={oneDepthLink} linkActive={linkActive} />
       <div className="consulInner">
 
-        <form className='consultingAppForm'>
+        <form className='consultingAppForm' method="post" encType="multipart/form-data" name="fileForm">
           <div className="consulPageInner">
             <h2 className='consulFormTitle'>Contact Us</h2>
             <div className="consulPageFormArea">
@@ -480,15 +480,13 @@ const ConsultingPage = ({ open, close, setHdSubStyle }) => {
                   </div>
                 </div>
                 <div className="consulCategory">
-                  <form method="post" enctype="multipart/form-data" name="fileForm" className='fileArea'>
-                    <label for="myfile" className='fileLabel'>파일 첨부</label>
-                    <input 
-                      type="file"
-                      name='file'
-                      id='file'
-                      onChange={handleChange}
-                      value={values.file}  />
-                  </form>
+                  <label htmlFor="myfile" className='fileLabel'>파일 첨부</label>
+                  <input 
+                    type="file"
+                    name='file'
+                    id='file'
+                    onChange={handleChange}
+                    value={values.file}  />
                 </div>
               </fieldset>
               <button className="consultingBtn" type="button" onClick={handleFormSubmit}>상담 신청하기</button>
