@@ -1,5 +1,9 @@
 @import '../GlobalStyle.scss';
 
+.themeBtnArea button {
+  z-index: 1;
+}
+
 .qnaDetailInner {
   @include Inner;
   position: relative;
@@ -176,6 +180,10 @@
   }
   .qnaDetailInner .qnaSubTitle::after {
     background-color: #fff;
+  }
+
+  .qnaContentBtnArea .qnaContentUpdateBtn, .qnaContentBtnArea button {
+    color: #fff;
   }
 }
 

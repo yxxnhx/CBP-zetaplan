@@ -7,7 +7,6 @@ import { useNavigate } from 'react-router-dom';
 import { useCallback } from 'react';
 import PageBase from '../../components/common/Darkmode/PageBase';
 
-
 const QnaDetail = ({ setHdSubStyle }) => {
   const { id } = useParams();
 
@@ -67,7 +66,7 @@ const QnaDetail = ({ setHdSubStyle }) => {
   }
 
   return (
-    <>
+    <div>
       <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive} />
       <PageBase>
         <div className='qnaDetailInner'>
@@ -109,7 +108,7 @@ const QnaDetail = ({ setHdSubStyle }) => {
           <Link to="/qna" className='qnaListBtn'>목록</Link>
         </div>
       </PageBase>
-    </>
+    </div>
   );
 };
 

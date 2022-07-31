@@ -1,5 +1,9 @@
 @import '../GlobalStyle.scss';
 
+.dark .dataInfoInner .infoTitleBox .infoTabList li {
+  color: #000;
+}
+
 .dataInfoInner {
   @include Inner;
 
@@ -183,6 +187,7 @@
       background-size: 599px 280px;
       width: 18px;
       height: 18px;
+      cursor: pointer;
     }
   }
 }
