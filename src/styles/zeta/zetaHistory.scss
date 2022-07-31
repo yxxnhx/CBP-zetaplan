@@ -114,6 +114,9 @@ $zt-darkBlueCol:#359aff;
 }
 
 .dark{
+  .darkText{
+    color:#fff;
+  }
   .ztHisContent .ztHisTxtsTitle{
     color:$zt-darkBlueCol;
   }
