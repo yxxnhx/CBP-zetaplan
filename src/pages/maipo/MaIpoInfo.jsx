@@ -9,7 +9,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import PageBase from './../../components/common/Darkmode/PageBase';
 
 const MaIpoInfo = ({ setHdSubStyle }) => {
-  const [setActive] = useState(0);
+  const [active, setActive] = useState(0);
   const navigate = useNavigate();
   const { category } = useParams();
   const [selectedIndex, setSelectedIndex]= useState(0); 
@@ -29,7 +29,6 @@ const MaIpoInfo = ({ setHdSubStyle }) => {
   const threeDepthLink=`/maipo-info/${category}`;
   const linkActive = 'threeDepth';
 
-  /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
@@ -38,15 +37,12 @@ const MaIpoInfo = ({ setHdSubStyle }) => {
 
   useEffect(()=> {
     setData(getSelectedData()); 
-  // eslint-disable-next-line no-use-before-define
-  }, [getSelectedData, selectedIndex]);
+  }, [selectedIndex]);
 
   useEffect(() => {
     setData(getCategoryData());
-  // eslint-disable-next-line no-use-before-define
-  }, [category, getCategoryData])
+  }, [category])
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getCategoryData = () => {
     switch (category) {
     case 'm&a':
@@ -57,7 +53,6 @@ const MaIpoInfo = ({ setHdSubStyle }) => {
     }
   }
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getSelectedData = () => {
     switch (selectedIndex) {
     case 0:

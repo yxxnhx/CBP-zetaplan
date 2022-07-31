@@ -2,7 +2,7 @@
 
 .miInfoInner {
   @include Inner;
-  padding-top: 15rem;
+  padding-top: 18rem;
 }
 
 /* head */
@@ -221,7 +221,7 @@
 
 @media (max-width:475px) {
   .miInfoInner{
-    padding-top: 12rem;
+    padding-top: 15rem;
   }
 }
 

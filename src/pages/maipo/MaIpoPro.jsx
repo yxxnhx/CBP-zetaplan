@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const MaIpoPro = ({ setHdSubStyle }) => {
-  const [setActive] = useState(0);
+  const [active, setActive] = useState(0);
   const navigate = useNavigate();
   const { category } = useParams();
   const [selectedIndex, setSelectedIndex]= useState(0); 
@@ -28,7 +28,6 @@ const MaIpoPro = ({ setHdSubStyle }) => {
   const threeDepthLink=`/maipo-process/${category}`;
   const linkActive = 'threeDepth';
 
-  /* header 배경색 변경 */
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
@@ -37,15 +36,12 @@ const MaIpoPro = ({ setHdSubStyle }) => {
 
   useEffect(()=> {
     setData(getSelectedData()); 
-  // eslint-disable-next-line no-use-before-define
-  }, [getSelectedData, selectedIndex]);
+  }, [selectedIndex]);
 
   useEffect(() => {
     setData(getCategoryData());
-  // eslint-disable-next-line no-use-before-define
-  }, [category, getCategoryData])
+  }, [category])
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getCategoryData = () => {
     switch (category) {
     case 'm&a':
@@ -56,7 +52,6 @@ const MaIpoPro = ({ setHdSubStyle }) => {
     }
   }
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getSelectedData = () => {
     switch (selectedIndex) {
     case 0:

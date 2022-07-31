@@ -37,16 +37,12 @@ const MaIpoPerfo = ({ setHdSubStyle }) => {
 
   useEffect(()=> {
     setData(getSelectedData()); 
-    
-  // eslint-disable-next-line no-use-before-define
-  }, [getSelectedData, selectedIndex]);
+  }, [selectedIndex]);
 
   useEffect(() => {
     setData(getCategoryData());
-  // eslint-disable-next-line no-use-before-define
-  }, [category, getCategoryData])
+  }, [category])
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getCategoryData = () => {
     switch (category) {
     case 'm&a':
@@ -57,7 +53,6 @@ const MaIpoPerfo = ({ setHdSubStyle }) => {
     }
   }
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getSelectedData = () => {
     switch (selectedIndex) {
     case 0:
