@@ -8,7 +8,8 @@ $mngSize : 90rem;
 $mngCircleSize : 20rem;
 
 .mngInner.mngValueInner{
-  padding-top: 15rem;
+  padding-top: 18rem;
+
 }
 
 .mngSubTitle{
@@ -132,7 +133,7 @@ $mngCircleSize : 20rem;
   cursor: pointer;
 
   li {
-    width: 13rem;
+    width: 18rem;
     position: relative;
     line-height: 4.1rem;
     font-family: 'Noto Sans KR';
@@ -140,7 +141,6 @@ $mngCircleSize : 20rem;
     font-size: 2.3rem;
     text-align: center;
     top: -3rem;
-    margin-left: 3rem;
 
     &:hover {
       color: $main-color;
@@ -482,7 +482,6 @@ $mngCircleSize : 20rem;
 
 }
 
-
 .mngInner{
   @include Inner;
 }
@@ -591,7 +590,6 @@ $mngCircleSize : 20rem;
     } 
   }
 
-
   .dark{
     .mngCircleWrap{
       background: url('../../img/icon/zetaplan_logo_w@2x.png') no-repeat 50%;
@@ -602,13 +600,17 @@ $mngCircleSize : 20rem;
 }
 
 
-
 @media (min-width: 360px) and (max-width: 767px) {
 
   .mngMenuTab li{
       font-size: 2rem;
-      margin-left: 2rem;
-  }
+      width: 85px;
+      height: 5px;
+      top: -21px;
+      margin-left: 0;
+
+
+
   .mngSmTitle.mngValueTitle{
     margin-left: 3rem;
     margin-top: 5rem;
@@ -633,6 +635,18 @@ $mngCircleSize : 20rem;
   font-size: 2.3rem;
 }
   
+
+.darkText.mngBnStep{
+  flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.darktext.mngValueT{
+  flex: 100%;
+  margin-top: 3rem;
+  padding-left: 0;
+}
    
 .mngCompanyValueAssess li:nth-child(2n)::before{
   display: none;
@@ -714,20 +728,11 @@ $mngCircleSize : 20rem;
   }
 }
 
-.mngValueTxtBox{
-  margin-left: -5rem;
-}
-.mngBnStep{
-  margin-top: 4rem;
-}
 
 
 
 @media all and (max-width:768px) {
 
-  .mngInner.mngValueInner{
-    padding-top: 12rem;
-  }
 
   .mngValueCompanyProcess {
     display: block;

@@ -49,12 +49,15 @@ const SunBtn = styled.div `
     height: 30px;
     transform: translate(1rem);
   }
-  @media (min-width: 769px) and (max-width: 1023px){
+
+  @media (min-width: 768px) and (max-width: 1023px){
+
     width: 250px;
     height: 80px;
    
   }
-  @media (min-width: 476px) and (max-width: 768px) {
+
+  @media (min-width: 476px) and (max-width: 767px) {
     width: 170px;
     height: 60px;
     padding: 1.5% 25% 1.5% 3%;
@@ -108,7 +111,8 @@ const MoonBtn = styled.div `
     transform: translate(-19.5rem);
   }
 
-  @media (min-width: 769px) and (max-width: 1023px){
+
+  @media (min-width: 768px) and (max-width: 1023px){
     width: 250px;
     height: 80px;
     &::after{
@@ -116,7 +120,8 @@ const MoonBtn = styled.div `
     }
   }
 
-  @media (min-width: 476px) and (max-width: 768px) {
+
+  @media (min-width: 476px) and (max-width: 767px) {
     width: 170px;
     height: 60px;
     padding : 1.5% .5% 1.5% 30%;
@@ -167,15 +172,19 @@ const DarkBtn = styled.button `
   cursor: pointer;
   margin-top : 2rem;
 
-  @media (min-width: 769px) and (max-width: 1023px){
+
+  @media (min-width: 768px) and (max-width: 1023px){
     width: 250px;
     height: 80px;
   }
 
-  @media (min-width: 476px) and (max-width: 768px) {
+
+  @media (min-width: 476px) and (max-width: 767px) {
     width: 170px;
     height: 60px;
     padding : 1.5% .5% 1.5% 5%;   
+    margin-top: 3px;
+
     &::after{
       width: 20px;
       height: 20px;

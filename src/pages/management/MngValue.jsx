@@ -39,7 +39,7 @@ const MngValue = ({setHdSubStyle}) => {
     setData(getCategoryData());
   }, [category])
 
-  const title = '효율적인 자산관리와 적절한<br />투자관련 의사결정을 지원합니다.'
+  const title = '효율적인 자산관리와 적절한\n투자관련 의사결정을 지원합니다.'
   const [activeIndex, setActiveIndex] = useState(0);
   const tabClickHandler=(index)=>{
     setActiveIndex(index)
@@ -139,14 +139,14 @@ const MngValue = ({setHdSubStyle}) => {
           <h2 className='darkText mngValueTxt'>기업가치평가 방법</h2>
           <ul className='mngValueTxtBox'>
             <li className='darkText mngBnStep'>Step 1
-              <ul>
+              <ul className='darktext mngValueT'>
                 <li className='darkText mngBnStepT'>비용접근법</li>
                 <li>- 기업이 유사기술을 내부에서 개발하거나 외부로부터 도입하는데 드는 모든 비용을 계 산함으로써 기술가치를 평가하는 방법</li>
                 <li>- 적정시장가치 = 개발투하 총 비용 – 가치하락요소</li>
               </ul>
             </li>
             <li className='darkText mngBnStep'>Step 2
-              <ul>
+              <ul className='darktext mngValueT'>
                 <li className='darkText mngBnStepT'>시장접근법</li>
                 <li>- 평가대상기술과 유사 또는 동일한 기술의 시장거래가격을 기준으로 신청기술의 우열 등을 고려하여 산출</li>
                 <li>- 시장가치 = 매매사례가격 × 변동요인</li>
@@ -154,14 +154,14 @@ const MngValue = ({setHdSubStyle}) => {
               </ul>
             </li>
             <li className='darkText mngBnStep'>Step 3
-              <ul>
+              <ul className='darktext mngValueT'>
                 <li className='darkText mngBnStepT'>수익접근법</li>
                 <li>- 평가대상으로부터 발생되는 미래현금흐름의 현재가치의 합계에 기술기여도를 곱하여 기술가치를 산정</li>
                 <li>기술가치 = 현재가치의 합 × 기술기여도</li>
               </ul>
             </li>
             <li className='darkText mngBnStep'>Step 4
-              <ul>
+              <ul className='darktext mngValueT'>
                 <li className='darkText mngBnStepT'>기술기여도</li>
                 <li>평가대상기술을 사용함에 따라 발생한 추가적인 현금흐름의 현재가치 중 기술자체가 기여한 범위를 의미</li>
                 <li>기술요소 = 산업요소지수(industrial factor) × 개별기술지수(Technology rating)</li>

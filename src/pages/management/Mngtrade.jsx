@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import PageBase from '../../components/common/Darkmode/PageBase';
 
 const MngTrade = ({setHdSubStyle}) => {
-  const title = '국내는 물론, 해외로 나아갈 기술이전 컨설팅을 지원합니다.'
+  const title = '국내는 물론, 해외로 나아갈\n기술이전 컨설팅을 지원합니다.'
   const oneDepth='경영 · 평가';
   const oneDepthLink='/mng';
   const twoDepth='기술거래';
