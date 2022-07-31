@@ -4,6 +4,7 @@ import Index from './pages';
 import ResetStyle from './styles/ResetStyle';
 import './styles/GlobalStyle.scss';
 import { useState, Suspense } from 'react';
+import LoadingImg from './img/bg/loading.png';
 const Login = React.lazy(() => import('./pages/login'));
 const IrPerfo = React.lazy(() => import('./pages/ir/IrPerfo'));
 const IrPlan = React.lazy(() => import('./pages/ir/IrPlan'));
@@ -54,7 +55,7 @@ function App() {
         <ScrollToTop />
         <Header hdSubStyle={hdSubStyle} />
 
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div>{LoadingImg}Loading...</div>}>
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/main" element={<Index setHdSubStyle={setHdSubStyle} />} />

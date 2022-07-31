@@ -223,6 +223,9 @@
     &:hover {
       background-color: $main-color;
       color: $basic-white;
+      &::before {
+        color: $basic-gray3;
+      }
     }
 
     &:first-child::before {
