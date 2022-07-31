@@ -55,7 +55,25 @@ function App() {
         <ScrollToTop />
         <Header hdSubStyle={hdSubStyle} />
 
-        <Suspense fallback={<div>{LoadingImg}Loading...</div>}>
+        <Suspense
+          fallback={
+            <div
+              style={{
+                backgroundColor: '#1e1d1d',
+                height: '50rem',
+                width: '100%',
+                color: '#fff',
+                fontSize: '2.5rem',
+                textAlign: 'center',
+                lineHeight: '50rem',
+                fontFamily: 'Montserrat',
+                fontStyle: 'italic',
+              }}
+            >
+              Loading...
+            </div>
+          }
+        >
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/main" element={<Index setHdSubStyle={setHdSubStyle} />} />
