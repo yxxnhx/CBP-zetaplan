@@ -4,7 +4,7 @@
   @include Inner;
 
   .newsTitleBox {
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     border-bottom: 1px solid $basic-gray3;
     display: flex;
     justify-content: space-between;
@@ -300,7 +300,9 @@
         background-color: #359aff;
       }
     }
-
+  }
+  .newsInner .newsListContainer .newsSearchBox .newsInput {
+    color: #fff;
   }
   .newsInner .newsListContainer .newsSearchBox {
     border-color: $basic-white;
