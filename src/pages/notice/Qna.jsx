@@ -6,6 +6,7 @@ import '../../styles/qna/qna.scss'
 import qnaJsonList from '../../db/qna.json';
 import PaginatedItems from './Pagination';
 import { Link } from 'react-router-dom';
+import PageBase from '../../components/common/Darkmode/PageBase';
 
 const Qna = ({ setHdSubStyle }) => {
 
@@ -24,9 +25,6 @@ const Qna = ({ setHdSubStyle }) => {
 
   const [input, setInput] = useState('');
   const [optionValue, setOptionValue] = useState('all');
-
-  const [theme, setTheme] = useState('');
-  const [themeCss, setThemCss] = useState('');
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
@@ -83,13 +81,6 @@ const Qna = ({ setHdSubStyle }) => {
     }
   };
 
-  const handleTheme = () => {
-    const value = theme;
-    setTheme(!value);
-    const cssValue = value ? 'dark' : 'light';
-    setThemCss(cssValue);
-  }
-
   const title = 'ZETA PLAN만의\n다양하고 전문적인 정보를 제공해드립니다'
   const oneDepth='소식 · 자료';
   const oneDepthLink='/news';
@@ -104,41 +95,33 @@ const Qna = ({ setHdSubStyle }) => {
   return (
     <>
       <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} linkActive={linkActive} />
-      <div className={themeCss}>
-        <div className='darkBackground'>
-          <div className='qnaInner'>
-            <div className="themeBtnArea">
-              <button className='themeBtn' onClick={()=>{handleTheme()}}>
-                  mode change
-              </button>
+      <PageBase>
+        <div className='qnaInner'>
+          <div className='qnaTitleBox'>
+            <h2 className='qnaTitle darkText'>Q&A</h2>
+          </div>
+          <div className='qnaSearchInput'>
+            <div className="qnaSelectBox">
+              <label htmlFor="qnaCategory">qnaCategory</label>
+              <select className='qnaSelect' name="qanCategory" id="qnaCategory" onChange={getOptionValue}>
+                <option value="all">전체</option>
+                <option value="author">작성자</option>
+              </select>
             </div>
-            <div className='qnaTitleBox'>
-              <h2 className='qnaTitle darkText'>Q&A</h2>
-            </div>
-            <div className='qnaSearchInput'>
-              <div className="qnaSelectBox">
-                <label htmlFor="qnaCategory">qnaCategory</label>
-                <select className='qnaSelect' name="qanCategory" id="qnaCategory" onChange={getOptionValue}>
-                  <option value="all">전체</option>
-                  <option value="author">작성자</option>
-                </select>
-              </div>
-              <div className='qnaSearchBox'>
-                <input className="qnaSearch" type="text" placeholder="검색어를 입력하세요." onKeyDown={onKeyDown} onChange={getSearchByData} />
-                <span className='qnamagnifier' onClick={onSearch}></span>
-              </div>
-            </div>
-            <div>
-              <QnaTable qnaJsonList={currentItems} />
-            </div>
-            <div className="qnaBottom">
-              <PaginatedItems handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount}/>
-              <button className='writeBtn'><Link to='/qna-write'>글쓰기</Link></button>
+            <div className='qnaSearchBox'>
+              <input className="qnaSearch" type="text" placeholder="검색어를 입력하세요." onKeyDown={onKeyDown} onChange={getSearchByData} />
+              <span className='qnamagnifier' onClick={onSearch}></span>
             </div>
           </div>
-        </div>
-      </div>
-      
+          <div>
+            <QnaTable qnaJsonList={currentItems} />
+          </div>
+          <div className="qnaBottom">
+            <PaginatedItems handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount}/>
+            <button className='writeBtn'><Link to='/qna-write'>글쓰기</Link></button>
+          </div>
+        </div> 
+      </PageBase> 
     </>
   );
 };

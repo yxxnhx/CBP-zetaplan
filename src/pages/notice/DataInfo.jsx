@@ -9,6 +9,7 @@ import techData from '../../db/technologyList.json';
 import consultData from '../../db/consultingList.json';
 import InfoItem from '../../components/Notice/InfoItem';
 import { useNavigate, useParams } from 'react-router-dom';
+import PageBase from '../../components/common/Darkmode/PageBase';
 
 const DataInfo = ({ setHdSubStyle }) => {
 
@@ -22,9 +23,6 @@ const DataInfo = ({ setHdSubStyle }) => {
 
   const [input, setInput] = useState('');
   const [originData, setOriginData] = useState([]);
-
-  const [theme, setTheme] = useState('');
-  const [themeCss, setThemCss] = useState('');
 
   useEffect(() => {
     setShowNum(6);
@@ -126,13 +124,6 @@ const DataInfo = ({ setHdSubStyle }) => {
     }
   }
 
-  function handleTheme () {
-    const value = theme;
-    setTheme(!value);
-    const cssValue = value ? 'dark' : 'light';
-    setThemCss(cssValue);
-  }
-
   const title = 'ZETA PLAN만의 \n다양하고 전문적인 정보를 제공해드립니다'
   const oneDepth='소식 · 자료';
   const oneDepthLink='/news/news';
@@ -144,59 +135,52 @@ const DataInfo = ({ setHdSubStyle }) => {
   return (
     <div>
       <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} threeDepth={setBreadThreeDepth()} threeDepthLink={category === undefined ? '/datainfo/m&a-invest' : `/datainfo/${category}`} linkActive={linkActive} />
-      <div className={themeCss}>
-        <div className='darkBackground'>
-          <div className='dataInfoInner'>
-            <div className="themeBtnArea">
-              <button className='themeBtn' onClick={()=>{handleTheme()}}>
-                mode change
-              </button>
-            </div>
-            <div className='infoTitleBox'>
-              <h2 className='infoTitle darkText'>자료</h2>
-              <ul className='infoTabList'>
-                <li className={getActiveClassName('m&a-invest')} onClick={() => {
-                  navigate('/datainfo/m&a-invest')
-                  setSelectedIndex(0)
-                }}>M&A・투자정보</li>
-                <li className={getActiveClassName('government-support')} onClick={() => {
-                  navigate('/datainfo/government-support')
-                  setSelectedIndex(1)
-                }}>정부지원사업 참여 모집</li>
-                <li className={getActiveClassName('fund-support')} onClick={() => {
-                  navigate('/datainfo/fund-support')
-                  setSelectedIndex(2)
-                }}>정책자금 / 기업지원정보</li>
-                <li className={getActiveClassName('technology-trade')} onClick={() => {
-                  navigate('/datainfo/technology-trade')
-                  setSelectedIndex(3)
-                }}>기술거래리스트</li>
-                <li className={getActiveClassName('consulting-list')} onClick={() => {
-                  navigate('/datainfo/consulting-list')
-                  setSelectedIndex(4)
-                }}>컨설팅 실적</li>
-              </ul>
-            </div>
-            <div className='infoSearchCon'>
-              <span className='darkText'>총{dataList ? dataList.length  : originData.length}  개</span>
-              <div className='infoSearchBox'>
-                <input className="infoInput" type="text" placeholder='검색어를 입력하세요' onKeyDown={onKeyDown} onChange={searchByData}/>
-                <span className='infomagnifier' onClick={onSearch}></span>
-              </div>
-
-            </div>
-            <div className='dataInfoLiBox'>
-              {
-                filteredList.map((data) => {
-                  return <InfoItem key={data.id} item={data} selectedIndex={selectedIndex} />
-                })
-              }
-            </div>
-            {dataList.length !== filteredList.length && <button className='infoMoreBtn darkText' onClick={showMoreData}>더보기</button>}
+      <PageBase>
+        <div className='dataInfoInner'>
+          <div className='infoTitleBox'>
+            <h2 className='infoTitle darkText'>자료</h2>
+            <ul className='infoTabList'>
+              <li className={getActiveClassName('m&a-invest')} onClick={() => {
+                navigate('/datainfo/m&a-invest')
+                setSelectedIndex(0)
+              }}>M&A・투자정보</li>
+              <li className={getActiveClassName('government-support')} onClick={() => {
+                navigate('/datainfo/government-support')
+                setSelectedIndex(1)
+              }}>정부지원사업 참여 모집</li>
+              <li className={getActiveClassName('fund-support')} onClick={() => {
+                navigate('/datainfo/fund-support')
+                setSelectedIndex(2)
+              }}>정책자금 / 기업지원정보</li>
+              <li className={getActiveClassName('technology-trade')} onClick={() => {
+                navigate('/datainfo/technology-trade')
+                setSelectedIndex(3)
+              }}>기술거래리스트</li>
+              <li className={getActiveClassName('consulting-list')} onClick={() => {
+                navigate('/datainfo/consulting-list')
+                setSelectedIndex(4)
+              }}>컨설팅 실적</li>
+            </ul>
           </div>
+          <div className='infoSearchCon'>
+            <span className='darkText'>총{dataList ? dataList.length  : originData.length}  개</span>
+            <div className='infoSearchBox'>
+              <input className="infoInput" type="text" placeholder='검색어를 입력하세요' onKeyDown={onKeyDown} onChange={searchByData}/>
+              <span className='infomagnifier' onClick={onSearch}></span>
+            </div>
+
+          </div>
+          <div className='dataInfoLiBox'>
+            {
+              filteredList.map((data) => {
+                return <InfoItem key={data.id} item={data} selectedIndex={selectedIndex} />
+              })
+            }
+          </div>
+          {dataList.length !== filteredList.length && <button className='infoMoreBtn darkText' onClick={showMoreData}>더보기</button>}
         </div>
-      </div>
-    </div>
+      </PageBase>
+    </div>    
   );
 };
 

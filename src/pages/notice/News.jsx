@@ -8,6 +8,7 @@ import columnData from '../../db/column.json';
 import NewsSwiper from '../../components/Notice/NewsSwiper';
 import PaginatedItems from './Pagination';
 import { useNavigate, useParams } from 'react-router-dom';
+import PageBase from '../../components/common/Darkmode/PageBase';
 
 const News = ({ setHdSubStyle }) => {
   const itemsPerPage = 6;
@@ -27,9 +28,6 @@ const News = ({ setHdSubStyle }) => {
   const [pageRangeCount, setPageRangeCount] = useState(10);
 
   const [input, setInput] = useState('');
-
-  const [theme, setTheme] = useState('');
-  const [themeCss, setThemCss] = useState('');
 
   useEffect(() => {    
     setHdSubStyle('hdMain hdSub')
@@ -114,13 +112,6 @@ const News = ({ setHdSubStyle }) => {
     }
   }
 
-  function handleTheme () {
-    const value = theme;
-    setTheme(!value);
-    const cssValue = value ? 'dark' : 'light';
-    setThemCss(cssValue);
-  }
-
   const title = 'ZETA PLAN만의\n다양하고 전문적인 정보를 제공해드립니다';
   const oneDepth='소식 · 자료';
   const oneDepthLink='/news/news';
@@ -135,44 +126,36 @@ const News = ({ setHdSubStyle }) => {
   return (
     <>
       <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink= {twoDepthLink} threeDepth={setBreadThreeDepth()} threeDepthLink={category === undefined ? '/news/news' : `/news/${category}`} linkActive={linkActive} />
-      <div className={themeCss}>
-        <div className='darkBackground'>
-          <div className='newsInner'>
-            <div className='themeBtnArea'>
-              <button className='themeBtn' onClick={() => {
-                handleTheme();
-              }}>mode change</button>
-            </div>
-            <div className='newsTitleBox'>
-              <h2 className='newsTabTitle'>소식</h2>
-              <ul className='newsTabList'>
-                <li className={getActiveClassName('news')} onClick={() => {
-                  navigate('/news/news')
-                  setSelectedIndex(0)}}>News</li>
-                <li className={getActiveClassName('column')} onClick={() => {
-                  navigate('/news/column')
-                  setSelectedIndex(1)}}>Column</li>
-              </ul>
-            </div>
-            <NewsSwiper items={originData.slice(0, 6)} selectedIndex={selectedIndex} />
-            <div className='newsListContainer'>
-              <div className='newsSearchBox'>
-                <input className="newsInput darkText" type="text" placeholder='검색어를 입력하세요' onChange={onChangeInput} onKeyDown={onKeyDown} />
-                <span className='newsmagnifier' onClick={onSearch}></span>
-              </div>
-              <div className='newsListBox'>
-                {
-                  currentItems.map((data) => {
-                    return <NewsList key={data.id} items={data} selectedIndex={selectedIndex} />
-                  })
-                }
-              </div>
-            </div>
-            <PaginatedItems pageRangeCount={pageRangeCount} itemsPerPage={itemsPerPage} handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount} />
+      <PageBase>
+        <div className='newsInner'>
+          <div className='newsTitleBox'>
+            <h2 className='newsTabTitle'>소식</h2>
+            <ul className='newsTabList'>
+              <li className={getActiveClassName('news')} onClick={() => {
+                navigate('/news/news')
+                setSelectedIndex(0)}}>News</li>
+              <li className={getActiveClassName('column')} onClick={() => {
+                navigate('/news/column')
+                setSelectedIndex(1)}}>Column</li>
+            </ul>
           </div>
-
+          <NewsSwiper items={originData.slice(0, 6)} selectedIndex={selectedIndex} />
+          <div className='newsListContainer'>
+            <div className='newsSearchBox'>
+              <input className="newsInput darkText" type="text" placeholder='검색어를 입력하세요' onChange={onChangeInput} onKeyDown={onKeyDown} />
+              <span className='newsmagnifier' onClick={onSearch}></span>
+            </div>
+            <div className='newsListBox'>
+              {
+                currentItems.map((data) => {
+                  return <NewsList key={data.id} items={data} selectedIndex={selectedIndex} />
+                })
+              }
+            </div>
+          </div>
+          <PaginatedItems pageRangeCount={pageRangeCount} itemsPerPage={itemsPerPage} handlePageClick={handlePageClick} currentItems={currentItems} pageCount={pageCount} />
         </div>
-      </div>
+      </PageBase>
     </>
   );
 };

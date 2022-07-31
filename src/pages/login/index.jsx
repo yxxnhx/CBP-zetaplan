@@ -6,7 +6,7 @@ const Login = ({ setHdSubStyle }) => {
   const adminIdRef = useRef();
   const passwordRef = useRef();
 
-  const [inputs, setInputs] = useState({})
+  const [inputs, setInputs] = useState({});
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
@@ -20,23 +20,43 @@ const Login = ({ setHdSubStyle }) => {
     });
   }
 
+  window.localStorage.setItem('adminInfo', JSON.stringify({id: 'zindex', password: 12345 }))
+
   const onSubmit = (e) => {
     e.preventDefault();
     setErrors(validation(inputs));
     const idLength = inputs['admin-id']?.length
+    const passwordLength = inputs['admin-pwd']?.length
+    const admin = JSON.parse(window.localStorage.getItem('adminInfo'));
+
     if(!idLength) {
       adminIdRef.current.focus();
       return;
     }
 
-    if(inputs['admin-pwd'].length < 5) {
+    if(idLength < 5) {
+      adminIdRef.current.focus();
+      alert('5글자 이상인지 확인해주세요.')
+      return;
+    } else if (passwordLength < 5) {
       passwordRef.current.focus();
       alert('5글자 이상인지 확인해주세요.')
       return;
     }
-    else {
-      alert('관리자님 로그인 되었습니다.');
-      window.location = '/main'
+
+    if(inputs['admin-pwd'] !== String(admin.password) || inputs['admin-id'] !== admin.id) {
+      alert('로그인 정보가 일치하지 않습니다.');
+      adminIdRef.current.focus();
+      return;
+    }
+    window.location = '/main';
+    alert('관리자님 로그인 되었습니다.');
+    
+  };
+
+  const onKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      onSubmit(e);
     }
   };
 
@@ -62,7 +82,7 @@ const Login = ({ setHdSubStyle }) => {
               <p>ZETAPLAN입니다</p>
             </div>
           </div>
-          <form className='loginForm'>
+          <form className='loginForm' onSubmit={onSubmit}>
             <div className="loginIdBox">
               <label htmlFor="admin-id">
                 <input 
@@ -71,6 +91,7 @@ const Login = ({ setHdSubStyle }) => {
                   type="text" 
                   placeholder='아이디' 
                   ref={adminIdRef}
+                  onKeyDown={onKeyDown}
                   onChange={onChange}
                 />
               </label>
@@ -87,7 +108,8 @@ const Login = ({ setHdSubStyle }) => {
                   type="password"
                   name="admin-pwd" 
                   placeholder='비밀번호' 
-                  ref={passwordRef} 
+                  ref={passwordRef}
+                  onKeyDown={onKeyDown}
                   onChange={onChange}
                 />
               </label>
@@ -97,9 +119,8 @@ const Login = ({ setHdSubStyle }) => {
                 </span>
               </div>
             </div>
-            <button className="loginBtn"type="button" onClick={onSubmit}>로그인</button>
+            <button className="loginBtn" type="submit">로그인</button>
           </form>
-
         </div>
       </div>
     </div>

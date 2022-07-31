@@ -70,6 +70,7 @@
           justify-items: flex-end;
           span {
             font-size: 1.8rem;
+            color: $sub-red;
           }
         }
       }
@@ -94,6 +95,7 @@
           justify-items: flex-end;
           span {
             font-size: 1.8rem;
+            color: $sub-red;
           }
         }
       }
@@ -114,7 +116,7 @@
 @media (min-width: 768px) and (max-width: 1023px){
 
 }
-@media (min-width: 360px) and (max-width: 767px){
+@media all and (max-width: 767px){
   .loginBackGround .loginContainer .loginFormContainer .leftContainer {
     display: none;
   }

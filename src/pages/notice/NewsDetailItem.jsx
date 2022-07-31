@@ -6,15 +6,13 @@ import newsData from '../../db/newsList.json';
 import columnData from '../../db/column.json';
 import '../../styles/notice/newsDetail.scss';
 import contentImg from '../../img/notice/thumbnail_zeta.png';
+import PageBase from '../../components/common/Darkmode/PageBase';
 
 const NewsDetailItem = ({ setHdSubStyle }) => {
   const { category, id } = useParams();
   const [data, setData] = useState([]);
 
   const [detailData, setDetailData] = useState(null);
-
-  const [theme, setTheme] = useState('');
-  const [themeCss, setThemCss] = useState('');
 
   const getDataByCategory = () => {
     switch (category) {
@@ -38,13 +36,6 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
-
-  function handleTheme () {
-    const value = theme;
-    setTheme(!value);
-    const cssValue = value ? 'dark' : 'light';
-    setThemCss(cssValue);
-  }
 
   const setBreadThreeDepth = () => {
     if (category === undefined) {
@@ -70,32 +61,23 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
   return (
     <div>
       <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink= {twoDepthLink} threeDepth={setBreadThreeDepth()} threeDepthLink={category === undefined ? '/news/news' : `/news/${category}`} linkActive={linkActive} />
-      <div className={themeCss}>
-        <div className='darkBackground'>
-          <div className="newsDetailInner">
-            <div className="themeBtnArea">
-              <button className='themeBtn' onClick={()=>{handleTheme()}}>
-                mode change
-              </button>
-            </div>
-            <div className="detailTitle darkText">
-              <p>소식</p>
-            </div>
-            <div className="detailItemBox">
-              <p className="detailItemTitle darkText">{detailData.title}</p>
-              <div className="contentBox darkText">
-                {
-                  detailData.img.length === 0 ? <img className="zetaLogoThumb" src={contentImg} alt="zeta 대표 이미지" /> : <img src={detailData.img} alt={detailData.alt} />
-                }
-                <div className="content" style={{ overflow: 'hidden', textOverflow: 'ellipsis' }} dangerouslySetInnerHTML={{ __html: detailData.content }}></div>
-              </div>
-            </div>
-            <Link to={`/news/${category}`} className="newsListBtn">목록</Link>
+      <PageBase>
+        <div className="newsDetailInner">
+          <div className="detailTitle darkText">
+            <p>소식</p>
           </div>
-
+          <div className="detailItemBox">
+            <p className="detailItemTitle darkText">{detailData.title}</p>
+            <div className="contentBox">
+              {
+                detailData.img.length === 0 ? <img className="zetaLogoThumb" src={contentImg} alt="zeta 대표 이미지" /> : <img src={detailData.img} alt={detailData.alt} />
+              }
+              <div className="content" style={{ overflow: 'hidden', textOverflow: 'ellipsis' }} dangerouslySetInnerHTML={{ __html: detailData.content }}></div>
+            </div>
+          </div>
+          <Link to={`/news/${category}`} className="newsListBtn">목록</Link>
         </div>
-      </div>
-
+      </PageBase>
     </div>
   );
 };

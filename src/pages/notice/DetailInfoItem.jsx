@@ -9,15 +9,13 @@ import fundSupportData from '../../db/fund-supportList.json';
 import techData from '../../db/technologyList.json';
 import consultData from '../../db/consultingList.json';
 import '../../styles/notice/detailInfoItem.scss';
+import PageBase from '../../components/common/Darkmode/PageBase';
 
 const DetailInfoItem = ({ setHdSubStyle }) => {
   const { category, id } = useParams();
   const [data, setData] = useState([]);
 
   const [detailData, setDetailData] = useState(null);
-
-  const [theme, setTheme] = useState('');
-  const [themeCss, setThemCss] = useState('');
 
   const getDataByCategory = () => {
     switch (category) {
@@ -47,13 +45,6 @@ const DetailInfoItem = ({ setHdSubStyle }) => {
   useEffect(() => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle])
-
-  function handleTheme () {
-    const value = theme;
-    setTheme(!value);
-    const cssValue = value ? 'dark' : 'light';
-    setThemCss(cssValue);
-  }
 
   const setBreadThreeDepth = () => {
     switch (category) {
@@ -85,30 +76,23 @@ const DetailInfoItem = ({ setHdSubStyle }) => {
   return (
     <div>
       <SubBanner title={title} img={subBg} oneDepth={oneDepth} oneDepthLink={oneDepthLink} twoDepth={twoDepth} twoDepthLink={twoDepthLink} threeDepth={setBreadThreeDepth()} threeDepthLink={category === undefined ? '/datainfo/m&a-invest' : `/datainfo/${category}`} linkActive={linkActive}/>
-      <div className={themeCss}>
-        <div className='darkBackground'>
-          <div className='detailInfoInner'>
-            <div className="themeBtnArea">
-              <button className='themeBtn' onClick={()=>{handleTheme()}}>
-                mode change
-              </button>
-            </div>
-            <div className='detailInfoTitleBox darkText'>
-              <p>자료</p>
-            </div>
-            <div className='detailContentInner'>
-              <div className='detailTitleSec'>
-                <p className='darkText detailTitle'>{detailData.title}</p>
-                <p className="darkText detailDate">{detailData.createdAt}</p>
-              </div>
-              <img src="../../img/notice/data_info/investImg_1.png" alt="" />
-              <div className="darkText content" dangerouslySetInnerHTML={{ __html: detailData.content }}>
-              </div>
-            </div>
-            <Link to={`/datainfo/${category}`} className='darkText infoListBtn'>목록</Link>
+      <PageBase>
+        <div className='detailInfoInner'>
+          <div className='detailInfoTitleBox darkText'>
+            <p>자료</p>
           </div>
+          <div className='detailContentInner'>
+            <div className='detailTitleSec'>
+              <p className='darkText detailTitle'>{detailData.title}</p>
+              <p className="darkText detailDate">{detailData.createdAt}</p>
+            </div>
+            <img src="../../img/notice/data_info/investImg_1.png" alt="" />
+            <div className="darkText content" dangerouslySetInnerHTML={{ __html: detailData.content }}>
+            </div>
+          </div>
+          <Link to={`/datainfo/${category}`} className='darkText infoListBtn'>목록</Link>
         </div>
-      </div>
+      </PageBase>
     </div>
   );
 };

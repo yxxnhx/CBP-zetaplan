@@ -1,17 +1,10 @@
 @import '../GlobalStyle.scss';
 
-// .dark {
-//   @include Dark;
-//   .newsTabTitle, .newsTitle .newsContentBox {
-//     color: $basic-white; 
-//   }
-
-// }
-
 .newsInner {
   @include Inner;
 
   .newsTitleBox {
+    margin-top: 2rem;
     border-bottom: 1px solid $basic-gray3;
     display: flex;
     justify-content: space-between;
