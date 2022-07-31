@@ -2,7 +2,7 @@ import React from 'react';
 import './../../styles/ir/index.scss'
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/ir/ir_sub_bg@2x.png'
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import PageBase from '../../components/common/Darkmode/PageBase';
 
 const Ir = ({ setHdSubStyle }) => {
@@ -19,14 +19,6 @@ const Ir = ({ setHdSubStyle }) => {
     setHdSubStyle('hdMain hdSub')
   }, [setHdSubStyle]);
 
-  const [theme, setTheme] = useState('');
-  const [themeCss, setThemCss] = useState('');
-  const handleTheme = () => {
-    const value = theme;
-    setTheme(!value);
-    const cssValue = value ? 'dark' : 'light';
-    setThemCss(cssValue);
-  }
 
   return (
     <div>

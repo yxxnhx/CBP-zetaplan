@@ -317,7 +317,7 @@
 }
 
 .irProcessStation {
-  width: 100%;
+  width: 75%;
   height: auto; 
 }
 
@@ -437,6 +437,10 @@
 
 
 @media all and (max-width: 767px){
+  .irProcessStation {
+    width: 100%;
+    height: auto; 
+  }
   .irProContents .irProContent {
     font-size: 2.3rem;
     }
@@ -503,7 +507,7 @@
   }
   .irAccordion .irAccoProCircleContent .irAccoProCircleM li {
     border-radius: 0;
-    width: 80%;
+    width: 100%;
     flex-direction: row;
     height: 6vw;
     margin-bottom: 2rem;
@@ -520,7 +524,7 @@
     
   }
   .irAccordion .irAccoProCircleContent .irAccoProCircleM li:nth-child(1)::after {
-    width: 24vw;
+    width: 30vw;
     bottom: 50%;
     transform: translateY(50%);
   }
@@ -554,7 +558,7 @@
 
     li {
       font-size: 1.6rem;
-      width: 80%;
+      width: 100%;
       height: 7vw;
       border-radius: 0;
       margin-right: 0;
@@ -575,7 +579,7 @@
       }
 
       &:nth-child(1)::after {
-        width: 24vw;
+        width: 30vw;
         bottom: 50%;
         transform: translateY(47%);
       }
@@ -660,8 +664,10 @@
   .irProCircle li {
     background-color: #ccc;
     border: none;
+    color: #000;
     &:hover{
       background-color: $main-color;
+      color: #fff;
     }
 
   }
@@ -680,6 +686,14 @@
     background-color: $main-color;
     color: #fff;
   }
+  .irAccordion .irAccoProCircleContent .irAccoProCircleM li, .irAccoProCircleS li  {
+    color: #000;
+    &:hover {
+      color: #fff;
+    }
+  }
 
-
+  .irAccoContentArea .irAccoContentT {
+    color: #000;
+  }
 }

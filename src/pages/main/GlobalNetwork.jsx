@@ -3,6 +3,7 @@ import './../../styles/main/GlobalNetwork.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const GlobalNetwork = () => {
@@ -23,14 +24,14 @@ const GlobalNetwork = () => {
           </div>
           <ul className='mainGNList'>
             <li className="mainGNListLeft">
-              <span className='mainGbJ mainGN'  data-aos="fade-up" data-aos-duration="1000"><span className='mainCity'>Jakarta, </span>INDONESIA</span>
-              <span className='mainGbH mainGN'  data-aos="fade-up" data-aos-duration="1000"><span className='mainCity'>Hanoi, </span>VIETNAM</span>
-              <span className='mainGbA mainGN'  data-aos="fade-up" data-aos-duration="1000"><span className='mainCity'>Abu Dhabi, </span>United Arab Emirates</span>
+              <span className='mainGbJ mainGN'  data-aos="fade-up" data-aos-duration="1000"><Link to="/zeta-map"><span className='mainCity'>Jakarta, </span>INDONESIA</Link> </span>
+              <span className='mainGbH mainGN'  data-aos="fade-up" data-aos-duration="1000"><Link to="/zeta-map"><span className='mainCity'>Hanoi, </span>VIETNAM</Link></span>
+              <span className='mainGbA mainGN'  data-aos="fade-up" data-aos-duration="1000"><Link to="/zeta-map"><span className='mainCity'>Abu Dhabi, </span>United Arab Emirates</Link></span>
             </li>
             <li className="mainGNListRight">
-              <span className='mainGbB mainGN'  data-aos="fade-up" data-aos-duration="1000"><span className='mainCity'>Beijing, </span>CHINA</span>
-              <span className='mainGbS mainGN'   data-aos="fade-up" data-aos-duration="1000"><span className='mainCity'>Seoul, </span>KOREA</span>
-              <span className='mainGbGJ mainGN'  data-aos="fade-up" data-aos-duration="1000"><span className='mainCity'>GwangJu, </span>KOREA</span>
+              <span className='mainGbB mainGN'  data-aos="fade-up" data-aos-duration="1000"><Link to="/zeta-map"><span className='mainCity'>Beijing, </span>CHINA</Link></span>
+              <span className='mainGbS mainGN'   data-aos="fade-up" data-aos-duration="1000"><Link to="/zeta-map"><span className='mainCity'>Seoul, </span>KOREA</Link></span>
+              <span className='mainGbGJ mainGN'  data-aos="fade-up" data-aos-duration="1000"><Link to="/zeta-map"><span className='mainCity'>GwangJu, </span>KOREA</Link></span>
             </li>
           </ul>
         </div>

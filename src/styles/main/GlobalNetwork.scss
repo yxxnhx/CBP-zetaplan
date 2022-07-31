@@ -55,12 +55,17 @@
           display: flex;
           justify-content: center;
           display: inline-block;
-
-          span {
+          a{
             font-size: 1.6rem;
             font-weight: bold;
-    
+
+            span {
+              font-size: 1.6rem;
+              font-weight: bold;
+      
+            }
           }
+
         &::before {
           content: "";
           display: block;

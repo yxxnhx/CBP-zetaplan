@@ -15,15 +15,10 @@
   justify-content: center;
   background: url('./../../img/ir/ir_summery@2x.png') no-repeat;
   width: 80%;
-  height: auto;
-  background-size: contain;
-  margin: auto;
-  font-size: 0;
-}
-
-.irSubImg  {
-  height: 50vw;
+  height: 57vw;
+  background-size: cover;
   margin: 6rem auto;
+  font-size: 0;
 }
 
 .irContent {
@@ -121,12 +116,15 @@
 }
 
 .dark {
-  
   .irSubImg {
+    display: flex;
+    justify-content: center;
     background: url('./../../img/ir/ir_summery_w.png') no-repeat;
-    background-size: contain;
     width: 80%;
-    height: 50vw;
+    height: 57vw;
+    background-size: cover;
+    margin: 6rem auto;
+    font-size: 0;
   }
   .irListProcessImg {
     background: url('./../../img/ir/ir_index_process_w.png') no-repeat;
@@ -146,17 +144,6 @@
     }
 
     
-  }
-}
-
-.dark {
-  .irCircle li{
-    background-color: #ccc;
-    border: none;
-    &:hover{
-      background-color: $main-color;
-    }
-
   }
 }
 

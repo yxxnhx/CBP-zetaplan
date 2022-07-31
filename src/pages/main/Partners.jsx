@@ -12,6 +12,7 @@ import mainNetData from './../../db/network.json'
 
 const Partners = () => {
   const [netData, setNetData] = useState([]);
+
   useEffect(()=>{
     setNetData(mainNetData);
   },[])
@@ -59,6 +60,10 @@ const Partners = () => {
               spaceBetween:3
             },
             370: {
+              slidesPerView:4,
+              spaceBetween:2
+            },
+            0: {
               slidesPerView:4,
               spaceBetween:2
             },

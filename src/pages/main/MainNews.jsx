@@ -11,9 +11,10 @@ import { useNavigate } from 'react-router-dom';
 import zetaLogo from './../../img/notice/thumbnail_zeta.png'
 const MainNews = () => {
   const navigate = useNavigate();
+  const newsDivideDb = newsData.splice(0, 15);
   const [newsDb, setNewsDb] = useState([]);
   useEffect(()=>{
-    setNewsDb(newsData);
+    setNewsDb(newsDivideDb);
   }, [])
 
   const navigationBtn = {

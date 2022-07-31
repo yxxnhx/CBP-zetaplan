@@ -15,15 +15,17 @@ import { useNavigate } from 'react-router-dom';
 const MainColumn = () => {
   const navigate = useNavigate();
 
+  const columnDivideDb = columnData.splice(0, 15);
   const [columnDb, setColumnDb] = useState([]);
   useEffect(()=>{
-    setColumnDb(columnData);
+    setColumnDb(columnDivideDb);
   }, [])
 
   const navigationBtn = {
     nextEl: '.prev',
     prevEl: '.next',
   };
+
 
   return (
     <div className='mainNCWrapper'>

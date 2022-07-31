@@ -144,9 +144,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+
   .irBnTotal {
-    padding-bottom: 5%;
-    padding-right: 5%;
+    width: 85vw;
+    padding: 10rem 0 8rem;
+    margin: 0 auto ;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -168,10 +170,24 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1023px){
+.dark {
+  .irCircle li{
+    background-color: #ccc;
+    border: none;
+    color: #000;
+    &:hover{
+      background-color: $main-color;
+      color: #FFF;
+    }
 
-
+  }
+  .irBusinessContent .irBnIndex .irBnStep::before  {
+    background-color: #359aff; 
+  }
 }
+
+
+
 @media all and (max-width: 767px){
   .irCircle {
     display: flex;
@@ -230,6 +246,13 @@
   .irBusinessContent .irBnIndex .irBnStep {
     font-size: 2.4rem;
   }
+
+  .irPlanBg {
+    height: 30rem;
+  }
   
+  .irBusinessContent .irBnIndex .irBnStep ul {
+    padding-left: 2rem;
+}
 }
 

@@ -185,6 +185,8 @@
 			font-size: 1.6rem;
 			line-height: 2.7;
 			width: 6rem;
+			border-radius: 0;
+
 		}
 		
 		input {
@@ -193,6 +195,8 @@
 			width: 23rem;
 			font-size: 1.6rem;
 			margin-left: 3rem;
+			border-radius: 0;
+
 		}
 	}
 	
@@ -215,6 +219,8 @@
 		.website, .address {
 			font-size: 1.6rem;
 			line-height: 2.7;
+			border-radius: 0;
+
 		}
 
 		.webSiteInput, .addressInput {
@@ -223,6 +229,7 @@
 			border-bottom: 1px solid #000;
 			font-size: 1.6rem;
 			margin-left: 3rem;
+			border-radius: 0;
 		}
 	}
 	.errorBox {
@@ -241,33 +248,40 @@
 	.selectCategory {
 		.selectItem{
 			display: flex;
-			width: 35rem;
+			width: 30rem;
 			display: flex;
 			justify-content: space-between;
 	
 			.selectLabel {
 				margin-right: 1rem;
-				width: 33rem;
+				width: 16rem;
 				font-size: 1.6rem;
 				line-height: 2.7;
 				font-family: 'Noto Sans KR';
+				
 	
 			}
 			.select {
-				width: 38rem;
+				width: 20rem;
 				border: none;
 				border-bottom: 1px solid #000;
 				font-size: 1.6rem;
 				font-family: 'Noto Sans KR';
 				background-color: #fff;
 				border-radius: 0;
+				-webkit-appearance:none;
+        -moz-appearance:none;
+        -webkit-border-radius: 0;
+        appearance: none;
+				background:url('./../../img/icon/thin_bottom_arrow.png') no-repeat 97% 50%/15px auto;
+
 			}
 		}
 	}
 }
 
 .selectFieldset .selectCategory .selectItem {
-	width: 39rem;
+	width: 35rem;
 }
 
 .consulFieldset {
@@ -462,6 +476,9 @@
 @media all and (max-width: 444px){
 	.consulLongCategory .consulLongItem .webSiteInput, .consulLongCategory .consulLongItem .addressInput {
 		width: 80%;
+	}
+	.consulBox .consulForm {
+		padding-top: 12rem;
 	}
 }
 

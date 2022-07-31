@@ -95,6 +95,7 @@ function App() {
             <Route path="/eng" element={<LangEng />} />
             <Route path="/cn" element={<LangCn />} />
             <Route path="/qna-write" element={<QnaWrite />} />
+            <Route path="/qna-write/:id" element={<QnaWrite />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
