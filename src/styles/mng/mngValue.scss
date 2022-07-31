@@ -13,8 +13,8 @@ $mngCircleSize : 20rem;
 }
 
 .mngSubTitle{
-  @include Subtitle($sub-title, $basic-gray3)
-};
+  @include Subtitle($sub-title, $basic-gray3);
+}
 
 .mngSmTitle.mngValueTitle{
   margin-left: 0;
@@ -108,7 +108,8 @@ $mngCircleSize : 20rem;
 
 .mngFourCircle.mngValueCompanyAssess{
   display: flex;
-  li{ flex-direction: column;
+  li{ 
+    flex-direction: column;
     font-size: 2.1rem;
   } span{
     font-size: 1.8rem;
@@ -348,10 +349,12 @@ $mngCircleSize : 20rem;
 }
 
 .mngValueProcess {
+
   div:first-child{
     color: #583cf2;
   }
 }
+
 .mngValueProcess {
   div:nth-of-type(2){
     color:#1e3a8b;
@@ -453,7 +456,9 @@ $mngCircleSize : 20rem;
   }
 }
 
+
 .dark{
+
   .mngMenuTab li:hover{
     color: #359aff;
     &::after{
@@ -608,7 +613,7 @@ $mngCircleSize : 20rem;
       height: 5px;
       top: -21px;
       margin-left: 0;
-
+  }
 
 
   .mngSmTitle.mngValueTitle{
@@ -620,6 +625,7 @@ $mngCircleSize : 20rem;
     margin-left: 7rem;
     font-size: 2.3rem;
   }
+
   .mngNeedTxt{
     width: 77vw;
     margin-left: 3rem;
@@ -627,6 +633,7 @@ $mngCircleSize : 20rem;
       font-size: 2.3rem;
     }
   }
+
   .mngNeedTxt p>span{
     font-size: 2.3rem;
   }
@@ -676,6 +683,7 @@ $mngCircleSize : 20rem;
     height: 60%;
   }
  }
+
  .mngValueGradientLeft .mngValueGradientRight{
   top: 30%;
   font-size: 1.5rem;
@@ -687,6 +695,7 @@ $mngCircleSize : 20rem;
   margin-top: 10rem;
   margin-bottom: 3rem;
 }
+
 .mngValueCompanyAssess{
   flex-wrap: wrap;
   width: 90vw;
@@ -701,6 +710,7 @@ $mngCircleSize : 20rem;
      }
   }
 }
+
 .mngCompanyValueAssess{
   flex-wrap: wrap;
   width: 90vw;
@@ -715,6 +725,7 @@ $mngCircleSize : 20rem;
      }
   }
 }
+
 .mngFourCircle.mngValueCompanyAssess li{
   display: flex;
   flex-direction: row;
@@ -726,6 +737,7 @@ $mngCircleSize : 20rem;
 .mngCompanyAssess p{
   font-size: 2.3rem;
   }
+
 }
 
 
@@ -755,7 +767,6 @@ $mngCircleSize : 20rem;
       height: 30vw;
       background-size: 70%;
     }
-
   }
 
   .mngCircleItem {
@@ -776,13 +787,12 @@ $mngCircleSize : 20rem;
       bottom: -4vw;
       left: 0;
     }
-
     .mngCircleText {
       font-size: 2vw;
       text-align: center;
       line-height: 1.3;
     }
-  }
+}
 
 
 .mngValueProcess{
@@ -801,6 +811,9 @@ $mngCircleSize : 20rem;
    line-height: 1.2;
     } 
   }
+
+  
 }
+
 
 
