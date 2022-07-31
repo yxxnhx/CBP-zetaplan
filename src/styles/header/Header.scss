@@ -954,6 +954,10 @@ header.hdSub {
   .hdSearch .hdSearchWrap .hdSearchContent .hdButtonsArea .hdButtons{
     flex-wrap: wrap;
   }
+  .hdSitemap button{
+    top: 5rem;
+    right: 5rem;
+  }
 }
 
 @media (max-width:380px) {
@@ -987,8 +991,12 @@ header.hdSub {
   .hdSearch .hdSearchWrap .hdSearchContent .hdButtonsArea .hdButtons {
     flex-wrap: wrap;
   }
-
+  
+  .hdSitemap .hdSmRight{
+    padding-left: 6rem;
+  }
   .hdSitemap .hdSmRight .hdSmArea .hdSmList {
     width: 100%;
   }
+  
 }
