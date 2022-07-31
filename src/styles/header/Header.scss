@@ -239,7 +239,7 @@ header.hdSub {
   margin-right: 6rem;
 
   .hdLang {
-    width: 2.2vw;
+    width: 2vw;
     
     svg{
       width: 1.4vw;
@@ -252,7 +252,7 @@ header.hdSub {
       z-index: 100;
       position: relative;
       top: 0;
-      left: -1.5rem;
+      left: -2rem;
       width: 3.5vw;
       margin-top: 0.5rem;
       padding-bottom: 0.5rem;
@@ -836,7 +836,9 @@ header.hdSub {
 }
 
 @media (max-width:770px) {
- 
+  .hdUtil .hdLang .hdLangLi li {
+    font-size: 5.5rem;
+  }
   .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 .hdMargin2 {
     margin-left: -4rem;
   }
@@ -970,8 +972,11 @@ header.hdSub {
     width: 100px;
     margin-right: 20px;
   }
+  .hdUtil .hdLang{
+    margin-right: 2rem;
+  }
   header.hdMain:hover > .hd .hdUtil .hdLang{
-    margin-right: 1.5rem;
+    margin-right: 2rem;
   }
   .hdUtil .hdLang svg{
     height: 2.7rem;
