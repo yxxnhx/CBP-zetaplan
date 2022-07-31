@@ -9,7 +9,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import PageBase from './../../components/common/Darkmode/PageBase';
 
 const MaIpoPerfo = ({ setHdSubStyle }) => {
-  const [setActive] = useState(0);
+  const [active, setActive] = useState(0);
   const navigate = useNavigate();
   const { category } = useParams();
   const [selectedIndex, setSelectedIndex]= useState(0); 
