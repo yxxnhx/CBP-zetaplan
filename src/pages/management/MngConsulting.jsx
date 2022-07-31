@@ -85,7 +85,7 @@ const MngConsulting = ({setHdSubStyle}) => {
               </ul>
             </li>
           </ul>
-          <div className='darkText mngConsultingTxt mngTxt'>
+          <div className='darkText mngConsultingTxt mngTxt mngCtTxt'>
             <p>사업모델정립 단계에서는 원가추정, 추정 재무제표,  현금흐름・순익추정, 자금유치시기 분석, 창업자금 조달 등이 진행되며
             제품/서비스 완성 단계에서는자금 운영계획, 회계사・회계시스템 활용, 자금대출/상환계획이 이루어지고   초기시장진입단계에서는 재무제표 관리, 수입금 관리 계획, 전문가에 의한 자금 흐름/지출 분석을 진행합니다.</p>
             <p>대상시장/ 리더그룹 포지셔닝 단계에서는 자본증자 계획, 전략적 투자유치, 투자유치IR활동, 자금차입계획이 이루어지며
