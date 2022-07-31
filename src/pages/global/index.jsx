@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/global/index.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/global/global_sub_bg.png';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import PageBase from '../../components/common/Darkmode/PageBase';
 
 const index = ({ setHdSubStyle }) => {
@@ -20,7 +20,6 @@ const index = ({ setHdSubStyle }) => {
     setHdSubStyle('hdMain hdSub');
   }, [setHdSubStyle]);
 
-  
   return (
     <div>
       <SubBanner

@@ -1,22 +1,5 @@
 @import '../GlobalStyle.scss';
 
-// .dark {
-//   @include Dark;
-//   .gbInner .gbChartBox .gbChart .gbChartListTop {
-//     border-top: 0.3rem solid #fff;
-//     border-bottom: 0.3rem solid #fff;
-//   }
-//   .gbInner .gbChartBox .gbChart .gbchartList {
-//     border-bottom: 0.1rem solid #fff;
-//   }
-//   .gbInner .gbProcessImgBox {
-//     background-image: url(./../../img/global/global_strategy_w.png);
-//   }
-//   .gbInner .gbProcessChartImgBox {
-//     background-image: url(./../../img/global/global_strategy_graph_w.png);
-//   }
-// }
-
 .gbInner {
   @include Inner;
 
@@ -176,9 +159,29 @@
   }
 }
 
+//반응형
+
 @media (max-width: 500px) {
   .gbInner .gbProcessChartImg {
     margin-left: 0;
     margin-bottom: 1rem;
+  }
+}
+
+//다크 모드
+
+.dark {
+  .gbInner .gbChartBox .gbChart .gbChartListTop {
+    border-top: 0.3rem solid #fff;
+    border-bottom: 0.3rem solid #fff;
+  }
+  .gbInner .gbChartBox .gbChart .gbchartList {
+    border-bottom: 0.1rem solid #fff;
+  }
+  .gbInner .gbProcessImgBox {
+    background-image: url(./../../img/global/global_strategy_w.png);
+  }
+  .gbInner .gbProcessChartImgBox {
+    background-image: url(./../../img/global/global_strategy_graph_w.png);
   }
 }

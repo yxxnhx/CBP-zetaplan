@@ -1,23 +1,5 @@
 @import '../GlobalStyle.scss';
 
-// .dark {
-//   @include Dark;
-//   .gbInner .gbMapImgBox {
-//     background-image: url(./../../img/global/global_map_w.png);
-//   }
-//   .gbInner .gbAccordion .gbProcessItem .gbProcessBtn {
-//     background-color: #ccc;
-//     border: none;
-//   }
-//   .gbInner .gbAccordion .gbProcessItem .gbProcessContent {
-//     background-color: #ccc;
-//   }
-
-//   .gbInner .gbAccoContentBox .gbAccoContentArea .gbAccoContentT h1 {
-//     color: #359aff;
-//   }
-// }
-
 .gbInner {
   @include Inner;
 
@@ -174,5 +156,32 @@
 
   .gbInner .gbAccordion .gbProcessItem .gbProcessBtn {
     font-size: 5rem;
+  }
+}
+
+.dark {
+  .gbInner .gbMapImgBox {
+    background-image: url(./../../img/global/global_map_w.png);
+  }
+  .gbInner .gbAccordion .gbProcessItem .gbProcessBtn {
+    background-color: #ccc;
+    border: none;
+  }
+
+  .gbInner .gbAccordion .gbProcessItem .gbProcessBtn.on {
+    background-color: $main-color;
+    border: none;
+  }
+
+  .gbInner .gbAccordion .gbProcessItem .gbProcessContent {
+    background-color: #ccc;
+  }
+
+  .gbInner .gbAccoContentBox .gbAccoContentArea .gbAccoContentT h1 {
+    color: #359aff;
+  }
+
+  .gbInner .gbAccoContentBox .gbAccoContentArea .gbAccoContentC ul {
+    color: #000;
   }
 }

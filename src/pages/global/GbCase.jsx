@@ -3,6 +3,7 @@ import '../../styles/global/gbCase.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/global/global_sub_bg.png';
 import { useState, useEffect } from 'react';
+import PageBase from '../../components/common/Darkmode/PageBase';
 
 const GbCase = ({ setHdSubStyle }) => {
   const title = 'ZETA PLAN은 전 세계적으로\n우수한 해외 네트워크를 보유하고 있습니다.';
@@ -17,16 +18,6 @@ const GbCase = ({ setHdSubStyle }) => {
   useEffect(() => {
     setHdSubStyle('hdMain hdSub');
   }, [setHdSubStyle]);
-
-  /* dark mode */
-  const [theme, setTheme] = useState('');
-  const [themeCss, setThemCss] = useState('');
-  const handleTheme = () => {
-    const value = theme;
-    setTheme(!value);
-    const cssValue = value ? 'dark' : 'light';
-    setThemCss(cssValue);
-  };
 
   const [selected, setSelected] = useState(null);
   const toggle = (i) => {
@@ -400,38 +391,26 @@ const GbCase = ({ setHdSubStyle }) => {
         twoDepthLink={twoDepthLink}
         linkActive={linkActive}
       />
-      <div className={themeCss}>
-        <div className="darkBackground">
-          <div className="gbInner">
-            <div className="themeBtnArea">
-              <button
-                className="themeBtn"
-                onClick={() => {
-                  handleTheme();
-                }}
-              >
-                mode change
-              </button>
-            </div>
-            <div className="gbTabTitleBox darkText">
-              <p className="gbTabTitle">해외진출사례</p>
-            </div>
-            <p className="gbContentSubTitle darkText">해외진출지원 주요 실적</p>
-            <div className="gbMapImgBox">해외 진출 사례 지도</div>
-            <div className="gbAccordion">
-              {data.map((item, i) => (
-                <div className="gbProcessItem" key={i}>
-                  <div className={selected === i ? 'gbProcessBtn on' : 'gbProcessBtn'} onClick={() => toggle(i)}>
-                    <h2 className="gbProcessTitle">{item.title}</h2>
-                    <div>{selected === i ? <div className="gbTopBtn"></div> : <div className="gbUnderBtn"></div>}</div>
-                  </div>
-                  <div className={selected === i ? 'gbProcessContent show' : 'gbProcessContent'}>{item.content}</div>
+      <PageBase>
+        <div className="gbInner">
+          <div className="gbTabTitleBox darkText">
+            <p className="gbTabTitle">해외진출사례</p>
+          </div>
+          <p className="gbContentSubTitle darkText">해외진출지원 주요 실적</p>
+          <div className="gbMapImgBox">해외 진출 사례 지도</div>
+          <div className="gbAccordion">
+            {data.map((item, i) => (
+              <div className="gbProcessItem" key={i}>
+                <div className={selected === i ? 'gbProcessBtn on' : 'gbProcessBtn'} onClick={() => toggle(i)}>
+                  <h2 className="gbProcessTitle">{item.title}</h2>
+                  <div>{selected === i ? <div className="gbTopBtn"></div> : <div className="gbUnderBtn"></div>}</div>
                 </div>
-              ))}
-            </div>
+                <div className={selected === i ? 'gbProcessContent show' : 'gbProcessContent'}>{item.content}</div>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
+      </PageBase>
     </div>
   );
 };

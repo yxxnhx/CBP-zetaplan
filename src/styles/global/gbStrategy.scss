@@ -1,28 +1,5 @@
 @import '../GlobalStyle.scss';
 
-// .dark {
-//   @include Dark;
-//   .gbInner .gbContentImgBox {
-//     .gbPerformanceDes {
-//       color: $basic-white;
-//     }
-//     .gbGraphImgCon {
-//       background-image: url(./../../img/global/global_performance_w.png);
-//     }
-//   }
-//   .gbInner .gbProcessList .gbProcessItem {
-//     background-color: #ccc;
-//     border: none;
-//     &:hover {
-//       background-color: $main-color;
-//     }
-
-//     .gbProcessItemBox .gbProcessItemT {
-//       color: #359aff;
-//     }
-//   }
-// }
-
 .gbInner {
   @include Inner;
 
@@ -226,20 +203,6 @@
   }
 }
 
-/* @media (min-width: 375px) and (max-width: 559px) {
-  .gbInner .gbPerformanceDes {
-    margin-left: 8.417vw;
-    font-size: 1.3rem;
-  }
-}
-
-@media (min-width: 560px) and (max-width: 850px) {
-  .gbInner .gbPerformanceDes {
-    margin-left: 6.417vw;
-    font-size: 1.3rem;
-  }
-} */
-
 @media (max-width: 1000px) {
   .gbInner .gbProcessList {
     display: block;
@@ -277,6 +240,40 @@
     }
     .gbProcessItemC {
       font-size: 1.3rem;
+    }
+  }
+}
+
+.dark {
+  .gbInner .gbProcessList .gbProcessItem {
+    background-color: #ccc;
+    border: none;
+    color: #000;
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
+}
+
+.dark {
+  .gbInner .gbContentImgBox {
+    .gbPerformanceDes {
+      color: $basic-white;
+    }
+    .gbGraphImgCon {
+      background-image: url(./../../img/global/global_performance_w.png);
+    }
+  }
+  .gbInner .gbProcessList .gbProcessItem {
+    background-color: #ccc;
+    border: none;
+    &:hover {
+      background-color: $main-color;
+    }
+
+    .gbProcessItemBox .gbProcessItemT {
+      color: #359aff;
     }
   }
 }
