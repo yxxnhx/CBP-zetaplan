@@ -8,6 +8,9 @@ import subBg from './../../../img/bg/consulPage_bg@2x.png'
 
 const ConsultingPage = ({ open, close, setHdSubStyle }) => {
   const title = '기업맞춤형 컨설팅으로\n진심을 다해 상담하겠습니다'
+  const oneDepth='컨설팅 신청';
+  const oneDepthLink='/consulting';
+  const linkActive='twoDepth';
 
   /* header 배경색 변경 */
   useEffect(() => {
@@ -94,7 +97,7 @@ const ConsultingPage = ({ open, close, setHdSubStyle }) => {
 
   return (
     <div className='consulPage'>
-      <SubBanner title={title} img={subBg} />
+      <SubBanner title={title} img={subBg}  oneDepth={oneDepth} oneDepthLink={oneDepthLink} linkActive={linkActive} />
       <div className="consulInner">
 
         <form className='consultingAppForm'>
