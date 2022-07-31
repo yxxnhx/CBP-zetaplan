@@ -1,7 +1,7 @@
 import '../../styles/mng/mngConsulting.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/me/me_sub_bg@2x.png';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import PageBase from '../../components/common/Darkmode/PageBase';
 
 const MngConsulting = ({setHdSubStyle}) => {

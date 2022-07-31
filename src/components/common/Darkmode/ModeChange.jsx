@@ -18,49 +18,143 @@ const ModeChange = () => {
       <DarkBtn
         className='themeBtn'
         onClick={toggleTheme} >
-        {theme === 'light' ?
-          <Sun></Sun> :
-          <Moon></Moon>}
-        mode change
+        {
+          theme === 'light' ?
+            <SunBtn>mode change</SunBtn> :
+            <MoonBtn>mode change</MoonBtn>
+        }
       </DarkBtn>
     </div>  
   );
 };
 
-const Sun = styled.div `
-  background: url(${iconSun}) no-repeat;
-  background-size: contain;
-  width: 30px;
-  height: 30px;
-  transform: translate(21rem, .2rem);
-  @media all and (max-width: 475px) {
-    width: 15px;
-    height: 15px;
-    transform: translate(17.6rem, .2rem);
+const SunBtn = styled.div `
+  width: 300px;
+  height: 100px;
+  background-color : transparent;
+  color :#1527a0;
+  font-family : 'Montserrat';
+  font-size : 2.2rem ;
+  position : absolute ;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &::after {
+    content: '';
+    background: url(${iconSun}) no-repeat ;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    transform: translate(1rem);
   }
+  @media (min-width: 769px) and (max-width: 1023px){
+    width: 250px;
+    height: 80px;
+   
+  }
+  @media (min-width: 476px) and (max-width: 768px) {
+    width: 170px;
+    height: 60px;
+    padding: 1.5% 25% 1.5% 3%;
+    &::after{
+      width: 20px;
+      height: 20px;
+    }
+  }
+  @media all and (max-width:475px){
+    width: 150px;
+    height: 50px;
+    right: 5rem;
+    left: 0;
+    font-size: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2rem;
+    padding: 0;
+    &::after{
+    width:18px ;
+    height: 18px;
+    transform: translate(1rem);
+   }
+  }
+
 `
-const Moon = styled.div `
-  background: url(${iconMoon}) no-repeat;
-  background-size: contain;
-  width: 30px;
-  height: 30px;
-  transform : translate(17.6rem, .2rem);
+const MoonBtn = styled.div `
+  width: 300px;
+  height: 100px;
+  background-color : transparent;
+  border: 2px solid #359aff;
+  border-radius: 50px;
+  color : white;
+  font-family : 'Montserrat';
+  font-size : 2.2rem ;
+  position : absolute ;
+  left: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding : 1.5% .5% 1.5% 20%;
+  cursor: pointer;
+
+  &::after {
+  content: '';
+    background: url(${iconMoon}) no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    transform: translate(-19.5rem);
+  }
+
+  @media (min-width: 769px) and (max-width: 1023px){
+    width: 250px;
+    height: 80px;
+    &::after{
+      transform: translate(-170px);
+    }
+  }
+
+  @media (min-width: 476px) and (max-width: 768px) {
+    width: 170px;
+    height: 60px;
+    padding : 1.5% .5% 1.5% 30%;
+    &::after{
+      width: 20px;
+      height: 20px;
+      margin: -4%;
+      transform: translate(-130px);
+    }
+  }
 
   @media all and (max-width: 475px) {
-    width: 15px;
-    height: 15px;
-    transform: translate(17rem, .2rem);
+    width: 150px;
+    height: 50px;
+    right: 5rem;
+    font-size: 2rem; 
+    padding : 1.5% .5% 1.5% 5%;
+    justify-content: flex-end;
+   &::after{
+    width:18px ;
+    height: 18px;
+    transform: translate(-115.5px);
+    margin: -2%;
+    } 
   }
 `
+
 
 const DarkBtn = styled.button `
+  width: 300px;
+  height: 100px;
   background-color : transparent;
-  border : 1px solid #1527a0;
-  padding : 1.5% 5% 1.5% .5%;
+  border : 2px solid #1527a0;
+  padding : 1.5% 0 1.5% 0;
   border-radius : 50px;
   color :#1527a0;
   font-family : 'Montserrat';
-  font-size : 2.3rem ;
+  font-size : 2.2rem ;
   margin-bottom : 3rem ;
   box-shadow : 0 .625rem 1.25rem rgba(18, 27, 116, 0.18);
   position : absolute ;
@@ -73,12 +167,29 @@ const DarkBtn = styled.button `
   cursor: pointer;
   margin-top : 2rem;
 
-  @media all and (max-width:475px){
-    padding : 1.5% 7% 1.5% .5%;
-    right: 5rem;
-    font-size: 2rem;
+  @media (min-width: 769px) and (max-width: 1023px){
+    width: 250px;
+    height: 80px;
   }
-`
+
+  @media (min-width: 476px) and (max-width: 768px) {
+    width: 170px;
+    height: 60px;
+    padding : 1.5% .5% 1.5% 5%;   
+    &::after{
+      width: 20px;
+      height: 20px;
+      margin: -3%;
+    }
+  }
+
+  @media all and (max-width:475px){
+    width: 150px;
+    height: 50px;
+    right: 5rem;
+    top: 1rem; 
+  }
+  `
 
 
 

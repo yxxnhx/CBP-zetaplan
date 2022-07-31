@@ -8,7 +8,7 @@ $mngSize : 90rem;
 $mngCircleSize : 20rem;
 
 .mngInner.mngValueInner{
-  margin-top: 8rem;
+  padding-top: 15rem;
 }
 
 .mngSubTitle{
@@ -524,8 +524,9 @@ $mngCircleSize : 20rem;
 
 // mngValueskill
 
-  .mngSmTitle.mngValueTitle{
+  .darkText.mngSmTitle.mngValueTitle{
   margin-left: 3rem;
+  font-size: 2.7rem;
   }
 
   .mngValueTxt{
@@ -605,11 +606,12 @@ $mngCircleSize : 20rem;
 @media (min-width: 360px) and (max-width: 767px) {
 
   .mngMenuTab li{
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin-left: 2rem;
   }
   .mngSmTitle.mngValueTitle{
     margin-left: 3rem;
+    margin-top: 5rem;
   }
 
   .mngValueTxt{
@@ -722,6 +724,11 @@ $mngCircleSize : 20rem;
 
 
 @media all and (max-width:768px) {
+
+  .mngInner.mngValueInner{
+    padding-top: 12rem;
+  }
+
   .mngValueCompanyProcess {
     display: block;
     margin-left: 0;

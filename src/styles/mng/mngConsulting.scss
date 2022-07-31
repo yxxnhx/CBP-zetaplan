@@ -139,7 +139,7 @@ $size-ft : 1.6rem;
 .mngConsultingDecoBg {
   background: url('./../../img/me/mngConsultingBg.jpg') no-repeat ;
   background-size: cover;
-  width: 120%;
+  width: 100%;
   height: 50rem;
   background-attachment: fixed;
   display: flex;
@@ -186,34 +186,7 @@ $size-ft : 1.6rem;
   @include Inner
 }
 
-// dark & light mode
 
-
-
-.light{  
-  .mngConsultingProcessImg{
-    background: url(./../../img/me/me_process_graph@2x.png) no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 50vw;
-    font-size: 0;
-  }
-  .mngConsultingProcessImg{
-    background: url(./../../img/me/me_process_graph@2x.png) no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 50vw;
-    font-size: 0;
-  }
-  .mngTradeProcessImg{
-    background: url(./../../img/me/me_process@2x.png) no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vw;
-    font-size: 0;
-  }
-
-}
 
 
 .dark{
@@ -224,7 +197,12 @@ $size-ft : 1.6rem;
     height: 50vw;
     font-size: 0;
   }
-
+.mngFourCircle.mngConsultingFour{
+  color: #000;
+}
+.mngFiveCircle.mngConsultingFive{
+  color: #000;
+}
   .mngFourCircle li{
     background-color: #ccc;
     border: none;
@@ -242,14 +220,25 @@ $size-ft : 1.6rem;
   .mngCompanyValueAssess li{
     background-color: #ccc;
     border: none;
+    color: #000;
     &:hover{
       background-color: $main-color;
+      color: #fff;
     }
+  }
+  .mngFourCircle.mngValueCompanyAssess{
+    color: #000;
   }
  
   .mngValueProcess span{
     color: $basic-white;
+  }
 
+  .mngFiveCircle.mngCreditCircle li{
+    color: #000;
+    &:hover{
+      color: #fff;
+    }
   }
   .mngCreditBtn{
     background-color: #ccc;

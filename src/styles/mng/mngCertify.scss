@@ -94,16 +94,14 @@
   font-size: $list-md;
 }
 
-// .dark{
-//   @include Dark;
-//   .mngGrowTxt{
-//     border: .5px solid $basic-white;
-//   }
-//   .mngCertifyCt{
-//     color: #359aff;
-//   }
-
-// }
+.dark{
+  .mngGrowTxt{
+    border: .5px solid $basic-white;
+  }
+  .mngCertifyCt{
+    color: #359aff;
+  }
+}
 
 
 .mngInner{
