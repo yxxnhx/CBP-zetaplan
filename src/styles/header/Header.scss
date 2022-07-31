@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700&display=swap');
-
 @import '../GlobalStyle.scss';
 
 $header-height: 12.1rem;
 
 
 /* header 전체 */
-
 
 header.hdMain {
   width: 100vw;
@@ -167,10 +164,9 @@ header.hdSub {
 
     .hdSub {
       font-size: 2.2rem;
-      font-family: 'Montserrat';
       font-weight: 600;
       display: block;
-      width: 8.333vw;
+      width: 155px;
       height: $header-height;
       line-height: $header-height;
       text-align: center;
@@ -235,7 +231,7 @@ header.hdSub {
 
 /* util */
 .hdUtil {
-  width: 9.375vw;
+  width: 8.5vw;
   height: $header-height;
   padding-top: 4.9rem;
   display: flex;
@@ -447,7 +443,6 @@ header.hdSub {
 
   .hdSmRight {
     width: 100%;
-    /* height: 100vh; */
     position: relative;
     left: 55rem;
     color: $basic-black;
@@ -472,6 +467,7 @@ header.hdSub {
             position: relative;
             font-size: 3rem;
             font-weight: 800;
+            font-family: 'Noto Sans Kr';
 
             &::after {
               content: '';
@@ -587,6 +583,9 @@ header.hdSub {
 }
 
 @media (max-width:1500px) {
+  .hdGnbArea .hdDep1 .hdSub {
+    width: 140px;
+  }
   header.hdMain:hover > .hd .hdUtil .hdLang .hdLangLi{
     width: 6.5rem;
     left: -2rem;
@@ -620,7 +619,7 @@ header.hdSub {
 
 @media (max-width:1380px) {
   .hdGnbArea .hdDep1 .hdSub {
-    font-size: 1.8rem;
+    width: 130px;
   }
 
   .hdUtil .hdLang .hdLangLi li{
@@ -644,8 +643,8 @@ header.hdSub {
 
 @media (max-width:1250px) {
   .hdGnbArea .hdDep1 .hdSub {
-    font-size: 1.6rem;
-    width: 10rem;
+    width: 110px;
+    font-size: 1.8rem;
   }
 
   .hdGnbArea .hdDep1:hover>.hdDep2>li>a {
@@ -653,7 +652,8 @@ header.hdSub {
   }
 
   .hdUtil {
-    width: 11rem;
+    padding-top: 5rem;
+    width: 100px;
   }
 
   .hdSearch .hdSearchWrap .hdSearchContent .hdButtonsArea .hdButtons button {
@@ -670,14 +670,19 @@ header.hdSub {
 
   .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 li {
     margin-right: 3rem;
-
-    a {
-      font-size: 1.5rem;
-    }
   }
 }
 
 @media (max-width:1090px) {
+  .hdGnbArea .hdDep1 .hdSub {
+    width: 100px;
+    font-size: 1.6rem;
+  }
+
+  .hdUtil {
+    padding-top: 5.2rem;
+  }
+
   .hdSitemap .hdSmRight .hdSmArea {
     width: 100%;
   }
@@ -693,6 +698,9 @@ header.hdSub {
   .hdSitemap .hdSmRight .hdSmArea .hdSmList {
     display: flex;
     width: 80vw;
+  }
+  .hdSitemap .hdSmRight .hdSmArea .hdSmList .hdSmList2 .hdMargin2{
+    margin-left: -5rem;
   }
 
   .hdSitemap .hdSmRight button {
@@ -950,8 +958,17 @@ header.hdSub {
   header.hdMain{
     height: 10rem;
   }
+  header.hdMain .hd .hdLogo{
+    width: 150px;
+    height: 35px;
+  }
+  header.hdMain:hover > .hd .hdLogo{
+    width: 150px;
+    height: 35px;
+  }
   .hdUtil{
-    width: 13rem;
+    width: 100px;
+    margin-right: 20px;
   }
   header.hdMain:hover > .hd .hdUtil .hdLang{
     margin-right: 1.5rem;
@@ -968,64 +985,5 @@ header.hdSub {
 
   .hdSitemap .hdSmRight .hdSmArea .hdSmList {
     width: 100%;
-  }
-
-}
-
-@media (max-width: 330px) {
-  header.hdMain .hd .hdLogo{
-    width: 18rem;
-    height: 4.5rem;
-  }
-  header.hdMain:hover > .hd .hdLogo{
-    width: 18rem;
-    height: 4.5rem;
-  }
-  .hdUtil{
-    width: 10rem;
-    margin-right: 4rem;
-  }
-  .hdUtil .hdLang svg{
-    width: 2rem;
-    height: 2rem;
-  }
-  .hdUtil .hdSearchBtn{
-    width: 2rem;
-    height: 2rem;
-    margin-right: 0.5rem;
-  }
-  .hdUtil .hdSearchBtnX{
-    width: 2rem;
-    height: 2rem;
-    margin-right: 0.5rem;
-  }
-  header.hdMain:hover > .hd .hdUtil .hdSearchBtn{
-    width: 2rem;
-    height: 2rem;
-    margin-right: 0.5rem;
-  }
-  header.hdSub .hdUtil .hdSearchBtn{
-    width: 2rem;
-    height: 2rem;
-    margin-right: 0.5rem;
-  }
-  .hdSearch{
-    top: 10rem;
-  }
-  .hdUtil .hdSitemapBtn{
-    width: 2rem;
-    height: 1.7rem;
-  }
-  header.hdMain:hover > .hd .hdUtil .hdSitemapBtn{
-    width: 2rem;
-    height: 1.7rem;
-  }
-  header.hdMain.on .hdUtil .hdSitemapBtn{
-    width: 2rem;
-    height: 1.7rem;
-  }
-  header.hdSub .hdUtil .hdSitemapBtn{
-    width: 2rem;
-    height: 1.7rem;
   }
 }

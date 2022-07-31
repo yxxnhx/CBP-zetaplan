@@ -2,6 +2,7 @@
 
 .miPerfoInner {
   @include Inner;
+  padding-top: 15rem;
 }
 
 /* 제목 */
@@ -60,38 +61,34 @@
 
 
 /* dark 모드 */
-// .dark{
-//   @include Dark;
+.dark{
+ .miPerfoTab li:hover {
+  color: #359aff;
   
-//   .miPerfoTab li:hover {
-//     color: #359aff;
+  &::after {
+         background-color: #359aff;
+   }
+ }
+ .miPerfoTab li.on {
+   color: #359aff;
   
-//     &::after {
-//           background-color: #359aff;
-//     }
-//   }
-//   .miPerfoTab li.on {
-//     color: #359aff;
-  
-//     &::after {
-//       background-color:#359aff;
-//     }
-//   }
-//   .maPerfoContent{
-//     background: url(../../img/m&a_ipo/m&a_performance_w.png) no-repeat center / contain;
-//     height: 45vw;
-//     margin-left: 0;
-//   }
+    &::after {
+      background-color:#359aff;
+    }
+  }
 
-//   // ipo
-//   .ipoPerfoCircleWrap{
-//       background: url('../../img/icon/zetaplan_logo_w@2x.png') no-repeat center / 80% 24%;
-//   }
-// }
+  .maPerfoContent{
+    background: url(../../img/m&a_ipo/m&a_performance_w.png) no-repeat center / contain;
+    width: 100%;
+    height: 50vw;
+  }
+
+  .ipoPerfoCircleWrap{
+      background: url('../../img/icon/zetaplan_logo_w@2x.png') no-repeat center / 80% 24%;
+  }
+}
 
 
-
-// content
 
 // m&a 성과
 .maPerfoContent {
@@ -99,7 +96,6 @@
   width: 100%;
   height: 50vw;
   margin: 8vw 0;
-  margin-left: 5vw;
   font-size: 0;
 }
 
@@ -180,6 +176,7 @@
 }
 
 .ipoPerfoTxt {
+  width: 70%;
   padding-left: 11.979vw;
   margin-top: -5.208vw;
 
@@ -242,6 +239,13 @@
     height: 30vw;
     background-size: 70%;
   }
+  .dark .ipoPerfoCircleWrap{
+    top: 2.083vw;
+    left: 26vw;
+    width: 30vw;
+    height: 30vw;
+    background-size: 70%;
+  }
 
   .ipoPerfoCircleItem {
     width: 15vw;
@@ -268,6 +272,7 @@
   }
 
   .ipoPerfoTxt {
+    width: 85%;
     margin-top: 20vw;
     margin-left: 2.5vw;
   }
@@ -286,29 +291,178 @@
   }
 }
 
-@media (max-width:1120px) {
-
-  .ipoPerfoTxt .ipoPerfoTxtTop {
-    font-size: 2.5rem;
-  }
-
-  .ipoPerfoTxt .ipoPerfoTxtMid {
-    font-size: 2.8rem;
-  }
-
-  .ipoPerfoTxt .ipoPerfoTxtBt {
-    font-size: 1.8rem;
-  }
-}
-
 @media (max-width:810px) {
+  .maPerfoContent{
+    width: 100%;
+    height: 60vw;
+    margin-top: 60px;
+  }
+
+  .dark{
+    .maPerfoContent{
+      width: 100%;
+      height: 60vw;
+      margin-top: 60px;
+    }
+  }
+  
   .ipoPerfoTxt {
     margin-left: -3vw;
+    width: 100%;
   }
 }
 
 @media (max-width:600px) {
+  .ipoPerfo{
+    margin-top: 20vw;
+  }
+  
+  .ipoPerfoCircleWrap{
+    width: 28rem;
+    height: 28rem;
+  }
+  .ipoPerfoCircleItem{
+    width: 14rem;
+    height: 14rem;
+  }
+  .ipoPerfoCircleItem.ipoPerfoCircleItemRestruc{
+    top: -6rem;
+    left: 8rem;
+    transform: translate(-12rem, -3rem);
+  }
+  .ipoPerfoCircleItem.ipoPerfoCircleItemFunds{
+    bottom: 2rem;
+    right: -6rem;
+    transform: translate(6rem, -3rem);
+
+  }
+  .ipoPerfoCircleItem.ipoPerfoCircleItemPub{
+    bottom: -4rem;
+    left: -1rem;
+    transform: translate(-1rem, 6rem);
+  }
   .ipoPerfoTxt {
     margin-left: -6vw;
+  }
+  .dark{
+    .ipoPerfoCircleWrap{
+      width: 28rem;
+      height: 28rem;
+    }
+    .ipoPerfoCircleItem{
+      width: 14rem;
+      height: 14rem;
+    }
+    .ipoPerfoCircleItem.ipoPerfoCircleItemRestruc{
+      top: -6rem;
+      left: 8rem;
+      transform: translate(-12rem, -3rem);
+    }
+    .ipoPerfoCircleItem.ipoPerfoCircleItemFunds{
+      bottom: 2rem;
+      right: -6rem;
+      transform: translate(6rem, -3rem);
+  
+    }
+    .ipoPerfoCircleItem.ipoPerfoCircleItemPub{
+      bottom: -4rem;
+      left: -1rem;
+      transform: translate(-1rem, 6rem);
+    }
+    .ipoPerfoTxt {
+      margin-left: -6vw;
+    }
+  }
+}
+
+@media (max-width:480px) {
+  .ipoPerfo{
+    margin-top: 15rem;
+  }
+  
+  .ipoPerfoCircleWrap{
+    left: 20vw;
+    margin-bottom: 110px;
+  }
+  .dark .ipoPerfoCircleWrap{
+    left: 20vw;
+    margin-bottom: 110px;
+  }
+}
+
+@media (max-width:475px) {
+  .miPerfoInner{
+    padding-top: 12rem;
+  }
+  .ipoPerfoCircleItem .ipoPerfoCircleTxt{
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width:380px) {
+  .miPerfoTab li{
+    font-size: 1.5;
+    width: 8rem;
+  }
+  .ipoPerfo{
+    margin-top: 15rem;
+  }
+  .ipoPerfoCircleWrap{
+    width: 50vw;
+    height: 50vw;
+    left: 18vw;
+  }
+  .ipoPerfoCircleItem{
+    width: 25vw;
+    height: 25vw;
+  }
+  .ipoPerfoCircleItem.ipoPerfoCircleItemRestruc{
+    top: -8vw;
+    left: 12vw;
+    transform: translate(-18vw, -8vw);
+  }
+  .ipoPerfoCircleItem.ipoPerfoCircleItemFunds{
+    bottom: 4vw;
+    right: -9vw;
+    transform: translate(12vw, -5vw);
+
+  }
+  .ipoPerfoCircleItem.ipoPerfoCircleItemPub{
+    bottom: -5vw;
+    left: -3vw;
+    transform: translate(-2vw, 12vw);
+  }
+  .ipoPerfoCircleItem .ipoPerfoCircleTxt{
+    font-size: 1.7rem;
+  }
+  .dark{
+    .ipoPerfoCircleWrap{
+      width: 50vw;
+      height: 50vw;
+      left: 18vw;
+    }
+    .ipoPerfoCircleItem{
+      width: 25vw;
+      height: 25vw;
+    }
+    .ipoPerfoCircleItem.ipoPerfoCircleItemRestruc{
+      top: -8vw;
+      left: 12vw;
+      transform: translate(-18vw, -8vw);
+    }
+    .ipoPerfoCircleItem.ipoPerfoCircleItemFunds{
+      bottom: 4vw;
+      right: -9vw;
+      transform: translate(12vw, -5vw);
+  
+    }
+    .ipoPerfoCircleItem.ipoPerfoCircleItemPub{
+      bottom: -5vw;
+      left: -3vw;
+      transform: translate(-2vw, 12vw);
+    }
+    .ipoPerfoCircleItem .ipoPerfoCircleTxt{
+      font-size: 1.7rem;
+    }
   }
 }

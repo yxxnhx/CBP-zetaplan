@@ -265,7 +265,12 @@
 }
 
 @media (max-width:500px) {
-
+  
+  .maProContents.show .maProImgWrap .maProImg{
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+  }
   .ipoProWrap {
     background: none;
     position: sticky;
@@ -274,18 +279,18 @@
 
     .ipoProStap .ipoProCircle {
       opacity: 1;
-      width: 6rem;
-      height: 6rem;
+      width: 5rem;
+      height: 5rem;
 
       p {
         font-size: 2rem;
-        line-height: 6rem;
+        line-height: 5rem;
       }
     }
 
     .ipoProStap .ipoProTxt {
-      padding-left: 2rem;
-      padding-top: 2rem;
+      padding-left: 1.5rem;
+      padding-top: 1.5rem;
     }
   }
 

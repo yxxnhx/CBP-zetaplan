@@ -25,7 +25,7 @@
     align-items: center;
     cursor: pointer;
     border: 1px solid $main-color;
-    padding: 2rem 1.042vw;
+    padding: 2rem;
     font-size: 1.250vw;
     letter-spacing: 1.2px;
     color: #000;
@@ -301,44 +301,80 @@
   }
 
   .maProCont {
+    &:nth-child(1) .maProIcon{
+      width: 2.5rem;
+      height: 2.5rem;
+      }
     &:nth-child(2) {
       top: 15rem;
       left: 0;
+      .maProIcon{
+        width: 2.5rem;
+        height: 2.5rem;
+      }
     }
 
     &:nth-child(3) {
       top: 30rem;
       left: 0;
+      .maProIcon{
+        width: 2.8rem;
+        height: 2.5rem;
+      }
     }
 
     &:nth-child(4) {
       top: 45rem;
       left: 0;
+      .maProIcon{
+        width: 2.4rem;
+        height: 2.5rem;
+      }
     }
 
     &:nth-child(5) {
       top: 60rem;
       left: 0;
+      .maProIcon{
+        width: 2.7rem;
+        height: 2.5rem;
+      }
     }
 
     &:nth-child(6) {
       top: 75rem;
       left: 0;
+      .maProIcon{
+        width: 2.8rem;
+        height: 2.5rem;
+      }
     }
 
     &:nth-child(7) {
       top: 90rem;
       left: 0;
+      .maProIcon{
+        width: 2.8rem;
+        height: 2.5rem;
+      }
     }
 
     &:nth-child(8) {
       top: 105rem;
       left: 0;
+      .maProIcon{
+        width: 2.4rem;
+        height: 2.5rem;
+      }
     }
 
     &:nth-child(9) {
       top: 120rem;
       left: 0;
+      .maProIcon{
+        width: 2.5rem;
+        height: 2.5rem;
+      }
     }
   }
 
@@ -351,11 +387,6 @@
     margin-bottom: 1vw;
     font-size: 1.8rem;
   }
-
-  .maProContWrap .maProCont .maProTxt p .maProIcon {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
 }
 
 @media (max-width:500px) {
@@ -367,7 +398,19 @@
   .maProContWrap .maProCont .maProTxt p .maProIcon {
     margin-top: -0.5rem;
   }
+}
 
+@media (max-width:380px) {
+  .maProContWrap .maProCont .maProCircle{
+    width: 5rem;
+    height: 5rem;
+    p{
+      line-height: 5rem;
+    }
+  }
+  .maProContWrap .maProCont .maProTxt{
+    padding-left: 1.5rem;
+  }
 }
 
 

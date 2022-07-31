@@ -2,7 +2,7 @@
 
 .miInfoInner {
   @include Inner;
-
+  padding-top: 15rem;
 }
 
 /* head */
@@ -92,6 +92,7 @@
    }
  }
 
+
 /* content */
 .miInfoContent{
   margin-top: 20rem;
@@ -174,28 +175,27 @@
   .miInfoContent{
     margin-top: 20vw;
   }
+  
   .maInfoMainImg{
     margin-top: 10rem;
     margin: auto;
-    width: 110%;
+    width: 100%;
     height: 50vw;
   }
   .dark .maInfoMainImg{
     margin-top: 10rem;
     margin: auto;
-    width: 110%;
+    width: 100%;
     height: 50vw;
   }
 
   .ipoInfoMainImg{
-    width: 110%;
+    width: 100%;
     height: 50vw;
-    margin-left: -5vw;
   }
   .dark .ipoInfoMainImg{
-    width: 110%;
+    width: 100%;
     height: 50vw;
-    margin-left: -5vw;
   }
 
   .miInfoTxt {
@@ -219,17 +219,16 @@
   
 }
 
-@media (max-width:400px) {
+@media (max-width:475px) {
+  .miInfoInner{
+    padding-top: 12rem;
+  }
+}
+
+@media all and (max-width:400px) {
   .miInfoTab li{
     font-size: 2rem;
     width: 8rem;
   }
-  .maInfoMainImg {
-    width: 120%;
-    margin-left: -2rem;
-  }
-  .dark .maInfoMainImg{
-    width: 120%;
-    margin-left: -2rem;
-  }
+  
 }

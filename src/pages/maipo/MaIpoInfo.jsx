@@ -6,9 +6,10 @@ import MaInfo from './tab/MaInfo';
 import IpoInfo from './tab/IpoInfo';
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import PageBase from './../../components/common/Darkmode/PageBase';
 
 const MaIpoInfo = ({ setHdSubStyle }) => {
-  const [active, setActive] = useState(0);
+  const [setActive] = useState(0);
   const navigate = useNavigate();
   const { category } = useParams();
   const [selectedIndex, setSelectedIndex]= useState(0); 
@@ -37,12 +38,15 @@ const MaIpoInfo = ({ setHdSubStyle }) => {
 
   useEffect(()=> {
     setData(getSelectedData()); 
-  }, [selectedIndex]);
+  // eslint-disable-next-line no-use-before-define
+  }, [getSelectedData, selectedIndex]);
 
   useEffect(() => {
     setData(getCategoryData());
-  }, [category])
+  // eslint-disable-next-line no-use-before-define
+  }, [category, getCategoryData])
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getCategoryData = () => {
     switch (category) {
     case 'm&a':
@@ -53,6 +57,7 @@ const MaIpoInfo = ({ setHdSubStyle }) => {
     }
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getSelectedData = () => {
     switch (selectedIndex) {
     case 0:
@@ -92,51 +97,35 @@ const MaIpoInfo = ({ setHdSubStyle }) => {
     }
   ];
 
-  const [theme, setTheme] = useState('');
-  const [themeCss, setThemCss] = useState('');
-  const handleTheme = () => {
-    const value = theme;
-    setTheme(!value);
-    const cssValue = value ? 'dark' : 'light';
-    setThemCss(cssValue);
-  }
+ 
 
   return (
     <div className='miInfo'>
-
       {data.tabSubTitle}
-
-      <div className={themeCss}>
-        <div className='darkBackground'>
-          <div className='miInfoInner'>
-            <div className="themeBtnArea">
-              <button className='themeBtn' onClick={()=>{handleTheme()}}>
-                mode change
-              </button>
-            </div>
-            <div className='darkText miInfoHead'>
-               개요
-              <ul className='darkText miInfoTab'>
-                <li key={0} className={getActiveClassName('m&a')} onClick={() => {
-                  tabClick(0)
-                  navigate('/maipo-info/m&a')
-                  setSelectedIndex(0)
-                }} > M & A 
-                </li >
-                <li key={1} className={getActiveClassName('ipo')} onClick={() => {
-                  tabClick(1)
-                  navigate('/maipo-info/ipo')
-                  setSelectedIndex(1)
-                }}> IPO 
-                </li>
-              </ul>
-            </div>
-
-            {data.tabContent}
-
+      <PageBase>
+        <div className='miInfoInner miInfoInnerDark'>
+          <div className='darkText miInfoHead'>
+              개요
+            <ul className='darkText miInfoTab'>
+              <li key={0} className={getActiveClassName('m&a')} onClick={() => {
+                tabClick(0)
+                navigate('/maipo-info/m&a')
+                setSelectedIndex(0)
+              }} > M & A 
+              </li >
+              <li key={1} className={getActiveClassName('ipo')} onClick={() => {
+                tabClick(1)
+                navigate('/maipo-info/ipo')
+                setSelectedIndex(1)
+              }}> IPO 
+              </li>
+            </ul>
           </div>
+
+          {data.tabContent}
+
         </div>
-      </div>
+      </PageBase>
     </div >
   );
 };
