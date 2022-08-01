@@ -10,12 +10,9 @@ import './../../styles/main/NewsColumn.scss';
 import thumbnail from '../../img/notice/notice_thumbnail_long.png';
 import { useNavigate } from 'react-router-dom';
 
-
-
 const MainColumn = () => {
   const navigate = useNavigate();
-
-  const columnDivideDb = columnData.splice(0, 15);
+  const columnDivideDb = columnData.slice(0, 15);
   const [columnDb, setColumnDb] = useState([]);
   useEffect(()=>{
     setColumnDb(columnDivideDb);

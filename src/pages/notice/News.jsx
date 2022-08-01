@@ -44,9 +44,24 @@ const News = ({ setHdSubStyle }) => {
     setItemOffset(newOffset);
   };
 
+  const getCategoryData = (category) => {
+    switch (category) {
+    case 'news':
+    default:
+      return newsData;
+    case 'column':
+      return columnData;
+    }
+  }
+
   useEffect(() => {
-    setOriginData(getCategoryData());
-    setData(getCategoryData());
+    function fetchData() {
+      const data = getCategoryData(category);
+      setOriginData(data);
+      setData(data);
+    }
+
+    fetchData();
   }, [category]);
   
   const handleResize = () => {
@@ -67,16 +82,6 @@ const News = ({ setHdSubStyle }) => {
       setPageRangeCount(1);
     }
   }, [isMobile]);
-
-  const getCategoryData = () => {
-    switch (category) {
-    case 'news':
-    default:
-      return newsData;
-    case 'column':
-      return columnData;
-    }
-  }
 
   const onChangeInput = (e) => {
     setInput(e.target.value);

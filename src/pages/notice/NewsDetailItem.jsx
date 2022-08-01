@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams, useSearchParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import SubBanner from '../../components/common/SubBanner';
 import subBg from '../../img/notice/notice_sub_bg@2x.png';
 import newsData from '../../db/newsList.json';
@@ -82,4 +82,4 @@ const NewsDetailItem = ({ setHdSubStyle }) => {
   );
 };
 
-export default NewsDetailItem;
+export default React.memo(NewsDetailItem);

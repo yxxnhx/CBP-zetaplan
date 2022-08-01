@@ -34,7 +34,7 @@ const NewsColumn = () => {
     <div className='mainNewsInner'>
       <div className="mainNewsTop">
         <h1 className='mainNewTitle'>NEWS & COLUMN</h1>
-        <Link to='/news' className='newsColumnMore'>더보기</Link>
+        <Link to='/news/news' className='newsColumnMore'>더보기</Link>
       </div>
       <div className="mainNewsColumn">
         <div className="newsColumBox">
