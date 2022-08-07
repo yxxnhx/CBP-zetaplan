@@ -196,9 +196,10 @@ $size-ft : 1.6rem;
   .mngConsultingProcessImg{
     background: url(./../../img/me/me_process_graph_w.png) no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 50vw;
+    width: 80%;
+    height: 30vw;
     font-size: 0;
+    margin: auto;
   }
 .mngFourCircle.mngConsultingFour{
   color: #000;
@@ -246,6 +247,10 @@ $size-ft : 1.6rem;
   .mngCreditBtn{
     background-color: #ccc;
     border: none;
+  }
+  .mngCreditBtn.on{
+    background-color: $main-color;
+    color: #fff;
   }
   .mngCreditContent{
     background-color: #ccc;
