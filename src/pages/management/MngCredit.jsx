@@ -1,6 +1,6 @@
 import React from 'react';
 import CreditImg from '../../img/me/me_credit01@2x.png';
-import CooperationImg from '../../img/me/me_credit2@2x.png';
+import CooperationImg from '../../img/me/me_credit2.png';
 import '../../styles/mng/mngCredit.scss';
 import SubBanner from '../../components/common/SubBanner/index';
 import subBg from '../../img/me/me_sub_bg@2x.png';
