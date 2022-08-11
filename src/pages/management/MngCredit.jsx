@@ -86,9 +86,10 @@ const MngCredit = ({setHdSubStyle}) => {
           <li>- 사업별   면허증/등록증, 사업자등록증 사본, 법인등기부등본, 국세・지방세 납세필증, 법정 기술인력시설 장비 현황</li>
           <li>-  적격심사제에서 추가 서류 : 신용평가등급, 행정처분확인서, 기술인력보유증명서, (업무)실적증명서, 장비구입증,  (입찰가격표시한)입찰서류신청서 등</li>
         </ul>
-        <p className='mngCreditApart'>적격심사제에서 신용평가유의사항</p>
+        <p className='mngCreditApart'>적격심사제에서 신용평가 유의사항</p>
         <ul className='mngCreditApartTxt'>
-          <li>신용평가등급확인서 발급 기관 확인</li>
+          <li className="mngCreditbold">신용평가등급확인서 발급 기관 확인</li>
+          <li>- 나이스디앤비 등 5개 신용조회업자 발급한 것만 유효</li>
           <li>- 은행 등 금융기관, 공제조합, 보증기관의 신용조사서, 평가서는 사용 불가</li>
           <li className="mngCreditbold">신용평가등급확인서 점검</li>
           <li>- 유효기간 확인 : 등급 유효기간(기한)이 경과한 것은 사용불가</li>
