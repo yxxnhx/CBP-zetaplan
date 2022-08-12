@@ -358,6 +358,10 @@ $size-ft : 1.6rem;
   margin-right: 0;
 }
 
+.mngConsulT li>span{
+  display: flex;
+  flex-direction: row;
+}
 
 
 .mngTxt{

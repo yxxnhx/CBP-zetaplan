@@ -61,7 +61,7 @@ const MngConsulting = ({setHdSubStyle}) => {
           <h3 className='darkText mngSmTitle mnConsultingSmTitle'>사업개발전략</h3>
           <ul className='mngCircleArea'>
             <li className='mngFiveCircleBox'>
-              <ul className='mngFiveCircle mngConsultingFive'>
+              <ul className='mngFiveCircle mngConsultingFive mngConsulT'>
                 <li>STEP 01<span>사업모델정립</span></li>
                 <li>STEP 02<span>제품/서비스 완성</span></li>
                 <li>STEP 03<span>초기시장진입</span></li>
@@ -76,12 +76,12 @@ const MngConsulting = ({setHdSubStyle}) => {
           <h3 className='darkText mngSmTitle mnConsultingSmTitle'>자금투자유치</h3>
           <ul className='mngCircleArea'>
             <li className='mngFiveCircleBox'>
-              <ul className='mngFiveCircle mngConsultingFive'>
-                <li>STEP 01<span>사업모델정립</span></li>
-                <li>STEP 02<span>제품/서비스 완성</span></li>
-                <li>STEP 03<span>초기시장진입</span></li>
-                <li>STEP 04<span>대상시장</span><span>리더그룹 포지셔닝</span></li>
-                <li>STEP 05<span>해외진출/사업확장</span></li>
+              <ul className='mngFiveCircle mngConsultingFive mngConsulT'>
+                <li>STEP 01 <span> 사업모델정립</span></li>
+                <li>STEP 02 <span> 제품/서비스 완성</span></li>
+                <li>STEP 03 <span> 초기시장진입</span></li>
+                <li>STEP 04 <span> 대상시장</span><span> 리더그룹 포지셔닝</span></li>
+                <li>STEP 05 <span> 해외진출/사업확장</span></li>
               </ul>
             </li>
           </ul>
