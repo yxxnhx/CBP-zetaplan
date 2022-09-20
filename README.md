@@ -150,5 +150,7 @@ npm start
   - window.scroll로 일정 위치를 지정한 후 해당 위치로 스크롤이 넘어가게 되면 자동으로 탑버튼이 생겨 사용자들의 편의성을 높였습니다. 탑버튼을 누르게 되면 window.scroll을 이용하여 0으로 이동하되 behavior: 'smooth'를 지정하여 부드럽게 화면의 최상단으로 올라갈 수 있게 하였습니다
 
 - 검색 기능
+![Sep-20-2022 19-05-32](https://user-images.githubusercontent.com/50559373/191230228-887e7975-632e-4a4c-827d-ffb20963f5a4.gif)
 
-  - filter를 이용하여 구현해내었습니다
+
+  - filter를 이용하여 select의 option이 전체일 경우에는 기존 originData를 반한하여 author과 title의 input을 return하도록, option이 작성자일 경우에는 originData에서 author만 반환하여 해당 영역만으로 검색 기능을 구현해내었습니다. 또한 검색할 때 검색 버튼을 누르지 않고도 Enter 키를 누르면 검색이 될 수 있게 사용자의 편의성을 더하기 위해 키보드 이벤트도 추가했습니다.
